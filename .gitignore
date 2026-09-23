@@ -1,0 +1,10 @@
+__pycache__/
+*.pyc
+.venv/
+.pytest_cache/
+*.egg-info/
+source/*
+!source/text/
+source/text/*
+!source/text/*.md
+calibration/

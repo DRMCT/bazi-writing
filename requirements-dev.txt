@@ -1,0 +1,3 @@
+-r requirements.txt
+pytest
+tyme4py>=1.5    # 测试里交叉校验四柱与大运；build_changsheng.py 也用

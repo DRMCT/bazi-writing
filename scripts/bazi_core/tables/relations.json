@@ -1,0 +1,302 @@
+{
+ "schema": "relations/1",
+ "generated": "2026-09-23",
+ "source": "references/校核/刑冲合害.md 采用规则字段；《四库版足本三命通会》卷二校核卡",
+ "stemHe": [
+  {
+   "pair": "甲己",
+   "element": "土",
+   "name": "中正之合",
+   "source": "刑冲合害-天干五合",
+   "status": "已核"
+  },
+  {
+   "pair": "乙庚",
+   "element": "金",
+   "name": "仁义之合",
+   "source": "刑冲合害-天干五合",
+   "status": "已核"
+  },
+  {
+   "pair": "丙辛",
+   "element": "水",
+   "name": "威制之合",
+   "source": "刑冲合害-天干五合",
+   "status": "已核"
+  },
+  {
+   "pair": "丁壬",
+   "element": "木",
+   "name": "淫慝之合",
+   "source": "刑冲合害-天干五合",
+   "status": "已核"
+  },
+  {
+   "pair": "戊癸",
+   "element": "火",
+   "name": "无情之合",
+   "source": "刑冲合害-天干五合",
+   "status": "已核"
+  }
+ ],
+ "liuHe": [
+  {
+   "pair": "子丑",
+   "element": "土",
+   "alternates": [],
+   "source": "刑冲合害-六合",
+   "status": "已裁"
+  },
+  {
+   "pair": "寅亥",
+   "element": "木",
+   "alternates": [],
+   "source": "刑冲合害-六合",
+   "status": "已裁"
+  },
+  {
+   "pair": "卯戌",
+   "element": "火",
+   "alternates": [],
+   "source": "刑冲合害-六合",
+   "status": "已裁"
+  },
+  {
+   "pair": "辰酉",
+   "element": "金",
+   "alternates": [],
+   "source": "刑冲合害-六合",
+   "status": "已裁"
+  },
+  {
+   "pair": "巳申",
+   "element": "水",
+   "alternates": [],
+   "source": "刑冲合害-六合",
+   "status": "已裁"
+  },
+  {
+   "pair": "午未",
+   "element": null,
+   "alternates": [
+    "火",
+    "土"
+   ],
+   "source": "刑冲合害-六合",
+   "status": "已裁"
+  }
+ ],
+ "liuChong": [
+  {
+   "pair": "子午",
+   "source": "刑冲合害-六冲",
+   "status": "已核"
+  },
+  {
+   "pair": "丑未",
+   "source": "刑冲合害-六冲",
+   "status": "已核"
+  },
+  {
+   "pair": "寅申",
+   "source": "刑冲合害-六冲",
+   "status": "已核"
+  },
+  {
+   "pair": "卯酉",
+   "source": "刑冲合害-六冲",
+   "status": "已核"
+  },
+  {
+   "pair": "辰戌",
+   "source": "刑冲合害-六冲",
+   "status": "已核"
+  },
+  {
+   "pair": "巳亥",
+   "source": "刑冲合害-六冲",
+   "status": "已核"
+  }
+ ],
+ "liuHai": [
+  {
+   "pair": "子未",
+   "source": "刑冲合害-六害",
+   "status": "已核"
+  },
+  {
+   "pair": "丑午",
+   "source": "刑冲合害-六害",
+   "status": "已核"
+  },
+  {
+   "pair": "寅巳",
+   "source": "刑冲合害-六害",
+   "status": "已核"
+  },
+  {
+   "pair": "卯辰",
+   "source": "刑冲合害-六害",
+   "status": "已核"
+  },
+  {
+   "pair": "申亥",
+   "source": "刑冲合害-六害",
+   "status": "已核"
+  },
+  {
+   "pair": "酉戌",
+   "source": "刑冲合害-六害",
+   "status": "已核"
+  }
+ ],
+ "sanXing": {
+  "directed": [
+   {
+    "from": "寅",
+    "to": "巳",
+    "kind": "无恩",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "巳",
+    "to": "申",
+    "kind": "无恩",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "申",
+    "to": "寅",
+    "kind": "无恩",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "丑",
+    "to": "戌",
+    "kind": "恃势",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "戌",
+    "to": "未",
+    "kind": "恃势",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "未",
+    "to": "丑",
+    "kind": "恃势",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "子",
+    "to": "卯",
+    "kind": "无礼",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "from": "卯",
+    "to": "子",
+    "kind": "无礼",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   }
+  ],
+  "self": [
+   {
+    "branch": "辰",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "branch": "午",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "branch": "酉",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   },
+   {
+    "branch": "亥",
+    "source": "刑冲合害-三刑",
+    "status": "已核"
+   }
+  ]
+ },
+ "sanHe": [
+  {
+   "branches": "申子辰",
+   "element": "水",
+   "note": null,
+   "source": "刑冲合害-三合",
+   "status": "已裁"
+  },
+  {
+   "branches": "寅午戌",
+   "element": "火",
+   "note": null,
+   "source": "刑冲合害-三合",
+   "status": "已裁"
+  },
+  {
+   "branches": "巳酉丑",
+   "element": "金",
+   "note": null,
+   "source": "刑冲合害-三合",
+   "status": "已裁"
+  },
+  {
+   "branches": "亥卯未",
+   "element": "木",
+   "note": null,
+   "source": "刑冲合害-三合",
+   "status": "已裁"
+  },
+  {
+   "branches": "辰戌丑未",
+   "element": "土",
+   "note": "四库全",
+   "source": "刑冲合害-三合",
+   "status": "已裁"
+  }
+ ],
+ "sanHui": [
+  {
+   "branches": "寅卯辰",
+   "element": "木",
+   "note": null,
+   "source": "刑冲合害-三会",
+   "status": "已核"
+  },
+  {
+   "branches": "巳午未",
+   "element": "火",
+   "note": null,
+   "source": "刑冲合害-三会",
+   "status": "已核"
+  },
+  {
+   "branches": "申酉戌",
+   "element": "金",
+   "note": null,
+   "source": "刑冲合害-三会",
+   "status": "已核"
+  },
+  {
+   "branches": "亥子丑",
+   "element": "水",
+   "note": null,
+   "source": "刑冲合害-三会",
+   "status": "已核"
+  }
+ ]
+}

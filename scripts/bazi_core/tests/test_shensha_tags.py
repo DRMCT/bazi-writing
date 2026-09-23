@@ -1,0 +1,104 @@
+"""神煞叙事标签表与去术语检查器：表形态、求值形态、几张盘的命中、检查器正反两向。"""
+
+from __future__ import annotations
+
+import json
+import shutil
+import subprocess
+from pathlib import Path
+
+import pytest
+
+from bazi_core import shensha, shensha_tags
+
+ROOT = Path(__file__).resolve().parent.parent.parent.parent
+TABLE = ROOT / "scripts" / "bazi_core" / "tables" / "shensha_tags.json"
+TERMS = ROOT / "scripts" / "bazi_core" / "tables" / "terms.json"
+CHECKER = ROOT / "scripts" / "check-terms.js"
+
+
+def test_table_shape() -> None:
+    t = json.loads(TABLE.read_text(encoding="utf-8"))
+    names = {e["name"] for e in json.loads((ROOT / "scripts" / "bazi_core" / "tables" / "shensha.json").read_text(encoding="utf-8"))["entries"]}
+    ids: set[str] = set()
+    vocab = set(t["conditionVocabulary"])
+    for e in t["entries"]:
+        assert e["shensha"] in names, e["shensha"]  # 只给白名单里的神煞建标签
+        assert e["core"]
+        for v in e["variants"]:
+            assert v["id"] not in ids and v["id"].startswith(e["shensha"] + "-")
+            ids.add(v["id"])
+            assert v["tag"] and v["source"]
+            assert set(v["when"]) <= vocab, v["id"]
+            if v["classic"] is None:
+                assert "附录 B" in v["source"]
+    assert names <= {e["shensha"] for e in t["entries"]}  # 白名单每种都有条目
+
+
+def test_for_chart_shape_and_provenance() -> None:
+    p = {"year": "庚戌", "month": "戊子", "day": "癸酉", "hour": "癸亥"}
+    r = shensha_tags.for_chart(p, "male")
+    present = {h["name"] for h in shensha.compute(p)}
+    assert set(r["cores"]) == present
+    for tag in r["tags"]:
+        assert tag["shensha"] in present and tag["pillar"] in "年月日时"
+        assert tag["id"].startswith(tag["shensha"] + "-") and tag["origin"]
+    # 同一编号同一柱不重复
+    assert len({(t["id"], t["pillar"]) for t in r["tags"]}) == len(r["tags"])
+
+
+def test_position_variants_fire() -> None:
+    # 庚戌 戊子 癸酉 癸亥：年戌华盖、年戌与时亥旬空 → 华盖-05（空亡同柱）应命中；时亥阴差阳错、时亥孤辰
+    p = {"year": "庚戌", "month": "戊子", "day": "癸酉", "hour": "癸亥"}
+    ids = {t["id"] for t in shensha_tags.for_chart(p, "male")["tags"]}
+    assert "华盖-05" in ids and "空亡-01" in ids
+    assert "阴差阳错-03" in ids  # 男命
+    assert "阴差阳错-02" not in ids
+    # 甲申 壬申 乙巳 戊寅：年月申为天乙贵人 → 天乙贵人-01；两柱 → 天乙贵人-08；寅申冲，时寅驿马逢冲 → 驿马-04
+    p = {"year": "甲申", "month": "壬申", "day": "乙巳", "hour": "戊寅"}
+    ids = {t["id"] for t in shensha_tags.for_chart(p)["tags"]}
+    assert {"天乙贵人-01", "天乙贵人-08", "驿马-04"} <= ids
+
+
+def test_gender_gate() -> None:
+    p = {"year": "庚戌", "month": "戊子", "day": "癸酉", "hour": "癸亥"}
+    ids_f = {t["id"] for t in shensha_tags.for_chart(p, "female")["tags"]}
+    ids_none = {t["id"] for t in shensha_tags.for_chart(p)["tags"]}
+    assert "阴差阳错-02" in ids_f and "阴差阳错-03" not in ids_f
+    assert not ({"阴差阳错-02", "阴差阳错-03"} & ids_none)
+
+
+def test_terms_table_shape() -> None:
+    t = json.loads(TERMS.read_text(encoding="utf-8"))
+    seen: set[str] = set()
+    for g in t["groups"]:
+        assert g["level"] in ("error", "warn")
+        for term in g["terms"]:
+            assert len(term) >= 2, term  # 单字不进表
+            assert term not in seen, term
+            seen.add(term)
+    # 白名单神煞名与十神名都在 error 组
+    err = {term for g in t["groups"] if g["level"] == "error" for term in g["terms"]}
+    assert {"正官", "七杀", "食神", "天乙贵人", "空亡", "命中注定", "甲子"} <= err
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="需要 node")
+def test_checker_positive_and_negative(tmp_path: Path) -> None:
+    clean = tmp_path / "clean.md"
+    clean.write_text("他总在关键时刻被人拉一把，却从没学会自救。\n她挑人，不是被挑。\n", encoding="utf-8")
+    dirty = tmp_path / "dirty.md"
+    dirty.write_text("他日主甲木，生于寅月，正官透出，命中注定要走仕途。\n年柱甲子。\n", encoding="utf-8")
+    r = subprocess.run(["node", str(CHECKER), str(clean)], capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 0
+    summary = json.loads(r.stdout.strip().splitlines()[-1])
+    assert summary["errors"] == 0
+    r = subprocess.run(["node", str(CHECKER), str(dirty)], capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 1
+    lines = [json.loads(x) for x in r.stdout.strip().splitlines()]
+    hits = {h["term"] for h in lines if not h.get("summary")}
+    assert {"日主", "正官", "命中注定", "年柱", "甲子"} <= hits
+    # 放行与反向自检
+    r = subprocess.run(["node", str(CHECKER), str(dirty), "--expect-hits", "--summary"], capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 0
+    r = subprocess.run(["node", str(CHECKER), str(clean), "--expect-hits", "--summary"], capture_output=True, text=True, encoding="utf-8")
+    assert r.returncode == 1

@@ -1,0 +1,6305 @@
+{
+ "schema": "geju/1",
+ "generated": "2026-09-23",
+ "source": "references/校核/格局_{官财印,食煞伤,刃禄}.md 采用规则字段；《子平真诠评注》校核卡",
+ "vocabulary": {
+  "gods": [
+   "官煞",
+   "官杀",
+   "食伤",
+   "伤食",
+   "财印",
+   "煞印",
+   "印绶",
+   "偏印",
+   "正印",
+   "正官",
+   "七煞",
+   "七杀",
+   "正财",
+   "偏财",
+   "食神",
+   "伤官",
+   "比劫",
+   "禄劫",
+   "官",
+   "煞",
+   "杀",
+   "财",
+   "印",
+   "食",
+   "伤",
+   "刃",
+   "禄",
+   "劫",
+   "比",
+   "枭"
+  ],
+  "body": [
+   "身强",
+   "身弱",
+   "身轻",
+   "身重",
+   "身旺",
+   "身危"
+  ],
+  "season": [
+   "金水",
+   "木火",
+   "春木秋金",
+   "冬金夏木"
+  ],
+  "relations": [
+   "不相碍",
+   "不相伤",
+   "相碍",
+   "相伤",
+   "两清",
+   "当令",
+   "有根",
+   "无根",
+   "同根月令",
+   "合化",
+   "化为",
+   "透",
+   "藏",
+   "逢",
+   "带",
+   "见",
+   "无",
+   "去",
+   "制",
+   "合",
+   "化",
+   "冲",
+   "刑",
+   "破",
+   "害",
+   "伤",
+   "泄",
+   "生",
+   "隔",
+   "敌",
+   "会",
+   "党",
+   "当",
+   "就",
+   "存",
+   "留",
+   "用",
+   "佩",
+   "重",
+   "轻",
+   "多",
+   "旺",
+   "强",
+   "弱",
+   "混",
+   "清",
+   "太过",
+   "有情",
+   "有力",
+   "无力",
+   "露",
+   "叠出",
+   "偏正",
+   "间之",
+   "先",
+   "后",
+   "不忌",
+   "忌",
+   "喜",
+   "运",
+   "地",
+   "乡",
+   "助身",
+   "助",
+   "护",
+   "通关",
+   "解",
+   "兼",
+   "辅",
+   "取清",
+   "弃",
+   "成格",
+   "之神",
+   "及",
+   "且",
+   "或",
+   "而",
+   "则",
+   "者",
+   "之",
+   "为",
+   "亦",
+   "与",
+   "并"
+  ]
+ },
+ "entries": [
+  {
+   "name": "阳刃",
+   "structures": [
+    "月刃格"
+   ],
+   "source": "格局-阳刃",
+   "file": "格局_刃禄.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p101）、第十三章论用神因成得败因败得成（p120–p121）、第十九章论四凶神能成格（p142，徐评一句）、第四十三章论阳刃（p271–p273）、第四十四章论阳刃取运（p277–p278）",
+   "cheng": [
+    {
+     "text": "刃当令且逢官或逢煞",
+     "core": "刃当令且逢官或逢煞",
+     "atoms": [
+      "刃当令",
+      "逢官",
+      "逢煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃逢官煞且逢财且逢印且无伤",
+     "core": "刃逢官煞且逢财且逢印且无伤",
+     "atoms": [
+      "刃逢官煞",
+      "逢财",
+      "逢印",
+      "无伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官煞透且有根〔其贵也大〕",
+     "core": "官煞透且有根",
+     "atoms": [
+      "官煞透",
+      "有根"
+     ],
+     "notes": [
+      "其贵也大"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官煞藏或官煞透且无根〔其贵也小〕",
+     "core": "官煞藏或官煞透且无根",
+     "atoms": [
+      "官煞藏",
+      "官煞透",
+      "无根"
+     ],
+     "notes": [
+      "其贵也小"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃逢官煞且逢财且逢印〔丙生午月尤宜〕",
+     "core": "刃逢官煞且逢财且逢印",
+     "atoms": [
+      "刃逢官煞",
+      "逢财",
+      "逢印"
+     ],
+     "notes": [
+      "丙生午月尤宜"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃合化印且透官或透煞〔戊生午月，去刃存印〕",
+     "core": "刃合化印且透官或透煞",
+     "atoms": [
+      "刃合化印",
+      "透官",
+      "透煞"
+     ],
+     "notes": [
+      "戊生午月，去刃存印"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃逢财且财有根且逢食伤〔转刃生财，可贵可富〕",
+     "core": "刃逢财且财有根且逢食伤",
+     "atoms": [
+      "刃逢财",
+      "财有根",
+      "逢食伤"
+     ],
+     "notes": [
+      "转刃生财，可贵可富"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "刃无官煞",
+     "core": "刃无官煞",
+     "atoms": [
+      "刃无官煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃逢煞且透刃合煞〔贪合忘克〕",
+     "core": "刃逢煞且透刃合煞",
+     "atoms": [
+      "刃逢煞",
+      "透刃合煞"
+     ],
+     "notes": [
+      "贪合忘克"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃逢官煞且逢食伤",
+     "core": "刃逢官煞且逢食伤",
+     "atoms": [
+      "刃逢官煞",
+      "逢食伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃合化印且透财且透煞〔去印存煞〕",
+     "core": "刃合化印且透财且透煞",
+     "atoms": [
+      "刃合化印",
+      "透财",
+      "透煞"
+     ],
+     "notes": [
+      "去印存煞"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "刃逢财且无食伤〔刃与财相搏〕",
+     "core": "刃逢财且无食伤",
+     "atoms": [
+      "刃逢财",
+      "无食伤"
+     ],
+     "notes": [
+      "刃与财相搏"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "刃逢官煞且逢食伤",
+      "core": "刃逢官煞且逢食伤",
+      "atoms": [
+       "刃逢官煞",
+       "逢食伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "重印护之〔印合伤或印制伤〕",
+      "core": "重印护之",
+      "atoms": [
+       "重印护之"
+      ],
+      "notes": [
+       "印合伤或印制伤"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "刃逢官煞且逢食伤→重印护之〔印合伤或印制伤〕"
+    },
+    {
+     "cause": {
+      "text": "刃逢煞重",
+      "core": "刃逢煞重",
+      "atoms": [
+       "刃逢煞重"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "食制煞〔裁损〕",
+      "core": "食制煞",
+      "atoms": [
+       "食制煞"
+      ],
+      "notes": [
+       "裁损"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "刃逢煞重→食制煞〔裁损〕"
+    },
+    {
+     "cause": {
+      "text": "刃逢官煞混",
+      "core": "刃逢官煞混",
+      "atoms": [
+       "刃逢官煞混"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合官留煞〔取清〕",
+      "core": "合官留煞",
+      "atoms": [
+       "合官留煞"
+      ],
+      "notes": [
+       "取清"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "刃逢官煞混→合官留煞〔取清〕"
+    },
+    {
+     "cause": {
+      "text": "刃逢煞且逢食",
+      "core": "刃逢煞且逢食",
+      "atoms": [
+       "刃逢煞",
+       "逢食"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "食合官留煞〔煞刃局清〕",
+      "core": "食合官留煞",
+      "atoms": [
+       "食合官留煞"
+      ],
+      "notes": [
+       "煞刃局清"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "刃逢煞且逢食→食合官留煞〔煞刃局清〕"
+    },
+    {
+     "cause": {
+      "text": "刃当令且身弱",
+      "core": "刃当令且身弱",
+      "atoms": [
+       "刃当令",
+       "身弱"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "印去食助刃〔徐〕",
+      "core": "印去食助刃",
+      "atoms": [
+       "印去食助刃"
+      ],
+      "notes": [
+       "徐"
+      ],
+      "fromXu": true,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "刃当令且身弱→印去食助刃〔徐〕"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "用官",
+     "scopeAtoms": [
+      "用官"
+     ],
+     "favor": [
+      {
+       "text": "助官运",
+       "core": "助官运",
+       "atoms": [
+        "助官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "合官运",
+       "core": "合官运",
+       "atoms": [
+        "合官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "用官且官有根",
+     "scopeAtoms": [
+      "用官",
+      "官有根"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "合官运",
+       "core": "合官运",
+       "atoms": [
+        "合官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "用煞且煞轻",
+     "scopeAtoms": [
+      "用煞",
+      "煞轻"
+     ],
+     "favor": [
+      {
+       "text": "助煞运",
+       "core": "助煞运",
+       "atoms": [
+        "助煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "用煞且煞重",
+     "scopeAtoms": [
+      "用煞",
+      "煞重"
+     ],
+     "favor": [
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [
+      {
+       "text": "伤食运不忌",
+       "core": "伤食运不忌",
+       "atoms": [
+        "伤食运不忌"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "官煞并出",
+     "scopeAtoms": [
+      "官煞并出"
+     ],
+     "favor": [
+      {
+       "text": "制伏运",
+       "core": "制伏运",
+       "atoms": [
+        "制伏运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "伏"
+       ]
+      },
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "用财",
+     "scopeAtoms": [
+      "用财"
+     ],
+     "favor": [],
+     "avoid": [],
+     "neutral": [],
+     "other": [
+      {
+       "text": "须食伤通关",
+       "core": "须食伤通关",
+       "atoms": [
+        "须食伤通关"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "须"
+       ]
+      },
+      {
+       "text": "用食伤喜财运",
+       "core": "用食伤喜财运",
+       "atoms": [
+        "用食伤喜财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "余同建禄",
+       "core": "余同建禄",
+       "atoms": [
+        "余同建禄"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "余同建"
+       ]
+      }
+     ]
+    }
+   ]
+  },
+  {
+   "name": "建禄月劫",
+   "structures": [
+    "建禄格",
+    "月劫格"
+   ],
+   "source": "格局-建禄月劫",
+   "file": "格局_刃禄.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p101）、第十章论用神变化（p107）、第十九章论四凶神能成格（p142，徐评一句）、第四十五章论建禄月劫（p281–p284）、第四十六章论建禄月劫取运（p287–p290）",
+   "cheng": [
+    {
+     "text": "禄劫当令且透官且逢财或逢印",
+     "core": "禄劫当令且透官且逢财或逢印",
+     "atoms": [
+      "禄劫当令",
+      "透官",
+      "逢财",
+      "逢印"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "禄劫当令且透财且逢食伤",
+     "core": "禄劫当令且透财且逢食伤",
+     "atoms": [
+      "禄劫当令",
+      "透财",
+      "逢食伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "禄劫当令且透煞且煞逢制",
+     "core": "禄劫当令且透煞且煞逢制",
+     "atoms": [
+      "禄劫当令",
+      "透煞",
+      "煞逢制"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "透官且逢财且逢印且财印不相伤〔三奇，以官隔之〕",
+     "core": "透官且逢财且逢印且财印不相伤",
+     "atoms": [
+      "透官",
+      "逢财",
+      "逢印",
+      "财印不相伤"
+     ],
+     "notes": [
+      "三奇，以官隔之"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "无财官且用食伤〔春木秋金则贵〕",
+     "core": "无财官且用食伤",
+     "atoms": [
+      "无财官",
+      "用食伤"
+     ],
+     "notes": [
+      "春木秋金则贵"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "劫合化财〔化劫为财〕",
+     "core": "劫合化财",
+     "atoms": [
+      "劫合化财"
+     ],
+     "notes": [
+      "化劫为财"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "劫合化食伤〔化劫为生〕",
+     "core": "劫合化食伤",
+     "atoms": [
+      "劫合化食伤"
+     ],
+     "notes": [
+      "化劫为生"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "劫合化食伤且透财〔乙生寅月会午戌透戊〕",
+     "core": "劫合化食伤且透财",
+     "atoms": [
+      "劫合化食伤",
+      "透财"
+     ],
+     "notes": [
+      "乙生寅月会午戌透戊"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "无财官且透煞或透印",
+     "core": "无财官且透煞或透印",
+     "atoms": [
+      "无财官",
+      "透煞",
+      "透印"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "透官且无财无印且逢伤〔「透伤食便不破格」句两存〕",
+     "core": "透官且无财无印且逢伤",
+     "atoms": [
+      "透官",
+      "无财无印",
+      "逢伤"
+     ],
+     "notes": [
+      "「透伤食便不破格」句两存"
+     ],
+     "fromXu": false,
+     "disputed": true,
+     "unparsed": []
+    },
+    {
+     "text": "透财且逢煞〔本书刊在伤官章，通行本归此〕",
+     "core": "透财且逢煞",
+     "atoms": [
+      "透财",
+      "逢煞"
+     ],
+     "notes": [
+      "本书刊在伤官章，通行本归此"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "透官且无财无印〔孤官无辅，格小〕",
+     "core": "透官且无财无印",
+     "atoms": [
+      "透官",
+      "无财无印"
+     ],
+     "notes": [
+      "孤官无辅，格小"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "用官逢伤",
+     "core": "用官逢伤",
+     "atoms": [
+      "用官逢伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "用财无食伤〔难于发端〕",
+     "core": "用财无食伤",
+     "atoms": [
+      "用财无食伤"
+     ],
+     "notes": [
+      "难于发端"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "用煞无制",
+     "core": "用煞无制",
+     "atoms": [
+      "用煞无制"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "用煞逢财〔财党煞〕",
+     "core": "用煞逢财",
+     "atoms": [
+      "用煞逢财"
+     ],
+     "notes": [
+      "财党煞"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官煞混",
+     "core": "官煞混",
+     "atoms": [
+      "官煞混"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "两官透且无制",
+     "core": "两官透且无制",
+     "atoms": [
+      "两官透",
+      "无制"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": [
+      "两"
+     ]
+    },
+    {
+     "text": "官煞重且无制〔身危〕",
+     "core": "官煞重且无制",
+     "atoms": [
+      "官煞重",
+      "无制"
+     ],
+     "notes": [
+      "身危"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "用官逢伤",
+      "core": "用官逢伤",
+      "atoms": [
+       "用官逢伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "伤被合〔去伤存官〕",
+      "core": "伤被合",
+      "atoms": [
+       "伤被合"
+      ],
+      "notes": [
+       "去伤存官"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": [
+       "被"
+      ]
+     },
+     "text": "用官逢伤→伤被合〔去伤存官〕"
+    },
+    {
+     "cause": {
+      "text": "用财逢煞",
+      "core": "用财逢煞",
+      "atoms": [
+       "用财逢煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "煞被合〔合煞存财〕",
+      "core": "煞被合",
+      "atoms": [
+       "煞被合"
+      ],
+      "notes": [
+       "合煞存财"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": [
+       "被"
+      ]
+     },
+     "text": "用财逢煞→煞被合〔合煞存财〕"
+    },
+    {
+     "cause": {
+      "text": "用煞逢财",
+      "core": "用煞逢财",
+      "atoms": [
+       "用煞逢财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合煞存财或合财存煞且食制煞",
+      "core": "合煞存财或合财存煞且食制煞",
+      "atoms": [
+       "合煞存财",
+       "合财存煞",
+       "食制煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "用煞逢财→合煞存财或合财存煞且食制煞"
+    },
+    {
+     "cause": {
+      "text": "官煞混",
+      "core": "官煞混",
+      "atoms": [
+       "官煞混"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合煞留官或制煞留官",
+      "core": "合煞留官或制煞留官",
+      "atoms": [
+       "合煞留官",
+       "制煞留官"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "官煞混→合煞留官或制煞留官"
+    },
+    {
+     "cause": {
+      "text": "两官透",
+      "core": "两官透",
+      "atoms": [
+       "两官透"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": [
+       "两"
+      ]
+     },
+     "fix": {
+      "text": "伤制官",
+      "core": "伤制官",
+      "atoms": [
+       "伤制官"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "两官透→伤制官"
+    },
+    {
+     "cause": {
+      "text": "用财无食伤",
+      "core": "用财无食伤",
+      "atoms": [
+       "用财无食伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "财透一位不杂且财有根多〔取富不贵〕",
+      "core": "财透一位不杂且财有根多",
+      "atoms": [
+       "财透一位不杂",
+       "财有根多"
+      ],
+      "notes": [
+       "取富不贵"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": [
+       "一位不杂"
+      ]
+     },
+     "text": "用财无食伤→财透一位不杂且财有根多〔取富不贵〕"
+    },
+    {
+     "cause": {
+      "text": "官煞重且无制",
+      "core": "官煞重且无制",
+      "atoms": [
+       "官煞重",
+       "无制"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "运行制伏〔可发财〕",
+      "core": "运行制伏",
+      "atoms": [
+       "运行制伏"
+      ],
+      "notes": [
+       "可发财"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": [
+       "行伏"
+      ]
+     },
+     "text": "官煞重且无制→运行制伏〔可发财〕"
+    },
+    {
+     "cause": {
+      "text": "官煞重且无食伤",
+      "core": "官煞重且无食伤",
+      "atoms": [
+       "官煞重",
+       "无食伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "有印〔徐〕",
+      "core": "有印",
+      "atoms": [
+       "有印"
+      ],
+      "notes": [
+       "徐"
+      ],
+      "fromXu": true,
+      "disputed": false,
+      "unparsed": [
+       "有"
+      ]
+     },
+     "text": "官煞重且无食伤→有印〔徐〕"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "用官印护",
+     "scopeAtoms": [
+      "用官印护"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "合官运",
+       "core": "合官运",
+       "atoms": [
+        "合官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "伤食运不为害",
+       "core": "伤食运不为害",
+       "atoms": [
+        "伤食运不为害"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "不"
+       ]
+      },
+      {
+       "text": "比劫运未即凶",
+       "core": "比劫运未即凶",
+       "atoms": [
+        "比劫运未即凶"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "未即凶"
+       ]
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "用官财生",
+     "scopeAtoms": [
+      "用官财生"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官有根运",
+       "core": "官有根运",
+       "atoms": [
+        "官有根运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "用财带食伤且财食重",
+     "scopeAtoms": [
+      "用财带食伤",
+      "财食重"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [
+      {
+       "text": "比劫运不忌〔徐〕",
+       "core": "比劫运不忌",
+       "atoms": [
+        "比劫运不忌"
+       ],
+       "notes": [
+        "徐"
+       ],
+       "fromXu": true,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "用财带食伤且财食轻",
+     "scopeAtoms": [
+      "用财带食伤",
+      "财食轻"
+     ],
+     "favor": [
+      {
+       "text": "助财运",
+       "core": "助财运",
+       "atoms": [
+        "助财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "煞运无伤",
+       "core": "煞运无伤",
+       "atoms": [
+        "煞运无伤"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运非福",
+       "core": "官运非福",
+       "atoms": [
+        "官运非福"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "非福"
+       ]
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "用煞食制",
+     "scopeAtoms": [
+      "用煞食制"
+     ],
+     "favor": [],
+     "avoid": [],
+     "neutral": [],
+     "other": [
+      {
+       "text": "食重煞轻喜助煞运",
+       "core": "食重煞轻喜助煞运",
+       "atoms": [
+        "食重煞轻喜助煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食轻煞重喜助食运",
+       "core": "食轻煞重喜助食运",
+       "atoms": [
+        "食轻煞重喜助食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ]
+    },
+    {
+     "scope": "合煞存财",
+     "scopeAtoms": [
+      "合煞存财"
+     ],
+     "favor": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [
+      {
+       "text": "财运不忌",
+       "core": "财运不忌",
+       "atoms": [
+        "财运不忌"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运无虑",
+       "core": "官运无虑",
+       "atoms": [
+        "官运无虑"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "虑"
+       ]
+      },
+      {
+       "text": "身旺运亦亨",
+       "core": "身旺运亦亨",
+       "atoms": [
+        "身旺运亦亨"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "亨"
+       ]
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "合财存煞且食制",
+     "scopeAtoms": [
+      "合财存煞",
+      "食制"
+     ],
+     "favor": [],
+     "avoid": [],
+     "neutral": [],
+     "other": [
+      {
+       "text": "煞轻喜助煞运",
+       "core": "煞轻喜助煞运",
+       "atoms": [
+        "煞轻喜助煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食轻喜助食运",
+       "core": "食轻喜助食运",
+       "atoms": [
+        "食轻喜助食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ]
+    },
+    {
+     "scope": "用食伤",
+     "scopeAtoms": [
+      "用食伤"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "煞运不忌",
+       "core": "煞运不忌",
+       "atoms": [
+        "煞运不忌"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤食重则印运不忌",
+       "core": "伤食重则印运不忌",
+       "atoms": [
+        "伤食重则印运不忌"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "官煞并出",
+     "scopeAtoms": [
+      "官煞并出"
+     ],
+     "favor": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比肩运",
+       "core": "比肩运",
+       "atoms": [
+        "比肩运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": [
+        "肩"
+       ]
+      }
+     ],
+     "avoid": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    }
+   ]
+  },
+  {
+   "name": "正官",
+   "structures": [
+    "正官格"
+   ],
+   "source": "格局-正官",
+   "file": "格局_官财印.md",
+   "status": "已核",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p103）、第十章论用神变化（p108）、第十八章论四吉神能破格（p140）、第十九章论四凶神能成格（p142）、第三十一章论正官（p199–p201）、第三十二章论正官取运（p204–p207）",
+   "cheng": [
+    {
+     "text": "官逢财且逢印且财印不相碍且无刑冲破害",
+     "core": "官逢财且逢印且财印不相碍且无刑冲破害",
+     "atoms": [
+      "官逢财",
+      "逢印",
+      "财印不相碍",
+      "无刑冲破害"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢财且无刑冲破害",
+     "core": "官逢财且无刑冲破害",
+     "atoms": [
+      "官逢财",
+      "无刑冲破害"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢印且无刑冲破害",
+     "core": "官逢印且无刑冲破害",
+     "atoms": [
+      "官逢印",
+      "无刑冲破害"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官化印且透财",
+     "core": "官化印且透财",
+     "atoms": [
+      "官化印",
+      "透财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "官逢伤",
+     "core": "官逢伤",
+     "atoms": [
+      "官逢伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢食",
+     "core": "官逢食",
+     "atoms": [
+      "官逢食"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢刑冲",
+     "core": "官逢刑冲",
+     "atoms": [
+      "官逢刑冲"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢合",
+     "core": "官逢合",
+     "atoms": [
+      "官逢合"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢煞混",
+     "core": "官逢煞混",
+     "atoms": [
+      "官逢煞混"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "官逢伤且用印且逢财",
+     "core": "官逢伤且用印且逢财",
+     "atoms": [
+      "官逢伤",
+      "用印",
+      "逢财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "官逢伤",
+      "core": "官逢伤",
+      "atoms": [
+       "官逢伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透印",
+      "core": "透印",
+      "atoms": [
+       "透印"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "官逢伤→透印"
+    },
+    {
+     "cause": {
+      "text": "官逢煞混",
+      "core": "官逢煞混",
+      "atoms": [
+       "官逢煞混"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合煞或制煞",
+      "core": "合煞或制煞",
+      "atoms": [
+       "合煞",
+       "制煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "官逢煞混→合煞或制煞"
+    },
+    {
+     "cause": {
+      "text": "官逢刑冲",
+      "core": "官逢刑冲",
+      "atoms": [
+       "官逢刑冲"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "会合解冲",
+      "core": "会合解冲",
+      "atoms": [
+       "会合解冲"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "官逢刑冲→会合解冲"
+    },
+    {
+     "cause": {
+      "text": "官逢伤且用印且逢财",
+      "core": "官逢伤且用印且逢财",
+      "atoms": [
+       "官逢伤",
+       "用印",
+       "逢财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合财且印制伤",
+      "core": "合财且印制伤",
+      "atoms": [
+       "合财",
+       "印制伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "官逢伤且用印且逢财→合财且印制伤"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "通",
+     "scopeAtoms": [
+      "通"
+     ],
+     "favor": [],
+     "avoid": [
+      {
+       "text": "刑冲运",
+       "core": "刑冲运",
+       "atoms": [
+        "刑冲运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官透",
+     "scopeAtoms": [
+      "官透"
+     ],
+     "favor": [],
+     "avoid": [
+      {
+       "text": "合官运",
+       "core": "合官运",
+       "atoms": [
+        "合官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官用财印且身轻",
+     "scopeAtoms": [
+      "官用财印",
+      "身轻"
+     ],
+     "favor": [
+      {
+       "text": "助身运",
+       "core": "助身运",
+       "atoms": [
+        "助身运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官用财印且官轻",
+     "scopeAtoms": [
+      "官用财印",
+      "官轻"
+     ],
+     "favor": [
+      {
+       "text": "助官运",
+       "core": "助官运",
+       "atoms": [
+        "助官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官用财",
+     "scopeAtoms": [
+      "官用财"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官用财且身旺且财轻且官轻",
+     "scopeAtoms": [
+      "官用财",
+      "身旺",
+      "财轻",
+      "官轻"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官佩印",
+     "scopeAtoms": [
+      "官佩印"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官佩印且官重且身轻",
+     "scopeAtoms": [
+      "官佩印",
+      "官重",
+      "身轻"
+     ],
+     "favor": [
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官带伤食且用印",
+     "scopeAtoms": [
+      "官带伤食",
+      "用印"
+     ],
+     "favor": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官带伤食且用印且印重",
+     "scopeAtoms": [
+      "官带伤食",
+      "用印",
+      "印重"
+     ],
+     "favor": [],
+     "avoid": [],
+     "neutral": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "官带煞且劫合煞",
+     "scopeAtoms": [
+      "官带煞",
+      "劫合煞"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "官带煞且伤合煞",
+     "scopeAtoms": [
+      "官带煞",
+      "伤合煞"
+     ],
+     "favor": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    }
+   ]
+  },
+  {
+   "name": "财",
+   "structures": [
+    "正财格",
+    "偏财格"
+   ],
+   "source": "格局-财",
+   "file": "格局_官财印.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p102）、第十章论用神变化（p107–p108）、第十八章论四吉神能破格（p140）、第十九章论四凶神能成格（p142）、第三十三章论财（p208–p211）、第三十四章论财取运（p217–p220）",
+   "cheng": [
+    {
+     "text": "财生官且身强且无伤且无煞",
+     "core": "财生官且身强且无伤且无煞",
+     "atoms": [
+      "财生官",
+      "身强",
+      "无伤",
+      "无煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢食且身强且无官",
+     "core": "财逢食且身强且无官",
+     "atoms": [
+      "财逢食",
+      "身强",
+      "无官"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢印且财印不相碍",
+     "core": "财逢印且财印不相碍",
+     "atoms": [
+      "财逢印",
+      "财印不相碍"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢食且逢印且食印不相碍",
+     "core": "财逢食且逢印且食印不相碍",
+     "atoms": [
+      "财逢食",
+      "逢印",
+      "食印不相碍"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢伤且财轻且比重",
+     "core": "财逢伤且财轻且比重",
+     "atoms": [
+      "财逢伤",
+      "财轻",
+      "比重"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢煞且合煞",
+     "core": "财逢煞且合煞",
+     "atoms": [
+      "财逢煞",
+      "合煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢煞且制煞",
+     "core": "财逢煞且制煞",
+     "atoms": [
+      "财逢煞",
+      "制煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢煞且逢印且财藏",
+     "core": "财逢煞且逢印且财藏",
+     "atoms": [
+      "财逢煞",
+      "逢印",
+      "财藏"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财透且官藏",
+     "core": "财透且官藏",
+     "atoms": [
+      "财透",
+      "官藏"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "财轻且比重",
+     "core": "财轻且比重",
+     "atoms": [
+      "财轻",
+      "比重"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢劫",
+     "core": "财逢劫",
+     "atoms": [
+      "财逢劫"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢煞",
+     "core": "财逢煞",
+     "atoms": [
+      "财逢煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财生官且逢伤",
+     "core": "财生官且逢伤",
+     "atoms": [
+      "财生官",
+      "逢伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财生官且逢合",
+     "core": "财生官且逢合",
+     "atoms": [
+      "财生官",
+      "逢合"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财生官且逢食",
+     "core": "财生官且逢食",
+     "atoms": [
+      "财生官",
+      "逢食"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财逢食且透官且身弱",
+     "core": "财逢食且透官且身弱",
+     "atoms": [
+      "财逢食",
+      "透官",
+      "身弱"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财透且煞透且印轻",
+     "core": "财透且煞透且印轻",
+     "atoms": [
+      "财透",
+      "煞透",
+      "印轻"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财旺且无劫且透伤且无印〔徐：则须佩印〕",
+     "core": "财旺且无劫且透伤且无印",
+     "atoms": [
+      "财旺",
+      "无劫",
+      "透伤",
+      "无印"
+     ],
+     "notes": [
+      "徐：则须佩印"
+     ],
+     "fromXu": true,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "财化煞",
+     "core": "财化煞",
+     "atoms": [
+      "财化煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "财逢劫",
+      "core": "财逢劫",
+      "atoms": [
+       "财逢劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透食化劫",
+      "core": "透食化劫",
+      "atoms": [
+       "透食化劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财逢劫→透食化劫"
+    },
+    {
+     "cause": {
+      "text": "财逢劫",
+      "core": "财逢劫",
+      "atoms": [
+       "财逢劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透官制劫",
+      "core": "透官制劫",
+      "atoms": [
+       "透官制劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财逢劫→透官制劫"
+    },
+    {
+     "cause": {
+      "text": "财逢劫",
+      "core": "财逢劫",
+      "atoms": [
+       "财逢劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "伤化劫",
+      "core": "伤化劫",
+      "atoms": [
+       "伤化劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财逢劫→伤化劫"
+    },
+    {
+     "cause": {
+      "text": "财逢煞",
+      "core": "财逢煞",
+      "atoms": [
+       "财逢煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "食制煞",
+      "core": "食制煞",
+      "atoms": [
+       "食制煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财逢煞→食制煞"
+    },
+    {
+     "cause": {
+      "text": "财逢煞",
+      "core": "财逢煞",
+      "atoms": [
+       "财逢煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合煞",
+      "core": "合煞",
+      "atoms": [
+       "合煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财逢煞→合煞"
+    },
+    {
+     "cause": {
+      "text": "财逢煞",
+      "core": "财逢煞",
+      "atoms": [
+       "财逢煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "刃敌煞",
+      "core": "刃敌煞",
+      "atoms": [
+       "刃敌煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财逢煞→刃敌煞"
+    },
+    {
+     "cause": {
+      "text": "财化煞",
+      "core": "财化煞",
+      "atoms": [
+       "财化煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透食制煞",
+      "core": "透食制煞",
+      "atoms": [
+       "透食制煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "财化煞→透食制煞"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "财生官",
+     "scopeAtoms": [
+      "财生官"
+     ],
+     "favor": [
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤运",
+       "core": "伤运",
+       "atoms": [
+        "伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财生官且透印",
+     "scopeAtoms": [
+      "财生官",
+      "透印"
+     ],
+     "favor": [],
+     "avoid": [],
+     "neutral": [
+      {
+       "text": "伤运",
+       "core": "伤运",
+       "atoms": [
+        "伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "财生官且带食",
+     "scopeAtoms": [
+      "财生官",
+      "带食"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "财用食且身轻",
+     "scopeAtoms": [
+      "财用食",
+      "身轻"
+     ],
+     "favor": [
+      {
+       "text": "助身运",
+       "core": "助身运",
+       "atoms": [
+        "助身运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财用食且身重",
+     "scopeAtoms": [
+      "财用食",
+      "身重"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食运",
+       "core": "食运",
+       "atoms": [
+        "食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "财佩印",
+     "scopeAtoms": [
+      "财佩印"
+     ],
+     "favor": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财佩印且身弱",
+     "scopeAtoms": [
+      "财佩印",
+      "身弱"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财用食印且财轻",
+     "scopeAtoms": [
+      "财用食印",
+      "财轻"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食运",
+       "core": "食运",
+       "atoms": [
+        "食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财用食印且身轻",
+     "scopeAtoms": [
+      "财用食印",
+      "身轻"
+     ],
+     "favor": [
+      {
+       "text": "比运",
+       "core": "比运",
+       "atoms": [
+        "比运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "财带伤",
+     "scopeAtoms": [
+      "财带伤"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财带煞",
+     "scopeAtoms": [
+      "财带煞"
+     ],
+     "favor": [
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财用煞印",
+     "scopeAtoms": [
+      "财用煞印"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    }
+   ]
+  },
+  {
+   "name": "印绶",
+   "structures": [
+    "正印格",
+    "偏印格"
+   ],
+   "source": "格局-印绶",
+   "file": "格局_官财印.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p102）、第十章论用神变化（p107–p108）、第十三章论用神因成得败因败得成（p120–p121）、第十八章论四吉神能破格（p140）、第十九章论四凶神能成格（p142）、第三十五章论印绶（p222–p225）、第三十六章论印绶取运（p228–p232）",
+   "cheng": [
+    {
+     "text": "印轻逢煞",
+     "core": "印轻逢煞",
+     "atoms": [
+      "印轻逢煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢官",
+     "core": "印逢官",
+     "atoms": [
+      "印逢官"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢官且官清",
+     "core": "印逢官且官清",
+     "atoms": [
+      "印逢官",
+      "官清"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢官且逢食伤且印制食伤",
+     "core": "印逢官且逢食伤且印制食伤",
+     "atoms": [
+      "印逢官",
+      "逢食伤",
+      "印制食伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印重且身强且逢食伤",
+     "core": "印重且身强且逢食伤",
+     "atoms": [
+      "印重",
+      "身强",
+      "逢食伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印多且逢财且财轻",
+     "core": "印多且逢财且财轻",
+     "atoms": [
+      "印多",
+      "逢财",
+      "财轻"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印重且身强且逢财且印有根",
+     "core": "印重且身强且逢财且印有根",
+     "atoms": [
+      "印重",
+      "身强",
+      "逢财",
+      "印有根"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢煞且身重且印轻",
+     "core": "印逢煞且身重且印轻",
+     "atoms": [
+      "印逢煞",
+      "身重",
+      "印轻"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢煞且身轻且印重",
+     "core": "印逢煞且身轻且印重",
+     "atoms": [
+      "印逢煞",
+      "身轻",
+      "印重"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢煞且逢食伤",
+     "core": "印逢煞且逢食伤",
+     "atoms": [
+      "印逢煞",
+      "逢食伤"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢官且逢煞且合煞",
+     "core": "印逢官且逢煞且合煞",
+     "atoms": [
+      "印逢官",
+      "逢煞",
+      "合煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢官且逢煞且制煞",
+     "core": "印逢官且逢煞且制煞",
+     "atoms": [
+      "印逢官",
+      "逢煞",
+      "制煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "印轻逢财",
+     "core": "印轻逢财",
+     "atoms": [
+      "印轻逢财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印重且身强且逢煞",
+     "core": "印重且身强且逢煞",
+     "atoms": [
+      "印重",
+      "身强",
+      "逢煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢食且逢财",
+     "core": "印逢食且逢财",
+     "atoms": [
+      "印逢食",
+      "逢财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印逢煞且逢财",
+     "core": "印逢煞且逢财",
+     "atoms": [
+      "印逢煞",
+      "逢财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印轻且财重且无劫",
+     "core": "印轻且财重且无劫",
+     "atoms": [
+      "印轻",
+      "财重",
+      "无劫"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印轻且身轻且伤食多",
+     "core": "印轻且身轻且伤食多",
+     "atoms": [
+      "印轻",
+      "身轻",
+      "伤食多"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印重且逢财且逢煞",
+     "core": "印重且逢财且逢煞",
+     "atoms": [
+      "印重",
+      "逢财",
+      "逢煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "印化劫",
+     "core": "印化劫",
+     "atoms": [
+      "印化劫"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "印逢财",
+      "core": "印逢财",
+      "atoms": [
+       "印逢财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "劫制财",
+      "core": "劫制财",
+      "atoms": [
+       "劫制财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "印逢财→劫制财"
+    },
+    {
+     "cause": {
+      "text": "印逢财",
+      "core": "印逢财",
+      "atoms": [
+       "印逢财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合财",
+      "core": "合财",
+      "atoms": [
+       "合财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "印逢财→合财"
+    },
+    {
+     "cause": {
+      "text": "印逢煞且逢财",
+      "core": "印逢煞且逢财",
+      "atoms": [
+       "印逢煞",
+       "逢财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "劫制财",
+      "core": "劫制财",
+      "atoms": [
+       "劫制财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "印逢煞且逢财→劫制财"
+    },
+    {
+     "cause": {
+      "text": "印化劫",
+      "core": "印化劫",
+      "atoms": [
+       "印化劫"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透印或透煞",
+      "core": "透印或透煞",
+      "atoms": [
+       "透印",
+       "透煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "印化劫→透印或透煞"
+    },
+    {
+     "cause": {
+      "text": "印逢官且逢伤",
+      "core": "印逢官且逢伤",
+      "atoms": [
+       "印逢官",
+       "逢伤"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "印隔伤官",
+      "core": "印隔伤官",
+      "atoms": [
+       "印隔伤官"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "印逢官且逢伤→印隔伤官"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "印用官且官透且印重",
+     "scopeAtoms": [
+      "印用官",
+      "官透",
+      "印重"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "印用官且带伤食",
+     "scopeAtoms": [
+      "印用官",
+      "带伤食"
+     ],
+     "favor": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "印用伤食",
+     "scopeAtoms": [
+      "印用伤食"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "印用煞",
+     "scopeAtoms": [
+      "印用煞"
+     ],
+     "favor": [
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "印用煞且带伤食",
+     "scopeAtoms": [
+      "印用煞",
+      "带伤食"
+     ],
+     "favor": [
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤食运",
+       "core": "伤食运",
+       "atoms": [
+        "伤食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "印逢财",
+     "scopeAtoms": [
+      "印逢财"
+     ],
+     "favor": [
+      {
+       "text": "劫运",
+       "core": "劫运",
+       "atoms": [
+        "劫运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "印逢官煞",
+     "scopeAtoms": [
+      "印逢官煞"
+     ],
+     "favor": [
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "身旺运",
+       "core": "身旺运",
+       "atoms": [
+        "身旺运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官煞运",
+       "core": "官煞运",
+       "atoms": [
+        "官煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "印用食伤且印轻",
+     "scopeAtoms": [
+      "印用食伤",
+      "印轻"
+     ],
+     "favor": [],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    }
+   ]
+  },
+  {
+   "name": "食神",
+   "structures": [
+    "食神格"
+   ],
+   "source": "格局-食神",
+   "file": "格局_食煞伤.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p101）、第十八章论四吉神能破格（p140）、第十九章论四凶神能成格（p142）、第三十七章论食神（p234–p236）、第三十八章论食神取运（p240–p243）。第十章、第十三章无食神格的句子。",
+   "cheng": [
+    {
+     "text": "食生财",
+     "core": "食生财",
+     "atoms": [
+      "食生财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食生财且身强且财有根（大贵）",
+     "core": "食生财且身强且财有根",
+     "atoms": [
+      "食生财",
+      "身强",
+      "财有根"
+     ],
+     "notes": [
+      "大贵"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食带煞且无财",
+     "core": "食带煞且无财",
+     "atoms": [
+      "食带煞",
+      "无财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食带煞且透印（弃食就煞）",
+     "core": "食带煞且透印",
+     "atoms": [
+      "食带煞",
+      "透印"
+     ],
+     "notes": [
+      "弃食就煞"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食带煞且枭制食（弃食就煞）",
+     "core": "食带煞且枭制食",
+     "atoms": [
+      "食带煞",
+      "枭制食"
+     ],
+     "notes": [
+      "弃食就煞"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食带煞且金水（贵而且秀）",
+     "core": "食带煞且金水",
+     "atoms": [
+      "食带煞",
+      "金水"
+     ],
+     "notes": [
+      "贵而且秀"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食逢官且逢煞（成局不甚贵）",
+     "core": "食逢官且逢煞",
+     "atoms": [
+      "食逢官",
+      "逢煞"
+     ],
+     "notes": [
+      "成局不甚贵"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "食逢枭",
+     "core": "食逢枭",
+     "atoms": [
+      "食逢枭"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食生财且露煞",
+     "core": "食生财且露煞",
+     "atoms": [
+      "食生财",
+      "露煞"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食带煞且带印且逢财",
+     "core": "食带煞且带印且逢财",
+     "atoms": [
+      "食带煞",
+      "带印",
+      "逢财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食带煞且透财",
+     "core": "食带煞且透财",
+     "atoms": [
+      "食带煞",
+      "透财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食逢官（金水不忌）",
+     "core": "食逢官",
+     "atoms": [
+      "食逢官"
+     ],
+     "notes": [
+      "金水不忌"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "食生财且财偏正叠出（富贵不巨）",
+     "core": "食生财且财偏正叠出",
+     "atoms": [
+      "食生财",
+      "财偏正叠出"
+     ],
+     "notes": [
+      "富贵不巨"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "食逢枭",
+      "core": "食逢枭",
+      "atoms": [
+       "食逢枭"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透煞就煞成格",
+      "core": "透煞就煞成格",
+      "atoms": [
+       "透煞就煞成格"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "食逢枭→透煞就煞成格"
+    },
+    {
+     "cause": {
+      "text": "食逢枭",
+      "core": "食逢枭",
+      "atoms": [
+       "食逢枭"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透财制枭",
+      "core": "透财制枭",
+      "atoms": [
+       "透财制枭"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "食逢枭→透财制枭"
+    },
+    {
+     "cause": {
+      "text": "食逢枭且木火",
+      "core": "食逢枭且木火",
+      "atoms": [
+       "食逢枭",
+       "木火"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "不忌（调候）",
+      "core": "不忌",
+      "atoms": [
+       "不忌"
+      ],
+      "notes": [
+       "调候"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "食逢枭且木火→不忌（调候）"
+    },
+    {
+     "cause": {
+      "text": "食带煞且见财",
+      "core": "食带煞且见财",
+      "atoms": [
+       "食带煞",
+       "见财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "财先煞后且食间之（财不党煞）",
+      "core": "财先煞后且食间之",
+      "atoms": [
+       "财先煞后",
+       "食间之"
+      ],
+      "notes": [
+       "财不党煞"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "食带煞且见财→财先煞后且食间之（财不党煞）"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "食生财",
+     "scopeAtoms": [
+      "食生财"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运（财食轻）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "财食轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运（财食重）",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [
+        "财食重"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "食用煞印",
+     "scopeAtoms": [
+      "食用煞印"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运（身旺）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "身旺"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "食带煞无印",
+     "scopeAtoms": [
+      "食带煞无印"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运（身旺）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "身旺"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运（食重煞轻）",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [
+        "食重煞轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "食太旺带印",
+     "scopeAtoms": [
+      "食太旺带印"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "食带印透财",
+     "scopeAtoms": [
+      "食带印透财"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    }
+   ]
+  },
+  {
+   "name": "偏官",
+   "structures": [
+    "七杀格"
+   ],
+   "source": "格局-偏官",
+   "file": "格局_食煞伤.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p101）、第十章论用神变化（p107）、第十八章论四吉神能破格（p140）、第十九章论四凶神能成格（p142）、第三十九章论偏官（p245–p248）、第四十章论偏官取运（p251–p254）。第十三章\"煞刃逢食\"一例属阳刃格，不抄。",
+   "cheng": [
+    {
+     "text": "煞逢制且身强",
+     "core": "煞逢制且身强",
+     "atoms": [
+      "煞逢制",
+      "身强"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞逢食制且煞旺且食强且身强（极贵）",
+     "core": "煞逢食制且煞旺且食强且身强",
+     "atoms": [
+      "煞逢食制",
+      "煞旺",
+      "食强",
+      "身强"
+     ],
+     "notes": [
+      "极贵"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞逢印（煞印有情）",
+     "core": "煞逢印",
+     "atoms": [
+      "煞逢印"
+     ],
+     "notes": [
+      "煞印有情"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞重且身轻且逢印（许贵不大）",
+     "core": "煞重且身轻且逢印",
+     "atoms": [
+      "煞重",
+      "身轻",
+      "逢印"
+     ],
+     "notes": [
+      "许贵不大"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "身重且煞轻且煞化印且透财（借财清格）",
+     "core": "身重且煞轻且煞化印且透财",
+     "atoms": [
+      "身重",
+      "煞轻",
+      "煞化印",
+      "透财"
+     ],
+     "notes": [
+      "借财清格"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞无食且刃当煞（两存）",
+     "core": "煞无食且刃当煞",
+     "atoms": [
+      "煞无食",
+      "刃当煞"
+     ],
+     "notes": [
+      "两存"
+     ],
+     "fromXu": false,
+     "disputed": true,
+     "unparsed": []
+    },
+    {
+     "text": "煞无食且印化煞（本书异文另说，取运章与通行本作刃）",
+     "core": "煞无食且印化煞",
+     "atoms": [
+      "煞无食",
+      "印化煞"
+     ],
+     "notes": [
+      "本书异文另说，取运章与通行本作刃"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞当令且透印（化煞为印）",
+     "core": "煞当令且透印",
+     "atoms": [
+      "煞当令",
+      "透印"
+     ],
+     "notes": [
+      "化煞为印"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "煞逢财且无制",
+     "core": "煞逢财且无制",
+     "atoms": [
+      "煞逢财",
+      "无制"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞逢食制且逢印",
+     "core": "煞逢食制且逢印",
+     "atoms": [
+      "煞逢食制",
+      "逢印"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞逢食制且露财",
+     "core": "煞逢食制且露财",
+     "atoms": [
+      "煞逢食制",
+      "露财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞重且食轻且露印",
+     "core": "煞重且食轻且露印",
+     "atoms": [
+      "煞重",
+      "食轻",
+      "露印"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞逢官混",
+     "core": "煞逢官混",
+     "atoms": [
+      "煞逢官混"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "身强且煞轻（徐）",
+     "core": "身强且煞轻",
+     "atoms": [
+      "身强",
+      "煞轻"
+     ],
+     "notes": [
+      "徐"
+     ],
+     "fromXu": true,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "煞重且身弱（徐）",
+     "core": "煞重且身弱",
+     "atoms": [
+      "煞重",
+      "身弱"
+     ],
+     "notes": [
+      "徐"
+     ],
+     "fromXu": true,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "煞逢食制且逢印",
+      "core": "煞逢食制且逢印",
+      "atoms": [
+       "煞逢食制",
+       "逢印"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透财去印存食",
+      "core": "透财去印存食",
+      "atoms": [
+       "透财去印存食"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "煞逢食制且逢印→透财去印存食"
+    },
+    {
+     "cause": {
+      "text": "煞逢食制且露财",
+      "core": "煞逢食制且露财",
+      "atoms": [
+       "煞逢食制",
+       "露财"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "财先食后（财生煞而食制之）",
+      "core": "财先食后",
+      "atoms": [
+       "财先食后"
+      ],
+      "notes": [
+       "财生煞而食制之"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "煞逢食制且露财→财先食后（财生煞而食制之）"
+    },
+    {
+     "cause": {
+      "text": "煞逢食制且透印",
+      "core": "煞逢食制且透印",
+      "atoms": [
+       "煞逢食制",
+       "透印"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "印先食后且食重（印制食）",
+      "core": "印先食后且食重",
+      "atoms": [
+       "印先食后",
+       "食重"
+      ],
+      "notes": [
+       "印制食"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "煞逢食制且透印→印先食后且食重（印制食）"
+    },
+    {
+     "cause": {
+      "text": "煞逢官混",
+      "core": "煞逢官混",
+      "atoms": [
+       "煞逢官混"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "去官或去煞（取清）",
+      "core": "去官或去煞",
+      "atoms": [
+       "去官",
+       "去煞"
+      ],
+      "notes": [
+       "取清"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "煞逢官混→去官或去煞（取清）"
+    },
+    {
+     "cause": {
+      "text": "煞重且身轻",
+      "core": "煞重且身轻",
+      "atoms": [
+       "煞重",
+       "身轻"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "弃食就印",
+      "core": "弃食就印",
+      "atoms": [
+       "弃食就印"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "煞重且身轻→弃食就印"
+    },
+    {
+     "cause": {
+      "text": "煞逢制太过",
+      "core": "煞逢制太过",
+      "atoms": [
+       "煞逢制太过"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "财运或印运（身强宜财，身弱宜印）",
+      "core": "财运或印运",
+      "atoms": [
+       "财运",
+       "印运"
+      ],
+      "notes": [
+       "身强宜财，身弱宜印"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "煞逢制太过→财运或印运（身强宜财，身弱宜印）"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "煞用食制",
+     "scopeAtoms": [
+      "煞用食制"
+     ],
+     "favor": [
+      {
+       "text": "食伤运（煞重食轻）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "煞重食轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运（煞轻食重）",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [
+        "煞轻食重"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运（煞食均且身轻）",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [
+        "煞食均且身轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "煞用印",
+     "scopeAtoms": [
+      "煞用印"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [
+      {
+       "text": "伤官运（原文「为美」，徐评降为不忌）",
+       "core": "伤官运",
+       "atoms": [
+        "伤官运"
+       ],
+       "notes": [
+        "原文「为美」，徐评降为不忌"
+       ],
+       "fromXu": true,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "other": []
+    },
+    {
+     "scope": "煞用财去印存食",
+     "scopeAtoms": [
+      "煞用财去印存食"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "劫运",
+       "core": "劫运",
+       "atoms": [
+        "劫运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "财滋弱煞",
+     "scopeAtoms": [
+      "财滋弱煞"
+     ],
+     "favor": [
+      {
+       "text": "食运",
+       "core": "食运",
+       "atoms": [
+        "食运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运（财已足）",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [
+        "财已足"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运（财未足）",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [
+        "财未足"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "煞带官",
+     "scopeAtoms": [
+      "煞带官"
+     ],
+     "favor": [
+      {
+       "text": "比劫运（身轻）",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [
+        "身轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食运（食轻）",
+       "core": "食运",
+       "atoms": [
+        "食运"
+       ],
+       "notes": [
+        "食轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "去取清之神运",
+       "core": "去取清之神运",
+       "atoms": [
+        "去取清之神运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤制煞之神运",
+       "core": "伤制煞之神运",
+       "atoms": [
+        "伤制煞之神运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "煞用刃",
+     "scopeAtoms": [
+      "煞用刃"
+     ],
+     "favor": [
+      {
+       "text": "煞运（煞轻刃重）",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [
+        "煞轻刃重"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运（刃轻煞重）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "刃轻煞重"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    }
+   ]
+  },
+  {
+   "name": "伤官",
+   "structures": [
+    "伤官格"
+   ],
+   "source": "格局-伤官",
+   "file": "格局_食煞伤.md",
+   "status": "已裁",
+   "outline": "《子平真诠评注》第九章论用神成败救应（p097–p101）、第十章论用神变化（p106–p108）、第十三章论用神因成得败因败得成（p120）、第十八章论四吉神能破格（p140）、第三十七章论食神（p236，合煞存财一句）、第四十一章论伤官（p256–p259）、第四十二章论伤官取运（p266–p269）。",
+   "cheng": [
+    {
+     "text": "伤生财且身强且财有根",
+     "core": "伤生财且身强且财有根",
+     "atoms": [
+      "伤生财",
+      "身强",
+      "财有根"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤佩印且伤旺且印有根且身弱",
+     "core": "伤佩印且伤旺且印有根且身弱",
+     "atoms": [
+      "伤佩印",
+      "伤旺",
+      "印有根",
+      "身弱"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤旺且身弱且透煞且透印",
+     "core": "伤旺且身弱且透煞且透印",
+     "atoms": [
+      "伤旺",
+      "身弱",
+      "透煞",
+      "透印"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤带煞且无财",
+     "core": "伤带煞且无财",
+     "atoms": [
+      "伤带煞",
+      "无财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤会合化财（化伤为财）",
+     "core": "伤会合化财",
+     "atoms": [
+      "伤会合化财"
+     ],
+     "notes": [
+      "化伤为财"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤藏且透财（化为财）",
+     "core": "伤藏且透财",
+     "atoms": [
+      "伤藏",
+      "透财"
+     ],
+     "notes": [
+      "化为财"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤透且财透且同根月令（财伤有情）",
+     "core": "伤透且财透且同根月令",
+     "atoms": [
+      "伤透",
+      "财透",
+      "同根月令"
+     ],
+     "notes": [
+      "财伤有情"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤兼用财印且财印两清不相碍",
+     "core": "伤兼用财印且财印两清不相碍",
+     "atoms": [
+      "伤兼用财印",
+      "财印两清不相碍"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤用煞印且无财",
+     "core": "伤用煞印且无财",
+     "atoms": [
+      "伤用煞印",
+      "无财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤用官且金水且财印为辅",
+     "core": "伤用官且金水且财印为辅",
+     "atoms": [
+      "伤用官",
+      "金水",
+      "财印为辅"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤用官且金水且伤化财（极贵）",
+     "core": "伤用官且金水且伤化财",
+     "atoms": [
+      "伤用官",
+      "金水",
+      "伤化财"
+     ],
+     "notes": [
+      "极贵"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤佩印且木火（秀之尤秀）",
+     "core": "伤佩印且木火",
+     "atoms": [
+      "伤佩印",
+      "木火"
+     ],
+     "notes": [
+      "秀之尤秀"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "bai": [
+    {
+     "text": "伤逢官（金水不忌）",
+     "core": "伤逢官",
+     "atoms": [
+      "伤逢官"
+     ],
+     "notes": [
+      "金水不忌"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤生财且带煞（两存：通行本另有\"身轻\"）",
+     "core": "伤生财且带煞",
+     "atoms": [
+      "伤生财",
+      "带煞"
+     ],
+     "notes": [
+      "两存：通行本另有\"身轻\""
+     ],
+     "fromXu": false,
+     "disputed": true,
+     "unparsed": []
+    },
+    {
+     "text": "伤佩印且伤轻且身旺",
+     "core": "伤佩印且伤轻且身旺",
+     "atoms": [
+      "伤佩印",
+      "伤轻",
+      "身旺"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤生财且财逢合",
+     "core": "伤生财且财逢合",
+     "atoms": [
+      "伤生财",
+      "财逢合"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤佩印且印逢财",
+     "core": "伤佩印且印逢财",
+     "atoms": [
+      "伤佩印",
+      "印逢财"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤轻且身重且印多（贫）",
+     "core": "伤轻且身重且印多",
+     "atoms": [
+      "伤轻",
+      "身重",
+      "印多"
+     ],
+     "notes": [
+      "贫"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤兼用财印且财印相碍",
+     "core": "伤兼用财印且财印相碍",
+     "atoms": [
+      "伤兼用财印",
+      "财印相碍"
+     ],
+     "notes": [],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤用官且官无财印辅（发福不大）",
+     "core": "伤用官且官无财印辅",
+     "atoms": [
+      "伤用官",
+      "官无财印辅"
+     ],
+     "notes": [
+      "发福不大"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤用官且官伤并透（发福不大）",
+     "core": "伤用官且官伤并透",
+     "atoms": [
+      "伤用官",
+      "官伤并透"
+     ],
+     "notes": [
+      "发福不大"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    },
+    {
+     "text": "伤带煞且会财党煞（因成得败）",
+     "core": "伤带煞且会财党煞",
+     "atoms": [
+      "伤带煞",
+      "会财党煞"
+     ],
+     "notes": [
+      "因成得败"
+     ],
+     "fromXu": false,
+     "disputed": false,
+     "unparsed": []
+    }
+   ],
+   "jiu": [
+    {
+     "cause": {
+      "text": "伤逢官",
+      "core": "伤逢官",
+      "atoms": [
+       "伤逢官"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "伤化财（作财旺生官）",
+      "core": "伤化财",
+      "atoms": [
+       "伤化财"
+      ],
+      "notes": [
+       "作财旺生官"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "伤逢官→伤化财（作财旺生官）"
+    },
+    {
+     "cause": {
+      "text": "伤逢官",
+      "core": "伤逢官",
+      "atoms": [
+       "伤逢官"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "透财（伤生财来生官）（徐）",
+      "core": "透财",
+      "atoms": [
+       "透财"
+      ],
+      "notes": [
+       "伤生财来生官",
+       "徐"
+      ],
+      "fromXu": true,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "伤逢官→透财（伤生财来生官）（徐）"
+    },
+    {
+     "cause": {
+      "text": "伤生财且透煞",
+      "core": "伤生财且透煞",
+      "atoms": [
+       "伤生财",
+       "透煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "合煞",
+      "core": "合煞",
+      "atoms": [
+       "合煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "伤生财且透煞→合煞"
+    },
+    {
+     "cause": {
+      "text": "伤逢官且逢煞",
+      "core": "伤逢官且逢煞",
+      "atoms": [
+       "伤逢官",
+       "逢煞"
+      ],
+      "notes": [],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "fix": {
+      "text": "取清（制或合）",
+      "core": "取清",
+      "atoms": [
+       "取清"
+      ],
+      "notes": [
+       "制或合"
+      ],
+      "fromXu": false,
+      "disputed": false,
+      "unparsed": []
+     },
+     "text": "伤逢官且逢煞→取清（制或合）"
+    }
+   ],
+   "yun": [
+    {
+     "scope": "伤用财",
+     "scopeAtoms": [
+      "伤用财"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运（财旺身轻）",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [
+        "财旺身轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "伤官运（身强财浅）",
+       "core": "伤官运",
+       "atoms": [
+        "伤官运"
+       ],
+       "notes": [
+        "身强财浅"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "伤佩印",
+     "scopeAtoms": [
+      "伤佩印"
+     ],
+     "favor": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "煞运",
+       "core": "煞运",
+       "atoms": [
+        "煞运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运（不碍）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "不碍"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "伤兼用财印",
+     "scopeAtoms": [
+      "伤兼用财印"
+     ],
+     "favor": [
+      {
+       "text": "印运（财多带印）",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [
+        "财多带印"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运（印多带财）",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [
+        "印多带财"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "伤用煞印",
+     "scopeAtoms": [
+      "伤用煞印"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "官运",
+       "core": "官运",
+       "atoms": [
+        "官运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "伤带煞无印",
+     "scopeAtoms": [
+      "伤带煞无印"
+     ],
+     "favor": [
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "财运（伤重煞轻）",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [
+        "伤重煞轻"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "食伤运（煞根重）",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [
+        "煞根重"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运（煞根重）",
+       "core": "比劫运",
+       "atoms": [
+        "比劫运"
+       ],
+       "notes": [
+        "煞根重"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "财运（伤重煞轻者除外）",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [
+        "伤重煞轻者除外"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    },
+    {
+     "scope": "伤用官",
+     "scopeAtoms": [
+      "伤用官"
+     ],
+     "favor": [
+      {
+       "text": "财运",
+       "core": "财运",
+       "atoms": [
+        "财运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "印运",
+       "core": "印运",
+       "atoms": [
+        "印运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      },
+      {
+       "text": "比劫运与伤官运（官露且财印两旺）",
+       "core": "比劫运与伤官运",
+       "atoms": [
+        "比劫运与伤官运"
+       ],
+       "notes": [
+        "官露且财印两旺"
+       ],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "avoid": [
+      {
+       "text": "食伤运",
+       "core": "食伤运",
+       "atoms": [
+        "食伤运"
+       ],
+       "notes": [],
+       "fromXu": false,
+       "disputed": false,
+       "unparsed": []
+      }
+     ],
+     "neutral": [],
+     "other": []
+    }
+   ]
+  }
+ ]
+}

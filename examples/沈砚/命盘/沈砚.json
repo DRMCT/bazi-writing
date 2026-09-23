@@ -1,0 +1,2471 @@
+{
+  "schema": "bazi-chart/v1",
+  "calendar": {
+    "mode": "fictional",
+    "storyEpochBirthYear": 300
+  },
+  "name": "沈砚",
+  "gender": "male",
+  "fourPillars": {
+    "year": "甲申",
+    "month": "壬申",
+    "day": "乙巳",
+    "hour": "戊寅"
+  },
+  "birth": null,
+  "natal": {
+    "dayMaster": "乙木",
+    "stems": {
+      "year": {
+        "stem": "甲木",
+        "tenGod": "劫财"
+      },
+      "month": {
+        "stem": "壬水",
+        "tenGod": "正印"
+      },
+      "day": {
+        "stem": "乙木",
+        "tenGod": "日主"
+      },
+      "hour": {
+        "stem": "戊土",
+        "tenGod": "正财"
+      }
+    },
+    "hiddenStems": {
+      "year": [
+        {
+          "stem": "庚金",
+          "tenGod": "正官",
+          "layer": "本气"
+        },
+        {
+          "stem": "壬水",
+          "tenGod": "正印",
+          "layer": "中气"
+        },
+        {
+          "stem": "戊土",
+          "tenGod": "正财",
+          "layer": "余气"
+        }
+      ],
+      "month": [
+        {
+          "stem": "庚金",
+          "tenGod": "正官",
+          "layer": "本气"
+        },
+        {
+          "stem": "壬水",
+          "tenGod": "正印",
+          "layer": "中气"
+        },
+        {
+          "stem": "戊土",
+          "tenGod": "正财",
+          "layer": "余气"
+        }
+      ],
+      "day": [
+        {
+          "stem": "丙火",
+          "tenGod": "伤官",
+          "layer": "本气"
+        },
+        {
+          "stem": "庚金",
+          "tenGod": "正官",
+          "layer": "中气"
+        },
+        {
+          "stem": "戊土",
+          "tenGod": "正财",
+          "layer": "余气"
+        }
+      ],
+      "hour": [
+        {
+          "stem": "甲木",
+          "tenGod": "劫财",
+          "layer": "本气"
+        },
+        {
+          "stem": "丙火",
+          "tenGod": "伤官",
+          "layer": "中气"
+        },
+        {
+          "stem": "戊土",
+          "tenGod": "正财",
+          "layer": "余气"
+        }
+      ]
+    },
+    "structure": {
+      "name": "正印格",
+      "base": "正官格",
+      "variation": "藏透",
+      "also": [],
+      "basis": "月令申本气庚金为正官当旺，未透干仍以当旺之神取正官格；本气不透而中气壬水透于月干为正印，舍本气而用透者，变格取正印格"
+    }
+  },
+  "dayun": {
+    "forward": true,
+    "startAgeYears": 3.0,
+    "startAgeLabel": "3年",
+    "steps": [
+      {
+        "sequence": 1,
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13,
+        "startYear": 303,
+        "endYear": 313
+      },
+      {
+        "sequence": 2,
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23,
+        "startYear": 313,
+        "endYear": 323
+      },
+      {
+        "sequence": 3,
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33,
+        "startYear": 323,
+        "endYear": 333
+      },
+      {
+        "sequence": 4,
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43,
+        "startYear": 333,
+        "endYear": 343
+      },
+      {
+        "sequence": 5,
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53,
+        "startYear": 343,
+        "endYear": 353
+      },
+      {
+        "sequence": 6,
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63,
+        "startYear": 353,
+        "endYear": 363
+      },
+      {
+        "sequence": 7,
+        "pillar": "己卯",
+        "startAge": 63,
+        "endAge": 73,
+        "startYear": 363,
+        "endYear": 373
+      },
+      {
+        "sequence": 8,
+        "pillar": "庚辰",
+        "startAge": 73,
+        "endAge": 83,
+        "startYear": 373,
+        "endYear": 383
+      },
+      {
+        "sequence": 9,
+        "pillar": "辛巳",
+        "startAge": 83,
+        "endAge": 93,
+        "startYear": 383,
+        "endYear": 393
+      },
+      {
+        "sequence": 10,
+        "pillar": "壬午",
+        "startAge": 93,
+        "endAge": 103,
+        "startYear": 393,
+        "endYear": 403
+      },
+      {
+        "sequence": 11,
+        "pillar": "癸未",
+        "startAge": 103,
+        "endAge": 113,
+        "startYear": 403,
+        "endYear": 413
+      },
+      {
+        "sequence": 12,
+        "pillar": "甲申",
+        "startAge": 113,
+        "endAge": 123,
+        "startYear": 413,
+        "endYear": 423
+      }
+    ]
+  },
+  "relations": {
+    "pairs": [
+      {
+        "between": [
+          "year",
+          "day"
+        ],
+        "label": "年日",
+        "branches": [
+          "六合",
+          "刑"
+        ],
+        "stemHe": false,
+        "tianKeDiChong": false,
+        "liuHeElement": "水",
+        "xing": "巳刑申"
+      },
+      {
+        "between": [
+          "year",
+          "hour"
+        ],
+        "label": "年时",
+        "branches": [
+          "六冲",
+          "刑"
+        ],
+        "stemHe": false,
+        "tianKeDiChong": true,
+        "xing": "申刑寅"
+      },
+      {
+        "between": [
+          "month",
+          "day"
+        ],
+        "label": "月日",
+        "branches": [
+          "六合",
+          "刑"
+        ],
+        "stemHe": false,
+        "tianKeDiChong": false,
+        "liuHeElement": "水",
+        "xing": "巳刑申"
+      },
+      {
+        "between": [
+          "month",
+          "hour"
+        ],
+        "label": "月时",
+        "branches": [
+          "六冲",
+          "刑"
+        ],
+        "stemHe": false,
+        "tianKeDiChong": true,
+        "xing": "申刑寅"
+      },
+      {
+        "between": [
+          "day",
+          "hour"
+        ],
+        "label": "日时",
+        "branches": [
+          "刑",
+          "害"
+        ],
+        "stemHe": false,
+        "tianKeDiChong": false,
+        "xing": "寅刑巳"
+      }
+    ],
+    "trios": []
+  },
+  "shensha": [
+    {
+      "name": "驿马",
+      "basis": "年支申",
+      "positions": [
+        "hour"
+      ],
+      "source": "神煞-驿马",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "亡神",
+      "basis": "日支巳（日支起）",
+      "positions": [
+        "year",
+        "month"
+      ],
+      "source": "神煞-亡神",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "劫煞",
+      "basis": "年支申",
+      "positions": [
+        "day"
+      ],
+      "source": "神煞-劫煞",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "劫煞",
+      "basis": "日支巳（日支起）",
+      "positions": [
+        "hour"
+      ],
+      "source": "神煞-劫煞",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "天乙贵人",
+      "basis": "日干乙",
+      "positions": [
+        "year",
+        "month"
+      ],
+      "source": "神煞-天乙贵人",
+      "status": "校核定稿",
+      "cardStatus": "已裁"
+    },
+    {
+      "name": "月德",
+      "basis": "月支申",
+      "positions": [
+        "month"
+      ],
+      "source": "神煞-月德",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "空亡",
+      "basis": "日柱乙巳旬空寅卯",
+      "positions": [
+        "hour"
+      ],
+      "source": "神煞-空亡",
+      "status": "校核定稿",
+      "cardStatus": "已裁"
+    },
+    {
+      "name": "阴差阳错",
+      "basis": "时柱戊寅",
+      "positions": [
+        "hour"
+      ],
+      "source": "神煞-阴差阳错",
+      "status": "校核定稿",
+      "cardStatus": "已审"
+    }
+  ],
+  "shenshaTags": {
+    "tags": [
+      {
+        "id": "亡神-04",
+        "shensha": "亡神",
+        "pillar": "年",
+        "tag": "靠笔杆子起家：文书、幕僚、刀笔吏",
+        "classic": "贵人建禄并 → 专弄笔砚，撰饰文词，因公起家，或为胥徒",
+        "source": "神煞-亡神 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "亡神-04",
+        "shensha": "亡神",
+        "pillar": "月",
+        "tag": "靠笔杆子起家：文书、幕僚、刀笔吏",
+        "classic": "贵人建禄并 → 专弄笔砚，撰饰文词，因公起家，或为胥徒",
+        "source": "神煞-亡神 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "亡神-05",
+        "shensha": "亡神",
+        "pillar": "年",
+        "tag": "两重亡神：失去得多，日子清苦",
+        "classic": "一座 → 性机密；两座 → 须决脊；两重亡神 → 决配贫薄",
+        "source": "神煞-亡神 [歌诀、正文] 上185",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "亡神-05",
+        "shensha": "亡神",
+        "pillar": "月",
+        "tag": "两重亡神：失去得多，日子清苦",
+        "classic": "一座 → 性机密；两座 → 须决脊；两重亡神 → 决配贫薄",
+        "source": "神煞-亡神 [歌诀、正文] 上185",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-01",
+        "shensha": "劫煞",
+        "pillar": "时",
+        "tag": "劫头见财：破财，或靠吞并别人发家而惨毒",
+        "classic": "劫头见财 → 蓄积大富，吞并不顾，惨毒害物；两重反主贫寒",
+        "source": "神煞-劫煞 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-03",
+        "shensha": "劫煞",
+        "pillar": "日",
+        "tag": "第三者或伴侣被夺；旧书日煞克妻",
+        "classic": "日煞克妻，时煞克子",
+        "source": "神煞-劫煞 [正文] 上164",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-04",
+        "shensha": "劫煞",
+        "pillar": "时",
+        "tag": "子嗣与晚年受打击",
+        "classic": "生时得之 → 子孙愚薄；时煞克子",
+        "source": "神煞-劫煞 [正文] 上164、185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-05",
+        "shensha": "劫煞",
+        "pillar": "时",
+        "tag": "聪慧过人、胸罗万象：被夺过的人学得最快",
+        "classic": "生旺与贵煞建禄并 → 聪慧敏给，才智过人，胸罗万象",
+        "source": "神煞-劫煞 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-09",
+        "shensha": "劫煞",
+        "pillar": "日",
+        "tag": "两重劫煞：刑法与盗财之事",
+        "classic": "一重 → 福胚胎；两重 → 刑法盗资财；三重 → 凶狠人顽恶",
+        "source": "神煞-劫煞 [歌诀] 上185",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-09",
+        "shensha": "劫煞",
+        "pillar": "时",
+        "tag": "两重劫煞：刑法与盗财之事",
+        "classic": "一重 → 福胚胎；两重 → 刑法盗资财；三重 → 凶狠人顽恶",
+        "source": "神煞-劫煞 [歌诀] 上185",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-10",
+        "shensha": "劫煞",
+        "pillar": "时",
+        "tag": "劫煞空亡：被夺的东西本就抓不住，或旧书所谓为盗",
+        "classic": "元辰空亡并 → 为盗",
+        "source": "神煞-劫煞 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "天乙贵人-01",
+        "shensha": "天乙贵人",
+        "pillar": "年",
+        "tag": "救他的是长辈、家世或早年的贵人；他不必自己去找门路",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "天乙贵人-01",
+        "shensha": "天乙贵人",
+        "pillar": "月",
+        "tag": "救他的是长辈、家世或早年的贵人；他不必自己去找门路",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "天乙贵人-08",
+        "shensha": "天乙贵人",
+        "pillar": "年",
+        "tag": "贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦",
+        "classic": "贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾",
+        "source": "神煞-天乙贵人 [正文·引宝鉴] 上146–150",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "天乙贵人-08",
+        "shensha": "天乙贵人",
+        "pillar": "月",
+        "tag": "贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦",
+        "classic": "贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾",
+        "source": "神煞-天乙贵人 [正文·引宝鉴] 上146–150",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "月德-02",
+        "shensha": "月德",
+        "pillar": "月",
+        "tag": "德随财官印食变：好事加倍",
+        "classic": "财官、印绶、食神变德 → 各随所变，更加一倍之福",
+        "source": "神煞-月德 [正文] 上153",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "月德-04",
+        "shensha": "月德",
+        "pillar": "月",
+        "tag": "善良被冲：好心办坏事，逢凶化吉打折",
+        "classic": "时上不犯克冲刑破 → 方吉",
+        "source": "神煞-月德 [正文] 上153",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "空亡-03",
+        "shensha": "空亡",
+        "pillar": "时",
+        "tag": "子嗣与晚年抓不住；性子拗，做事高而虚",
+        "classic": "时上见 → 多拗性，为事高而虚；更遇华盖 → 决主少子",
+        "source": "神煞-空亡 [正文] 上167",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "空亡-04",
+        "shensha": "空亡",
+        "pillar": "时",
+        "tag": "空在财：钱留不住",
+        "classic": "禄马财官福聚之气 → 怕空亡散之",
+        "source": "神煞-空亡 [正文] 上167",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "空亡-07",
+        "shensha": "空亡",
+        "pillar": "时",
+        "tag": "气度宽大、虚名与意外之福都有",
+        "classic": "生旺 → 气度宽大，动招虚名，长大肥满，意外无心之福",
+        "source": "神煞-空亡 [正文] 上166",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "空亡-09",
+        "shensha": "空亡",
+        "pillar": "时",
+        "tag": "空亡被冲则不空：抓不住的东西反而拿回来了",
+        "classic": "空亡遇相冲 → 不空；运冲刑空亡 → 反为虚煞，飞声走誉",
+        "source": "神煞-空亡 [正文] 上168、196",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "阴差阳错-03",
+        "shensha": "阴差阳错",
+        "pillar": "时",
+        "tag": "与妻家是非不断",
+        "classic": "男命 → 退外家，与妻家是非寡合",
+        "source": "神煞-阴差阳错 [正文] 上183",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "阴差阳错-06",
+        "shensha": "阴差阳错",
+        "pillar": "时",
+        "tag": "婚事不由己：因丧事仓促成婚、入赘、续弦",
+        "classic": "犯者 → 因孝娶，外祖两重或入赘，克妻，残房来作婿",
+        "source": "神煞-阴差阳错 [歌诀] 上194",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "驿马-01",
+        "shensha": "驿马",
+        "pillar": "时",
+        "tag": "上贵之马：晚年或靠后辈远行得志",
+        "classic": "柱中带马不值空亡破败 → 时为上贵，日为中贵，月为常庶",
+        "source": "神煞-驿马 [正文] 上194–197",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "驿马-04",
+        "shensha": "驿马",
+        "pillar": "时",
+        "tag": "被鞭策的马：动得剧烈，说走就走，多为被逼",
+        "classic": "太岁或小运冲动马（鞭策）→ 多主动；与煞相冲并 → 离乡背井，或为僧道，或为商贾",
+        "source": "神煞-驿马 [正文、引烛神经] 上194–197",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "驿马-05",
+        "shensha": "驿马",
+        "pillar": "时",
+        "tag": "通变趋时、有声望的走动者",
+        "classic": "生旺 → 气韵凝峻，通变趋时，平生多声望",
+        "source": "神煞-驿马 [正文·引烛神经] 上194–197",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "驿马-07",
+        "shensha": "驿马",
+        "pillar": "时",
+        "tag": "蹶蹄之马：走出去又折回来，或永远走不成",
+        "classic": "蹶蹄（生日值空亡）→ 复起；折足 → 永失",
+        "source": "神煞-驿马 [正文] 上194–197",
+        "origin": "古籍判词的叙事译法（自起草）"
+      }
+    ],
+    "cores": {
+      "亡神": "城府、暗中筹划、失去而不声张",
+      "劫煞": "被夺、外来打击、竞争者出现",
+      "天乙贵人": "总有人在关键时刻拉他一把；反用是他习惯被救，不会自救",
+      "月德": "仁厚，逢凶化吉；比天德略轻",
+      "空亡": "某个宫位的东西抓不住",
+      "阴差阳错": "错位感，总差一步，婚姻与姻亲不顺",
+      "驿马": "迁徙、奔波、离乡；他的答案总在别处"
+    },
+    "status": "叙事映射自起草；古籍判词部分取自校核定稿的神煞卡",
+    "source": "shensha_tags.json"
+  },
+  "tiaohou": {
+    "dayMaster": "乙",
+    "monthBranch": "申",
+    "stems": [
+      "丙",
+      "癸",
+      "己"
+    ],
+    "slots": [
+      [
+        "丙"
+      ],
+      [
+        "癸"
+      ],
+      [
+        "己"
+      ]
+    ],
+    "elements": [
+      "火",
+      "水",
+      "土"
+    ],
+    "period": null,
+    "periodUnresolved": false,
+    "periods": [],
+    "conditional": [
+      {
+        "stems": [
+          "癸"
+        ],
+        "kind": "stem",
+        "when": "癸透丙藏、庚少时不用己，只用癸，格平",
+        "tags": {
+          "exposed": [
+            "癸"
+          ]
+        }
+      }
+    ],
+    "alternates": [],
+    "indispensable": [
+      {
+        "stems": [
+          "己",
+          "土"
+        ],
+        "note": "己土不可少"
+      }
+    ],
+    "downgrade": [],
+    "avoid": [],
+    "avoidExceptions": [
+      {
+        "text": "七月乙木，庚金司令，庚虽输情于乙妹，而干乙难合支庚，见庚，乙必受伤",
+        "kind": "其他",
+        "stems": [
+          "丙",
+          "丁",
+          "庚"
+        ],
+        "absent": []
+      }
+    ],
+    "status": "校核定稿",
+    "cardStatus": "已审",
+    "source": "调候-乙申",
+    "exposed": [],
+    "hidden": [
+      "丙"
+    ],
+    "missing": [
+      "癸",
+      "己"
+    ],
+    "indispensableMissing": [
+      "己"
+    ]
+  },
+  "strength": {
+    "algorithm": "bazi-writing strength v2（自起草，含合局项；见模块文档与 DESIGN 6.4）",
+    "dayMaster": "木",
+    "support": 48.2,
+    "drain": 72.4,
+    "ratio": 0.5,
+    "verdict": "中和",
+    "note": "临界盘，解读时交模型补判",
+    "flags": {
+      "得令": false,
+      "得地": true,
+      "得势": true
+    },
+    "favorable": [],
+    "unfavorable": [],
+    "combos": [
+      {
+        "kind": "六合",
+        "branches": "申巳",
+        "element": "水",
+        "factor": 0.8,
+        "override": false,
+        "pillars": [
+          "年",
+          "月",
+          "日"
+        ],
+        "detail": "申巳六合，所化水不当令，作合绊，两支减力"
+      }
+    ],
+    "contributions": [
+      {
+        "where": "年干",
+        "stem": "甲",
+        "tenGod": "劫财",
+        "weight": 12.0,
+        "side": "support"
+      },
+      {
+        "where": "年支本气",
+        "stem": "庚",
+        "tenGod": "正官",
+        "weight": 8.0,
+        "side": "drain"
+      },
+      {
+        "where": "年支中气",
+        "stem": "壬",
+        "tenGod": "正印",
+        "weight": 3.2,
+        "side": "support"
+      },
+      {
+        "where": "年支余气",
+        "stem": "戊",
+        "tenGod": "正财",
+        "weight": 1.6,
+        "side": "drain"
+      },
+      {
+        "where": "月干",
+        "stem": "壬",
+        "tenGod": "正印",
+        "weight": 15.0,
+        "side": "support"
+      },
+      {
+        "where": "月支本气",
+        "stem": "庚",
+        "tenGod": "正官",
+        "weight": 24.0,
+        "side": "drain"
+      },
+      {
+        "where": "月支中气",
+        "stem": "壬",
+        "tenGod": "正印",
+        "weight": 8.0,
+        "side": "support"
+      },
+      {
+        "where": "月支余气",
+        "stem": "戊",
+        "tenGod": "正财",
+        "weight": 3.2,
+        "side": "drain"
+      },
+      {
+        "where": "日支本气",
+        "stem": "丙",
+        "tenGod": "伤官",
+        "weight": 12.0,
+        "side": "drain"
+      },
+      {
+        "where": "日支中气",
+        "stem": "庚",
+        "tenGod": "正官",
+        "weight": 4.0,
+        "side": "drain"
+      },
+      {
+        "where": "日支余气",
+        "stem": "戊",
+        "tenGod": "正财",
+        "weight": 1.6,
+        "side": "drain"
+      },
+      {
+        "where": "时干",
+        "stem": "戊",
+        "tenGod": "正财",
+        "weight": 12.0,
+        "side": "drain"
+      },
+      {
+        "where": "时支本气",
+        "stem": "甲",
+        "tenGod": "劫财",
+        "weight": 10.0,
+        "side": "support"
+      },
+      {
+        "where": "时支中气",
+        "stem": "丙",
+        "tenGod": "伤官",
+        "weight": 4.0,
+        "side": "drain"
+      },
+      {
+        "where": "时支余气",
+        "stem": "戊",
+        "tenGod": "正财",
+        "weight": 2.0,
+        "side": "drain"
+      }
+    ]
+  },
+  "changsheng": {
+    "nayin": {
+      "year": {
+        "name": "井泉水",
+        "element": "水"
+      },
+      "month": {
+        "name": "剑锋金",
+        "element": "金"
+      },
+      "day": {
+        "name": "覆灯火",
+        "element": "火"
+      },
+      "hour": {
+        "name": "城头土",
+        "element": "土"
+      }
+    },
+    "dayMasterStage": {
+      "year": "胎",
+      "month": "胎",
+      "day": "沐浴",
+      "hour": "帝旺"
+    },
+    "selfStage": {
+      "year": "绝",
+      "month": "长生",
+      "day": "沐浴",
+      "hour": "长生"
+    },
+    "status": "校核定稿",
+    "source": {
+      "changsheng": {
+        "长生-十干长生位": "已裁",
+        "长生-十二宫序": "已核"
+      },
+      "nayin": {
+        "纳音-六十甲子": "已核"
+      }
+    }
+  },
+  "geju": {
+    "structure": "正印格",
+    "name": "印绶",
+    "cheng": [
+      "印轻逢煞",
+      "印逢官",
+      "印逢官且官清",
+      "印逢官且逢食伤且印制食伤",
+      "印重且身强且逢食伤",
+      "印多且逢财且财轻",
+      "印重且身强且逢财且印有根",
+      "印逢煞且身重且印轻",
+      "印逢煞且身轻且印重",
+      "印逢煞且逢食伤",
+      "印逢官且逢煞且合煞",
+      "印逢官且逢煞且制煞"
+    ],
+    "bai": [
+      "印轻逢财",
+      "印重且身强且逢煞",
+      "印逢食且逢财",
+      "印逢煞且逢财",
+      "印轻且财重且无劫",
+      "印轻且身轻且伤食多",
+      "印重且逢财且逢煞",
+      "印化劫"
+    ],
+    "jiu": [
+      "印逢财→劫制财",
+      "印逢财→合财",
+      "印逢煞且逢财→劫制财",
+      "印化劫→透印或透煞",
+      "印逢官且逢伤→印隔伤官"
+    ],
+    "yun": [
+      {
+        "scope": "印用官且官透且印重",
+        "favor": [
+          "财运",
+          "伤食运"
+        ],
+        "avoid": [],
+        "neutral": []
+      },
+      {
+        "scope": "印用官且带伤食",
+        "favor": [
+          "官运",
+          "印运"
+        ],
+        "avoid": [
+          "伤食运"
+        ],
+        "neutral": [
+          "煞运"
+        ]
+      },
+      {
+        "scope": "印用伤食",
+        "favor": [
+          "财运",
+          "伤食运",
+          "煞运"
+        ],
+        "avoid": [
+          "官运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "印用煞",
+        "favor": [
+          "伤食运",
+          "身旺运"
+        ],
+        "avoid": [
+          "财运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "印用煞且带伤食",
+        "favor": [
+          "身旺运",
+          "印运",
+          "伤食运"
+        ],
+        "avoid": [
+          "官运",
+          "财运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "印逢财",
+        "favor": [
+          "劫运",
+          "官运",
+          "印运"
+        ],
+        "avoid": [
+          "财运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "印逢官煞",
+        "favor": [
+          "食伤运",
+          "印运",
+          "身旺运"
+        ],
+        "avoid": [
+          "官煞运",
+          "财运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "印用食伤且印轻",
+        "favor": [],
+        "avoid": [
+          "财运"
+        ],
+        "neutral": []
+      }
+    ],
+    "status": "校核定稿",
+    "source": "格局-印绶",
+    "variation": "藏透",
+    "monthBase": {
+      "structure": "正官格",
+      "name": "正官",
+      "cheng": [
+        "官逢财且逢印且财印不相碍且无刑冲破害",
+        "官逢财且无刑冲破害",
+        "官逢印且无刑冲破害",
+        "官化印且透财"
+      ],
+      "bai": [
+        "官逢伤",
+        "官逢食",
+        "官逢刑冲",
+        "官逢合",
+        "官逢煞混",
+        "官逢伤且用印且逢财"
+      ],
+      "jiu": [
+        "官逢伤→透印",
+        "官逢煞混→合煞或制煞",
+        "官逢刑冲→会合解冲",
+        "官逢伤且用印且逢财→合财且印制伤"
+      ],
+      "yun": [
+        {
+          "scope": "通",
+          "favor": [],
+          "avoid": [
+            "刑冲运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "官透",
+          "favor": [],
+          "avoid": [
+            "合官运",
+            "煞运",
+            "官运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "官用财印且身轻",
+          "favor": [
+            "助身运"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "官用财印且官轻",
+          "favor": [
+            "助官运"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "官用财",
+          "favor": [
+            "印运",
+            "身旺运"
+          ],
+          "avoid": [
+            "食伤运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "官用财且身旺且财轻且官轻",
+          "favor": [
+            "财运",
+            "官运"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "官佩印",
+          "favor": [
+            "财运",
+            "伤食运"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "官佩印且官重且身轻",
+          "favor": [
+            "身旺运"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "官带伤食且用印",
+          "favor": [
+            "官运",
+            "印运"
+          ],
+          "avoid": [
+            "财运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "官带伤食且用印且印重",
+          "favor": [],
+          "avoid": [],
+          "neutral": [
+            "财运"
+          ]
+        },
+        {
+          "scope": "官带煞且劫合煞",
+          "favor": [
+            "财运",
+            "伤食运",
+            "印运"
+          ],
+          "avoid": [
+            "煞运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "官带煞且伤合煞",
+          "favor": [
+            "伤食运",
+            "财运"
+          ],
+          "avoid": [
+            "印运"
+          ],
+          "neutral": []
+        }
+      ],
+      "status": "校核定稿",
+      "source": "格局-正官"
+    },
+    "judge": {
+      "structure": "正印格",
+      "verdict": "成格",
+      "cheng": [
+        {
+          "text": "印轻逢煞",
+          "holds": null,
+          "atoms": {
+            "印轻逢煞": null
+          }
+        },
+        {
+          "text": "印逢官",
+          "holds": true,
+          "atoms": {
+            "印逢官": true
+          }
+        },
+        {
+          "text": "印逢官且官清",
+          "holds": null,
+          "atoms": {
+            "印逢官": true,
+            "官清": null
+          }
+        },
+        {
+          "text": "印逢官且逢食伤且印制食伤",
+          "holds": true,
+          "atoms": {
+            "印逢官": true,
+            "逢食伤": true,
+            "印制食伤": true
+          }
+        },
+        {
+          "text": "印重且身强且逢食伤",
+          "holds": false,
+          "atoms": {
+            "印重": true,
+            "身强": false,
+            "逢食伤": true
+          }
+        },
+        {
+          "text": "印多且逢财且财轻",
+          "holds": false,
+          "atoms": {
+            "印多": true,
+            "逢财": true,
+            "财轻": false
+          }
+        },
+        {
+          "text": "印重且身强且逢财且印有根",
+          "holds": false,
+          "atoms": {
+            "印重": true,
+            "身强": false,
+            "逢财": true,
+            "印有根": true
+          }
+        },
+        {
+          "text": "印逢煞且身重且印轻",
+          "holds": false,
+          "atoms": {
+            "印逢煞": false,
+            "身重": false,
+            "印轻": false
+          }
+        },
+        {
+          "text": "印逢煞且身轻且印重",
+          "holds": false,
+          "atoms": {
+            "印逢煞": false,
+            "身轻": false,
+            "印重": true
+          }
+        },
+        {
+          "text": "印逢煞且逢食伤",
+          "holds": false,
+          "atoms": {
+            "印逢煞": false,
+            "逢食伤": true
+          }
+        },
+        {
+          "text": "印逢官且逢煞且合煞",
+          "holds": false,
+          "atoms": {
+            "印逢官": true,
+            "逢煞": false,
+            "合煞": false
+          }
+        },
+        {
+          "text": "印逢官且逢煞且制煞",
+          "holds": false,
+          "atoms": {
+            "印逢官": true,
+            "逢煞": false,
+            "制煞": false
+          }
+        }
+      ],
+      "bai": [
+        {
+          "text": "印轻逢财",
+          "holds": null,
+          "atoms": {
+            "印轻逢财": null
+          }
+        },
+        {
+          "text": "印重且身强且逢煞",
+          "holds": false,
+          "atoms": {
+            "印重": true,
+            "身强": false,
+            "逢煞": false
+          }
+        },
+        {
+          "text": "印逢食且逢财",
+          "holds": false,
+          "atoms": {
+            "印逢食": false,
+            "逢财": true
+          }
+        },
+        {
+          "text": "印逢煞且逢财",
+          "holds": false,
+          "atoms": {
+            "印逢煞": false,
+            "逢财": true
+          }
+        },
+        {
+          "text": "印轻且财重且无劫",
+          "holds": false,
+          "atoms": {
+            "印轻": false,
+            "财重": true,
+            "无劫": false
+          }
+        },
+        {
+          "text": "印轻且身轻且伤食多",
+          "holds": false,
+          "atoms": {
+            "印轻": false,
+            "身轻": false,
+            "伤食多": false
+          }
+        },
+        {
+          "text": "印重且逢财且逢煞",
+          "holds": false,
+          "atoms": {
+            "印重": true,
+            "逢财": true,
+            "逢煞": false
+          }
+        },
+        {
+          "text": "印化劫",
+          "holds": null,
+          "atoms": {
+            "印化劫": null
+          }
+        }
+      ],
+      "jiu": [
+        {
+          "text": "印逢财→劫制财",
+          "cause": {
+            "text": "印逢财",
+            "holds": true,
+            "atoms": {
+              "印逢财": true
+            }
+          },
+          "fix": {
+            "text": "劫制财",
+            "holds": true,
+            "atoms": {
+              "劫制财": true
+            }
+          },
+          "applies": true
+        },
+        {
+          "text": "印逢财→合财",
+          "cause": {
+            "text": "印逢财",
+            "holds": true,
+            "atoms": {
+              "印逢财": true
+            }
+          },
+          "fix": {
+            "text": "合财",
+            "holds": false,
+            "atoms": {
+              "合财": false
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "印逢煞且逢财→劫制财",
+          "cause": {
+            "text": "印逢煞且逢财",
+            "holds": false,
+            "atoms": {
+              "印逢煞": false,
+              "逢财": true
+            }
+          },
+          "fix": {
+            "text": "劫制财",
+            "holds": true,
+            "atoms": {
+              "劫制财": true
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "印化劫→透印或透煞",
+          "cause": {
+            "text": "印化劫",
+            "holds": null,
+            "atoms": {
+              "印化劫": null
+            }
+          },
+          "fix": {
+            "text": "透印或透煞",
+            "holds": false,
+            "atoms": {
+              "透印": true,
+              "透煞": false
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "印逢官且逢伤→印隔伤官",
+          "cause": {
+            "text": "印逢官且逢伤",
+            "holds": true,
+            "atoms": {
+              "印逢官": true,
+              "逢伤": true
+            }
+          },
+          "fix": {
+            "text": "印隔伤官",
+            "holds": null,
+            "atoms": {
+              "印隔伤官": null
+            }
+          },
+          "applies": null
+        }
+      ],
+      "yun": [
+        {
+          "scope": "印用官且官透且印重",
+          "holds": false,
+          "atoms": {
+            "印用官": true,
+            "官透": false,
+            "印重": true
+          },
+          "favor": [
+            "财运",
+            "伤食运"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "印用官且带伤食",
+          "holds": true,
+          "atoms": {
+            "印用官": true,
+            "带伤食": true
+          },
+          "favor": [
+            "官运",
+            "印运"
+          ],
+          "avoid": [
+            "伤食运"
+          ],
+          "neutral": [
+            "煞运"
+          ]
+        },
+        {
+          "scope": "印用伤食",
+          "holds": true,
+          "atoms": {
+            "印用伤食": true
+          },
+          "favor": [
+            "财运",
+            "伤食运",
+            "煞运"
+          ],
+          "avoid": [
+            "官运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "印用煞",
+          "holds": false,
+          "atoms": {
+            "印用煞": false
+          },
+          "favor": [
+            "伤食运",
+            "身旺运"
+          ],
+          "avoid": [
+            "财运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "印用煞且带伤食",
+          "holds": false,
+          "atoms": {
+            "印用煞": false,
+            "带伤食": true
+          },
+          "favor": [
+            "身旺运",
+            "印运",
+            "伤食运"
+          ],
+          "avoid": [
+            "官运",
+            "财运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "印逢财",
+          "holds": true,
+          "atoms": {
+            "印逢财": true
+          },
+          "favor": [
+            "劫运",
+            "官运",
+            "印运"
+          ],
+          "avoid": [
+            "财运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "印逢官煞",
+          "holds": true,
+          "atoms": {
+            "印逢官煞": true
+          },
+          "favor": [
+            "食伤运",
+            "印运",
+            "身旺运"
+          ],
+          "avoid": [
+            "官煞运",
+            "财运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "印用食伤且印轻",
+          "holds": false,
+          "atoms": {
+            "印用食伤": true,
+            "印轻": false
+          },
+          "favor": [],
+          "avoid": [
+            "财运"
+          ],
+          "neutral": []
+        }
+      ],
+      "coverage": "56/62",
+      "facts": {
+        "exposed": {
+          "year": "劫财",
+          "month": "正印",
+          "hour": "正财"
+        },
+        "monthMain": "正官",
+        "strength": "中和"
+      },
+      "monthBase": {
+        "structure": "正官格",
+        "verdict": "败而有救",
+        "cheng": [
+          {
+            "text": "官逢财且逢印且财印不相碍且无刑冲破害",
+            "holds": false,
+            "atoms": {
+              "官逢财": true,
+              "逢印": true,
+              "财印不相碍": true,
+              "无刑冲破害": false
+            }
+          },
+          {
+            "text": "官逢财且无刑冲破害",
+            "holds": false,
+            "atoms": {
+              "官逢财": true,
+              "无刑冲破害": false
+            }
+          },
+          {
+            "text": "官逢印且无刑冲破害",
+            "holds": false,
+            "atoms": {
+              "官逢印": true,
+              "无刑冲破害": false
+            }
+          },
+          {
+            "text": "官化印且透财",
+            "holds": null,
+            "atoms": {
+              "官化印": null,
+              "透财": true
+            }
+          }
+        ],
+        "bai": [
+          {
+            "text": "官逢伤",
+            "holds": true,
+            "atoms": {
+              "官逢伤": true
+            }
+          },
+          {
+            "text": "官逢食",
+            "holds": false,
+            "atoms": {
+              "官逢食": false
+            }
+          },
+          {
+            "text": "官逢刑冲",
+            "holds": true,
+            "atoms": {
+              "官逢刑冲": true
+            }
+          },
+          {
+            "text": "官逢合",
+            "holds": false,
+            "atoms": {
+              "官逢合": false
+            }
+          },
+          {
+            "text": "官逢煞混",
+            "holds": false,
+            "atoms": {
+              "官逢煞混": false
+            }
+          },
+          {
+            "text": "官逢伤且用印且逢财",
+            "holds": true,
+            "atoms": {
+              "官逢伤": true,
+              "用印": true,
+              "逢财": true
+            }
+          }
+        ],
+        "jiu": [
+          {
+            "text": "官逢伤→透印",
+            "cause": {
+              "text": "官逢伤",
+              "holds": true,
+              "atoms": {
+                "官逢伤": true
+              }
+            },
+            "fix": {
+              "text": "透印",
+              "holds": true,
+              "atoms": {
+                "透印": true
+              }
+            },
+            "applies": true
+          },
+          {
+            "text": "官逢煞混→合煞或制煞",
+            "cause": {
+              "text": "官逢煞混",
+              "holds": false,
+              "atoms": {
+                "官逢煞混": false
+              }
+            },
+            "fix": {
+              "text": "合煞或制煞",
+              "holds": false,
+              "atoms": {
+                "合煞": false,
+                "制煞": false
+              }
+            },
+            "applies": false
+          },
+          {
+            "text": "官逢刑冲→会合解冲",
+            "cause": {
+              "text": "官逢刑冲",
+              "holds": true,
+              "atoms": {
+                "官逢刑冲": true
+              }
+            },
+            "fix": {
+              "text": "会合解冲",
+              "holds": null,
+              "atoms": {
+                "会合解冲": null
+              }
+            },
+            "applies": null
+          },
+          {
+            "text": "官逢伤且用印且逢财→合财且印制伤",
+            "cause": {
+              "text": "官逢伤且用印且逢财",
+              "holds": true,
+              "atoms": {
+                "官逢伤": true,
+                "用印": true,
+                "逢财": true
+              }
+            },
+            "fix": {
+              "text": "合财且印制伤",
+              "holds": false,
+              "atoms": {
+                "合财": false,
+                "印制伤": true
+              }
+            },
+            "applies": false
+          }
+        ],
+        "yun": [
+          {
+            "scope": "通",
+            "holds": null,
+            "atoms": {
+              "通": null
+            },
+            "favor": [],
+            "avoid": [
+              "刑冲运"
+            ],
+            "neutral": []
+          },
+          {
+            "scope": "官透",
+            "holds": false,
+            "atoms": {
+              "官透": false
+            },
+            "favor": [],
+            "avoid": [
+              "合官运",
+              "煞运",
+              "官运"
+            ],
+            "neutral": []
+          },
+          {
+            "scope": "官用财印且身轻",
+            "holds": false,
+            "atoms": {
+              "官用财印": true,
+              "身轻": false
+            },
+            "favor": [
+              "助身运"
+            ],
+            "avoid": [],
+            "neutral": []
+          },
+          {
+            "scope": "官用财印且官轻",
+            "holds": false,
+            "atoms": {
+              "官用财印": true,
+              "官轻": false
+            },
+            "favor": [
+              "助官运"
+            ],
+            "avoid": [],
+            "neutral": []
+          },
+          {
+            "scope": "官用财",
+            "holds": true,
+            "atoms": {
+              "官用财": true
+            },
+            "favor": [
+              "印运",
+              "身旺运"
+            ],
+            "avoid": [
+              "食伤运"
+            ],
+            "neutral": []
+          },
+          {
+            "scope": "官用财且身旺且财轻且官轻",
+            "holds": false,
+            "atoms": {
+              "官用财": true,
+              "身旺": false,
+              "财轻": false,
+              "官轻": false
+            },
+            "favor": [
+              "财运",
+              "官运"
+            ],
+            "avoid": [],
+            "neutral": []
+          },
+          {
+            "scope": "官佩印",
+            "holds": true,
+            "atoms": {
+              "官佩印": true
+            },
+            "favor": [
+              "财运",
+              "伤食运"
+            ],
+            "avoid": [],
+            "neutral": []
+          },
+          {
+            "scope": "官佩印且官重且身轻",
+            "holds": false,
+            "atoms": {
+              "官佩印": true,
+              "官重": true,
+              "身轻": false
+            },
+            "favor": [
+              "身旺运"
+            ],
+            "avoid": [],
+            "neutral": []
+          },
+          {
+            "scope": "官带伤食且用印",
+            "holds": true,
+            "atoms": {
+              "官带伤食": true,
+              "用印": true
+            },
+            "favor": [
+              "官运",
+              "印运"
+            ],
+            "avoid": [
+              "财运"
+            ],
+            "neutral": []
+          },
+          {
+            "scope": "官带伤食且用印且印重",
+            "holds": true,
+            "atoms": {
+              "官带伤食": true,
+              "用印": true,
+              "印重": true
+            },
+            "favor": [],
+            "avoid": [],
+            "neutral": [
+              "财运"
+            ]
+          },
+          {
+            "scope": "官带煞且劫合煞",
+            "holds": false,
+            "atoms": {
+              "官带煞": false,
+              "劫合煞": null
+            },
+            "favor": [
+              "财运",
+              "伤食运",
+              "印运"
+            ],
+            "avoid": [
+              "煞运"
+            ],
+            "neutral": []
+          },
+          {
+            "scope": "官带煞且伤合煞",
+            "holds": false,
+            "atoms": {
+              "官带煞": false,
+              "伤合煞": null
+            },
+            "favor": [
+              "伤食运",
+              "财运"
+            ],
+            "avoid": [
+              "印运"
+            ],
+            "neutral": []
+          }
+        ],
+        "coverage": "28/30",
+        "facts": {
+          "exposed": {
+            "year": "劫财",
+            "month": "正印",
+            "hour": "正财"
+          },
+          "monthMain": "正官",
+          "strength": "中和"
+        }
+      }
+    }
+  },
+  "liunian": [
+    {
+      "age": 30,
+      "year": 330,
+      "pillar": "甲寅",
+      "dayun": {
+        "sequence": 3,
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33,
+        "startYear": 323,
+        "endYear": 333
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "P-年",
+      "kind": "柱",
+      "text": "年柱甲申"
+    },
+    {
+      "id": "P-月",
+      "kind": "柱",
+      "text": "月柱壬申"
+    },
+    {
+      "id": "P-日",
+      "kind": "柱",
+      "text": "日柱乙巳"
+    },
+    {
+      "id": "P-时",
+      "kind": "柱",
+      "text": "时柱戊寅"
+    },
+    {
+      "id": "DM",
+      "kind": "日主",
+      "text": "日主乙木"
+    },
+    {
+      "id": "T-年干-劫财",
+      "kind": "透干",
+      "text": "年干甲木为劫财"
+    },
+    {
+      "id": "T-月干-正印",
+      "kind": "透干",
+      "text": "月干壬水为正印"
+    },
+    {
+      "id": "T-时干-正财",
+      "kind": "透干",
+      "text": "时干戊土为正财"
+    },
+    {
+      "id": "H-年支-本气-正官",
+      "kind": "藏干",
+      "text": "年支本气庚金为正官"
+    },
+    {
+      "id": "H-年支-中气-正印",
+      "kind": "藏干",
+      "text": "年支中气壬水为正印"
+    },
+    {
+      "id": "H-年支-余气-正财",
+      "kind": "藏干",
+      "text": "年支余气戊土为正财"
+    },
+    {
+      "id": "H-月支-本气-正官",
+      "kind": "藏干",
+      "text": "月支本气庚金为正官"
+    },
+    {
+      "id": "H-月支-中气-正印",
+      "kind": "藏干",
+      "text": "月支中气壬水为正印"
+    },
+    {
+      "id": "H-月支-余气-正财",
+      "kind": "藏干",
+      "text": "月支余气戊土为正财"
+    },
+    {
+      "id": "H-日支-本气-伤官",
+      "kind": "藏干",
+      "text": "日支本气丙火为伤官"
+    },
+    {
+      "id": "H-日支-中气-正官",
+      "kind": "藏干",
+      "text": "日支中气庚金为正官"
+    },
+    {
+      "id": "H-日支-余气-正财",
+      "kind": "藏干",
+      "text": "日支余气戊土为正财"
+    },
+    {
+      "id": "H-时支-本气-劫财",
+      "kind": "藏干",
+      "text": "时支本气甲木为劫财"
+    },
+    {
+      "id": "H-时支-中气-伤官",
+      "kind": "藏干",
+      "text": "时支中气丙火为伤官"
+    },
+    {
+      "id": "H-时支-余气-正财",
+      "kind": "藏干",
+      "text": "时支余气戊土为正财"
+    },
+    {
+      "id": "G-正印格",
+      "kind": "格局",
+      "text": "取格正印格（月令本格正官格，藏透变格）：月令申本气庚金为正官当旺，未透干仍以当旺之神取正官格；本气不透而中气壬水透于月干为正印，舍本气而用透者，变格取正印格"
+    },
+    {
+      "id": "G-判-成格",
+      "kind": "格局判定",
+      "text": "正印格成格"
+    },
+    {
+      "id": "G-成-印逢官",
+      "kind": "格局条件",
+      "text": "成格条件成立：印逢官"
+    },
+    {
+      "id": "G-成-印逢官且逢食伤且印制食伤",
+      "kind": "格局条件",
+      "text": "成格条件成立：印逢官且逢食伤且印制食伤"
+    },
+    {
+      "id": "G-救-印逢财→劫制财",
+      "kind": "格局救应",
+      "text": "救应成立：印逢财→劫制财"
+    },
+    {
+      "id": "G-运-印用官且带伤食",
+      "kind": "取运局",
+      "text": "取运局「印用官且带伤食」：喜官运、印运；忌伤食运"
+    },
+    {
+      "id": "G-运-印用伤食",
+      "kind": "取运局",
+      "text": "取运局「印用伤食」：喜财运、伤食运、煞运；忌官运"
+    },
+    {
+      "id": "G-运-印逢财",
+      "kind": "取运局",
+      "text": "取运局「印逢财」：喜劫运、官运、印运；忌财运"
+    },
+    {
+      "id": "G-运-印逢官煞",
+      "kind": "取运局",
+      "text": "取运局「印逢官煞」：喜食伤运、印运、身旺运；忌官煞运、财运"
+    },
+    {
+      "id": "S-中和",
+      "kind": "旺衰",
+      "text": "旺衰中和（比值 0.5，得令否、得地是、得势是），临界盘，解读时交模型补判"
+    },
+    {
+      "id": "S-合局-1",
+      "kind": "合局",
+      "text": "申巳六合，所化水不当令，作合绊，两支减力"
+    },
+    {
+      "id": "Y-主",
+      "kind": "调候",
+      "text": "调候用神丙、癸、己"
+    },
+    {
+      "id": "Y-条件-1",
+      "kind": "调候",
+      "text": "条件用神癸：癸透丙藏、庚少时不用己，只用癸，格平"
+    },
+    {
+      "id": "Y-不可缺-1",
+      "kind": "调候",
+      "text": "不可缺：己土不可少"
+    },
+    {
+      "id": "Y-忌例外-1",
+      "kind": "调候",
+      "text": "忌（例外句）：七月乙木，庚金司令，庚虽输情于乙妹，而干乙难合支庚，见庚，乙必受伤"
+    },
+    {
+      "id": "R-年日-六合",
+      "kind": "关系",
+      "text": "年日六合"
+    },
+    {
+      "id": "R-年日-刑",
+      "kind": "关系",
+      "text": "年日刑（巳刑申）"
+    },
+    {
+      "id": "R-年时-六冲",
+      "kind": "关系",
+      "text": "年时六冲"
+    },
+    {
+      "id": "R-年时-刑",
+      "kind": "关系",
+      "text": "年时刑（申刑寅）"
+    },
+    {
+      "id": "R-年时-天克地冲",
+      "kind": "关系",
+      "text": "年时天克地冲"
+    },
+    {
+      "id": "R-月日-六合",
+      "kind": "关系",
+      "text": "月日六合"
+    },
+    {
+      "id": "R-月日-刑",
+      "kind": "关系",
+      "text": "月日刑（巳刑申）"
+    },
+    {
+      "id": "R-月时-六冲",
+      "kind": "关系",
+      "text": "月时六冲"
+    },
+    {
+      "id": "R-月时-刑",
+      "kind": "关系",
+      "text": "月时刑（申刑寅）"
+    },
+    {
+      "id": "R-月时-天克地冲",
+      "kind": "关系",
+      "text": "月时天克地冲"
+    },
+    {
+      "id": "R-日时-刑",
+      "kind": "关系",
+      "text": "日时刑（寅刑巳）"
+    },
+    {
+      "id": "R-日时-害",
+      "kind": "关系",
+      "text": "日时害"
+    },
+    {
+      "id": "N-驿马-时",
+      "kind": "神煞",
+      "text": "时柱驿马（年支申）"
+    },
+    {
+      "id": "N-亡神-年",
+      "kind": "神煞",
+      "text": "年柱亡神（日支巳（日支起））"
+    },
+    {
+      "id": "N-亡神-月",
+      "kind": "神煞",
+      "text": "月柱亡神（日支巳（日支起））"
+    },
+    {
+      "id": "N-劫煞-日",
+      "kind": "神煞",
+      "text": "日柱劫煞（年支申）"
+    },
+    {
+      "id": "N-劫煞-时",
+      "kind": "神煞",
+      "text": "时柱劫煞（日支巳（日支起））"
+    },
+    {
+      "id": "N-天乙贵人-年",
+      "kind": "神煞",
+      "text": "年柱天乙贵人（日干乙）"
+    },
+    {
+      "id": "N-天乙贵人-月",
+      "kind": "神煞",
+      "text": "月柱天乙贵人（日干乙）"
+    },
+    {
+      "id": "N-月德-月",
+      "kind": "神煞",
+      "text": "月柱月德（月支申）"
+    },
+    {
+      "id": "N-空亡-时",
+      "kind": "神煞",
+      "text": "时柱空亡（日柱乙巳旬空寅卯）"
+    },
+    {
+      "id": "N-阴差阳错-时",
+      "kind": "神煞",
+      "text": "时柱阴差阳错（时柱戊寅）"
+    },
+    {
+      "id": "NT-亡神-04-年",
+      "kind": "神煞标签",
+      "text": "年柱亡神：靠笔杆子起家：文书、幕僚、刀笔吏｜古籍：贵人建禄并 → 专弄笔砚，撰饰文词，因公起家，或为胥徒"
+    },
+    {
+      "id": "NT-亡神-04-月",
+      "kind": "神煞标签",
+      "text": "月柱亡神：靠笔杆子起家：文书、幕僚、刀笔吏｜古籍：贵人建禄并 → 专弄笔砚，撰饰文词，因公起家，或为胥徒"
+    },
+    {
+      "id": "NT-亡神-05-年",
+      "kind": "神煞标签",
+      "text": "年柱亡神：两重亡神：失去得多，日子清苦｜古籍：一座 → 性机密；两座 → 须决脊；两重亡神 → 决配贫薄"
+    },
+    {
+      "id": "NT-亡神-05-月",
+      "kind": "神煞标签",
+      "text": "月柱亡神：两重亡神：失去得多，日子清苦｜古籍：一座 → 性机密；两座 → 须决脊；两重亡神 → 决配贫薄"
+    },
+    {
+      "id": "NT-劫煞-01-时",
+      "kind": "神煞标签",
+      "text": "时柱劫煞：劫头见财：破财，或靠吞并别人发家而惨毒｜古籍：劫头见财 → 蓄积大富，吞并不顾，惨毒害物；两重反主贫寒"
+    },
+    {
+      "id": "NT-劫煞-03-日",
+      "kind": "神煞标签",
+      "text": "日柱劫煞：第三者或伴侣被夺；旧书日煞克妻｜古籍：日煞克妻，时煞克子"
+    },
+    {
+      "id": "NT-劫煞-04-时",
+      "kind": "神煞标签",
+      "text": "时柱劫煞：子嗣与晚年受打击｜古籍：生时得之 → 子孙愚薄；时煞克子"
+    },
+    {
+      "id": "NT-劫煞-05-时",
+      "kind": "神煞标签",
+      "text": "时柱劫煞：聪慧过人、胸罗万象：被夺过的人学得最快｜古籍：生旺与贵煞建禄并 → 聪慧敏给，才智过人，胸罗万象"
+    },
+    {
+      "id": "NT-劫煞-09-日",
+      "kind": "神煞标签",
+      "text": "日柱劫煞：两重劫煞：刑法与盗财之事｜古籍：一重 → 福胚胎；两重 → 刑法盗资财；三重 → 凶狠人顽恶"
+    },
+    {
+      "id": "NT-劫煞-09-时",
+      "kind": "神煞标签",
+      "text": "时柱劫煞：两重劫煞：刑法与盗财之事｜古籍：一重 → 福胚胎；两重 → 刑法盗资财；三重 → 凶狠人顽恶"
+    },
+    {
+      "id": "NT-劫煞-10-时",
+      "kind": "神煞标签",
+      "text": "时柱劫煞：劫煞空亡：被夺的东西本就抓不住，或旧书所谓为盗｜古籍：元辰空亡并 → 为盗"
+    },
+    {
+      "id": "NT-天乙贵人-01-年",
+      "kind": "神煞标签",
+      "text": "年柱天乙贵人：救他的是长辈、家世或早年的贵人；他不必自己去找门路"
+    },
+    {
+      "id": "NT-天乙贵人-01-月",
+      "kind": "神煞标签",
+      "text": "月柱天乙贵人：救他的是长辈、家世或早年的贵人；他不必自己去找门路"
+    },
+    {
+      "id": "NT-天乙贵人-08-年",
+      "kind": "神煞标签",
+      "text": "年柱天乙贵人：贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦｜古籍：贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾"
+    },
+    {
+      "id": "NT-天乙贵人-08-月",
+      "kind": "神煞标签",
+      "text": "月柱天乙贵人：贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦｜古籍：贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾"
+    },
+    {
+      "id": "NT-月德-02-月",
+      "kind": "神煞标签",
+      "text": "月柱月德：德随财官印食变：好事加倍｜古籍：财官、印绶、食神变德 → 各随所变，更加一倍之福"
+    },
+    {
+      "id": "NT-月德-04-月",
+      "kind": "神煞标签",
+      "text": "月柱月德：善良被冲：好心办坏事，逢凶化吉打折｜古籍：时上不犯克冲刑破 → 方吉"
+    },
+    {
+      "id": "NT-空亡-03-时",
+      "kind": "神煞标签",
+      "text": "时柱空亡：子嗣与晚年抓不住；性子拗，做事高而虚｜古籍：时上见 → 多拗性，为事高而虚；更遇华盖 → 决主少子"
+    },
+    {
+      "id": "NT-空亡-04-时",
+      "kind": "神煞标签",
+      "text": "时柱空亡：空在财：钱留不住｜古籍：禄马财官福聚之气 → 怕空亡散之"
+    },
+    {
+      "id": "NT-空亡-07-时",
+      "kind": "神煞标签",
+      "text": "时柱空亡：气度宽大、虚名与意外之福都有｜古籍：生旺 → 气度宽大，动招虚名，长大肥满，意外无心之福"
+    },
+    {
+      "id": "NT-空亡-09-时",
+      "kind": "神煞标签",
+      "text": "时柱空亡：空亡被冲则不空：抓不住的东西反而拿回来了｜古籍：空亡遇相冲 → 不空；运冲刑空亡 → 反为虚煞，飞声走誉"
+    },
+    {
+      "id": "NT-阴差阳错-03-时",
+      "kind": "神煞标签",
+      "text": "时柱阴差阳错：与妻家是非不断｜古籍：男命 → 退外家，与妻家是非寡合"
+    },
+    {
+      "id": "NT-阴差阳错-06-时",
+      "kind": "神煞标签",
+      "text": "时柱阴差阳错：婚事不由己：因丧事仓促成婚、入赘、续弦｜古籍：犯者 → 因孝娶，外祖两重或入赘，克妻，残房来作婿"
+    },
+    {
+      "id": "NT-驿马-01-时",
+      "kind": "神煞标签",
+      "text": "时柱驿马：上贵之马：晚年或靠后辈远行得志｜古籍：柱中带马不值空亡破败 → 时为上贵，日为中贵，月为常庶"
+    },
+    {
+      "id": "NT-驿马-04-时",
+      "kind": "神煞标签",
+      "text": "时柱驿马：被鞭策的马：动得剧烈，说走就走，多为被逼｜古籍：太岁或小运冲动马（鞭策）→ 多主动；与煞相冲并 → 离乡背井，或为僧道，或为商贾"
+    },
+    {
+      "id": "NT-驿马-05-时",
+      "kind": "神煞标签",
+      "text": "时柱驿马：通变趋时、有声望的走动者｜古籍：生旺 → 气韵凝峻，通变趋时，平生多声望"
+    },
+    {
+      "id": "NT-驿马-07-时",
+      "kind": "神煞标签",
+      "text": "时柱驿马：蹶蹄之马：走出去又折回来，或永远走不成｜古籍：蹶蹄（生日值空亡）→ 复起；折足 → 永失"
+    },
+    {
+      "id": "C-年-胎",
+      "kind": "长生",
+      "text": "日主在年支胎"
+    },
+    {
+      "id": "C-月-胎",
+      "kind": "长生",
+      "text": "日主在月支胎"
+    },
+    {
+      "id": "C-日-沐浴",
+      "kind": "长生",
+      "text": "日主在日支沐浴"
+    },
+    {
+      "id": "C-时-帝旺",
+      "kind": "长生",
+      "text": "日主在时支帝旺"
+    },
+    {
+      "id": "C-纳音-年-井泉水",
+      "kind": "纳音",
+      "text": "年柱纳音井泉水"
+    },
+    {
+      "id": "C-纳音-月-剑锋金",
+      "kind": "纳音",
+      "text": "月柱纳音剑锋金"
+    },
+    {
+      "id": "C-纳音-日-覆灯火",
+      "kind": "纳音",
+      "text": "日柱纳音覆灯火"
+    },
+    {
+      "id": "C-纳音-时-城头土",
+      "kind": "纳音",
+      "text": "时柱纳音城头土"
+    },
+    {
+      "id": "D-1-癸酉",
+      "kind": "大运",
+      "text": "第1步大运癸酉，3至13岁（303–313）"
+    },
+    {
+      "id": "D-2-甲戌",
+      "kind": "大运",
+      "text": "第2步大运甲戌，13至23岁（313–323）"
+    },
+    {
+      "id": "D-3-乙亥",
+      "kind": "大运",
+      "text": "第3步大运乙亥，23至33岁（323–333）"
+    },
+    {
+      "id": "D-4-丙子",
+      "kind": "大运",
+      "text": "第4步大运丙子，33至43岁（333–343）"
+    },
+    {
+      "id": "D-5-丁丑",
+      "kind": "大运",
+      "text": "第5步大运丁丑，43至53岁（343–353）"
+    },
+    {
+      "id": "D-6-戊寅",
+      "kind": "大运",
+      "text": "第6步大运戊寅，53至63岁（353–363）"
+    },
+    {
+      "id": "D-7-己卯",
+      "kind": "大运",
+      "text": "第7步大运己卯，63至73岁（363–373）"
+    },
+    {
+      "id": "D-8-庚辰",
+      "kind": "大运",
+      "text": "第8步大运庚辰，73至83岁（373–383）"
+    },
+    {
+      "id": "D-9-辛巳",
+      "kind": "大运",
+      "text": "第9步大运辛巳，83至93岁（383–393）"
+    },
+    {
+      "id": "D-10-壬午",
+      "kind": "大运",
+      "text": "第10步大运壬午，93至103岁（393–403）"
+    },
+    {
+      "id": "D-11-癸未",
+      "kind": "大运",
+      "text": "第11步大运癸未，103至113岁（403–413）"
+    },
+    {
+      "id": "D-12-甲申",
+      "kind": "大运",
+      "text": "第12步大运甲申，113至123岁（413–423）"
+    },
+    {
+      "id": "L-30-甲寅",
+      "kind": "流年",
+      "text": "30岁流年甲寅"
+    }
+  ]
+}

@@ -1,0 +1,7991 @@
+{
+ "schema": "tiaohou/1",
+ "generated": "2026-09-23",
+ "source": "references/校核/调候_{日主}.md 采用规则字段；《穷通宝鉴评注》徐乐吾评注本校核卡",
+ "entries": [
+  {
+   "dayMaster": "甲",
+   "monthBranch": "寅",
+   "source": "调候-甲寅",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "雨水前",
+      "boundary": "雨水",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": {
+      "label": "雨水后",
+      "boundary": "雨水",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "配庚，\"有庚戊者上命\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "以丙为主"
+   ],
+   "alternates": [],
+   "rule": "雨水前：丙、癸（以丙为主）；雨水后：庚、丁，（戊：配庚，\"有庚戊者上命\"）。雨水前后之分从徐注。",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "卯",
+   "source": "调候-甲卯",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "配庚，\"有庚戊者上命\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "财"
+     ],
+     "kind": "tenGod",
+     "when": "资煞，照抄\"财\"，不换算",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "火"
+     ],
+     "kind": "element",
+     "when": "书云\"木旺宜火之光辉\"，引书",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "庚金得所",
+    "阳刃架煞格：庚为用",
+    "丙不采用"
+   ],
+   "alternates": [],
+   "rule": "庚、丁，（戊：配庚，\"有庚戊者上命\"）；阳刃架煞格（庚金得所）：庚为用，（财：资煞，照抄\"财\"，不换算）；（火：书云\"木旺宜火之光辉\"，引书）。丙不采用。",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "辰",
+   "source": "调候-甲辰",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": {
+      "label": "谷雨后",
+      "boundary": "谷雨",
+      "side": "after"
+     }
+    },
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": {
+      "label": "清明后谷雨前",
+      "boundary": "谷雨",
+      "side": "before"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局时制煞",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文\"先庚次壬\"",
+    "见调候-甲卯",
+    "徐注\"与二月同看\""
+   ],
+   "alternates": [],
+   "rule": "谷雨后：庚、壬（正文\"先庚次壬\"），（丁：支成金局时制煞）；清明后谷雨前：徐注\"与二月同看\"，即庚、丁（见调候-甲卯）。按节气分段后正文与徐注不冲突：\"三月无用丁之法\"指谷雨后，\"与二月同看\"指清明后谷雨前。",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "巳",
+   "source": "调候-甲巳",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "庚多甲少时取之，\"有壬水则中和\"",
+     "tags": {
+      "many": [
+       "甲",
+       "庚"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [],
+   "alternates": [],
+   "rule": "癸、丁、庚；（壬：庚多甲少时取之，\"有壬水则中和\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "午",
+   "source": "调候-甲午",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "乏癸时用之，\"要运行北地为佳\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [],
+   "alternates": [],
+   "rule": "癸、丁、庚；（丁：乏癸时用之，\"要运行北地为佳\"）",
+   "avoidExceptions": [
+    {
+     "text": "若柱中多金，名曰杀重身轻，先富后贫，运不相扶，非贫即夭",
+     "kind": "用神过多",
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "未",
+   "source": "调候-甲未",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑后",
+      "boundary": "大暑",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "可无，\"无癸亦可\"",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "徐注\"大暑之前，看法相同……不能缺癸\"，同五月",
+    "亥卯未会局",
+    "正文\"木盛先丁\"为脱文，据徐注\"甲木太盛，宜庚金制之……即宜先庚\"与通行本\"木盛先庚，庚盛先丁\"补"
+   ],
+   "alternates": [
+    {
+     "when": "木盛",
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ]
+     ]
+    }
+   ],
+   "rule": "大暑前：癸、丁、庚（徐注\"大暑之前，看法相同……不能缺癸\"，同五月）；大暑后：丁、庚，（癸：可无，\"无癸亦可\"）；木盛（亥卯未会局）：庚、丁（正文\"木盛先丁\"为脱文，据徐注\"甲木太盛，宜庚金制之……即宜先庚\"与通行本\"木盛先庚，庚盛先丁\"补）。",
+   "avoidExceptions": [
+    {
+     "text": "若柱中多金，名曰杀重身轻，先富后贫，运不相扶，非贫即夭",
+     "kind": "用神过多",
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "申",
+   "source": "调候-甲申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "见壬癸时制水存火",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "走煞印相生一路时，徐注\"用壬水则无碍\"，校记\"用壬亦嫌羁绊\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "徐注\"丙火虽亦可用，不如丁火\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "\"丁火为尊，庚金次之，但不可少\""
+   ],
+   "alternates": [],
+   "rule": "丁、庚（\"丁火为尊，庚金次之，但不可少\"）；（戊：见壬癸时制水存火）；（壬：走煞印相生一路时，徐注\"用壬水则无碍\"，校记\"用壬亦嫌羁绊\"）；（丙：徐注\"丙火虽亦可用，不如丁火\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "酉",
+   "source": "调候-甲酉",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "支成木局、干透比劫：庚先丁次",
+    "辛透：宜丁，不宜丙，徐注"
+   ],
+   "alternates": [],
+   "rule": "丁、丙、庚；（支成木局、干透比劫：庚先丁次）；（辛透：宜丁，不宜丙，徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "戌",
+   "source": "调候-甲戌",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "上半月",
+      "boundary": "半月",
+      "side": "before"
+     },
+     "note": "同八月，徐注"
+    },
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "壬",
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "下半月",
+      "boundary": "半月",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "透干以财星为用，\"配得中和\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "兼用",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "比肩"
+     ],
+     "kind": "tenGod",
+     "when": "四柱土多财旺身弱而无比时帮身，徐注\"财旺用比\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文\"虽兼丙丁癸水为用，庚必居先\"，丁与壬癸为滋扶配合",
+    "正文\"遇比用财\"指柱中已有比肩者用财",
+    "与徐注互为条件",
+    "不相反",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [
+    {
+     "when": "木多",
+     "stems": [
+      [
+       "庚"
+      ]
+     ]
+    }
+   ],
+   "rule": "庚、丁、壬癸（正文\"虽兼丙丁癸水为用，庚必居先\"，丁与壬癸为滋扶配合）；（戊：透干以财星为用，\"配得中和\"）；（丙：兼用）；（木多：专用庚）；（上半月：同八月，徐注）；（比肩：四柱土多财旺身弱而无比时帮身，徐注\"财旺用比\"）。正文\"遇比用财\"指柱中已有比肩者用财，与徐注互为条件，不相反。",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "亥",
+   "source": "调候-甲亥",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬水透干时制水，徐注\"壬水不透，不必用戊土也\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "食伤生财：徐注补，\"此理为本书所未载\""
+   ],
+   "alternates": [],
+   "rule": "庚、丁、丙；（戊：壬水透干时制水，徐注\"壬水不透，不必用戊土也\"）；（食伤生财：徐注补，\"此理为本书所未载\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "子",
+   "source": "调候-甲子",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "庚"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "壬癸透干时为救",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [],
+   "alternates": [],
+   "rule": "丁、庚、丙；（戊己：壬癸透干时为救）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "甲",
+   "monthBranch": "丑",
+   "source": "调候-甲丑",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "无丁时用丙，徐注\"无丁可以用丙\"，又\"不能无丙解冻也\"",
+     "tags": {
+      "absent": [
+       "丁",
+       "丙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [
+    {
+     "stems": [
+      "火",
+      "丁",
+      "丁",
+      "丙"
+     ],
+     "note": "火（丁，无丁则丙"
+    }
+   ],
+   "downgrade": [
+    {
+     "absent": "庚",
+     "note": "富而不贵"
+    }
+   ],
+   "avoid": [],
+   "notes": [
+    "）"
+   ],
+   "alternates": [],
+   "rule": "庚、丁；（丙：无丁时用丙，徐注\"无丁可以用丙\"，又\"不能无丙解冻也\"）；不可缺：火（丁，无丁则丙）；无庚：降格，富而不贵（徐注\"无庚不能取贵，无丁不能取富\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "寅",
+   "source": "调候-乙寅",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬",
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "支逢寅午戌成局时不能不用，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "癸先：火多、阳壮木渴时，徐注\"用癸水者，必因火多\""
+   ],
+   "alternates": [],
+   "rule": "丙、癸；（癸先：火多、阳壮木渴时，徐注\"用癸水者，必因火多\"）；（壬癸：支逢寅午戌成局时不能不用，徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "卯",
+   "source": "调候-乙卯",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "宜藏支，出干则杂，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "癸先：四柱丙多、阳壮木渴时，徐注"
+   ],
+   "alternates": [],
+   "rule": "丙、癸；（癸先：四柱丙多、阳壮木渴时，徐注）；（庚：宜藏支，出干则杂，徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "辰",
+   "source": "调候-乙辰",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "水多，或支会水局见丙戊出干；壬癸并透须戊，己无益，徐注",
+     "tags": {
+      "trio": [
+       "水"
+      ],
+      "exposed": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：\"忌见己庚\""
+   ],
+   "alternates": [],
+   "rule": "癸、丙；（戊：水多，或支会水局见丙戊出干；壬癸并透须戊，己无益，徐注）；另记\"忌见己庚\"",
+   "avoidExceptions": [
+    {
+     "text": "又或庚辰时月，名二庚争合，乃贫贱之辈",
+     "kind": "其他",
+     "stems": [
+      "庚"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "巳",
+   "source": "调候-乙巳",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐癸，辛透为清，庚须不与乙合",
+     "tags": {
+      "exposed": [
+       "辛"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "酌用，柱多金水时，徐注\"用丙火伤官为例外\"",
+     "tags": {
+      "many": [
+       "金"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸用壬，徐注·三夏总论",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [],
+   "alternates": [],
+   "rule": "癸；（庚辛：佐癸，辛透为清，庚须不与乙合）；（丙：酌用，柱多金水时，徐注\"用丙火伤官为例外\"）；（壬：无癸用壬，徐注·三夏总论）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "午",
+   "source": "调候-乙午",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": {
+      "label": "夏至前/上半月",
+      "boundary": "夏至",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "夏至后/下半月",
+      "boundary": "夏至",
+      "side": "after"
+     },
+     "note": "丙癸并尊"
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐癸，次之",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸可解炎，不及癸，徐注",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "见戊己杂乱时制土",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "夏至前/上半月",
+    "夏至后/下半月",
+    "月条作\"丙癸尊\"，总论作\"先丙后癸\"",
+    "四柱多金水",
+    "癸并尊",
+    "丙先",
+    "余皆癸",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "（夏至前/上半月）癸、丙；（夏至后/下半月）丙、癸并尊（月条作\"丙癸尊\"，总论作\"先丙后癸\"）；（四柱多金水）丙先，余皆癸；（庚辛：佐癸，次之）；（壬：无癸可解炎，不及癸，徐注）；（甲：见戊己杂乱时制土）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "未",
+   "source": "调候-乙未",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐癸，次之",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "戊己杂乱时制土",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸有壬，仅保衣禄",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "柱多金水或大暑后金水进气，则丙为尊"
+   ],
+   "alternates": [],
+   "rule": "癸、丙（柱多金水或大暑后金水进气，则丙为尊）；（庚辛：佐癸，次之）；（甲：戊己杂乱时制土）；（壬：无癸有壬，仅保衣禄）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "申",
+   "source": "调候-乙申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "己"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "癸透丙藏、庚少时不用己，只用癸，格平",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [
+    {
+     "stems": [
+      "己",
+      "土"
+     ],
+     "note": "己土不可少"
+    }
+   ],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：\"忌戊\"（徐注\"戊土克壬，金便伤木\"）",
+    "不见丙癸则专取己土为用",
+    "化金：生辰时从化及时，戊作用神，忌丙丁"
+   ],
+   "alternates": [],
+   "rule": "丙、癸、己；另记\"己土不可少\"（不见丙癸则专取己土为用）；（癸：癸透丙藏、庚少时不用己，只用癸，格平）；另记\"忌戊\"（徐注\"戊土克壬，金便伤木\"）；（化金：生辰时从化及时，戊作用神，忌丙丁）",
+   "avoidExceptions": [
+    {
+     "text": "七月乙木，庚金司令，庚虽输情于乙妹，而干乙难合支庚，见庚，乙必受伤",
+     "kind": "其他",
+     "stems": [
+      "丙",
+      "丁",
+      "庚"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "酉",
+   "source": "调候-乙酉",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "秋分前/上半月",
+      "boundary": "秋分",
+      "side": "before"
+     },
+     "note": "无癸姑用壬"
+    },
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "秋分后/下半月",
+      "boundary": "秋分",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局或辛金出干时制煞",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：\"不必定限上下半月\"，火旺用水、水多用火",
+    "秋分前/上半月",
+    "无癸姑用壬",
+    "秋分后/下半月",
+    "徐注",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "（秋分前/上半月）癸（无癸姑用壬）；（秋分后/下半月）丙、癸；（丁：支成金局或辛金出干时制煞）；徐注另记\"不必定限上下半月\"，火旺用水、水多用火",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "戌",
+   "source": "调候-乙戌",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "辛"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "甲申时，藤萝繁甲",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "四柱壬水多，徐注\"水多用戊\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "发水源",
+    "总论\"用丙恐暖戊土为病\"",
+    "丙不用"
+   ],
+   "alternates": [],
+   "rule": "癸、辛（发水源）；（甲：甲申时，藤萝繁甲）；（戊：四柱壬水多，徐注\"水多用戊\"）；丙不用（总论\"用丙恐暖戊土为病\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "亥",
+   "source": "调候-乙亥",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "戊"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "戊多时制戊",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "甲多时，徐注",
+     "tags": {
+      "many": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "无戊时与丙并用，混壬培根，徐注",
+     "tags": {
+      "absent": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "壬多时",
+    "戊为尊：支成木局又见癸水"
+   ],
+   "alternates": [],
+   "rule": "丙、戊（壬多时）；（戊为尊：支成木局又见癸水）；（甲：戊多时制戊）；（庚：甲多时，徐注）；（己：无戊时与丙并用，混壬培根，徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "子",
+   "source": "调候-乙子",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬癸透干或满局壬癸时补救，不可用相",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "原局无丙不得已用，力薄，徐注；冬至后坐下木局丁出干亦有衣禄，须忌癸",
+     "tags": {
+      "absent": [
+       "丙"
+      ],
+      "trio": [
+       "木"
+      ],
+      "exposed": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "冬月己透又丙透，以己制癸，仍是用丙",
+     "tags": {
+      "exposed": [
+       "己",
+       "丙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "专用"
+   ],
+   "alternates": [],
+   "rule": "丙（专用）；（戊：壬癸透干或满局壬癸时补救，不可用相）；（丁：原局无丙不得已用，力薄，徐注；冬至后坐下木局丁出干亦有衣禄，须忌癸）；（己：冬月己透又丙透，以己制癸，仍是用丙）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "乙",
+   "monthBranch": "丑",
+   "source": "调候-乙丑",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "一派戊土时破戊，仍以丙为用",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "专用"
+   ],
+   "alternates": [],
+   "rule": "丙（专用）；（甲：一派戊土时破戊，仍以丙为用）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "寅",
+   "source": "调候-丙寅",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬时姑用，官杀要旺相有根，略富贵",
+     "tags": {
+      "absent": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬多时制壬，宜见一二比肩",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "一片戊土时出干为救",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "支成火局且壬癸俱无时泄火，平人",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊土晦光",
+    "壬忌多见",
+    "春生时月出癸（总论）"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬、庚，（癸：无壬时姑用，官杀要旺相有根，略富贵），（戊：壬多时制壬，宜见一二比肩），（甲：一片戊土时出干为救），（戊：支成火局且壬癸俱无时泄火，平人）；另记忌：戊土晦光、壬忌多见、春生时月出癸（总论）",
+   "avoidExceptions": [
+    {
+     "text": "先壬次庚，壬忌多见",
+     "kind": "用神过多",
+     "stems": [
+      "壬"
+     ],
+     "absent": []
+    },
+    {
+     "text": "丙日春生，时月出癸，云雾迷濛，不显不达，非若壬水辅丙也",
+     "kind": "用神过多",
+     "stems": [
+      "癸"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "卯",
+   "source": "调候-丙卯",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐壬生水，\"必庚辛方妙\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "无壬癸时姑用，常人",
+     "tags": {
+      "absent": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "一派壬水时制壬",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "一派戊土时制戊，正文只言\"喜行东方木运\"，取甲出自徐注",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁透羁合",
+    "春生时月出癸（总论）"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬，（庚辛：佐壬生水，\"必庚辛方妙\"），（己：无壬癸时姑用，常人），（戊：一派壬水时制壬），（甲：一派戊土时制戊，正文只言\"喜行东方木运\"，取甲出自徐注）；另记忌：丁透羁合、春生时月出癸（总论）",
+   "avoidExceptions": [
+    {
+     "text": "丙日春生，时月出癸，云雾迷濛，不显不达，非若壬水辅丙也",
+     "kind": "用神过多",
+     "stems": [
+      "癸"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "辰",
+   "source": "调候-丙辰",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无甲时助壬泄土，须日主旺相",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "支成水局时，正文\"宜用戊土，勿用壬\"；徐注以甲为上、戊次之",
+     "tags": {
+      "trio": [
+       "水"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "金出干破甲",
+    "丁己离乱",
+    "春生时月出癸（总论）"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬、甲，（庚：无甲时助壬泄土，须日主旺相），（戊：支成水局时，正文\"宜用戊土，勿用壬\"；徐注以甲为上、戊次之）；另记忌：金出干破甲、丁己离乱、春生时月出癸（总论）",
+   "avoidExceptions": [
+    {
+     "text": "丙日春生，时月出癸，云雾迷濛，不显不达，非若壬水辅丙也",
+     "kind": "用神过多",
+     "stems": [
+      "癸"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "巳",
+   "source": "调候-丙巳",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬时姑用，丁多兼看",
+     "tags": {
+      "absent": [
+       "壬"
+      ],
+      "many": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬多或支成水局时制壬",
+     "tags": {
+      "trio": [
+       "水"
+      ],
+      "many": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "壬庚两透时忌戊己出干",
+    "见己土浊壬"
+   ],
+   "notes": [
+    "申中壬水优于亥中壬水"
+   ],
+   "alternates": [],
+   "rule": "壬、庚，（癸：无壬时姑用，丁多兼看），（戊：壬多或支成水局时制壬），（申中壬水优于亥中壬水）；另记忌：壬庚两透时忌戊己出干、见己土浊壬",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "午",
+   "source": "调候-丙午",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丁多兼看；庚癸两透衣禄充足",
+     "tags": {
+      "many": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "支成土局时出干制土，与壬并用",
+     "tags": {
+      "trio": [
+       "土"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支成土局时泄土，贵不足，徐注",
+     "tags": {
+      "trio": [
+       "土"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己杂乱",
+    "丁壬化合",
+    "炎上格见水运"
+   ],
+   "notes": [
+    "申宫长生之水、坐禄之金：不透庚壬时，至妙",
+    "徐注",
+    "正文",
+    "支成火局戊己出干",
+    "以土为用者",
+    "北运可行",
+    "木火运凶",
+    "无土之炎上格忌水运"
+   ],
+   "alternates": [],
+   "rule": "壬、庚，（申宫长生之水、坐禄之金：不透庚壬时，至妙），（癸：丁多兼看；庚癸两透衣禄充足），（甲：支成土局时出干制土，与壬并用），（庚：支成土局时泄土，贵不足，徐注）；另记忌：戊己杂乱、丁壬化合、炎上格见水运；支成火局戊己出干、以土为用者，北运可行、木火运凶（徐注）；无土之炎上格忌水运（正文）",
+   "avoidExceptions": [
+    {
+     "text": "阳刃合杀，威权万里，丁火羊刃太旺，正谓羊刃倒戈，无头之兆",
+     "kind": "其他",
+     "stems": [
+      "壬",
+      "癸"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "未",
+   "source": "调候-丙未",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     },
+     "sameAs": "五月",
+     "note": "与五月同推，徐注"
+    },
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊制壬",
+    "己土出干混浊"
+   ],
+   "notes": [
+    "另记：运向：六月用壬喜东南、忌西北，一派丙火或原局印比多则宜西北",
+    "庚为佐，徐注\"六月非庚金为佐不可\""
+   ],
+   "alternates": [],
+   "rule": "壬、庚（庚为佐，徐注\"六月非庚金为佐不可\"），（大暑前：与五月同推，徐注）；另记运向：六月用壬喜东南、忌西北，一派丙火或原局印比多则宜西北；另记忌：戊制壬、己土出干混浊",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "申",
+   "source": "调候-丙申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬多时制壬",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "徐注\"用壬水不能无印\"\"不能无甲木\"，以印比扶身",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "见土皆晦（不用食伤）",
+    "戊多制过",
+    "见癸合戊"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬，（戊：壬多时制壬），（甲：徐注\"用壬水不能无印\"\"不能无甲木\"，以印比扶身）；另记忌：见土皆晦（不用食伤）、戊多制过、见癸合戊",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "酉",
+   "source": "调候-丙酉",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬时可用，发达不久",
+     "tags": {
+      "absent": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲",
+      "印比"
+     ],
+     "kind": "stem/tenGod",
+     "when": "丙火不旺时，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "土多困水",
+    "己多混浊"
+   ],
+   "notes": [
+    "另记：\"四柱多丙\"为用壬要义"
+   ],
+   "alternates": [],
+   "rule": "壬、癸（癸：无壬时可用，发达不久），（甲/印比：丙火不旺时，徐注）；另记\"四柱多丙\"为用壬要义；另记忌：土多困水、己多混浊",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "戌",
+   "source": "调候-丙戌",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬时透干，异途显达",
+     "tags": {
+      "absent": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "土晦光",
+    "庚破甲",
+    "戊困水",
+    "己土出干而甲不透"
+   ],
+   "notes": [
+    "火多而透：壬癸为主、甲为佐，徐注"
+   ],
+   "alternates": [],
+   "rule": "甲、壬，（癸：无壬时透干，异途显达），（火多而透：壬癸为主、甲为佐，徐注）；另记忌：土晦光、庚破甲、戊困水、己土出干而甲不透",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "亥",
+   "source": "调候-丙亥",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "戊"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "木多",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "水多，须丙火生旺",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "火多",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "水多有甲无戊时混壬",
+     "tags": {
+      "absent": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文\"甲戊庚齐透\"；徐注以甲为主要关键"
+   ],
+   "alternates": [],
+   "rule": "甲、戊、庚（正文\"甲戊庚齐透\"；徐注以甲为主要关键），（庚：木多），（戊：水多，须丙火生旺），（壬：火多），（己：水多有甲无戊时混壬）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "子",
+   "source": "调候-丙子",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "戊"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "冬至前",
+      "boundary": "冬至",
+      "side": "before"
+     },
+     "sameAs": "十月",
+     "note": ""
+    },
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "戊"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬时出干，须得金滋、丙透解冻",
+     "tags": {
+      "absent": [
+       "壬"
+      ],
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "水多有甲无戊时浊壬",
+     "tags": {
+      "absent": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "note": "甲不可缺"
+    }
+   ],
+   "downgrade": [],
+   "avoid": [
+    "土晦光"
+   ],
+   "notes": [
+    "戊为佐",
+    "正文\"甲不可少\"\"用戊者，不可少甲\"",
+    "用壬须干见比肩或支成火局，徐注"
+   ],
+   "alternates": [],
+   "rule": "壬、戊（戊为佐）、甲（正文\"甲不可少\"\"用戊者，不可少甲\"），另记\"甲不可缺\"；（癸：无壬时出干，须得金滋、丙透解冻），（己：水多有甲无戊时浊壬），（用壬须干见比肩或支成火局，徐注），（冬至前与十月同看，徐注）；另记忌：土晦光",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丙",
+   "monthBranch": "丑",
+   "source": "调候-丙丑",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "一派癸水、己土制癸太多时泄己滋癸",
+     "tags": {
+      "many": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文：己多须甲为佐；徐注：非甲不能生丙，不论土之多寡"
+   ],
+   "alternates": [],
+   "rule": "壬、甲（正文：己多须甲为佐；徐注：非甲不能生丙，不论土之多寡），（辛：一派癸水、己土制癸太多时泄己滋癸）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "寅",
+   "source": "调候-丁寅",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "寅宫月令自有，正文\"丁不离甲\"，徐注\"正月丁火，不离甲庚\"，不另列首位",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "有庚及壬癸时出干制之，异途恩封；徐注作食神生财",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "化木见庚破格",
+    "一派甲木无庚",
+    "一派壬癸不得寅时又无庚",
+    "水不宜多"
+   ],
+   "notes": [
+    "另记：用财官时忌戊土伤官",
+    "化木：壬透、得寅月寅时，喜甲忌庚",
+    "支成火局无水：见甲出略吉；徐注以庚壬配合取用",
+    "徐注"
+   ],
+   "alternates": [],
+   "rule": "庚、壬，（甲：寅宫月令自有，正文\"丁不离甲\"，徐注\"正月丁火，不离甲庚\"，不另列首位），（己：有庚及壬癸时出干制之，异途恩封；徐注作食神生财），（化木：壬透、得寅月寅时，喜甲忌庚），（支成火局无水：见甲出略吉；徐注以庚壬配合取用）；另记忌：化木见庚破格、一派甲木无庚、一派壬癸不得寅时又无庚、水不宜多；徐注另记用财官时忌戊土伤官",
+   "avoidExceptions": [
+    {
+     "text": "但不宜庚破格，有庚不过秀才",
+     "kind": "用神过多",
+     "stems": [
+      "庚"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "卯",
+   "source": "调候-丁卯",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "乙"
+     ],
+     "kind": "stem",
+     "when": "庚透乙藏时可用，运入木火之乡",
+     "tags": {
+      "exposed": [
+       "庚"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "一派癸水或乙少癸多时出干制煞",
+     "tags": {
+      "many": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "庚乙俱透贪合",
+    "有乙无庚",
+    "一派乙木不见甲",
+    "一派癸水无戊己制"
+   ],
+   "notes": [
+    "徐注：甲庚不全，宁可无甲，不可无庚",
+    "支成火局：以庚为用，徐注须食伤出干泄火生财",
+    "运向：用乙喜木火之乡，庚乙贪合忌金水之乡"
+   ],
+   "alternates": [],
+   "rule": "庚、甲（徐注：甲庚不全，宁可无甲，不可无庚），（乙：庚透乙藏时可用，运入木火之乡），（戊己：一派癸水或乙少癸多时出干制煞），（支成火局：以庚为用，徐注须食伤出干泄火生财）；另记忌：庚乙俱透贪合、有乙无庚、一派乙木不见甲、一派癸水无戊己制；运向：用乙喜木火之乡，庚乙贪合忌金水之乡",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "辰",
+   "source": "调候-丁辰",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支成木局时为先，徐注",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "支成水局加以壬透时两透制煞，此时忌甲出破土",
+     "tags": {
+      "trio": [
+       "水"
+      ],
+      "exposed": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "甲庚缺一",
+    "用财见丁火制庚",
+    "见癸水泄庚（徐注）"
+   ],
+   "notes": [
+    "谷雨之后；谷雨之前与二月同推，即庚、甲，徐注"
+   ],
+   "alternates": [],
+   "rule": "甲、庚（谷雨之后；谷雨之前与二月同推，即庚、甲，徐注），（庚：支成木局时为先，徐注），（戊己：支成水局加以壬透时两透制煞，此时忌甲出破土）；另记忌：甲庚缺一、用财见丁火制庚、见癸水泄庚（徐注）",
+   "avoidExceptions": [
+    {
+     "text": "或支成水局，加以壬透，名煞重身轻，终身有损，不夭折天年，终遭凶死",
+     "kind": "其他",
+     "stems": [
+      "壬",
+      "癸"
+     ],
+     "absent": []
+    },
+    {
+     "text": "甲出破土，即是常人",
+     "kind": "用神过多",
+     "stems": [
+      "甲"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "巳",
+   "source": "调候-丁巳",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "丙出干夺丁光、柱无癸时出干制丙，玉堂清贵",
+     "tags": {
+      "absent": [
+       "癸"
+      ],
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬",
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丙夺丁光时破丙，异途威权",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "有庚无甲而戊透天干时，伤官生财",
+     "tags": {
+      "absent": [
+       "甲"
+      ],
+      "exposed": [
+       "戊"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "见甲丙气转为阳，徐注列为格局之变",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸（用甲引丁时忌，用丙辅丁者不忌，徐注）",
+    "多见乙木",
+    "丙夺丁光而无壬癸"
+   ],
+   "notes": [
+    "甲多则庚为先",
+    "引书\"柱中若见甲木透\"为甲的旁证"
+   ],
+   "alternates": [],
+   "rule": "甲、庚（甲多则庚为先），（壬：丙出干夺丁光、柱无癸时出干制丙，玉堂清贵），（壬癸：丙夺丁光时破丙，异途威权），（戊：有庚无甲而戊透天干时，伤官生财），（丙：见甲丙气转为阳，徐注列为格局之变）；引书\"柱中若见甲木透\"为甲的旁证；另记忌：癸（用甲引丁时忌，用丙辅丁者不忌，徐注）、多见乙木、丙夺丁光而无壬癸",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "午",
+   "source": "调候-丁午",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "支无壬水时一癸透，独杀当权",
+     "tags": {
+      "absent": [
+       "壬"
+      ],
+      "exposed": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "无火局而壬水透干时须用，且要庚劈甲；徐注\"壬癸太旺用甲木，乃例外\"",
+     "tags": {
+      "trio": [
+       "火"
+      ],
+      "many": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "不得轻用甲木",
+    "土透制壬",
+    "亥卯未会木生火",
+    "无水解炎"
+   ],
+   "notes": [
+    "庚为佐：正文\"庚壬两透\"科甲，徐注\"必须庚金发水之源……即非火局，壬水亦要金生\"",
+    "徐注",
+    "运向：壬藏支须行西北，假炎上宜东南忌西北"
+   ],
+   "alternates": [],
+   "rule": "壬、庚（庚为佐：正文\"庚壬两透\"科甲，徐注\"必须庚金发水之源……即非火局，壬水亦要金生\"），（癸：支无壬水时一癸透，独杀当权），（甲：无火局而壬水透干时须用，且要庚劈甲；徐注\"壬癸太旺用甲木，乃例外\"）；另记忌：不得轻用甲木、土透制壬、亥卯未会木生火、无水解炎；运向：壬藏支须行西北，假炎上宜东南忌西北（徐注）",
+   "avoidExceptions": [
+    {
+     "text": "时逢建禄，不得轻用甲木",
+     "kind": "其他",
+     "stems": [
+      "甲"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "未",
+   "source": "调候-丁未",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     },
+     "sameAs": "五月",
+     "note": "兼用壬水，同五月，徐注"
+    },
+    {
+     "stems": [
+      [
+       "甲"
+      ]
+     ],
+     "period": {
+      "label": "大暑后",
+      "boundary": "大暑",
+      "side": "after"
+     },
+     "note": "专用甲木，徐注"
+    },
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "正文\"更得庚透，必然科甲\"\"无庚不妙\"\"必有庚透，方无刑伤\"",
+     "tags": {
+      "absent": [
+       "庚"
+      ],
+      "exposed": [
+       "庚"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "支成木局见水透干（湿木）",
+    "四柱纯丁未"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "甲、壬、庚（庚：正文\"更得庚透，必然科甲\"\"无庚不妙\"\"必有庚透，方无刑伤\"），（大暑前：兼用壬水，同五月，徐注；大暑后：专用甲木，徐注）；另记忌：支成木局见水透干（湿木）、四柱纯丁未",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "申",
+   "source": "调候-丁申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "乙"
+     ],
+     "kind": "stem",
+     "when": "无甲时姑用，不离丙晒，富贵皆小",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "一重壬水又多见癸水时制之",
+     "tags": {
+      "many": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一派庚金时壬多泄庚，大富",
+     "tags": {
+      "many": [
+       "庚",
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "两丙夹丁须支见水制丙（七月申宫自有长生之水，徐注）",
+    "多庚无壬",
+    "水出干则庚能伤丁（徐注\"只要水不出干\"）"
+   ],
+   "notes": [
+    "正文\"七月甲丙，申中有庚\"：庚取申中，不必透；\"或见甲，又透庚丙，科甲有准\""
+   ],
+   "alternates": [],
+   "rule": "甲、庚、丙（正文\"七月甲丙，申中有庚\"：庚取申中，不必透；\"或见甲，又透庚丙，科甲有准\"），（乙：无甲时姑用，不离丙晒，富贵皆小），（戊己：一重壬水又多见癸水时制之），（壬：一派庚金时壬多泄庚，大富）；另记忌：两丙夹丁须支见水制丙（七月申宫自有长生之水，徐注）、多庚无壬、水出干则庚能伤丁（徐注\"只要水不出干\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "酉",
+   "source": "调候-丁酉",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "乙"
+     ],
+     "kind": "stem",
+     "when": "无甲时姑用，不离丙晒",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "一重壬水又多见癸水时制之",
+     "tags": {
+      "many": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "两丙夹丁须地支有水制丙（徐注）"
+   ],
+   "notes": [
+    "正文\"八月甲丙庚皆用\"",
+    "从财：一派辛金，无庚，又无比印"
+   ],
+   "alternates": [],
+   "rule": "甲、丙、庚（正文\"八月甲丙庚皆用\"），（乙：无甲时姑用，不离丙晒），（戊己：一重壬水又多见癸水时制之），（从财：一派辛金，无庚，又无比印）；另记忌：两丙夹丁须地支有水制丙（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "戌",
+   "source": "调候-丁戌",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "一派戊土、无壬、不见甲木时成伤官伤尽格，富贵非凡",
+     "tags": {
+      "absent": [
+       "壬"
+      ],
+      "many": [
+       "戊"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "一派戊土见甲透则伤官佩印，庚不可少",
+     "tags": {
+      "many": [
+       "戊"
+      ],
+      "exposed": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "一重壬水又多见癸水时制之",
+     "tags": {
+      "many": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文\"九月专用甲庚\"；徐注\"九月必须用甲\"，不用乙、不用丙"
+   ],
+   "alternates": [],
+   "rule": "甲、庚（正文\"九月专用甲庚\"；徐注\"九月必须用甲\"，不用乙、不用丙），（戊：一派戊土、无壬、不见甲木时成伤官伤尽格，富贵非凡），（甲：一派戊土见甲透则伤官佩印，庚不可少），（戊己：一重壬水又多见癸水时制之）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "亥",
+   "source": "调候-丁亥",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "时月二壬争合时破之；水旺时",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "二丙夺丁时出干；四柱丙火太多时破丙",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一丙夺丁时支水破丙，须支金发源；有壬无金亦清贵",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "己多合甲"
+   ],
+   "notes": [
+    "庚为甲之佐，徐注\"非以庚为用\"",
+    "从杀：徐注十月亦可作从论，不及十一月之纯"
+   ],
+   "alternates": [],
+   "rule": "甲、庚（庚为甲之佐，徐注\"非以庚为用\"），（戊：时月二壬争合时破之；水旺时），（癸：二丙夺丁时出干；四柱丙火太多时破丙），（壬：一丙夺丁时支水破丙，须支金发源；有壬无金亦清贵），（从杀：徐注十月亦可作从论，不及十一月之纯）；另记忌：己多合甲",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "子",
+   "source": "调候-丁子",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "时月二壬争合时破之；水旺时；从杀格比印破格而戊出破癸，须原局有比印",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "二丙夺丁时出干；四柱丙火太多时破丙",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一丙夺丁时支水破丙",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "己多合甲"
+   ],
+   "notes": [
+    "庚为甲之佐",
+    "从杀：金旺水多、全无比印"
+   ],
+   "alternates": [],
+   "rule": "甲、庚（庚为甲之佐），（戊：时月二壬争合时破之；水旺时；从杀格比印破格而戊出破癸，须原局有比印），（癸：二丙夺丁时出干；四柱丙火太多时破丙），（壬：一丙夺丁时支水破丙），（从杀：金旺水多、全无比印）；另记忌：己多合甲",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "丁",
+   "monthBranch": "丑",
+   "source": "调候-丁丑",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "时月二壬争合时破之；水旺时",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "二丙夺丁时出干；四柱丙火太多时破丙",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一丙夺丁时支水破丙",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "己多合甲"
+   ],
+   "notes": [
+    "庚为甲之佐"
+   ],
+   "alternates": [],
+   "rule": "甲、庚（庚为甲之佐），（戊：时月二壬争合时破之；水旺时），（癸：二丙夺丁时出干；四柱丙火太多时破丙），（壬：一丙夺丁时支水破丙）；另记忌：己多合甲",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "寅",
+   "source": "调候-戊寅",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丙火太多、支成火局时先癸，徐注",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局时，壬透主富，要看水之多少",
+     "tags": {
+      "trio": [
+       "火"
+      ],
+      "exposed": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "一派甲木时透干制煞",
+     "tags": {
+      "many": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸",
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "丙多木多时参用",
+     "tags": {
+      "many": [
+       "木",
+       "丙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：徐注节候：初春宜丙，无癸可专用丙"
+   ],
+   "alternates": [],
+   "rule": "丙、甲、癸，（癸：丙火太多、支成火局时先癸，徐注），（壬：支成火局时，壬透主富，要看水之多少），（庚：一派甲木时透干制煞），（癸庚：丙多木多时参用）；另记徐注节候：初春宜丙，无癸可专用丙",
+   "avoidExceptions": [
+    {
+     "text": "或无庚金，不见比印，不作从煞论，非大恶遭凶，定作盗贼",
+     "kind": "用神过多",
+     "stems": [
+      "甲",
+      "乙",
+      "丙",
+      "丁"
+     ],
+     "absent": [
+      "庚"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "卯",
+   "source": "调候-戊卯",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null,
+     "note": "二月从徐注；正月见戊寅卡"
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丙火太多、支成火局时先癸，徐注",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局时，壬透主富",
+     "tags": {
+      "trio": [
+       "火"
+      ],
+      "exposed": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支成木局、甲又出干时透干，科甲；一派乙木时须隔位不合",
+     "tags": {
+      "trio": [
+       "木"
+      ],
+      "many": [
+       "乙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸",
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "丙多木多时参用",
+     "tags": {
+      "many": [
+       "木",
+       "丙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文\"正二月先丙后甲，癸次之\"",
+    "徐注\"仲春阳壮宜癸\"\"正二月戊土，不离丙癸\"；\"仲春无丙，不能用癸\"，丙仍居先",
+    "正月：丙、甲、癸",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "正月：丙、甲、癸（正文\"正二月先丙后甲，癸次之\"）；二月：丙、癸、甲（徐注\"仲春阳壮宜癸\"\"正二月戊土，不离丙癸\"；\"仲春无丙，不能用癸\"，丙仍居先）；（癸：丙火太多、支成火局时先癸，徐注），（壬：支成火局时，壬透主富），（庚：支成木局、甲又出干时透干，科甲；一派乙木时须隔位不合），（癸庚：丙多木多时参用）",
+   "avoidExceptions": [
+    {
+     "text": "或无庚金，不见比印，不作从煞论，非大恶遭凶，定作盗贼",
+     "kind": "用神过多",
+     "stems": [
+      "甲",
+      "乙",
+      "丙",
+      "丁"
+     ],
+     "absent": [
+      "庚"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "辰",
+   "source": "调候-戊辰",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支成木局、甲乙出干时扫除官煞",
+     "tags": {
+      "trio": [
+       "木"
+      ],
+      "exposed": [
+       "乙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁",
+      "火"
+     ],
+     "kind": "element/stem",
+     "when": "官煞会党无庚时泄木气",
+     "tags": {
+      "absent": [
+       "庚"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "火多或支成火局时，癸优于壬；有比印时月时取癸",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "\"甲木为先，取癸为佐，以才生煞为上格，以印化煞为次格\"，正文本条\"癸透主科甲，丙透者主禀贡衣矜\"亦以癸高于丙"
+   ],
+   "alternates": [],
+   "rule": "甲、癸、丙（\"甲木为先，取癸为佐，以才生煞为上格，以印化煞为次格\"，正文本条\"癸透主科甲，丙透者主禀贡衣矜\"亦以癸高于丙）；（庚：支成木局、甲乙出干时扫除官煞），（丁/火：官煞会党无庚时泄木气），（癸：火多或支成火局时，癸优于壬；有比印时月时取癸）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "巳",
+   "source": "调候-戊巳",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "一派丙火时透干、壬藏，富贵有准；徐注\"不可无水为配合\"",
+     "tags": {
+      "many": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "化火格时取甲为用，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "一派丙火",
+    "火炎土燥"
+   ],
+   "notes": [
+    "丙癸同为佐；徐注：土燥以癸为佐，四柱水多湿润太过以丙化煞，\"须察土之燥湿定之\"",
+    "支成金局、干出癸水：奇格"
+   ],
+   "alternates": [],
+   "rule": "甲、丙、癸（丙癸同为佐；徐注：土燥以癸为佐，四柱水多湿润太过以丙化煞，\"须察土之燥湿定之\"），（癸：一派丙火时透干、壬藏，富贵有准；徐注\"不可无水为配合\"），（甲：化火格时取甲为用，徐注），（支成金局、干出癸水：奇格）；另记忌：一派丙火、火炎土燥",
+   "avoidExceptions": [
+    {
+     "text": "若一派丙火，为火炎土燥，僧道孤贫",
+     "kind": "用神过多",
+     "stems": [
+      "丙"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "午",
+   "source": "调候-戊午",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "力微，支成火局时不能大济",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "年干辛出为壬水之源",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "土出制壬",
+    "支成火局只有癸水"
+   ],
+   "notes": [
+    "徐注：有壬方可用甲",
+    "酌用",
+    "申宫之金：济壬，徐注",
+    "\"木火重重",
+    "全无滴水\"正文判僧道孤贫",
+    "入分支判词",
+    "徐注判变格非不贵",
+    "入从化判词作从旺候选"
+   ],
+   "alternates": [],
+   "rule": "壬、甲（徐注：有壬方可用甲）、丙（酌用），（癸：力微，支成火局时不能大济），（辛：年干辛出为壬水之源），（申宫之金：济壬，徐注）；另记忌：土出制壬、支成火局只有癸水；\"木火重重，全无滴水\"正文判僧道孤贫，入分支判词；徐注判变格非不贵，入从化判词作从旺候选",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "未",
+   "source": "调候-戊未",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     },
+     "sameAs": "五月",
+     "note": "与五月同论，必用壬癸，徐注"
+    },
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸时亦可用，徐注",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "癸透辛出，伤官生财，异路",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "徐注\"用甲木，不能无癸……故必以癸为先\"",
+    "大暑后：原局金水多宜用丙，徐注",
+    "徐注另一说：火多用土、土重用癸、水多用丙，\"火多用土\"文意不顺，见观察"
+   ],
+   "alternates": [],
+   "rule": "癸、丙、甲（徐注\"用甲木，不能无癸……故必以癸为先\"），（大暑前：与五月同论，必用壬癸，徐注），（大暑后：原局金水多宜用丙，徐注），（壬：无癸时亦可用，徐注），（辛：癸透辛出，伤官生财，异路），（徐注另一说：火多用土、土重用癸、水多用丙，\"火多用土\"文意不顺，见观察）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "申",
+   "source": "调候-戊申",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "支成水局时泄水气，不作从财",
+     "tags": {
+      "trio": [
+       "水"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "壬透丙藏，终成选拔",
+     "tags": {
+      "exposed": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "徐注：甲在土多塞滞时疏土"
+   ],
+   "alternates": [],
+   "rule": "丙、癸、甲（徐注：甲在土多塞滞时疏土），（甲：支成水局时泄水气，不作从财），（壬：壬透丙藏，终成选拔）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "酉",
+   "source": "调候-戊酉",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "秋土生金极弱时，丙丁出干方妙",
+     "tags": {
+      "exposed": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "比劫"
+     ],
+     "kind": "tenGod",
+     "when": "支成水局、壬癸出干，财多身弱时分财；徐注\"财多只能用比劫，不能用印\"",
+     "tags": {
+      "trio": [
+       "水"
+      ],
+      "exposed": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "\"不必木疏\"",
+    "辛金出干：丙丁宜藏支，得癸出干富而且贵，徐注",
+    "不用甲"
+   ],
+   "alternates": [],
+   "rule": "丙、癸，不用甲（\"不必木疏\"），（丁：秋土生金极弱时，丙丁出干方妙），（辛金出干：丙丁宜藏支，得癸出干富而且贵，徐注），（比劫：支成水局、壬癸出干，财多身弱时分财；徐注\"财多只能用比劫，不能用印\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "戌",
+   "source": "调候-戊戌",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "金水"
+     ],
+     "kind": "tenGod",
+     "when": "支成火局时两透，略可富贵",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊与癸合"
+   ],
+   "notes": [
+    "丙为配合；正文\"不必用丙\"",
+    "戊/比透：支成水局、壬癸透干时用戊止流，反主富"
+   ],
+   "alternates": [],
+   "rule": "甲、癸、丙（丙为配合；正文\"不必用丙\"），（戊/比透：支成水局、壬癸透干时用戊止流，反主富），（金水：支成火局时两透，略可富贵）；另记忌：戊与癸合",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "亥",
+   "source": "调候-戊亥",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "土多而暖时用；徐注\"以丙火为重要，土多而暖，方用甲木\"，\"如甲木不出干，专用丙火，亦为贵格\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "有庚破甲时制庚",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬透困丙时救丙，富中取贵",
+     "tags": {
+      "exposed": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "庚多破甲",
+    "壬困丙"
+   ],
+   "notes": [
+    "徐注\"专用甲丙而不生癸，因亥宫壬水得禄也\"",
+    "不用癸"
+   ],
+   "alternates": [],
+   "rule": "丙、甲（甲：土多而暖时用；徐注\"以丙火为重要，土多而暖，方用甲木\"，\"如甲木不出干，专用丙火，亦为贵格\"）；（丁：有庚破甲时制庚），（戊：壬透困丙时救丙，富中取贵）；不用癸（徐注\"专用甲丙而不生癸，因亥宫壬水得禄也\"）；另记忌：庚多破甲、壬困丙",
+   "avoidExceptions": [
+    {
+     "text": "丙甲两困，下格",
+     "kind": "用神过多",
+     "stems": [
+      "甲",
+      "丙"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "子",
+   "source": "调候-戊子",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "比劫多时出干制劫，大富，须有丙丁暖土",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "二癸透月时出干制癸",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一派丙火、运值二阳时透干，徐注谓十二月",
+     "tags": {
+      "many": [
+       "丙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "\"丙火为尊，甲木为佐\"；徐注\"无甲犹可，决不可缺丙\"",
+    "巳：土水寒滞不见丙时，徐注谓十二月"
+   ],
+   "alternates": [],
+   "rule": "丙、甲（\"丙火为尊，甲木为佐\"；徐注\"无甲犹可，决不可缺丙\"），（甲：比劫多时出干制劫，大富，须有丙丁暖土），（己：二癸透月时出干制癸），（壬：一派丙火、运值二阳时透干，徐注谓十二月），（巳：土水寒滞不见丙时，徐注谓十二月）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "戊",
+   "monthBranch": "丑",
+   "source": "调候-戊丑",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一派丙火、运值二阳、加以丙透时透干，徐注明言指十二月",
+     "tags": {
+      "many": [
+       "丙"
+      ],
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "比劫多时出干制劫，须有丙丁暖土",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "二癸透月时出干制癸",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "年月辛金，土金伤官，徐注谓己癸辛同为丑宫月令之神",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "\"丙火为尊，甲木为佐\"；徐注\"无甲犹可，决不可缺丙\"",
+    "巳：土水寒滞不见丙时，徐注明言指十二月"
+   ],
+   "alternates": [],
+   "rule": "丙、甲（\"丙火为尊，甲木为佐\"；徐注\"无甲犹可，决不可缺丙\"），（壬：一派丙火、运值二阳、加以丙透时透干，徐注明言指十二月），（巳：土水寒滞不见丙时，徐注明言指十二月），（甲：比劫多时出干制劫，须有丙丁暖土），（己：二癸透月时出干制癸），（辛：年月辛金，土金伤官，徐注谓己癸辛同为丑宫月令之神）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "寅",
+   "source": "调候-己寅",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "佐，徐注\"癸为佐\"，正文\"加一癸透，科甲极品\"，不见亦无碍",
+     "tags": {
+      "exposed": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "见壬、壬多时作堤",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "一派甲木时出干制甲",
+     "tags": {
+      "many": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "甲多无庚时泄甲，小救",
+     "tags": {
+      "absent": [
+       "庚"
+      ],
+      "many": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "一派戊土时出干制戊",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "壬水",
+    "戊透（原局无壬时，徐注\"见戊克癸\"）",
+    "乙"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "丙，（癸：佐，徐注\"癸为佐\"，正文\"加一癸透，科甲极品\"，不见亦无碍），（戊：见壬、壬多时作堤），（庚：一派甲木时出干制甲），（丁：甲多无庚时泄甲，小救），（甲：一派戊土时出干制戊）；另记忌：壬水、戊透（原局无壬时，徐注\"见戊克癸\"）、乙",
+   "avoidExceptions": [
+    {
+     "text": "戊透，反作常人",
+     "kind": "其他",
+     "stems": [
+      "戊"
+     ],
+     "absent": []
+    },
+    {
+     "text": "如见乙出，虽多不能疏土，用乙者，奸诈小人",
+     "kind": "其他",
+     "stems": [
+      "乙"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "卯",
+   "source": "调候-己卯",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支成木局时透干制煞",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "柱多乙木、乙又出干时泄木，不用庚",
+     "tags": {
+      "many": [
+       "乙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "甲己合",
+    "庚制甲",
+    "壬水戊土重重",
+    "乙庚合"
+   ],
+   "notes": [
+    "总论\"丙火次之\"，徐注\"得丙印配合，福泽愈厚\"",
+    "正文徐注同",
+    "徐注",
+    "从化：甲木透出、支成木局无比印者作从煞论",
+    "甲己化木不立"
+   ],
+   "alternates": [],
+   "rule": "甲、癸、丙（总论\"丙火次之\"，徐注\"得丙印配合，福泽愈厚\"），（庚：支成木局时透干制煞），（丁：柱多乙木、乙又出干时泄木，不用庚）；另记忌：甲己合、庚制甲、壬水戊土重重、乙庚合；从化：甲木透出、支成木局无比印者作从煞论（正文徐注同）；甲己化木不立（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "辰",
+   "source": "调候-己辰",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "用丙忌壬透",
+    "用癸忌比肩透（徐注作戊己）",
+    "用甲忌庚透",
+    "一派乙木无金制伏"
+   ],
+   "notes": [
+    "甲用在既暖且润之后，徐注"
+   ],
+   "alternates": [],
+   "rule": "丙、癸、甲（甲用在既暖且润之后，徐注）；另记忌：用丙忌壬透、用癸忌比肩透（徐注作戊己）、用甲忌庚透、一派乙木无金制伏",
+   "avoidExceptions": [
+    {
+     "text": "或一派乙木，无金制伏，贫贱夭折",
+     "kind": "用神过多",
+     "stems": [
+      "乙"
+     ],
+     "absent": [
+      "庚",
+      "辛"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "巳",
+   "source": "调候-己巳",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐癸，\"发癸之源\"，徐注\"必以辛金生之\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸时用，不大发、富而不贵",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无辛时生水，徐注",
+     "tags": {
+      "absent": [
+       "辛"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊出干伤癸晦丙",
+    "防戊癸合化",
+    "丙丁重重无水"
+   ],
+   "notes": [
+    "总论\"次用丙火\"；徐注\"四五月专用癸水\"，\"巳午两月，月垣自有丙丁\"，有癸无丙亦好"
+   ],
+   "alternates": [],
+   "rule": "癸、丙（总论\"次用丙火\"；徐注\"四五月专用癸水\"，\"巳午两月，月垣自有丙丁\"，有癸无丙亦好），（辛：佐癸，\"发癸之源\"，徐注\"必以辛金生之\"），（壬：无癸时用，不大发、富而不贵），（庚：无辛时生水，徐注）；另记忌：戊出干伤癸晦丙、防戊癸合化、丙丁重重无水",
+   "avoidExceptions": [
+    {
+     "text": "或有甲木，又加丙丁重重，无滴水解炎，则偏枯己极，孤贫到老",
+     "kind": "其他",
+     "stems": [
+      "甲",
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "午",
+   "source": "调候-己午",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐癸，发癸之源",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸时用，不大发、富而不贵",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无辛时生水，徐注",
+     "tags": {
+      "absent": [
+       "辛"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊出干伤癸晦丙",
+    "防戊癸合化",
+    "丙丁重重无水"
+   ],
+   "notes": [
+    "徐注\"四五月专用癸水\"，巳午月垣自有丙丁"
+   ],
+   "alternates": [],
+   "rule": "癸、丙（徐注\"四五月专用癸水\"，巳午月垣自有丙丁），（辛：佐癸，发癸之源），（壬：无癸时用，不大发、富而不贵），（庚：无辛时生水，徐注）；另记忌：戊出干伤癸晦丙、防戊癸合化、丙丁重重无水",
+   "avoidExceptions": [
+    {
+     "text": "或有甲木，又加丙丁重重，无滴水解炎，则偏枯己极，孤贫到老",
+     "kind": "其他",
+     "stems": [
+      "甲",
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "未",
+   "source": "调候-己未",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "佐癸，发癸之源",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸时用",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无辛时生水，徐注",
+     "tags": {
+      "absent": [
+       "辛"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊出干伤癸晦丙",
+    "丙丁重重无水"
+   ],
+   "notes": [
+    "另记：四柱土重见金结局不贵即富（徐注引《总论》）",
+    "徐注\"六月金水进气，兼用丙火\"，丙比四五月更要紧"
+   ],
+   "alternates": [],
+   "rule": "癸、丙（徐注\"六月金水进气，兼用丙火\"，丙比四五月更要紧），（辛：佐癸，发癸之源），（壬：无癸时用），（庚：无辛时生水，徐注）；另记：四柱土重见金结局不贵即富（徐注引《总论》）；另记忌：戊出干伤癸晦丙、丙丁重重无水",
+   "avoidExceptions": [
+    {
+     "text": "或有甲木，又加丙丁重重，无滴水解炎，则偏枯己极，孤贫到老",
+     "kind": "其他",
+     "stems": [
+      "甲",
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "申",
+   "source": "调候-己申",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "辅癸",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸时透，次格，徐注",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：支成金局须丙丁出救，忌见水（徐注）",
+    "徐注\"七月己土……以丙火为主要\"；总之\"先丙后癸\""
+   ],
+   "alternates": [],
+   "rule": "丙、癸（徐注\"七月己土……以丙火为主要\"；总之\"先丙后癸\"），（辛：辅癸），（壬：无癸时透，次格，徐注）；另记：支成金局须丙丁出救，忌见水（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "酉",
+   "source": "调候-己酉",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "辅癸",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "无癸时透，次格",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "支成金局时透干有根，泄金生财，大富；须丙戊暗藏方富中取贵，徐注",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丙",
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局而不取癸泄时出救，忌见水，徐注",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "总之\"先丙后癸\"，\"三秋己土，一例共推\""
+   ],
+   "alternates": [],
+   "rule": "丙、癸（总之\"先丙后癸\"，\"三秋己土，一例共推\"），（辛：辅癸），（壬：无癸时透，次格），（癸：支成金局时透干有根，泄金生财，大富；须丙戊暗藏方富中取贵，徐注），（丙丁：支成金局而不取癸泄时出救，忌见水，徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "戌",
+   "source": "调候-己戌",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "辅癸",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "丙透癸藏时辅癸",
+     "tags": {
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "见戊为病时为药，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "庚伤甲",
+    "见戊",
+    "火局无水"
+   ],
+   "notes": [
+    "总之\"九月土盛，宜用甲木疏之\"，\"先丙后癸\""
+   ],
+   "alternates": [],
+   "rule": "甲、丙、癸（总之\"九月土盛，宜用甲木疏之\"，\"先丙后癸\"），（辛：辅癸），（壬：丙透癸藏时辅癸），（甲：见戊为病时为药，徐注）；另记忌：庚伤甲、见戊、火局无水",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "亥",
+   "source": "调候-己亥",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "初冬壬水旺、见壬出干时制壬；多见壬水时破壬",
+     "tags": {
+      "many": [
+       "壬"
+      ],
+      "exposed": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "无丙时用，不能解冻除寒；一片庚金时助丙制庚",
+     "tags": {
+      "absent": [
+       "丙"
+      ],
+      "many": [
+       "庚"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸（四柱火土旺极者例外，徐注）",
+    "壬水出干"
+   ],
+   "notes": [
+    "\"甲木能参用\""
+   ],
+   "alternates": [],
+   "rule": "丙、甲（\"甲木能参用\"），（戊：初冬壬水旺、见壬出干时制壬；多见壬水时破壬），（丁：无丙时用，不能解冻除寒；一片庚金时助丙制庚）；另记忌：癸（四柱火土旺极者例外，徐注）、壬水出干",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "子",
+   "source": "调候-己子",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "多见壬水时破壬；合论\"惟初冬壬水旺\"用戊，徐注\"用戊土惟在十月初\"，十一月不在此列",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "无丙时用；一片庚金时助丙制庚",
+     "tags": {
+      "absent": [
+       "丙"
+      ],
+      "many": [
+       "庚"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸（徐注\"癸水为十一月当旺之神……故以为忌\"，火土旺极者例外）",
+    "壬水出干"
+   ],
+   "notes": [
+    "\"甲木能参用\""
+   ],
+   "alternates": [],
+   "rule": "丙、甲（\"甲木能参用\"），（戊：多见壬水时破壬；合论\"惟初冬壬水旺\"用戊，徐注\"用戊土惟在十月初\"，十一月不在此列），（丁：无丙时用；一片庚金时助丙制庚）；另记忌：癸（徐注\"癸水为十一月当旺之神……故以为忌\"，火土旺极者例外）、壬水出干",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "己",
+   "monthBranch": "丑",
+   "source": "调候-己丑",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "多见壬水时破壬；合论\"惟初冬壬水旺\"用戊，十二月不在此列",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "无丙时用；一片庚金时助丙制庚，徐注\"十二月体用同宫，尤为奇特\"",
+     "tags": {
+      "absent": [
+       "丙"
+      ],
+      "many": [
+       "庚"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸（火土旺极者例外，徐注）",
+    "壬水出干"
+   ],
+   "notes": [
+    "\"甲木能参用\"；一派戊己时甲透制土"
+   ],
+   "alternates": [],
+   "rule": "丙、甲（\"甲木能参用\"；一派戊己时甲透制土），（戊：多见壬水时破壬；合论\"惟初冬壬水旺\"用戊，十二月不在此列），（丁：无丙时用；一片庚金时助丙制庚，徐注\"十二月体用同宫，尤为奇特\"）；另记忌：癸（火土旺极者例外，徐注）、壬水出干",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "寅",
+   "source": "调候-庚寅",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "四柱多土时须出干，忌庚金破甲",
+     "tags": {
+      "many": [
+       "土"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局时出干制火，有庚为源方大富贵",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "丙遭癸困时出制",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "庚金破甲",
+    "丙遭癸困",
+    "春金多火"
+   ],
+   "notes": [
+    "正文首句\"先用丙以暖庚性，次甲疏厚土\"；总之句\"丁火次之\"，本书作\"用甲为上\"，据徐注与通行本读作\"丙甲为上\"",
+    "己土/印：四柱多丁出干而无水时，徐注\"宜己土，不宜戊土\"\"实以土为用\""
+   ],
+   "alternates": [],
+   "rule": "丙、甲、丁（正文首句\"先用丙以暖庚性，次甲疏厚土\"；总之句\"丁火次之\"，本书作\"用甲为上\"，据徐注与通行本读作\"丙甲为上\"），（甲：四柱多土时须出干，忌庚金破甲），（己土/印：四柱多丁出干而无水时，徐注\"宜己土，不宜戊土\"\"实以土为用\"），（壬：支成火局时出干制火，有庚为源方大富贵），（戊：丙遭癸困时出制）；另记忌：庚金破甲、丙遭癸困、春金多火",
+   "avoidExceptions": [
+    {
+     "text": "无壬无癸，残疾之人",
+     "kind": "其他",
+     "stems": [],
+     "absent": [
+      "壬",
+      "癸"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "卯",
+   "source": "调候-庚卯",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "无丁时用，家富，富贵勉强、异途",
+     "tags": {
+      "absent": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "重见戊己时透干疏土",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "乙木多（合庚助强",
+    "湿乙伤丁）",
+    "重见戊己压伏"
+   ],
+   "notes": [
+    "正文\"专用丁火以抑其强，次用甲木引丁，又须用庚劈甲\"；庚在支，徐注\"谓申中庚金也\"",
+    "从才：一派甲木不见比肩"
+   ],
+   "alternates": [],
+   "rule": "丁、甲、庚（正文\"专用丁火以抑其强，次用甲木引丁，又须用庚劈甲\"；庚在支，徐注\"谓申中庚金也\"），（丙：无丁时用，家富，富贵勉强、异途），（甲：重见戊己时透干疏土）；另记忌：乙木多（合庚助强、湿乙伤丁）、重见戊己压伏；从才：一派甲木不见比肩",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "辰",
+   "source": "调候-庚辰",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "清明后十日内",
+      "boundary": "清明后十日",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": {
+      "label": "十日之后",
+      "boundary": "清明后十日",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "无丁姑用",
+     "tags": {
+      "absent": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "支成火局时出干制火",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局且丙丁出干时出制",
+     "tags": {
+      "trio": [
+       "火"
+      ],
+      "exposed": [
+       "丁"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "壬癸皆为病神",
+    "比劫破甲",
+    "见乙"
+   ],
+   "notes": [
+    "徐注\"犹是乙木司令，看法同二月\"",
+    "正文\"先用甲疏土，次用丁火\"；徐注\"土重以甲为主，土轻以丁为主\"",
+    "不用庚劈甲"
+   ],
+   "alternates": [],
+   "rule": "清明后十日内：同二月，丁、甲、庚（徐注\"犹是乙木司令，看法同二月\"）；十日之后：甲、丁（正文\"先用甲疏土，次用丁火\"；徐注\"土重以甲为主，土轻以丁为主\"），（丙：无丁姑用），（癸：支成火局时出干制火），（壬：支成火局且丙丁出干时出制）；不用庚劈甲；另记忌：壬癸皆为病神、比劫破甲、见乙",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "巳",
+   "source": "调候-庚巳",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "戊"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬用癸，徐注",
+     "tags": {
+      "absent": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "无水时晦火存金，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "一派丙火时出干制煞",
+     "tags": {
+      "many": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局时，忌壬癸伤丁",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丙不可轻用",
+    "入火乡"
+   ],
+   "notes": [
+    "正文\"宜先用壬水……次取戊土，丙火佐之\"；\"但丙不可轻用\"；总之句\"但看何病多，则用何药先也\"",
+    "徐注",
+    "运喜西北",
+    "不利南方"
+   ],
+   "alternates": [],
+   "rule": "壬、戊、丙（正文\"宜先用壬水……次取戊土，丙火佐之\"；\"但丙不可轻用\"；总之句\"但看何病多，则用何药先也\"），（癸：无壬用癸，徐注），（戊：无水时晦火存金，徐注），（壬：一派丙火时出干制煞），（丁：支成金局时，忌壬癸伤丁）；另记忌：丙不可轻用、入火乡；运喜西北、不利南方（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "午",
+   "source": "调候-庚午",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "支见庚辛生水",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "木"
+     ],
+     "kind": "element",
+     "when": "戊出时制戊",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "kind": "stem",
+     "when": "支成火局而无水时透干，补庚泄火，庶免夭折",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己出干制水"
+   ],
+   "notes": [
+    "正文\"专用壬水，癸又次之\"；徐注\"有壬出干，更须癸水助之\"",
+    "徐注",
+    "运喜北地"
+   ],
+   "alternates": [],
+   "rule": "壬、癸（正文\"专用壬水，癸又次之\"；徐注\"有壬出干，更须癸水助之\"），（庚辛：支见庚辛生水），（木：戊出时制戊），（戊己：支成火局而无水时透干，补庚泄火，庶免夭折）；另记忌：戊己出干制水；运喜北地（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "未",
+   "source": "调候-庚未",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": {
+      "label": "大暑后",
+      "boundary": "大暑",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "count": 2,
+     "when": "柱见多金时出制",
+     "tags": {
+      "many": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸水伤丁",
+    "支中见水"
+   ],
+   "notes": [
+    "徐注\"在大暑之前，看法同五月\"",
+    "正文\"先丁火，次取甲木\"\"专用丁火，甲木为佐\"",
+    "甲、丁：支成土局时甲先丁后，甲须出干"
+   ],
+   "alternates": [],
+   "rule": "大暑前：同五月，壬、癸（徐注\"在大暑之前，看法同五月\"）；大暑后：丁、甲（正文\"先丁火，次取甲木\"\"专用丁火，甲木为佐\"），（甲、丁：支成土局时甲先丁后，甲须出干），（二丁：柱见多金时出制）；另记忌：癸水伤丁、支中见水",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "申",
+   "source": "调候-庚申",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "无丁姑用",
+     "tags": {
+      "absent": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "支成水局时须出干引丁",
+     "tags": {
+      "trio": [
+       "水"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "壬癸（引书\"壬癸相逢总不宜\"）",
+    "支成水局困丙丁"
+   ],
+   "notes": [
+    "正文\"专用丁火煅炼，次取甲木\"；徐注\"故以甲为佐\"",
+    "甲、丁：支成土局时先甲后丁"
+   ],
+   "alternates": [],
+   "rule": "丁、甲（正文\"专用丁火煅炼，次取甲木\"；徐注\"故以甲为佐\"），（丙：无丁姑用），（甲、丁：支成土局时先甲后丁），（甲：支成水局时须出干引丁）；另记忌：壬癸（引书\"壬癸相逢总不宜\"）、支成水局困丙丁",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "酉",
+   "source": "调候-庚酉",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "无丁时专用，一富而已",
+     "tags": {
+      "absent": [
+       "丁"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "水"
+     ],
+     "kind": "element",
+     "when": "从革格，丙丁甲乙全无、支会金局时出干泄金",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "水困丙丁",
+    "阳刃逢冲",
+    "支见重重甲乙",
+    "无丁叠见丙"
+   ],
+   "notes": [
+    "正文\"仍用丁甲，以丙佐之，丙火不可少也\"；徐注\"故须丙丁并用\""
+   ],
+   "alternates": [],
+   "rule": "丁、甲、丙（正文\"仍用丁甲，以丙佐之，丙火不可少也\"；徐注\"故须丙丁并用\"），（丙：无丁时专用，一富而已），（水：从革格，丙丁甲乙全无、支会金局时出干泄金）；另记忌：水困丙丁、阳刃逢冲、支见重重甲乙、无丁叠见丙",
+   "avoidExceptions": [
+    {
+     "text": "即有一丙透，秀而不富",
+     "kind": "用神过多",
+     "stems": [
+      "丙"
+     ],
+     "absent": []
+    },
+    {
+     "text": "若运入火乡破格，死不能延",
+     "kind": "用神过多",
+     "stems": [
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    },
+    {
+     "text": "或柱中有火破格，飘流孤苦，为僧作道",
+     "kind": "用神过多",
+     "stems": [
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    },
+    {
+     "text": "或支见重重甲乙，无用人也",
+     "kind": "用神过多",
+     "stems": [
+      "甲",
+      "乙"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "戌",
+   "source": "调候-庚戌",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": {
+      "label": "霜降前",
+      "boundary": "霜降",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": {
+      "label": "霜降后",
+      "boundary": "霜降",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "count": 2,
+     "when": "戊己出干时",
+     "tags": {
+      "exposed": [
+       "己"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局时为救，不再用甲，忌癸，徐注",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "戊多生金、有比肩出干时，徐注",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己出干",
+    "己土浊壬",
+    "火局见癸"
+   ],
+   "notes": [
+    "徐注\"在霜降之前，与八月同论\""
+   ],
+   "alternates": [],
+   "rule": "霜降前：同八月，丁、甲、丙（徐注\"在霜降之前，与八月同论\"）；霜降后：甲、壬，（两甲：戊己出干时），（壬：支成火局时为救，不再用甲，忌癸，徐注），（丁：戊多生金、有比肩出干时，徐注）；另记忌：戊己出干、己土浊壬、火局见癸",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "亥",
+   "source": "调候-庚亥",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "支中二子时出制，徐注\"己土混壬，能生甲木\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：支无子水通流为贵，寅巳蓄丙更佳",
+    "正文\"用丁不离甲木，丁为主，丙甲为佐\"；徐注\"镕铸庚金，专赖丁火；解寒除冻，则恃丙火\"",
+    "徐注",
+    "徐注",
+    "无丁有丙透者大富",
+    "忌金水混杂无丙丁",
+    "见土混浊",
+    "运：身弱喜比劫",
+    "身强喜丙丁"
+   ],
+   "alternates": [],
+   "rule": "丁、丙、甲（正文\"用丁不离甲木，丁为主，丙甲为佐\"；徐注\"镕铸庚金，专赖丁火；解寒除冻，则恃丙火\"），（己：支中二子时出制，徐注\"己土混壬，能生甲木\"）；另记：支无子水通流为贵，寅巳蓄丙更佳；无丁有丙透者大富；忌金水混杂无丙丁、见土混浊（徐注）；运：身弱喜比劫、身强喜丙丁（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "子",
+   "source": "调候-庚子",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "支成水局、不见丙丁时透干，大贵",
+     "tags": {
+      "trio": [
+       "水"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸出干困丙",
+    "丙丁太多",
+    "一派金水不入火土",
+    "见戊己印（徐注"
+   ],
+   "notes": [
+    "正文\"仍先取丙照\"；徐注\"专取丙丁为用，甲木为佐\"\"丙之为用，重于丁甲也\"",
+    "支成水局戊透除外）",
+    "运：身旺行才官",
+    "身弱行比劫（徐注）"
+   ],
+   "alternates": [],
+   "rule": "丙、丁、甲（正文\"仍先取丙照\"；徐注\"专取丙丁为用，甲木为佐\"\"丙之为用，重于丁甲也\"），（戊：支成水局、不见丙丁时透干，大贵）；另记忌：癸出干困丙、丙丁太多、一派金水不入火土、见戊己印（徐注；支成水局戊透除外）；运：身旺行才官、身弱行比劫（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "庚",
+   "monthBranch": "丑",
+   "source": "调候-庚丑",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局时须出干煅金，徐注",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸透困丙"
+   ],
+   "notes": [
+    "甲不可少；正文\"先用丙火解冻，次取丁火煅金，甲木亦不可少\""
+   ],
+   "alternates": [],
+   "rule": "丙、丁、甲（甲不可少；正文\"先用丙火解冻，次取丁火煅金，甲木亦不可少\"），（丁：支成金局时须出干煅金，徐注）；另记忌：癸透困丙",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "寅",
+   "source": "调候-辛寅",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "己"
+      ],
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "酌用；支成水局时透干为暖；辛金弱中转旺、金水气强时用，此句正文字体、疑徐注",
+     "tags": {
+      "trio": [
+       "水"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚",
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局时两透，壬破火、庚发水源",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "甲木司权",
+    "见壬无己庚",
+    "支成火局"
+   ],
+   "notes": [
+    "庚为佐，制甲救己"
+   ],
+   "alternates": [],
+   "rule": "己、壬、庚（庚为佐，制甲救己），（丙：酌用；支成水局时透干为暖；辛金弱中转旺、金水气强时用，此句正文字体、疑徐注），（庚壬：支成火局时两透，壬破火、庚发水源）；另记忌：甲木司权、见壬无己庚、支成火局",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "卯",
+   "source": "调候-辛卯",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "见戊己时为去病之药，\"壬甲两透者，科甲富贵无碍\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "徐注\"惟有庚金劫助，壬水泄之，最为上格\"；支成木局时助壬制木，正文",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "见壬水重重时制壬，反吉；徐注又作木局无庚时不得已用",
+     "tags": {
+      "absent": [
+       "庚"
+      ],
+      "trio": [
+       "木"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "火多无壬时，常人",
+     "tags": {
+      "absent": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己为病",
+    "一派水淘洗太过",
+    "支成火局"
+   ],
+   "notes": [
+    "二壬，或庚壬两透：支成火局时出制"
+   ],
+   "alternates": [],
+   "rule": "壬、甲（甲：见戊己时为去病之药，\"壬甲两透者，科甲富贵无碍\"），（庚：徐注\"惟有庚金劫助，壬水泄之，最为上格\"；支成木局时助壬制木，正文），（戊：见壬水重重时制壬，反吉；徐注又作木局无庚时不得已用），（二壬，或庚壬两透：支成火局时出制），（癸：火多无壬时，常人）；另记忌：戊己为病、一派水淘洗太过、支成火局",
+   "avoidExceptions": [
+    {
+     "text": "或一派水，名金水汪洋，淘洗太过，不得中和，作事不能用力，万事不能承受",
+     "kind": "用神过多",
+     "stems": [
+      "壬",
+      "癸"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "辰",
+   "source": "调候-辛辰",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丙出干贪合时破丙解合，年干见癸，或支坐亥子丑通源；四柱多火无壬时见癸可解",
+     "tags": {
+      "absent": [
+       "壬"
+      ],
+      "many": [
+       "火"
+      ],
+      "exposed": [
+       "丙"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丙出贪合",
+    "戊出干破水局而无甲",
+    "支见四库而无甲",
+    "比劫重重时见庚制甲"
+   ],
+   "notes": [
+    "亥宫之壬优于申宫之壬，徐注"
+   ],
+   "alternates": [],
+   "rule": "壬、甲，（癸：丙出干贪合时破丙解合，年干见癸，或支坐亥子丑通源；四柱多火无壬时见癸可解），（亥宫之壬优于申宫之壬，徐注）；另记忌：丙出贪合、戊出干破水局而无甲、支见四库而无甲、比劫重重时见庚制甲",
+   "avoidExceptions": [
+    {
+     "text": "所忌者，丙出贪合也",
+     "kind": "其他",
+     "stems": [
+      "丙"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "巳",
+   "source": "调候-辛巳",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "癸"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null,
+     "note": "甲为破戊之药，须有壬癸"
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "破戊之药，须有壬癸，徐注\"甲木亦藉壬癸破火，方能制戊土\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "土"
+     ],
+     "kind": "element",
+     "when": "火旺无水时泄火，不得已",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丙之烁",
+    "支成火局木局无制",
+    "见戊出干而无甲"
+   ],
+   "notes": [
+    "癸与壬同为\"乐水之湿\"：壬藏时癸透，富真贵假；无戊时壬癸同出干，主富异途",
+    "庚/金局：正文以\"支见金局\"为上格条件，徐注\"必喜庚壬为用\"",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "壬、癸（癸与壬同为\"乐水之湿\"：壬藏时癸透，富真贵假；无戊时壬癸同出干，主富异途）、甲（甲：破戊之药，须有壬癸，徐注\"甲木亦藉壬癸破火，方能制戊土\"），（庚/金局：正文以\"支见金局\"为上格条件，徐注\"必喜庚壬为用\"），（土：火旺无水时泄火，不得已）；另记忌：丙之烁、支成火局木局无制、见戊出干而无甲",
+   "avoidExceptions": [
+    {
+     "text": "四月时逢首夏，忌丙之烁，乐水之湿",
+     "kind": "其他",
+     "stems": [
+      "丙"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "午",
+   "source": "调候-辛午",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "己"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "癸见庚金，异途亦显",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "土多且见水时破土，无水不用",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "煅炼",
+    "支成火局",
+    "癸出见戊合",
+    "木多火多逢金水运"
+   ],
+   "notes": [
+    "正文\"壬癸己三者并用，不可缺一\"；癸：无壬时亦可用，力小；上格读作\"壬己两透，支藏子癸\"，据徐注与通行本",
+    "壬兼癸：支成火局时出干破火"
+   ],
+   "alternates": [],
+   "rule": "壬、己、癸（正文\"壬癸己三者并用，不可缺一\"；癸：无壬时亦可用，力小；上格读作\"壬己两透，支藏子癸\"，据徐注与通行本），（庚：癸见庚金，异途亦显），（甲：土多且见水时破土，无水不用），（壬兼癸：支成火局时出干破火）；另记忌：煅炼、支成火局、癸出见戊合、木多火多逢金水运",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "未",
+   "source": "调候-辛未",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "己"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     },
+     "note": "同五月，徐注「上下半月不同，与庚金同论」，主会话定 period 大暑"
+    },
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑后",
+      "boundary": "大暑",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "只有未中一己时与壬并用，\"一壬一己，见庚无甲，方妙，与五月用己壬同\"",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "戊己出干时制土，戊出见甲即可，己出须隔位，且忌庚制甲；只有未中一己时忌见甲",
+     "tags": {
+      "exposed": [
+       "己"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支成木局时发壬水之源",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己出干",
+    "甲己贪合",
+    "庚出制甲",
+    "火破庚"
+   ],
+   "notes": [
+    "庚为佐",
+    "上下半月：徐注\"上下半月不同，与庚金同论\"，同书卷七六月庚金徐注以大暑为界、\"在大暑之前，看法同五月\"，据此定大暑前同五月辛金壬、己、癸；主会话定（2026-09-22）：设 period 大暑，推自徐注明指的庚金卷",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "壬、庚（庚为佐）；（己：只有未中一己时与壬并用，\"一壬一己，见庚无甲，方妙，与五月用己壬同\"），（甲：戊己出干时制土，戊出见甲即可，己出须隔位，且忌庚制甲；只有未中一己时忌见甲），（庚：支成木局时发壬水之源）；（上下半月：徐注\"上下半月不同，与庚金同论\"，同书卷七六月庚金徐注以大暑为界、\"在大暑之前，看法同五月\"，据此定大暑前同五月辛金壬、己、癸；主会话定（2026-09-22）：设 period 大暑，推自徐注明指的庚金卷）；另记忌：戊己出干、甲己贪合、庚出制甲、火破庚",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "申",
+   "source": "调候-辛申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "水多时制水，\"一派金水，得一位戊土\"，此时不宜甲",
+     "tags": {
+      "many": [
+       "金"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "水少而见戊时制戊，\"有戊又有甲，必主衣禄\"",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸不作用神",
+    "丙丁不作用神",
+    "土出干无甲",
+    "一派壬庚癸辛无戊"
+   ],
+   "notes": [
+    "宜少不宜多"
+   ],
+   "alternates": [],
+   "rule": "壬（宜少不宜多），（戊：水多时制水，\"一派金水，得一位戊土\"，此时不宜甲），（甲：水少而见戊时制戊，\"有戊又有甲，必主衣禄\"）；另记忌：癸不作用神、丙丁不作用神、土出干无甲、一派壬庚癸辛无戊",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "酉",
+   "source": "调候-辛酉",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "戊己为病时破土，\"如无戊亦不必用甲\"",
+     "tags": {
+      "absent": [
+       "戊"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "二三辛金一位壬水而多见甲木时制甲；辛少壬多时助；一派乙木时制乙；三四辛金一壬一甲时不用，读法据徐注与通行本",
+     "tags": {
+      "many": [
+       "甲",
+       "乙",
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "一派壬水太旺时止流，支藏为佳",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局无壬时不得已制金，徐注\"总非上格\"",
+     "tags": {
+      "absent": [
+       "壬"
+      ],
+      "trio": [
+       "金"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丁透破白虎格时制丁",
+     "tags": {
+      "exposed": [
+       "丁"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己埋金混壬",
+    "见丁合壬",
+    "土重"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬、甲（甲：戊己为病时破土，\"如无戊亦不必用甲\"），（庚：二三辛金一位壬水而多见甲木时制甲；辛少壬多时助；一派乙木时制乙；三四辛金一壬一甲时不用，读法据徐注与通行本），（戊：一派壬水太旺时止流，支藏为佳），（丁：支成金局无壬时不得已制金，徐注\"总非上格\"），（癸：丁透破白虎格时制丁）；另记忌：戊己埋金混壬、见丁合壬、土重",
+   "avoidExceptions": [
+    {
+     "text": "癸透制丁，先贫后富",
+     "kind": "用神过多",
+     "stems": [
+      "癸"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "戌",
+   "source": "调候-辛戌",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "无壬时，须甲出干、无戊并透",
+     "tags": {
+      "absent": [
+       "壬",
+       "戊"
+      ],
+      "exposed": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "支见庚，发水之源",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "酌用，从本书；通行本无此句；书中取丙只见\"无甲，时月贴身丙出化水\"一路，见从化判词",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "火土为病",
+    "戊戌月",
+    "令土四五",
+    "己多浊水"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬、甲，（癸：无壬时，须甲出干、无戊并透），（庚：支见庚，发水之源），（丙：酌用，从本书；通行本无此句；书中取丙只见\"无甲，时月贴身丙出化水\"一路，见从化判词）；另记忌：火土为病、戊戌月、令土四五、己多浊水",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "亥",
+   "source": "调候-辛亥",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬水太多时制水，须丙火为暖，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "壬水太旺、辛金泄弱时\"先丙次己\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "无丙时用财星，富而不贵，徐注；甲多戊少时艺术致富",
+     "tags": {
+      "absent": [
+       "丙"
+      ],
+      "many": [
+       "戊",
+       "甲"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "多壬无戊",
+    "己多有戊",
+    "壬癸太多而无戊丙"
+   ],
+   "notes": [
+    "丙须通根不合，徐注"
+   ],
+   "alternates": [],
+   "rule": "壬、丙（丙须通根不合，徐注），（戊：壬水太多时制水，须丙火为暖，徐注），（己：壬水太旺、辛金泄弱时\"先丙次己\"），（甲：无丙时用财星，富而不贵，徐注；甲多戊少时艺术致富）；另记忌：多壬无戊、己多有戊、壬癸太多而无戊丙",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "子",
+   "source": "调候-辛子",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬多或支成水局时制水，与丙并用",
+     "tags": {
+      "trio": [
+       "水"
+      ],
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "壬多无戊无丙时泄壬；支成金局时引丁",
+     "tags": {
+      "absent": [
+       "戊",
+       "丙"
+      ],
+      "trio": [
+       "金"
+      ],
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "支成金局时透干，须甲引丁",
+     "tags": {
+      "trio": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸水出干",
+    "壬多无丙",
+    "支成水局无戊"
+   ],
+   "notes": [
+    "徐注\"尤以丙火调候为先\"\"所重在丙火\"，正文\"丙壬两透\"；丙须通根、不合辛"
+   ],
+   "alternates": [],
+   "rule": "丙、壬（徐注\"尤以丙火调候为先\"\"所重在丙火\"，正文\"丙壬两透\"；丙须通根、不合辛），（戊：壬多或支成水局时制水，与丙并用），（甲：壬多无戊无丙时泄壬；支成金局时引丁），（丁：支成金局时透干，须甲引丁）；另记忌：癸水出干、壬多无丙、支成水局无戊",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "辛",
+   "monthBranch": "丑",
+   "source": "调候-辛丑",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "壬"
+      ],
+      [
+       "戊",
+       "己"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "note": "丙不可缺"
+    }
+   ],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "正文\"先丙次壬，戊己又次之\"",
+    "徐注\"可以缺壬，不可无丙\"",
+    "癸己为君、丙丁为臣：火重逢时，徐注作\"火土重逢\"",
+    "丙须不合辛",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "丙、壬、戊己（正文\"先丙次壬，戊己又次之\"），另记\"丙不可缺\"（徐注\"可以缺壬，不可无丙\"），丙须不合辛；（癸己为君、丙丁为臣：火重逢时，徐注作\"火土重逢\"）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "寅",
+   "source": "调候-壬寅",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "见比劫、弱极复强时为制，\"此格须两透方合\"，即壬水比肩与戊土并透；无比肩羊刃不必用戊",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "戊多有透有藏、身强煞旺时出干制戊，食神制煞",
+     "tags": {
+      "many": [
+       "戊"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [],
+   "notes": [
+    "另记：身弱见煞多只取庚印化煞，不用甲（徐注）"
+   ],
+   "alternates": [],
+   "rule": "庚、丙，（戊：见比劫、弱极复强时为制，\"此格须两透方合\"，即壬水比肩与戊土并透；无比肩羊刃不必用戊），（甲：戊多有透有藏、身强煞旺时出干制戊，食神制煞）；另记：身弱见煞多只取庚印化煞，不用甲（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "卯",
+   "source": "调候-壬卯",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "戊"
+      ],
+      [
+       "辛"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无辛用庚，\"又次取庚金\"；支成木局时庚透科甲",
+     "tags": {
+      "absent": [
+       "辛"
+      ],
+      "trio": [
+       "木"
+      ],
+      "exposed": [
+       "庚"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "比肩"
+     ],
+     "kind": "tenGod",
+     "when": "木盛火炎时帮身，徐注\"宜以壬水为主，庚辛为佐\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "比肩重重时止流，此节徐注疑属十月",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "不可用火",
+    "甲破戊",
+    "丁克辛（徐注）"
+   ],
+   "notes": [
+    "附节\"甲乙重重\"一条按校勘语读：无庚辛者依人度日",
+    "见比肩饥寒可免",
+    "木盛救神以庚为主",
+    "比肩为辅"
+   ],
+   "alternates": [],
+   "rule": "戊、辛、庚（庚：无辛用庚，\"又次取庚金\"；支成木局时庚透科甲），（比肩：木盛火炎时帮身，徐注\"宜以壬水为主，庚辛为佐\"），（戊：比肩重重时止流，此节徐注疑属十月）；另记忌：不可用火、甲破戊、丁克辛（徐注）；附节\"甲乙重重\"一条按校勘语读：无庚辛者依人度日，见比肩饥寒可免；木盛救神以庚为主，比肩为辅",
+   "avoidExceptions": [
+    {
+     "text": "二月寒气悉除，清流湛深，不可用火，专取戊土为堤岸，辛发其源",
+     "kind": "其他",
+     "stems": [
+      "戊"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "辰",
+   "source": "调候-壬辰",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "出干滋甲，异途职高",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "时出丁火化木时发水源",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "count": 2,
+     "when": "支成四库时透干，忌己土",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "水旺多见庚金时制金",
+     "tags": {
+      "many": [
+       "庚"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "申子辰成局时制水，不再用庚，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "己土出干合甲",
+    "四库无甲"
+   ],
+   "notes": [
+    "徐注\"甲庚相济为用，不可缺一\""
+   ],
+   "alternates": [],
+   "rule": "甲、庚（徐注\"甲庚相济为用，不可缺一\"），（癸：出干滋甲，异途职高），（庚辛：时出丁火化木时发水源），（二甲：支成四库时透干，忌己土），（丙：水旺多见庚金时制金），（戊：申子辰成局时制水，不再用庚，徐注）；另记忌：己土出干合甲、四库无甲",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "巳",
+   "source": "调候-壬巳",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "壬"
+      ],
+      [
+       "辛"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "辛被丙合时为佐，辛透丙藏则不必，徐注",
+     "tags": {
+      "exposed": [
+       "辛"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "丁出合壬时代壬，徐注；癸辛出干须加甲",
+     "tags": {
+      "exposed": [
+       "辛"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "用癸辛时制戊护癸",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "四柱多金逢生坐实或支成水局、壬变弱为强时用巳中戊土，徐注作丙戊，格之变",
+     "tags": {
+      "trio": [
+       "水"
+      ],
+      "many": [
+       "金"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "多甲乙时，须有壬癸比劫",
+     "tags": {
+      "many": [
+       "甲"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丙合辛",
+    "丁合壬",
+    "戊合癸",
+    "寅巳相刑（土木交锋）",
+    "有庚无壬癸"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "壬、辛、庚（庚：辛被丙合时为佐，辛透丙藏则不必，徐注），（癸：丁出合壬时代壬，徐注；癸辛出干须加甲），（甲：用癸辛时制戊护癸），（戊：四柱多金逢生坐实或支成水局、壬变弱为强时用巳中戊土，徐注作丙戊，格之变），（庚：多甲乙时，须有壬癸比劫）；另记忌：丙合辛、丁合壬、戊合癸、寅巳相刑（土木交锋）、有庚无壬癸",
+   "avoidExceptions": [
+    {
+     "text": "无甲者富贵门下间人，百事不能承受",
+     "kind": "其他",
+     "stems": [],
+     "absent": [
+      "甲"
+     ]
+    },
+    {
+     "text": "若见一甲藏寅，与巳相刑，名土木交锋，小儿疾积，大人暗病，虽多金亦畏火矣，名利皆虚，终无创立",
+     "kind": "用神过多",
+     "stems": [
+      "庚",
+      "辛"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "午",
+   "source": "调候-壬午",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "庚壬两透亦取贵，不被丁合时参用",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "无丁伤辛时\"为用最清\"，优于庚",
+     "tags": {
+      "absent": [
+       "丁"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁合壬",
+    "合化伤用神（徐注）"
+   ],
+   "notes": [
+    "据徐注\"五月丁巳当旺，故以癸庚为主……五月防丁合壬，故先癸\"与通行本\"取癸为用，取庚为佐\"；本书正文作\"取庚为君，癸为臣\""
+   ],
+   "alternates": [],
+   "rule": "癸、庚（据徐注\"五月丁巳当旺，故以癸庚为主……五月防丁合壬，故先癸\"与通行本\"取癸为用，取庚为佐\"；本书正文作\"取庚为君，癸为臣\"），（壬：庚壬两透亦取贵，不被丁合时参用），（辛：无丁伤辛时\"为用最清\"，优于庚）；另记忌：丁合壬、合化伤用神（徐注）",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "未",
+   "source": "调候-壬未",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "癸"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑前",
+      "boundary": "大暑",
+      "side": "before"
+     },
+     "note": "同五月"
+    },
+    {
+     "stems": [
+      [
+       "辛"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": {
+      "label": "大暑后",
+      "boundary": "大暑",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "己土出干时必用；己土不透、只未中一点己土则不必用甲，专用庚壬，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬",
+      "比劫"
+     ],
+     "kind": "stem/tenGod",
+     "when": "庚壬两透无伤；地支宜藏一二点比劫，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "滋甲，徐注\"甲木无癸滋润，其用不显\"",
+     "tags": {
+      "absent": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "金水"
+     ],
+     "kind": "tenGod",
+     "when": "支成木局时",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "火破庚壬（丙丁伤庚",
+    "戊己伤壬）",
+    "己土混浊"
+   ],
+   "notes": [
+    "癸、庚，徐注\"大暑之前，与五月同论，必须印劫为助\"",
+    "正文\"辛甲为尊，庚金次之\"",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "大暑前：同五月（癸、庚，徐注\"大暑之前，与五月同论，必须印劫为助\"）；大暑后：辛、甲、庚（正文\"辛甲为尊，庚金次之\"），（甲：己土出干时必用；己土不透、只未中一点己土则不必用甲，专用庚壬，徐注），（壬/比劫：庚壬两透无伤；地支宜藏一二点比劫，徐注），（癸：滋甲，徐注\"甲木无癸滋润，其用不显\"），（金水：支成木局时）；另记忌：火破庚壬（丙丁伤庚、戊己伤壬）、己土混浊",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "申",
+   "source": "调候-壬申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "戊"
+      ],
+      [
+       "丁"
+      ]
+     ],
+     "period": null,
+     "note": "戊取辰戌之戊，不用申中之戊；丁须与壬相隔"
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "丙"
+     ],
+     "kind": "stem",
+     "when": "丙戊两藏，富中取贵",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "戊多出干时透干制戊；支中藏甲不忌，甲多而透则改用甲木食神，常人——后一条本书疑脱文，据徐注与通行本补",
+     "tags": {
+      "many": [
+       "戊",
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "一派甲木时出干制甲",
+     "tags": {
+      "many": [
+       "甲"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "癸合戊伤丁",
+    "丁合壬"
+   ],
+   "notes": [
+    "辰戌之戊，不用申中之戊；辰见申会水局宜酌",
+    "制庚佐戊，须与壬相隔",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "戊（辰戌之戊，不用申中之戊；辰见申会水局宜酌）、丁（制庚佐戊，须与壬相隔），（丙：丙戊两藏，富中取贵），（甲：戊多出干时透干制戊；支中藏甲不忌，甲多而透则改用甲木食神，常人——后一条本书疑脱文，据徐注与通行本补），（庚：一派甲木时出干制甲）；另记忌：癸合戊伤丁、丁合壬",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "酉",
+   "source": "调候-壬酉",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "金",
+      "庚",
+      "辛"
+     ],
+     "kind": "element/stem",
+     "when": "无甲时发水源，体全之象，须满盘庚辛",
+     "tags": {
+      "absent": [
+       "甲"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "印"
+     ],
+     "kind": "tenGod",
+     "when": "壬弱无根时为正用，甲为辅佐，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬多透干、支有申亥时用戊，须火为佐，忌甲",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己为病",
+    "庚破甲（庚在支亦忌）"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "甲，（金/庚辛：无甲时发水源，体全之象，须满盘庚辛），（印：壬弱无根时为正用，甲为辅佐，徐注），（戊：壬多透干、支有申亥时用戊，须火为佐，忌甲）；另记忌：戊己为病、庚破甲（庚在支亦忌）",
+   "avoidExceptions": [
+    {
+     "text": "或无戊多壬，人清才浊，终主困穷",
+     "kind": "其他",
+     "stems": [
+      "戊",
+      "壬"
+     ],
+     "absent": [
+      "戊"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "戌",
+   "source": "调候-壬戌",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "甲"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "壬水多时一戊制群水，须酌用，须丙为佐；无丙用戊常人",
+     "tags": {
+      "absent": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "庚透时救甲",
+     "tags": {
+      "exposed": [
+       "庚"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "己合甲",
+    "庚破甲"
+   ],
+   "notes": [],
+   "alternates": [],
+   "rule": "甲、丙，（戊：壬水多时一戊制群水，须酌用，须丙为佐；无丙用戊常人），（丁：庚透时救甲）；另记忌：己合甲、庚破甲",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "亥",
+   "source": "调候-壬亥",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "戊"
+      ],
+      [
+       "丙"
+      ],
+      [
+       "庚"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "甲出制戊时制甲，\"应病与药\"；丙戊两出则无须庚",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "枭印"
+     ],
+     "kind": "tenGod",
+     "when": "支成木局或见食神时",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "甲出制戊而无庚",
+    "亥卯未木局"
+   ],
+   "notes": [
+    "另记：壬辰日辰时须戊透天干，辰中戊土不能用"
+   ],
+   "alternates": [],
+   "rule": "戊、丙、庚（庚：甲出制戊时制甲，\"应病与药\"；丙戊两出则无须庚），（枭印：支成木局或见食神时）；另记：壬辰日辰时须戊透天干，辰中戊土不能用；另记忌：甲出制戊而无庚、亥卯未木局",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "子",
+   "source": "调候-壬子",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "戊"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "财"
+     ],
+     "kind": "tenGod",
+     "when": "支成火局，一富",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "壬午日丁未时，子中癸水用神得地，与戊丙并用",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁合壬争合"
+   ],
+   "notes": [
+    "另记：不取庚（月令无木气，徐注）",
+    "徐注\"二者必须兼用，不可缺一\"",
+    "支成水局：戊为主须得所，丙为佐",
+    "四库：支见四库富贵，以戌为妙"
+   ],
+   "alternates": [],
+   "rule": "戊、丙（徐注\"二者必须兼用，不可缺一\"），（支成水局：戊为主须得所，丙为佐），（财：支成火局，一富），（四库：支见四库富贵，以戌为妙），（癸：壬午日丁未时，子中癸水用神得地，与戊丙并用）；另记：不取庚（月令无木气，徐注）；另记忌：丁合壬争合",
+   "avoidExceptions": [
+    {
+     "text": "或比见月时，丁出年干，常人",
+     "kind": "用神过多",
+     "stems": [
+      "丁"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "壬",
+   "monthBranch": "丑",
+   "source": "调候-壬丑",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": {
+      "label": "上半月",
+      "boundary": "半月",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": {
+      "label": "下半月",
+      "boundary": "半月",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "比劫出干时酌用，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "辛"
+     ],
+     "kind": "stem",
+     "when": "丙辛俱透且不合时化己土生壬，徐注；金旺时丙透遇辛反不妙",
+     "tags": {
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "金旺、丙透遇辛时破辛；丁出时干化木、月支又见丁、无癸时为用",
+     "tags": {
+      "absent": [
+       "癸"
+      ],
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "四柱有壬时制土救丙，须有丙",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "四柱有壬伤丙",
+    "丙辛合",
+    "癸破丁"
+   ],
+   "notes": [
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "上半月：丙，（戊：比劫出干时酌用，徐注）；下半月：丙、甲；（辛：丙辛俱透且不合时化己土生壬，徐注；金旺时丙透遇辛反不妙），（丁：金旺、丙透遇辛时破辛；丁出时干化木、月支又见丁、无癸时为用），（戊：四柱有壬时制土救丙，须有丙）；另记忌：四柱有壬伤丙、丙辛合、癸破丁",
+   "avoidExceptions": [
+    {
+     "text": "丙透甲出，科甲之贵，然四柱无壬，方妙",
+     "kind": "用神过多",
+     "stems": [
+      "甲",
+      "丙"
+     ],
+     "absent": [
+      "壬"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "寅",
+   "source": "调候-癸寅",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "辛"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无辛时代辛，正文\"庚金次之\"，徐注\"无辛用庚\"",
+     "tags": {
+      "absent": [
+       "辛"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局、辛金受困时为救",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "无庚辛",
+    "火土多"
+   ],
+   "notes": [
+    "徐注\"有辛方能用丙\""
+   ],
+   "alternates": [],
+   "rule": "辛、丙（徐注\"有辛方能用丙\"），（庚：无辛时代辛，正文\"庚金次之\"，徐注\"无辛用庚\"），（壬：支成火局、辛金受困时为救）；另记忌：无庚辛、火土多",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "卯",
+   "source": "调候-癸卯",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "辛"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁出干伤庚辛",
+    "支成木局又木出干"
+   ],
+   "notes": [
+    "辛佐庚，徐注\"无庚用辛，不必拘执\"",
+    "丁、己：庚辛太多时两透，财官相生，作大贵论；柱无壬劫出干不用戊"
+   ],
+   "alternates": [],
+   "rule": "庚、辛（辛佐庚，徐注\"无庚用辛，不必拘执\"），（丁、己：庚辛太多时两透，财官相生，作大贵论；柱无壬劫出干不用戊）；另记忌：丁出干伤庚辛、支成木局又木出干",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "辰",
+   "source": "调候-癸辰",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": {
+      "label": "清明后（上半月）",
+      "boundary": "谷雨",
+      "side": "before"
+     }
+    },
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "辛"
+      ]
+     ],
+     "period": {
+      "label": "谷雨后（下半月）",
+      "boundary": "谷雨",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "下半月蓄源，正文\"必须庚金蓄源\"，徐注\"宜用庚金发水源\"",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "下半月丙火伤辛时透干为救，徐注",
+     "tags": {}
+    },
+    {
+     "stems": [
+      "己"
+     ],
+     "kind": "stem",
+     "when": "下半月支成水局、有丙无甲时假煞为权",
+     "tags": {
+      "absent": [
+       "甲"
+      ],
+      "trio": [
+       "水"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "甲"
+     ],
+     "kind": "stem",
+     "when": "下半月支坐四库，或戊土透干时出干制土，徐注\"甲透为药，用神仍取辛金\"",
+     "tags": {
+      "exposed": [
+       "甲"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "水局假煞格见甲破己",
+    "戊土（校记：癸水不能用戊土）"
+   ],
+   "notes": [
+    "上半月",
+    "下半月",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "清明后（上半月）：丙；谷雨后（下半月）：丙、辛，（庚：下半月蓄源，正文\"必须庚金蓄源\"，徐注\"宜用庚金发水源\"），（壬：下半月丙火伤辛时透干为救，徐注）；（己：下半月支成水局、有丙无甲时假煞为权），（甲：下半月支坐四库，或戊土透干时出干制土，徐注\"甲透为药，用神仍取辛金\"）；另记忌：水局假煞格见甲破己、戊土（校记：癸水不能用戊土）",
+   "avoidExceptions": [
+    {
+     "text": "有甲破己，常人",
+     "kind": "其他",
+     "stems": [
+      "甲"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "巳",
+   "source": "调候-癸巳",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "辛"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "庚"
+     ],
+     "kind": "stem",
+     "when": "无辛时用，虽富不贵，异途得官",
+     "tags": {
+      "absent": [
+       "辛"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "癸"
+     ],
+     "kind": "stem",
+     "when": "有丁时制丁，衣禄充足",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁（藏午伤辛"
+   ],
+   "notes": [
+    "劫；正文\"加以壬透，富贵极品\"，徐注\"劫印不可缺一\"\"重申印劫，二者必须并用之意也\"",
+    "庚壬两透、满盘劫印：劫印化晋格，反取巳宫丙戊为用，徐注",
+    "克庚合壬）",
+    "一派火土无金水"
+   ],
+   "alternates": [],
+   "rule": "辛、壬（劫；正文\"加以壬透，富贵极品\"，徐注\"劫印不可缺一\"\"重申印劫，二者必须并用之意也\"），（庚：无辛时用，虽富不贵，异途得官），（癸：有丁时制丁，衣禄充足），（庚壬两透、满盘劫印：劫印化晋格，反取巳宫丙戊为用，徐注）；另记忌：丁（藏午伤辛；克庚合壬）、一派火土无金水",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "午",
+   "source": "调候-癸午",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "辛"
+      ],
+      [
+       "壬"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "支成火局时为救，二壬一庚同透最上",
+     "tags": {
+      "trio": [
+       "火"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁火司权（庚辛怯丁，须比劫为护）",
+    "辛壬出干防丙丁化合（徐注）",
+    "从煞格见刑冲破害"
+   ],
+   "notes": [
+    "比劫；正文\"须用比肩劫财，方得庚辛妙用\"\"庚辛壬参酌并用\"，徐注\"务须印劫并见\"\"庚辛无分先后\""
+   ],
+   "alternates": [],
+   "rule": "庚、辛、壬（比劫；正文\"须用比肩劫财，方得庚辛妙用\"\"庚辛壬参酌并用\"，徐注\"务须印劫并见\"\"庚辛无分先后\"），（壬：支成火局时为救，二壬一庚同透最上）；另记忌：丁火司权（庚辛怯丁，须比劫为护）、辛壬出干防丙丁化合（徐注）、从煞格见刑冲破害",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "未",
+   "source": "调候-癸未",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "辛"
+      ],
+      [
+       "比劫"
+      ]
+     ],
+     "period": {
+      "label": "上半月",
+      "boundary": "大暑",
+      "side": "before"
+     },
+     "note": "须有比劫助金"
+    },
+    {
+     "stems": [
+      [
+       "庚"
+      ],
+      [
+       "辛"
+      ]
+     ],
+     "period": {
+      "label": "下半月",
+      "boundary": "大暑",
+      "side": "after"
+     }
+    }
+   ],
+   "conditional": [],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "丁透（徐注\"丁火出未为忌\"）"
+   ],
+   "notes": [
+    "正文\"须有比劫助金\"",
+    "大暑后",
+    "比劫可无",
+    "丁藏未中而庚辛出干",
+    "徐注\"便推富贵\"",
+    "正文另说\"在未者……皆不秀\"",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "上半月（大暑前，徐注\"看法与五月略同\"）：庚、辛、比劫（正文\"须有比劫助金\"）；下半月（大暑后）：庚、辛（比劫可无）；另记忌：丁透（徐注\"丁火出未为忌\"）；丁藏未中而庚辛出干，徐注\"便推富贵\"，正文另说\"在未者……皆不秀\"",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "申",
+   "source": "调候-癸申",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丁"
+      ],
+      [
+       "甲"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "壬癸出制丁",
+    "金多无丁",
+    "戌未多而甲出干无水",
+    "甲多破土"
+   ],
+   "notes": [
+    "佐丁；正文\"丁透带甲，名有焰之火……富贵非轻\"，徐注\"用丁火不能无甲为佐也\"\"丁火不离甲木\"",
+    "无甲时：丁须无壬癸出制"
+   ],
+   "alternates": [],
+   "rule": "丁、甲（佐丁；正文\"丁透带甲，名有焰之火……富贵非轻\"，徐注\"用丁火不能无甲为佐也\"\"丁火不离甲木\"），（无甲时：丁须无壬癸出制）；另记忌：壬癸出制丁、金多无丁、戌未多而甲出干无水、甲多破土",
+   "avoidExceptions": [
+    {
+     "text": "或柱有戌未，或二戌二未，又甲出干，无水，又不作富贵推矣",
+     "kind": "用神过多",
+     "stems": [
+      "甲"
+     ],
+     "absent": [
+      "壬",
+      "癸"
+     ]
+    },
+    {
+     "text": "或一丁藏库，干支见甲多，无水常人",
+     "kind": "用神过多",
+     "stems": [
+      "甲"
+     ],
+     "absent": [
+      "壬",
+      "癸"
+     ]
+    }
+   ]
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "酉",
+   "source": "调候-癸酉",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "辛"
+      ],
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "官煞"
+     ],
+     "kind": "tenGod",
+     "when": "壬水同透时，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "戊己太多",
+    "丙辛合化"
+   ],
+   "notes": [
+    "丙为佐，须与辛隔位或一透一藏，不可合化",
+    "食伤与财：印重时，徐注"
+   ],
+   "alternates": [],
+   "rule": "辛、丙（丙为佐，须与辛隔位或一透一藏，不可合化），（官煞：壬水同透时，徐注），（食伤与财：印重时，徐注）；另记忌：戊己太多、丙辛合化",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "戌",
+   "source": "调候-癸戌",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "辛"
+      ],
+      [
+       "甲"
+      ],
+      [
+       "癸"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [],
+   "indispensable": [
+    {
+     "stems": [
+      "甲"
+     ],
+     "note": "甲不可缺"
+    }
+   ],
+   "downgrade": [],
+   "avoid": [
+    "戊土克制",
+    "火土为病"
+   ],
+   "notes": [
+    "正文\"专用辛金，次用癸甲\"；徐注\"以辛甲癸为正用\"\"甲木为不可缺之辅佐\"\"甲木乃去病之药，不可或缺\"",
+    "庚、壬：无辛癸时代之，徐注；正文\"甲透无癸，见壬，亦主秀才\""
+   ],
+   "alternates": [],
+   "rule": "辛、甲、癸（正文\"专用辛金，次用癸甲\"；徐注\"以辛甲癸为正用\"\"甲木为不可缺之辅佐\"\"甲木乃去病之药，不可或缺\"），另记\"甲不可缺\"；（庚、壬：无辛癸时代之，徐注；正文\"甲透无癸，见壬，亦主秀才\"）；另记忌：戊土克制、火土为病",
+   "avoidExceptions": []
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "亥",
+   "source": "调候-癸亥",
+   "status": "已裁",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": null,
+     "note": "从徐注；庚辛限木局，见 conditional"
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "一派壬子或壬水出干时制水，徐注\"用戊更须丙火为佐\"",
+     "tags": {
+      "many": [
+       "壬"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "一派金时出干破印",
+     "tags": {
+      "many": [
+       "金"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "支成木局",
+    "丁伤庚辛",
+    "四柱多火而无印劫"
+   ],
+   "notes": [
+    "徐注\"专用丙火调候，与十一月一理共推\"",
+    "庚、辛：支成木局或卯未会局、旺转为弱时制木发源，正文\"最忌支成木局，泄散元神，故旺中有弱，专用庚辛生发\"",
+    "两说共有：",
+    "主序手工给定（OVERRIDES）"
+   ],
+   "alternates": [],
+   "rule": "丙（徐注\"专用丙火调候，与十一月一理共推\"）；（庚、辛：支成木局或卯未会局、旺转为弱时制木发源，正文\"最忌支成木局，泄散元神，故旺中有弱，专用庚辛生发\"）。两说共有：（戊：一派壬子或壬水出干时制水，徐注\"用戊更须丙火为佐\"），（丁：一派金时出干破印）；另记忌：支成木局、丁伤庚辛、四柱多火而无印劫",
+   "avoidExceptions": [
+    {
+     "text": "或干透丁火，支成木局，木旺火相，制住庚辛，不能生水，单寒之极",
+     "kind": "其他",
+     "stems": [
+      "甲",
+      "乙",
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    },
+    {
+     "text": "或四柱多火，名财多身弱，贫贱到老",
+     "kind": "用神过多",
+     "stems": [
+      "丙",
+      "丁"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "子",
+   "source": "调候-癸子",
+   "status": "已核",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ],
+      [
+       "辛"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "戊"
+     ],
+     "kind": "stem",
+     "when": "柱有壬水时方可用，徐注",
+     "tags": {}
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "壬透（通行本正文\"要不见壬透\"，徐注\"用丙不宜见壬癸克制\"，本书正文无此句，按异文口径判脱文补入）",
+    "壬癸克丙（徐注）",
+    "辛合丙",
+    "一派戊土",
+    "一派水无火"
+   ],
+   "notes": [
+    "辛须有丙方妙，宜藏支或与丙遥隔；徐注\"丙火太旺，则用辛金滋扶\""
+   ],
+   "alternates": [],
+   "rule": "丙、辛（辛须有丙方妙，宜藏支或与丙遥隔；徐注\"丙火太旺，则用辛金滋扶\"），（戊：柱有壬水时方可用，徐注）；另记忌：壬透（通行本正文\"要不见壬透\"，徐注\"用丙不宜见壬癸克制\"，本书正文无此句，按异文口径判脱文补入）、壬癸克丙（徐注）、辛合丙、一派戊土、一派水无火",
+   "avoidExceptions": [
+    {
+     "text": "或一派戊土，名煞重身轻，贫夭之人",
+     "kind": "其他",
+     "stems": [
+      "戊",
+      "己"
+     ],
+     "absent": []
+    }
+   ]
+  },
+  {
+   "dayMaster": "癸",
+   "monthBranch": "丑",
+   "source": "调候-癸丑",
+   "status": "已审",
+   "primary": [
+    {
+     "stems": [
+      [
+       "丙"
+      ]
+     ],
+     "period": null
+    }
+   ],
+   "conditional": [
+    {
+     "stems": [
+      "壬"
+     ],
+     "kind": "stem",
+     "when": "丙出干时配壬，水辅阳光，劫出干其用同壬，忌月上丁火合",
+     "tags": {
+      "exposed": [
+       "丙"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "丁"
+     ],
+     "kind": "stem",
+     "when": "丙遭辛合时制辛；一派癸己会党、年干透丁、夜生者，雪夜灯光格",
+     "tags": {
+      "many": [
+       "癸"
+      ]
+     }
+    },
+    {
+     "stems": [
+      "金"
+     ],
+     "kind": "element",
+     "when": "支成木局时为救，仍以丙为用",
+     "tags": {
+      "trio": [
+       "木"
+      ]
+     }
+    }
+   ],
+   "indispensable": [],
+   "downgrade": [],
+   "avoid": [
+    "月上丁火",
+    "癸出干蔽丙（云雾有根）",
+    "辛合丙",
+    "有壬无丙而见戊"
+   ],
+   "notes": [
+    "须得地，通根寅巳午",
+    "庚、壬：支成火局时一金一水生助"
+   ],
+   "alternates": [],
+   "rule": "丙（须得地，通根寅巳午），（壬：丙出干时配壬，水辅阳光，劫出干其用同壬，忌月上丁火合），（丁：丙遭辛合时制辛；一派癸己会党、年干透丁、夜生者，雪夜灯光格），（庚、壬：支成火局时一金一水生助），（金：支成木局时为救，仍以丙为用）；另记忌：月上丁火、癸出干蔽丙（云雾有根）、辛合丙、有壬无丙而见戊",
+   "avoidExceptions": []
+  }
+ ]
+}
