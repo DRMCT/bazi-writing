@@ -1,0 +1,3183 @@
+{
+  "schema": "bazi-chart/v1",
+  "calendar": {
+    "mode": "fictional",
+    "storyEpochBirthYear": 306
+  },
+  "name": "林昭",
+  "gender": "female",
+  "loverStar": {
+    "family": "官杀",
+    "gods": [
+      "正官",
+      "七杀"
+    ],
+    "by": "性别默认"
+  },
+  "fourPillars": {
+    "year": "庚寅",
+    "month": "壬午",
+    "day": "辛酉",
+    "hour": "戊戌"
+  },
+  "birth": null,
+  "natal": {
+    "dayMaster": "辛金",
+    "stems": {
+      "year": {
+        "stem": "庚金",
+        "tenGod": "劫财"
+      },
+      "month": {
+        "stem": "壬水",
+        "tenGod": "伤官"
+      },
+      "day": {
+        "stem": "辛金",
+        "tenGod": "日主"
+      },
+      "hour": {
+        "stem": "戊土",
+        "tenGod": "正印"
+      }
+    },
+    "hiddenStems": {
+      "year": [
+        {
+          "stem": "甲木",
+          "tenGod": "正财",
+          "layer": "本气"
+        },
+        {
+          "stem": "丙火",
+          "tenGod": "正官",
+          "layer": "中气"
+        },
+        {
+          "stem": "戊土",
+          "tenGod": "正印",
+          "layer": "余气"
+        }
+      ],
+      "month": [
+        {
+          "stem": "丁火",
+          "tenGod": "七杀",
+          "layer": "本气"
+        },
+        {
+          "stem": "己土",
+          "tenGod": "偏印",
+          "layer": "中气"
+        }
+      ],
+      "day": [
+        {
+          "stem": "辛金",
+          "tenGod": "比肩",
+          "layer": "本气"
+        }
+      ],
+      "hour": [
+        {
+          "stem": "戊土",
+          "tenGod": "正印",
+          "layer": "本气"
+        },
+        {
+          "stem": "辛金",
+          "tenGod": "比肩",
+          "layer": "中气"
+        },
+        {
+          "stem": "丁火",
+          "tenGod": "七杀",
+          "layer": "余气"
+        }
+      ]
+    },
+    "structure": {
+      "name": "七杀格",
+      "base": "七杀格",
+      "variation": "会局",
+      "also": [],
+      "basis": "月令午本气丁火为七杀当旺，未透干仍以当旺之神取七杀格；月支午与寅戌三合成火局，火未透干，以局中丁火论七杀，随局变格取七杀格"
+    }
+  },
+  "dayun": {
+    "forward": false,
+    "startAgeYears": 5.0,
+    "startAgeLabel": "5年",
+    "steps": [
+      {
+        "sequence": 1,
+        "pillar": "辛巳",
+        "startAge": 5,
+        "endAge": 15,
+        "startYear": 311,
+        "endYear": 321
+      },
+      {
+        "sequence": 2,
+        "pillar": "庚辰",
+        "startAge": 15,
+        "endAge": 25,
+        "startYear": 321,
+        "endYear": 331
+      },
+      {
+        "sequence": 3,
+        "pillar": "己卯",
+        "startAge": 25,
+        "endAge": 35,
+        "startYear": 331,
+        "endYear": 341
+      },
+      {
+        "sequence": 4,
+        "pillar": "戊寅",
+        "startAge": 35,
+        "endAge": 45,
+        "startYear": 341,
+        "endYear": 351
+      },
+      {
+        "sequence": 5,
+        "pillar": "丁丑",
+        "startAge": 45,
+        "endAge": 55,
+        "startYear": 351,
+        "endYear": 361
+      },
+      {
+        "sequence": 6,
+        "pillar": "丙子",
+        "startAge": 55,
+        "endAge": 65,
+        "startYear": 361,
+        "endYear": 371
+      },
+      {
+        "sequence": 7,
+        "pillar": "乙亥",
+        "startAge": 65,
+        "endAge": 75,
+        "startYear": 371,
+        "endYear": 381
+      },
+      {
+        "sequence": 8,
+        "pillar": "甲戌",
+        "startAge": 75,
+        "endAge": 85,
+        "startYear": 381,
+        "endYear": 391
+      },
+      {
+        "sequence": 9,
+        "pillar": "癸酉",
+        "startAge": 85,
+        "endAge": 95,
+        "startYear": 391,
+        "endYear": 401
+      },
+      {
+        "sequence": 10,
+        "pillar": "壬申",
+        "startAge": 95,
+        "endAge": 105,
+        "startYear": 401,
+        "endYear": 411
+      },
+      {
+        "sequence": 11,
+        "pillar": "辛未",
+        "startAge": 105,
+        "endAge": 115,
+        "startYear": 411,
+        "endYear": 421
+      },
+      {
+        "sequence": 12,
+        "pillar": "庚午",
+        "startAge": 115,
+        "endAge": 125,
+        "startYear": 421,
+        "endYear": 431
+      }
+    ]
+  },
+  "relations": {
+    "pairs": [
+      {
+        "between": [
+          "day",
+          "hour"
+        ],
+        "label": "日时",
+        "branches": [
+          "害"
+        ],
+        "stemHe": false,
+        "tianKeDiChong": false
+      }
+    ],
+    "trios": [
+      {
+        "kind": "三合",
+        "branches": "寅午戌",
+        "element": "火"
+      }
+    ]
+  },
+  "shensha": [
+    {
+      "name": "桃花",
+      "basis": "日支酉（日支起）",
+      "positions": [
+        "month"
+      ],
+      "source": "神煞-桃花",
+      "status": "校核定稿",
+      "cardStatus": "已裁"
+    },
+    {
+      "name": "华盖",
+      "basis": "年支寅",
+      "positions": [
+        "hour"
+      ],
+      "source": "神煞-华盖",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "将星",
+      "basis": "年支寅",
+      "positions": [
+        "month"
+      ],
+      "source": "神煞-将星",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "将星",
+      "basis": "日支酉（日支起）",
+      "positions": [
+        "day"
+      ],
+      "source": "神煞-将星",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "劫煞",
+      "basis": "日支酉（日支起）",
+      "positions": [
+        "year"
+      ],
+      "source": "神煞-劫煞",
+      "status": "校核定稿",
+      "cardStatus": "已核"
+    },
+    {
+      "name": "天乙贵人",
+      "basis": "日干辛",
+      "positions": [
+        "year",
+        "month"
+      ],
+      "source": "神煞-天乙贵人",
+      "status": "校核定稿",
+      "cardStatus": "已裁"
+    },
+    {
+      "name": "红艳",
+      "basis": "日干辛",
+      "positions": [
+        "day"
+      ],
+      "source": "神煞-红艳",
+      "status": "校核定稿",
+      "cardStatus": "已裁"
+    },
+    {
+      "name": "阴差阳错",
+      "basis": "日柱辛酉",
+      "positions": [
+        "day"
+      ],
+      "source": "神煞-阴差阳错",
+      "status": "校核定稿",
+      "cardStatus": "已审"
+    }
+  ],
+  "shenshaTags": {
+    "tags": [
+      {
+        "id": "劫煞-01",
+        "shensha": "劫煞",
+        "pillar": "年",
+        "tag": "劫头见财：破财，或靠吞并别人发家而惨毒",
+        "classic": "劫头见财 → 蓄积大富，吞并不顾，惨毒害物；两重反主贫寒",
+        "source": "神煞-劫煞 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "劫煞-07",
+        "shensha": "劫煞",
+        "pillar": "年",
+        "tag": "劫煞奏号：难事变易，众人钦仰",
+        "classic": "劫煞奏号（劫坐贵人）→ 变难成易，人自钦仰",
+        "source": "神煞-劫煞 [正文] 上185–188",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "华盖-01",
+        "shensha": "华盖",
+        "pillar": "时",
+        "tag": "晚年孤独，或作品传世；旧书说时上华盖平生歇灭、女命不产",
+        "classic": "时坐华盖 → 平生歇灭；壬癸人尤忌，老年丧子；日犯克妻；女命时逢，一生不产",
+        "source": "神煞-华盖 [正文] 上196–198",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "华盖-04",
+        "shensha": "华盖",
+        "pillar": "时",
+        "tag": "品格清高、靠学问安身的人；信仰或学问是他的去处",
+        "classic": "印墓同华 → 品格清；带华盖、正印而不夹库 → 两府之格",
+        "source": "神煞-华盖 [正文·引林开] 上196–198",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "天乙贵人-01",
+        "shensha": "天乙贵人",
+        "pillar": "年",
+        "tag": "救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "天乙贵人-01",
+        "shensha": "天乙贵人",
+        "pillar": "月",
+        "tag": "救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "天乙贵人-07",
+        "shensha": "天乙贵人",
+        "pillar": "年",
+        "tag": "厚重有威、多谋善断，贵气里带着算计",
+        "classic": "与劫煞并 → 貌厚有威，多谋足计",
+        "source": "神煞-天乙贵人 [正文·引烛神经] 上146–150",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "天乙贵人-08",
+        "shensha": "天乙贵人",
+        "pillar": "年",
+        "tag": "贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦",
+        "classic": "贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾",
+        "source": "神煞-天乙贵人 [正文·引宝鉴] 上146–150",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "天乙贵人-08",
+        "shensha": "天乙贵人",
+        "pillar": "月",
+        "tag": "贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦",
+        "classic": "贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾",
+        "source": "神煞-天乙贵人 [正文·引宝鉴] 上146–150",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "将星-01",
+        "shensha": "将星",
+        "pillar": "月",
+        "tag": "掌权者：压力与权力一起到他手里",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "将星-02",
+        "shensha": "将星",
+        "pillar": "月",
+        "tag": "叛军首领：领导欲用在反对上",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "将星-05",
+        "shensha": "将星",
+        "pillar": "月",
+        "tag": "有人扶的领导者，顺风顺水",
+        "classic": "吉星相扶，贵煞加临 → 吉庆",
+        "source": "神煞-将星 [正文] 上127",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "桃花-01",
+        "shensha": "桃花",
+        "pillar": "月",
+        "tag": "墙内桃花：家里安排的缘分，上一辈眼里合适的人",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "桃花-05",
+        "shensha": "桃花",
+        "pillar": "月",
+        "tag": "靠人缘或暧昧的钱起家",
+        "classic": "与贵人建禄并 → 因油盐酒货得生，或因妇人暗味之财起家",
+        "source": "神煞-桃花 [正文] 上190–193",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "红艳-01",
+        "shensha": "红艳",
+        "pillar": "日",
+        "tag": "感情的主动权在他手里；他挑人，不是被挑",
+        "classic": null,
+        "source": "DESIGN 附录 B",
+        "origin": "自起草（DESIGN 附录 B）"
+      },
+      {
+        "id": "红艳-04",
+        "shensha": "红艳",
+        "pillar": "日",
+        "tag": "旧书把它当女命之忌；写法上可反用为她不肯被规训",
+        "classic": "女命最忌之",
+        "source": "神煞-红艳 [正文] 上183",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "阴差阳错-01",
+        "shensha": "阴差阳错",
+        "pillar": "日",
+        "tag": "关系模式标签：与伴侣那边的人不合，靠不上他们，久后成仇",
+        "classic": "只日家犯 → 尤重，不得外家力，妻财虚花，久后与妻家为仇",
+        "source": "神煞-阴差阳错 [正文] 上183",
+        "origin": "古籍判词的叙事译法（自起草）"
+      },
+      {
+        "id": "阴差阳错-02",
+        "shensha": "阴差阳错",
+        "pillar": "日",
+        "tag": "与伴侣的父母和亲戚处不来，伴侣那边冷落她",
+        "classic": "女命 → 公姑寡合，妯娌不足，夫家冷退",
+        "source": "神煞-阴差阳错 [正文] 上183",
+        "origin": "古籍判词的叙事译法（自起草）"
+      }
+    ],
+    "cores": {
+      "劫煞": "被夺、外来打击、竞争者出现",
+      "华盖": "孤独、艺术、宗教感、清高",
+      "天乙贵人": "总有人在关键时刻拉他一把；反用是他习惯被救，不会自救",
+      "将星": "领导欲、担责、被推到前面",
+      "桃花": "吸引力、情欲、人际磁场",
+      "红艳": "风流、多情、审美化的欲望，比桃花更主动",
+      "阴差阳错": "错位感，总差一步，亲密关系与伴侣那边的人不顺"
+    },
+    "status": "叙事映射自起草；古籍判词部分取自校核定稿的神煞卡",
+    "source": "shensha_tags.json"
+  },
+  "tiaohou": {
+    "dayMaster": "辛",
+    "monthBranch": "午",
+    "stems": [
+      "壬",
+      "己",
+      "癸"
+    ],
+    "slots": [
+      [
+        "壬"
+      ],
+      [
+        "己"
+      ],
+      [
+        "癸"
+      ]
+    ],
+    "elements": [
+      "水",
+      "土",
+      "水"
+    ],
+    "period": null,
+    "periodUnresolved": false,
+    "periods": [],
+    "conditional": [
+      {
+        "stems": [
+          "庚"
+        ],
+        "kind": "stem",
+        "when": "癸见庚金，异途亦显",
+        "tags": {}
+      },
+      {
+        "stems": [
+          "甲"
+        ],
+        "kind": "stem",
+        "when": "土多且见水时破土，无水不用",
+        "tags": {}
+      }
+    ],
+    "alternates": [],
+    "indispensable": [],
+    "downgrade": [],
+    "avoid": [
+      "煅炼",
+      "支成火局",
+      "癸出见戊合",
+      "木多火多逢金水运"
+    ],
+    "avoidExceptions": [],
+    "status": "校核定稿",
+    "cardStatus": "已审",
+    "source": "调候-辛午",
+    "exposed": [
+      "壬"
+    ],
+    "hidden": [
+      "己"
+    ],
+    "missing": [
+      "癸"
+    ],
+    "indispensableMissing": []
+  },
+  "strength": {
+    "algorithm": "bazi-writing strength v2（自起草，含合局项；见模块文档与 DESIGN 6.4）",
+    "dayMaster": "金",
+    "support": 51.0,
+    "drain": 94.5,
+    "ratio": 0.447,
+    "verdict": "身弱",
+    "note": null,
+    "flags": {
+      "得令": false,
+      "得地": true,
+      "得势": true
+    },
+    "favorable": [
+      "土",
+      "金"
+    ],
+    "unfavorable": [
+      "水",
+      "木",
+      "火"
+    ],
+    "combos": [
+      {
+        "kind": "三合",
+        "branches": "寅午戌",
+        "element": "火",
+        "factor": 1.5,
+        "override": true,
+        "pillars": [
+          "年",
+          "月",
+          "时"
+        ],
+        "detail": "寅午戌三合火局，参与之支本气改按火论"
+      }
+    ],
+    "contributions": [
+      {
+        "where": "年干",
+        "stem": "庚",
+        "tenGod": "劫财",
+        "weight": 12.0,
+        "side": "support"
+      },
+      {
+        "where": "年支本气（从火局）",
+        "stem": "丙",
+        "tenGod": "正官",
+        "weight": 15.0,
+        "side": "drain"
+      },
+      {
+        "where": "年支中气",
+        "stem": "丙",
+        "tenGod": "正官",
+        "weight": 3.0,
+        "side": "drain"
+      },
+      {
+        "where": "年支余气",
+        "stem": "戊",
+        "tenGod": "正印",
+        "weight": 1.5,
+        "side": "support"
+      },
+      {
+        "where": "月干",
+        "stem": "壬",
+        "tenGod": "伤官",
+        "weight": 15.0,
+        "side": "drain"
+      },
+      {
+        "where": "月支本气（从火局）",
+        "stem": "丙",
+        "tenGod": "正官",
+        "weight": 45.0,
+        "side": "drain"
+      },
+      {
+        "where": "月支中气",
+        "stem": "己",
+        "tenGod": "偏印",
+        "weight": 7.5,
+        "side": "support"
+      },
+      {
+        "where": "日支本气",
+        "stem": "辛",
+        "tenGod": "比肩",
+        "weight": 15.0,
+        "side": "support"
+      },
+      {
+        "where": "时干",
+        "stem": "戊",
+        "tenGod": "正印",
+        "weight": 12.0,
+        "side": "support"
+      },
+      {
+        "where": "时支本气（从火局）",
+        "stem": "丙",
+        "tenGod": "正官",
+        "weight": 15.0,
+        "side": "drain"
+      },
+      {
+        "where": "时支中气",
+        "stem": "辛",
+        "tenGod": "比肩",
+        "weight": 3.0,
+        "side": "support"
+      },
+      {
+        "where": "时支余气",
+        "stem": "丁",
+        "tenGod": "七杀",
+        "weight": 1.5,
+        "side": "drain"
+      }
+    ]
+  },
+  "yongshen": {
+    "algorithm": "bazi-writing yongshen v1（自起草；子平扶抑病药为主，调候为辅，见模块文档）",
+    "method": "扶抑",
+    "side": "身弱",
+    "yong": {
+      "element": "土",
+      "family": "印"
+    },
+    "bing": {
+      "element": "火",
+      "family": "官杀",
+      "also": []
+    },
+    "roles": {
+      "木": "忌",
+      "火": "忌",
+      "土": "用",
+      "金": "喜",
+      "水": "仇"
+    },
+    "preference": {
+      "木": -1.0,
+      "火": -1.0,
+      "土": 1.0,
+      "金": 0.5,
+      "水": -0.5
+    },
+    "damping": 1.0,
+    "familyWeights": {
+      "比劫": 30.0,
+      "食伤": 15.0,
+      "财": 0.0,
+      "官杀": 79.5,
+      "印": 21.0
+    },
+    "tiaohou": {
+      "stem": "壬",
+      "element": "水",
+      "urgent": true,
+      "present": true,
+      "adopted": false
+    },
+    "reason": "身弱，官杀为病，取印化杀扶身",
+    "notes": [
+      "调候之水在盘中，但在扶抑的忌一侧，仍用扶抑，调候作喜神候选"
+    ],
+    "status": "自起草，按徐评例盘校准（references/校核/用神_例盘报告.md）"
+  },
+  "changsheng": {
+    "nayin": {
+      "year": {
+        "name": "松柏木",
+        "element": "木"
+      },
+      "month": {
+        "name": "杨柳木",
+        "element": "木"
+      },
+      "day": {
+        "name": "石榴木",
+        "element": "木"
+      },
+      "hour": {
+        "name": "平地木",
+        "element": "木"
+      }
+    },
+    "dayMasterStage": {
+      "year": "胎",
+      "month": "病",
+      "day": "临官",
+      "hour": "冠带"
+    },
+    "selfStage": {
+      "year": "绝",
+      "month": "胎",
+      "day": "临官",
+      "hour": "墓"
+    },
+    "status": "校核定稿",
+    "source": {
+      "changsheng": {
+        "长生-十干长生位": "已裁",
+        "长生-十二宫序": "已核"
+      },
+      "nayin": {
+        "纳音-六十甲子": "已核"
+      }
+    }
+  },
+  "geju": {
+    "structure": "七杀格",
+    "name": "偏官",
+    "cheng": [
+      "煞逢制且身强",
+      "煞逢食制且煞旺且食强且身强（极贵）",
+      "煞逢印（煞印有情）",
+      "煞重且身轻且逢印（许贵不大）",
+      "身重且煞轻且煞化印且透财（借财清格）",
+      "煞无食且刃当煞（两存）",
+      "煞无食且印化煞（本书异文另说，取运章与通行本作刃）",
+      "煞当令且透印（化煞为印）"
+    ],
+    "bai": [
+      "煞逢财且无制",
+      "煞逢食制且逢印",
+      "煞逢食制且露财",
+      "煞重且食轻且露印",
+      "煞逢官混",
+      "身强且煞轻（徐）",
+      "煞重且身弱（徐）"
+    ],
+    "jiu": [
+      "煞逢食制且逢印→透财去印存食",
+      "煞逢食制且露财→财先食后（财生煞而食制之）",
+      "煞逢食制且透印→印先食后且食重（印制食）",
+      "煞逢官混→去官或去煞（取清）",
+      "煞重且身轻→弃食就印",
+      "煞逢制太过→财运或印运（身强宜财，身弱宜印）"
+    ],
+    "yun": [
+      {
+        "scope": "煞用食制",
+        "favor": [
+          "食伤运（煞重食轻）",
+          "煞运（煞轻食重）",
+          "比劫运（煞食均且身轻）"
+        ],
+        "avoid": [
+          "官运",
+          "印运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "煞用印",
+        "favor": [
+          "印运",
+          "比劫运"
+        ],
+        "avoid": [
+          "财运"
+        ],
+        "neutral": [
+          "伤官运（原文「为美」，徐评降为不忌）"
+        ]
+      },
+      {
+        "scope": "煞用财去印存食",
+        "favor": [
+          "财运",
+          "食伤运",
+          "煞运"
+        ],
+        "avoid": [
+          "劫运",
+          "印运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "财滋弱煞",
+        "favor": [
+          "食运",
+          "印运",
+          "比劫运（财已足）",
+          "财运",
+          "煞运（财未足）"
+        ],
+        "avoid": [],
+        "neutral": []
+      },
+      {
+        "scope": "煞带官",
+        "favor": [
+          "比劫运（身轻）",
+          "食运（食轻）"
+        ],
+        "avoid": [
+          "去取清之神运",
+          "伤制煞之神运"
+        ],
+        "neutral": []
+      },
+      {
+        "scope": "煞用刃",
+        "favor": [
+          "煞运（煞轻刃重）",
+          "食伤运（刃轻煞重）",
+          "印运"
+        ],
+        "avoid": [
+          "官运"
+        ],
+        "neutral": []
+      }
+    ],
+    "status": "校核定稿",
+    "source": "格局-偏官",
+    "judge": {
+      "structure": "七杀格",
+      "verdict": "败格",
+      "cheng": [
+        {
+          "text": "煞逢制且身强",
+          "holds": false,
+          "atoms": {
+            "煞逢制": true,
+            "身强": false
+          }
+        },
+        {
+          "text": "煞逢食制且煞旺且食强且身强（极贵）",
+          "holds": false,
+          "atoms": {
+            "煞逢食制": true,
+            "煞旺": false,
+            "食强": false,
+            "身强": false
+          }
+        },
+        {
+          "text": "煞逢印（煞印有情）",
+          "holds": true,
+          "atoms": {
+            "煞逢印": true
+          }
+        },
+        {
+          "text": "煞重且身轻且逢印（许贵不大）",
+          "holds": false,
+          "atoms": {
+            "煞重": false,
+            "身轻": true,
+            "逢印": true
+          }
+        },
+        {
+          "text": "身重且煞轻且煞化印且透财（借财清格）",
+          "holds": false,
+          "atoms": {
+            "身重": false,
+            "煞轻": true,
+            "煞化印": true,
+            "透财": false
+          }
+        },
+        {
+          "text": "煞无食且刃当煞（两存）",
+          "holds": false,
+          "atoms": {
+            "煞无食": false,
+            "刃当煞": true
+          }
+        },
+        {
+          "text": "煞无食且印化煞（本书异文另说，取运章与通行本作刃）",
+          "holds": false,
+          "atoms": {
+            "煞无食": false,
+            "印化煞": true
+          }
+        },
+        {
+          "text": "煞当令且透印（化煞为印）",
+          "holds": true,
+          "atoms": {
+            "煞当令": true,
+            "透印": true
+          }
+        }
+      ],
+      "bai": [
+        {
+          "text": "煞逢财且无制",
+          "holds": false,
+          "atoms": {
+            "煞逢财": true,
+            "无制": false
+          }
+        },
+        {
+          "text": "煞逢食制且逢印",
+          "holds": true,
+          "atoms": {
+            "煞逢食制": true,
+            "逢印": true
+          }
+        },
+        {
+          "text": "煞逢食制且露财",
+          "holds": false,
+          "atoms": {
+            "煞逢食制": true,
+            "露财": false
+          }
+        },
+        {
+          "text": "煞重且食轻且露印",
+          "holds": false,
+          "atoms": {
+            "煞重": false,
+            "食轻": false,
+            "露印": true
+          }
+        },
+        {
+          "text": "煞逢官混",
+          "holds": false,
+          "atoms": {
+            "煞逢官混": false
+          }
+        },
+        {
+          "text": "身强且煞轻（徐）",
+          "holds": false,
+          "atoms": {
+            "身强": false,
+            "煞轻": true
+          }
+        },
+        {
+          "text": "煞重且身弱（徐）",
+          "holds": false,
+          "atoms": {
+            "煞重": false,
+            "身弱": true
+          }
+        }
+      ],
+      "jiu": [
+        {
+          "text": "煞逢食制且逢印→透财去印存食",
+          "cause": {
+            "text": "煞逢食制且逢印",
+            "holds": true,
+            "atoms": {
+              "煞逢食制": true,
+              "逢印": true
+            }
+          },
+          "fix": {
+            "text": "透财去印存食",
+            "holds": false,
+            "atoms": {
+              "透财去印存食": false
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "煞逢食制且露财→财先食后（财生煞而食制之）",
+          "cause": {
+            "text": "煞逢食制且露财",
+            "holds": false,
+            "atoms": {
+              "煞逢食制": true,
+              "露财": false
+            }
+          },
+          "fix": {
+            "text": "财先食后（财生煞而食制之）",
+            "holds": false,
+            "atoms": {
+              "财先食后": false
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "煞逢食制且透印→印先食后且食重（印制食）",
+          "cause": {
+            "text": "煞逢食制且透印",
+            "holds": true,
+            "atoms": {
+              "煞逢食制": true,
+              "透印": true
+            }
+          },
+          "fix": {
+            "text": "印先食后且食重（印制食）",
+            "holds": false,
+            "atoms": {
+              "印先食后": false,
+              "食重": false
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "煞逢官混→去官或去煞（取清）",
+          "cause": {
+            "text": "煞逢官混",
+            "holds": false,
+            "atoms": {
+              "煞逢官混": false
+            }
+          },
+          "fix": {
+            "text": "去官或去煞（取清）",
+            "holds": false,
+            "atoms": {
+              "去官": false,
+              "去煞": true
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "煞重且身轻→弃食就印",
+          "cause": {
+            "text": "煞重且身轻",
+            "holds": false,
+            "atoms": {
+              "煞重": false,
+              "身轻": true
+            }
+          },
+          "fix": {
+            "text": "弃食就印",
+            "holds": false,
+            "atoms": {
+              "弃食就印": false
+            }
+          },
+          "applies": false
+        },
+        {
+          "text": "煞逢制太过→财运或印运（身强宜财，身弱宜印）",
+          "cause": {
+            "text": "煞逢制太过",
+            "holds": false,
+            "atoms": {
+              "煞逢制太过": false
+            }
+          },
+          "fix": {
+            "text": "财运或印运（身强宜财，身弱宜印）",
+            "holds": null,
+            "atoms": {
+              "财运": null,
+              "印运": null
+            }
+          },
+          "applies": false
+        }
+      ],
+      "yun": [
+        {
+          "scope": "煞用食制",
+          "holds": false,
+          "atoms": {
+            "煞用食制": false
+          },
+          "favor": [
+            "食伤运（煞重食轻）",
+            "煞运（煞轻食重）",
+            "比劫运（煞食均且身轻）"
+          ],
+          "avoid": [
+            "官运",
+            "印运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "煞用印",
+          "holds": true,
+          "atoms": {
+            "煞用印": true
+          },
+          "favor": [
+            "印运",
+            "比劫运"
+          ],
+          "avoid": [
+            "财运"
+          ],
+          "neutral": [
+            "伤官运（原文「为美」，徐评降为不忌）"
+          ]
+        },
+        {
+          "scope": "煞用财去印存食",
+          "holds": null,
+          "atoms": {
+            "煞用财去印存食": null
+          },
+          "favor": [
+            "财运",
+            "食伤运",
+            "煞运"
+          ],
+          "avoid": [
+            "劫运",
+            "印运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "财滋弱煞",
+          "holds": null,
+          "atoms": {
+            "财滋弱煞": null
+          },
+          "favor": [
+            "食运",
+            "印运",
+            "比劫运（财已足）",
+            "财运",
+            "煞运（财未足）"
+          ],
+          "avoid": [],
+          "neutral": []
+        },
+        {
+          "scope": "煞带官",
+          "holds": false,
+          "atoms": {
+            "煞带官": false
+          },
+          "favor": [
+            "比劫运（身轻）",
+            "食运（食轻）"
+          ],
+          "avoid": [
+            "去取清之神运",
+            "伤制煞之神运"
+          ],
+          "neutral": []
+        },
+        {
+          "scope": "煞用刃",
+          "holds": true,
+          "atoms": {
+            "煞用刃": true
+          },
+          "favor": [
+            "煞运（煞轻刃重）",
+            "食伤运（刃轻煞重）",
+            "印运"
+          ],
+          "avoid": [
+            "官运"
+          ],
+          "neutral": []
+        }
+      ],
+      "coverage": "51/53",
+      "facts": {
+        "exposed": {
+          "year": "劫财",
+          "month": "伤官",
+          "hour": "正印"
+        },
+        "monthMain": "七杀",
+        "strength": "身弱"
+      }
+    }
+  },
+  "intimacy": {
+    "tenGod": {
+      "id": "IN-十神-比肩",
+      "tenGod": "比肩",
+      "partner": "同类、朋友、对手；与他太像的人",
+      "pattern": "平等并肩，也比高低；像合伙人多过像伴侣",
+      "friction": "谁也不让谁，缺柔软；争同一份资源",
+      "anchors": [
+        "六亲-兄弟"
+      ]
+    },
+    "branch": {
+      "id": "IN-支-酉",
+      "branch": "酉",
+      "kind": "四正（金）",
+      "temper": "清、洁、冷；挑剔，讲究",
+      "scene": "屋子干净得没有人味，冷战多过争吵；精致而寂寞",
+      "anchors": [
+        "十干-辛"
+      ]
+    },
+    "modifiers": [
+      {
+        "id": "IN-day_branch_yong",
+        "cond": "day_branch_yong",
+        "when": "日支本气五行是用神或喜神",
+        "effect": "伴侣像他缺的那样东西，关系是补：他在这段关系里变好，离开它变差",
+        "classic": "日主坐财，财为喜用者，必得妻财（任注）",
+        "anchors": [
+          "六亲-夫妻"
+        ]
+      },
+      {
+        "id": "IN-day_branch_hai",
+        "cond": "day_branch_hai",
+        "when": "日支与命局他支相害",
+        "effect": "暗损：近处的人蚀他，事后才知道；关系表面无事，底下漏",
+        "classic": "",
+        "anchors": []
+      },
+      {
+        "id": "IN-day_branch_taohua",
+        "cond": "day_branch_taohua",
+        "when": "日支坐桃花或红艳",
+        "effect": "多情、招人，艳事常绕着他；关系里总有外面的风",
+        "classic": "",
+        "anchors": [
+          "神煞-桃花",
+          "神煞-红艳"
+        ]
+      }
+    ],
+    "loverStar": {
+      "family": "官杀",
+      "exposed": 0,
+      "main": 1,
+      "anywhere": true
+    },
+    "features": [
+      {
+        "id": "IN-十神-比肩",
+        "kind": "亲密关系",
+        "text": "日支酉本气为比肩：伴侣像同类、朋友、对手；与他太像的人；平等并肩，也比高低；像合伙人多过像伴侣；摩擦在谁也不让谁，缺柔软；争同一份资源"
+      },
+      {
+        "id": "IN-支-酉",
+        "kind": "亲密关系",
+        "text": "日支酉（四正（金））：关系清、洁、冷；挑剔，讲究；屋子干净得没有人味，冷战多过争吵；精致而寂寞"
+      },
+      {
+        "id": "IN-day_branch_yong",
+        "kind": "亲密关系修正",
+        "text": "日支本气五行是用神或喜神：伴侣像他缺的那样东西，关系是补：他在这段关系里变好，离开它变差｜古籍：日主坐财，财为喜用者，必得妻财（任注）"
+      },
+      {
+        "id": "IN-day_branch_hai",
+        "kind": "亲密关系修正",
+        "text": "日支与命局他支相害：暗损：近处的人蚀他，事后才知道；关系表面无事，底下漏"
+      },
+      {
+        "id": "IN-day_branch_taohua",
+        "kind": "亲密关系修正",
+        "text": "日支坐桃花或红艳：多情、招人，艳事常绕着他；关系里总有外面的风"
+      }
+    ],
+    "status": "叙事映射自起草；修正项里的古籍判词取自六亲夫妻卡与官杀卡",
+    "source": "rizhi_intimacy.json"
+  },
+  "imagery": {
+    "material": {
+      "id": "IM-材质-金",
+      "element": "金",
+      "text": "硬、冷、清；刀、印、钟、镜、铜钱、骨、白霜；世界是要被切开和裁定的东西，一刀见分晓",
+      "senses": "声：金属的响、钟；触：冷、硬、锐；视：白、亮、反光",
+      "anchors": [
+        "十干-庚",
+        "十干-辛",
+        "性情-05"
+      ]
+    },
+    "families": [
+      {
+        "id": "IM-忌-木",
+        "element": "木",
+        "role": "忌",
+        "kind": "威胁意象",
+        "images": "缠人的藤、倒下的树、断桩、木刺、棺木、纸上写死的字、密不透风的林子；威胁是被缠住、被写定",
+        "deploy": "威胁意象：反复出现，一次比一次逼近；忌神大运里成为全书底色",
+        "frequency": "多，逐段加密"
+      },
+      {
+        "id": "IM-忌-火",
+        "element": "火",
+        "role": "忌",
+        "kind": "威胁意象",
+        "images": "野火、烈日、烫伤、烧尽的信、烧红的铁、灼人的目光、火场；威胁是被烧空、被曝光",
+        "deploy": "威胁意象：反复出现，一次比一次逼近；忌神大运里成为全书底色",
+        "frequency": "多，逐段加密"
+      },
+      {
+        "id": "IM-用-土",
+        "element": "土",
+        "role": "用",
+        "kind": "救赎意象",
+        "images": "田地、老屋、饭桌、坛子里的存粮、一块能站稳的地、母亲的手；救赎是有地方落脚",
+        "deploy": "救赎意象：出现在他做对决定的场景、真正的转折与结尾；平时稀少，缺席本身就是叙事",
+        "frequency": "稀少，全书几处"
+      },
+      {
+        "id": "IM-喜-金",
+        "element": "金",
+        "role": "喜",
+        "kind": "救赎意象",
+        "images": "一把好刀、印信、钟声、清水里的镜子、秋晨的霜、白衣、断得干净的事；救赎是有人替他做一个了断",
+        "deploy": "助力意象：由帮他的人和事带进来，与用神意象同族而弱一档",
+        "frequency": "中等，随贵人角色出现"
+      },
+      {
+        "id": "IM-仇-水",
+        "element": "水",
+        "role": "仇",
+        "kind": "威胁意象",
+        "images": "洪水、暗流、沉、雾里迷路、漏、湿冷、井底、溺水；威胁是被淹、被卷走、看不清",
+        "deploy": "忌的帮凶：环境里的、背景里的威胁，不直接落到他身上",
+        "frequency": "中等，作环境"
+      },
+      {
+        "id": "IM-病-火",
+        "element": "火",
+        "role": "病",
+        "kind": "贴身意象",
+        "images": "野火、烈日、烫伤、烧尽的信、烧红的铁、灼人的目光、火场；威胁是被烧空、被曝光",
+        "deploy": "长在他自己身上的意象：病神是他自带的、过多的那样东西，写成他的习惯、体味、随身之物",
+        "frequency": "贴身，每次出场都在"
+      }
+    ],
+    "modifiers": [
+      {
+        "id": "IM-dry",
+        "cond": "dry",
+        "when": "巳午未月生且调候要水（燥）",
+        "effect": "全书燥色：尘、裂地、日头白、干井；水意象是稀缺的救赎",
+        "anchors": [
+          "性情-10"
+        ],
+        "poison": true
+      },
+      {
+        "id": "IM-日支-金",
+        "cond": "day_branch_element",
+        "when": "日支本气五行（按当盘代入）",
+        "effect": "家与亲密空间的材质：卧房、饭桌、伴侣的手用这一族的质感写",
+        "anchors": [],
+        "element": "金"
+      },
+      {
+        "id": "IM-月支-火",
+        "cond": "month_branch_element",
+        "when": "月支本气五行（按当盘代入）",
+        "effect": "出身环境的材质：童年的屋、父母的行当、故乡的天气用这一族写",
+        "anchors": [],
+        "element": "火"
+      },
+      {
+        "id": "IM-神煞-华盖",
+        "cond": "shensha_华盖",
+        "when": "命局有华盖",
+        "effect": "伞、殿顶、经卷、孤灯、空庭；一个人的高处",
+        "anchors": [
+          "神煞-华盖"
+        ],
+        "shensha": "华盖"
+      },
+      {
+        "id": "IM-神煞-天乙贵人",
+        "cond": "shensha_天乙贵人",
+        "when": "命局有天乙贵人",
+        "effect": "门、引荐信、一把递过来的伞、阶；总有人替他开路",
+        "anchors": [
+          "神煞-天乙贵人"
+        ],
+        "shensha": "天乙贵人"
+      },
+      {
+        "id": "IM-神煞-将星",
+        "cond": "shensha_将星",
+        "when": "命局有将星",
+        "effect": "帐、令旗、坐在中间的位置；人群围着他",
+        "anchors": [
+          "神煞-将星"
+        ],
+        "shensha": "将星"
+      },
+      {
+        "id": "IM-神煞-桃花",
+        "cond": "shensha_桃花",
+        "when": "命局有桃花或红艳",
+        "effect": "花、香、镜、帷、春夜；招人也招事",
+        "anchors": [
+          "神煞-桃花",
+          "神煞-红艳"
+        ],
+        "shensha": "桃花"
+      }
+    ],
+    "features": [
+      {
+        "id": "IM-材质-金",
+        "kind": "意象",
+        "text": "日主辛属金，看世界的材质：硬、冷、清；刀、印、钟、镜、铜钱、骨、白霜；世界是要被切开和裁定的东西，一刀见分晓"
+      },
+      {
+        "id": "IM-忌-木",
+        "kind": "意象",
+        "text": "木为忌神，威胁意象：缠人的藤、倒下的树、断桩、木刺、棺木、纸上写死的字、密不透风的林子；威胁是被缠住、被写定（威胁意象：反复出现，一次比一次逼近；忌神大运里成为全书底色）"
+      },
+      {
+        "id": "IM-忌-火",
+        "kind": "意象",
+        "text": "火为忌神，威胁意象：野火、烈日、烫伤、烧尽的信、烧红的铁、灼人的目光、火场；威胁是被烧空、被曝光（威胁意象：反复出现，一次比一次逼近；忌神大运里成为全书底色）"
+      },
+      {
+        "id": "IM-用-土",
+        "kind": "意象",
+        "text": "土为用神，救赎意象：田地、老屋、饭桌、坛子里的存粮、一块能站稳的地、母亲的手；救赎是有地方落脚（救赎意象：出现在他做对决定的场景、真正的转折与结尾；平时稀少，缺席本身就是叙事）"
+      },
+      {
+        "id": "IM-喜-金",
+        "kind": "意象",
+        "text": "金为喜神，救赎意象：一把好刀、印信、钟声、清水里的镜子、秋晨的霜、白衣、断得干净的事；救赎是有人替他做一个了断（助力意象：由帮他的人和事带进来，与用神意象同族而弱一档）"
+      },
+      {
+        "id": "IM-仇-水",
+        "kind": "意象",
+        "text": "水为仇神，威胁意象：洪水、暗流、沉、雾里迷路、漏、湿冷、井底、溺水；威胁是被淹、被卷走、看不清（忌的帮凶：环境里的、背景里的威胁，不直接落到他身上）"
+      },
+      {
+        "id": "IM-病-火",
+        "kind": "意象",
+        "text": "火为病神（官杀过多），长在他身上的意象：野火、烈日、烫伤、烧尽的信、烧红的铁、灼人的目光、火场；威胁是被烧空、被曝光；长在他自己身上的意象：病神是他自带的、过多的那样东西，写成他的习惯、体味、随身之物"
+      },
+      {
+        "id": "IM-dry",
+        "kind": "意象修正",
+        "text": "午月生而调候要水：全书燥色：尘、裂地、日头白、干井；水意象是稀缺的救赎；但水在此盘为仇神，能解他燥的东西同时在耗他，这一族写成饮鸩止渴：越靠近越舒服，越舒服越坏"
+      },
+      {
+        "id": "IM-日支-金",
+        "kind": "意象修正",
+        "text": "日支酉属金，家与亲密空间的材质：硬、冷、清；刀、印、钟、镜、铜钱、骨、白霜；世界是要被切开和裁定的东西，一刀见分晓"
+      },
+      {
+        "id": "IM-月支-火",
+        "kind": "意象修正",
+        "text": "月支午属火，出身环境的材质：明亮、急、外露；灯、灶、日头、烟、火塘、窗上的光；世界是要被照亮和烘暖的东西，亮处才敢做决定"
+      },
+      {
+        "id": "IM-神煞-华盖",
+        "kind": "意象修正",
+        "text": "命局有华盖：伞、殿顶、经卷、孤灯、空庭；一个人的高处"
+      },
+      {
+        "id": "IM-神煞-天乙贵人",
+        "kind": "意象修正",
+        "text": "命局有天乙贵人：门、引荐信、一把递过来的伞、阶；总有人替他开路"
+      },
+      {
+        "id": "IM-神煞-将星",
+        "kind": "意象修正",
+        "text": "命局有将星：帐、令旗、坐在中间的位置；人群围着他"
+      },
+      {
+        "id": "IM-神煞-桃花",
+        "kind": "意象修正",
+        "text": "命局有桃花：花、香、镜、帷、春夜；招人也招事"
+      }
+    ],
+    "status": "叙事映射自起草；材质栏据十干卡的性与象",
+    "source": "imagery.json"
+  },
+  "yunqi": {
+    "algorithm": "yunqi/v1",
+    "status": "盘面与年关系搬自方宜、对《素问》运气七篇卡；体格体感与疾病情志候选自起草；架空历按月支定步自起草；画像层 features 按年主干、运为体、纲气为主、当步为用、修正为改写、另一头作背景排，不带民病（DESIGN 7.4 交感）；事件层 events 默认不写（病秧子问题）",
+    "reading": "画像层：年主干总起（上司天、中岁运、下在泉一句体格体感加一句薄弱处，六元正纪六十年纪）、运为体（岁运通主一年）、纲气为主（岁半之法定的那一头）、当步之气为用、修正为改写、另一头作背景；只给体格与体感和一句薄弱处，不给病、不给气质，体质段要引到主干、体或主，不能只引背景与改写。事件层：疾病与情志候选与严重档，默认不写，年表在身心域被引动的年份挂病候时由作者挑",
+    "yearPillar": "庚寅",
+    "pair": "庚寅庚申",
+    "yunqiYearDiffers": false,
+    "suiYun": "金运太过",
+    "yunElement": "金",
+    "taiGuo": true,
+    "siTian": "少阳相火",
+    "zaiQuan": "厥阴风木",
+    "group": "寅申",
+    "step": {
+      "index": 2,
+      "label": "三之气",
+      "host": "少阳相火",
+      "guest": "少阳相火",
+      "by": "月支",
+      "unresolved": false,
+      "half": "司天",
+      "governing": "少阳相火"
+    },
+    "stepRelation": {
+      "host": "少阳相火",
+      "guest": "少阳相火",
+      "relation": "同气",
+      "junChen": null
+    },
+    "relations": {
+      "tianFu": false,
+      "suiHui": false,
+      "tianFuSuiHui": false,
+      "tongTianFu": false,
+      "tongSuiHui": false,
+      "yunVsSiTian": "天克运",
+      "yunVsZaiQuan": "运克泉",
+      "pingQi": "太过被抑",
+      "yunVsStep": null
+    },
+    "overlap": "dry_same",
+    "events": {
+      "grade": "和",
+      "gradeWhy": "平气（太过被抑），偏性抹平",
+      "tempo": "太过者暴，病甚",
+      "organ": "肝",
+      "organElement": "木",
+      "zhi": "怒",
+      "zhiFrom": "通则：肝受邪，肝志怒（自起草，五脏五志不在语料）",
+      "illness": {
+        "bing": "两胁下少腹痛、目赤痛、眦疡、耳无所闻、喘咳逆气、肩背痛",
+        "shen": "喘咳逆气、肩背痛、尻阴股膝髀腨䯒足皆病；病反暴痛、胠胁不可反侧、咳逆甚而血溢，太冲绝者死不治",
+        "fatal": "太冲绝者死不治",
+        "mild": "眼睛红肿、眼眵糊住眼皮，耳朵忽然听不清，两肋往下牵着小腹疼，一跑就喘。",
+        "severe": "两肋剧痛，翻不了身，从胯到脚踝没一处利落；咳得倒不过气，一口口带血，多半熬不过。"
+      },
+      "mood": {
+        "words": "",
+        "bian": "其动暴折疡疰、其变肃杀凋零",
+        "mild": "话少而冷，为一点差错发大火，把身边人一个个说走，屋子空了。",
+        "severe": "一夜之间翻脸，跟人绝交、跟家里断了来往，把多年的信一把火烧了，像棵掉光叶子的树。"
+      },
+      "shangLin": null,
+      "ids": [
+        "YQ-档-和",
+        "YQ-病-肝",
+        "YQ-志-怒"
+      ],
+      "note": "候选，默认不写进人物档案；年表在身心域被引动的年份挂 L-…-病候，作者挑，一步大运最多一次"
+    },
+    "roles": {
+      "主干": [
+        "YQ-年-庚寅"
+      ],
+      "体": [
+        "YQ-岁运-金运太过",
+        "YQ-平气-金"
+      ],
+      "主": [
+        "YQ-司天-少阳相火"
+      ],
+      "用": [
+        "YQ-气-三之气-少阳相火"
+      ],
+      "改写": [
+        "YQ-运天-天克运",
+        "YQ-加临-同气",
+        "YQ-平气修正",
+        "YQ-叠-燥上加燥"
+      ],
+      "背景": [
+        "YQ-运泉-运克泉",
+        "YQ-在泉-厥阴风木"
+      ],
+      "事件": [
+        "YQ-档-和",
+        "YQ-病-肝",
+        "YQ-志-怒"
+      ]
+    },
+    "hits": [
+      {
+        "id": "YQ-年-庚寅",
+        "kind": "运气",
+        "role": "主干",
+        "pair": "庚寅庚申",
+        "row": {
+          "pair": "庚寅庚申",
+          "shang": "少阳相火",
+          "zhong": "太商金运",
+          "xia": "厥阴风木",
+          "zheng": "少阳太商厥阴庚寅庚申同正商；其运凉，其化雾露清切，其变肃杀凋零，其病肩背胸中",
+          "huaShu": "火化七，清化九，风化三",
+          "zhengHua": "正化日",
+          "zaiGong": "",
+          "mark": "同正商",
+          "body": "骨相硬而不显，肤白周正，皮肤干爽；上半年脸上带红、身上热，下半年回到清凉本色，手脚利落。",
+          "weak": "一累眼睛先发干，看东西先眨几下。",
+          "anchors": [
+            "运气-六十年-少阳之政"
+          ]
+        }
+      },
+      {
+        "id": "YQ-岁运-金运太过",
+        "kind": "运气",
+        "role": "体",
+        "row": {
+          "yun": "金运太过",
+          "ji": "坚成",
+          "climate": "燥气流行，肝木受邪",
+          "de": "其化成、其气削、其政肃、其令锐切、其德雾露萧飋",
+          "organ": "两胁下少腹痛、目赤痛、眦疡、耳无所闻、喘咳逆气、肩背痛",
+          "build": "骨相硬，脸方肤白，腰背挺直，身上少肉",
+          "feel": "少汗，皮肤干，怕秋风刮脸，手脚干爽，动作干脆利落",
+          "anchors": [
+            "运气-岁运-金太过"
+          ]
+        }
+      },
+      {
+        "id": "YQ-平气-金",
+        "kind": "运气",
+        "role": "体",
+        "row": {
+          "element": "金",
+          "ji": "审平",
+          "climate": "收而不争，五化宣明，其候清切，其令燥",
+          "de": "其气洁、其性刚、其用散落、其化坚敛、其类金、其政劲肃、其候清切、其令燥、其德清洁、其化紧敛、其政劲切",
+          "feel": "皮肤白净偏干，少汗怕热，天一凉就活络，手脚干净利落",
+          "anchors": [
+            "运气-平气-金"
+          ]
+        }
+      },
+      {
+        "id": "YQ-司天-少阳相火",
+        "kind": "运气",
+        "role": "主",
+        "governing": true,
+        "row": {
+          "qi": "少阳相火",
+          "position": "司天",
+          "groups": "寅申",
+          "climate": "火淫所胜，温气流行，金政不平；风热参布，寒乃时至；病本于肺",
+          "illness": "头痛、发热恶寒而疟、皮肤痛、色变黄赤、疮疡、咳唾血、泄注赤白",
+          "feel": "春夏怕热却也怕风，脸色黄里透红，一动就出汗",
+          "anchors": [
+            "运气-司天-少阳相火"
+          ]
+        }
+      },
+      {
+        "id": "YQ-气-三之气-少阳相火",
+        "kind": "运气",
+        "role": "用",
+        "unresolved": false,
+        "row": {
+          "group": "寅申",
+          "step": "三之气",
+          "host": "少阳相火",
+          "guest": "少阳相火",
+          "climate": "天政布，炎暑至，雨乃涯",
+          "illness": "热中、聋瞑、血溢、脓疮、咳呕、鼽衄、渴、喉痹、目赤、善暴死",
+          "epidemic": "善暴死",
+          "feel": "盛夏少雨，脸色红亮，动作快，汗多口干爱喝凉水，怕热不怕冷。",
+          "anchors": [
+            "运气-六步-寅申-三之气"
+          ]
+        }
+      },
+      {
+        "id": "YQ-运天-天克运",
+        "kind": "运气修正",
+        "role": "改写",
+        "governing": true,
+        "row": {
+          "cond": "yun_vs_sitian:天克运",
+          "when": "司天之气克岁运",
+          "effect": "底子被削平：上半年当家的气压住底子，底子的偏性只剩一点，人反被天气带着走；表里错开，外面是天气的样子，里头底子藏着。",
+          "anchors": [
+            "运气-盘面-运与司天"
+          ]
+        }
+      },
+      {
+        "id": "YQ-加临-同气",
+        "kind": "运气修正",
+        "role": "改写",
+        "row": {
+          "cond": "step:同气",
+          "when": "出生所值之步客气与主气五行同",
+          "effect": "偏性翻倍：出生那一段临上来的气与季节底子同一路，这一段的体感最分明，怕冷怕热、干润都在这一头。",
+          "anchors": [
+            "运气-盘面-客主加临"
+          ]
+        }
+      },
+      {
+        "id": "YQ-平气修正",
+        "kind": "运气修正",
+        "role": "改写",
+        "row": {
+          "cond": "ping_qi",
+          "when": "平气（岁运太过被司天克；岁运不及得司天同气或年支之助；后世推演）",
+          "effect": "偏性抹平：底子的盛处被天气压住，或弱处被天气、地界补足，身上没有哪一路气特别冲，最不像有底子的人；事件层归和档。",
+          "anchors": [
+            "运气-盘面-平气"
+          ]
+        }
+      },
+      {
+        "id": "YQ-叠-燥上加燥",
+        "kind": "运气修正",
+        "role": "改写",
+        "row": {
+          "cond": "dry_same",
+          "when": "巳午未月生而调候要水（燥盘），生年主政之气是阳明燥金、少阴君火或少阳相火",
+          "effect": "同向，燥上加燥：皮肤干、嘴唇起皮，少汗，怕热，入秋手背脚跟先干，总想喝水，越到傍晚越燥。",
+          "anchors": []
+        }
+      },
+      {
+        "id": "YQ-运泉-运克泉",
+        "kind": "运气修正",
+        "role": "背景",
+        "governing": false,
+        "row": {
+          "cond": "yun_vs_zaiquan:运克泉",
+          "when": "岁运克在泉之气（出生在岁半之后为纲）",
+          "effect": "底子压住下半年：底子压过下半年当家的气，地气那一路被压得不显；下半年季候对他影响不大，偏性照底子写，年头到年尾一个路数。",
+          "anchors": [
+            "运气-盘面-运与在泉"
+          ]
+        }
+      },
+      {
+        "id": "YQ-在泉-厥阴风木",
+        "kind": "运气",
+        "role": "背景",
+        "governing": false,
+        "row": {
+          "qi": "厥阴风木",
+          "position": "在泉",
+          "groups": "寅申",
+          "climate": "风淫所胜，地气不明，平野昧，草乃早秀",
+          "anchors": [
+            "运气-在泉-厥阴风木"
+          ]
+        }
+      },
+      {
+        "id": "YQ-档-和",
+        "kind": "运气事件",
+        "role": "事件",
+        "row": {
+          "grade": "和",
+          "when": "岁运与为纲之气相得（相生），或平气，或不加不临而相得之年；五运行「气相得则和」",
+          "write": "一年顶多一两场小病，几天就过，只用轻相；情志只写闷一阵烦一阵，随手带一笔，不占一场戏，不写死。",
+          "anchors": [
+            "运气-盘面-运与司天",
+            "运气-盘面-运与在泉",
+            "运气-盘面-平气"
+          ]
+        }
+      },
+      {
+        "id": "YQ-病-肝",
+        "kind": "运气事件",
+        "role": "事件",
+        "row": {
+          "yun": "金运太过",
+          "organ": "肝",
+          "bing": "两胁下少腹痛、目赤痛、眦疡、耳无所闻、喘咳逆气、肩背痛",
+          "shen": "喘咳逆气、肩背痛、尻阴股膝髀腨䯒足皆病；病反暴痛、胠胁不可反侧、咳逆甚而血溢，太冲绝者死不治",
+          "fatal": "太冲绝者死不治",
+          "bian": "其动暴折疡疰、其变肃杀凋零",
+          "mild": "眼睛红肿、眼眵糊住眼皮，耳朵忽然听不清，两肋往下牵着小腹疼，一跑就喘。",
+          "severe": "两肋剧痛，翻不了身，从胯到脚踝没一处利落；咳得倒不过气，一口口带血，多半熬不过。",
+          "anchors": [
+            "运气-岁运-金太过"
+          ]
+        }
+      },
+      {
+        "id": "YQ-志-怒",
+        "kind": "运气事件",
+        "role": "事件",
+        "row": {
+          "yun": "金运太过",
+          "organ": "肝",
+          "zhi": "怒",
+          "zhiFrom": "通则：肝受邪，肝志怒（自起草，五脏五志不在语料）",
+          "moodWords": "",
+          "bian": "其动暴折疡疰、其变肃杀凋零",
+          "moodMild": "话少而冷，为一点差错发大火，把身边人一个个说走，屋子空了。",
+          "moodSevere": "一夜之间翻脸，跟人绝交、跟家里断了来往，把多年的信一把火烧了，像棵掉光叶子的树。",
+          "anchors": [
+            "运气-岁运-金太过"
+          ]
+        }
+      }
+    ],
+    "features": [
+      {
+        "id": "YQ-年-庚寅",
+        "kind": "运气",
+        "text": "运气年庚寅本年气象（六元正纪庚寅庚申条）：上少阳相火、中太商金运、下厥阴风木（少阳太商厥阴庚寅庚申同正商；其运凉，其化雾露清切；火化七，清化九，风化三；正化日；同正商）：体格体感 骨相硬而不显，肤白周正，皮肤干爽；上半年脸上带红、身上热，下半年回到清凉本色，手脚利落。；薄弱处 一累眼睛先发干，看东西先眨几下。"
+      },
+      {
+        "id": "YQ-岁运-金运太过",
+        "kind": "运气",
+        "text": "岁运金运太过，通主一年、为体（坚成之纪；燥气流行，肝木受邪；其化成、其气削、其政肃、其令锐切、其德雾露萧飋）：体格外貌 骨相硬，脸方肤白，腰背挺直，身上少肉；体感 少汗，皮肤干，怕秋风刮脸，手脚干爽，动作干脆利落"
+      },
+      {
+        "id": "YQ-平气-金",
+        "kind": "运气",
+        "text": "岁运得平（太过被抑，后世推演）：审平之纪，收而不争，五化宣明，其候清切，其令燥；体感 皮肤白净偏干，少汗怕热，天一凉就活络，手脚干净利落，太过不及的偏性按此打折、体格写匀称"
+      },
+      {
+        "id": "YQ-司天-少阳相火",
+        "kind": "运气",
+        "text": "寅申年少阳相火司天，出生在岁半之前，此气为纲、为主（火淫所胜，温气流行，金政不平；风热参布，寒乃时至；病本于肺）：体感 春夏怕热却也怕风，脸色黄里透红，一动就出汗"
+      },
+      {
+        "id": "YQ-气-三之气-少阳相火",
+        "kind": "运气",
+        "text": "出生所值三之气，为用（架空历按月支午取）：主气少阳相火、客气少阳相火（天政布，炎暑至，雨乃涯）：体感 盛夏少雨，脸色红亮，动作快，汗多口干爱喝凉水，怕热不怕冷。"
+      },
+      {
+        "id": "YQ-运天-天克运",
+        "kind": "运气修正",
+        "text": "岁运金与为纲的司天少阳相火：天克运：底子被削平：上半年当家的气压住底子，底子的偏性只剩一点，人反被天气带着走；表里错开，外面是天气的样子，里头底子藏着。"
+      },
+      {
+        "id": "YQ-加临-同气",
+        "kind": "运气修正",
+        "text": "本步客主加临同气（客少阳相火、主少阳相火）：偏性翻倍：出生那一段临上来的气与季节底子同一路，这一段的体感最分明，怕冷怕热、干润都在这一头。"
+      },
+      {
+        "id": "YQ-平气修正",
+        "kind": "运气修正",
+        "text": "平气（太过被抑）：偏性抹平：底子的盛处被天气压住，或弱处被天气、地界补足，身上没有哪一路气特别冲，最不像有底子的人；事件层归和档。"
+      },
+      {
+        "id": "YQ-叠-燥上加燥",
+        "kind": "运气修正",
+        "text": "巳午未月生而调候要水（燥盘），生年主政之气是阳明燥金、少阴君火或少阳相火：燥上加燥，同向，燥上加燥：皮肤干、嘴唇起皮，少汗，怕热，入秋手背脚跟先干，总想喝水，越到傍晚越燥。"
+      },
+      {
+        "id": "YQ-运泉-运克泉",
+        "kind": "运气修正",
+        "text": "岁运金与另一头的在泉厥阴风木：运克泉，作背景：底子压住下半年：底子压过下半年当家的气，地气那一路被压得不显；下半年季候对他影响不大，偏性照底子写，年头到年尾一个路数。"
+      },
+      {
+        "id": "YQ-在泉-厥阴风木",
+        "kind": "运气",
+        "text": "寅申年厥阴风木在泉，下半年的天气，作背景（风淫所胜，地气不明，平野昧，草乃早秀）：写人时一笔带过，体感按为纲的 YQ-司天-少阳相火"
+      },
+      {
+        "id": "YQ-档-和",
+        "kind": "运气事件",
+        "text": "疾病与情志的严重档：和（平气（太过被抑），偏性抹平；太过者暴，病甚）：一年顶多一两场小病，几天就过，只用轻相；情志只写闷一阵烦一阵，随手带一笔，不占一场戏，不写死。"
+      },
+      {
+        "id": "YQ-病-肝",
+        "kind": "运气事件",
+        "text": "疾病候选（默认不写，年表身心域被引动的年份挑）：受邪之脏肝，民病 两胁下少腹痛、目赤痛、眦疡、耳无所闻、喘咳逆气、肩背痛；轻相 眼睛红肿、眼眵糊住眼皮，耳朵忽然听不清，两肋往下牵着小腹疼，一跑就喘。；重相 两肋剧痛，翻不了身，从胯到脚踝没一处利落；咳得倒不过气，一口口带血，多半熬不过。；死不治之候：太冲绝者死不治"
+      },
+      {
+        "id": "YQ-志-怒",
+        "kind": "运气事件",
+        "text": "情志候选（默认不写，与薄弱处同脏）：方向怒（通则：肝受邪，肝志怒（自起草，五脏五志不在语料）；其动其变 其动暴折疡疰、其变肃杀凋零）：轻相 话少而冷，为一点差错发大火，把身边人一个个说走，屋子空了。；重相 一夜之间翻脸，跟人绝交、跟家里断了来往，把多年的信一把火烧了，像棵掉光叶子的树。"
+      }
+    ]
+  },
+  "dayunScores": [
+    {
+      "sequence": 1,
+      "pillar": "辛巳",
+      "score": -0.4,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支巳本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 2,
+      "pillar": "庚辰",
+      "score": 0.8,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支辰本气土为用",
+          "value": 0.6
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 3,
+      "pillar": "己卯",
+      "score": -0.7,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        },
+        {
+          "term": "卯冲日支酉",
+          "value": -0.3
+        },
+        {
+          "term": "卯合绊时支戌（用神）",
+          "value": -0.2
+        }
+      ],
+      "flags": [
+        "冲日支"
+      ]
+    },
+    {
+      "sequence": 4,
+      "pillar": "戊寅",
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 5,
+      "pillar": "丁丑",
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.6
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 6,
+      "pillar": "丙子",
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支子本气水为仇",
+          "value": -0.3
+        },
+        {
+          "term": "子冲提纲午",
+          "value": -0.3
+        }
+      ],
+      "flags": [
+        "冲提纲",
+        "天克地冲月柱"
+      ]
+    },
+    {
+      "sequence": 7,
+      "pillar": "乙亥",
+      "score": -0.7,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支亥本气水为仇",
+          "value": -0.3
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 8,
+      "pillar": "甲戌",
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.6
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 9,
+      "pillar": "癸酉",
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干癸水为仇",
+          "value": -0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.3
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 10,
+      "pillar": "壬申",
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干壬水为仇",
+          "value": -0.2
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.3
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 11,
+      "pillar": "辛未",
+      "score": 0.8,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支未本气土为用",
+          "value": 0.6
+        }
+      ],
+      "flags": []
+    },
+    {
+      "sequence": 12,
+      "pillar": "庚午",
+      "score": -0.4,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支午本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "flags": []
+    }
+  ],
+  "lies": {
+    "patterns": [
+      {
+        "pattern": "身弱官杀为病",
+        "how": "side 身弱且 bing.family 官杀",
+        "fear": "被压住、被审判，抬不起头",
+        "tell": "遇上权威先缩，替对方找理由；在暗处替人挡事，在明处不敢出声",
+        "anchors": [
+          "官杀-混杂",
+          "性情-08"
+        ],
+        "candidates": [
+          {
+            "id": "LI-身弱官杀为病-1",
+            "text": "我不够好，所以他们才这样对我"
+          },
+          {
+            "id": "LI-身弱官杀为病-2",
+            "text": "只要听话，就不会挨打"
+          },
+          {
+            "id": "LI-身弱官杀为病-3",
+            "text": "出头的人先死，躲着才安全"
+          },
+          {
+            "id": "LI-身弱官杀为病-4",
+            "text": "上面的人永远是对的，错的一定是我"
+          },
+          {
+            "id": "LI-身弱官杀为病-5",
+            "text": "我只有装成他们要的样子才能活"
+          }
+        ]
+      }
+    ],
+    "pins": [
+      {
+        "id": "LI-钉-冲年支",
+        "mechanism": "冲年支",
+        "event": "来历被翻出来：家里的旧事、身份、故乡",
+        "shape": "我从哪里来是件要藏着的事",
+        "anchors": [],
+        "years": [
+          {
+            "age": 6,
+            "pillar": "丙申",
+            "mechanism": "冲年支",
+            "liunianId": "L-6-丙申-冲年支"
+          }
+        ]
+      },
+      {
+        "id": "LI-钉-天克地冲",
+        "mechanism": "天克地冲",
+        "event": "正面撞击，没有缓冲：一夜之间的变故",
+        "shape": "好日子会在一夜之间没掉，所以别信它",
+        "anchors": [
+          "岁运-战",
+          "岁运-冲"
+        ],
+        "years": [
+          {
+            "age": 6,
+            "pillar": "丙申",
+            "mechanism": "天克地冲年柱",
+            "liunianId": "L-6-丙申-天克地冲年柱"
+          }
+        ]
+      },
+      {
+        "id": "LI-钉-忌神透干",
+        "mechanism": "忌神透干",
+        "event": "威胁公开化：家里的麻烦被外人看见，被指着说",
+        "shape": "被人看见就是被人拿住",
+        "anchors": [
+          "岁运-战"
+        ],
+        "years": [
+          {
+            "age": 6,
+            "pillar": "丙申",
+            "mechanism": "忌神透干",
+            "liunianId": "L-6-丙申-忌神透干"
+          }
+        ]
+      },
+      {
+        "id": "LI-钉-伏吟",
+        "mechanism": "伏吟",
+        "event": "同样的事再来一遍：搬了又搬、病了又病、大人反复",
+        "shape": "事情不会变，我也逃不出去",
+        "anchors": [
+          "岁运-好"
+        ],
+        "years": [
+          {
+            "age": 8,
+            "pillar": "戊戌",
+            "mechanism": "伏吟时柱",
+            "liunianId": "L-8-戊戌-伏吟时柱"
+          }
+        ]
+      },
+      {
+        "id": "LI-钉-冲提纲",
+        "mechanism": "冲提纲",
+        "event": "家塌一角：父母失势、家底出事、搬离原来的环境",
+        "shape": "大人靠不住，或家塌了是因为我不够好",
+        "anchors": [
+          "六亲-父母"
+        ],
+        "years": [
+          {
+            "age": 10,
+            "pillar": "庚子",
+            "mechanism": "冲提纲",
+            "liunianId": "L-10-庚子-冲提纲"
+          }
+        ]
+      }
+    ],
+    "features": [
+      {
+        "id": "LI-身弱官杀为病-1",
+        "kind": "谎言候选",
+        "text": "身弱官杀为病：我不够好，所以他们才这样对我（他怕的是被压住、被审判，抬不起头）"
+      },
+      {
+        "id": "LI-身弱官杀为病-2",
+        "kind": "谎言候选",
+        "text": "身弱官杀为病：只要听话，就不会挨打（他怕的是被压住、被审判，抬不起头）"
+      },
+      {
+        "id": "LI-身弱官杀为病-3",
+        "kind": "谎言候选",
+        "text": "身弱官杀为病：出头的人先死，躲着才安全（他怕的是被压住、被审判，抬不起头）"
+      },
+      {
+        "id": "LI-身弱官杀为病-4",
+        "kind": "谎言候选",
+        "text": "身弱官杀为病：上面的人永远是对的，错的一定是我（他怕的是被压住、被审判，抬不起头）"
+      },
+      {
+        "id": "LI-身弱官杀为病-5",
+        "kind": "谎言候选",
+        "text": "身弱官杀为病：我只有装成他们要的样子才能活（他怕的是被压住、被审判，抬不起头）"
+      },
+      {
+        "id": "LI-钉-冲年支",
+        "kind": "谎言钉法",
+        "text": "六到十二岁逢冲年支（6岁丙申）：来历被翻出来：家里的旧事、身份、故乡；孩子的结论：我从哪里来是件要藏着的事"
+      },
+      {
+        "id": "LI-钉-天克地冲",
+        "kind": "谎言钉法",
+        "text": "六到十二岁逢天克地冲（6岁丙申）：正面撞击，没有缓冲：一夜之间的变故；孩子的结论：好日子会在一夜之间没掉，所以别信它"
+      },
+      {
+        "id": "LI-钉-忌神透干",
+        "kind": "谎言钉法",
+        "text": "六到十二岁逢忌神透干（6岁丙申）：威胁公开化：家里的麻烦被外人看见，被指着说；孩子的结论：被人看见就是被人拿住"
+      },
+      {
+        "id": "LI-钉-伏吟",
+        "kind": "谎言钉法",
+        "text": "六到十二岁逢伏吟（8岁戊戌）：同样的事再来一遍：搬了又搬、病了又病、大人反复；孩子的结论：事情不会变，我也逃不出去"
+      },
+      {
+        "id": "LI-钉-冲提纲",
+        "kind": "谎言钉法",
+        "text": "六到十二岁逢冲提纲（10岁庚子）：家塌一角：父母失势、家底出事、搬离原来的环境；孩子的结论：大人靠不住，或家塌了是因为我不够好"
+      }
+    ],
+    "status": "候选与钉法自起草；格局由用神档案认出，钉法年份由年表机制给出",
+    "source": "lies.json"
+  },
+  "liunian": [
+    {
+      "age": 6,
+      "year": 312,
+      "pillar": "丙申",
+      "dayun": {
+        "sequence": 1,
+        "pillar": "辛巳",
+        "startAge": 5,
+        "endAge": 15,
+        "startYear": 311,
+        "endYear": 321
+      },
+      "score": 0.0,
+      "flags": [
+        "天克地冲年柱"
+      ],
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.3
+        }
+      ]
+    },
+    {
+      "age": 10,
+      "year": 316,
+      "pillar": "庚子",
+      "dayun": {
+        "sequence": 1,
+        "pillar": "辛巳",
+        "startAge": 5,
+        "endAge": 15,
+        "startYear": 311,
+        "endYear": 321
+      },
+      "score": -0.4,
+      "flags": [
+        "冲提纲"
+      ],
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支子本气水为仇",
+          "value": -0.3
+        },
+        {
+          "term": "子冲提纲午",
+          "value": -0.3
+        }
+      ]
+    },
+    {
+      "age": 25,
+      "year": 331,
+      "pillar": "乙卯",
+      "dayun": {
+        "sequence": 3,
+        "pillar": "己卯",
+        "startAge": 25,
+        "endAge": 35,
+        "startYear": 331,
+        "endYear": 341
+      },
+      "score": -1.0,
+      "flags": [
+        "冲日支",
+        "天克地冲日柱"
+      ],
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        },
+        {
+          "term": "卯冲日支酉",
+          "value": -0.3
+        },
+        {
+          "term": "卯合绊时支戌（用神）",
+          "value": -0.2
+        }
+      ]
+    },
+    {
+      "age": 31,
+      "year": 337,
+      "pillar": "辛酉",
+      "dayun": {
+        "sequence": 3,
+        "pillar": "己卯",
+        "startAge": 25,
+        "endAge": 35,
+        "startYear": 331,
+        "endYear": 341
+      },
+      "score": 0.6,
+      "flags": [
+        "伏吟日柱"
+      ],
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.3
+        },
+        {
+          "term": "伏吟日柱（用喜）",
+          "value": 0.1
+        }
+      ]
+    },
+    {
+      "age": 37,
+      "year": 343,
+      "pillar": "丁卯",
+      "dayun": {
+        "sequence": 4,
+        "pillar": "戊寅",
+        "startAge": 35,
+        "endAge": 45,
+        "startYear": 341,
+        "endYear": 351
+      },
+      "score": -1.0,
+      "flags": [
+        "冲日支",
+        "天克地冲日柱"
+      ],
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        },
+        {
+          "term": "卯冲日支酉",
+          "value": -0.3
+        },
+        {
+          "term": "卯合绊时支戌（用神）",
+          "value": -0.2
+        }
+      ]
+    }
+  ],
+  "features": [
+    {
+      "id": "P-年",
+      "kind": "柱",
+      "text": "年柱庚寅"
+    },
+    {
+      "id": "P-月",
+      "kind": "柱",
+      "text": "月柱壬午"
+    },
+    {
+      "id": "P-日",
+      "kind": "柱",
+      "text": "日柱辛酉"
+    },
+    {
+      "id": "P-时",
+      "kind": "柱",
+      "text": "时柱戊戌"
+    },
+    {
+      "id": "DM",
+      "kind": "日主",
+      "text": "日主辛金"
+    },
+    {
+      "id": "T-年干-劫财",
+      "kind": "透干",
+      "text": "年干庚金为劫财"
+    },
+    {
+      "id": "T-月干-伤官",
+      "kind": "透干",
+      "text": "月干壬水为伤官"
+    },
+    {
+      "id": "T-时干-正印",
+      "kind": "透干",
+      "text": "时干戊土为正印"
+    },
+    {
+      "id": "H-年支-本气-正财",
+      "kind": "藏干",
+      "text": "年支本气甲木为正财"
+    },
+    {
+      "id": "H-年支-中气-正官",
+      "kind": "藏干",
+      "text": "年支中气丙火为正官"
+    },
+    {
+      "id": "H-年支-余气-正印",
+      "kind": "藏干",
+      "text": "年支余气戊土为正印"
+    },
+    {
+      "id": "H-月支-本气-七杀",
+      "kind": "藏干",
+      "text": "月支本气丁火为七杀"
+    },
+    {
+      "id": "H-月支-中气-偏印",
+      "kind": "藏干",
+      "text": "月支中气己土为偏印"
+    },
+    {
+      "id": "H-日支-本气-比肩",
+      "kind": "藏干",
+      "text": "日支本气辛金为比肩"
+    },
+    {
+      "id": "H-时支-本气-正印",
+      "kind": "藏干",
+      "text": "时支本气戊土为正印"
+    },
+    {
+      "id": "H-时支-中气-比肩",
+      "kind": "藏干",
+      "text": "时支中气辛金为比肩"
+    },
+    {
+      "id": "H-时支-余气-七杀",
+      "kind": "藏干",
+      "text": "时支余气丁火为七杀"
+    },
+    {
+      "id": "G-七杀格",
+      "kind": "格局",
+      "text": "取格七杀格：月令午本气丁火为七杀当旺，未透干仍以当旺之神取七杀格；月支午与寅戌三合成火局，火未透干，以局中丁火论七杀，随局变格取七杀格"
+    },
+    {
+      "id": "G-判-败格",
+      "kind": "格局判定",
+      "text": "七杀格败格"
+    },
+    {
+      "id": "G-成-煞逢印（煞印有情）",
+      "kind": "格局条件",
+      "text": "成格条件成立：煞逢印（煞印有情）"
+    },
+    {
+      "id": "G-成-煞当令且透印（化煞为印）",
+      "kind": "格局条件",
+      "text": "成格条件成立：煞当令且透印（化煞为印）"
+    },
+    {
+      "id": "G-败-煞逢食制且逢印",
+      "kind": "格局条件",
+      "text": "败格条件成立：煞逢食制且逢印"
+    },
+    {
+      "id": "G-运-煞用印",
+      "kind": "取运局",
+      "text": "取运局「煞用印」：喜印运、比劫运；忌财运"
+    },
+    {
+      "id": "G-运-煞用刃",
+      "kind": "取运局",
+      "text": "取运局「煞用刃」：喜煞运（煞轻刃重）、食伤运（刃轻煞重）、印运；忌官运"
+    },
+    {
+      "id": "S-身弱",
+      "kind": "旺衰",
+      "text": "旺衰身弱（比值 0.447，得令否、得地是、得势是）"
+    },
+    {
+      "id": "S-喜",
+      "kind": "旺衰",
+      "text": "喜土、金，忌水、木、火"
+    },
+    {
+      "id": "S-合局-1",
+      "kind": "合局",
+      "text": "寅午戌三合火局，参与之支本气改按火论"
+    },
+    {
+      "id": "U-用-土",
+      "kind": "用神",
+      "text": "用神土（印）：身弱，官杀为病，取印化杀扶身"
+    },
+    {
+      "id": "U-病-火",
+      "kind": "用神",
+      "text": "病神火（官杀）"
+    },
+    {
+      "id": "U-忌-木",
+      "kind": "用神",
+      "text": "木为忌神"
+    },
+    {
+      "id": "U-忌-火",
+      "kind": "用神",
+      "text": "火为忌神"
+    },
+    {
+      "id": "U-喜-金",
+      "kind": "用神",
+      "text": "金为喜神"
+    },
+    {
+      "id": "U-仇-水",
+      "kind": "用神",
+      "text": "水为仇神"
+    },
+    {
+      "id": "Y-主",
+      "kind": "调候",
+      "text": "调候用神壬、己、癸"
+    },
+    {
+      "id": "Y-条件-1",
+      "kind": "调候",
+      "text": "条件用神庚：癸见庚金，异途亦显"
+    },
+    {
+      "id": "Y-条件-2",
+      "kind": "调候",
+      "text": "条件用神甲：土多且见水时破土，无水不用"
+    },
+    {
+      "id": "Y-忌-1",
+      "kind": "调候",
+      "text": "忌：煅炼"
+    },
+    {
+      "id": "Y-忌-2",
+      "kind": "调候",
+      "text": "忌：支成火局"
+    },
+    {
+      "id": "Y-忌-3",
+      "kind": "调候",
+      "text": "忌：癸出见戊合"
+    },
+    {
+      "id": "Y-忌-4",
+      "kind": "调候",
+      "text": "忌：木多火多逢金水运"
+    },
+    {
+      "id": "R-日时-害",
+      "kind": "关系",
+      "text": "日时害"
+    },
+    {
+      "id": "R-三合-寅午戌",
+      "kind": "关系",
+      "text": "寅午戌三合火局"
+    },
+    {
+      "id": "N-桃花-月",
+      "kind": "神煞",
+      "text": "月柱桃花（日支酉（日支起））"
+    },
+    {
+      "id": "N-华盖-时",
+      "kind": "神煞",
+      "text": "时柱华盖（年支寅）"
+    },
+    {
+      "id": "N-将星-月",
+      "kind": "神煞",
+      "text": "月柱将星（年支寅）"
+    },
+    {
+      "id": "N-将星-日",
+      "kind": "神煞",
+      "text": "日柱将星（日支酉（日支起））"
+    },
+    {
+      "id": "N-劫煞-年",
+      "kind": "神煞",
+      "text": "年柱劫煞（日支酉（日支起））"
+    },
+    {
+      "id": "N-天乙贵人-年",
+      "kind": "神煞",
+      "text": "年柱天乙贵人（日干辛）"
+    },
+    {
+      "id": "N-天乙贵人-月",
+      "kind": "神煞",
+      "text": "月柱天乙贵人（日干辛）"
+    },
+    {
+      "id": "N-红艳-日",
+      "kind": "神煞",
+      "text": "日柱红艳（日干辛）"
+    },
+    {
+      "id": "N-阴差阳错-日",
+      "kind": "神煞",
+      "text": "日柱阴差阳错（日柱辛酉）"
+    },
+    {
+      "id": "NT-劫煞-01-年",
+      "kind": "神煞标签",
+      "text": "年柱劫煞：劫头见财：破财，或靠吞并别人发家而惨毒｜古籍：劫头见财 → 蓄积大富，吞并不顾，惨毒害物；两重反主贫寒"
+    },
+    {
+      "id": "NT-劫煞-07-年",
+      "kind": "神煞标签",
+      "text": "年柱劫煞：劫煞奏号：难事变易，众人钦仰｜古籍：劫煞奏号（劫坐贵人）→ 变难成易，人自钦仰"
+    },
+    {
+      "id": "NT-华盖-01-时",
+      "kind": "神煞标签",
+      "text": "时柱华盖：晚年孤独，或作品传世；旧书说时上华盖平生歇灭、女命不产｜古籍：时坐华盖 → 平生歇灭；壬癸人尤忌，老年丧子；日犯克妻；女命时逢，一生不产"
+    },
+    {
+      "id": "NT-华盖-04-时",
+      "kind": "神煞标签",
+      "text": "时柱华盖：品格清高、靠学问安身的人；信仰或学问是他的去处｜古籍：印墓同华 → 品格清；带华盖、正印而不夹库 → 两府之格"
+    },
+    {
+      "id": "NT-天乙贵人-01-年",
+      "kind": "神煞标签",
+      "text": "年柱天乙贵人：救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找"
+    },
+    {
+      "id": "NT-天乙贵人-01-月",
+      "kind": "神煞标签",
+      "text": "月柱天乙贵人：救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找"
+    },
+    {
+      "id": "NT-天乙贵人-07-年",
+      "kind": "神煞标签",
+      "text": "年柱天乙贵人：厚重有威、多谋善断，贵气里带着算计｜古籍：与劫煞并 → 貌厚有威，多谋足计"
+    },
+    {
+      "id": "NT-天乙贵人-08-年",
+      "kind": "神煞标签",
+      "text": "年柱天乙贵人：贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦｜古籍：贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾"
+    },
+    {
+      "id": "NT-天乙贵人-08-月",
+      "kind": "神煞标签",
+      "text": "月柱天乙贵人：贵人不止一处：一生少病早年享福，也可写成从没真正吃过苦｜古籍：贵人夹拥太岁（天乙扶身）→ 一生少病，早年享福；常格终身无刑狱之灾"
+    },
+    {
+      "id": "NT-将星-01-月",
+      "kind": "神煞标签",
+      "text": "月柱将星：掌权者：压力与权力一起到他手里"
+    },
+    {
+      "id": "NT-将星-02-月",
+      "kind": "神煞标签",
+      "text": "月柱将星：叛军首领：领导欲用在反对上"
+    },
+    {
+      "id": "NT-将星-05-月",
+      "kind": "神煞标签",
+      "text": "月柱将星：有人扶的领导者，顺风顺水｜古籍：吉星相扶，贵煞加临 → 吉庆"
+    },
+    {
+      "id": "NT-桃花-01-月",
+      "kind": "神煞标签",
+      "text": "月柱桃花：墙内桃花：家里安排的缘分，上一辈眼里合适的人"
+    },
+    {
+      "id": "NT-桃花-05-月",
+      "kind": "神煞标签",
+      "text": "月柱桃花：靠人缘或暧昧的钱起家｜古籍：与贵人建禄并 → 因油盐酒货得生，或因妇人暗味之财起家"
+    },
+    {
+      "id": "NT-红艳-01-日",
+      "kind": "神煞标签",
+      "text": "日柱红艳：感情的主动权在他手里；他挑人，不是被挑"
+    },
+    {
+      "id": "NT-红艳-04-日",
+      "kind": "神煞标签",
+      "text": "日柱红艳：旧书把它当女命之忌；写法上可反用为她不肯被规训｜古籍：女命最忌之"
+    },
+    {
+      "id": "NT-阴差阳错-01-日",
+      "kind": "神煞标签",
+      "text": "日柱阴差阳错：关系模式标签：与伴侣那边的人不合，靠不上他们，久后成仇｜古籍：只日家犯 → 尤重，不得外家力，妻财虚花，久后与妻家为仇"
+    },
+    {
+      "id": "NT-阴差阳错-02-日",
+      "kind": "神煞标签",
+      "text": "日柱阴差阳错：与伴侣的父母和亲戚处不来，伴侣那边冷落她｜古籍：女命 → 公姑寡合，妯娌不足，夫家冷退"
+    },
+    {
+      "id": "C-年-胎",
+      "kind": "长生",
+      "text": "日主在年支胎"
+    },
+    {
+      "id": "C-月-病",
+      "kind": "长生",
+      "text": "日主在月支病"
+    },
+    {
+      "id": "C-日-临官",
+      "kind": "长生",
+      "text": "日主在日支临官"
+    },
+    {
+      "id": "C-时-冠带",
+      "kind": "长生",
+      "text": "日主在时支冠带"
+    },
+    {
+      "id": "C-纳音-年-松柏木",
+      "kind": "纳音",
+      "text": "年柱纳音松柏木"
+    },
+    {
+      "id": "C-纳音-月-杨柳木",
+      "kind": "纳音",
+      "text": "月柱纳音杨柳木"
+    },
+    {
+      "id": "C-纳音-日-石榴木",
+      "kind": "纳音",
+      "text": "日柱纳音石榴木"
+    },
+    {
+      "id": "C-纳音-时-平地木",
+      "kind": "纳音",
+      "text": "时柱纳音平地木"
+    },
+    {
+      "id": "D-1-辛巳",
+      "kind": "大运",
+      "text": "第1步大运辛巳，5至15岁（311–321），顺逆分 -0.4"
+    },
+    {
+      "id": "D-2-庚辰",
+      "kind": "大运",
+      "text": "第2步大运庚辰，15至25岁（321–331），顺逆分 0.8"
+    },
+    {
+      "id": "D-3-己卯",
+      "kind": "大运",
+      "text": "第3步大运己卯，25至35岁（331–341），顺逆分 -0.7（冲日支）"
+    },
+    {
+      "id": "D-4-戊寅",
+      "kind": "大运",
+      "text": "第4步大运戊寅，35至45岁（341–351），顺逆分 -0.2"
+    },
+    {
+      "id": "D-5-丁丑",
+      "kind": "大运",
+      "text": "第5步大运丁丑，45至55岁（351–361），顺逆分 0.2"
+    },
+    {
+      "id": "D-6-丙子",
+      "kind": "大运",
+      "text": "第6步大运丙子，55至65岁（361–371），顺逆分 -1.0（冲提纲、天克地冲月柱）"
+    },
+    {
+      "id": "D-7-乙亥",
+      "kind": "大运",
+      "text": "第7步大运乙亥，65至75岁（371–381），顺逆分 -0.7"
+    },
+    {
+      "id": "D-8-甲戌",
+      "kind": "大运",
+      "text": "第8步大运甲戌，75至85岁（381–391），顺逆分 0.2"
+    },
+    {
+      "id": "D-9-癸酉",
+      "kind": "大运",
+      "text": "第9步大运癸酉，85至95岁（391–401），顺逆分 0.0"
+    },
+    {
+      "id": "D-10-壬申",
+      "kind": "大运",
+      "text": "第10步大运壬申，95至105岁（401–411），顺逆分 0.0"
+    },
+    {
+      "id": "D-11-辛未",
+      "kind": "大运",
+      "text": "第11步大运辛未，105至115岁（411–421），顺逆分 0.8"
+    },
+    {
+      "id": "D-12-庚午",
+      "kind": "大运",
+      "text": "第12步大运庚午，115至125岁（421–431），顺逆分 -0.4"
+    },
+    {
+      "id": "L-6-丙申",
+      "kind": "流年",
+      "text": "6岁流年丙申，顺逆分 0.0（天克地冲年柱）"
+    },
+    {
+      "id": "L-10-庚子",
+      "kind": "流年",
+      "text": "10岁流年庚子，顺逆分 -0.4（冲提纲）"
+    },
+    {
+      "id": "L-25-乙卯",
+      "kind": "流年",
+      "text": "25岁流年乙卯，顺逆分 -1.0（冲日支、天克地冲日柱）"
+    },
+    {
+      "id": "L-31-辛酉",
+      "kind": "流年",
+      "text": "31岁流年辛酉，顺逆分 0.6（伏吟日柱）"
+    },
+    {
+      "id": "L-37-丁卯",
+      "kind": "流年",
+      "text": "37岁流年丁卯，顺逆分 -1.0（冲日支、天克地冲日柱）"
+    },
+    {
+      "id": "IN-十神-比肩",
+      "kind": "亲密关系",
+      "text": "日支酉本气为比肩：伴侣像同类、朋友、对手；与他太像的人；平等并肩，也比高低；像合伙人多过像伴侣；摩擦在谁也不让谁，缺柔软；争同一份资源"
+    },
+    {
+      "id": "IN-支-酉",
+      "kind": "亲密关系",
+      "text": "日支酉（四正（金））：关系清、洁、冷；挑剔，讲究；屋子干净得没有人味，冷战多过争吵；精致而寂寞"
+    },
+    {
+      "id": "IN-day_branch_yong",
+      "kind": "亲密关系修正",
+      "text": "日支本气五行是用神或喜神：伴侣像他缺的那样东西，关系是补：他在这段关系里变好，离开它变差｜古籍：日主坐财，财为喜用者，必得妻财（任注）"
+    },
+    {
+      "id": "IN-day_branch_hai",
+      "kind": "亲密关系修正",
+      "text": "日支与命局他支相害：暗损：近处的人蚀他，事后才知道；关系表面无事，底下漏"
+    },
+    {
+      "id": "IN-day_branch_taohua",
+      "kind": "亲密关系修正",
+      "text": "日支坐桃花或红艳：多情、招人，艳事常绕着他；关系里总有外面的风"
+    },
+    {
+      "id": "IM-材质-金",
+      "kind": "意象",
+      "text": "日主辛属金，看世界的材质：硬、冷、清；刀、印、钟、镜、铜钱、骨、白霜；世界是要被切开和裁定的东西，一刀见分晓"
+    },
+    {
+      "id": "IM-忌-木",
+      "kind": "意象",
+      "text": "木为忌神，威胁意象：缠人的藤、倒下的树、断桩、木刺、棺木、纸上写死的字、密不透风的林子；威胁是被缠住、被写定（威胁意象：反复出现，一次比一次逼近；忌神大运里成为全书底色）"
+    },
+    {
+      "id": "IM-忌-火",
+      "kind": "意象",
+      "text": "火为忌神，威胁意象：野火、烈日、烫伤、烧尽的信、烧红的铁、灼人的目光、火场；威胁是被烧空、被曝光（威胁意象：反复出现，一次比一次逼近；忌神大运里成为全书底色）"
+    },
+    {
+      "id": "IM-用-土",
+      "kind": "意象",
+      "text": "土为用神，救赎意象：田地、老屋、饭桌、坛子里的存粮、一块能站稳的地、母亲的手；救赎是有地方落脚（救赎意象：出现在他做对决定的场景、真正的转折与结尾；平时稀少，缺席本身就是叙事）"
+    },
+    {
+      "id": "IM-喜-金",
+      "kind": "意象",
+      "text": "金为喜神，救赎意象：一把好刀、印信、钟声、清水里的镜子、秋晨的霜、白衣、断得干净的事；救赎是有人替他做一个了断（助力意象：由帮他的人和事带进来，与用神意象同族而弱一档）"
+    },
+    {
+      "id": "IM-仇-水",
+      "kind": "意象",
+      "text": "水为仇神，威胁意象：洪水、暗流、沉、雾里迷路、漏、湿冷、井底、溺水；威胁是被淹、被卷走、看不清（忌的帮凶：环境里的、背景里的威胁，不直接落到他身上）"
+    },
+    {
+      "id": "IM-病-火",
+      "kind": "意象",
+      "text": "火为病神（官杀过多），长在他身上的意象：野火、烈日、烫伤、烧尽的信、烧红的铁、灼人的目光、火场；威胁是被烧空、被曝光；长在他自己身上的意象：病神是他自带的、过多的那样东西，写成他的习惯、体味、随身之物"
+    },
+    {
+      "id": "IM-dry",
+      "kind": "意象修正",
+      "text": "午月生而调候要水：全书燥色：尘、裂地、日头白、干井；水意象是稀缺的救赎；但水在此盘为仇神，能解他燥的东西同时在耗他，这一族写成饮鸩止渴：越靠近越舒服，越舒服越坏"
+    },
+    {
+      "id": "IM-日支-金",
+      "kind": "意象修正",
+      "text": "日支酉属金，家与亲密空间的材质：硬、冷、清；刀、印、钟、镜、铜钱、骨、白霜；世界是要被切开和裁定的东西，一刀见分晓"
+    },
+    {
+      "id": "IM-月支-火",
+      "kind": "意象修正",
+      "text": "月支午属火，出身环境的材质：明亮、急、外露；灯、灶、日头、烟、火塘、窗上的光；世界是要被照亮和烘暖的东西，亮处才敢做决定"
+    },
+    {
+      "id": "IM-神煞-华盖",
+      "kind": "意象修正",
+      "text": "命局有华盖：伞、殿顶、经卷、孤灯、空庭；一个人的高处"
+    },
+    {
+      "id": "IM-神煞-天乙贵人",
+      "kind": "意象修正",
+      "text": "命局有天乙贵人：门、引荐信、一把递过来的伞、阶；总有人替他开路"
+    },
+    {
+      "id": "IM-神煞-将星",
+      "kind": "意象修正",
+      "text": "命局有将星：帐、令旗、坐在中间的位置；人群围着他"
+    },
+    {
+      "id": "IM-神煞-桃花",
+      "kind": "意象修正",
+      "text": "命局有桃花：花、香、镜、帷、春夜；招人也招事"
+    },
+    {
+      "id": "YQ-年-庚寅",
+      "kind": "运气",
+      "text": "运气年庚寅本年气象（六元正纪庚寅庚申条）：上少阳相火、中太商金运、下厥阴风木（少阳太商厥阴庚寅庚申同正商；其运凉，其化雾露清切；火化七，清化九，风化三；正化日；同正商）：体格体感 骨相硬而不显，肤白周正，皮肤干爽；上半年脸上带红、身上热，下半年回到清凉本色，手脚利落。；薄弱处 一累眼睛先发干，看东西先眨几下。"
+    },
+    {
+      "id": "YQ-岁运-金运太过",
+      "kind": "运气",
+      "text": "岁运金运太过，通主一年、为体（坚成之纪；燥气流行，肝木受邪；其化成、其气削、其政肃、其令锐切、其德雾露萧飋）：体格外貌 骨相硬，脸方肤白，腰背挺直，身上少肉；体感 少汗，皮肤干，怕秋风刮脸，手脚干爽，动作干脆利落"
+    },
+    {
+      "id": "YQ-平气-金",
+      "kind": "运气",
+      "text": "岁运得平（太过被抑，后世推演）：审平之纪，收而不争，五化宣明，其候清切，其令燥；体感 皮肤白净偏干，少汗怕热，天一凉就活络，手脚干净利落，太过不及的偏性按此打折、体格写匀称"
+    },
+    {
+      "id": "YQ-司天-少阳相火",
+      "kind": "运气",
+      "text": "寅申年少阳相火司天，出生在岁半之前，此气为纲、为主（火淫所胜，温气流行，金政不平；风热参布，寒乃时至；病本于肺）：体感 春夏怕热却也怕风，脸色黄里透红，一动就出汗"
+    },
+    {
+      "id": "YQ-气-三之气-少阳相火",
+      "kind": "运气",
+      "text": "出生所值三之气，为用（架空历按月支午取）：主气少阳相火、客气少阳相火（天政布，炎暑至，雨乃涯）：体感 盛夏少雨，脸色红亮，动作快，汗多口干爱喝凉水，怕热不怕冷。"
+    },
+    {
+      "id": "YQ-运天-天克运",
+      "kind": "运气修正",
+      "text": "岁运金与为纲的司天少阳相火：天克运：底子被削平：上半年当家的气压住底子，底子的偏性只剩一点，人反被天气带着走；表里错开，外面是天气的样子，里头底子藏着。"
+    },
+    {
+      "id": "YQ-加临-同气",
+      "kind": "运气修正",
+      "text": "本步客主加临同气（客少阳相火、主少阳相火）：偏性翻倍：出生那一段临上来的气与季节底子同一路，这一段的体感最分明，怕冷怕热、干润都在这一头。"
+    },
+    {
+      "id": "YQ-平气修正",
+      "kind": "运气修正",
+      "text": "平气（太过被抑）：偏性抹平：底子的盛处被天气压住，或弱处被天气、地界补足，身上没有哪一路气特别冲，最不像有底子的人；事件层归和档。"
+    },
+    {
+      "id": "YQ-叠-燥上加燥",
+      "kind": "运气修正",
+      "text": "巳午未月生而调候要水（燥盘），生年主政之气是阳明燥金、少阴君火或少阳相火：燥上加燥，同向，燥上加燥：皮肤干、嘴唇起皮，少汗，怕热，入秋手背脚跟先干，总想喝水，越到傍晚越燥。"
+    },
+    {
+      "id": "YQ-运泉-运克泉",
+      "kind": "运气修正",
+      "text": "岁运金与另一头的在泉厥阴风木：运克泉，作背景：底子压住下半年：底子压过下半年当家的气，地气那一路被压得不显；下半年季候对他影响不大，偏性照底子写，年头到年尾一个路数。"
+    },
+    {
+      "id": "YQ-在泉-厥阴风木",
+      "kind": "运气",
+      "text": "寅申年厥阴风木在泉，下半年的天气，作背景（风淫所胜，地气不明，平野昧，草乃早秀）：写人时一笔带过，体感按为纲的 YQ-司天-少阳相火"
+    },
+    {
+      "id": "YQ-档-和",
+      "kind": "运气事件",
+      "text": "疾病与情志的严重档：和（平气（太过被抑），偏性抹平；太过者暴，病甚）：一年顶多一两场小病，几天就过，只用轻相；情志只写闷一阵烦一阵，随手带一笔，不占一场戏，不写死。"
+    },
+    {
+      "id": "YQ-病-肝",
+      "kind": "运气事件",
+      "text": "疾病候选（默认不写，年表身心域被引动的年份挑）：受邪之脏肝，民病 两胁下少腹痛、目赤痛、眦疡、耳无所闻、喘咳逆气、肩背痛；轻相 眼睛红肿、眼眵糊住眼皮，耳朵忽然听不清，两肋往下牵着小腹疼，一跑就喘。；重相 两肋剧痛，翻不了身，从胯到脚踝没一处利落；咳得倒不过气，一口口带血，多半熬不过。；死不治之候：太冲绝者死不治"
+    },
+    {
+      "id": "YQ-志-怒",
+      "kind": "运气事件",
+      "text": "情志候选（默认不写，与薄弱处同脏）：方向怒（通则：肝受邪，肝志怒（自起草，五脏五志不在语料）；其动其变 其动暴折疡疰、其变肃杀凋零）：轻相 话少而冷，为一点差错发大火，把身边人一个个说走，屋子空了。；重相 一夜之间翻脸，跟人绝交、跟家里断了来往，把多年的信一把火烧了，像棵掉光叶子的树。"
+    },
+    {
+      "id": "LI-身弱官杀为病-1",
+      "kind": "谎言候选",
+      "text": "身弱官杀为病：我不够好，所以他们才这样对我（他怕的是被压住、被审判，抬不起头）"
+    },
+    {
+      "id": "LI-身弱官杀为病-2",
+      "kind": "谎言候选",
+      "text": "身弱官杀为病：只要听话，就不会挨打（他怕的是被压住、被审判，抬不起头）"
+    },
+    {
+      "id": "LI-身弱官杀为病-3",
+      "kind": "谎言候选",
+      "text": "身弱官杀为病：出头的人先死，躲着才安全（他怕的是被压住、被审判，抬不起头）"
+    },
+    {
+      "id": "LI-身弱官杀为病-4",
+      "kind": "谎言候选",
+      "text": "身弱官杀为病：上面的人永远是对的，错的一定是我（他怕的是被压住、被审判，抬不起头）"
+    },
+    {
+      "id": "LI-身弱官杀为病-5",
+      "kind": "谎言候选",
+      "text": "身弱官杀为病：我只有装成他们要的样子才能活（他怕的是被压住、被审判，抬不起头）"
+    },
+    {
+      "id": "LI-钉-冲年支",
+      "kind": "谎言钉法",
+      "text": "六到十二岁逢冲年支（6岁丙申）：来历被翻出来：家里的旧事、身份、故乡；孩子的结论：我从哪里来是件要藏着的事"
+    },
+    {
+      "id": "LI-钉-天克地冲",
+      "kind": "谎言钉法",
+      "text": "六到十二岁逢天克地冲（6岁丙申）：正面撞击，没有缓冲：一夜之间的变故；孩子的结论：好日子会在一夜之间没掉，所以别信它"
+    },
+    {
+      "id": "LI-钉-忌神透干",
+      "kind": "谎言钉法",
+      "text": "六到十二岁逢忌神透干（6岁丙申）：威胁公开化：家里的麻烦被外人看见，被指着说；孩子的结论：被人看见就是被人拿住"
+    },
+    {
+      "id": "LI-钉-伏吟",
+      "kind": "谎言钉法",
+      "text": "六到十二岁逢伏吟（8岁戊戌）：同样的事再来一遍：搬了又搬、病了又病、大人反复；孩子的结论：事情不会变，我也逃不出去"
+    },
+    {
+      "id": "LI-钉-冲提纲",
+      "kind": "谎言钉法",
+      "text": "六到十二岁逢冲提纲（10岁庚子）：家塌一角：父母失势、家底出事、搬离原来的环境；孩子的结论：大人靠不住，或家塌了是因为我不够好"
+    }
+  ]
+}

@@ -45,11 +45,34 @@ KINDS = {
         "pools": {"原文": "原文", "徐评": "徐评", "标题": "原文"},
         "proof": "子平真诠_格局",
     },
+    # 滴天髓阐微：十干体性、性情、疾病、六亲、小儿、何知、出身、地位、岁运、官杀、伤官各章的卡，文件名以 滴天髓_ 起头
+    "滴天髓": {
+        "required": ["原文引文", "原注引文", "任注要点", "例盘", "出处", "采用规则", "叙事译法", "初稿写法", "核对", "差异", "裁决", "状态"],
+        "quotes": {"原文引文": "原文", "原注引文": "原注", "任注要点": "任注"},
+        "pools": {"原文": "原文", "标题": "原文", "原注": "原注", "任注": "任注", "小标题": "任注"},
+        "proof": ["滴天髓_天干官杀", "滴天髓_六亲岁运", "滴天髓_性情疾病"],
+    },
+    # 三命通会六亲章（中册卷七 484–493）与岁运章（上册卷二 107–115）的卡，文件名以 三命通会_ 起头（2026-09-25）
+    "三命通会": {
+        "required": ["引文", "出处", "采用规则", "叙事译法", "初稿写法", "核对", "差异", "裁决", "状态"],
+        "quotes": {"引文": "正文"},
+        "pools": {"正文": "正文", "歌诀": "正文", "表格": "正文", "标题": "正文", "校者注": "校者注"},
+        "proof": "三命通会_六亲岁运",
+    },
     "十二长生纳音": {
         "required": ["引文", "出处", "采用规则", "初稿写法", "核对", "差异", "裁决", "状态"],
         "quotes": {"引文": "正文"},
         "pools": {"正文": "正文", "歌诀": "正文", "表格": "正文", "标题": "正文", "校者注": "校者注"},
         "proof": ["三命通会_基础", "三命通会_六十甲子"],
+    },
+    # 五运六气：《素问》运气七篇，维基文库繁体录入本切篇语料（references/校核/语料/素问_运气.txt），无校对本，
+    # 引文直接对语料核；卡文件名以 运气_ 起头。后世推演（平气）的卡引文栏写"无（后世推演……）"，不核
+    "运气": {
+        "required": ["引文", "出处", "采用规则", "叙事译法", "初稿写法", "核对", "差异", "裁决", "状态"],
+        "quotes": {"引文": "正文"},
+        "pools": {"正文": "正文"},
+        "proof": [],
+        "corpus": "素问_运气.txt",
     },
 }
 REQUIRED_FIELDS = KINDS["调候"]["required"]
@@ -65,7 +88,7 @@ VARIANTS = {
     "煞": "杀", "才": "财", "纔": "才", "麤": "粗", "麄": "粗", "斲": "斫", "斵": "斫",
     "□": "",
 }
-PUNCT = re.compile(r"[\s，。、；：！？「」『』“”‘’（）()《》〈〉【】\[\]·…—\-–,.;:!?\"'*]")
+PUNCT = re.compile(r"[\s，。、；：︰！？「」『』“”‘’（）()《》〈〉【】\[\]·…—\-–,.;:!?\"'*]")
 
 
 def normalize(s: str) -> str:
@@ -90,7 +113,7 @@ def parse_cards(text: str) -> list[dict]:
     blocks = re.split(r"(?m)^### ", text)[1:]
     for b in blocks:
         head, _, body = b.partition("\n")
-        m = re.match(r"((?:调候|神煞|刑冲合害|长生|纳音|格局)-\S+)", head)
+        m = re.match(r"((?:调候|神煞|刑冲合害|长生|纳音|格局|十干|性情|疾病|六亲|小儿|何知|出身|地位|岁运|贞元|官杀|伤官|运气)-\S+)", head)
         card = {"id": m.group(1) if m else head.strip(), "fields": {}}
         cur = None
         for line in body.splitlines():
@@ -140,8 +163,16 @@ def main(argv: list[str]) -> int:
     # 优先对校对本：按标签分池，能查出「把注抄成正文」；没有校对本才退回网上通行本
     proof_names = [f"{dm}"] if kind == "调候" else ([spec["proof"]] if isinstance(spec["proof"], str) else spec["proof"])
     proofs = [PROOF_DIR / f"{n}.md" for n in proof_names]
-    proof = proofs[0]
-    if all(p.exists() for p in proofs):
+    if kind == "滴天髓":
+        proofs = [p for p in proofs if p.exists()]     # 分批校对，有哪份对哪份
+    if spec.get("corpus"):
+        corpus_path = Path(a.corpus_dir) / spec["corpus"]
+        if not corpus_path.exists():
+            print(f"corpus not found: {corpus_path}", file=sys.stderr)
+            return 2
+        pools = {"正文": split_pool(corpus_path.read_text(encoding="utf-8"))}
+        source, low = f"通行本语料 {corpus_path}", LOW
+    elif proofs and all(p.exists() for p in proofs):
         body = "\n".join(p.read_text(encoding="utf-8") for p in proofs)
         raw = {}
         for m in re.finditer(r"^\[([^\]]+)\]\s*(.*)$", body, flags=re.M):

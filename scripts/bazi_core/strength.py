@@ -25,11 +25,16 @@ v2 合局项（DESIGN 6.4，2026-09-23 由 Fable 重写；9-22 那版出自 Opus
   古籍依据：《三命通会》论十干化气"甲己化土，非辰戌丑未月不化，其次午月亦化，有戊字间之则不化，名曰妒合"等五条（上120，卡 刑冲合害-天干五合）。
   "间之"本指位置相隔，此处简化为柱中见该干即妒合。
 - 合局所成之五行与日主同气为生扶，异气为耗泄，走十神归类即得；所成之气若正是调候所需，在解读层另记，不进旺衰分。
-- 未做：冲破合局、争合妒合的强弱分档。系数皆初值，校准流程见 scripts/calibrate_strength.py。
+- 未做：争合妒合的强弱分档。系数皆初值，校准流程见 scripts/calibrate_strength.py。
+- v3 实验（2026-09-25，`calibrate_strength.py v3`，报告 references/校核/旺衰_v3报告.md）：冲破合局、墓库长生作根、印折扣三项
+  做成模块开关与系数，对子代理 120 盘与徐评例盘 110 盘各跑一遍，没有一项在子代理标准上净增：冲破合局零变化（古籍还倒错一张，
+  徐评"寅午会局身旺"的盘被年支子遥冲破了局）；墓库长生作根 0.3/0.5/0.8 子代理 -2/-4/-4、古籍 +2/+3/+4，是拿标准换偏差记录；
+  印折扣 0.8/0.7/0.6 子代理 -1/0/0、古籍 -3/-2/-1。默认值全部保持 v2，开关留着给后来的标准用。
 """
 
 from __future__ import annotations
 
+from . import changsheng as CS
 from . import relations as R
 from .shishen import BRANCHES, HIDDEN_STEMS, STEMS, WUXING, element_of, ten_god
 
@@ -66,6 +71,17 @@ STEMHE_HUA_FACTOR = 1.2  # 天干合化成立
 STEMHE_DAMP = 0.7      # 天干合绊：两干减力；日主参与时只减对方
 MINOR_DAMP = 0.5       # 成局改本气之支，其中气余气减半
 FACTOR_FLOOR, FACTOR_CEIL = 0.5, 2.0
+
+# ---- v3 实验项（2026-09-25，默认关；开关与系数由 scripts/calibrate_strength.py v3 对两路标准跑格子后定）
+# 冲破合局：合局（三合三会、半合、六合）里任一支被局外之支六冲，则合不成，不加权不改本气也不合绊。
+#   依据：《子平真诠评注》论偏官 徐评"刘造寅亥虽合，而得申遥冲解其合"（p？见校对本），论相神"会合解冲"反之亦然，
+#   论用神成败救应 原文"刑冲而会合以解之"。是否冲破按六冲表（tables/relations.json，卡 刑冲合害-六冲）。
+V3_CHONG_BREAKS_COMBO = False
+# 墓库长生作根：日主在某支为长生或墓（十二长生表，卡 十二长生纳音-十干长生位）且该支藏干见比劫，
+#   另加该柱本气权重乘 KU_SHENG_ROOT_FACTOR 的生扶分并算得地。阴干长生之支不藏比劫（乙长生午、癸长生卯一类）不加，
+#   与任注"阴火长生俗传之谬"相合。依据：徐评例盘"丙火坐戌，通根火库"（穷通 p110 印刷页）、《滴天髓阐微》岁运"必先要旺运通根"。
+V3_KU_SHENG_ROOT = False
+KU_SHENG_ROOT_FACTOR = 0.5
 
 # 天干合化的月令条件与妒合之干：《三命通会》上120（卡 刑冲合害-天干五合）
 STEM_HUA_RULES = {
@@ -105,8 +121,24 @@ def combo_effects(pillars: dict) -> tuple[dict, dict, list[dict]]:
     s_eff = {k: {"factor": 1.0, "override": None, "_rank": 0.0} for k in keys}
     notes: list[dict] = []
 
+    all_branches = [branch_of[k] for k in keys]
+
+    def broken_by(branches: str) -> str | None:
+        """v3：局中任一支被局外之支六冲，返回"申冲寅"一类说明，否则 None。"""
+        if not V3_CHONG_BREAKS_COMBO:
+            return None
+        for z in branches:
+            foe = R.LIU_CHONG.get(z)
+            if foe and foe not in branches and foe in all_branches:
+                return f"{foe}冲{z}"
+        return None
+
     def touch_branches(branches: str, factor: float, element: str | None, kind: str, override: bool, detail: str) -> None:
         hit = [k for k in keys if branch_of[k] in branches]
+        if (why := broken_by(branches)):
+            notes.append({"kind": kind, "branches": branches, "element": element, "factor": 1.0, "override": False,
+                          "pillars": [_CN[k] for k in hit], "detail": f"{detail}；{why}，冲破合局，不计", "broken": why})
+            return
         for k in hit:
             e = b_eff[k]
             e["factor"] *= factor
@@ -234,6 +266,12 @@ def assess(pillars: dict) -> dict:
             if override:
                 w *= MINOR_DAMP
             add(f"{_CN[key]}支{layer_name}", stem_idx, round(w, 2))
+        if V3_KU_SHENG_ROOT and not override:
+            stg = CS.stage(pillars["day"][0], p[1])
+            if stg in ("长生", "墓"):
+                bijie = [h for h in hidden if ten_god(ds, h) in ("比肩", "劫财")]
+                if bijie:
+                    add(f"{_CN[key]}支{stg}作根", bijie[0], round(BRANCH_WEIGHT[key][0] * KU_SHENG_ROOT_FACTOR, 2))
 
     total = support + drain * DRAIN_SCALE
     ratio = support / total if total else 0.5

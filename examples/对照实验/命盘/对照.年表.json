@@ -1,0 +1,5731 @@
+{
+  "schema": "bazi-timeline/v1",
+  "algorithm": "bazi-writing timeline v1（DESIGN 10 第 1–2 条）",
+  "name": "对照",
+  "window": [
+    0,
+    45
+  ],
+  "coverage": [
+    0,
+    54
+  ],
+  "yong": {
+    "element": "金",
+    "family": "官杀"
+  },
+  "stages": [
+    {
+      "sequence": 1,
+      "pillar": "甲辰",
+      "ages": [
+        5,
+        15
+      ],
+      "score": -0.3,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支辰本气土为喜",
+          "value": 0.3
+        },
+        {
+          "term": "辰合绊年支酉（用神）",
+          "value": -0.2
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "偏财"
+      },
+      "elements": {
+        "stem": "木",
+        "branch": "土"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "喜"
+      },
+      "band": "弱逆",
+      "mechanisms": [
+        "合年支",
+        "害月支",
+        "合绊用神"
+      ],
+      "changsheng": "衰",
+      "shensha": [
+        "华盖"
+      ],
+      "overlay": {
+        "比肩": "叠",
+        "偏财": "新"
+      },
+      "domains": [
+        {
+          "domain": "六亲",
+          "weight": 15
+        },
+        {
+          "domain": "感情",
+          "weight": 13
+        }
+      ],
+      "candidates": [
+        6,
+        7,
+        9,
+        12
+      ]
+    },
+    {
+      "sequence": 2,
+      "pillar": "乙巳",
+      "ages": [
+        15,
+        25
+      ],
+      "score": -1.0,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支巳本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "食神"
+      },
+      "elements": {
+        "stem": "木",
+        "branch": "火"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "忌"
+      },
+      "band": "强逆",
+      "mechanisms": [
+        "寅刑巳（时支）",
+        "害时支"
+      ],
+      "changsheng": "病",
+      "shensha": [
+        "文昌"
+      ],
+      "overlay": {
+        "劫财": "叠",
+        "食神": "叠"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 15
+        },
+        {
+          "domain": "六亲",
+          "weight": 14
+        }
+      ],
+      "candidates": [
+        21,
+        23,
+        24
+      ]
+    },
+    {
+      "sequence": 3,
+      "pillar": "丙午",
+      "ages": [
+        25,
+        35
+      ],
+      "score": -1.0,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支午本气火为忌",
+          "value": -0.6
+        },
+        {
+          "term": "午冲日支子",
+          "value": -0.3
+        }
+      ],
+      "flags": [
+        "冲日支"
+      ],
+      "tenGods": {
+        "stem": "食神",
+        "branch": "伤官"
+      },
+      "elements": {
+        "stem": "火",
+        "branch": "火"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "忌"
+      },
+      "band": "强逆",
+      "mechanisms": [
+        "冲日支"
+      ],
+      "changsheng": "死",
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "overlay": {
+        "食神": "叠",
+        "伤官": "叠"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 16
+        },
+        {
+          "domain": "六亲",
+          "weight": 10
+        }
+      ],
+      "candidates": [
+        27,
+        33
+      ]
+    },
+    {
+      "sequence": 4,
+      "pillar": "丁未",
+      "ages": [
+        35,
+        45
+      ],
+      "score": 0.0,
+      "tone": "平",
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支未本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正财"
+      },
+      "elements": {
+        "stem": "火",
+        "branch": "土"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "喜"
+      },
+      "band": "平",
+      "mechanisms": [
+        "害日支"
+      ],
+      "changsheng": "墓",
+      "shensha": [
+        "天乙贵人"
+      ],
+      "overlay": {
+        "伤官": "叠",
+        "正财": "新"
+      },
+      "domains": [
+        {
+          "domain": "六亲",
+          "weight": 17
+        },
+        {
+          "domain": "身心",
+          "weight": 8
+        }
+      ],
+      "candidates": [
+        35,
+        36
+      ]
+    },
+    {
+      "sequence": 5,
+      "pillar": "戊申",
+      "ages": [
+        45,
+        55
+      ],
+      "score": 0.8,
+      "tone": "顺",
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支申本气金为用",
+          "value": 0.6
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "七杀"
+      },
+      "elements": {
+        "stem": "土",
+        "branch": "金"
+      },
+      "roles": {
+        "stem": "喜",
+        "branch": "用"
+      },
+      "band": "强顺",
+      "mechanisms": [
+        "冲时支",
+        "申刑寅（时支）"
+      ],
+      "changsheng": "绝",
+      "shensha": [],
+      "overlay": {
+        "偏财": "新",
+        "七杀": "近"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 16
+        },
+        {
+          "domain": "六亲",
+          "weight": 15
+        }
+      ],
+      "candidates": [
+        45,
+        48,
+        54
+      ]
+    }
+  ],
+  "years": [
+    {
+      "age": 0,
+      "year": 306,
+      "pillar": "丁酉",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正官"
+      },
+      "dayun": null,
+      "score": -0.3,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支酉本气金为用",
+          "value": 0.6
+        },
+        {
+          "term": "酉冲提纲卯",
+          "value": -0.3
+        },
+        {
+          "term": "伏吟年柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "酉酉自刑（年支）",
+        "伏吟年柱",
+        "冲提纲",
+        "天克地冲月柱",
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星正官",
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受自刑、伏吟",
+            "月柱（父母）受六冲、天克地冲"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲卯",
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲月支卯"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 1,
+      "year": 307,
+      "pillar": "戊戌",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "偏财"
+      },
+      "dayun": null,
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支戌本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "合月支"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年戊戌岁气：上太阳寒水、中火运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景热年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 2,
+      "year": 308,
+      "pillar": "己亥",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "偏印"
+      },
+      "dayun": null,
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干己土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支亥本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "合时支"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年己亥岁气：上厥阴风木、中土运不及、下少阳相火；疫季 终之气（温厉）；年景风年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 3,
+      "year": 309,
+      "pillar": "庚子",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "正印"
+      },
+      "dayun": null,
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干庚金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支子本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "子卯互刑（月支）",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "月柱（父母）受刑",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 4,
+      "year": 310,
+      "pillar": "辛丑",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "正财"
+      },
+      "dayun": null,
+      "score": 0.7,
+      "terms": [
+        {
+          "term": "天干辛金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支丑本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "合日支",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六合",
+            "流年见亲密关系星正官"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖",
+        "天乙贵人"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年辛丑岁气：上太阴湿土、中水运不及、下太阳寒水；疫季 二之气（温厉大行）；年景湿年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 5,
+      "year": 311,
+      "pillar": "壬寅",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": -0.7,
+      "terms": [
+        {
+          "term": "天干壬水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 6,
+      "year": 312,
+      "pillar": "癸卯",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": -0.9,
+      "terms": [
+        {
+          "term": "天干癸水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        },
+        {
+          "term": "伏吟月柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "天克地冲年柱",
+        "伏吟月柱",
+        "卯子互刑（日支）"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、天克地冲",
+            "流年印星（母）",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支酉"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "羊刃"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 7,
+      "year": 313,
+      "pillar": "甲辰",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": -0.3,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支辰本气土为喜",
+          "value": 0.3
+        },
+        {
+          "term": "辰合绊年支酉（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "害月支",
+        "岁运并临",
+        "合绊用神",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年甲辰岁气：上太阳寒水、中土运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景湿年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 8,
+      "year": 314,
+      "pillar": "乙巳",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支巳本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "寅刑巳（时支）",
+        "害时支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受刑、害",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "文昌"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 9,
+      "year": 315,
+      "pillar": "丙午",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支午本气火为忌",
+          "value": -0.6
+        },
+        {
+          "term": "午冲日支子",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲日支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六冲",
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 6
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 10,
+      "year": 316,
+      "pillar": "丁未",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支未本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害日支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受害"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 11,
+      "year": 317,
+      "pillar": "戊申",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": 0.8,
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支申本气金为用",
+          "value": 0.6
+        }
+      ],
+      "mechanisms": [
+        "冲时支",
+        "申刑寅（时支）",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑",
+            "流年财星（父）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "热年"
+    },
+    {
+      "age": 12,
+      "year": 318,
+      "pillar": "己酉",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干己土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支酉本气金为用",
+          "value": 0.6
+        },
+        {
+          "term": "酉冲提纲卯",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "酉酉自刑（年支）",
+        "冲提纲",
+        "天克地冲月柱",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星正官",
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受自刑",
+            "月柱（父母）受六冲、天克地冲",
+            "流年财星（父）"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲卯",
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲月支卯"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 13,
+      "year": 319,
+      "pillar": "庚戌",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": 0.7,
+      "terms": [
+        {
+          "term": "天干庚金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支戌本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "合月支",
+        "岁运相冲",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年庚戌岁气：上太阳寒水、中金运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景燥年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 14,
+      "year": 320,
+      "pillar": "辛亥",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "甲辰",
+        "startAge": 5,
+        "endAge": 15
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干辛金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支亥本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "合时支",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年辛亥岁气：上厥阴风木、中水运不及、下少阳相火；疫季 终之气（温厉）；年景湿年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 15,
+      "year": 321,
+      "pillar": "壬子",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干壬水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支子本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "子卯互刑（月支）",
+        "换运"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "月柱（父母）受刑",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 16,
+      "year": 322,
+      "pillar": "癸丑",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干癸水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支丑本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "合日支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖",
+        "天乙贵人"
+      ],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年癸丑岁气：上太阴湿土、中火运不及、下太阳寒水；疫季 二之气（温厉大行）；年景寒年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 17,
+      "year": 323,
+      "pillar": "甲寅",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 18,
+      "year": 324,
+      "pillar": "乙卯",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "卯子互刑（日支）",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支酉"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "羊刃"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 19,
+      "year": 325,
+      "pillar": "丙辰",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": -0.3,
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支辰本气土为喜",
+          "value": 0.3
+        },
+        {
+          "term": "辰合绊年支酉（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "害月支",
+        "合绊用神",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丙辰岁气：上太阳寒水、中水运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景寒年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 20,
+      "year": 326,
+      "pillar": "丁巳",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支巳本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "寅刑巳（时支）",
+        "害时支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受刑、害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "文昌"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 21,
+      "year": 327,
+      "pillar": "戊午",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": -0.7,
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支午本气火为忌",
+          "value": -0.6
+        },
+        {
+          "term": "午冲日支子",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲日支",
+        "天克地冲日柱"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六冲、天克地冲",
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 6
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "天克地冲日柱甲子（身）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "天克地冲日柱甲子（身）"
+        ],
+        "strong": true,
+        "yearQi": "流年戊午岁气：上少阴君火、中火运太过、下阳明燥金；无疫季之文；年景热年",
+        "epidemicSteps": [],
+        "pressing": [
+          "阳明燥金"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 22,
+      "year": 328,
+      "pillar": "己未",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干己土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支未本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害日支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受害"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 23,
+      "year": 329,
+      "pillar": "庚申",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": 1.0,
+      "terms": [
+        {
+          "term": "天干庚金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支申本气金为用",
+          "value": 0.6
+        }
+      ],
+      "mechanisms": [
+        "冲时支",
+        "申刑寅（时支）",
+        "天克地冲时柱",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 24,
+      "year": 330,
+      "pillar": "辛酉",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "乙巳",
+        "startAge": 15,
+        "endAge": 25
+      },
+      "score": 0.7,
+      "terms": [
+        {
+          "term": "天干辛金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支酉本气金为用",
+          "value": 0.6
+        },
+        {
+          "term": "酉冲提纲卯",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "酉酉自刑（年支）",
+        "冲提纲",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星正官",
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受自刑",
+            "月柱（父母）受六冲"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲卯",
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲月支卯"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 25,
+      "year": 331,
+      "pillar": "壬戌",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干壬水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支戌本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "合月支",
+        "换运"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年壬戌岁气：上太阳寒水、中木运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景风年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 26,
+      "year": 332,
+      "pillar": "癸亥",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干癸水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支亥本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "合时支"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年癸亥岁气：上厥阴风木、中火运不及、下少阳相火；疫季 终之气（温厉）；年景寒年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 27,
+      "year": 333,
+      "pillar": "甲子",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": -0.75,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支子本气水为闲（偏忌）",
+          "value": -0.15
+        },
+        {
+          "term": "伏吟日柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "子卯互刑（月支）",
+        "伏吟日柱",
+        "岁运相冲",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受伏吟"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "月柱（父母）受刑",
+            "流年印星（母）",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 28,
+      "year": 334,
+      "pillar": "乙丑",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支丑本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "合日支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖",
+        "天乙贵人"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年乙丑岁气：上太阴湿土、中金运不及、下太阳寒水；疫季 二之气（温厉大行）；年景热年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 29,
+      "year": 335,
+      "pillar": "丙寅",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.6
+        },
+        {
+          "term": "伏吟时柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "伏吟时柱",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受伏吟",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 30,
+      "year": 336,
+      "pillar": "丁卯",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "卯子互刑（日支）",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支酉"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "羊刃"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 31,
+      "year": 337,
+      "pillar": "戊辰",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": 0.3,
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支辰本气土为喜",
+          "value": 0.3
+        },
+        {
+          "term": "辰合绊年支酉（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "害月支",
+        "合绊用神"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年戊辰岁气：上太阳寒水、中火运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景热年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 32,
+      "year": 338,
+      "pillar": "己巳",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": -0.4,
+      "terms": [
+        {
+          "term": "天干己土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支巳本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "寅刑巳（时支）",
+        "害时支"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受刑、害",
+            "流年财星（父）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "文昌"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 33,
+      "year": 339,
+      "pillar": "庚午",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干庚金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支午本气火为忌",
+          "value": -0.6
+        },
+        {
+          "term": "午冲日支子",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲日支",
+        "天克地冲日柱",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六冲、天克地冲",
+            "流年见亲密关系星七杀",
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 7
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "天克地冲日柱甲子（身）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "天克地冲日柱甲子（身）"
+        ],
+        "strong": true,
+        "yearQi": "流年庚午岁气：上少阴君火、中金运太过、下阳明燥金；无疫季之文；年景燥年",
+        "epidemicSteps": [],
+        "pressing": [
+          "阳明燥金"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 34,
+      "year": 340,
+      "pillar": "辛未",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "丙午",
+        "startAge": 25,
+        "endAge": 35
+      },
+      "score": 0.7,
+      "terms": [
+        {
+          "term": "天干辛金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支未本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害日支",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受害",
+            "流年见亲密关系星正官"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 35,
+      "year": 341,
+      "pillar": "壬申",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干壬水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支申本气金为用",
+          "value": 0.6
+        }
+      ],
+      "mechanisms": [
+        "冲时支",
+        "申刑寅（时支）",
+        "天克地冲时柱",
+        "换运",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑、天克地冲",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "风年"
+    },
+    {
+      "age": 36,
+      "year": 342,
+      "pillar": "癸酉",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干癸水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支酉本气金为用",
+          "value": 0.6
+        },
+        {
+          "term": "酉冲提纲卯",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "酉酉自刑（年支）",
+        "冲提纲",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星正官",
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受自刑",
+            "月柱（父母）受六冲",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲卯",
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲月支卯"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 37,
+      "year": 343,
+      "pillar": "甲戌",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支戌本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "合月支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年甲戌岁气：上太阳寒水、中土运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景湿年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 38,
+      "year": 344,
+      "pillar": "乙亥",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": -0.55,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支亥本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "合时支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年乙亥岁气：上厥阴风木、中金运不及、下少阳相火；疫季 终之气（温厉）；年景热年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 39,
+      "year": 345,
+      "pillar": "丙子",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": -0.55,
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支子本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "子卯互刑（月支）",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "月柱（父母）受刑",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 40,
+      "year": 346,
+      "pillar": "丁丑",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支丑本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "合日支",
+        "岁运相冲",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖",
+        "天乙贵人"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丁丑岁气：上太阴湿土、中木运不及、下太阳寒水；疫季 二之气（温厉大行）；年景燥年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 41,
+      "year": 347,
+      "pillar": "戊寅",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": -0.4,
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 42,
+      "year": 348,
+      "pillar": "己卯",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": -0.4,
+      "terms": [
+        {
+          "term": "天干己土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "卯子互刑（日支）"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲",
+            "流年财星（父）",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支酉"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "羊刃"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 43,
+      "year": 349,
+      "pillar": "庚辰",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干庚金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支辰本气土为喜",
+          "value": 0.3
+        },
+        {
+          "term": "辰合绊年支酉（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "害月支",
+        "合绊用神",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年庚辰岁气：上太阳寒水、中金运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景燥年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 44,
+      "year": 350,
+      "pillar": "辛巳",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "丁未",
+        "startAge": 35,
+        "endAge": 45
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干辛金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支巳本气火为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "寅刑巳（时支）",
+        "害时支",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受刑、害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "文昌"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 45,
+      "year": 351,
+      "pillar": "壬午",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干壬水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支午本气火为忌",
+          "value": -0.6
+        },
+        {
+          "term": "午冲日支子",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲日支",
+        "换运"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六冲",
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 6
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 46,
+      "year": 352,
+      "pillar": "癸未",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干癸水为闲（偏忌）",
+          "value": -0.1
+        },
+        {
+          "term": "地支未本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害日支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 47,
+      "year": 353,
+      "pillar": "甲申",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": 0.2,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支申本气金为用",
+          "value": 0.6
+        }
+      ],
+      "mechanisms": [
+        "冲时支",
+        "申刑寅（时支）",
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 48,
+      "year": 354,
+      "pillar": "乙酉",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支酉本气金为用",
+          "value": 0.6
+        },
+        {
+          "term": "酉冲提纲卯",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "酉酉自刑（年支）",
+        "冲提纲",
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星正官",
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受自刑",
+            "月柱（父母）受六冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲卯",
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲月支卯"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 49,
+      "year": 355,
+      "pillar": "丙戌",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干丙火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支戌本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "合月支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丙戌岁气：上太阳寒水、中水运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景寒年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 50,
+      "year": 356,
+      "pillar": "丁亥",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": -0.55,
+      "terms": [
+        {
+          "term": "天干丁火为忌",
+          "value": -0.4
+        },
+        {
+          "term": "地支亥本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "合时支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丁亥岁气：上厥阴风木、中木运不及、下少阳相火；疫季 终之气（温厉）；年景燥年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 51,
+      "year": 357,
+      "pillar": "戊子",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干戊土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支子本气水为闲（偏忌）",
+          "value": -0.15
+        }
+      ],
+      "mechanisms": [
+        "子卯互刑（月支）"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "月柱（父母）受刑",
+            "流年财星（父）",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "将星"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 52,
+      "year": 358,
+      "pillar": "己丑",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干己土为喜",
+          "value": 0.2
+        },
+        {
+          "term": "地支丑本气土为喜",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "合日支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖",
+        "天乙贵人"
+      ],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年己丑岁气：上太阴湿土、中土运不及、下太阳寒水；疫季 二之气（温厉大行）；年景风年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（天克运），不相得则病",
+        "tempo": "不及者徐，病持",
+        "organ": "肝",
+        "illness": "一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。",
+        "fatal": "",
+        "zhi": "惊恐",
+        "mood": "被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肝",
+          "YQ-志-惊恐",
+          "YQ-上临-阳明燥金"
+        ]
+      }
+    },
+    {
+      "age": 53,
+      "year": 359,
+      "pillar": "庚寅",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干庚金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "岁运相冲",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 54,
+      "year": 360,
+      "pillar": "辛卯",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "戊申",
+        "startAge": 45,
+        "endAge": 55
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干辛金为用",
+          "value": 0.4
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.6
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "天克地冲年柱",
+        "卯子互刑（日支）",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）子受刑",
+            "流年见亲密关系星正官"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、天克地冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "伤官见官",
+            "冲年支官杀"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支酉"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "羊刃"
+      ],
+      "yearScene": "湿年"
+    }
+  ],
+  "candidates": [
+    0,
+    6,
+    7,
+    9,
+    12,
+    21,
+    23,
+    24,
+    27,
+    33,
+    35,
+    36,
+    45
+  ],
+  "features": [
+    {
+      "id": "L-0-丁酉",
+      "text": "0岁流年丁酉，顺逆分 -0.3"
+    },
+    {
+      "id": "L-0-丁酉-酉酉自刑（年支）",
+      "text": "0岁流年丁酉酉酉自刑（年支）"
+    },
+    {
+      "id": "L-0-丁酉-伏吟年柱",
+      "text": "0岁流年丁酉伏吟年柱"
+    },
+    {
+      "id": "L-0-丁酉-冲提纲",
+      "text": "0岁流年丁酉冲提纲"
+    },
+    {
+      "id": "L-0-丁酉-天克地冲月柱",
+      "text": "0岁流年丁酉天克地冲月柱"
+    },
+    {
+      "id": "L-0-丁酉-忌神透干",
+      "text": "0岁流年丁酉忌神透干"
+    },
+    {
+      "id": "L-0-丁酉-用神到位",
+      "text": "0岁流年丁酉用神到位"
+    },
+    {
+      "id": "L-0-丁酉-域-感情",
+      "text": "0岁流年丁酉动感情：流年见亲密关系星正官；流年逢桃花"
+    },
+    {
+      "id": "L-0-丁酉-域-六亲",
+      "text": "0岁流年丁酉动六亲：年柱（祖上）受自刑、伏吟；月柱（父母）受六冲、天克地冲"
+    },
+    {
+      "id": "L-0-丁酉-域-事业与权力",
+      "text": "0岁流年丁酉动事业与权力：冲提纲卯；流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-0-丁酉-域-名誉与是非",
+      "text": "0岁流年丁酉动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-0-丁酉-域-迁徙与归属",
+      "text": "0岁流年丁酉动迁徙与归属：冲月支卯"
+    },
+    {
+      "id": "L-1-戊戌",
+      "text": "1岁流年戊戌，顺逆分 0.5"
+    },
+    {
+      "id": "L-1-戊戌-害年支",
+      "text": "1岁流年戊戌害年支"
+    },
+    {
+      "id": "L-1-戊戌-合月支",
+      "text": "1岁流年戊戌合月支"
+    },
+    {
+      "id": "L-1-戊戌-域-身心",
+      "text": "1岁流年戊戌动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-1-戊戌-病候",
+      "text": "1岁流年戊戌身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年戊戌岁气：上太阳寒水、中火运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景热年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-2-己亥",
+      "text": "2岁流年己亥，顺逆分 0.0"
+    },
+    {
+      "id": "L-2-己亥-合时支",
+      "text": "2岁流年己亥合时支"
+    },
+    {
+      "id": "L-2-己亥-域-身心",
+      "text": "2岁流年己亥动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-2-己亥-域-学识与真相",
+      "text": "2岁流年己亥动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-2-己亥-域-迁徙与归属",
+      "text": "2岁流年己亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-2-己亥-域-创造与传承",
+      "text": "2岁流年己亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-2-己亥-病候",
+      "text": "2岁流年己亥身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年己亥岁气：上厥阴风木、中土运不及、下少阳相火；疫季 终之气（温厉）；年景风年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-3-庚子",
+      "text": "3岁流年庚子，顺逆分 0.25"
+    },
+    {
+      "id": "L-3-庚子-子卯互刑（月支）",
+      "text": "3岁流年庚子子卯互刑（月支）"
+    },
+    {
+      "id": "L-3-庚子-用神到位",
+      "text": "3岁流年庚子用神到位"
+    },
+    {
+      "id": "L-3-庚子-域-六亲",
+      "text": "3岁流年庚子动六亲：月柱（父母）受刑；流年印星（母）"
+    },
+    {
+      "id": "L-3-庚子-域-事业与权力",
+      "text": "3岁流年庚子动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-4-辛丑",
+      "text": "4岁流年辛丑，顺逆分 0.7"
+    },
+    {
+      "id": "L-4-辛丑-合日支",
+      "text": "4岁流年辛丑合日支"
+    },
+    {
+      "id": "L-4-辛丑-用神到位",
+      "text": "4岁流年辛丑用神到位"
+    },
+    {
+      "id": "L-4-辛丑-域-感情",
+      "text": "4岁流年辛丑动感情：日支（配偶宫）子受六合；流年见亲密关系星正官"
+    },
+    {
+      "id": "L-4-辛丑-域-身心",
+      "text": "4岁流年辛丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-4-辛丑-域-名誉与是非",
+      "text": "4岁流年辛丑动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-4-辛丑-病候",
+      "text": "4岁流年辛丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年辛丑岁气：上太阴湿土、中水运不及、下太阳寒水；疫季 二之气（温厉大行）；年景湿年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-5-壬寅",
+      "text": "5岁流年壬寅，顺逆分 -0.7"
+    },
+    {
+      "id": "L-5-壬寅-域-迁徙与归属",
+      "text": "5岁流年壬寅动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-6-癸卯",
+      "text": "6岁流年癸卯，顺逆分 -0.9"
+    },
+    {
+      "id": "L-6-癸卯-冲年支",
+      "text": "6岁流年癸卯冲年支"
+    },
+    {
+      "id": "L-6-癸卯-天克地冲年柱",
+      "text": "6岁流年癸卯天克地冲年柱"
+    },
+    {
+      "id": "L-6-癸卯-伏吟月柱",
+      "text": "6岁流年癸卯伏吟月柱"
+    },
+    {
+      "id": "L-6-癸卯-卯子互刑（日支）",
+      "text": "6岁流年癸卯卯子互刑（日支）"
+    },
+    {
+      "id": "L-6-癸卯-域-感情",
+      "text": "6岁流年癸卯动感情：日支（配偶宫）子受刑"
+    },
+    {
+      "id": "L-6-癸卯-域-六亲",
+      "text": "6岁流年癸卯动六亲：年柱（祖上）受六冲、天克地冲；流年印星（母）；流年比劫星（手足）"
+    },
+    {
+      "id": "L-6-癸卯-域-名誉与是非",
+      "text": "6岁流年癸卯动名誉与是非：冲年支官杀"
+    },
+    {
+      "id": "L-6-癸卯-域-迁徙与归属",
+      "text": "6岁流年癸卯动迁徙与归属：冲年支酉"
+    },
+    {
+      "id": "L-7-甲辰",
+      "text": "7岁流年甲辰，顺逆分 -0.3"
+    },
+    {
+      "id": "L-7-甲辰-合年支",
+      "text": "7岁流年甲辰合年支"
+    },
+    {
+      "id": "L-7-甲辰-害月支",
+      "text": "7岁流年甲辰害月支"
+    },
+    {
+      "id": "L-7-甲辰-岁运并临",
+      "text": "7岁流年甲辰岁运并临"
+    },
+    {
+      "id": "L-7-甲辰-合绊用神",
+      "text": "7岁流年甲辰合绊用神"
+    },
+    {
+      "id": "L-7-甲辰-忌神透干",
+      "text": "7岁流年甲辰忌神透干"
+    },
+    {
+      "id": "L-7-甲辰-域-身心",
+      "text": "7岁流年甲辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-7-甲辰-病候",
+      "text": "7岁流年甲辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年甲辰岁气：上太阳寒水、中土运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景湿年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-8-乙巳",
+      "text": "8岁流年乙巳，顺逆分 -1.0"
+    },
+    {
+      "id": "L-8-乙巳-寅刑巳（时支）",
+      "text": "8岁流年乙巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-8-乙巳-害时支",
+      "text": "8岁流年乙巳害时支"
+    },
+    {
+      "id": "L-8-乙巳-忌神透干",
+      "text": "8岁流年乙巳忌神透干"
+    },
+    {
+      "id": "L-8-乙巳-域-六亲",
+      "text": "8岁流年乙巳动六亲：时柱（子女）受刑、害；流年比劫星（手足）"
+    },
+    {
+      "id": "L-8-乙巳-域-学识与真相",
+      "text": "8岁流年乙巳动学识与真相：流年逢文昌"
+    },
+    {
+      "id": "L-8-乙巳-域-创造与传承",
+      "text": "8岁流年乙巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-9-丙午",
+      "text": "9岁流年丙午，顺逆分 -1.0"
+    },
+    {
+      "id": "L-9-丙午-冲日支",
+      "text": "9岁流年丙午冲日支"
+    },
+    {
+      "id": "L-9-丙午-忌神透干",
+      "text": "9岁流年丙午忌神透干"
+    },
+    {
+      "id": "L-9-丙午-域-感情",
+      "text": "9岁流年丙午动感情：日支（配偶宫）子受六冲；流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-10-丁未",
+      "text": "10岁流年丁未，顺逆分 0.0"
+    },
+    {
+      "id": "L-10-丁未-害日支",
+      "text": "10岁流年丁未害日支"
+    },
+    {
+      "id": "L-10-丁未-忌神透干",
+      "text": "10岁流年丁未忌神透干"
+    },
+    {
+      "id": "L-10-丁未-域-感情",
+      "text": "10岁流年丁未动感情：日支（配偶宫）子受害"
+    },
+    {
+      "id": "L-11-戊申",
+      "text": "11岁流年戊申，顺逆分 0.8"
+    },
+    {
+      "id": "L-11-戊申-冲时支",
+      "text": "11岁流年戊申冲时支"
+    },
+    {
+      "id": "L-11-戊申-申刑寅（时支）",
+      "text": "11岁流年戊申申刑寅（时支）"
+    },
+    {
+      "id": "L-11-戊申-用神到位",
+      "text": "11岁流年戊申用神到位"
+    },
+    {
+      "id": "L-11-戊申-域-六亲",
+      "text": "11岁流年戊申动六亲：时柱（子女）受六冲、刑；流年财星（父）"
+    },
+    {
+      "id": "L-11-戊申-域-创造与传承",
+      "text": "11岁流年戊申动创造与传承：时柱受六冲、刑"
+    },
+    {
+      "id": "L-12-己酉",
+      "text": "12岁流年己酉，顺逆分 0.5"
+    },
+    {
+      "id": "L-12-己酉-酉酉自刑（年支）",
+      "text": "12岁流年己酉酉酉自刑（年支）"
+    },
+    {
+      "id": "L-12-己酉-冲提纲",
+      "text": "12岁流年己酉冲提纲"
+    },
+    {
+      "id": "L-12-己酉-天克地冲月柱",
+      "text": "12岁流年己酉天克地冲月柱"
+    },
+    {
+      "id": "L-12-己酉-用神到位",
+      "text": "12岁流年己酉用神到位"
+    },
+    {
+      "id": "L-12-己酉-域-感情",
+      "text": "12岁流年己酉动感情：流年见亲密关系星正官；流年逢桃花"
+    },
+    {
+      "id": "L-12-己酉-域-六亲",
+      "text": "12岁流年己酉动六亲：年柱（祖上）受自刑；月柱（父母）受六冲、天克地冲；流年财星（父）"
+    },
+    {
+      "id": "L-12-己酉-域-事业与权力",
+      "text": "12岁流年己酉动事业与权力：冲提纲卯；流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-12-己酉-域-名誉与是非",
+      "text": "12岁流年己酉动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-12-己酉-域-迁徙与归属",
+      "text": "12岁流年己酉动迁徙与归属：冲月支卯"
+    },
+    {
+      "id": "L-13-庚戌",
+      "text": "13岁流年庚戌，顺逆分 0.7"
+    },
+    {
+      "id": "L-13-庚戌-害年支",
+      "text": "13岁流年庚戌害年支"
+    },
+    {
+      "id": "L-13-庚戌-合月支",
+      "text": "13岁流年庚戌合月支"
+    },
+    {
+      "id": "L-13-庚戌-岁运相冲",
+      "text": "13岁流年庚戌岁运相冲"
+    },
+    {
+      "id": "L-13-庚戌-用神到位",
+      "text": "13岁流年庚戌用神到位"
+    },
+    {
+      "id": "L-13-庚戌-域-身心",
+      "text": "13岁流年庚戌动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-13-庚戌-病候",
+      "text": "13岁流年庚戌身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年庚戌岁气：上太阳寒水、中金运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景燥年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-14-辛亥",
+      "text": "14岁流年辛亥，顺逆分 0.25"
+    },
+    {
+      "id": "L-14-辛亥-合时支",
+      "text": "14岁流年辛亥合时支"
+    },
+    {
+      "id": "L-14-辛亥-用神到位",
+      "text": "14岁流年辛亥用神到位"
+    },
+    {
+      "id": "L-14-辛亥-域-身心",
+      "text": "14岁流年辛亥动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-14-辛亥-域-名誉与是非",
+      "text": "14岁流年辛亥动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-14-辛亥-域-迁徙与归属",
+      "text": "14岁流年辛亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-14-辛亥-域-创造与传承",
+      "text": "14岁流年辛亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-14-辛亥-病候",
+      "text": "14岁流年辛亥身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年辛亥岁气：上厥阴风木、中水运不及、下少阳相火；疫季 终之气（温厉）；年景湿年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-15-壬子",
+      "text": "15岁流年壬子，顺逆分 -0.25"
+    },
+    {
+      "id": "L-15-壬子-子卯互刑（月支）",
+      "text": "15岁流年壬子子卯互刑（月支）"
+    },
+    {
+      "id": "L-15-壬子-换运",
+      "text": "15岁流年壬子换运"
+    },
+    {
+      "id": "L-15-壬子-域-六亲",
+      "text": "15岁流年壬子动六亲：月柱（父母）受刑；流年印星（母）"
+    },
+    {
+      "id": "L-15-壬子-域-事业与权力",
+      "text": "15岁流年壬子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-16-癸丑",
+      "text": "16岁流年癸丑，顺逆分 0.2"
+    },
+    {
+      "id": "L-16-癸丑-合日支",
+      "text": "16岁流年癸丑合日支"
+    },
+    {
+      "id": "L-16-癸丑-域-感情",
+      "text": "16岁流年癸丑动感情：日支（配偶宫）子受六合"
+    },
+    {
+      "id": "L-16-癸丑-域-身心",
+      "text": "16岁流年癸丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-16-癸丑-域-学识与真相",
+      "text": "16岁流年癸丑动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-16-癸丑-病候",
+      "text": "16岁流年癸丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年癸丑岁气：上太阴湿土、中火运不及、下太阳寒水；疫季 二之气（温厉大行）；年景寒年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-17-甲寅",
+      "text": "17岁流年甲寅，顺逆分 -1.0"
+    },
+    {
+      "id": "L-17-甲寅-忌神透干",
+      "text": "17岁流年甲寅忌神透干"
+    },
+    {
+      "id": "L-17-甲寅-域-迁徙与归属",
+      "text": "17岁流年甲寅动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-18-乙卯",
+      "text": "18岁流年乙卯，顺逆分 -1.0"
+    },
+    {
+      "id": "L-18-乙卯-冲年支",
+      "text": "18岁流年乙卯冲年支"
+    },
+    {
+      "id": "L-18-乙卯-卯子互刑（日支）",
+      "text": "18岁流年乙卯卯子互刑（日支）"
+    },
+    {
+      "id": "L-18-乙卯-忌神透干",
+      "text": "18岁流年乙卯忌神透干"
+    },
+    {
+      "id": "L-18-乙卯-域-感情",
+      "text": "18岁流年乙卯动感情：日支（配偶宫）子受刑"
+    },
+    {
+      "id": "L-18-乙卯-域-六亲",
+      "text": "18岁流年乙卯动六亲：年柱（祖上）受六冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-18-乙卯-域-名誉与是非",
+      "text": "18岁流年乙卯动名誉与是非：冲年支官杀"
+    },
+    {
+      "id": "L-18-乙卯-域-迁徙与归属",
+      "text": "18岁流年乙卯动迁徙与归属：冲年支酉"
+    },
+    {
+      "id": "L-19-丙辰",
+      "text": "19岁流年丙辰，顺逆分 -0.3"
+    },
+    {
+      "id": "L-19-丙辰-合年支",
+      "text": "19岁流年丙辰合年支"
+    },
+    {
+      "id": "L-19-丙辰-害月支",
+      "text": "19岁流年丙辰害月支"
+    },
+    {
+      "id": "L-19-丙辰-合绊用神",
+      "text": "19岁流年丙辰合绊用神"
+    },
+    {
+      "id": "L-19-丙辰-忌神透干",
+      "text": "19岁流年丙辰忌神透干"
+    },
+    {
+      "id": "L-19-丙辰-域-身心",
+      "text": "19岁流年丙辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-19-丙辰-病候",
+      "text": "19岁流年丙辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丙辰岁气：上太阳寒水、中水运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景寒年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-20-丁巳",
+      "text": "20岁流年丁巳，顺逆分 -1.0"
+    },
+    {
+      "id": "L-20-丁巳-寅刑巳（时支）",
+      "text": "20岁流年丁巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-20-丁巳-害时支",
+      "text": "20岁流年丁巳害时支"
+    },
+    {
+      "id": "L-20-丁巳-忌神透干",
+      "text": "20岁流年丁巳忌神透干"
+    },
+    {
+      "id": "L-20-丁巳-域-六亲",
+      "text": "20岁流年丁巳动六亲：时柱（子女）受刑、害"
+    },
+    {
+      "id": "L-20-丁巳-域-学识与真相",
+      "text": "20岁流年丁巳动学识与真相：流年逢文昌"
+    },
+    {
+      "id": "L-20-丁巳-域-创造与传承",
+      "text": "20岁流年丁巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-21-戊午",
+      "text": "21岁流年戊午，顺逆分 -0.7"
+    },
+    {
+      "id": "L-21-戊午-冲日支",
+      "text": "21岁流年戊午冲日支"
+    },
+    {
+      "id": "L-21-戊午-天克地冲日柱",
+      "text": "21岁流年戊午天克地冲日柱"
+    },
+    {
+      "id": "L-21-戊午-域-感情",
+      "text": "21岁流年戊午动感情：日支（配偶宫）子受六冲、天克地冲；流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-21-戊午-域-身心",
+      "text": "21岁流年戊午动身心：天克地冲日柱甲子（身）"
+    },
+    {
+      "id": "L-21-戊午-病候",
+      "text": "21岁流年戊午身心域被引动（天克地冲日柱甲子（身）），病候候选（默认不写，作者挑，一步大运最多一次）：流年戊午岁气：上少阴君火、中火运太过、下阳明燥金；无疫季之文；年景热年，阳明燥金克此人薄弱的肝，加重；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-22-己未",
+      "text": "22岁流年己未，顺逆分 0.5"
+    },
+    {
+      "id": "L-22-己未-害日支",
+      "text": "22岁流年己未害日支"
+    },
+    {
+      "id": "L-22-己未-域-感情",
+      "text": "22岁流年己未动感情：日支（配偶宫）子受害"
+    },
+    {
+      "id": "L-23-庚申",
+      "text": "23岁流年庚申，顺逆分 1.0"
+    },
+    {
+      "id": "L-23-庚申-冲时支",
+      "text": "23岁流年庚申冲时支"
+    },
+    {
+      "id": "L-23-庚申-申刑寅（时支）",
+      "text": "23岁流年庚申申刑寅（时支）"
+    },
+    {
+      "id": "L-23-庚申-天克地冲时柱",
+      "text": "23岁流年庚申天克地冲时柱"
+    },
+    {
+      "id": "L-23-庚申-用神到位",
+      "text": "23岁流年庚申用神到位"
+    },
+    {
+      "id": "L-23-庚申-域-六亲",
+      "text": "23岁流年庚申动六亲：时柱（子女）受六冲、刑、天克地冲"
+    },
+    {
+      "id": "L-23-庚申-域-创造与传承",
+      "text": "23岁流年庚申动创造与传承：时柱受六冲、刑、天克地冲"
+    },
+    {
+      "id": "L-24-辛酉",
+      "text": "24岁流年辛酉，顺逆分 0.7"
+    },
+    {
+      "id": "L-24-辛酉-酉酉自刑（年支）",
+      "text": "24岁流年辛酉酉酉自刑（年支）"
+    },
+    {
+      "id": "L-24-辛酉-冲提纲",
+      "text": "24岁流年辛酉冲提纲"
+    },
+    {
+      "id": "L-24-辛酉-用神到位",
+      "text": "24岁流年辛酉用神到位"
+    },
+    {
+      "id": "L-24-辛酉-域-感情",
+      "text": "24岁流年辛酉动感情：流年见亲密关系星正官；流年逢桃花"
+    },
+    {
+      "id": "L-24-辛酉-域-六亲",
+      "text": "24岁流年辛酉动六亲：年柱（祖上）受自刑；月柱（父母）受六冲"
+    },
+    {
+      "id": "L-24-辛酉-域-事业与权力",
+      "text": "24岁流年辛酉动事业与权力：冲提纲卯；流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-24-辛酉-域-名誉与是非",
+      "text": "24岁流年辛酉动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-24-辛酉-域-迁徙与归属",
+      "text": "24岁流年辛酉动迁徙与归属：冲月支卯"
+    },
+    {
+      "id": "L-25-壬戌",
+      "text": "25岁流年壬戌，顺逆分 0.2"
+    },
+    {
+      "id": "L-25-壬戌-害年支",
+      "text": "25岁流年壬戌害年支"
+    },
+    {
+      "id": "L-25-壬戌-合月支",
+      "text": "25岁流年壬戌合月支"
+    },
+    {
+      "id": "L-25-壬戌-换运",
+      "text": "25岁流年壬戌换运"
+    },
+    {
+      "id": "L-25-壬戌-域-身心",
+      "text": "25岁流年壬戌动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-25-壬戌-域-学识与真相",
+      "text": "25岁流年壬戌动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-25-壬戌-病候",
+      "text": "25岁流年壬戌身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年壬戌岁气：上太阳寒水、中木运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景风年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-26-癸亥",
+      "text": "26岁流年癸亥，顺逆分 -0.25"
+    },
+    {
+      "id": "L-26-癸亥-合时支",
+      "text": "26岁流年癸亥合时支"
+    },
+    {
+      "id": "L-26-癸亥-域-身心",
+      "text": "26岁流年癸亥动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-26-癸亥-域-迁徙与归属",
+      "text": "26岁流年癸亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-26-癸亥-域-创造与传承",
+      "text": "26岁流年癸亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-26-癸亥-病候",
+      "text": "26岁流年癸亥身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年癸亥岁气：上厥阴风木、中火运不及、下少阳相火；疫季 终之气（温厉）；年景寒年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-27-甲子",
+      "text": "27岁流年甲子，顺逆分 -0.75"
+    },
+    {
+      "id": "L-27-甲子-子卯互刑（月支）",
+      "text": "27岁流年甲子子卯互刑（月支）"
+    },
+    {
+      "id": "L-27-甲子-伏吟日柱",
+      "text": "27岁流年甲子伏吟日柱"
+    },
+    {
+      "id": "L-27-甲子-岁运相冲",
+      "text": "27岁流年甲子岁运相冲"
+    },
+    {
+      "id": "L-27-甲子-忌神透干",
+      "text": "27岁流年甲子忌神透干"
+    },
+    {
+      "id": "L-27-甲子-域-感情",
+      "text": "27岁流年甲子动感情：日支（配偶宫）子受伏吟"
+    },
+    {
+      "id": "L-27-甲子-域-六亲",
+      "text": "27岁流年甲子动六亲：月柱（父母）受刑；流年印星（母）；流年比劫星（手足）"
+    },
+    {
+      "id": "L-27-甲子-域-事业与权力",
+      "text": "27岁流年甲子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-28-乙丑",
+      "text": "28岁流年乙丑，顺逆分 0.0"
+    },
+    {
+      "id": "L-28-乙丑-合日支",
+      "text": "28岁流年乙丑合日支"
+    },
+    {
+      "id": "L-28-乙丑-忌神透干",
+      "text": "28岁流年乙丑忌神透干"
+    },
+    {
+      "id": "L-28-乙丑-域-感情",
+      "text": "28岁流年乙丑动感情：日支（配偶宫）子受六合"
+    },
+    {
+      "id": "L-28-乙丑-域-身心",
+      "text": "28岁流年乙丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-28-乙丑-病候",
+      "text": "28岁流年乙丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年乙丑岁气：上太阴湿土、中金运不及、下太阳寒水；疫季 二之气（温厉大行）；年景热年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-29-丙寅",
+      "text": "29岁流年丙寅，顺逆分 -1.0"
+    },
+    {
+      "id": "L-29-丙寅-伏吟时柱",
+      "text": "29岁流年丙寅伏吟时柱"
+    },
+    {
+      "id": "L-29-丙寅-忌神透干",
+      "text": "29岁流年丙寅忌神透干"
+    },
+    {
+      "id": "L-29-丙寅-域-迁徙与归属",
+      "text": "29岁流年丙寅动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-29-丙寅-域-创造与传承",
+      "text": "29岁流年丙寅动创造与传承：时柱受伏吟；流年见食伤"
+    },
+    {
+      "id": "L-30-丁卯",
+      "text": "30岁流年丁卯，顺逆分 -1.0"
+    },
+    {
+      "id": "L-30-丁卯-冲年支",
+      "text": "30岁流年丁卯冲年支"
+    },
+    {
+      "id": "L-30-丁卯-卯子互刑（日支）",
+      "text": "30岁流年丁卯卯子互刑（日支）"
+    },
+    {
+      "id": "L-30-丁卯-忌神透干",
+      "text": "30岁流年丁卯忌神透干"
+    },
+    {
+      "id": "L-30-丁卯-域-感情",
+      "text": "30岁流年丁卯动感情：日支（配偶宫）子受刑"
+    },
+    {
+      "id": "L-30-丁卯-域-六亲",
+      "text": "30岁流年丁卯动六亲：年柱（祖上）受六冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-30-丁卯-域-名誉与是非",
+      "text": "30岁流年丁卯动名誉与是非：冲年支官杀"
+    },
+    {
+      "id": "L-30-丁卯-域-迁徙与归属",
+      "text": "30岁流年丁卯动迁徙与归属：冲年支酉"
+    },
+    {
+      "id": "L-31-戊辰",
+      "text": "31岁流年戊辰，顺逆分 0.3"
+    },
+    {
+      "id": "L-31-戊辰-合年支",
+      "text": "31岁流年戊辰合年支"
+    },
+    {
+      "id": "L-31-戊辰-害月支",
+      "text": "31岁流年戊辰害月支"
+    },
+    {
+      "id": "L-31-戊辰-合绊用神",
+      "text": "31岁流年戊辰合绊用神"
+    },
+    {
+      "id": "L-31-戊辰-域-身心",
+      "text": "31岁流年戊辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-31-戊辰-病候",
+      "text": "31岁流年戊辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年戊辰岁气：上太阳寒水、中火运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景热年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-32-己巳",
+      "text": "32岁流年己巳，顺逆分 -0.4"
+    },
+    {
+      "id": "L-32-己巳-寅刑巳（时支）",
+      "text": "32岁流年己巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-32-己巳-害时支",
+      "text": "32岁流年己巳害时支"
+    },
+    {
+      "id": "L-32-己巳-域-六亲",
+      "text": "32岁流年己巳动六亲：时柱（子女）受刑、害；流年财星（父）"
+    },
+    {
+      "id": "L-32-己巳-域-学识与真相",
+      "text": "32岁流年己巳动学识与真相：流年财坏命局透印；流年逢文昌"
+    },
+    {
+      "id": "L-32-己巳-域-创造与传承",
+      "text": "32岁流年己巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-33-庚午",
+      "text": "33岁流年庚午，顺逆分 -0.5"
+    },
+    {
+      "id": "L-33-庚午-冲日支",
+      "text": "33岁流年庚午冲日支"
+    },
+    {
+      "id": "L-33-庚午-天克地冲日柱",
+      "text": "33岁流年庚午天克地冲日柱"
+    },
+    {
+      "id": "L-33-庚午-用神到位",
+      "text": "33岁流年庚午用神到位"
+    },
+    {
+      "id": "L-33-庚午-域-感情",
+      "text": "33岁流年庚午动感情：日支（配偶宫）子受六冲、天克地冲；流年见亲密关系星七杀；流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-33-庚午-域-身心",
+      "text": "33岁流年庚午动身心：天克地冲日柱甲子（身）"
+    },
+    {
+      "id": "L-33-庚午-病候",
+      "text": "33岁流年庚午身心域被引动（天克地冲日柱甲子（身）），病候候选（默认不写，作者挑，一步大运最多一次）：流年庚午岁气：上少阴君火、中金运太过、下阳明燥金；无疫季之文；年景燥年，阳明燥金克此人薄弱的肝，加重；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-34-辛未",
+      "text": "34岁流年辛未，顺逆分 0.7"
+    },
+    {
+      "id": "L-34-辛未-害日支",
+      "text": "34岁流年辛未害日支"
+    },
+    {
+      "id": "L-34-辛未-用神到位",
+      "text": "34岁流年辛未用神到位"
+    },
+    {
+      "id": "L-34-辛未-域-感情",
+      "text": "34岁流年辛未动感情：日支（配偶宫）子受害；流年见亲密关系星正官"
+    },
+    {
+      "id": "L-34-辛未-域-名誉与是非",
+      "text": "34岁流年辛未动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-35-壬申",
+      "text": "35岁流年壬申，顺逆分 0.5"
+    },
+    {
+      "id": "L-35-壬申-冲时支",
+      "text": "35岁流年壬申冲时支"
+    },
+    {
+      "id": "L-35-壬申-申刑寅（时支）",
+      "text": "35岁流年壬申申刑寅（时支）"
+    },
+    {
+      "id": "L-35-壬申-天克地冲时柱",
+      "text": "35岁流年壬申天克地冲时柱"
+    },
+    {
+      "id": "L-35-壬申-换运",
+      "text": "35岁流年壬申换运"
+    },
+    {
+      "id": "L-35-壬申-用神到位",
+      "text": "35岁流年壬申用神到位"
+    },
+    {
+      "id": "L-35-壬申-域-六亲",
+      "text": "35岁流年壬申动六亲：时柱（子女）受六冲、刑、天克地冲；流年印星（母）"
+    },
+    {
+      "id": "L-35-壬申-域-创造与传承",
+      "text": "35岁流年壬申动创造与传承：时柱受六冲、刑、天克地冲"
+    },
+    {
+      "id": "L-36-癸酉",
+      "text": "36岁流年癸酉，顺逆分 0.2"
+    },
+    {
+      "id": "L-36-癸酉-酉酉自刑（年支）",
+      "text": "36岁流年癸酉酉酉自刑（年支）"
+    },
+    {
+      "id": "L-36-癸酉-冲提纲",
+      "text": "36岁流年癸酉冲提纲"
+    },
+    {
+      "id": "L-36-癸酉-用神到位",
+      "text": "36岁流年癸酉用神到位"
+    },
+    {
+      "id": "L-36-癸酉-域-感情",
+      "text": "36岁流年癸酉动感情：流年见亲密关系星正官；流年逢桃花"
+    },
+    {
+      "id": "L-36-癸酉-域-六亲",
+      "text": "36岁流年癸酉动六亲：年柱（祖上）受自刑；月柱（父母）受六冲；流年印星（母）"
+    },
+    {
+      "id": "L-36-癸酉-域-事业与权力",
+      "text": "36岁流年癸酉动事业与权力：冲提纲卯；流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-36-癸酉-域-名誉与是非",
+      "text": "36岁流年癸酉动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-36-癸酉-域-迁徙与归属",
+      "text": "36岁流年癸酉动迁徙与归属：冲月支卯"
+    },
+    {
+      "id": "L-37-甲戌",
+      "text": "37岁流年甲戌，顺逆分 0.0"
+    },
+    {
+      "id": "L-37-甲戌-害年支",
+      "text": "37岁流年甲戌害年支"
+    },
+    {
+      "id": "L-37-甲戌-合月支",
+      "text": "37岁流年甲戌合月支"
+    },
+    {
+      "id": "L-37-甲戌-忌神透干",
+      "text": "37岁流年甲戌忌神透干"
+    },
+    {
+      "id": "L-37-甲戌-域-身心",
+      "text": "37岁流年甲戌动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-37-甲戌-病候",
+      "text": "37岁流年甲戌身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年甲戌岁气：上太阳寒水、中土运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景湿年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-38-乙亥",
+      "text": "38岁流年乙亥，顺逆分 -0.55"
+    },
+    {
+      "id": "L-38-乙亥-合时支",
+      "text": "38岁流年乙亥合时支"
+    },
+    {
+      "id": "L-38-乙亥-忌神透干",
+      "text": "38岁流年乙亥忌神透干"
+    },
+    {
+      "id": "L-38-乙亥-域-身心",
+      "text": "38岁流年乙亥动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-38-乙亥-域-迁徙与归属",
+      "text": "38岁流年乙亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-38-乙亥-域-创造与传承",
+      "text": "38岁流年乙亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-38-乙亥-病候",
+      "text": "38岁流年乙亥身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年乙亥岁气：上厥阴风木、中金运不及、下少阳相火；疫季 终之气（温厉）；年景热年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-39-丙子",
+      "text": "39岁流年丙子，顺逆分 -0.55"
+    },
+    {
+      "id": "L-39-丙子-子卯互刑（月支）",
+      "text": "39岁流年丙子子卯互刑（月支）"
+    },
+    {
+      "id": "L-39-丙子-忌神透干",
+      "text": "39岁流年丙子忌神透干"
+    },
+    {
+      "id": "L-39-丙子-域-六亲",
+      "text": "39岁流年丙子动六亲：月柱（父母）受刑；流年印星（母）"
+    },
+    {
+      "id": "L-39-丙子-域-事业与权力",
+      "text": "39岁流年丙子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-40-丁丑",
+      "text": "40岁流年丁丑，顺逆分 0.0"
+    },
+    {
+      "id": "L-40-丁丑-合日支",
+      "text": "40岁流年丁丑合日支"
+    },
+    {
+      "id": "L-40-丁丑-岁运相冲",
+      "text": "40岁流年丁丑岁运相冲"
+    },
+    {
+      "id": "L-40-丁丑-忌神透干",
+      "text": "40岁流年丁丑忌神透干"
+    },
+    {
+      "id": "L-40-丁丑-域-感情",
+      "text": "40岁流年丁丑动感情：日支（配偶宫）子受六合"
+    },
+    {
+      "id": "L-40-丁丑-域-身心",
+      "text": "40岁流年丁丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-40-丁丑-病候",
+      "text": "40岁流年丁丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丁丑岁气：上太阴湿土、中木运不及、下太阳寒水；疫季 二之气（温厉大行）；年景燥年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-41-戊寅",
+      "text": "41岁流年戊寅，顺逆分 -0.4"
+    },
+    {
+      "id": "L-41-戊寅-域-迁徙与归属",
+      "text": "41岁流年戊寅动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-42-己卯",
+      "text": "42岁流年己卯，顺逆分 -0.4"
+    },
+    {
+      "id": "L-42-己卯-冲年支",
+      "text": "42岁流年己卯冲年支"
+    },
+    {
+      "id": "L-42-己卯-卯子互刑（日支）",
+      "text": "42岁流年己卯卯子互刑（日支）"
+    },
+    {
+      "id": "L-42-己卯-域-感情",
+      "text": "42岁流年己卯动感情：日支（配偶宫）子受刑"
+    },
+    {
+      "id": "L-42-己卯-域-六亲",
+      "text": "42岁流年己卯动六亲：年柱（祖上）受六冲；流年财星（父）；流年比劫星（手足）"
+    },
+    {
+      "id": "L-42-己卯-域-名誉与是非",
+      "text": "42岁流年己卯动名誉与是非：冲年支官杀"
+    },
+    {
+      "id": "L-42-己卯-域-迁徙与归属",
+      "text": "42岁流年己卯动迁徙与归属：冲年支酉"
+    },
+    {
+      "id": "L-43-庚辰",
+      "text": "43岁流年庚辰，顺逆分 0.5"
+    },
+    {
+      "id": "L-43-庚辰-合年支",
+      "text": "43岁流年庚辰合年支"
+    },
+    {
+      "id": "L-43-庚辰-害月支",
+      "text": "43岁流年庚辰害月支"
+    },
+    {
+      "id": "L-43-庚辰-合绊用神",
+      "text": "43岁流年庚辰合绊用神"
+    },
+    {
+      "id": "L-43-庚辰-用神到位",
+      "text": "43岁流年庚辰用神到位"
+    },
+    {
+      "id": "L-43-庚辰-域-身心",
+      "text": "43岁流年庚辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-43-庚辰-病候",
+      "text": "43岁流年庚辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年庚辰岁气：上太阳寒水、中金运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景燥年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-44-辛巳",
+      "text": "44岁流年辛巳，顺逆分 -0.2"
+    },
+    {
+      "id": "L-44-辛巳-寅刑巳（时支）",
+      "text": "44岁流年辛巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-44-辛巳-害时支",
+      "text": "44岁流年辛巳害时支"
+    },
+    {
+      "id": "L-44-辛巳-用神到位",
+      "text": "44岁流年辛巳用神到位"
+    },
+    {
+      "id": "L-44-辛巳-域-六亲",
+      "text": "44岁流年辛巳动六亲：时柱（子女）受刑、害"
+    },
+    {
+      "id": "L-44-辛巳-域-名誉与是非",
+      "text": "44岁流年辛巳动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-44-辛巳-域-学识与真相",
+      "text": "44岁流年辛巳动学识与真相：流年逢文昌"
+    },
+    {
+      "id": "L-44-辛巳-域-创造与传承",
+      "text": "44岁流年辛巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-45-壬午",
+      "text": "45岁流年壬午，顺逆分 -1.0"
+    },
+    {
+      "id": "L-45-壬午-冲日支",
+      "text": "45岁流年壬午冲日支"
+    },
+    {
+      "id": "L-45-壬午-换运",
+      "text": "45岁流年壬午换运"
+    },
+    {
+      "id": "L-45-壬午-域-感情",
+      "text": "45岁流年壬午动感情：日支（配偶宫）子受六冲；流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-46-癸未",
+      "text": "46岁流年癸未，顺逆分 0.2"
+    },
+    {
+      "id": "L-46-癸未-害日支",
+      "text": "46岁流年癸未害日支"
+    },
+    {
+      "id": "L-46-癸未-域-感情",
+      "text": "46岁流年癸未动感情：日支（配偶宫）子受害"
+    },
+    {
+      "id": "L-46-癸未-域-学识与真相",
+      "text": "46岁流年癸未动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-47-甲申",
+      "text": "47岁流年甲申，顺逆分 0.2"
+    },
+    {
+      "id": "L-47-甲申-冲时支",
+      "text": "47岁流年甲申冲时支"
+    },
+    {
+      "id": "L-47-甲申-申刑寅（时支）",
+      "text": "47岁流年甲申申刑寅（时支）"
+    },
+    {
+      "id": "L-47-甲申-忌神透干",
+      "text": "47岁流年甲申忌神透干"
+    },
+    {
+      "id": "L-47-甲申-用神到位",
+      "text": "47岁流年甲申用神到位"
+    },
+    {
+      "id": "L-47-甲申-域-六亲",
+      "text": "47岁流年甲申动六亲：时柱（子女）受六冲、刑；流年比劫星（手足）"
+    },
+    {
+      "id": "L-47-甲申-域-创造与传承",
+      "text": "47岁流年甲申动创造与传承：时柱受六冲、刑"
+    },
+    {
+      "id": "L-48-乙酉",
+      "text": "48岁流年乙酉，顺逆分 0.0"
+    },
+    {
+      "id": "L-48-乙酉-酉酉自刑（年支）",
+      "text": "48岁流年乙酉酉酉自刑（年支）"
+    },
+    {
+      "id": "L-48-乙酉-冲提纲",
+      "text": "48岁流年乙酉冲提纲"
+    },
+    {
+      "id": "L-48-乙酉-忌神透干",
+      "text": "48岁流年乙酉忌神透干"
+    },
+    {
+      "id": "L-48-乙酉-用神到位",
+      "text": "48岁流年乙酉用神到位"
+    },
+    {
+      "id": "L-48-乙酉-域-感情",
+      "text": "48岁流年乙酉动感情：流年见亲密关系星正官；流年逢桃花"
+    },
+    {
+      "id": "L-48-乙酉-域-六亲",
+      "text": "48岁流年乙酉动六亲：年柱（祖上）受自刑；月柱（父母）受六冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-48-乙酉-域-事业与权力",
+      "text": "48岁流年乙酉动事业与权力：冲提纲卯；流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-48-乙酉-域-名誉与是非",
+      "text": "48岁流年乙酉动名誉与是非：伤官见官"
+    },
+    {
+      "id": "L-48-乙酉-域-迁徙与归属",
+      "text": "48岁流年乙酉动迁徙与归属：冲月支卯"
+    },
+    {
+      "id": "L-49-丙戌",
+      "text": "49岁流年丙戌，顺逆分 0.0"
+    },
+    {
+      "id": "L-49-丙戌-害年支",
+      "text": "49岁流年丙戌害年支"
+    },
+    {
+      "id": "L-49-丙戌-合月支",
+      "text": "49岁流年丙戌合月支"
+    },
+    {
+      "id": "L-49-丙戌-忌神透干",
+      "text": "49岁流年丙戌忌神透干"
+    },
+    {
+      "id": "L-49-丙戌-域-身心",
+      "text": "49岁流年丙戌动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-49-丙戌-病候",
+      "text": "49岁流年丙戌身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丙戌岁气：上太阳寒水、中水运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景寒年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-50-丁亥",
+      "text": "50岁流年丁亥，顺逆分 -0.55"
+    },
+    {
+      "id": "L-50-丁亥-合时支",
+      "text": "50岁流年丁亥合时支"
+    },
+    {
+      "id": "L-50-丁亥-忌神透干",
+      "text": "50岁流年丁亥忌神透干"
+    },
+    {
+      "id": "L-50-丁亥-域-身心",
+      "text": "50岁流年丁亥动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-50-丁亥-域-迁徙与归属",
+      "text": "50岁流年丁亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-50-丁亥-域-创造与传承",
+      "text": "50岁流年丁亥动创造与传承：时柱受六合；流年见食伤"
+    },
+    {
+      "id": "L-50-丁亥-病候",
+      "text": "50岁流年丁亥身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丁亥岁气：上厥阴风木、中木运不及、下少阳相火；疫季 终之气（温厉）；年景燥年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-51-戊子",
+      "text": "51岁流年戊子，顺逆分 0.0"
+    },
+    {
+      "id": "L-51-戊子-子卯互刑（月支）",
+      "text": "51岁流年戊子子卯互刑（月支）"
+    },
+    {
+      "id": "L-51-戊子-域-六亲",
+      "text": "51岁流年戊子动六亲：月柱（父母）受刑；流年财星（父）；流年印星（母）"
+    },
+    {
+      "id": "L-51-戊子-域-事业与权力",
+      "text": "51岁流年戊子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-51-戊子-域-学识与真相",
+      "text": "51岁流年戊子动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-52-己丑",
+      "text": "52岁流年己丑，顺逆分 0.5"
+    },
+    {
+      "id": "L-52-己丑-合日支",
+      "text": "52岁流年己丑合日支"
+    },
+    {
+      "id": "L-52-己丑-域-感情",
+      "text": "52岁流年己丑动感情：日支（配偶宫）子受六合"
+    },
+    {
+      "id": "L-52-己丑-域-身心",
+      "text": "52岁流年己丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-52-己丑-病候",
+      "text": "52岁流年己丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年己丑岁气：上太阴湿土、中土运不及、下太阳寒水；疫季 二之气（温厉大行）；年景风年；此人显档（岁运与为纲之气不相得（天克运），不相得则病；不及者徐，病持），薄弱处肝，取重相：病 一阵冷一阵热地烧上来，身上起疹长疮，脓头一个接一个，咳着流清涕，筋抽得腿弯不直。；情志往惊恐的方向垮：被人猛拍一下肩膀就瘫坐在地，手抖得端不住碗，说话结巴，从此拉着窗帘见生人就躲。"
+    },
+    {
+      "id": "L-53-庚寅",
+      "text": "53岁流年庚寅，顺逆分 -0.2"
+    },
+    {
+      "id": "L-53-庚寅-岁运相冲",
+      "text": "53岁流年庚寅岁运相冲"
+    },
+    {
+      "id": "L-53-庚寅-用神到位",
+      "text": "53岁流年庚寅用神到位"
+    },
+    {
+      "id": "L-53-庚寅-域-迁徙与归属",
+      "text": "53岁流年庚寅动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-54-辛卯",
+      "text": "54岁流年辛卯，顺逆分 -0.2"
+    },
+    {
+      "id": "L-54-辛卯-冲年支",
+      "text": "54岁流年辛卯冲年支"
+    },
+    {
+      "id": "L-54-辛卯-天克地冲年柱",
+      "text": "54岁流年辛卯天克地冲年柱"
+    },
+    {
+      "id": "L-54-辛卯-卯子互刑（日支）",
+      "text": "54岁流年辛卯卯子互刑（日支）"
+    },
+    {
+      "id": "L-54-辛卯-用神到位",
+      "text": "54岁流年辛卯用神到位"
+    },
+    {
+      "id": "L-54-辛卯-域-感情",
+      "text": "54岁流年辛卯动感情：日支（配偶宫）子受刑；流年见亲密关系星正官"
+    },
+    {
+      "id": "L-54-辛卯-域-六亲",
+      "text": "54岁流年辛卯动六亲：年柱（祖上）受六冲、天克地冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-54-辛卯-域-名誉与是非",
+      "text": "54岁流年辛卯动名誉与是非：伤官见官；冲年支官杀"
+    },
+    {
+      "id": "L-54-辛卯-域-迁徙与归属",
+      "text": "54岁流年辛卯动迁徙与归属：冲年支酉"
+    },
+    {
+      "id": "D-1-甲辰-基调",
+      "text": "第1步大运甲辰（5至15岁）基调逆，顺逆分 -0.3"
+    },
+    {
+      "id": "D-1-甲辰-干-比肩",
+      "text": "第1步大运甲辰（5至15岁）天干甲为比肩，示人的偏移"
+    },
+    {
+      "id": "D-1-甲辰-支-偏财",
+      "text": "第1步大运甲辰（5至15岁）地支辰本气为偏财，底色"
+    },
+    {
+      "id": "D-1-甲辰-干-忌",
+      "text": "第1步大运甲辰（5至15岁）天干甲木为忌"
+    },
+    {
+      "id": "D-1-甲辰-支-喜",
+      "text": "第1步大运甲辰（5至15岁）地支辰土为喜"
+    },
+    {
+      "id": "D-1-甲辰-档-弱逆",
+      "text": "第1步大运甲辰（5至15岁）顺逆分 -0.3，档位弱逆"
+    },
+    {
+      "id": "D-1-甲辰-长生-衰",
+      "text": "第1步大运甲辰（5至15岁）日主甲在运支辰为衰"
+    },
+    {
+      "id": "D-1-甲辰-合年支",
+      "text": "第1步大运甲辰（5至15岁）合年支"
+    },
+    {
+      "id": "D-1-甲辰-害月支",
+      "text": "第1步大运甲辰（5至15岁）害月支"
+    },
+    {
+      "id": "D-1-甲辰-合绊用神",
+      "text": "第1步大运甲辰（5至15岁）合绊用神"
+    },
+    {
+      "id": "D-1-甲辰-煞-华盖",
+      "text": "第1步大运甲辰（5至15岁）运柱逢华盖"
+    },
+    {
+      "id": "D-1-甲辰-叠-比肩",
+      "text": "第1步大运甲辰（5至15岁）比肩命局已有，放大"
+    },
+    {
+      "id": "D-1-甲辰-新-偏财",
+      "text": "第1步大运甲辰（5至15岁）偏财命局所无，新来"
+    },
+    {
+      "id": "D-1-甲辰-域-六亲",
+      "text": "第1步大运甲辰（5至15岁）最常动的领域六亲（信号权重 15）"
+    },
+    {
+      "id": "D-1-甲辰-域-感情",
+      "text": "第1步大运甲辰（5至15岁）最常动的领域感情（信号权重 13）"
+    },
+    {
+      "id": "D-2-乙巳-基调",
+      "text": "第2步大运乙巳（15至25岁）基调逆，顺逆分 -1.0"
+    },
+    {
+      "id": "D-2-乙巳-干-劫财",
+      "text": "第2步大运乙巳（15至25岁）天干乙为劫财，示人的偏移"
+    },
+    {
+      "id": "D-2-乙巳-支-食神",
+      "text": "第2步大运乙巳（15至25岁）地支巳本气为食神，底色"
+    },
+    {
+      "id": "D-2-乙巳-干-忌",
+      "text": "第2步大运乙巳（15至25岁）天干乙木为忌"
+    },
+    {
+      "id": "D-2-乙巳-支-忌",
+      "text": "第2步大运乙巳（15至25岁）地支巳火为忌"
+    },
+    {
+      "id": "D-2-乙巳-档-强逆",
+      "text": "第2步大运乙巳（15至25岁）顺逆分 -1.0，档位强逆"
+    },
+    {
+      "id": "D-2-乙巳-长生-病",
+      "text": "第2步大运乙巳（15至25岁）日主甲在运支巳为病"
+    },
+    {
+      "id": "D-2-乙巳-寅刑巳（时支）",
+      "text": "第2步大运乙巳（15至25岁）寅刑巳（时支）"
+    },
+    {
+      "id": "D-2-乙巳-害时支",
+      "text": "第2步大运乙巳（15至25岁）害时支"
+    },
+    {
+      "id": "D-2-乙巳-煞-文昌",
+      "text": "第2步大运乙巳（15至25岁）运柱逢文昌"
+    },
+    {
+      "id": "D-2-乙巳-叠-劫财",
+      "text": "第2步大运乙巳（15至25岁）劫财命局已有，放大"
+    },
+    {
+      "id": "D-2-乙巳-叠-食神",
+      "text": "第2步大运乙巳（15至25岁）食神命局已有，放大"
+    },
+    {
+      "id": "D-2-乙巳-域-感情",
+      "text": "第2步大运乙巳（15至25岁）最常动的领域感情（信号权重 15）"
+    },
+    {
+      "id": "D-2-乙巳-域-六亲",
+      "text": "第2步大运乙巳（15至25岁）最常动的领域六亲（信号权重 14）"
+    },
+    {
+      "id": "D-3-丙午-基调",
+      "text": "第3步大运丙午（25至35岁）基调逆，顺逆分 -1.0"
+    },
+    {
+      "id": "D-3-丙午-干-食神",
+      "text": "第3步大运丙午（25至35岁）天干丙为食神，示人的偏移"
+    },
+    {
+      "id": "D-3-丙午-支-伤官",
+      "text": "第3步大运丙午（25至35岁）地支午本气为伤官，底色"
+    },
+    {
+      "id": "D-3-丙午-干-忌",
+      "text": "第3步大运丙午（25至35岁）天干丙火为忌"
+    },
+    {
+      "id": "D-3-丙午-支-忌",
+      "text": "第3步大运丙午（25至35岁）地支午火为忌"
+    },
+    {
+      "id": "D-3-丙午-档-强逆",
+      "text": "第3步大运丙午（25至35岁）顺逆分 -1.0，档位强逆"
+    },
+    {
+      "id": "D-3-丙午-长生-死",
+      "text": "第3步大运丙午（25至35岁）日主甲在运支午为死"
+    },
+    {
+      "id": "D-3-丙午-冲日支",
+      "text": "第3步大运丙午（25至35岁）冲日支"
+    },
+    {
+      "id": "D-3-丙午-煞-桃花",
+      "text": "第3步大运丙午（25至35岁）运柱逢桃花"
+    },
+    {
+      "id": "D-3-丙午-煞-红艳",
+      "text": "第3步大运丙午（25至35岁）运柱逢红艳"
+    },
+    {
+      "id": "D-3-丙午-叠-食神",
+      "text": "第3步大运丙午（25至35岁）食神命局已有，放大"
+    },
+    {
+      "id": "D-3-丙午-叠-伤官",
+      "text": "第3步大运丙午（25至35岁）伤官命局已有，放大"
+    },
+    {
+      "id": "D-3-丙午-域-感情",
+      "text": "第3步大运丙午（25至35岁）最常动的领域感情（信号权重 16）"
+    },
+    {
+      "id": "D-3-丙午-域-六亲",
+      "text": "第3步大运丙午（25至35岁）最常动的领域六亲（信号权重 10）"
+    },
+    {
+      "id": "D-4-丁未-基调",
+      "text": "第4步大运丁未（35至45岁）基调平，顺逆分 0.0"
+    },
+    {
+      "id": "D-4-丁未-干-伤官",
+      "text": "第4步大运丁未（35至45岁）天干丁为伤官，示人的偏移"
+    },
+    {
+      "id": "D-4-丁未-支-正财",
+      "text": "第4步大运丁未（35至45岁）地支未本气为正财，底色"
+    },
+    {
+      "id": "D-4-丁未-干-忌",
+      "text": "第4步大运丁未（35至45岁）天干丁火为忌"
+    },
+    {
+      "id": "D-4-丁未-支-喜",
+      "text": "第4步大运丁未（35至45岁）地支未土为喜"
+    },
+    {
+      "id": "D-4-丁未-档-平",
+      "text": "第4步大运丁未（35至45岁）顺逆分 0.0，档位平"
+    },
+    {
+      "id": "D-4-丁未-长生-墓",
+      "text": "第4步大运丁未（35至45岁）日主甲在运支未为墓"
+    },
+    {
+      "id": "D-4-丁未-害日支",
+      "text": "第4步大运丁未（35至45岁）害日支"
+    },
+    {
+      "id": "D-4-丁未-煞-天乙贵人",
+      "text": "第4步大运丁未（35至45岁）运柱逢天乙贵人"
+    },
+    {
+      "id": "D-4-丁未-叠-伤官",
+      "text": "第4步大运丁未（35至45岁）伤官命局已有，放大"
+    },
+    {
+      "id": "D-4-丁未-新-正财",
+      "text": "第4步大运丁未（35至45岁）正财命局所无，新来"
+    },
+    {
+      "id": "D-4-丁未-域-六亲",
+      "text": "第4步大运丁未（35至45岁）最常动的领域六亲（信号权重 17）"
+    },
+    {
+      "id": "D-4-丁未-域-身心",
+      "text": "第4步大运丁未（35至45岁）最常动的领域身心（信号权重 8）"
+    },
+    {
+      "id": "D-5-戊申-基调",
+      "text": "第5步大运戊申（45至55岁）基调顺，顺逆分 0.8"
+    },
+    {
+      "id": "D-5-戊申-干-偏财",
+      "text": "第5步大运戊申（45至55岁）天干戊为偏财，示人的偏移"
+    },
+    {
+      "id": "D-5-戊申-支-七杀",
+      "text": "第5步大运戊申（45至55岁）地支申本气为七杀，底色"
+    },
+    {
+      "id": "D-5-戊申-干-喜",
+      "text": "第5步大运戊申（45至55岁）天干戊土为喜"
+    },
+    {
+      "id": "D-5-戊申-支-用",
+      "text": "第5步大运戊申（45至55岁）地支申金为用"
+    },
+    {
+      "id": "D-5-戊申-档-强顺",
+      "text": "第5步大运戊申（45至55岁）顺逆分 0.8，档位强顺"
+    },
+    {
+      "id": "D-5-戊申-长生-绝",
+      "text": "第5步大运戊申（45至55岁）日主甲在运支申为绝"
+    },
+    {
+      "id": "D-5-戊申-冲时支",
+      "text": "第5步大运戊申（45至55岁）冲时支"
+    },
+    {
+      "id": "D-5-戊申-申刑寅（时支）",
+      "text": "第5步大运戊申（45至55岁）申刑寅（时支）"
+    },
+    {
+      "id": "D-5-戊申-新-偏财",
+      "text": "第5步大运戊申（45至55岁）偏财命局所无，新来"
+    },
+    {
+      "id": "D-5-戊申-近-七杀",
+      "text": "第5步大运戊申（45至55岁）七杀命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-5-戊申-域-感情",
+      "text": "第5步大运戊申（45至55岁）最常动的领域感情（信号权重 16）"
+    },
+    {
+      "id": "D-5-戊申-域-六亲",
+      "text": "第5步大运戊申（45至55岁）最常动的领域六亲（信号权重 15）"
+    }
+  ]
+}

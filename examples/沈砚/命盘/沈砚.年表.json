@@ -1,0 +1,6402 @@
+{
+  "schema": "bazi-timeline/v1",
+  "algorithm": "bazi-writing timeline v1（DESIGN 10 第 1–2 条）",
+  "name": "沈砚",
+  "window": [
+    0,
+    60
+  ],
+  "coverage": [
+    0,
+    62
+  ],
+  "yong": {
+    "element": "土",
+    "family": "财"
+  },
+  "stages": [
+    {
+      "sequence": 1,
+      "pillar": "癸酉",
+      "ages": [
+        3,
+        13
+      ],
+      "score": -0.25,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "七杀"
+      },
+      "elements": {
+        "stem": "水",
+        "branch": "金"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "喜"
+      },
+      "band": "弱逆",
+      "mechanisms": [
+        "合绊用神"
+      ],
+      "changsheng": "绝",
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "overlay": {
+        "偏印": "近",
+        "七杀": "近"
+      },
+      "domains": [
+        {
+          "domain": "六亲",
+          "weight": 14
+        },
+        {
+          "domain": "感情",
+          "weight": 10
+        }
+      ],
+      "candidates": [
+        3,
+        6
+      ]
+    },
+    {
+      "sequence": 2,
+      "pillar": "甲戌",
+      "ages": [
+        13,
+        23
+      ],
+      "score": 0.0,
+      "tone": "平",
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正财"
+      },
+      "elements": {
+        "stem": "木",
+        "branch": "土"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "用"
+      },
+      "band": "平",
+      "mechanisms": [],
+      "changsheng": "墓",
+      "shensha": [],
+      "overlay": {
+        "劫财": "叠",
+        "正财": "叠"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 13
+        },
+        {
+          "domain": "六亲",
+          "weight": 13
+        }
+      ],
+      "candidates": [
+        15,
+        18
+      ]
+    },
+    {
+      "sequence": 3,
+      "pillar": "乙亥",
+      "ages": [
+        23,
+        33
+      ],
+      "score": -0.8,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支亥本气水为忌",
+          "value": -0.3
+        },
+        {
+          "term": "亥冲日支巳",
+          "value": -0.3
+        }
+      ],
+      "flags": [
+        "冲日支"
+      ],
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "正印"
+      },
+      "elements": {
+        "stem": "木",
+        "branch": "水"
+      },
+      "roles": {
+        "stem": "忌",
+        "branch": "忌"
+      },
+      "band": "强逆",
+      "mechanisms": [
+        "害年支",
+        "害月支",
+        "冲日支",
+        "合时支"
+      ],
+      "changsheng": "死",
+      "shensha": [
+        "文昌",
+        "驿马"
+      ],
+      "overlay": {
+        "比肩": "近",
+        "正印": "叠"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 10
+        },
+        {
+          "domain": "身心",
+          "weight": 10
+        }
+      ],
+      "candidates": [
+        27,
+        30
+      ]
+    },
+    {
+      "sequence": 4,
+      "pillar": "丙子",
+      "ages": [
+        33,
+        43
+      ],
+      "score": -0.2,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支子本气水为忌",
+          "value": -0.3
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "偏印"
+      },
+      "elements": {
+        "stem": "火",
+        "branch": "水"
+      },
+      "roles": {
+        "stem": "喜",
+        "branch": "忌"
+      },
+      "band": "弱逆",
+      "mechanisms": [],
+      "changsheng": "病",
+      "shensha": [
+        "天乙贵人",
+        "将星"
+      ],
+      "overlay": {
+        "伤官": "叠",
+        "偏印": "近"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 13
+        },
+        {
+          "domain": "六亲",
+          "weight": 13
+        }
+      ],
+      "candidates": [
+        39,
+        42
+      ]
+    },
+    {
+      "sequence": 5,
+      "pillar": "丁丑",
+      "ages": [
+        43,
+        53
+      ],
+      "score": 0.4,
+      "tone": "顺",
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.3
+        }
+      ],
+      "flags": [],
+      "tenGods": {
+        "stem": "食神",
+        "branch": "偏财"
+      },
+      "elements": {
+        "stem": "火",
+        "branch": "土"
+      },
+      "roles": {
+        "stem": "喜",
+        "branch": "用"
+      },
+      "band": "弱顺",
+      "mechanisms": [],
+      "changsheng": "衰",
+      "shensha": [
+        "华盖"
+      ],
+      "overlay": {
+        "食神": "近",
+        "偏财": "近"
+      },
+      "domains": [
+        {
+          "domain": "感情",
+          "weight": 10
+        },
+        {
+          "domain": "六亲",
+          "weight": 10
+        }
+      ],
+      "candidates": [
+        48,
+        51
+      ]
+    },
+    {
+      "sequence": 6,
+      "pillar": "戊寅",
+      "ages": [
+        53,
+        63
+      ],
+      "score": -0.3,
+      "tone": "逆",
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "寅冲提纲申",
+          "value": -0.3
+        },
+        {
+          "term": "伏吟时柱（用喜）",
+          "value": 0.1
+        }
+      ],
+      "flags": [
+        "冲提纲",
+        "天克地冲年柱",
+        "天克地冲月柱",
+        "伏吟时柱"
+      ],
+      "tenGods": {
+        "stem": "正财",
+        "branch": "劫财"
+      },
+      "elements": {
+        "stem": "土",
+        "branch": "木"
+      },
+      "roles": {
+        "stem": "用",
+        "branch": "忌"
+      },
+      "band": "弱逆",
+      "mechanisms": [
+        "冲年支",
+        "申刑寅（年支）",
+        "天克地冲年柱",
+        "冲提纲",
+        "申刑寅（月支）",
+        "天克地冲月柱",
+        "寅刑巳（日支）",
+        "害日支",
+        "伏吟时柱"
+      ],
+      "changsheng": "帝旺",
+      "shensha": [
+        "驿马"
+      ],
+      "overlay": {
+        "正财": "叠",
+        "劫财": "叠"
+      },
+      "domains": [
+        {
+          "domain": "六亲",
+          "weight": 15
+        },
+        {
+          "domain": "感情",
+          "weight": 11
+        }
+      ],
+      "candidates": [
+        54,
+        60
+      ]
+    }
+  ],
+  "years": [
+    {
+      "age": 0,
+      "year": 300,
+      "pillar": "甲申",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正官"
+      },
+      "dayun": null,
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.15
+        },
+        {
+          "term": "伏吟年柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "伏吟年柱",
+        "合日支",
+        "巳刑申（日支）",
+        "冲时支",
+        "申刑寅（时支）",
+        "天克地冲时柱",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六合、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑、天克地冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 1,
+      "year": 301,
+      "pillar": "乙酉",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "七杀"
+      },
+      "dayun": null,
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 2,
+      "year": 302,
+      "pillar": "丙戌",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正财"
+      },
+      "dayun": null,
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 3,
+      "year": 303,
+      "pillar": "丁亥",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支亥本气水为忌",
+          "value": -0.3
+        },
+        {
+          "term": "亥冲日支巳",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "害月支",
+        "冲日支",
+        "合时支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六冲"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年见印",
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "文昌",
+        "驿马"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 4,
+      "year": 304,
+      "pillar": "戊子",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支子本气水为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人",
+        "将星"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 5,
+      "year": 305,
+      "pillar": "己丑",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年己丑岁气：上太阴湿土、中土运不及、下太阳寒水；疫季 二之气（温厉大行）；年景风年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 6,
+      "year": 306,
+      "pillar": "庚寅",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "寅冲提纲申",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "申刑寅（年支）",
+        "天克地冲年柱",
+        "冲提纲",
+        "申刑寅（月支）",
+        "寅刑巳（日支）",
+        "害日支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受刑、害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、刑、天克地冲",
+            "月柱（父母）受六冲、刑",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲申",
+            "流年见官杀"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀",
+            "冲月支官杀"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支申",
+            "冲月支申",
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 6
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年庚寅岁气：上少阳相火、中金运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景燥年",
+        "epidemicSteps": [
+          "初之气（温病乃起）",
+          "三之气（善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 7,
+      "year": 307,
+      "pillar": "辛卯",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "岁运相冲"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年辛卯岁气：上阳明燥金、中水运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景湿年",
+        "epidemicSteps": [
+          "二之气（厉大至、善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 8,
+      "year": 308,
+      "pillar": "壬辰",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干壬水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支辰本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年壬辰岁气：上太阳寒水、中木运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景风年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 9,
+      "year": 309,
+      "pillar": "癸巳",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支巳本气火为喜",
+          "value": 0.15
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "巳刑申（年支）",
+        "合月支",
+        "巳刑申（月支）",
+        "寅刑巳（时支）",
+        "害时支",
+        "合绊用神",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六合、刑",
+            "月柱（父母）受六合、刑",
+            "时柱（子女）受刑、害",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 7
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 10,
+      "year": 310,
+      "pillar": "甲午",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支午本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 4
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 11,
+      "year": 311,
+      "pillar": "乙未",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支未本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "财富",
+          "via": [
+            "流年见财",
+            "流年比劫夺命局透财"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "热年"
+    },
+    {
+      "age": 12,
+      "year": 312,
+      "pillar": "丙申",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "癸酉",
+        "startAge": 3,
+        "endAge": 13
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "合日支",
+        "巳刑申（日支）",
+        "冲时支",
+        "申刑寅（时支）"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六合、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 13,
+      "year": 313,
+      "pillar": "丁酉",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "换运"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 14,
+      "year": 314,
+      "pillar": "戊戌",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "热年"
+    },
+    {
+      "age": 15,
+      "year": 315,
+      "pillar": "己亥",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": -0.4,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支亥本气水为忌",
+          "value": -0.3
+        },
+        {
+          "term": "亥冲日支巳",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "害月支",
+        "冲日支",
+        "天克地冲日柱",
+        "合时支",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六冲、天克地冲",
+            "流年见亲密关系星偏财"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "天克地冲日柱乙巳（身）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印",
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "文昌",
+        "驿马"
+      ],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "天克地冲日柱乙巳（身）"
+        ],
+        "strong": true,
+        "yearQi": "流年己亥岁气：上厥阴风木、中土运不及、下少阳相火；疫季 终之气（温厉）；年景风年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 16,
+      "year": 316,
+      "pillar": "庚子",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支子本气水为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "天乙贵人",
+        "将星"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 17,
+      "year": 317,
+      "pillar": "辛丑",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年辛丑岁气：上太阴湿土、中水运不及、下太阳寒水；疫季 二之气（温厉大行）；年景湿年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 18,
+      "year": 318,
+      "pillar": "壬寅",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": -0.8,
+      "terms": [
+        {
+          "term": "天干壬水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "寅冲提纲申",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "申刑寅（年支）",
+        "冲提纲",
+        "申刑寅（月支）",
+        "寅刑巳（日支）",
+        "害日支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受刑、害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、刑",
+            "月柱（父母）受六冲、刑",
+            "流年印星（母）",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 6
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲申"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀",
+            "冲月支官杀"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支申",
+            "冲月支申",
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 6
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年壬寅岁气：上少阳相火、中木运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景风年",
+        "epidemicSteps": [
+          "初之气（温病乃起）",
+          "三之气（善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 19,
+      "year": 319,
+      "pillar": "癸卯",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": -0.7,
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合绊用神",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年癸卯岁气：上阳明燥金、中火运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景寒年",
+        "epidemicSteps": [
+          "二之气（厉大至、善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 20,
+      "year": 320,
+      "pillar": "甲辰",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支辰本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "岁运相冲",
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "财富",
+          "via": [
+            "流年见财",
+            "流年比劫夺命局透财"
+          ],
+          "strong": false,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年甲辰岁气：上太阳寒水、中土运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景湿年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 21,
+      "year": 321,
+      "pillar": "乙巳",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支巳本气火为喜",
+          "value": 0.15
+        },
+        {
+          "term": "伏吟日柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "巳刑申（年支）",
+        "合月支",
+        "巳刑申（月支）",
+        "伏吟日柱",
+        "寅刑巳（时支）",
+        "害时支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受伏吟"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六合、刑",
+            "月柱（父母）受六合、刑",
+            "时柱（子女）受刑、害",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 7
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [],
+      "yearScene": "热年"
+    },
+    {
+      "age": 22,
+      "year": 322,
+      "pillar": "丙午",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "甲戌",
+        "startAge": 13,
+        "endAge": 23
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支午本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 4
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 23,
+      "year": 323,
+      "pillar": "丁未",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支未本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "换运",
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 24,
+      "year": 324,
+      "pillar": "戊申",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": 0.35,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "合日支",
+        "巳刑申（日支）",
+        "冲时支",
+        "申刑寅（时支）",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六合、刑",
+            "流年见亲密关系星正财"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑",
+            "流年财星（父）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 25,
+      "year": 325,
+      "pillar": "己酉",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": 0.35,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星偏财",
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 26,
+      "year": 326,
+      "pillar": "庚戌",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 27,
+      "year": 327,
+      "pillar": "辛亥",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支亥本气水为忌",
+          "value": -0.3
+        },
+        {
+          "term": "亥冲日支巳",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "害月支",
+        "冲日支",
+        "天克地冲日柱",
+        "合时支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六冲、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "天克地冲日柱乙巳（身）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年见印",
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "文昌",
+        "驿马"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "天克地冲日柱乙巳（身）"
+        ],
+        "strong": true,
+        "yearQi": "流年辛亥岁气：上厥阴风木、中水运不及、下少阳相火；疫季 终之气（温厉）；年景湿年",
+        "epidemicSteps": [
+          "终之气（温厉）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 28,
+      "year": 328,
+      "pillar": "壬子",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干壬水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支子本气水为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人",
+        "将星"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 29,
+      "year": 329,
+      "pillar": "癸丑",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.3
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合绊用神",
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年癸丑岁气：上太阴湿土、中火运不及、下太阳寒水；疫季 二之气（温厉大行）；年景寒年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 30,
+      "year": 330,
+      "pillar": "甲寅",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": -0.8,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "寅冲提纲申",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "申刑寅（年支）",
+        "冲提纲",
+        "申刑寅（月支）",
+        "寅刑巳（日支）",
+        "害日支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受刑、害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、刑",
+            "月柱（父母）受六冲、刑",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲申"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀",
+            "冲月支官杀"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支申",
+            "冲月支申",
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 6
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "湿年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年甲寅岁气：上少阳相火、中土运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景湿年",
+        "epidemicSteps": [
+          "初之气（温病乃起）",
+          "三之气（善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 31,
+      "year": 331,
+      "pillar": "乙卯",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年乙卯岁气：上阳明燥金、中金运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景热年",
+        "epidemicSteps": [
+          "二之气（厉大至、善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 32,
+      "year": 332,
+      "pillar": "丙辰",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "乙亥",
+        "startAge": 23,
+        "endAge": 33
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支辰本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丙辰岁气：上太阳寒水、中水运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景寒年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 33,
+      "year": 333,
+      "pillar": "丁巳",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支巳本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "巳刑申（年支）",
+        "合月支",
+        "巳刑申（月支）",
+        "寅刑巳（时支）",
+        "害时支",
+        "换运"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六合、刑",
+            "月柱（父母）受六合、刑",
+            "时柱（子女）受刑、害"
+          ],
+          "strong": true,
+          "weight": 6
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 34,
+      "year": 334,
+      "pillar": "戊午",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.35,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支午本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "岁运相冲",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年见亲密关系星正财",
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 5
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 35,
+      "year": 335,
+      "pillar": "己未",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支未本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "风年"
+    },
+    {
+      "age": 36,
+      "year": 336,
+      "pillar": "庚申",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "合日支",
+        "巳刑申（日支）",
+        "冲时支",
+        "申刑寅（时支）"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六合、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 37,
+      "year": 337,
+      "pillar": "辛酉",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 38,
+      "year": 338,
+      "pillar": "壬戌",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干壬水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "风年"
+    },
+    {
+      "age": 39,
+      "year": 339,
+      "pillar": "癸亥",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": -1.0,
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支亥本气水为忌",
+          "value": -0.3
+        },
+        {
+          "term": "亥冲日支巳",
+          "value": -0.3
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "害月支",
+        "冲日支",
+        "合时支",
+        "合绊用神",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六冲"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年见印",
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "文昌",
+        "驿马"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 40,
+      "year": 340,
+      "pillar": "甲子",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支子本气水为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人",
+        "将星"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 41,
+      "year": 341,
+      "pillar": "乙丑",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "财富",
+          "via": [
+            "流年见财",
+            "流年比劫夺命局透财"
+          ],
+          "strong": false,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年乙丑岁气：上太阴湿土、中金运不及、下太阳寒水；疫季 二之气（温厉大行）；年景热年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 42,
+      "year": 342,
+      "pillar": "丙寅",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "丙子",
+        "startAge": 33,
+        "endAge": 43
+      },
+      "score": -0.5,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "寅冲提纲申",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "申刑寅（年支）",
+        "冲提纲",
+        "申刑寅（月支）",
+        "天克地冲月柱",
+        "寅刑巳（日支）",
+        "害日支"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受刑、害"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、刑",
+            "月柱（父母）受六冲、刑、天克地冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 5
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲申"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀",
+            "冲月支官杀"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支申",
+            "冲月支申",
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 6
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "寒年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丙寅岁气：上少阳相火、中水运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景寒年",
+        "epidemicSteps": [
+          "初之气（温病乃起）",
+          "三之气（善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 43,
+      "year": 343,
+      "pillar": "丁卯",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "换运"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丁卯岁气：上阳明燥金、中木运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景燥年",
+        "epidemicSteps": [
+          "二之气（厉大至、善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 44,
+      "year": 344,
+      "pillar": "戊辰",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": 0.5,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支辰本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年戊辰岁气：上太阳寒水、中火运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景热年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 45,
+      "year": 345,
+      "pillar": "己巳",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": 0.35,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支巳本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "巳刑申（年支）",
+        "合月支",
+        "巳刑申（月支）",
+        "寅刑巳（时支）",
+        "害时支",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六合、刑",
+            "月柱（父母）受六合、刑",
+            "时柱（子女）受刑、害",
+            "流年财星（父）"
+          ],
+          "strong": true,
+          "weight": 7
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [],
+      "yearScene": "风年"
+    },
+    {
+      "age": 46,
+      "year": 346,
+      "pillar": "庚午",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支午本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 4
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "燥年"
+    },
+    {
+      "age": 47,
+      "year": 347,
+      "pillar": "辛未",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支未本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "岁运相冲",
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 48,
+      "year": 348,
+      "pillar": "壬申",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干壬水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.15
+        },
+        {
+          "term": "伏吟月柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "伏吟月柱",
+        "合日支",
+        "巳刑申（日支）",
+        "冲时支",
+        "申刑寅（时支）",
+        "天克地冲时柱",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六合、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑、天克地冲",
+            "流年印星（母）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 49,
+      "year": 349,
+      "pillar": "癸酉",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合绊用神",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 50,
+      "year": 350,
+      "pillar": "甲戌",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "财富",
+          "via": [
+            "流年见财",
+            "流年比劫夺命局透财"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 51,
+      "year": 351,
+      "pillar": "乙亥",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "正印"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": -0.8,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支亥本气水为忌",
+          "value": -0.3
+        },
+        {
+          "term": "亥冲日支巳",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "害年支",
+        "害月支",
+        "冲日支",
+        "合时支",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六冲"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年见印",
+            "流年逢文昌"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六合"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "文昌",
+        "驿马"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 52,
+      "year": 352,
+      "pillar": "丙子",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "偏印"
+      },
+      "dayun": {
+        "pillar": "丁丑",
+        "startAge": 43,
+        "endAge": 53
+      },
+      "score": -0.2,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支子本气水为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [],
+      "domains": [
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人",
+        "将星"
+      ],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 53,
+      "year": 353,
+      "pillar": "丁丑",
+      "tenGods": {
+        "stem": "食神",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干丁火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支丑本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "换运",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年丁丑岁气：上太阴湿土、中木运不及、下太阳寒水；疫季 二之气（温厉大行）；年景燥年",
+        "epidemicSteps": [
+          "二之气（温厉大行）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 54,
+      "year": 354,
+      "pillar": "戊寅",
+      "tenGods": {
+        "stem": "正财",
+        "branch": "劫财"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": -0.3,
+      "terms": [
+        {
+          "term": "天干戊土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支寅本气木为忌",
+          "value": -0.3
+        },
+        {
+          "term": "寅冲提纲申",
+          "value": -0.3
+        },
+        {
+          "term": "伏吟时柱（用喜）",
+          "value": 0.1
+        }
+      ],
+      "mechanisms": [
+        "冲年支",
+        "申刑寅（年支）",
+        "天克地冲年柱",
+        "冲提纲",
+        "申刑寅（月支）",
+        "天克地冲月柱",
+        "寅刑巳（日支）",
+        "害日支",
+        "伏吟时柱",
+        "岁运并临",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受刑、害",
+            "流年见亲密关系星正财"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六冲、刑、天克地冲",
+            "月柱（父母）受六冲、刑、天克地冲",
+            "流年财星（父）",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 6
+        },
+        {
+          "domain": "财富",
+          "via": [
+            "流年见财",
+            "流年比劫夺命局透财"
+          ],
+          "strong": false,
+          "weight": 2
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "冲提纲申"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "名誉与是非",
+          "via": [
+            "冲年支官杀",
+            "冲月支官杀"
+          ],
+          "strong": true,
+          "weight": 4
+        },
+        {
+          "domain": "迁徙与归属",
+          "via": [
+            "冲年支申",
+            "冲月支申",
+            "流年逢驿马"
+          ],
+          "strong": true,
+          "weight": 6
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受伏吟"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "驿马"
+      ],
+      "yearScene": "热年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年戊寅岁气：上少阳相火、中火运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景热年",
+        "epidemicSteps": [
+          "初之气（温病乃起）",
+          "三之气（善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 55,
+      "year": 355,
+      "pillar": "己卯",
+      "tenGods": {
+        "stem": "偏财",
+        "branch": "比肩"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干己土为用",
+          "value": 0.2
+        },
+        {
+          "term": "地支卯本气木为忌",
+          "value": -0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "财富",
+          "via": [
+            "流年见财",
+            "流年比劫夺命局透财"
+          ],
+          "strong": false,
+          "weight": 2
+        },
+        {
+          "domain": "身心",
+          "via": [
+            "流年支落日柱旬空（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "风年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年支落日柱旬空（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年己卯岁气：上阳明燥金、中土运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景风年",
+        "epidemicSteps": [
+          "二之气（厉大至、善暴死）"
+        ],
+        "pressing": [],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 56,
+      "year": 356,
+      "pillar": "庚辰",
+      "tenGods": {
+        "stem": "正官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干庚金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支辰本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "身心",
+          "via": [
+            "流年逢华盖（心）"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "华盖"
+      ],
+      "yearScene": "燥年",
+      "illnessCandidate": {
+        "domainVia": [
+          "流年逢华盖（心）"
+        ],
+        "strong": true,
+        "yearQi": "流年庚辰岁气：上太阳寒水、中金运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景燥年",
+        "epidemicSteps": [
+          "初之气（民乃厉、温病乃作）"
+        ],
+        "pressing": [
+          "太阴湿土"
+        ],
+        "grade": "显",
+        "gradeWhy": "岁运与为纲之气不相得（泉克运），不相得则病",
+        "tempo": "太过者暴，病甚",
+        "organ": "肾",
+        "illness": "腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。",
+        "fatal": "",
+        "zhi": "郁",
+        "mood": "不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。",
+        "level": "重相",
+        "ids": [
+          "YQ-档-显",
+          "YQ-病-肾",
+          "YQ-志-郁"
+        ]
+      }
+    },
+    {
+      "age": 57,
+      "year": 357,
+      "pillar": "辛巳",
+      "tenGods": {
+        "stem": "七杀",
+        "branch": "伤官"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.25,
+      "terms": [
+        {
+          "term": "天干辛金为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支巳本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "合年支",
+        "巳刑申（年支）",
+        "合月支",
+        "巳刑申（月支）",
+        "寅刑巳（时支）",
+        "害时支"
+      ],
+      "domains": [
+        {
+          "domain": "六亲",
+          "via": [
+            "年柱（祖上）受六合、刑",
+            "月柱（父母）受六合、刑",
+            "时柱（子女）受刑、害"
+          ],
+          "strong": true,
+          "weight": 6
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受刑、害",
+            "流年见食伤"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 58,
+      "year": 358,
+      "pillar": "壬午",
+      "tenGods": {
+        "stem": "正印",
+        "branch": "食神"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干壬水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支午本气火为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花",
+            "流年逢红艳"
+          ],
+          "strong": true,
+          "weight": 4
+        }
+      ],
+      "shensha": [
+        "桃花",
+        "红艳"
+      ],
+      "yearScene": "风年"
+    },
+    {
+      "age": 59,
+      "year": 359,
+      "pillar": "癸未",
+      "tenGods": {
+        "stem": "偏印",
+        "branch": "偏财"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干癸水为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支未本气土为用",
+          "value": 0.3
+        },
+        {
+          "term": "癸合绊时干戊（用神）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "合绊用神",
+        "忌神透干",
+        "用神到位"
+      ],
+      "domains": [
+        {
+          "domain": "学识与真相",
+          "via": [
+            "流年财坏命局透印",
+            "流年见印"
+          ],
+          "strong": false,
+          "weight": 2
+        }
+      ],
+      "shensha": [],
+      "yearScene": "寒年"
+    },
+    {
+      "age": 60,
+      "year": 360,
+      "pillar": "甲申",
+      "tenGods": {
+        "stem": "劫财",
+        "branch": "正官"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": -0.25,
+      "terms": [
+        {
+          "term": "天干甲木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支申本气金为喜",
+          "value": 0.15
+        },
+        {
+          "term": "伏吟年柱（忌）",
+          "value": -0.2
+        }
+      ],
+      "mechanisms": [
+        "伏吟年柱",
+        "合日支",
+        "巳刑申（日支）",
+        "冲时支",
+        "申刑寅（时支）",
+        "天克地冲时柱",
+        "岁运相冲",
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "日支（配偶宫）巳受六合、刑"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "六亲",
+          "via": [
+            "时柱（子女）受六冲、刑、天克地冲",
+            "流年比劫星（手足）"
+          ],
+          "strong": true,
+          "weight": 3
+        },
+        {
+          "domain": "创造与传承",
+          "via": [
+            "时柱受六冲、刑、天克地冲"
+          ],
+          "strong": true,
+          "weight": 2
+        }
+      ],
+      "shensha": [
+        "天乙贵人"
+      ],
+      "yearScene": "湿年"
+    },
+    {
+      "age": 61,
+      "year": 361,
+      "pillar": "乙酉",
+      "tenGods": {
+        "stem": "比肩",
+        "branch": "七杀"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.0,
+      "terms": [
+        {
+          "term": "天干乙木为忌",
+          "value": -0.2
+        },
+        {
+          "term": "地支酉本气金为喜",
+          "value": 0.15
+        }
+      ],
+      "mechanisms": [
+        "忌神透干"
+      ],
+      "domains": [
+        {
+          "domain": "感情",
+          "via": [
+            "流年逢桃花"
+          ],
+          "strong": true,
+          "weight": 2
+        },
+        {
+          "domain": "事业与权力",
+          "via": [
+            "流年见官杀",
+            "流年逢将星"
+          ],
+          "strong": true,
+          "weight": 3
+        }
+      ],
+      "shensha": [
+        "将星",
+        "桃花"
+      ],
+      "yearScene": "热年"
+    },
+    {
+      "age": 62,
+      "year": 362,
+      "pillar": "丙戌",
+      "tenGods": {
+        "stem": "伤官",
+        "branch": "正财"
+      },
+      "dayun": {
+        "pillar": "戊寅",
+        "startAge": 53,
+        "endAge": 63
+      },
+      "score": 0.4,
+      "terms": [
+        {
+          "term": "天干丙火为喜",
+          "value": 0.1
+        },
+        {
+          "term": "地支戌本气土为用",
+          "value": 0.3
+        }
+      ],
+      "mechanisms": [
+        "用神到位"
+      ],
+      "domains": [],
+      "shensha": [],
+      "yearScene": "寒年"
+    }
+  ],
+  "candidates": [
+    0,
+    3,
+    6,
+    15,
+    18,
+    27,
+    30,
+    39,
+    42,
+    48,
+    51,
+    54,
+    60
+  ],
+  "features": [
+    {
+      "id": "L-0-甲申",
+      "text": "0岁流年甲申，顺逆分 -0.25"
+    },
+    {
+      "id": "L-0-甲申-伏吟年柱",
+      "text": "0岁流年甲申伏吟年柱"
+    },
+    {
+      "id": "L-0-甲申-合日支",
+      "text": "0岁流年甲申合日支"
+    },
+    {
+      "id": "L-0-甲申-巳刑申（日支）",
+      "text": "0岁流年甲申巳刑申（日支）"
+    },
+    {
+      "id": "L-0-甲申-冲时支",
+      "text": "0岁流年甲申冲时支"
+    },
+    {
+      "id": "L-0-甲申-申刑寅（时支）",
+      "text": "0岁流年甲申申刑寅（时支）"
+    },
+    {
+      "id": "L-0-甲申-天克地冲时柱",
+      "text": "0岁流年甲申天克地冲时柱"
+    },
+    {
+      "id": "L-0-甲申-忌神透干",
+      "text": "0岁流年甲申忌神透干"
+    },
+    {
+      "id": "L-0-甲申-域-感情",
+      "text": "0岁流年甲申动感情：日支（配偶宫）巳受六合、刑"
+    },
+    {
+      "id": "L-0-甲申-域-六亲",
+      "text": "0岁流年甲申动六亲：时柱（子女）受六冲、刑、天克地冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-0-甲申-域-创造与传承",
+      "text": "0岁流年甲申动创造与传承：时柱受六冲、刑、天克地冲"
+    },
+    {
+      "id": "L-1-乙酉",
+      "text": "1岁流年乙酉，顺逆分 0.0"
+    },
+    {
+      "id": "L-1-乙酉-忌神透干",
+      "text": "1岁流年乙酉忌神透干"
+    },
+    {
+      "id": "L-1-乙酉-域-感情",
+      "text": "1岁流年乙酉动感情：流年逢桃花"
+    },
+    {
+      "id": "L-1-乙酉-域-事业与权力",
+      "text": "1岁流年乙酉动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-2-丙戌",
+      "text": "2岁流年丙戌，顺逆分 0.4"
+    },
+    {
+      "id": "L-2-丙戌-用神到位",
+      "text": "2岁流年丙戌用神到位"
+    },
+    {
+      "id": "L-3-丁亥",
+      "text": "3岁流年丁亥，顺逆分 -0.5"
+    },
+    {
+      "id": "L-3-丁亥-害年支",
+      "text": "3岁流年丁亥害年支"
+    },
+    {
+      "id": "L-3-丁亥-害月支",
+      "text": "3岁流年丁亥害月支"
+    },
+    {
+      "id": "L-3-丁亥-冲日支",
+      "text": "3岁流年丁亥冲日支"
+    },
+    {
+      "id": "L-3-丁亥-合时支",
+      "text": "3岁流年丁亥合时支"
+    },
+    {
+      "id": "L-3-丁亥-域-感情",
+      "text": "3岁流年丁亥动感情：日支（配偶宫）巳受六冲"
+    },
+    {
+      "id": "L-3-丁亥-域-学识与真相",
+      "text": "3岁流年丁亥动学识与真相：流年见印；流年逢文昌"
+    },
+    {
+      "id": "L-3-丁亥-域-迁徙与归属",
+      "text": "3岁流年丁亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-3-丁亥-域-创造与传承",
+      "text": "3岁流年丁亥动创造与传承：时柱受六合；流年见食伤"
+    },
+    {
+      "id": "L-4-戊子",
+      "text": "4岁流年戊子，顺逆分 0.0"
+    },
+    {
+      "id": "L-4-戊子-用神到位",
+      "text": "4岁流年戊子用神到位"
+    },
+    {
+      "id": "L-4-戊子-域-事业与权力",
+      "text": "4岁流年戊子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-4-戊子-域-学识与真相",
+      "text": "4岁流年戊子动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-5-己丑",
+      "text": "5岁流年己丑，顺逆分 0.5"
+    },
+    {
+      "id": "L-5-己丑-用神到位",
+      "text": "5岁流年己丑用神到位"
+    },
+    {
+      "id": "L-5-己丑-域-身心",
+      "text": "5岁流年己丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-5-己丑-病候",
+      "text": "5岁流年己丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年己丑岁气：上太阴湿土、中土运不及、下太阳寒水；疫季 二之气（温厉大行）；年景风年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-6-庚寅",
+      "text": "6岁流年庚寅，顺逆分 -0.5"
+    },
+    {
+      "id": "L-6-庚寅-冲年支",
+      "text": "6岁流年庚寅冲年支"
+    },
+    {
+      "id": "L-6-庚寅-申刑寅（年支）",
+      "text": "6岁流年庚寅申刑寅（年支）"
+    },
+    {
+      "id": "L-6-庚寅-天克地冲年柱",
+      "text": "6岁流年庚寅天克地冲年柱"
+    },
+    {
+      "id": "L-6-庚寅-冲提纲",
+      "text": "6岁流年庚寅冲提纲"
+    },
+    {
+      "id": "L-6-庚寅-申刑寅（月支）",
+      "text": "6岁流年庚寅申刑寅（月支）"
+    },
+    {
+      "id": "L-6-庚寅-寅刑巳（日支）",
+      "text": "6岁流年庚寅寅刑巳（日支）"
+    },
+    {
+      "id": "L-6-庚寅-害日支",
+      "text": "6岁流年庚寅害日支"
+    },
+    {
+      "id": "L-6-庚寅-域-感情",
+      "text": "6岁流年庚寅动感情：日支（配偶宫）巳受刑、害"
+    },
+    {
+      "id": "L-6-庚寅-域-六亲",
+      "text": "6岁流年庚寅动六亲：年柱（祖上）受六冲、刑、天克地冲；月柱（父母）受六冲、刑；流年比劫星（手足）"
+    },
+    {
+      "id": "L-6-庚寅-域-事业与权力",
+      "text": "6岁流年庚寅动事业与权力：冲提纲申；流年见官杀"
+    },
+    {
+      "id": "L-6-庚寅-域-身心",
+      "text": "6岁流年庚寅动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-6-庚寅-域-名誉与是非",
+      "text": "6岁流年庚寅动名誉与是非：冲年支官杀；冲月支官杀"
+    },
+    {
+      "id": "L-6-庚寅-域-迁徙与归属",
+      "text": "6岁流年庚寅动迁徙与归属：冲年支申；冲月支申；流年逢驿马"
+    },
+    {
+      "id": "L-6-庚寅-病候",
+      "text": "6岁流年庚寅身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年庚寅岁气：上少阳相火、中金运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景燥年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-7-辛卯",
+      "text": "7岁流年辛卯，顺逆分 -0.2"
+    },
+    {
+      "id": "L-7-辛卯-岁运相冲",
+      "text": "7岁流年辛卯岁运相冲"
+    },
+    {
+      "id": "L-7-辛卯-域-身心",
+      "text": "7岁流年辛卯动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-7-辛卯-病候",
+      "text": "7岁流年辛卯身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年辛卯岁气：上阳明燥金、中水运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景湿年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-8-壬辰",
+      "text": "8岁流年壬辰，顺逆分 0.0"
+    },
+    {
+      "id": "L-8-壬辰-忌神透干",
+      "text": "8岁流年壬辰忌神透干"
+    },
+    {
+      "id": "L-8-壬辰-用神到位",
+      "text": "8岁流年壬辰用神到位"
+    },
+    {
+      "id": "L-8-壬辰-域-身心",
+      "text": "8岁流年壬辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-8-壬辰-域-学识与真相",
+      "text": "8岁流年壬辰动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-8-壬辰-病候",
+      "text": "8岁流年壬辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年壬辰岁气：上太阳寒水、中木运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景风年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-9-癸巳",
+      "text": "9岁流年癸巳，顺逆分 -0.25"
+    },
+    {
+      "id": "L-9-癸巳-合年支",
+      "text": "9岁流年癸巳合年支"
+    },
+    {
+      "id": "L-9-癸巳-巳刑申（年支）",
+      "text": "9岁流年癸巳巳刑申（年支）"
+    },
+    {
+      "id": "L-9-癸巳-合月支",
+      "text": "9岁流年癸巳合月支"
+    },
+    {
+      "id": "L-9-癸巳-巳刑申（月支）",
+      "text": "9岁流年癸巳巳刑申（月支）"
+    },
+    {
+      "id": "L-9-癸巳-寅刑巳（时支）",
+      "text": "9岁流年癸巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-9-癸巳-害时支",
+      "text": "9岁流年癸巳害时支"
+    },
+    {
+      "id": "L-9-癸巳-合绊用神",
+      "text": "9岁流年癸巳合绊用神"
+    },
+    {
+      "id": "L-9-癸巳-忌神透干",
+      "text": "9岁流年癸巳忌神透干"
+    },
+    {
+      "id": "L-9-癸巳-域-六亲",
+      "text": "9岁流年癸巳动六亲：年柱（祖上）受六合、刑；月柱（父母）受六合、刑；时柱（子女）受刑、害；流年印星（母）"
+    },
+    {
+      "id": "L-9-癸巳-域-创造与传承",
+      "text": "9岁流年癸巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-10-甲午",
+      "text": "10岁流年甲午，顺逆分 0.0"
+    },
+    {
+      "id": "L-10-甲午-忌神透干",
+      "text": "10岁流年甲午忌神透干"
+    },
+    {
+      "id": "L-10-甲午-域-感情",
+      "text": "10岁流年甲午动感情：流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-11-乙未",
+      "text": "11岁流年乙未，顺逆分 0.0"
+    },
+    {
+      "id": "L-11-乙未-忌神透干",
+      "text": "11岁流年乙未忌神透干"
+    },
+    {
+      "id": "L-11-乙未-用神到位",
+      "text": "11岁流年乙未用神到位"
+    },
+    {
+      "id": "L-11-乙未-域-财富",
+      "text": "11岁流年乙未动财富：流年见财；流年比劫夺命局透财"
+    },
+    {
+      "id": "L-12-丙申",
+      "text": "12岁流年丙申，顺逆分 0.25"
+    },
+    {
+      "id": "L-12-丙申-合日支",
+      "text": "12岁流年丙申合日支"
+    },
+    {
+      "id": "L-12-丙申-巳刑申（日支）",
+      "text": "12岁流年丙申巳刑申（日支）"
+    },
+    {
+      "id": "L-12-丙申-冲时支",
+      "text": "12岁流年丙申冲时支"
+    },
+    {
+      "id": "L-12-丙申-申刑寅（时支）",
+      "text": "12岁流年丙申申刑寅（时支）"
+    },
+    {
+      "id": "L-12-丙申-域-感情",
+      "text": "12岁流年丙申动感情：日支（配偶宫）巳受六合、刑"
+    },
+    {
+      "id": "L-12-丙申-域-六亲",
+      "text": "12岁流年丙申动六亲：时柱（子女）受六冲、刑"
+    },
+    {
+      "id": "L-12-丙申-域-创造与传承",
+      "text": "12岁流年丙申动创造与传承：时柱受六冲、刑；流年见食伤"
+    },
+    {
+      "id": "L-13-丁酉",
+      "text": "13岁流年丁酉，顺逆分 0.25"
+    },
+    {
+      "id": "L-13-丁酉-换运",
+      "text": "13岁流年丁酉换运"
+    },
+    {
+      "id": "L-13-丁酉-域-感情",
+      "text": "13岁流年丁酉动感情：流年逢桃花"
+    },
+    {
+      "id": "L-13-丁酉-域-事业与权力",
+      "text": "13岁流年丁酉动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-14-戊戌",
+      "text": "14岁流年戊戌，顺逆分 0.5"
+    },
+    {
+      "id": "L-14-戊戌-用神到位",
+      "text": "14岁流年戊戌用神到位"
+    },
+    {
+      "id": "L-15-己亥",
+      "text": "15岁流年己亥，顺逆分 -0.4"
+    },
+    {
+      "id": "L-15-己亥-害年支",
+      "text": "15岁流年己亥害年支"
+    },
+    {
+      "id": "L-15-己亥-害月支",
+      "text": "15岁流年己亥害月支"
+    },
+    {
+      "id": "L-15-己亥-冲日支",
+      "text": "15岁流年己亥冲日支"
+    },
+    {
+      "id": "L-15-己亥-天克地冲日柱",
+      "text": "15岁流年己亥天克地冲日柱"
+    },
+    {
+      "id": "L-15-己亥-合时支",
+      "text": "15岁流年己亥合时支"
+    },
+    {
+      "id": "L-15-己亥-用神到位",
+      "text": "15岁流年己亥用神到位"
+    },
+    {
+      "id": "L-15-己亥-域-感情",
+      "text": "15岁流年己亥动感情：日支（配偶宫）巳受六冲、天克地冲；流年见亲密关系星偏财"
+    },
+    {
+      "id": "L-15-己亥-域-身心",
+      "text": "15岁流年己亥动身心：天克地冲日柱乙巳（身）"
+    },
+    {
+      "id": "L-15-己亥-域-学识与真相",
+      "text": "15岁流年己亥动学识与真相：流年财坏命局透印；流年见印；流年逢文昌"
+    },
+    {
+      "id": "L-15-己亥-域-迁徙与归属",
+      "text": "15岁流年己亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-15-己亥-域-创造与传承",
+      "text": "15岁流年己亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-15-己亥-病候",
+      "text": "15岁流年己亥身心域被引动（天克地冲日柱乙巳（身）），病候候选（默认不写，作者挑，一步大运最多一次）：流年己亥岁气：上厥阴风木、中土运不及、下少阳相火；疫季 终之气（温厉）；年景风年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-16-庚子",
+      "text": "16岁流年庚子，顺逆分 -0.2"
+    },
+    {
+      "id": "L-16-庚子-域-事业与权力",
+      "text": "16岁流年庚子动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-17-辛丑",
+      "text": "17岁流年辛丑，顺逆分 0.4"
+    },
+    {
+      "id": "L-17-辛丑-用神到位",
+      "text": "17岁流年辛丑用神到位"
+    },
+    {
+      "id": "L-17-辛丑-域-身心",
+      "text": "17岁流年辛丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-17-辛丑-病候",
+      "text": "17岁流年辛丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年辛丑岁气：上太阴湿土、中水运不及、下太阳寒水；疫季 二之气（温厉大行）；年景湿年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-18-壬寅",
+      "text": "18岁流年壬寅，顺逆分 -0.8"
+    },
+    {
+      "id": "L-18-壬寅-冲年支",
+      "text": "18岁流年壬寅冲年支"
+    },
+    {
+      "id": "L-18-壬寅-申刑寅（年支）",
+      "text": "18岁流年壬寅申刑寅（年支）"
+    },
+    {
+      "id": "L-18-壬寅-冲提纲",
+      "text": "18岁流年壬寅冲提纲"
+    },
+    {
+      "id": "L-18-壬寅-申刑寅（月支）",
+      "text": "18岁流年壬寅申刑寅（月支）"
+    },
+    {
+      "id": "L-18-壬寅-寅刑巳（日支）",
+      "text": "18岁流年壬寅寅刑巳（日支）"
+    },
+    {
+      "id": "L-18-壬寅-害日支",
+      "text": "18岁流年壬寅害日支"
+    },
+    {
+      "id": "L-18-壬寅-忌神透干",
+      "text": "18岁流年壬寅忌神透干"
+    },
+    {
+      "id": "L-18-壬寅-域-感情",
+      "text": "18岁流年壬寅动感情：日支（配偶宫）巳受刑、害"
+    },
+    {
+      "id": "L-18-壬寅-域-六亲",
+      "text": "18岁流年壬寅动六亲：年柱（祖上）受六冲、刑；月柱（父母）受六冲、刑；流年印星（母）；流年比劫星（手足）"
+    },
+    {
+      "id": "L-18-壬寅-域-事业与权力",
+      "text": "18岁流年壬寅动事业与权力：冲提纲申"
+    },
+    {
+      "id": "L-18-壬寅-域-身心",
+      "text": "18岁流年壬寅动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-18-壬寅-域-名誉与是非",
+      "text": "18岁流年壬寅动名誉与是非：冲年支官杀；冲月支官杀"
+    },
+    {
+      "id": "L-18-壬寅-域-迁徙与归属",
+      "text": "18岁流年壬寅动迁徙与归属：冲年支申；冲月支申；流年逢驿马"
+    },
+    {
+      "id": "L-18-壬寅-病候",
+      "text": "18岁流年壬寅身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年壬寅岁气：上少阳相火、中木运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景风年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-19-癸卯",
+      "text": "19岁流年癸卯，顺逆分 -0.7"
+    },
+    {
+      "id": "L-19-癸卯-合绊用神",
+      "text": "19岁流年癸卯合绊用神"
+    },
+    {
+      "id": "L-19-癸卯-忌神透干",
+      "text": "19岁流年癸卯忌神透干"
+    },
+    {
+      "id": "L-19-癸卯-域-身心",
+      "text": "19岁流年癸卯动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-19-癸卯-病候",
+      "text": "19岁流年癸卯身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年癸卯岁气：上阳明燥金、中火运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景寒年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-20-甲辰",
+      "text": "20岁流年甲辰，顺逆分 0.0"
+    },
+    {
+      "id": "L-20-甲辰-岁运相冲",
+      "text": "20岁流年甲辰岁运相冲"
+    },
+    {
+      "id": "L-20-甲辰-忌神透干",
+      "text": "20岁流年甲辰忌神透干"
+    },
+    {
+      "id": "L-20-甲辰-用神到位",
+      "text": "20岁流年甲辰用神到位"
+    },
+    {
+      "id": "L-20-甲辰-域-财富",
+      "text": "20岁流年甲辰动财富：流年见财；流年比劫夺命局透财"
+    },
+    {
+      "id": "L-20-甲辰-域-身心",
+      "text": "20岁流年甲辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-20-甲辰-病候",
+      "text": "20岁流年甲辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年甲辰岁气：上太阳寒水、中土运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景湿年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-21-乙巳",
+      "text": "21岁流年乙巳，顺逆分 -0.25"
+    },
+    {
+      "id": "L-21-乙巳-合年支",
+      "text": "21岁流年乙巳合年支"
+    },
+    {
+      "id": "L-21-乙巳-巳刑申（年支）",
+      "text": "21岁流年乙巳巳刑申（年支）"
+    },
+    {
+      "id": "L-21-乙巳-合月支",
+      "text": "21岁流年乙巳合月支"
+    },
+    {
+      "id": "L-21-乙巳-巳刑申（月支）",
+      "text": "21岁流年乙巳巳刑申（月支）"
+    },
+    {
+      "id": "L-21-乙巳-伏吟日柱",
+      "text": "21岁流年乙巳伏吟日柱"
+    },
+    {
+      "id": "L-21-乙巳-寅刑巳（时支）",
+      "text": "21岁流年乙巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-21-乙巳-害时支",
+      "text": "21岁流年乙巳害时支"
+    },
+    {
+      "id": "L-21-乙巳-忌神透干",
+      "text": "21岁流年乙巳忌神透干"
+    },
+    {
+      "id": "L-21-乙巳-域-感情",
+      "text": "21岁流年乙巳动感情：日支（配偶宫）巳受伏吟"
+    },
+    {
+      "id": "L-21-乙巳-域-六亲",
+      "text": "21岁流年乙巳动六亲：年柱（祖上）受六合、刑；月柱（父母）受六合、刑；时柱（子女）受刑、害；流年比劫星（手足）"
+    },
+    {
+      "id": "L-21-乙巳-域-创造与传承",
+      "text": "21岁流年乙巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-22-丙午",
+      "text": "22岁流年丙午，顺逆分 0.25"
+    },
+    {
+      "id": "L-22-丙午-域-感情",
+      "text": "22岁流年丙午动感情：流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-23-丁未",
+      "text": "23岁流年丁未，顺逆分 0.4"
+    },
+    {
+      "id": "L-23-丁未-换运",
+      "text": "23岁流年丁未换运"
+    },
+    {
+      "id": "L-23-丁未-用神到位",
+      "text": "23岁流年丁未用神到位"
+    },
+    {
+      "id": "L-24-戊申",
+      "text": "24岁流年戊申，顺逆分 0.35"
+    },
+    {
+      "id": "L-24-戊申-合日支",
+      "text": "24岁流年戊申合日支"
+    },
+    {
+      "id": "L-24-戊申-巳刑申（日支）",
+      "text": "24岁流年戊申巳刑申（日支）"
+    },
+    {
+      "id": "L-24-戊申-冲时支",
+      "text": "24岁流年戊申冲时支"
+    },
+    {
+      "id": "L-24-戊申-申刑寅（时支）",
+      "text": "24岁流年戊申申刑寅（时支）"
+    },
+    {
+      "id": "L-24-戊申-用神到位",
+      "text": "24岁流年戊申用神到位"
+    },
+    {
+      "id": "L-24-戊申-域-感情",
+      "text": "24岁流年戊申动感情：日支（配偶宫）巳受六合、刑；流年见亲密关系星正财"
+    },
+    {
+      "id": "L-24-戊申-域-六亲",
+      "text": "24岁流年戊申动六亲：时柱（子女）受六冲、刑；流年财星（父）"
+    },
+    {
+      "id": "L-24-戊申-域-创造与传承",
+      "text": "24岁流年戊申动创造与传承：时柱受六冲、刑"
+    },
+    {
+      "id": "L-25-己酉",
+      "text": "25岁流年己酉，顺逆分 0.35"
+    },
+    {
+      "id": "L-25-己酉-用神到位",
+      "text": "25岁流年己酉用神到位"
+    },
+    {
+      "id": "L-25-己酉-域-感情",
+      "text": "25岁流年己酉动感情：流年见亲密关系星偏财；流年逢桃花"
+    },
+    {
+      "id": "L-25-己酉-域-事业与权力",
+      "text": "25岁流年己酉动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-26-庚戌",
+      "text": "26岁流年庚戌，顺逆分 0.4"
+    },
+    {
+      "id": "L-26-庚戌-用神到位",
+      "text": "26岁流年庚戌用神到位"
+    },
+    {
+      "id": "L-27-辛亥",
+      "text": "27岁流年辛亥，顺逆分 -0.5"
+    },
+    {
+      "id": "L-27-辛亥-害年支",
+      "text": "27岁流年辛亥害年支"
+    },
+    {
+      "id": "L-27-辛亥-害月支",
+      "text": "27岁流年辛亥害月支"
+    },
+    {
+      "id": "L-27-辛亥-冲日支",
+      "text": "27岁流年辛亥冲日支"
+    },
+    {
+      "id": "L-27-辛亥-天克地冲日柱",
+      "text": "27岁流年辛亥天克地冲日柱"
+    },
+    {
+      "id": "L-27-辛亥-合时支",
+      "text": "27岁流年辛亥合时支"
+    },
+    {
+      "id": "L-27-辛亥-域-感情",
+      "text": "27岁流年辛亥动感情：日支（配偶宫）巳受六冲、天克地冲"
+    },
+    {
+      "id": "L-27-辛亥-域-身心",
+      "text": "27岁流年辛亥动身心：天克地冲日柱乙巳（身）"
+    },
+    {
+      "id": "L-27-辛亥-域-学识与真相",
+      "text": "27岁流年辛亥动学识与真相：流年见印；流年逢文昌"
+    },
+    {
+      "id": "L-27-辛亥-域-迁徙与归属",
+      "text": "27岁流年辛亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-27-辛亥-域-创造与传承",
+      "text": "27岁流年辛亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-27-辛亥-病候",
+      "text": "27岁流年辛亥身心域被引动（天克地冲日柱乙巳（身）），病候候选（默认不写，作者挑，一步大运最多一次）：流年辛亥岁气：上厥阴风木、中水运不及、下少阳相火；疫季 终之气（温厉）；年景湿年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-28-壬子",
+      "text": "28岁流年壬子，顺逆分 -0.5"
+    },
+    {
+      "id": "L-28-壬子-忌神透干",
+      "text": "28岁流年壬子忌神透干"
+    },
+    {
+      "id": "L-28-壬子-域-事业与权力",
+      "text": "28岁流年壬子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-29-癸丑",
+      "text": "29岁流年癸丑，顺逆分 0.0"
+    },
+    {
+      "id": "L-29-癸丑-合绊用神",
+      "text": "29岁流年癸丑合绊用神"
+    },
+    {
+      "id": "L-29-癸丑-忌神透干",
+      "text": "29岁流年癸丑忌神透干"
+    },
+    {
+      "id": "L-29-癸丑-用神到位",
+      "text": "29岁流年癸丑用神到位"
+    },
+    {
+      "id": "L-29-癸丑-域-身心",
+      "text": "29岁流年癸丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-29-癸丑-域-学识与真相",
+      "text": "29岁流年癸丑动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-29-癸丑-病候",
+      "text": "29岁流年癸丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年癸丑岁气：上太阴湿土、中火运不及、下太阳寒水；疫季 二之气（温厉大行）；年景寒年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-30-甲寅",
+      "text": "30岁流年甲寅，顺逆分 -0.8"
+    },
+    {
+      "id": "L-30-甲寅-冲年支",
+      "text": "30岁流年甲寅冲年支"
+    },
+    {
+      "id": "L-30-甲寅-申刑寅（年支）",
+      "text": "30岁流年甲寅申刑寅（年支）"
+    },
+    {
+      "id": "L-30-甲寅-冲提纲",
+      "text": "30岁流年甲寅冲提纲"
+    },
+    {
+      "id": "L-30-甲寅-申刑寅（月支）",
+      "text": "30岁流年甲寅申刑寅（月支）"
+    },
+    {
+      "id": "L-30-甲寅-寅刑巳（日支）",
+      "text": "30岁流年甲寅寅刑巳（日支）"
+    },
+    {
+      "id": "L-30-甲寅-害日支",
+      "text": "30岁流年甲寅害日支"
+    },
+    {
+      "id": "L-30-甲寅-忌神透干",
+      "text": "30岁流年甲寅忌神透干"
+    },
+    {
+      "id": "L-30-甲寅-域-感情",
+      "text": "30岁流年甲寅动感情：日支（配偶宫）巳受刑、害"
+    },
+    {
+      "id": "L-30-甲寅-域-六亲",
+      "text": "30岁流年甲寅动六亲：年柱（祖上）受六冲、刑；月柱（父母）受六冲、刑；流年比劫星（手足）"
+    },
+    {
+      "id": "L-30-甲寅-域-事业与权力",
+      "text": "30岁流年甲寅动事业与权力：冲提纲申"
+    },
+    {
+      "id": "L-30-甲寅-域-身心",
+      "text": "30岁流年甲寅动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-30-甲寅-域-名誉与是非",
+      "text": "30岁流年甲寅动名誉与是非：冲年支官杀；冲月支官杀"
+    },
+    {
+      "id": "L-30-甲寅-域-迁徙与归属",
+      "text": "30岁流年甲寅动迁徙与归属：冲年支申；冲月支申；流年逢驿马"
+    },
+    {
+      "id": "L-30-甲寅-病候",
+      "text": "30岁流年甲寅身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年甲寅岁气：上少阳相火、中土运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景湿年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-31-乙卯",
+      "text": "31岁流年乙卯，顺逆分 -0.5"
+    },
+    {
+      "id": "L-31-乙卯-忌神透干",
+      "text": "31岁流年乙卯忌神透干"
+    },
+    {
+      "id": "L-31-乙卯-域-身心",
+      "text": "31岁流年乙卯动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-31-乙卯-病候",
+      "text": "31岁流年乙卯身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年乙卯岁气：上阳明燥金、中金运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景热年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-32-丙辰",
+      "text": "32岁流年丙辰，顺逆分 0.4"
+    },
+    {
+      "id": "L-32-丙辰-用神到位",
+      "text": "32岁流年丙辰用神到位"
+    },
+    {
+      "id": "L-32-丙辰-域-身心",
+      "text": "32岁流年丙辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-32-丙辰-病候",
+      "text": "32岁流年丙辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丙辰岁气：上太阳寒水、中水运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景寒年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-33-丁巳",
+      "text": "33岁流年丁巳，顺逆分 0.25"
+    },
+    {
+      "id": "L-33-丁巳-合年支",
+      "text": "33岁流年丁巳合年支"
+    },
+    {
+      "id": "L-33-丁巳-巳刑申（年支）",
+      "text": "33岁流年丁巳巳刑申（年支）"
+    },
+    {
+      "id": "L-33-丁巳-合月支",
+      "text": "33岁流年丁巳合月支"
+    },
+    {
+      "id": "L-33-丁巳-巳刑申（月支）",
+      "text": "33岁流年丁巳巳刑申（月支）"
+    },
+    {
+      "id": "L-33-丁巳-寅刑巳（时支）",
+      "text": "33岁流年丁巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-33-丁巳-害时支",
+      "text": "33岁流年丁巳害时支"
+    },
+    {
+      "id": "L-33-丁巳-换运",
+      "text": "33岁流年丁巳换运"
+    },
+    {
+      "id": "L-33-丁巳-域-六亲",
+      "text": "33岁流年丁巳动六亲：年柱（祖上）受六合、刑；月柱（父母）受六合、刑；时柱（子女）受刑、害"
+    },
+    {
+      "id": "L-33-丁巳-域-创造与传承",
+      "text": "33岁流年丁巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-34-戊午",
+      "text": "34岁流年戊午，顺逆分 0.35"
+    },
+    {
+      "id": "L-34-戊午-岁运相冲",
+      "text": "34岁流年戊午岁运相冲"
+    },
+    {
+      "id": "L-34-戊午-用神到位",
+      "text": "34岁流年戊午用神到位"
+    },
+    {
+      "id": "L-34-戊午-域-感情",
+      "text": "34岁流年戊午动感情：流年见亲密关系星正财；流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-35-己未",
+      "text": "35岁流年己未，顺逆分 0.5"
+    },
+    {
+      "id": "L-35-己未-用神到位",
+      "text": "35岁流年己未用神到位"
+    },
+    {
+      "id": "L-36-庚申",
+      "text": "36岁流年庚申，顺逆分 0.25"
+    },
+    {
+      "id": "L-36-庚申-合日支",
+      "text": "36岁流年庚申合日支"
+    },
+    {
+      "id": "L-36-庚申-巳刑申（日支）",
+      "text": "36岁流年庚申巳刑申（日支）"
+    },
+    {
+      "id": "L-36-庚申-冲时支",
+      "text": "36岁流年庚申冲时支"
+    },
+    {
+      "id": "L-36-庚申-申刑寅（时支）",
+      "text": "36岁流年庚申申刑寅（时支）"
+    },
+    {
+      "id": "L-36-庚申-域-感情",
+      "text": "36岁流年庚申动感情：日支（配偶宫）巳受六合、刑"
+    },
+    {
+      "id": "L-36-庚申-域-六亲",
+      "text": "36岁流年庚申动六亲：时柱（子女）受六冲、刑"
+    },
+    {
+      "id": "L-36-庚申-域-创造与传承",
+      "text": "36岁流年庚申动创造与传承：时柱受六冲、刑"
+    },
+    {
+      "id": "L-37-辛酉",
+      "text": "37岁流年辛酉，顺逆分 0.25"
+    },
+    {
+      "id": "L-37-辛酉-域-感情",
+      "text": "37岁流年辛酉动感情：流年逢桃花"
+    },
+    {
+      "id": "L-37-辛酉-域-事业与权力",
+      "text": "37岁流年辛酉动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-38-壬戌",
+      "text": "38岁流年壬戌，顺逆分 0.0"
+    },
+    {
+      "id": "L-38-壬戌-忌神透干",
+      "text": "38岁流年壬戌忌神透干"
+    },
+    {
+      "id": "L-38-壬戌-用神到位",
+      "text": "38岁流年壬戌用神到位"
+    },
+    {
+      "id": "L-38-壬戌-域-学识与真相",
+      "text": "38岁流年壬戌动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-39-癸亥",
+      "text": "39岁流年癸亥，顺逆分 -1.0"
+    },
+    {
+      "id": "L-39-癸亥-害年支",
+      "text": "39岁流年癸亥害年支"
+    },
+    {
+      "id": "L-39-癸亥-害月支",
+      "text": "39岁流年癸亥害月支"
+    },
+    {
+      "id": "L-39-癸亥-冲日支",
+      "text": "39岁流年癸亥冲日支"
+    },
+    {
+      "id": "L-39-癸亥-合时支",
+      "text": "39岁流年癸亥合时支"
+    },
+    {
+      "id": "L-39-癸亥-合绊用神",
+      "text": "39岁流年癸亥合绊用神"
+    },
+    {
+      "id": "L-39-癸亥-忌神透干",
+      "text": "39岁流年癸亥忌神透干"
+    },
+    {
+      "id": "L-39-癸亥-域-感情",
+      "text": "39岁流年癸亥动感情：日支（配偶宫）巳受六冲"
+    },
+    {
+      "id": "L-39-癸亥-域-学识与真相",
+      "text": "39岁流年癸亥动学识与真相：流年见印；流年逢文昌"
+    },
+    {
+      "id": "L-39-癸亥-域-迁徙与归属",
+      "text": "39岁流年癸亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-39-癸亥-域-创造与传承",
+      "text": "39岁流年癸亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-40-甲子",
+      "text": "40岁流年甲子，顺逆分 -0.5"
+    },
+    {
+      "id": "L-40-甲子-忌神透干",
+      "text": "40岁流年甲子忌神透干"
+    },
+    {
+      "id": "L-40-甲子-域-事业与权力",
+      "text": "40岁流年甲子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-41-乙丑",
+      "text": "41岁流年乙丑，顺逆分 0.0"
+    },
+    {
+      "id": "L-41-乙丑-忌神透干",
+      "text": "41岁流年乙丑忌神透干"
+    },
+    {
+      "id": "L-41-乙丑-用神到位",
+      "text": "41岁流年乙丑用神到位"
+    },
+    {
+      "id": "L-41-乙丑-域-财富",
+      "text": "41岁流年乙丑动财富：流年见财；流年比劫夺命局透财"
+    },
+    {
+      "id": "L-41-乙丑-域-身心",
+      "text": "41岁流年乙丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-41-乙丑-病候",
+      "text": "41岁流年乙丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年乙丑岁气：上太阴湿土、中金运不及、下太阳寒水；疫季 二之气（温厉大行）；年景热年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-42-丙寅",
+      "text": "42岁流年丙寅，顺逆分 -0.5"
+    },
+    {
+      "id": "L-42-丙寅-冲年支",
+      "text": "42岁流年丙寅冲年支"
+    },
+    {
+      "id": "L-42-丙寅-申刑寅（年支）",
+      "text": "42岁流年丙寅申刑寅（年支）"
+    },
+    {
+      "id": "L-42-丙寅-冲提纲",
+      "text": "42岁流年丙寅冲提纲"
+    },
+    {
+      "id": "L-42-丙寅-申刑寅（月支）",
+      "text": "42岁流年丙寅申刑寅（月支）"
+    },
+    {
+      "id": "L-42-丙寅-天克地冲月柱",
+      "text": "42岁流年丙寅天克地冲月柱"
+    },
+    {
+      "id": "L-42-丙寅-寅刑巳（日支）",
+      "text": "42岁流年丙寅寅刑巳（日支）"
+    },
+    {
+      "id": "L-42-丙寅-害日支",
+      "text": "42岁流年丙寅害日支"
+    },
+    {
+      "id": "L-42-丙寅-域-感情",
+      "text": "42岁流年丙寅动感情：日支（配偶宫）巳受刑、害"
+    },
+    {
+      "id": "L-42-丙寅-域-六亲",
+      "text": "42岁流年丙寅动六亲：年柱（祖上）受六冲、刑；月柱（父母）受六冲、刑、天克地冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-42-丙寅-域-事业与权力",
+      "text": "42岁流年丙寅动事业与权力：冲提纲申"
+    },
+    {
+      "id": "L-42-丙寅-域-身心",
+      "text": "42岁流年丙寅动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-42-丙寅-域-名誉与是非",
+      "text": "42岁流年丙寅动名誉与是非：冲年支官杀；冲月支官杀"
+    },
+    {
+      "id": "L-42-丙寅-域-迁徙与归属",
+      "text": "42岁流年丙寅动迁徙与归属：冲年支申；冲月支申；流年逢驿马"
+    },
+    {
+      "id": "L-42-丙寅-病候",
+      "text": "42岁流年丙寅身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丙寅岁气：上少阳相火、中水运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景寒年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-43-丁卯",
+      "text": "43岁流年丁卯，顺逆分 -0.2"
+    },
+    {
+      "id": "L-43-丁卯-换运",
+      "text": "43岁流年丁卯换运"
+    },
+    {
+      "id": "L-43-丁卯-域-身心",
+      "text": "43岁流年丁卯动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-43-丁卯-病候",
+      "text": "43岁流年丁卯身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丁卯岁气：上阳明燥金、中木运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景燥年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-44-戊辰",
+      "text": "44岁流年戊辰，顺逆分 0.5"
+    },
+    {
+      "id": "L-44-戊辰-用神到位",
+      "text": "44岁流年戊辰用神到位"
+    },
+    {
+      "id": "L-44-戊辰-域-身心",
+      "text": "44岁流年戊辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-44-戊辰-病候",
+      "text": "44岁流年戊辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年戊辰岁气：上太阳寒水、中火运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景热年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-45-己巳",
+      "text": "45岁流年己巳，顺逆分 0.35"
+    },
+    {
+      "id": "L-45-己巳-合年支",
+      "text": "45岁流年己巳合年支"
+    },
+    {
+      "id": "L-45-己巳-巳刑申（年支）",
+      "text": "45岁流年己巳巳刑申（年支）"
+    },
+    {
+      "id": "L-45-己巳-合月支",
+      "text": "45岁流年己巳合月支"
+    },
+    {
+      "id": "L-45-己巳-巳刑申（月支）",
+      "text": "45岁流年己巳巳刑申（月支）"
+    },
+    {
+      "id": "L-45-己巳-寅刑巳（时支）",
+      "text": "45岁流年己巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-45-己巳-害时支",
+      "text": "45岁流年己巳害时支"
+    },
+    {
+      "id": "L-45-己巳-用神到位",
+      "text": "45岁流年己巳用神到位"
+    },
+    {
+      "id": "L-45-己巳-域-六亲",
+      "text": "45岁流年己巳动六亲：年柱（祖上）受六合、刑；月柱（父母）受六合、刑；时柱（子女）受刑、害；流年财星（父）"
+    },
+    {
+      "id": "L-45-己巳-域-创造与传承",
+      "text": "45岁流年己巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-46-庚午",
+      "text": "46岁流年庚午，顺逆分 0.25"
+    },
+    {
+      "id": "L-46-庚午-域-感情",
+      "text": "46岁流年庚午动感情：流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-47-辛未",
+      "text": "47岁流年辛未，顺逆分 0.4"
+    },
+    {
+      "id": "L-47-辛未-岁运相冲",
+      "text": "47岁流年辛未岁运相冲"
+    },
+    {
+      "id": "L-47-辛未-用神到位",
+      "text": "47岁流年辛未用神到位"
+    },
+    {
+      "id": "L-48-壬申",
+      "text": "48岁流年壬申，顺逆分 -0.25"
+    },
+    {
+      "id": "L-48-壬申-伏吟月柱",
+      "text": "48岁流年壬申伏吟月柱"
+    },
+    {
+      "id": "L-48-壬申-合日支",
+      "text": "48岁流年壬申合日支"
+    },
+    {
+      "id": "L-48-壬申-巳刑申（日支）",
+      "text": "48岁流年壬申巳刑申（日支）"
+    },
+    {
+      "id": "L-48-壬申-冲时支",
+      "text": "48岁流年壬申冲时支"
+    },
+    {
+      "id": "L-48-壬申-申刑寅（时支）",
+      "text": "48岁流年壬申申刑寅（时支）"
+    },
+    {
+      "id": "L-48-壬申-天克地冲时柱",
+      "text": "48岁流年壬申天克地冲时柱"
+    },
+    {
+      "id": "L-48-壬申-忌神透干",
+      "text": "48岁流年壬申忌神透干"
+    },
+    {
+      "id": "L-48-壬申-域-感情",
+      "text": "48岁流年壬申动感情：日支（配偶宫）巳受六合、刑"
+    },
+    {
+      "id": "L-48-壬申-域-六亲",
+      "text": "48岁流年壬申动六亲：时柱（子女）受六冲、刑、天克地冲；流年印星（母）"
+    },
+    {
+      "id": "L-48-壬申-域-创造与传承",
+      "text": "48岁流年壬申动创造与传承：时柱受六冲、刑、天克地冲"
+    },
+    {
+      "id": "L-49-癸酉",
+      "text": "49岁流年癸酉，顺逆分 -0.25"
+    },
+    {
+      "id": "L-49-癸酉-合绊用神",
+      "text": "49岁流年癸酉合绊用神"
+    },
+    {
+      "id": "L-49-癸酉-忌神透干",
+      "text": "49岁流年癸酉忌神透干"
+    },
+    {
+      "id": "L-49-癸酉-域-感情",
+      "text": "49岁流年癸酉动感情：流年逢桃花"
+    },
+    {
+      "id": "L-49-癸酉-域-事业与权力",
+      "text": "49岁流年癸酉动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-50-甲戌",
+      "text": "50岁流年甲戌，顺逆分 0.0"
+    },
+    {
+      "id": "L-50-甲戌-忌神透干",
+      "text": "50岁流年甲戌忌神透干"
+    },
+    {
+      "id": "L-50-甲戌-用神到位",
+      "text": "50岁流年甲戌用神到位"
+    },
+    {
+      "id": "L-50-甲戌-域-财富",
+      "text": "50岁流年甲戌动财富：流年见财；流年比劫夺命局透财"
+    },
+    {
+      "id": "L-51-乙亥",
+      "text": "51岁流年乙亥，顺逆分 -0.8"
+    },
+    {
+      "id": "L-51-乙亥-害年支",
+      "text": "51岁流年乙亥害年支"
+    },
+    {
+      "id": "L-51-乙亥-害月支",
+      "text": "51岁流年乙亥害月支"
+    },
+    {
+      "id": "L-51-乙亥-冲日支",
+      "text": "51岁流年乙亥冲日支"
+    },
+    {
+      "id": "L-51-乙亥-合时支",
+      "text": "51岁流年乙亥合时支"
+    },
+    {
+      "id": "L-51-乙亥-忌神透干",
+      "text": "51岁流年乙亥忌神透干"
+    },
+    {
+      "id": "L-51-乙亥-域-感情",
+      "text": "51岁流年乙亥动感情：日支（配偶宫）巳受六冲"
+    },
+    {
+      "id": "L-51-乙亥-域-学识与真相",
+      "text": "51岁流年乙亥动学识与真相：流年见印；流年逢文昌"
+    },
+    {
+      "id": "L-51-乙亥-域-迁徙与归属",
+      "text": "51岁流年乙亥动迁徙与归属：流年逢驿马"
+    },
+    {
+      "id": "L-51-乙亥-域-创造与传承",
+      "text": "51岁流年乙亥动创造与传承：时柱受六合"
+    },
+    {
+      "id": "L-52-丙子",
+      "text": "52岁流年丙子，顺逆分 -0.2"
+    },
+    {
+      "id": "L-52-丙子-域-事业与权力",
+      "text": "52岁流年丙子动事业与权力：流年逢将星"
+    },
+    {
+      "id": "L-53-丁丑",
+      "text": "53岁流年丁丑，顺逆分 0.4"
+    },
+    {
+      "id": "L-53-丁丑-换运",
+      "text": "53岁流年丁丑换运"
+    },
+    {
+      "id": "L-53-丁丑-用神到位",
+      "text": "53岁流年丁丑用神到位"
+    },
+    {
+      "id": "L-53-丁丑-域-身心",
+      "text": "53岁流年丁丑动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-53-丁丑-病候",
+      "text": "53岁流年丁丑身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年丁丑岁气：上太阴湿土、中木运不及、下太阳寒水；疫季 二之气（温厉大行）；年景燥年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-54-戊寅",
+      "text": "54岁流年戊寅，顺逆分 -0.3"
+    },
+    {
+      "id": "L-54-戊寅-冲年支",
+      "text": "54岁流年戊寅冲年支"
+    },
+    {
+      "id": "L-54-戊寅-申刑寅（年支）",
+      "text": "54岁流年戊寅申刑寅（年支）"
+    },
+    {
+      "id": "L-54-戊寅-天克地冲年柱",
+      "text": "54岁流年戊寅天克地冲年柱"
+    },
+    {
+      "id": "L-54-戊寅-冲提纲",
+      "text": "54岁流年戊寅冲提纲"
+    },
+    {
+      "id": "L-54-戊寅-申刑寅（月支）",
+      "text": "54岁流年戊寅申刑寅（月支）"
+    },
+    {
+      "id": "L-54-戊寅-天克地冲月柱",
+      "text": "54岁流年戊寅天克地冲月柱"
+    },
+    {
+      "id": "L-54-戊寅-寅刑巳（日支）",
+      "text": "54岁流年戊寅寅刑巳（日支）"
+    },
+    {
+      "id": "L-54-戊寅-害日支",
+      "text": "54岁流年戊寅害日支"
+    },
+    {
+      "id": "L-54-戊寅-伏吟时柱",
+      "text": "54岁流年戊寅伏吟时柱"
+    },
+    {
+      "id": "L-54-戊寅-岁运并临",
+      "text": "54岁流年戊寅岁运并临"
+    },
+    {
+      "id": "L-54-戊寅-用神到位",
+      "text": "54岁流年戊寅用神到位"
+    },
+    {
+      "id": "L-54-戊寅-域-感情",
+      "text": "54岁流年戊寅动感情：日支（配偶宫）巳受刑、害；流年见亲密关系星正财"
+    },
+    {
+      "id": "L-54-戊寅-域-六亲",
+      "text": "54岁流年戊寅动六亲：年柱（祖上）受六冲、刑、天克地冲；月柱（父母）受六冲、刑、天克地冲；流年财星（父）；流年比劫星（手足）"
+    },
+    {
+      "id": "L-54-戊寅-域-财富",
+      "text": "54岁流年戊寅动财富：流年见财；流年比劫夺命局透财"
+    },
+    {
+      "id": "L-54-戊寅-域-事业与权力",
+      "text": "54岁流年戊寅动事业与权力：冲提纲申"
+    },
+    {
+      "id": "L-54-戊寅-域-身心",
+      "text": "54岁流年戊寅动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-54-戊寅-域-名誉与是非",
+      "text": "54岁流年戊寅动名誉与是非：冲年支官杀；冲月支官杀"
+    },
+    {
+      "id": "L-54-戊寅-域-迁徙与归属",
+      "text": "54岁流年戊寅动迁徙与归属：冲年支申；冲月支申；流年逢驿马"
+    },
+    {
+      "id": "L-54-戊寅-域-创造与传承",
+      "text": "54岁流年戊寅动创造与传承：时柱受伏吟"
+    },
+    {
+      "id": "L-54-戊寅-病候",
+      "text": "54岁流年戊寅身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年戊寅岁气：上少阳相火、中火运太过、下厥阴风木；疫季 初之气（温病乃起）、三之气（善暴死）；年景热年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-55-己卯",
+      "text": "55岁流年己卯，顺逆分 0.0"
+    },
+    {
+      "id": "L-55-己卯-用神到位",
+      "text": "55岁流年己卯用神到位"
+    },
+    {
+      "id": "L-55-己卯-域-财富",
+      "text": "55岁流年己卯动财富：流年见财；流年比劫夺命局透财"
+    },
+    {
+      "id": "L-55-己卯-域-身心",
+      "text": "55岁流年己卯动身心：流年支落日柱旬空（心）"
+    },
+    {
+      "id": "L-55-己卯-病候",
+      "text": "55岁流年己卯身心域被引动（流年支落日柱旬空（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年己卯岁气：上阳明燥金、中土运不及、下少阴君火；疫季 二之气（厉大至、善暴死）；年景风年；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-56-庚辰",
+      "text": "56岁流年庚辰，顺逆分 0.4"
+    },
+    {
+      "id": "L-56-庚辰-用神到位",
+      "text": "56岁流年庚辰用神到位"
+    },
+    {
+      "id": "L-56-庚辰-域-身心",
+      "text": "56岁流年庚辰动身心：流年逢华盖（心）"
+    },
+    {
+      "id": "L-56-庚辰-病候",
+      "text": "56岁流年庚辰身心域被引动（流年逢华盖（心）），病候候选（默认不写，作者挑，一步大运最多一次）：流年庚辰岁气：上太阳寒水、中金运太过、下太阴湿土；疫季 初之气（民乃厉、温病乃作）；年景燥年，太阴湿土克此人薄弱的肾，加重；此人显档（岁运与为纲之气不相得（泉克运），不相得则病；太过者暴，病甚），薄弱处肾，取重相：病 腿脚没劲，走着走着抽一下，脚底像踩钉子，肌肉软塌；再往下拉稀拉到腿肿，人被拉空。；情志往郁的方向垮：不吃不动，蒙头躺上十天半月，忽然一夜全垮掉，像大水冲开堤坝，哭着说这辈子完了。"
+    },
+    {
+      "id": "L-57-辛巳",
+      "text": "57岁流年辛巳，顺逆分 0.25"
+    },
+    {
+      "id": "L-57-辛巳-合年支",
+      "text": "57岁流年辛巳合年支"
+    },
+    {
+      "id": "L-57-辛巳-巳刑申（年支）",
+      "text": "57岁流年辛巳巳刑申（年支）"
+    },
+    {
+      "id": "L-57-辛巳-合月支",
+      "text": "57岁流年辛巳合月支"
+    },
+    {
+      "id": "L-57-辛巳-巳刑申（月支）",
+      "text": "57岁流年辛巳巳刑申（月支）"
+    },
+    {
+      "id": "L-57-辛巳-寅刑巳（时支）",
+      "text": "57岁流年辛巳寅刑巳（时支）"
+    },
+    {
+      "id": "L-57-辛巳-害时支",
+      "text": "57岁流年辛巳害时支"
+    },
+    {
+      "id": "L-57-辛巳-域-六亲",
+      "text": "57岁流年辛巳动六亲：年柱（祖上）受六合、刑；月柱（父母）受六合、刑；时柱（子女）受刑、害"
+    },
+    {
+      "id": "L-57-辛巳-域-创造与传承",
+      "text": "57岁流年辛巳动创造与传承：时柱受刑、害；流年见食伤"
+    },
+    {
+      "id": "L-58-壬午",
+      "text": "58岁流年壬午，顺逆分 0.0"
+    },
+    {
+      "id": "L-58-壬午-忌神透干",
+      "text": "58岁流年壬午忌神透干"
+    },
+    {
+      "id": "L-58-壬午-域-感情",
+      "text": "58岁流年壬午动感情：流年逢桃花；流年逢红艳"
+    },
+    {
+      "id": "L-59-癸未",
+      "text": "59岁流年癸未，顺逆分 0.0"
+    },
+    {
+      "id": "L-59-癸未-合绊用神",
+      "text": "59岁流年癸未合绊用神"
+    },
+    {
+      "id": "L-59-癸未-忌神透干",
+      "text": "59岁流年癸未忌神透干"
+    },
+    {
+      "id": "L-59-癸未-用神到位",
+      "text": "59岁流年癸未用神到位"
+    },
+    {
+      "id": "L-59-癸未-域-学识与真相",
+      "text": "59岁流年癸未动学识与真相：流年财坏命局透印；流年见印"
+    },
+    {
+      "id": "L-60-甲申",
+      "text": "60岁流年甲申，顺逆分 -0.25"
+    },
+    {
+      "id": "L-60-甲申-伏吟年柱",
+      "text": "60岁流年甲申伏吟年柱"
+    },
+    {
+      "id": "L-60-甲申-合日支",
+      "text": "60岁流年甲申合日支"
+    },
+    {
+      "id": "L-60-甲申-巳刑申（日支）",
+      "text": "60岁流年甲申巳刑申（日支）"
+    },
+    {
+      "id": "L-60-甲申-冲时支",
+      "text": "60岁流年甲申冲时支"
+    },
+    {
+      "id": "L-60-甲申-申刑寅（时支）",
+      "text": "60岁流年甲申申刑寅（时支）"
+    },
+    {
+      "id": "L-60-甲申-天克地冲时柱",
+      "text": "60岁流年甲申天克地冲时柱"
+    },
+    {
+      "id": "L-60-甲申-岁运相冲",
+      "text": "60岁流年甲申岁运相冲"
+    },
+    {
+      "id": "L-60-甲申-忌神透干",
+      "text": "60岁流年甲申忌神透干"
+    },
+    {
+      "id": "L-60-甲申-域-感情",
+      "text": "60岁流年甲申动感情：日支（配偶宫）巳受六合、刑"
+    },
+    {
+      "id": "L-60-甲申-域-六亲",
+      "text": "60岁流年甲申动六亲：时柱（子女）受六冲、刑、天克地冲；流年比劫星（手足）"
+    },
+    {
+      "id": "L-60-甲申-域-创造与传承",
+      "text": "60岁流年甲申动创造与传承：时柱受六冲、刑、天克地冲"
+    },
+    {
+      "id": "L-61-乙酉",
+      "text": "61岁流年乙酉，顺逆分 0.0"
+    },
+    {
+      "id": "L-61-乙酉-忌神透干",
+      "text": "61岁流年乙酉忌神透干"
+    },
+    {
+      "id": "L-61-乙酉-域-感情",
+      "text": "61岁流年乙酉动感情：流年逢桃花"
+    },
+    {
+      "id": "L-61-乙酉-域-事业与权力",
+      "text": "61岁流年乙酉动事业与权力：流年见官杀；流年逢将星"
+    },
+    {
+      "id": "L-62-丙戌",
+      "text": "62岁流年丙戌，顺逆分 0.4"
+    },
+    {
+      "id": "L-62-丙戌-用神到位",
+      "text": "62岁流年丙戌用神到位"
+    },
+    {
+      "id": "D-1-癸酉-基调",
+      "text": "第1步大运癸酉（3至13岁）基调逆，顺逆分 -0.25"
+    },
+    {
+      "id": "D-1-癸酉-干-偏印",
+      "text": "第1步大运癸酉（3至13岁）天干癸为偏印，示人的偏移"
+    },
+    {
+      "id": "D-1-癸酉-支-七杀",
+      "text": "第1步大运癸酉（3至13岁）地支酉本气为七杀，底色"
+    },
+    {
+      "id": "D-1-癸酉-干-忌",
+      "text": "第1步大运癸酉（3至13岁）天干癸水为忌"
+    },
+    {
+      "id": "D-1-癸酉-支-喜",
+      "text": "第1步大运癸酉（3至13岁）地支酉金为喜"
+    },
+    {
+      "id": "D-1-癸酉-档-弱逆",
+      "text": "第1步大运癸酉（3至13岁）顺逆分 -0.25，档位弱逆"
+    },
+    {
+      "id": "D-1-癸酉-长生-绝",
+      "text": "第1步大运癸酉（3至13岁）日主乙在运支酉为绝"
+    },
+    {
+      "id": "D-1-癸酉-合绊用神",
+      "text": "第1步大运癸酉（3至13岁）合绊用神"
+    },
+    {
+      "id": "D-1-癸酉-煞-将星",
+      "text": "第1步大运癸酉（3至13岁）运柱逢将星"
+    },
+    {
+      "id": "D-1-癸酉-煞-桃花",
+      "text": "第1步大运癸酉（3至13岁）运柱逢桃花"
+    },
+    {
+      "id": "D-1-癸酉-近-偏印",
+      "text": "第1步大运癸酉（3至13岁）偏印命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-1-癸酉-近-七杀",
+      "text": "第1步大运癸酉（3至13岁）七杀命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-1-癸酉-域-六亲",
+      "text": "第1步大运癸酉（3至13岁）最常动的领域六亲（信号权重 14）"
+    },
+    {
+      "id": "D-1-癸酉-域-感情",
+      "text": "第1步大运癸酉（3至13岁）最常动的领域感情（信号权重 10）"
+    },
+    {
+      "id": "D-2-甲戌-基调",
+      "text": "第2步大运甲戌（13至23岁）基调平，顺逆分 0.0"
+    },
+    {
+      "id": "D-2-甲戌-干-劫财",
+      "text": "第2步大运甲戌（13至23岁）天干甲为劫财，示人的偏移"
+    },
+    {
+      "id": "D-2-甲戌-支-正财",
+      "text": "第2步大运甲戌（13至23岁）地支戌本气为正财，底色"
+    },
+    {
+      "id": "D-2-甲戌-干-忌",
+      "text": "第2步大运甲戌（13至23岁）天干甲木为忌"
+    },
+    {
+      "id": "D-2-甲戌-支-用",
+      "text": "第2步大运甲戌（13至23岁）地支戌土为用"
+    },
+    {
+      "id": "D-2-甲戌-档-平",
+      "text": "第2步大运甲戌（13至23岁）顺逆分 0.0，档位平"
+    },
+    {
+      "id": "D-2-甲戌-长生-墓",
+      "text": "第2步大运甲戌（13至23岁）日主乙在运支戌为墓"
+    },
+    {
+      "id": "D-2-甲戌-叠-劫财",
+      "text": "第2步大运甲戌（13至23岁）劫财命局已有，放大"
+    },
+    {
+      "id": "D-2-甲戌-叠-正财",
+      "text": "第2步大运甲戌（13至23岁）正财命局已有，放大"
+    },
+    {
+      "id": "D-2-甲戌-域-感情",
+      "text": "第2步大运甲戌（13至23岁）最常动的领域感情（信号权重 13）"
+    },
+    {
+      "id": "D-2-甲戌-域-六亲",
+      "text": "第2步大运甲戌（13至23岁）最常动的领域六亲（信号权重 13）"
+    },
+    {
+      "id": "D-3-乙亥-基调",
+      "text": "第3步大运乙亥（23至33岁）基调逆，顺逆分 -0.8"
+    },
+    {
+      "id": "D-3-乙亥-干-比肩",
+      "text": "第3步大运乙亥（23至33岁）天干乙为比肩，示人的偏移"
+    },
+    {
+      "id": "D-3-乙亥-支-正印",
+      "text": "第3步大运乙亥（23至33岁）地支亥本气为正印，底色"
+    },
+    {
+      "id": "D-3-乙亥-干-忌",
+      "text": "第3步大运乙亥（23至33岁）天干乙木为忌"
+    },
+    {
+      "id": "D-3-乙亥-支-忌",
+      "text": "第3步大运乙亥（23至33岁）地支亥水为忌"
+    },
+    {
+      "id": "D-3-乙亥-档-强逆",
+      "text": "第3步大运乙亥（23至33岁）顺逆分 -0.8，档位强逆"
+    },
+    {
+      "id": "D-3-乙亥-长生-死",
+      "text": "第3步大运乙亥（23至33岁）日主乙在运支亥为死"
+    },
+    {
+      "id": "D-3-乙亥-害年支",
+      "text": "第3步大运乙亥（23至33岁）害年支"
+    },
+    {
+      "id": "D-3-乙亥-害月支",
+      "text": "第3步大运乙亥（23至33岁）害月支"
+    },
+    {
+      "id": "D-3-乙亥-冲日支",
+      "text": "第3步大运乙亥（23至33岁）冲日支"
+    },
+    {
+      "id": "D-3-乙亥-合时支",
+      "text": "第3步大运乙亥（23至33岁）合时支"
+    },
+    {
+      "id": "D-3-乙亥-煞-文昌",
+      "text": "第3步大运乙亥（23至33岁）运柱逢文昌"
+    },
+    {
+      "id": "D-3-乙亥-煞-驿马",
+      "text": "第3步大运乙亥（23至33岁）运柱逢驿马"
+    },
+    {
+      "id": "D-3-乙亥-近-比肩",
+      "text": "第3步大运乙亥（23至33岁）比肩命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-3-乙亥-叠-正印",
+      "text": "第3步大运乙亥（23至33岁）正印命局已有，放大"
+    },
+    {
+      "id": "D-3-乙亥-域-感情",
+      "text": "第3步大运乙亥（23至33岁）最常动的领域感情（信号权重 10）"
+    },
+    {
+      "id": "D-3-乙亥-域-身心",
+      "text": "第3步大运乙亥（23至33岁）最常动的领域身心（信号权重 10）"
+    },
+    {
+      "id": "D-4-丙子-基调",
+      "text": "第4步大运丙子（33至43岁）基调逆，顺逆分 -0.2"
+    },
+    {
+      "id": "D-4-丙子-干-伤官",
+      "text": "第4步大运丙子（33至43岁）天干丙为伤官，示人的偏移"
+    },
+    {
+      "id": "D-4-丙子-支-偏印",
+      "text": "第4步大运丙子（33至43岁）地支子本气为偏印，底色"
+    },
+    {
+      "id": "D-4-丙子-干-喜",
+      "text": "第4步大运丙子（33至43岁）天干丙火为喜"
+    },
+    {
+      "id": "D-4-丙子-支-忌",
+      "text": "第4步大运丙子（33至43岁）地支子水为忌"
+    },
+    {
+      "id": "D-4-丙子-档-弱逆",
+      "text": "第4步大运丙子（33至43岁）顺逆分 -0.2，档位弱逆"
+    },
+    {
+      "id": "D-4-丙子-长生-病",
+      "text": "第4步大运丙子（33至43岁）日主乙在运支子为病"
+    },
+    {
+      "id": "D-4-丙子-煞-天乙贵人",
+      "text": "第4步大运丙子（33至43岁）运柱逢天乙贵人"
+    },
+    {
+      "id": "D-4-丙子-煞-将星",
+      "text": "第4步大运丙子（33至43岁）运柱逢将星"
+    },
+    {
+      "id": "D-4-丙子-叠-伤官",
+      "text": "第4步大运丙子（33至43岁）伤官命局已有，放大"
+    },
+    {
+      "id": "D-4-丙子-近-偏印",
+      "text": "第4步大运丙子（33至43岁）偏印命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-4-丙子-域-感情",
+      "text": "第4步大运丙子（33至43岁）最常动的领域感情（信号权重 13）"
+    },
+    {
+      "id": "D-4-丙子-域-六亲",
+      "text": "第4步大运丙子（33至43岁）最常动的领域六亲（信号权重 13）"
+    },
+    {
+      "id": "D-5-丁丑-基调",
+      "text": "第5步大运丁丑（43至53岁）基调顺，顺逆分 0.4"
+    },
+    {
+      "id": "D-5-丁丑-干-食神",
+      "text": "第5步大运丁丑（43至53岁）天干丁为食神，示人的偏移"
+    },
+    {
+      "id": "D-5-丁丑-支-偏财",
+      "text": "第5步大运丁丑（43至53岁）地支丑本气为偏财，底色"
+    },
+    {
+      "id": "D-5-丁丑-干-喜",
+      "text": "第5步大运丁丑（43至53岁）天干丁火为喜"
+    },
+    {
+      "id": "D-5-丁丑-支-用",
+      "text": "第5步大运丁丑（43至53岁）地支丑土为用"
+    },
+    {
+      "id": "D-5-丁丑-档-弱顺",
+      "text": "第5步大运丁丑（43至53岁）顺逆分 0.4，档位弱顺"
+    },
+    {
+      "id": "D-5-丁丑-长生-衰",
+      "text": "第5步大运丁丑（43至53岁）日主乙在运支丑为衰"
+    },
+    {
+      "id": "D-5-丁丑-煞-华盖",
+      "text": "第5步大运丁丑（43至53岁）运柱逢华盖"
+    },
+    {
+      "id": "D-5-丁丑-近-食神",
+      "text": "第5步大运丁丑（43至53岁）食神命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-5-丁丑-近-偏财",
+      "text": "第5步大运丁丑（43至53岁）偏财命局有同家族的另一个，换了方向"
+    },
+    {
+      "id": "D-5-丁丑-域-感情",
+      "text": "第5步大运丁丑（43至53岁）最常动的领域感情（信号权重 10）"
+    },
+    {
+      "id": "D-5-丁丑-域-六亲",
+      "text": "第5步大运丁丑（43至53岁）最常动的领域六亲（信号权重 10）"
+    },
+    {
+      "id": "D-6-戊寅-基调",
+      "text": "第6步大运戊寅（53至63岁）基调逆，顺逆分 -0.3"
+    },
+    {
+      "id": "D-6-戊寅-干-正财",
+      "text": "第6步大运戊寅（53至63岁）天干戊为正财，示人的偏移"
+    },
+    {
+      "id": "D-6-戊寅-支-劫财",
+      "text": "第6步大运戊寅（53至63岁）地支寅本气为劫财，底色"
+    },
+    {
+      "id": "D-6-戊寅-干-用",
+      "text": "第6步大运戊寅（53至63岁）天干戊土为用"
+    },
+    {
+      "id": "D-6-戊寅-支-忌",
+      "text": "第6步大运戊寅（53至63岁）地支寅木为忌"
+    },
+    {
+      "id": "D-6-戊寅-档-弱逆",
+      "text": "第6步大运戊寅（53至63岁）顺逆分 -0.3，档位弱逆"
+    },
+    {
+      "id": "D-6-戊寅-长生-帝旺",
+      "text": "第6步大运戊寅（53至63岁）日主乙在运支寅为帝旺"
+    },
+    {
+      "id": "D-6-戊寅-冲年支",
+      "text": "第6步大运戊寅（53至63岁）冲年支"
+    },
+    {
+      "id": "D-6-戊寅-申刑寅（年支）",
+      "text": "第6步大运戊寅（53至63岁）申刑寅（年支）"
+    },
+    {
+      "id": "D-6-戊寅-天克地冲年柱",
+      "text": "第6步大运戊寅（53至63岁）天克地冲年柱"
+    },
+    {
+      "id": "D-6-戊寅-冲提纲",
+      "text": "第6步大运戊寅（53至63岁）冲提纲"
+    },
+    {
+      "id": "D-6-戊寅-申刑寅（月支）",
+      "text": "第6步大运戊寅（53至63岁）申刑寅（月支）"
+    },
+    {
+      "id": "D-6-戊寅-天克地冲月柱",
+      "text": "第6步大运戊寅（53至63岁）天克地冲月柱"
+    },
+    {
+      "id": "D-6-戊寅-寅刑巳（日支）",
+      "text": "第6步大运戊寅（53至63岁）寅刑巳（日支）"
+    },
+    {
+      "id": "D-6-戊寅-害日支",
+      "text": "第6步大运戊寅（53至63岁）害日支"
+    },
+    {
+      "id": "D-6-戊寅-伏吟时柱",
+      "text": "第6步大运戊寅（53至63岁）伏吟时柱"
+    },
+    {
+      "id": "D-6-戊寅-煞-驿马",
+      "text": "第6步大运戊寅（53至63岁）运柱逢驿马"
+    },
+    {
+      "id": "D-6-戊寅-叠-正财",
+      "text": "第6步大运戊寅（53至63岁）正财命局已有，放大"
+    },
+    {
+      "id": "D-6-戊寅-叠-劫财",
+      "text": "第6步大运戊寅（53至63岁）劫财命局已有，放大"
+    },
+    {
+      "id": "D-6-戊寅-域-六亲",
+      "text": "第6步大运戊寅（53至63岁）最常动的领域六亲（信号权重 15）"
+    },
+    {
+      "id": "D-6-戊寅-域-感情",
+      "text": "第6步大运戊寅（53至63岁）最常动的领域感情（信号权重 11）"
+    }
+  ]
+}

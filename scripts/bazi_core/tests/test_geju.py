@@ -66,7 +66,16 @@ def test_judge_atoms() -> None:
     assert geju.eval_atom("透财", f) is True and geju.eval_atom("透煞", f) is False
     assert geju.eval_atom("财印不相碍", f) is True  # 戊在时、壬在月，隔日主
     assert geju.eval_atom("逢官", f) is True and geju.eval_atom("无官", f) is False  # 申本气庚为官
-    assert geju.eval_atom("印化劫", f) is None  # 化类原子不判
+    assert geju.eval_atom("印化劫", f) is False  # 用神变化类：月令申未与他支会合成劫
+    assert geju.eval_atom("有印", f) is True and geju.eval_atom("官清", f) is False  # 申中庚官、寅中甲为劫……官清要不混煞不见伤：巳中丙为伤
+    assert geju.eval_atom("运行制伏", f) is None  # 运的条件仍不判
+    # 2026-09-24 扩：赵知府造 寅午一合 印化为劫（徐评三十六-15），半合只在此判定里认
+    f3 = geju.chart_facts({"year": "丙午", "month": "庚寅", "day": "丙午", "hour": "癸巳"})
+    assert geju.eval_atom("印化劫", f3) is True and geju.eval_atom("印轻逢财", f3) is True
+    # 先后与间之：财在年、煞在时、食在月
+    f4 = geju.chart_facts({"year": "戊子", "month": "丙寅", "day": "甲子", "hour": "庚午"})
+    assert geju.eval_atom("财先煞后", f4) is True and geju.eval_atom("食间之", f4) is True
+    assert geju.eval_atom("煞先财后", f4) is False and geju.eval_atom("财透一位不杂", f4) is True
     assert geju.eval_atom("身强", f) in (True, False)
     # 逢只认透干与本气：癸日亥中甲木（中气）不算"官逢伤"
     f2 = geju.chart_facts({"year": "庚戌", "month": "戊子", "day": "癸酉", "hour": "癸亥"})

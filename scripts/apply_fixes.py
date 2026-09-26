@@ -35,7 +35,7 @@ def load_pages(tagged: str) -> list[tuple[str, list[str]]]:
     pages: list[tuple[str, list[str]]] = []
     cur = None
     for line in tagged.splitlines():
-        m = re.match(rf"<!-- ({PAGE_ID})( 缺 OCR)? -->", line)
+        m = re.match(rf"<!-- ({PAGE_ID})( [^>]*?)? -->", line)   # 標記後可帶備註（缺 OCR、今注略 N 段）
         if m:
             cur = (m.group(1), [])
             pages.append(cur)
@@ -76,17 +76,17 @@ def main(argv: list[str]) -> int:
         if len(parts) < 2 or parts[0] not in index:
             failed.append(f"页码错或不在范围内：{raw}"); continue
         paras = index[parts[0]]
-        body = "|".join(parts[1:])
+        body = line.split("|", 1)[1].strip()      # 改字條目的片段可含"|"（例盤段），保留原樣
         if parts[1] == "删" and len(parts) == 3:
             i = find_para(paras, parts[2])
             if i < 0: failed.append(f"删：找不到或不唯一：{raw}"); continue
             del paras[i]; applied += 1; continue
         if parts[1] == "增首" and len(parts) == 3:
             paras.insert(0, parts[2]); applied += 1; continue
-        if parts[1] == "增" and len(parts) == 4:
+        if parts[1] == "增" and len(parts) >= 4:
             i = find_para(paras, parts[2])
             if i < 0: failed.append(f"增：找不到或不唯一：{raw}"); continue
-            paras.insert(i + 1, parts[3]); applied += 1; continue
+            paras.insert(i + 1, " | ".join(parts[3:])); applied += 1; continue   # 例盘段自身含"|"
         if parts[1] == "合并" and len(parts) == 3:
             i = find_para(paras, parts[2])
             if i <= 0: failed.append(f"合并：找不到或已是首段：{raw}"); continue

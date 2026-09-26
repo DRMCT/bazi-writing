@@ -6,6 +6,8 @@
 //   node scripts/check-terms.js 人物/ --allowlist .bazi-allow.txt      每行一个放行词
 //   node scripts/check-terms.js 命盘/ --expect-hits                    反向用：对作者本故意跑一遍，零命中反而失败（检查器自检）
 //   node scripts/check-terms.js 人物/ --summary                         只打印汇总行
+//   node scripts/check-terms.js 人物/张三.读者本.md --period 现代        设定卡的时代；带 unless 的词组（时代措辞）在 unless 列出的时代不报。
+//                                                                       不给时按文件找同目录同名的人物档案 JSON（张三.读者本.md → 张三.json）读 setting.period；找不到就当不知道，照报
 //
 // 每条命中一行：{"file","line","col","term","group","level","context"}；最后一行汇总 {"summary":true,"files","errors","warns"}。
 // 只做子串匹配，不做分词：术语都是两字以上的固定搭配，误伤靠 warn 级与 --allow 兜住。
@@ -17,10 +19,11 @@ const TABLE = path.join(__dirname, "bazi_core", "tables", "terms.json");
 const EXTS = new Set([".md", ".txt", ".json"]);
 
 function parseArgs(argv) {
-  const out = { paths: [], allow: new Set(), expectHits: false, summary: false };
+  const out = { paths: [], allow: new Set(), expectHits: false, summary: false, period: null };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--allow") out.allow.add(argv[++i]);
+    else if (a === "--period") out.period = argv[++i];
     else if (a === "--allowlist") {
       for (const line of fs.readFileSync(argv[++i], "utf8").split(/\r?\n/)) {
         const t = line.trim();
@@ -47,10 +50,25 @@ function listFiles(p) {
   return out;
 }
 
-function loadTerms(allow) {
+// 文件所属人物档案的设定卡时代：文件本身是档案 JSON 就读它；渲染本（张三.md、张三.读者本.md）找同目录的 张三.json。没有就 null（不知道）。
+function periodOf(file) {
+  const dir = path.dirname(file);
+  const base = path.basename(file).replace(/\.(md|txt|json)$/, "").replace(/\.读者本$/, "");
+  const cand = path.join(dir, base + ".json");
+  if (!fs.existsSync(cand)) return null;
+  try {
+    const doc = JSON.parse(fs.readFileSync(cand, "utf8"));
+    return doc && doc.schema === "bazi-character/v1" && doc.setting && doc.setting.period ? doc.setting.period : null;
+  } catch (e) {
+    return null;
+  }
+}
+
+function loadTerms(allow, period) {
   const t = JSON.parse(fs.readFileSync(TABLE, "utf8"));
   const terms = [];
   for (const g of t.groups) {
+    if (Array.isArray(g.unless) && period && g.unless.includes(period)) continue;  // 该时代不报这一组（时代措辞在古代、近代不报）
     for (const term of g.terms) {
       if (allow.has(term)) continue;
       terms.push({ term, group: g.name, level: g.level });
@@ -91,11 +109,17 @@ function main() {
     console.error("用法：node scripts/check-terms.js <文件或目录>... [--allow 词] [--allowlist 文件] [--expect-hits] [--summary]");
     process.exit(2);
   }
-  const terms = loadTerms(args.allow);
+  const cache = new Map();
+  const termsFor = period => {
+    const key = period || "";
+    if (!cache.has(key)) cache.set(key, loadTerms(args.allow, period));
+    return cache.get(key);
+  };
   let files = 0, errors = 0, warns = 0;
   for (const p of args.paths) {
     for (const file of listFiles(p)) {
       files++;
+      const terms = termsFor(args.period || periodOf(file));
       for (const h of scanFile(file, terms)) {
         if (h.level === "error") errors++; else warns++;
         if (!args.summary) console.log(JSON.stringify(h));

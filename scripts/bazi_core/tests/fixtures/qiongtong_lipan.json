@@ -1,6 +1,6 @@
 {
  "schema": "qiongtong-lipan/1",
- "generated": "2026-09-22",
+ "generated": "2026-09-25",
  "source": "《穷通宝鉴评注》徐乐吾评注本例盘，校对本 source/text/{日主}.md，scripts/extract_lipan.py 抽取",
  "cases": [
   {
@@ -3240,12 +3240,34 @@
    "raw": "己卯，丙寅，乙卯，庚辰。",
    "ocrFixed": [],
    "judgment": [
-    "董其昌命，乙木皆喜丙为用，此造独以财官取贵，则以地支成方故也。方与局不同，局之气专一而纯，喜得丙癸以成曲直，如下李文忠命是也。方之气旺而夹杂，必须官然以致之，春金气弱，更取财以生之，一见王癸，泄弱春金而生旺木，便不足道，以上明票祯命是也。《滴天髓》云：成局干透一官星，生地库地皆非福。生方平透一元神，左边右边空碌碌。细味之自明。命理千变万化，信然哉！",
-    "葵癸未，甲寅，乙亥，己卯。",
-    "李文忠公鸿章命，曲直仁寿格，癸透丙藏，出将人相，参阅二月乙木节。"
+    "董其昌命，乙木皆喜丙为用，此造独以财官取贵，则以地支成方故也。方与局不同，局之气专一而纯，喜得丙癸以成曲直，如下李文忠命是也。方之气旺而夹杂，必须官然以致之，春金气弱，更取财以生之，一见王癸，泄弱春金而生旺木，便不足道，以上明票祯命是也。《滴天髓》云：成局干透一官星，生地库地皆非福。生方平透一元神，左边右边空碌碌。细味之自明。命理千变万化，信然哉！"
    ],
    "note": [],
    "name": "董其昌",
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "乙-007",
+   "dayMaster": "乙",
+   "section": "寅",
+   "sectionTitle": "正月乙木",
+   "page": 70,
+   "line": 42,
+   "pillars": {
+    "year": "癸未",
+    "month": "甲寅",
+    "day": "乙亥",
+    "hour": "己卯"
+   },
+   "raw": "癸未，甲寅，乙亥，己卯。",
+   "ocrFixed": [],
+   "judgment": [
+    "李文忠公鸿章命，曲直仁寿格，癸透丙藏，出将人相，参阅二月乙木节。"
+   ],
+   "note": [],
+   "name": "李文忠公鸿章",
    "date": "道光三年正月初五日卯时。",
    "lunar": {
     "year": 1823,
@@ -3255,12 +3277,10 @@
     "hourBranch": "卯",
     "era": "道光三年"
    },
-   "flags": [
-    "时支辰≠纪年行卯时"
-   ]
+   "flags": []
   },
   {
-   "id": "乙-007",
+   "id": "乙-008",
    "dayMaster": "乙",
    "section": "寅",
    "sectionTitle": "正月乙木",
@@ -3291,7 +3311,7 @@
    "flags": []
   },
   {
-   "id": "乙-008",
+   "id": "乙-009",
    "dayMaster": "乙",
    "section": "寅",
    "sectionTitle": "正月乙木",
@@ -3320,7 +3340,7 @@
    "flags": []
   },
   {
-   "id": "乙-009",
+   "id": "乙-010",
    "dayMaster": "乙",
    "section": "寅",
    "sectionTitle": "正月乙木",
@@ -3354,7 +3374,7 @@
    "flags": []
   },
   {
-   "id": "乙-010",
+   "id": "乙-011",
    "dayMaster": "乙",
    "section": "寅",
    "sectionTitle": "正月乙木",
@@ -3385,7 +3405,7 @@
    "flags": []
   },
   {
-   "id": "乙-011",
+   "id": "乙-012",
    "dayMaster": "乙",
    "section": "寅",
    "sectionTitle": "正月乙木",
@@ -3418,7 +3438,7 @@
    "flags": []
   },
   {
-   "id": "乙-012",
+   "id": "乙-013",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3444,7 +3464,7 @@
    "flags": []
   },
   {
-   "id": "乙-013",
+   "id": "乙-014",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3470,7 +3490,7 @@
    "flags": []
   },
   {
-   "id": "乙-014",
+   "id": "乙-015",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3496,7 +3516,7 @@
    "flags": []
   },
   {
-   "id": "乙-015",
+   "id": "乙-016",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3518,7 +3538,7 @@
    "flags": []
   },
   {
-   "id": "乙-016",
+   "id": "乙-017",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3546,7 +3566,7 @@
    "flags": []
   },
   {
-   "id": "乙-017",
+   "id": "乙-018",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3576,7 +3596,7 @@
    "flags": []
   },
   {
-   "id": "乙-018",
+   "id": "乙-019",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3602,7 +3622,7 @@
    "flags": []
   },
   {
-   "id": "乙-019",
+   "id": "乙-020",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3633,7 +3653,7 @@
    "flags": []
   },
   {
-   "id": "乙-020",
+   "id": "乙-021",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3666,7 +3686,7 @@
    "flags": []
   },
   {
-   "id": "乙-021",
+   "id": "乙-022",
    "dayMaster": "乙",
    "section": "卯",
    "sectionTitle": "二月乙木",
@@ -3699,7 +3719,7 @@
    "flags": []
   },
   {
-   "id": "乙-022",
+   "id": "乙-023",
    "dayMaster": "乙",
    "section": "辰",
    "sectionTitle": "三月乙木",
@@ -3727,7 +3747,7 @@
    "flags": []
   },
   {
-   "id": "乙-023",
+   "id": "乙-024",
    "dayMaster": "乙",
    "section": "辰",
    "sectionTitle": "三月乙木",
@@ -3753,7 +3773,7 @@
    "flags": []
   },
   {
-   "id": "乙-024",
+   "id": "乙-025",
    "dayMaster": "乙",
    "section": "辰",
    "sectionTitle": "三月乙木",
@@ -3779,7 +3799,7 @@
    "flags": []
   },
   {
-   "id": "乙-025",
+   "id": "乙-026",
    "dayMaster": "乙",
    "section": "辰",
    "sectionTitle": "三月乙木",
@@ -3810,7 +3830,7 @@
    "flags": []
   },
   {
-   "id": "乙-026",
+   "id": "乙-027",
    "dayMaster": "乙",
    "section": "辰",
    "sectionTitle": "三月乙木",
@@ -3835,7 +3855,7 @@
    "flags": []
   },
   {
-   "id": "乙-027",
+   "id": "乙-028",
    "dayMaster": "乙",
    "section": "辰",
    "sectionTitle": "三月乙木",
@@ -3868,7 +3888,7 @@
    "flags": []
   },
   {
-   "id": "乙-028",
+   "id": "乙-029",
    "dayMaster": "乙",
    "section": "巳",
    "sectionTitle": "四月乙木",
@@ -3898,7 +3918,7 @@
    "flags": []
   },
   {
-   "id": "乙-029",
+   "id": "乙-030",
    "dayMaster": "乙",
    "section": "巳",
    "sectionTitle": "四月乙木",
@@ -3931,7 +3951,7 @@
    "flags": []
   },
   {
-   "id": "乙-030",
+   "id": "乙-031",
    "dayMaster": "乙",
    "section": "巳",
    "sectionTitle": "四月乙木",
@@ -3959,7 +3979,7 @@
    "flags": []
   },
   {
-   "id": "乙-031",
+   "id": "乙-032",
    "dayMaster": "乙",
    "section": "巳",
    "sectionTitle": "四月乙木",
@@ -3993,7 +4013,7 @@
    "flags": []
   },
   {
-   "id": "乙-032",
+   "id": "乙-033",
    "dayMaster": "乙",
    "section": "午",
    "sectionTitle": "五月乙木",
@@ -4021,7 +4041,7 @@
    "flags": []
   },
   {
-   "id": "乙-033",
+   "id": "乙-034",
    "dayMaster": "乙",
    "section": "午",
    "sectionTitle": "五月乙木",
@@ -4047,7 +4067,7 @@
    "flags": []
   },
   {
-   "id": "乙-034",
+   "id": "乙-035",
    "dayMaster": "乙",
    "section": "午",
    "sectionTitle": "五月乙木",
@@ -4078,7 +4098,7 @@
    "flags": []
   },
   {
-   "id": "乙-035",
+   "id": "乙-036",
    "dayMaster": "乙",
    "section": "午",
    "sectionTitle": "五月乙木",
@@ -4109,7 +4129,7 @@
    "flags": []
   },
   {
-   "id": "乙-036",
+   "id": "乙-037",
    "dayMaster": "乙",
    "section": "未",
    "sectionTitle": "六月乙木",
@@ -4137,7 +4157,7 @@
    "flags": []
   },
   {
-   "id": "乙-037",
+   "id": "乙-038",
    "dayMaster": "乙",
    "section": "未",
    "sectionTitle": "六月乙木",
@@ -4164,7 +4184,7 @@
    "flags": []
   },
   {
-   "id": "乙-038",
+   "id": "乙-039",
    "dayMaster": "乙",
    "section": "未",
    "sectionTitle": "六月乙木",
@@ -4195,7 +4215,7 @@
    "flags": []
   },
   {
-   "id": "乙-039",
+   "id": "乙-040",
    "dayMaster": "乙",
    "section": "未",
    "sectionTitle": "六月乙木",
@@ -4224,7 +4244,7 @@
    "flags": []
   },
   {
-   "id": "乙-040",
+   "id": "乙-041",
    "dayMaster": "乙",
    "section": "未",
    "sectionTitle": "六月乙木",
@@ -4257,7 +4277,7 @@
    "flags": []
   },
   {
-   "id": "乙-041",
+   "id": "乙-042",
    "dayMaster": "乙",
    "section": "未",
    "sectionTitle": "六月乙木",
@@ -4288,7 +4308,7 @@
    "flags": []
   },
   {
-   "id": "乙-042",
+   "id": "乙-043",
    "dayMaster": "乙",
    "section": "申",
    "sectionTitle": "七月乙木",
@@ -4314,7 +4334,7 @@
    "flags": []
   },
   {
-   "id": "乙-043",
+   "id": "乙-044",
    "dayMaster": "乙",
    "section": "申",
    "sectionTitle": "七月乙木",
@@ -4340,7 +4360,7 @@
    "flags": []
   },
   {
-   "id": "乙-044",
+   "id": "乙-045",
    "dayMaster": "乙",
    "section": "申",
    "sectionTitle": "七月乙木",
@@ -4373,7 +4393,7 @@
    "flags": []
   },
   {
-   "id": "乙-045",
+   "id": "乙-046",
    "dayMaster": "乙",
    "section": "申",
    "sectionTitle": "七月乙木",
@@ -4406,7 +4426,7 @@
    "flags": []
   },
   {
-   "id": "乙-046",
+   "id": "乙-047",
    "dayMaster": "乙",
    "section": "申",
    "sectionTitle": "七月乙木",
@@ -4437,7 +4457,7 @@
    "flags": []
   },
   {
-   "id": "乙-047",
+   "id": "乙-048",
    "dayMaster": "乙",
    "section": "申",
    "sectionTitle": "七月乙木",
@@ -4468,7 +4488,7 @@
    "flags": []
   },
   {
-   "id": "乙-048",
+   "id": "乙-049",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4496,7 +4516,7 @@
    "flags": []
   },
   {
-   "id": "乙-049",
+   "id": "乙-050",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4524,7 +4544,7 @@
    "flags": []
   },
   {
-   "id": "乙-050",
+   "id": "乙-051",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4548,7 +4568,7 @@
    "flags": []
   },
   {
-   "id": "乙-051",
+   "id": "乙-052",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4572,7 +4592,7 @@
    "flags": []
   },
   {
-   "id": "乙-052",
+   "id": "乙-053",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4605,7 +4625,7 @@
    "flags": []
   },
   {
-   "id": "乙-053",
+   "id": "乙-054",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4630,7 +4650,7 @@
    "flags": []
   },
   {
-   "id": "乙-054",
+   "id": "乙-055",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4657,7 +4677,7 @@
    "flags": []
   },
   {
-   "id": "乙-055",
+   "id": "乙-056",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4688,7 +4708,7 @@
    "flags": []
   },
   {
-   "id": "乙-056",
+   "id": "乙-057",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4715,7 +4735,7 @@
    "flags": []
   },
   {
-   "id": "乙-057",
+   "id": "乙-058",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4748,7 +4768,7 @@
    "flags": []
   },
   {
-   "id": "乙-058",
+   "id": "乙-059",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4781,7 +4801,7 @@
    "flags": []
   },
   {
-   "id": "乙-059",
+   "id": "乙-060",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4812,7 +4832,7 @@
    "flags": []
   },
   {
-   "id": "乙-060",
+   "id": "乙-061",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4843,7 +4863,7 @@
    "flags": []
   },
   {
-   "id": "乙-061",
+   "id": "乙-062",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4874,7 +4894,7 @@
    "flags": []
   },
   {
-   "id": "乙-062",
+   "id": "乙-063",
    "dayMaster": "乙",
    "section": "酉",
    "sectionTitle": "八月乙木",
@@ -4905,7 +4925,7 @@
    "flags": []
   },
   {
-   "id": "乙-063",
+   "id": "乙-064",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -4931,7 +4951,7 @@
    "flags": []
   },
   {
-   "id": "乙-064",
+   "id": "乙-065",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -4955,7 +4975,7 @@
    "flags": []
   },
   {
-   "id": "乙-065",
+   "id": "乙-066",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -4979,7 +4999,7 @@
    "flags": []
   },
   {
-   "id": "乙-066",
+   "id": "乙-067",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5005,7 +5025,7 @@
    "flags": []
   },
   {
-   "id": "乙-067",
+   "id": "乙-068",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5029,7 +5049,38 @@
    "flags": []
   },
   {
-   "id": "乙-068",
+   "id": "乙-069",
+   "dayMaster": "乙",
+   "section": "戌",
+   "sectionTitle": "九月乙木",
+   "page": 90,
+   "line": 387,
+   "pillars": {
+    "year": "乙未",
+    "month": "丙戌",
+    "day": "乙亥",
+    "hour": "丙子"
+   },
+   "raw": "乙未，丙戌，乙亥，丙子。",
+   "ocrFixed": [],
+   "judgment": [
+    "陶模命，丙透癸藏，专用子中癸水，六乙鼠贵格也，位至总督。"
+   ],
+   "note": [],
+   "name": "陶模",
+   "date": "道光十五年八月十九日子时。",
+   "lunar": {
+    "year": 1835,
+    "month": 8,
+    "day": 19,
+    "leap": false,
+    "hourBranch": "子",
+    "era": "道光十五年"
+   },
+   "flags": []
+  },
+  {
+   "id": "乙-070",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5060,7 +5111,7 @@
    "flags": []
   },
   {
-   "id": "乙-069",
+   "id": "乙-071",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5091,7 +5142,7 @@
    "flags": []
   },
   {
-   "id": "乙-070",
+   "id": "乙-072",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5124,7 +5175,7 @@
    "flags": []
   },
   {
-   "id": "乙-071",
+   "id": "乙-073",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5157,7 +5208,7 @@
    "flags": []
   },
   {
-   "id": "乙-072",
+   "id": "乙-074",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5181,7 +5232,7 @@
    "flags": []
   },
   {
-   "id": "乙-073",
+   "id": "乙-075",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5206,7 +5257,7 @@
    "flags": []
   },
   {
-   "id": "乙-074",
+   "id": "乙-076",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5237,7 +5288,7 @@
    "flags": []
   },
   {
-   "id": "乙-075",
+   "id": "乙-077",
    "dayMaster": "乙",
    "section": "戌",
    "sectionTitle": "九月乙木",
@@ -5271,7 +5322,7 @@
    "flags": []
   },
   {
-   "id": "乙-076",
+   "id": "乙-078",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5299,7 +5350,7 @@
    "flags": []
   },
   {
-   "id": "乙-077",
+   "id": "乙-079",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5321,7 +5372,7 @@
    "flags": []
   },
   {
-   "id": "乙-078",
+   "id": "乙-080",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5347,7 +5398,7 @@
    "flags": []
   },
   {
-   "id": "乙-079",
+   "id": "乙-081",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5373,7 +5424,7 @@
    "flags": []
   },
   {
-   "id": "乙-080",
+   "id": "乙-082",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5401,7 +5452,7 @@
    "flags": []
   },
   {
-   "id": "乙-081",
+   "id": "乙-083",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5427,7 +5478,7 @@
    "flags": []
   },
   {
-   "id": "乙-082",
+   "id": "乙-084",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5453,7 +5504,7 @@
    "flags": []
   },
   {
-   "id": "乙-083",
+   "id": "乙-085",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5479,7 +5530,7 @@
    "flags": []
   },
   {
-   "id": "乙-084",
+   "id": "乙-086",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5507,7 +5558,7 @@
    "flags": []
   },
   {
-   "id": "乙-085",
+   "id": "乙-087",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5533,7 +5584,7 @@
    "flags": []
   },
   {
-   "id": "乙-086",
+   "id": "乙-088",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5566,7 +5617,7 @@
    "flags": []
   },
   {
-   "id": "乙-087",
+   "id": "乙-089",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5597,7 +5648,7 @@
    "flags": []
   },
   {
-   "id": "乙-088",
+   "id": "乙-090",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5628,7 +5679,7 @@
    "flags": []
   },
   {
-   "id": "乙-089",
+   "id": "乙-091",
    "dayMaster": "乙",
    "section": "亥",
    "sectionTitle": "十月乙木",
@@ -5661,7 +5712,7 @@
    "flags": []
   },
   {
-   "id": "乙-090",
+   "id": "乙-092",
    "dayMaster": "乙",
    "section": "子",
    "sectionTitle": "十一月乙木",
@@ -5687,7 +5738,7 @@
    "flags": []
   },
   {
-   "id": "乙-091",
+   "id": "乙-093",
    "dayMaster": "乙",
    "section": "子",
    "sectionTitle": "十一月乙木",
@@ -5715,7 +5766,7 @@
    "flags": []
   },
   {
-   "id": "乙-092",
+   "id": "乙-094",
    "dayMaster": "乙",
    "section": "子",
    "sectionTitle": "十一月乙木",
@@ -5739,7 +5790,7 @@
    "flags": []
   },
   {
-   "id": "乙-093",
+   "id": "乙-095",
    "dayMaster": "乙",
    "section": "子",
    "sectionTitle": "十一月乙木",
@@ -5763,7 +5814,7 @@
    "flags": []
   },
   {
-   "id": "乙-094",
+   "id": "乙-096",
    "dayMaster": "乙",
    "section": "子",
    "sectionTitle": "十一月乙木",
@@ -5796,7 +5847,7 @@
    "flags": []
   },
   {
-   "id": "乙-095",
+   "id": "乙-097",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5823,7 +5874,7 @@
    "flags": []
   },
   {
-   "id": "乙-096",
+   "id": "乙-098",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5851,7 +5902,31 @@
    "flags": []
   },
   {
-   "id": "乙-097",
+   "id": "乙-099",
+   "dayMaster": "乙",
+   "section": "丑",
+   "sectionTitle": "十二月乙木",
+   "page": 97,
+   "line": 523,
+   "pillars": {
+    "year": "丁酉",
+    "month": "癸丑",
+    "day": "乙卯",
+    "hour": "丙子"
+   },
+   "raw": "丁酉，癸丑，乙卯，丙子。",
+   "ocrFixed": [],
+   "judgment": [
+    "都宪。"
+   ],
+   "note": [],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "乙-100",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5875,7 +5950,7 @@
    "flags": []
   },
   {
-   "id": "乙-098",
+   "id": "乙-101",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5901,7 +5976,31 @@
    "flags": []
   },
   {
-   "id": "乙-099",
+   "id": "乙-102",
+   "dayMaster": "乙",
+   "section": "丑",
+   "sectionTitle": "十二月乙木",
+   "page": 98,
+   "line": 532,
+   "pillars": {
+    "year": "辛卯",
+    "month": "辛丑",
+    "day": "乙亥",
+    "hour": "辛巳"
+   },
+   "raw": "辛卯，辛丑，乙亥，辛巳。",
+   "ocrFixed": [],
+   "judgment": [
+    "何起凤尚书。"
+   ],
+   "note": [],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "乙-103",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5927,7 +6026,7 @@
    "flags": []
   },
   {
-   "id": "乙-100",
+   "id": "乙-104",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5955,7 +6054,7 @@
    "flags": []
   },
   {
-   "id": "乙-101",
+   "id": "乙-105",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -5988,7 +6087,7 @@
    "flags": []
   },
   {
-   "id": "乙-102",
+   "id": "乙-106",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -6017,7 +6116,32 @@
    "flags": []
   },
   {
-   "id": "乙-103",
+   "id": "乙-107",
+   "dayMaster": "乙",
+   "section": "丑",
+   "sectionTitle": "十二月乙木",
+   "page": 98,
+   "line": 543,
+   "pillars": {
+    "year": "壬申",
+    "month": "癸丑",
+    "day": "乙丑",
+    "hour": "辛巳"
+   },
+   "raw": "壬申，癸丑，乙丑，辛巳。",
+   "ocrFixed": [],
+   "judgment": [
+    "同治十一年十二月十五日已时。",
+    "刘梦荪命，丙火得所，位至上海道。"
+   ],
+   "note": [],
+   "name": "刘梦荪",
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "乙-108",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -6042,7 +6166,7 @@
    "flags": []
   },
   {
-   "id": "乙-104",
+   "id": "乙-109",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -6067,7 +6191,7 @@
    "flags": []
   },
   {
-   "id": "乙-105",
+   "id": "乙-110",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -6098,7 +6222,7 @@
    "flags": []
   },
   {
-   "id": "乙-106",
+   "id": "乙-111",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -6131,7 +6255,7 @@
    "flags": []
   },
   {
-   "id": "乙-107",
+   "id": "乙-112",
    "dayMaster": "乙",
    "section": "丑",
    "sectionTitle": "十二月乙木",
@@ -6463,8 +6587,287 @@
    "dayMaster": "丙",
    "section": "寅",
    "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 80,
+   "pillars": {
+    "year": "壬子",
+    "month": "壬寅",
+    "day": "丙午",
+    "hour": "庚寅"
+   },
+   "raw": "壬子，壬寅，丙午，庚寅。",
+   "ocrFixed": [],
+   "judgment": [
+    "陆建瀛命，壬庚出干，寅午会局，身煞两旺，官至总督。"
+   ],
+   "note": [],
+   "name": "陆建瀛",
+   "date": "乾隆五十七年二月初七日寅时。",
+   "lunar": {
+    "year": 1792,
+    "month": 2,
+    "day": 7,
+    "leap": false,
+    "hourBranch": "寅",
+    "era": "乾隆五十七年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-013",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 83,
+   "pillars": {
+    "year": "戊戌",
+    "month": "甲寅",
+    "day": "丙申",
+    "hour": "己亥"
+   },
+   "raw": "戊戌，甲寅，丙申，己亥。",
+   "ocrFixed": [],
+   "judgment": [
+    "胡字骏命，食伤晦火，用甲木破戊己土，副榜，甘肃平凉等府知府。"
+   ],
+   "note": [],
+   "name": "胡字骏",
+   "date": "道光十八年正月廿三日亥时。",
+   "lunar": {
+    "year": 1838,
+    "month": 1,
+    "day": 23,
+    "leap": false,
+    "hourBranch": "亥",
+    "era": "道光十八年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-014",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 86,
+   "pillars": {
+    "year": "甲子",
+    "month": "丙寅",
+    "day": "丙辰",
+    "hour": "庚寅"
+   },
+   "raw": "甲子，丙寅，丙辰，庚寅。",
+   "ocrFixed": [],
+   "judgment": [
+    "叶德辉命，庚金虽透，壬不出干，地支子寅夹丑，甲庚财印临贵，寅辰夹卯，气全东方，申运冲寅，破拱夹，惨遭非命。"
+   ],
+   "note": [],
+   "name": "叶德辉",
+   "date": "同治三年正月十四日寅时。",
+   "lunar": {
+    "year": 1864,
+    "month": 1,
+    "day": 14,
+    "leap": false,
+    "hourBranch": "寅",
+    "era": "同治三年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-015",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 89,
+   "pillars": {
+    "year": "癸酉",
+    "month": "甲寅",
+    "day": "丙午",
+    "hour": "癸巳"
+   },
+   "raw": "癸酉，甲寅，丙午，癸巳。",
+   "ocrFixed": [],
+   "judgment": [
+    "梁启超命，日坐阳刃，身旺用官，子运冲刃，亡命海外，戊运合去官星，不禄。"
+   ],
+   "note": [],
+   "name": "梁启超",
+   "date": "同治十二年正月廿六日巳时。",
+   "lunar": {
+    "year": 1873,
+    "month": 1,
+    "day": 26,
+    "leap": false,
+    "hourBranch": "巳",
+    "era": "同治十二年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-016",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 92,
+   "pillars": {
+    "year": "丁丑",
+    "month": "壬寅",
+    "day": "丙寅",
+    "hour": "庚寅"
+   },
+   "raw": "丁丑，壬寅，丙寅，庚寅。",
+   "ocrFixed": [],
+   "judgment": [
+    "沈瑞林命，壬庚两透，财滋弱煞，富贵之命。"
+   ],
+   "note": [],
+   "name": "沈瑞林",
+   "date": "光绪三年正月初十日寅时。",
+   "lunar": {
+    "year": 1877,
+    "month": 1,
+    "day": 10,
+    "leap": false,
+    "hourBranch": "寅",
+    "era": "光绪三年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-017",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 95,
+   "pillars": {
+    "year": "戊寅",
+    "month": "甲寅",
+    "day": "丙辰",
+    "hour": "丙申"
+   },
+   "raw": "戊寅，甲寅，丙辰，丙申。",
+   "ocrFixed": [],
+   "judgment": [
+    "杨寿生命，专用申宫庚金财星，富商之命。"
+   ],
+   "note": [],
+   "name": "杨寿生",
+   "date": "光绪四年正月初六日申时。",
+   "lunar": {
+    "year": 1878,
+    "month": 1,
+    "day": 6,
+    "leap": false,
+    "hourBranch": "申",
+    "era": "光绪四年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-018",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 98,
+   "pillars": {
+    "year": "壬午",
+    "month": "壬寅",
+    "day": "丙申",
+    "hour": "乙未"
+   },
+   "raw": "壬午，壬寅，丙申，乙未。",
+   "ocrFixed": [],
+   "judgment": [
+    "孙多珏命，壬透庚藏，丙火亦旺，用印化煞，富贵之命。"
+   ],
+   "note": [],
+   "name": "孙多珏",
+   "date": "光绪八年正月初九日未时。",
+   "lunar": {
+    "year": 1882,
+    "month": 1,
+    "day": 9,
+    "leap": false,
+    "hourBranch": "未",
+    "era": "光绪八年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-019",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 101,
+   "pillars": {
+    "year": "辛卯",
+    "month": "庚寅",
+    "day": "丙戌",
+    "hour": "己丑"
+   },
+   "raw": "辛卯，庚寅，丙戌，己丑。",
+   "ocrFixed": [],
+   "judgment": [
+    "王普命，伤官旺而生财，宜印劫为用，喜丙辛不合，贵为省主席，总领师干。"
+   ],
+   "note": [],
+   "name": "王普",
+   "date": "光绪十七年正月廿一日丑时。",
+   "lunar": {
+    "year": 1891,
+    "month": 1,
+    "day": 21,
+    "leap": false,
+    "hourBranch": "丑",
+    "era": "光绪十七年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-020",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
+   "page": 105,
+   "line": 104,
+   "pillars": {
+    "year": "戊戌",
+    "month": "甲寅",
+    "day": "丙午",
+    "hour": "戊戌"
+   },
+   "raw": "戊戌，甲寅，丙午，戊戌。",
+   "ocrFixed": [],
+   "judgment": [
+    "都锦生命，炎上失时，戊土戊重，月令甲木，能破年上之戊，而不能"
+   ],
+   "note": [],
+   "name": "都锦生",
+   "date": "光绪廿四年正月廿二日戌时。",
+   "lunar": {
+    "year": 1898,
+    "month": 1,
+    "day": 22,
+    "leap": false,
+    "hourBranch": "戌",
+    "era": "光绪廿四年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-021",
+   "dayMaster": "丙",
+   "section": "寅",
+   "sectionTitle": "正月丙火",
    "page": 106,
-   "line": 84,
+   "line": 110,
    "pillars": {
     "year": "庚申",
     "month": "戊寅",
@@ -6490,12 +6893,12 @@
    "flags": []
   },
   {
-   "id": "丙-013",
+   "id": "丙-022",
    "dayMaster": "丙",
    "section": "卯",
    "sectionTitle": "二月丙火",
    "page": 107,
-   "line": 107,
+   "line": 133,
    "pillars": {
     "year": "己亥",
     "month": "丁卯",
@@ -6517,12 +6920,12 @@
    "flags": []
   },
   {
-   "id": "丙-014",
+   "id": "丙-023",
    "dayMaster": "丙",
    "section": "卯",
    "sectionTitle": "二月丙火",
    "page": 107,
-   "line": 110,
+   "line": 136,
    "pillars": {
     "year": "丁巳",
     "month": "癸卯",
@@ -6545,12 +6948,12 @@
    "flags": []
   },
   {
-   "id": "丙-015",
+   "id": "丙-024",
    "dayMaster": "丙",
    "section": "卯",
    "sectionTitle": "二月丙火",
    "page": 108,
-   "line": 115,
+   "line": 141,
    "pillars": {
     "year": "乙亥",
     "month": "己卯",
@@ -6578,12 +6981,12 @@
    "flags": []
   },
   {
-   "id": "丙-016",
+   "id": "丙-025",
    "dayMaster": "丙",
    "section": "卯",
    "sectionTitle": "二月丙火",
    "page": 108,
-   "line": 118,
+   "line": 144,
    "pillars": {
     "year": "庚辰",
     "month": "己卯",
@@ -6609,12 +7012,12 @@
    "flags": []
   },
   {
-   "id": "丙-017",
+   "id": "丙-026",
    "dayMaster": "丙",
    "section": "卯",
    "sectionTitle": "二月丙火",
    "page": 108,
-   "line": 121,
+   "line": 147,
    "pillars": {
     "year": "丁亥",
     "month": "癸卯",
@@ -6642,12 +7045,12 @@
    "flags": []
   },
   {
-   "id": "丙-018",
+   "id": "丙-027",
    "dayMaster": "丙",
    "section": "卯",
    "sectionTitle": "二月丙火",
    "page": 108,
-   "line": 124,
+   "line": 150,
    "pillars": {
     "year": "己丑",
     "month": "丁卯",
@@ -6670,12 +7073,12 @@
    "flags": []
   },
   {
-   "id": "丙-019",
+   "id": "丙-028",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 109,
-   "line": 140,
+   "line": 166,
    "pillars": {
     "year": "癸丑",
     "month": "丙辰",
@@ -6698,12 +7101,12 @@
    "flags": []
   },
   {
-   "id": "丙-020",
+   "id": "丙-029",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 109,
-   "line": 143,
+   "line": 169,
    "pillars": {
     "year": "辛卯",
     "month": "壬辰",
@@ -6726,12 +7129,12 @@
    "flags": []
   },
   {
-   "id": "丙-021",
+   "id": "丙-030",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 150,
+   "line": 176,
    "pillars": {
     "year": "庚申",
     "month": "庚辰",
@@ -6757,12 +7160,12 @@
    "flags": []
   },
   {
-   "id": "丙-022",
+   "id": "丙-031",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 153,
+   "line": 179,
    "pillars": {
     "year": "丁卯",
     "month": "甲辰",
@@ -6788,12 +7191,12 @@
    "flags": []
   },
   {
-   "id": "丙-023",
+   "id": "丙-032",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 156,
+   "line": 182,
    "pillars": {
     "year": "丁卯",
     "month": "甲辰",
@@ -6819,12 +7222,12 @@
    "flags": []
   },
   {
-   "id": "丙-024",
+   "id": "丙-033",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 159,
+   "line": 185,
    "pillars": {
     "year": "己巳",
     "month": "戊辰",
@@ -6853,12 +7256,12 @@
    "flags": []
   },
   {
-   "id": "丙-025",
+   "id": "丙-034",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 162,
+   "line": 188,
    "pillars": {
     "year": "癸未",
     "month": "丙辰",
@@ -6884,12 +7287,12 @@
    "flags": []
   },
   {
-   "id": "丙-026",
+   "id": "丙-035",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 165,
+   "line": 191,
    "pillars": {
     "year": "戊子",
     "month": "丙辰",
@@ -6915,12 +7318,12 @@
    "flags": []
   },
   {
-   "id": "丙-027",
+   "id": "丙-036",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 168,
+   "line": 194,
    "pillars": {
     "year": "戊子",
     "month": "丙辰",
@@ -6946,12 +7349,12 @@
    "flags": []
   },
   {
-   "id": "丙-028",
+   "id": "丙-037",
    "dayMaster": "丙",
    "section": "辰",
    "sectionTitle": "三月丙火",
    "page": 110,
-   "line": 171,
+   "line": 197,
    "pillars": {
     "year": "甲辰",
     "month": "戊辰",
@@ -6968,12 +7371,12 @@
    "flags": []
   },
   {
-   "id": "丙-029",
+   "id": "丙-038",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 113,
-   "line": 205,
+   "line": 231,
    "pillars": {
     "year": "乙未",
     "month": "辛巳",
@@ -6996,12 +7399,12 @@
    "flags": []
   },
   {
-   "id": "丙-030",
+   "id": "丙-039",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 113,
-   "line": 208,
+   "line": 234,
    "pillars": {
     "year": "庚子",
     "month": "辛巳",
@@ -7024,12 +7427,12 @@
    "flags": []
   },
   {
-   "id": "丙-031",
+   "id": "丙-040",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 113,
-   "line": 211,
+   "line": 237,
    "pillars": {
     "year": "庚辰",
     "month": "辛巳",
@@ -7053,12 +7456,12 @@
    "flags": []
   },
   {
-   "id": "丙-032",
+   "id": "丙-041",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 113,
-   "line": 214,
+   "line": 240,
    "pillars": {
     "year": "丁巳",
     "month": "乙巳",
@@ -7082,12 +7485,12 @@
    "flags": []
   },
   {
-   "id": "丙-033",
+   "id": "丙-042",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 113,
-   "line": 217,
+   "line": 243,
    "pillars": {
     "year": "丁卯",
     "month": "乙巳",
@@ -7110,12 +7513,12 @@
    "flags": []
   },
   {
-   "id": "丙-034",
+   "id": "丙-043",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 113,
-   "line": 221,
+   "line": 247,
    "pillars": {
     "year": "癸酉",
     "month": "丁巳",
@@ -7141,12 +7544,12 @@
    "flags": []
   },
   {
-   "id": "丙-035",
+   "id": "丙-044",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 114,
-   "line": 226,
+   "line": 252,
    "pillars": {
     "year": "癸巳",
     "month": "丁巳",
@@ -7170,12 +7573,12 @@
    "flags": []
   },
   {
-   "id": "丙-036",
+   "id": "丙-045",
    "dayMaster": "丙",
    "section": "巳",
    "sectionTitle": "四月丙火",
    "page": 114,
-   "line": 229,
+   "line": 255,
    "pillars": {
     "year": "甲午",
     "month": "己巳",
@@ -7204,12 +7607,12 @@
    "flags": []
   },
   {
-   "id": "丙-037",
+   "id": "丙-046",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 249,
+   "line": 275,
    "pillars": {
     "year": "庚寅",
     "month": "壬午",
@@ -7228,12 +7631,12 @@
    "flags": []
   },
   {
-   "id": "丙-038",
+   "id": "丙-047",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 251,
+   "line": 277,
    "pillars": {
     "year": "戊申",
     "month": "戊午",
@@ -7254,12 +7657,12 @@
    "flags": []
   },
   {
-   "id": "丙-039",
+   "id": "丙-048",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 254,
+   "line": 280,
    "pillars": {
     "year": "戊戌",
     "month": "戊午",
@@ -7280,12 +7683,12 @@
    "flags": []
   },
   {
-   "id": "丙-040",
+   "id": "丙-049",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 258,
+   "line": 284,
    "pillars": {
     "year": "丁卯",
     "month": "丙午",
@@ -7313,12 +7716,12 @@
    "flags": []
   },
   {
-   "id": "丙-041",
+   "id": "丙-050",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 261,
+   "line": 287,
    "pillars": {
     "year": "辛未",
     "month": "甲午",
@@ -7344,12 +7747,12 @@
    "flags": []
   },
   {
-   "id": "丙-042",
+   "id": "丙-051",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 264,
+   "line": 290,
    "pillars": {
     "year": "乙亥",
     "month": "壬午",
@@ -7377,12 +7780,12 @@
    "flags": []
   },
   {
-   "id": "丙-043",
+   "id": "丙-052",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 116,
-   "line": 267,
+   "line": 293,
    "pillars": {
     "year": "乙亥",
     "month": "壬午",
@@ -7408,12 +7811,12 @@
    "flags": []
   },
   {
-   "id": "丙-044",
+   "id": "丙-053",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 117,
-   "line": 272,
+   "line": 298,
    "pillars": {
     "year": "丙子",
     "month": "甲午",
@@ -7432,12 +7835,12 @@
    "flags": []
   },
   {
-   "id": "丙-045",
+   "id": "丙-054",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 117,
-   "line": 274,
+   "line": 300,
    "pillars": {
     "year": "己丑",
     "month": "庚午",
@@ -7463,12 +7866,12 @@
    "flags": []
   },
   {
-   "id": "丙-046",
+   "id": "丙-055",
    "dayMaster": "丙",
    "section": "午",
    "sectionTitle": "五月丙火",
    "page": 117,
-   "line": 277,
+   "line": 303,
    "pillars": {
     "year": "甲午",
     "month": "庚午",
@@ -7494,12 +7897,12 @@
    "flags": []
   },
   {
-   "id": "丙-047",
+   "id": "丙-056",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 118,
-   "line": 292,
+   "line": 318,
    "pillars": {
     "year": "壬寅",
     "month": "丁未",
@@ -7520,12 +7923,12 @@
    "flags": []
   },
   {
-   "id": "丙-048",
+   "id": "丙-057",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 118,
-   "line": 295,
+   "line": 321,
    "pillars": {
     "year": "戊午",
     "month": "己未",
@@ -7548,12 +7951,12 @@
    "flags": []
   },
   {
-   "id": "丙-049",
+   "id": "丙-058",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 118,
-   "line": 298,
+   "line": 324,
    "pillars": {
     "year": "壬寅",
     "month": "丁未",
@@ -7574,12 +7977,12 @@
    "flags": []
   },
   {
-   "id": "丙-050",
+   "id": "丙-059",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 118,
-   "line": 301,
+   "line": 327,
    "pillars": {
     "year": "己巳",
     "month": "辛未",
@@ -7603,12 +8006,12 @@
    "flags": []
   },
   {
-   "id": "丙-051",
+   "id": "丙-060",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 118,
-   "line": 305,
+   "line": 331,
    "pillars": {
     "year": "甲辰",
     "month": "辛未",
@@ -7634,12 +8037,12 @@
    "flags": []
   },
   {
-   "id": "丙-052",
+   "id": "丙-061",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 118,
-   "line": 308,
+   "line": 334,
    "pillars": {
     "year": "甲戌",
     "month": "辛未",
@@ -7665,12 +8068,12 @@
    "flags": []
   },
   {
-   "id": "丙-053",
+   "id": "丙-062",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 119,
-   "line": 314,
+   "line": 340,
    "pillars": {
     "year": "壬申",
     "month": "丁未",
@@ -7696,12 +8099,12 @@
    "flags": []
   },
   {
-   "id": "丙-054",
+   "id": "丙-063",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 119,
-   "line": 317,
+   "line": 343,
    "pillars": {
     "year": "丁丑",
     "month": "丁未",
@@ -7729,12 +8132,12 @@
    "flags": []
   },
   {
-   "id": "丙-055",
+   "id": "丙-064",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 119,
-   "line": 320,
+   "line": 346,
    "pillars": {
     "year": "丁丑",
     "month": "丁未",
@@ -7746,12 +8149,41 @@
     "已→己"
    ],
    "judgment": [
-    "蒋孟萍命，无王，专用已土，富而不贵。",
-    "己师，辛未，丙午，王辰。",
-    "胡思义命，壬水透出，惜无庚金相生，已土泄气，辛金相合，均为有病，虽贵不巨。"
+    "蒋孟萍命，无王，专用已土，富而不贵。"
    ],
    "note": [],
    "name": "蒋孟萍",
+   "date": "光绪三年六月廿二日丑时。",
+   "lunar": {
+    "year": 1877,
+    "month": 6,
+    "day": 22,
+    "leap": false,
+    "hourBranch": "丑",
+    "era": "光绪三年"
+   },
+   "flags": []
+  },
+  {
+   "id": "丙-065",
+   "dayMaster": "丙",
+   "section": "未",
+   "sectionTitle": "六月丙火",
+   "page": 119,
+   "line": 349,
+   "pillars": {
+    "year": "己卯",
+    "month": "辛未",
+    "day": "丙午",
+    "hour": "壬辰"
+   },
+   "raw": "己卯，辛未，丙午，壬辰。",
+   "ocrFixed": [],
+   "judgment": [
+    "胡思义命，壬水透出，惜无庚金相生，已土泄气，辛金相合，均为有病，虽贵不巨。"
+   ],
+   "note": [],
+   "name": "胡思义",
    "date": "光绪五年六月初四日辰时。",
    "lunar": {
     "year": 1879,
@@ -7761,17 +8193,15 @@
     "hourBranch": "辰",
     "era": "光绪五年"
    },
-   "flags": [
-    "时支丑≠纪年行辰时"
-   ]
+   "flags": []
   },
   {
-   "id": "丙-056",
+   "id": "丙-066",
    "dayMaster": "丙",
    "section": "未",
    "sectionTitle": "六月丙火",
    "page": 119,
-   "line": 326,
+   "line": 352,
    "pillars": {
     "year": "壬午",
     "month": "丁未",
@@ -7797,12 +8227,12 @@
    "flags": []
   },
   {
-   "id": "丙-057",
+   "id": "丙-067",
    "dayMaster": "丙",
    "section": "申",
    "sectionTitle": "七月丙火",
    "page": 120,
-   "line": 343,
+   "line": 369,
    "pillars": {
     "year": "乙未",
     "month": "甲申",
@@ -7823,12 +8253,12 @@
    "flags": []
   },
   {
-   "id": "丙-058",
+   "id": "丙-068",
    "dayMaster": "丙",
    "section": "申",
    "sectionTitle": "七月丙火",
    "page": 120,
-   "line": 347,
+   "line": 373,
    "pillars": {
     "year": "丙申",
     "month": "丙申",
@@ -7854,12 +8284,12 @@
    "flags": []
   },
   {
-   "id": "丙-059",
+   "id": "丙-069",
    "dayMaster": "丙",
    "section": "申",
    "sectionTitle": "七月丙火",
    "page": 120,
-   "line": 350,
+   "line": 376,
    "pillars": {
     "year": "庚戌",
     "month": "甲申",
@@ -7881,12 +8311,12 @@
    "flags": []
   },
   {
-   "id": "丙-060",
+   "id": "丙-070",
    "dayMaster": "丙",
    "section": "申",
    "sectionTitle": "七月丙火",
    "page": 121,
-   "line": 356,
+   "line": 382,
    "pillars": {
     "year": "戊寅",
     "month": "庚申",
@@ -7912,12 +8342,12 @@
    "flags": []
   },
   {
-   "id": "丙-061",
+   "id": "丙-071",
    "dayMaster": "丙",
    "section": "申",
    "sectionTitle": "七月丙火",
    "page": 121,
-   "line": 359,
+   "line": 385,
    "pillars": {
     "year": "乙酉",
     "month": "甲申",
@@ -7943,12 +8373,12 @@
    "flags": []
   },
   {
-   "id": "丙-062",
+   "id": "丙-072",
    "dayMaster": "丙",
    "section": "申",
    "sectionTitle": "七月丙火",
    "page": 121,
-   "line": 362,
+   "line": 388,
    "pillars": {
     "year": "乙酉",
     "month": "甲申",
@@ -7974,12 +8404,12 @@
    "flags": []
   },
   {
-   "id": "丙-063",
+   "id": "丙-073",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 122,
-   "line": 378,
+   "line": 404,
    "pillars": {
     "year": "丙子",
     "month": "丁酉",
@@ -8000,12 +8430,12 @@
    "flags": []
   },
   {
-   "id": "丙-064",
+   "id": "丙-074",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 122,
-   "line": 381,
+   "line": 407,
    "pillars": {
     "year": "丙寅",
     "month": "丁酉",
@@ -8018,7 +8448,7 @@
     "两干不杂，位至尚书。"
    ],
    "note": [
-    "按：此造专用财星，好在日元坐辰，冠带之地，丙火有气；更喜年逢"
+    "按：此造专用财星，好在日元坐辰，冠带之地，丙火有气；更喜年逢丙寅，丙火长生，加以两干不杂，格局清纯，富而兼贵。"
    ],
    "name": null,
    "date": null,
@@ -8026,12 +8456,12 @@
    "flags": []
   },
   {
-   "id": "丙-065",
+   "id": "丙-075",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 123,
-   "line": 388,
+   "line": 413,
    "pillars": {
     "year": "己卯",
     "month": "癸酉",
@@ -8054,12 +8484,38 @@
    "flags": []
   },
   {
-   "id": "丙-066",
+   "id": "丙-076",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 123,
-   "line": 394,
+   "line": 416,
+   "pillars": {
+    "year": "丁酉",
+    "month": "己酉",
+    "day": "丙申",
+    "hour": "丁酉"
+   },
+   "raw": "丁酉，己酉，丙申，丁酉。",
+   "ocrFixed": [],
+   "judgment": [
+    "财滋七煞，故专用壬水，惜二丁出干，财神不显，迁儒秀才，刑而且孤。"
+   ],
+   "note": [
+    "按：此造虽有两丁助丙，而丙临申位，定不通根，财旺身弱无印生助，宜其刑而且孤，已土出干，嗨丙浊王。《滴天髓》云：清气还嫌官不起，故为迁儒也。"
+   ],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "丙-077",
+   "dayMaster": "丙",
+   "section": "酉",
+   "sectionTitle": "八月丙火",
+   "page": 123,
+   "line": 419,
    "pillars": {
     "year": "丙申",
     "month": "丁酉",
@@ -8081,12 +8537,12 @@
    "flags": []
   },
   {
-   "id": "丙-067",
+   "id": "丙-078",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 123,
-   "line": 399,
+   "line": 424,
    "pillars": {
     "year": "丁丑",
     "month": "己酉",
@@ -8115,12 +8571,12 @@
    "flags": []
   },
   {
-   "id": "丙-068",
+   "id": "丙-079",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 123,
-   "line": 402,
+   "line": 427,
    "pillars": {
     "year": "己卯",
     "month": "癸酉",
@@ -8140,12 +8596,12 @@
    "flags": []
   },
   {
-   "id": "丙-069",
+   "id": "丙-080",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 123,
-   "line": 405,
+   "line": 430,
    "pillars": {
     "year": "辛巳",
     "month": "丁酉",
@@ -8174,12 +8630,12 @@
    "flags": []
   },
   {
-   "id": "丙-070",
+   "id": "丙-081",
    "dayMaster": "丙",
    "section": "酉",
    "sectionTitle": "八月丙火",
    "page": 123,
-   "line": 408,
+   "line": 433,
    "pillars": {
     "year": "戊子",
     "month": "辛酉",
@@ -8196,12 +8652,12 @@
    "flags": []
   },
   {
-   "id": "丙-071",
+   "id": "丙-082",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 429,
+   "line": 454,
    "pillars": {
     "year": "己亥",
     "month": "甲戌",
@@ -8222,12 +8678,12 @@
    "flags": []
   },
   {
-   "id": "丙-072",
+   "id": "丙-083",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 432,
+   "line": 457,
    "pillars": {
     "year": "己酉",
     "month": "甲戌",
@@ -8248,12 +8704,12 @@
    "flags": []
   },
   {
-   "id": "丙-073",
+   "id": "丙-084",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 435,
+   "line": 460,
    "pillars": {
     "year": "丙申",
     "month": "戊戌",
@@ -8276,12 +8732,12 @@
    "flags": []
   },
   {
-   "id": "丙-074",
+   "id": "丙-085",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 438,
+   "line": 463,
    "pillars": {
     "year": "庚戌",
     "month": "丙戌",
@@ -8302,12 +8758,12 @@
    "flags": []
   },
   {
-   "id": "丙-075",
+   "id": "丙-086",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 441,
+   "line": 466,
    "pillars": {
     "year": "甲寅",
     "month": "甲戌",
@@ -8326,12 +8782,12 @@
    "flags": []
   },
   {
-   "id": "丙-076",
+   "id": "丙-087",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 444,
+   "line": 469,
    "pillars": {
     "year": "丙寅",
     "month": "戊戌",
@@ -8357,12 +8813,12 @@
    "flags": []
   },
   {
-   "id": "丙-077",
+   "id": "丙-088",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 447,
+   "line": 472,
    "pillars": {
     "year": "丁丑",
     "month": "庚戌",
@@ -8388,12 +8844,12 @@
    "flags": []
   },
   {
-   "id": "丙-078",
+   "id": "丙-089",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 125,
-   "line": 450,
+   "line": 475,
    "pillars": {
     "year": "辛巳",
     "month": "戊戌",
@@ -8419,12 +8875,12 @@
    "flags": []
   },
   {
-   "id": "丙-079",
+   "id": "丙-090",
    "dayMaster": "丙",
    "section": "戌",
    "sectionTitle": "九月丙火",
    "page": 126,
-   "line": 455,
+   "line": 480,
    "pillars": {
     "year": "辛酉",
     "month": "戊戌",
@@ -8450,12 +8906,12 @@
    "flags": []
   },
   {
-   "id": "丙-080",
+   "id": "丙-091",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 127,
-   "line": 472,
+   "line": 497,
    "pillars": {
     "year": "辛巳",
     "month": "己亥",
@@ -8480,12 +8936,12 @@
    "flags": []
   },
   {
-   "id": "丙-081",
+   "id": "丙-092",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 127,
-   "line": 475,
+   "line": 500,
    "pillars": {
     "year": "甲申",
     "month": "乙亥",
@@ -8506,12 +8962,12 @@
    "flags": []
   },
   {
-   "id": "丙-082",
+   "id": "丙-093",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 127,
-   "line": 478,
+   "line": 503,
    "pillars": {
     "year": "壬辰",
     "month": "辛亥",
@@ -8532,12 +8988,12 @@
    "flags": []
   },
   {
-   "id": "丙-083",
+   "id": "丙-094",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 127,
-   "line": 481,
+   "line": 506,
    "pillars": {
     "year": "壬辰",
     "month": "辛亥",
@@ -8558,12 +9014,12 @@
    "flags": []
   },
   {
-   "id": "丙-084",
+   "id": "丙-095",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 127,
-   "line": 485,
+   "line": 510,
    "pillars": {
     "year": "辛未",
     "month": "己亥",
@@ -8582,12 +9038,12 @@
    "flags": []
   },
   {
-   "id": "丙-085",
+   "id": "丙-096",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 128,
-   "line": 490,
+   "line": 515,
    "pillars": {
     "year": "壬申",
     "month": "辛亥",
@@ -8613,12 +9069,12 @@
    "flags": []
   },
   {
-   "id": "丙-086",
+   "id": "丙-097",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 128,
-   "line": 493,
+   "line": 518,
    "pillars": {
     "year": "壬申",
     "month": "辛亥",
@@ -8644,12 +9100,12 @@
    "flags": []
   },
   {
-   "id": "丙-087",
+   "id": "丙-098",
    "dayMaster": "丙",
    "section": "亥",
    "sectionTitle": "十月丙火",
    "page": 128,
-   "line": 496,
+   "line": 521,
    "pillars": {
     "year": "丙戌",
     "month": "己亥",
@@ -8677,12 +9133,12 @@
    "flags": []
   },
   {
-   "id": "丙-088",
+   "id": "丙-099",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 129,
-   "line": 517,
+   "line": 542,
    "pillars": {
     "year": "辛亥",
     "month": "庚子",
@@ -8701,12 +9157,12 @@
    "flags": []
   },
   {
-   "id": "丙-089",
+   "id": "丙-100",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 130,
-   "line": 523,
+   "line": 548,
    "pillars": {
     "year": "辛酉",
     "month": "庚子",
@@ -8729,12 +9185,12 @@
    "flags": []
   },
   {
-   "id": "丙-090",
+   "id": "丙-101",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 130,
-   "line": 526,
+   "line": 551,
    "pillars": {
     "year": "丁巳",
     "month": "壬子",
@@ -8757,12 +9213,12 @@
    "flags": []
   },
   {
-   "id": "丙-091",
+   "id": "丙-102",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 130,
-   "line": 530,
+   "line": 555,
    "pillars": {
     "year": "辛酉",
     "month": "庚子",
@@ -8788,12 +9244,12 @@
    "flags": []
   },
   {
-   "id": "丙-092",
+   "id": "丙-103",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 130,
-   "line": 533,
+   "line": 558,
    "pillars": {
     "year": "辛未",
     "month": "庚子",
@@ -8819,12 +9275,12 @@
    "flags": []
   },
   {
-   "id": "丙-093",
+   "id": "丙-104",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 130,
-   "line": 536,
+   "line": 561,
    "pillars": {
     "year": "庚辰",
     "month": "戊子",
@@ -8850,12 +9306,12 @@
    "flags": []
   },
   {
-   "id": "丙-094",
+   "id": "丙-105",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 130,
-   "line": 539,
+   "line": 564,
    "pillars": {
     "year": "甲子",
     "month": "丙子",
@@ -8881,12 +9337,12 @@
    "flags": []
   },
   {
-   "id": "丙-095",
+   "id": "丙-106",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 131,
-   "line": 544,
+   "line": 569,
    "pillars": {
     "year": "己卯",
     "month": "丙子",
@@ -8914,12 +9370,12 @@
    "flags": []
   },
   {
-   "id": "丙-096",
+   "id": "丙-107",
    "dayMaster": "丙",
    "section": "子",
    "sectionTitle": "十一月丙火",
    "page": 131,
-   "line": 547,
+   "line": 572,
    "pillars": {
     "year": "癸未",
     "month": "甲子",
@@ -8945,12 +9401,12 @@
    "flags": []
   },
   {
-   "id": "丙-097",
+   "id": "丙-108",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 561,
+   "line": 586,
    "pillars": {
     "year": "癸卯",
     "month": "乙丑",
@@ -8971,12 +9427,12 @@
    "flags": []
   },
   {
-   "id": "丙-098",
+   "id": "丙-109",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 564,
+   "line": 589,
    "pillars": {
     "year": "乙丑",
     "month": "己丑",
@@ -8997,12 +9453,12 @@
    "flags": []
   },
   {
-   "id": "丙-099",
+   "id": "丙-110",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 567,
+   "line": 592,
    "pillars": {
     "year": "乙酉",
     "month": "己丑",
@@ -9023,12 +9479,12 @@
    "flags": []
   },
   {
-   "id": "丙-100",
+   "id": "丙-111",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 570,
+   "line": 595,
    "pillars": {
     "year": "己丑",
     "month": "丁丑",
@@ -9049,12 +9505,12 @@
    "flags": []
   },
   {
-   "id": "丙-101",
+   "id": "丙-112",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 573,
+   "line": 598,
    "pillars": {
     "year": "己巳",
     "month": "丁丑",
@@ -9077,12 +9533,12 @@
    "flags": []
   },
   {
-   "id": "丙-102",
+   "id": "丙-113",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 576,
+   "line": 601,
    "pillars": {
     "year": "乙巳",
     "month": "己丑",
@@ -9107,12 +9563,12 @@
    "flags": []
   },
   {
-   "id": "丙-103",
+   "id": "丙-114",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 132,
-   "line": 580,
+   "line": 605,
    "pillars": {
     "year": "戊戌",
     "month": "乙丑",
@@ -9138,12 +9594,12 @@
    "flags": []
   },
   {
-   "id": "丙-104",
+   "id": "丙-115",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 133,
-   "line": 586,
+   "line": 611,
    "pillars": {
     "year": "辛酉",
     "month": "辛丑",
@@ -9169,12 +9625,12 @@
    "flags": []
   },
   {
-   "id": "丙-105",
+   "id": "丙-116",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 133,
-   "line": 589,
+   "line": 614,
    "pillars": {
     "year": "丁卯",
     "month": "癸丑",
@@ -9200,12 +9656,12 @@
    "flags": []
   },
   {
-   "id": "丙-106",
+   "id": "丙-117",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 133,
-   "line": 592,
+   "line": 617,
    "pillars": {
     "year": "丙子",
     "month": "辛丑",
@@ -9231,12 +9687,12 @@
    "flags": []
   },
   {
-   "id": "丙-107",
+   "id": "丙-118",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 133,
-   "line": 595,
+   "line": 620,
    "pillars": {
     "year": "癸未",
     "month": "乙丑",
@@ -9256,12 +9712,12 @@
    "flags": []
   },
   {
-   "id": "丙-108",
+   "id": "丙-119",
    "dayMaster": "丙",
    "section": "丑",
    "sectionTitle": "十二月丙火",
    "page": 133,
-   "line": 598,
+   "line": 623,
    "pillars": {
     "year": "戊戌",
     "month": "乙丑",
@@ -11399,15 +11855,11 @@
     "year": "壬辰",
     "month": "庚戌",
     "day": "丁亥",
-    "hour": "己巳"
+    "hour": "己酉"
    },
-   "raw": "壬辰，庚成，丁亥，己已酉。",
-   "ocrFixed": [
-    "成→戌",
-    "已→巳"
-   ],
+   "raw": "壬辰，庚戌，丁亥，己酉。",
+   "ocrFixed": [],
    "judgment": [
-    "酉。",
     "苏炳文命，酉成亥气联西北，财官两旺，专用亥宫甲木引丁，运入东方，名震遐迩，参观六月丁火节。"
    ],
    "note": [],
@@ -11421,9 +11873,7 @@
     "hourBranch": "酉",
     "era": "光绪十八年"
    },
-   "flags": [
-    "时支巳≠纪年行酉时"
-   ]
+   "flags": []
   },
   {
    "id": "丁-073",
@@ -12499,6 +12949,31 @@
    "section": "卯",
    "sectionTitle": "二月戊土",
    "page": 165,
+   "line": 78,
+   "pillars": {
+    "year": "乙卯",
+    "month": "己卯",
+    "day": "戊戌",
+    "hour": "壬戌"
+   },
+   "raw": "乙卯，己卯，戊戌，壬戌。",
+   "ocrFixed": [],
+   "judgment": [
+    "咸丰五年二月初五日成时。",
+    "聂辑规命，专用官星，位至巡抚。"
+   ],
+   "note": [],
+   "name": "聂辑规",
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "戊-015",
+   "dayMaster": "戊",
+   "section": "卯",
+   "sectionTitle": "二月戊土",
+   "page": 165,
    "line": 81,
    "pillars": {
     "year": "己未",
@@ -12528,7 +13003,7 @@
    "flags": []
   },
   {
-   "id": "戊-015",
+   "id": "戊-016",
    "dayMaster": "戊",
    "section": "卯",
    "sectionTitle": "二月戊土",
@@ -12562,7 +13037,38 @@
    "flags": []
   },
   {
-   "id": "戊-016",
+   "id": "戊-017",
+   "dayMaster": "戊",
+   "section": "卯",
+   "sectionTitle": "二月戊土",
+   "page": 165,
+   "line": 87,
+   "pillars": {
+    "year": "辛卯",
+    "month": "辛卯",
+    "day": "戊戌",
+    "hour": "壬戌"
+   },
+   "raw": "辛卯，辛卯，戊戌，壬戌。",
+   "ocrFixed": [],
+   "judgment": [
+    "万耀煌命，前述徐连规造，两丁并透，用财破印滋煞，此造两辛出干，亦用财化伤滋煞，气杂非清，位至师长。"
+   ],
+   "note": [],
+   "name": "万耀煌",
+   "date": "光绪十七年二月初四日戌时。",
+   "lunar": {
+    "year": 1891,
+    "month": 2,
+    "day": 4,
+    "leap": false,
+    "hourBranch": "戌",
+    "era": "光绪十七年"
+   },
+   "flags": []
+  },
+  {
+   "id": "戊-018",
    "dayMaster": "戊",
    "section": "卯",
    "sectionTitle": "二月戊土",
@@ -12593,7 +13099,7 @@
    "flags": []
   },
   {
-   "id": "戊-017",
+   "id": "戊-019",
    "dayMaster": "戊",
    "section": "卯",
    "sectionTitle": "二月戊土",
@@ -12626,7 +13132,7 @@
    "flags": []
   },
   {
-   "id": "戊-018",
+   "id": "戊-020",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12650,7 +13156,7 @@
    "flags": []
   },
   {
-   "id": "戊-019",
+   "id": "戊-021",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12672,7 +13178,7 @@
    "flags": []
   },
   {
-   "id": "戊-020",
+   "id": "戊-022",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12703,7 +13209,40 @@
    "flags": []
   },
   {
-   "id": "戊-021",
+   "id": "戊-023",
+   "dayMaster": "戊",
+   "section": "辰",
+   "sectionTitle": "三月戊土",
+   "page": 166,
+   "line": 107,
+   "pillars": {
+    "year": "己未",
+    "month": "丁卯",
+    "day": "戊午",
+    "hour": "壬子"
+   },
+   "raw": "己未，丁卯，戊午，壬子。",
+   "ocrFixed": [],
+   "judgment": [
+    "李经义命，财印交差用官，戊午王子交互相合，贵气往来，运行财官旺地，专阀开府。"
+   ],
+   "note": [],
+   "name": "李经义",
+   "date": "咸丰九年二月十七日子时。",
+   "lunar": {
+    "year": 1859,
+    "month": 2,
+    "day": 17,
+    "leap": false,
+    "hourBranch": "子",
+    "era": "咸丰九年"
+   },
+   "flags": [
+    "月支卯不在标题三月戊土"
+   ]
+  },
+  {
+   "id": "戊-024",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12734,7 +13273,7 @@
    "flags": []
   },
   {
-   "id": "戊-022",
+   "id": "戊-025",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12767,7 +13306,7 @@
    "flags": []
   },
   {
-   "id": "戊-023",
+   "id": "戊-026",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12798,7 +13337,7 @@
    "flags": []
   },
   {
-   "id": "戊-024",
+   "id": "戊-027",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12825,7 +13364,7 @@
    "flags": []
   },
   {
-   "id": "戊-025",
+   "id": "戊-028",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12856,7 +13395,7 @@
    "flags": []
   },
   {
-   "id": "戊-026",
+   "id": "戊-029",
    "dayMaster": "戊",
    "section": "辰",
    "sectionTitle": "三月戊土",
@@ -12887,7 +13426,7 @@
    "flags": []
   },
   {
-   "id": "戊-027",
+   "id": "戊-030",
    "dayMaster": "戊",
    "section": "巳",
    "sectionTitle": "四月戊土",
@@ -12915,7 +13454,7 @@
    "flags": []
   },
   {
-   "id": "戊-028",
+   "id": "戊-031",
    "dayMaster": "戊",
    "section": "巳",
    "sectionTitle": "四月戊土",
@@ -12945,7 +13484,7 @@
    "flags": []
   },
   {
-   "id": "戊-029",
+   "id": "戊-032",
    "dayMaster": "戊",
    "section": "巳",
    "sectionTitle": "四月戊土",
@@ -12979,7 +13518,7 @@
    "flags": []
   },
   {
-   "id": "戊-030",
+   "id": "戊-033",
    "dayMaster": "戊",
    "section": "巳",
    "sectionTitle": "四月戊土",
@@ -13006,7 +13545,7 @@
    "flags": []
   },
   {
-   "id": "戊-031",
+   "id": "戊-034",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13030,7 +13569,7 @@
    "flags": []
   },
   {
-   "id": "戊-032",
+   "id": "戊-035",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13061,7 +13600,7 @@
    "flags": []
   },
   {
-   "id": "戊-033",
+   "id": "戊-036",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13092,7 +13631,7 @@
    "flags": []
   },
   {
-   "id": "戊-034",
+   "id": "戊-037",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13123,7 +13662,7 @@
    "flags": []
   },
   {
-   "id": "戊-035",
+   "id": "戊-038",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13156,7 +13695,7 @@
    "flags": []
   },
   {
-   "id": "戊-036",
+   "id": "戊-039",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13187,7 +13726,7 @@
    "flags": []
   },
   {
-   "id": "戊-037",
+   "id": "戊-040",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13212,7 +13751,7 @@
    "flags": []
   },
   {
-   "id": "戊-038",
+   "id": "戊-041",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13245,7 +13784,7 @@
    "flags": []
   },
   {
-   "id": "戊-039",
+   "id": "戊-042",
    "dayMaster": "戊",
    "section": "午",
    "sectionTitle": "五月戊土",
@@ -13276,7 +13815,7 @@
    "flags": []
   },
   {
-   "id": "戊-040",
+   "id": "戊-043",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13302,7 +13841,7 @@
    "flags": []
   },
   {
-   "id": "戊-041",
+   "id": "戊-044",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13328,7 +13867,7 @@
    "flags": []
   },
   {
-   "id": "戊-042",
+   "id": "戊-045",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13357,7 +13896,7 @@
    "flags": []
   },
   {
-   "id": "戊-043",
+   "id": "戊-046",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13385,7 +13924,7 @@
    "flags": []
   },
   {
-   "id": "戊-044",
+   "id": "戊-047",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13413,7 +13952,7 @@
    "flags": []
   },
   {
-   "id": "戊-045",
+   "id": "戊-048",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13438,7 +13977,7 @@
    "flags": []
   },
   {
-   "id": "戊-046",
+   "id": "戊-049",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13471,7 +14010,7 @@
    "flags": []
   },
   {
-   "id": "戊-047",
+   "id": "戊-050",
    "dayMaster": "戊",
    "section": "未",
    "sectionTitle": "六月戊土",
@@ -13504,7 +14043,7 @@
    "flags": []
   },
   {
-   "id": "戊-048",
+   "id": "戊-051",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13530,7 +14069,7 @@
    "flags": []
   },
   {
-   "id": "戊-049",
+   "id": "戊-052",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13554,7 +14093,7 @@
    "flags": []
   },
   {
-   "id": "戊-050",
+   "id": "戊-053",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13580,7 +14119,7 @@
    "flags": []
   },
   {
-   "id": "戊-051",
+   "id": "戊-054",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13610,7 +14149,7 @@
    "flags": []
   },
   {
-   "id": "戊-052",
+   "id": "戊-055",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13634,7 +14173,7 @@
    "flags": []
   },
   {
-   "id": "戊-053",
+   "id": "戊-056",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13662,7 +14201,33 @@
    "flags": []
   },
   {
-   "id": "戊-054",
+   "id": "戊-057",
+   "dayMaster": "戊",
+   "section": "申",
+   "sectionTitle": "七月戊土",
+   "page": 174,
+   "line": 266,
+   "pillars": {
+    "year": "甲午",
+    "month": "壬申",
+    "day": "戊子",
+    "hour": "丙辰"
+   },
+   "raw": "甲午，壬申，戊子，丙辰。",
+   "ocrFixed": [],
+   "judgment": [
+    "王丙甲俱透天干，地支又成水局，内阁翰林。"
+   ],
+   "note": [
+    "按：此造所谓支成水局，勿作从才，用甲泄水气是也。以丙透干，故甲木可用以取贵。"
+   ],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "戊-058",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13693,7 +14258,7 @@
    "flags": []
   },
   {
-   "id": "戊-055",
+   "id": "戊-059",
    "dayMaster": "戊",
    "section": "申",
    "sectionTitle": "七月戊土",
@@ -13724,7 +14289,7 @@
    "flags": []
   },
   {
-   "id": "戊-056",
+   "id": "戊-060",
    "dayMaster": "戊",
    "section": "酉",
    "sectionTitle": "八月戊土",
@@ -13750,7 +14315,7 @@
    "flags": []
   },
   {
-   "id": "戊-057",
+   "id": "戊-061",
    "dayMaster": "戊",
    "section": "酉",
    "sectionTitle": "八月戊土",
@@ -13776,7 +14341,7 @@
    "flags": []
   },
   {
-   "id": "戊-058",
+   "id": "戊-062",
    "dayMaster": "戊",
    "section": "酉",
    "sectionTitle": "八月戊土",
@@ -13804,7 +14369,7 @@
    "flags": []
   },
   {
-   "id": "戊-059",
+   "id": "戊-063",
    "dayMaster": "戊",
    "section": "酉",
    "sectionTitle": "八月戊土",
@@ -13835,7 +14400,7 @@
    "flags": []
   },
   {
-   "id": "戊-060",
+   "id": "戊-064",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -13857,7 +14422,7 @@
    "flags": []
   },
   {
-   "id": "戊-061",
+   "id": "戊-065",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -13883,7 +14448,7 @@
    "flags": []
   },
   {
-   "id": "戊-062",
+   "id": "戊-066",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -13909,7 +14474,33 @@
    "flags": []
   },
   {
-   "id": "戊-063",
+   "id": "戊-067",
+   "dayMaster": "戊",
+   "section": "戌",
+   "sectionTitle": "九月戊土",
+   "page": 178,
+   "line": 329,
+   "pillars": {
+    "year": "丙戌",
+    "month": "戊戌",
+    "day": "戊寅",
+    "hour": "壬子"
+   },
+   "raw": "丙戌，戊戌，戊寅，壬子。",
+   "ocrFixed": [],
+   "judgment": [
+    "丙癸甲皆全，惜未出干，只一贡生。"
+   ],
+   "note": [
+    "按：此造亦为富格，寅戌会合，煞印相生，专用财星，不作财滋弱煞论也，惜比肩出干争财，以得运助为美。"
+   ],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "戊-068",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -13937,7 +14528,7 @@
    "flags": []
   },
   {
-   "id": "戊-064",
+   "id": "戊-069",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -13963,7 +14554,7 @@
    "flags": []
   },
   {
-   "id": "戊-065",
+   "id": "戊-070",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -13991,7 +14582,7 @@
    "flags": []
   },
   {
-   "id": "戊-066",
+   "id": "戊-071",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -14024,7 +14615,7 @@
    "flags": []
   },
   {
-   "id": "戊-067",
+   "id": "戊-072",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -14046,7 +14637,7 @@
    "flags": []
   },
   {
-   "id": "戊-068",
+   "id": "戊-073",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -14077,7 +14668,7 @@
    "flags": []
   },
   {
-   "id": "戊-069",
+   "id": "戊-074",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -14108,7 +14699,7 @@
    "flags": []
   },
   {
-   "id": "戊-070",
+   "id": "戊-075",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -14139,7 +14730,7 @@
    "flags": []
   },
   {
-   "id": "戊-071",
+   "id": "戊-076",
    "dayMaster": "戊",
    "section": "戌",
    "sectionTitle": "九月戊土",
@@ -14170,7 +14761,7 @@
    "flags": []
   },
   {
-   "id": "戊-072",
+   "id": "戊-077",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14201,7 +14792,7 @@
    "flags": []
   },
   {
-   "id": "戊-073",
+   "id": "戊-078",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14227,7 +14818,7 @@
    "flags": []
   },
   {
-   "id": "戊-074",
+   "id": "戊-079",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14251,7 +14842,7 @@
    "flags": []
   },
   {
-   "id": "戊-075",
+   "id": "戊-080",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14277,7 +14868,7 @@
    "flags": []
   },
   {
-   "id": "戊-076",
+   "id": "戊-081",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14305,7 +14896,7 @@
    "flags": []
   },
   {
-   "id": "戊-077",
+   "id": "戊-082",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14336,7 +14927,7 @@
    "flags": []
   },
   {
-   "id": "戊-078",
+   "id": "戊-083",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14369,7 +14960,7 @@
    "flags": []
   },
   {
-   "id": "戊-079",
+   "id": "戊-084",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14396,7 +14987,7 @@
    "flags": []
   },
   {
-   "id": "戊-080",
+   "id": "戊-085",
    "dayMaster": "戊",
    "section": "亥",
    "sectionTitle": "十月戊土",
@@ -14427,7 +15018,7 @@
    "flags": []
   },
   {
-   "id": "戊-081",
+   "id": "戊-086",
    "dayMaster": "戊",
    "section": "子",
    "sectionTitle": "十一月戊土",
@@ -14453,7 +15044,7 @@
    "flags": []
   },
   {
-   "id": "戊-082",
+   "id": "戊-087",
    "dayMaster": "戊",
    "section": "子",
    "sectionTitle": "十一月戊土",
@@ -14482,7 +15073,7 @@
    "flags": []
   },
   {
-   "id": "戊-083",
+   "id": "戊-088",
    "dayMaster": "戊",
    "section": "子",
    "sectionTitle": "十一月戊土",
@@ -14517,7 +15108,7 @@
    "flags": []
   },
   {
-   "id": "戊-084",
+   "id": "戊-089",
    "dayMaster": "戊",
    "section": "子",
    "sectionTitle": "十一月戊土",
@@ -14548,7 +15139,7 @@
    "flags": []
   },
   {
-   "id": "戊-085",
+   "id": "戊-090",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14572,7 +15163,7 @@
    "flags": []
   },
   {
-   "id": "戊-086",
+   "id": "戊-091",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14598,7 +15189,7 @@
    "flags": []
   },
   {
-   "id": "戊-087",
+   "id": "戊-092",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14624,7 +15215,7 @@
    "flags": []
   },
   {
-   "id": "戊-088",
+   "id": "戊-093",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14650,7 +15241,7 @@
    "flags": []
   },
   {
-   "id": "戊-089",
+   "id": "戊-094",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14681,7 +15272,7 @@
    "flags": []
   },
   {
-   "id": "戊-090",
+   "id": "戊-095",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14712,7 +15303,7 @@
    "flags": []
   },
   {
-   "id": "戊-091",
+   "id": "戊-096",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14743,7 +15334,7 @@
    "flags": []
   },
   {
-   "id": "戊-092",
+   "id": "戊-097",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -14776,7 +15367,7 @@
    "flags": []
   },
   {
-   "id": "戊-093",
+   "id": "戊-098",
    "dayMaster": "戊",
    "section": "丑",
    "sectionTitle": "十二月戊土",
@@ -16947,6 +17538,30 @@
    "dayMaster": "己",
    "section": "子",
    "sectionTitle": "十一月己土",
+   "page": 205,
+   "line": 362,
+   "pillars": {
+    "year": "丙辰",
+    "month": "庚子",
+    "day": "己卯",
+    "hour": "丙寅"
+   },
+   "raw": "丙辰，庚子，己卯，丙寅。",
+   "ocrFixed": [],
+   "judgment": [
+    "进士，大参。"
+   ],
+   "note": [],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "己-073",
+   "dayMaster": "己",
+   "section": "子",
+   "sectionTitle": "十一月己土",
    "page": 206,
    "line": 366,
    "pillars": {
@@ -16971,7 +17586,7 @@
    "flags": []
   },
   {
-   "id": "己-073",
+   "id": "己-074",
    "dayMaster": "己",
    "section": "子",
    "sectionTitle": "十一月己土",
@@ -16998,7 +17613,7 @@
    "flags": []
   },
   {
-   "id": "己-074",
+   "id": "己-075",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17024,7 +17639,7 @@
    "flags": []
   },
   {
-   "id": "己-075",
+   "id": "己-076",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17053,7 +17668,7 @@
    "flags": []
   },
   {
-   "id": "己-076",
+   "id": "己-077",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17082,7 +17697,7 @@
    "flags": []
   },
   {
-   "id": "己-077",
+   "id": "己-078",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17110,7 +17725,7 @@
    "flags": []
   },
   {
-   "id": "己-078",
+   "id": "己-079",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17139,7 +17754,7 @@
    "flags": []
   },
   {
-   "id": "己-079",
+   "id": "己-080",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17165,7 +17780,7 @@
    "flags": []
   },
   {
-   "id": "己-080",
+   "id": "己-081",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17193,7 +17808,7 @@
    "flags": []
   },
   {
-   "id": "己-081",
+   "id": "己-082",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17222,7 +17837,7 @@
    "flags": []
   },
   {
-   "id": "己-082",
+   "id": "己-083",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17248,7 +17863,7 @@
    "flags": []
   },
   {
-   "id": "己-083",
+   "id": "己-084",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17274,7 +17889,7 @@
    "flags": []
   },
   {
-   "id": "己-084",
+   "id": "己-085",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17309,7 +17924,7 @@
    "flags": []
   },
   {
-   "id": "己-085",
+   "id": "己-086",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -17336,7 +17951,7 @@
    "flags": []
   },
   {
-   "id": "己-086",
+   "id": "己-087",
    "dayMaster": "己",
    "section": "丑",
    "sectionTitle": "十二月己土",
@@ -21114,6 +21729,32 @@
   {
    "id": "辛-034",
    "dayMaster": "辛",
+   "section": "申",
+   "sectionTitle": "七月辛金",
+   "page": 250,
+   "line": 220,
+   "pillars": {
+    "year": "甲午",
+    "month": "壬申",
+    "day": "辛卯",
+    "hour": "癸巳"
+   },
+   "raw": "甲午，壬申，辛卯，癸巳。",
+   "ocrFixed": [],
+   "judgment": [
+    "王甲两透，词林。"
+   ],
+   "note": [
+    "按：此两造，皆无庚透王。次造喜时逢癸已，戊土坐实，暗制壬水，不遭甲克，故入词林。"
+   ],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "辛-035",
+   "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
    "page": 253,
@@ -21136,7 +21777,7 @@
    "flags": []
   },
   {
-   "id": "辛-035",
+   "id": "辛-036",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21160,7 +21801,7 @@
    "flags": []
   },
   {
-   "id": "辛-036",
+   "id": "辛-037",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21188,7 +21829,7 @@
    "flags": []
   },
   {
-   "id": "辛-037",
+   "id": "辛-038",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21216,7 +21857,7 @@
    "flags": []
   },
   {
-   "id": "辛-038",
+   "id": "辛-039",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21242,7 +21883,7 @@
    "flags": []
   },
   {
-   "id": "辛-039",
+   "id": "辛-040",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21270,7 +21911,7 @@
    "flags": []
   },
   {
-   "id": "辛-040",
+   "id": "辛-041",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21296,7 +21937,7 @@
    "flags": []
   },
   {
-   "id": "辛-041",
+   "id": "辛-042",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21327,7 +21968,7 @@
    "flags": []
   },
   {
-   "id": "辛-042",
+   "id": "辛-043",
    "dayMaster": "辛",
    "section": "酉",
    "sectionTitle": "八月辛金",
@@ -21358,7 +21999,7 @@
    "flags": []
   },
   {
-   "id": "辛-043",
+   "id": "辛-044",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21384,7 +22025,7 @@
    "flags": []
   },
   {
-   "id": "辛-044",
+   "id": "辛-045",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21412,7 +22053,33 @@
    "flags": []
   },
   {
-   "id": "辛-045",
+   "id": "辛-046",
+   "dayMaster": "辛",
+   "section": "戌",
+   "sectionTitle": "九月辛金",
+   "page": 256,
+   "line": 317,
+   "pillars": {
+    "year": "戊戌",
+    "month": "壬戌",
+    "day": "辛酉",
+    "hour": "甲午"
+   },
+   "raw": "戊戌，壬戌，辛酉，甲午。",
+   "ocrFixed": [],
+   "judgment": [
+    "去浊留清，主大富贵，行午运，零落而死。"
+   ],
+   "note": [
+    "按：甲木出干破戊护王，故云去浊留清，惜时上午破酉，辛禄被伤，更行午运，宜其零勤落而死。盖财官食印六神，为以干加干之变化，会合刑冲，为以支之变化，皆神煞也，论干不论支，则不能尽其变。"
+   ],
+   "name": null,
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "辛-047",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21439,7 +22106,7 @@
    "flags": []
   },
   {
-   "id": "辛-046",
+   "id": "辛-048",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21468,7 +22135,7 @@
    "flags": []
   },
   {
-   "id": "辛-047",
+   "id": "辛-049",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21494,7 +22161,7 @@
    "flags": []
   },
   {
-   "id": "辛-048",
+   "id": "辛-050",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21529,7 +22196,7 @@
    "flags": []
   },
   {
-   "id": "辛-049",
+   "id": "辛-051",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21560,7 +22227,7 @@
    "flags": []
   },
   {
-   "id": "辛-050",
+   "id": "辛-052",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21588,7 +22255,7 @@
    "flags": []
   },
   {
-   "id": "辛-051",
+   "id": "辛-053",
    "dayMaster": "辛",
    "section": "戌",
    "sectionTitle": "九月辛金",
@@ -21623,7 +22290,7 @@
    "flags": []
   },
   {
-   "id": "辛-052",
+   "id": "辛-054",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21649,7 +22316,7 @@
    "flags": []
   },
   {
-   "id": "辛-053",
+   "id": "辛-055",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21683,7 +22350,7 @@
    "flags": []
   },
   {
-   "id": "辛-054",
+   "id": "辛-056",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21714,7 +22381,7 @@
    "flags": []
   },
   {
-   "id": "辛-055",
+   "id": "辛-057",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21747,7 +22414,7 @@
    ]
   },
   {
-   "id": "辛-056",
+   "id": "辛-058",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21778,7 +22445,7 @@
    "flags": []
   },
   {
-   "id": "辛-057",
+   "id": "辛-059",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21809,7 +22476,7 @@
    "flags": []
   },
   {
-   "id": "辛-058",
+   "id": "辛-060",
    "dayMaster": "辛",
    "section": "亥",
    "sectionTitle": "十月辛金",
@@ -21842,7 +22509,7 @@
    "flags": []
   },
   {
-   "id": "辛-059",
+   "id": "辛-061",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -21870,7 +22537,7 @@
    "flags": []
   },
   {
-   "id": "辛-060",
+   "id": "辛-062",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -21896,7 +22563,7 @@
    "flags": []
   },
   {
-   "id": "辛-061",
+   "id": "辛-063",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -21924,7 +22591,7 @@
    "flags": []
   },
   {
-   "id": "辛-062",
+   "id": "辛-064",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -21959,7 +22626,7 @@
    "flags": []
   },
   {
-   "id": "辛-063",
+   "id": "辛-065",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -21988,7 +22655,7 @@
    "flags": []
   },
   {
-   "id": "辛-064",
+   "id": "辛-066",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -22022,7 +22689,7 @@
    "flags": []
   },
   {
-   "id": "辛-065",
+   "id": "辛-067",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -22055,7 +22722,7 @@
    "flags": []
   },
   {
-   "id": "辛-066",
+   "id": "辛-068",
    "dayMaster": "辛",
    "section": "子",
    "sectionTitle": "十一月辛金",
@@ -22086,7 +22753,7 @@
    "flags": []
   },
   {
-   "id": "辛-067",
+   "id": "辛-069",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22114,7 +22781,7 @@
    "flags": []
   },
   {
-   "id": "辛-068",
+   "id": "辛-070",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22142,7 +22809,7 @@
    "flags": []
   },
   {
-   "id": "辛-069",
+   "id": "辛-071",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22168,7 +22835,7 @@
    "flags": []
   },
   {
-   "id": "辛-070",
+   "id": "辛-072",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22196,7 +22863,7 @@
    "flags": []
   },
   {
-   "id": "辛-071",
+   "id": "辛-073",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22222,7 +22889,7 @@
    "flags": []
   },
   {
-   "id": "辛-072",
+   "id": "辛-074",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22247,7 +22914,7 @@
    "flags": []
   },
   {
-   "id": "辛-073",
+   "id": "辛-075",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22278,7 +22945,7 @@
    "flags": []
   },
   {
-   "id": "辛-074",
+   "id": "辛-076",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22309,7 +22976,7 @@
    "flags": []
   },
   {
-   "id": "辛-075",
+   "id": "辛-077",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22336,7 +23003,7 @@
    "flags": []
   },
   {
-   "id": "辛-076",
+   "id": "辛-078",
    "dayMaster": "辛",
    "section": "丑",
    "sectionTitle": "十二月辛金",
@@ -22944,6 +23611,37 @@
    "section": "卯",
    "sectionTitle": "二月壬水",
    "page": 271,
+   "line": 104,
+   "pillars": {
+    "year": "戊午",
+    "month": "乙卯",
+    "day": "壬子",
+    "hour": "庚子"
+   },
+   "raw": "戊午，乙卯，壬子，庚子。",
+   "ocrFixed": [],
+   "judgment": [
+    "康有为命，水旺透庚，水木伤官佩印，两子冲午，子卯相刑，卯午又破，冲激动荡，出于天性，戊土止水，福寿两全，水木清华，科甲之贵。未运戊戌年，酿维新政变，酉运戊午年，又酿复辟之祸，运丁卯年卒，寿七十。"
+   ],
+   "note": [],
+   "name": "康有为",
+   "date": "咸丰八年二月初六日子时。",
+   "lunar": {
+    "year": 1858,
+    "month": 2,
+    "day": 6,
+    "leap": false,
+    "hourBranch": "子",
+    "era": "咸丰八年"
+   },
+   "flags": []
+  },
+  {
+   "id": "壬-021",
+   "dayMaster": "壬",
+   "section": "卯",
+   "sectionTitle": "二月壬水",
+   "page": 271,
    "line": 107,
    "pillars": {
     "year": "庚午",
@@ -22967,7 +23665,7 @@
    "flags": []
   },
   {
-   "id": "壬-021",
+   "id": "壬-022",
    "dayMaster": "壬",
    "section": "卯",
    "sectionTitle": "二月壬水",
@@ -22993,7 +23691,7 @@
    "flags": []
   },
   {
-   "id": "壬-022",
+   "id": "壬-023",
    "dayMaster": "壬",
    "section": "卯",
    "sectionTitle": "二月壬水",
@@ -23021,7 +23719,7 @@
    "flags": []
   },
   {
-   "id": "壬-023",
+   "id": "壬-024",
    "dayMaster": "壬",
    "section": "卯",
    "sectionTitle": "二月壬水",
@@ -23054,7 +23752,7 @@
    "flags": []
   },
   {
-   "id": "壬-024",
+   "id": "壬-025",
    "dayMaster": "壬",
    "section": "卯",
    "sectionTitle": "二月壬水",
@@ -23081,7 +23779,7 @@
    "flags": []
   },
   {
-   "id": "壬-025",
+   "id": "壬-026",
    "dayMaster": "壬",
    "section": "辰",
    "sectionTitle": "三月壬水",
@@ -23107,7 +23805,7 @@
    "flags": []
   },
   {
-   "id": "壬-026",
+   "id": "壬-027",
    "dayMaster": "壬",
    "section": "辰",
    "sectionTitle": "三月壬水",
@@ -23132,7 +23830,7 @@
    "flags": []
   },
   {
-   "id": "壬-027",
+   "id": "壬-028",
    "dayMaster": "壬",
    "section": "辰",
    "sectionTitle": "三月壬水",
@@ -23161,7 +23859,7 @@
    "flags": []
   },
   {
-   "id": "壬-028",
+   "id": "壬-029",
    "dayMaster": "壬",
    "section": "辰",
    "sectionTitle": "三月壬水",
@@ -23192,7 +23890,7 @@
    "flags": []
   },
   {
-   "id": "壬-029",
+   "id": "壬-030",
    "dayMaster": "壬",
    "section": "辰",
    "sectionTitle": "三月壬水",
@@ -23219,7 +23917,7 @@
    "flags": []
   },
   {
-   "id": "壬-030",
+   "id": "壬-031",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23249,7 +23947,7 @@
    "flags": []
   },
   {
-   "id": "壬-031",
+   "id": "壬-032",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23278,7 +23976,7 @@
    "flags": []
   },
   {
-   "id": "壬-032",
+   "id": "壬-033",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23306,7 +24004,7 @@
    "flags": []
   },
   {
-   "id": "壬-033",
+   "id": "壬-034",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23332,7 +24030,7 @@
    "flags": []
   },
   {
-   "id": "壬-034",
+   "id": "壬-035",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23360,7 +24058,7 @@
    "flags": []
   },
   {
-   "id": "壬-035",
+   "id": "壬-036",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23394,7 +24092,7 @@
    "flags": []
   },
   {
-   "id": "壬-036",
+   "id": "壬-037",
    "dayMaster": "壬",
    "section": "巳",
    "sectionTitle": "四月壬水",
@@ -23427,7 +24125,7 @@
    "flags": []
   },
   {
-   "id": "壬-037",
+   "id": "壬-038",
    "dayMaster": "壬",
    "section": "午",
    "sectionTitle": "五月壬水",
@@ -23454,7 +24152,7 @@
    "flags": []
   },
   {
-   "id": "壬-038",
+   "id": "壬-039",
    "dayMaster": "壬",
    "section": "午",
    "sectionTitle": "五月壬水",
@@ -23480,7 +24178,7 @@
    "flags": []
   },
   {
-   "id": "壬-039",
+   "id": "壬-040",
    "dayMaster": "壬",
    "section": "午",
    "sectionTitle": "五月壬水",
@@ -23511,7 +24209,7 @@
    "flags": []
   },
   {
-   "id": "壬-040",
+   "id": "壬-041",
    "dayMaster": "壬",
    "section": "午",
    "sectionTitle": "五月壬水",
@@ -23538,7 +24236,7 @@
    "flags": []
   },
   {
-   "id": "壬-041",
+   "id": "壬-042",
    "dayMaster": "壬",
    "section": "午",
    "sectionTitle": "五月壬水",
@@ -23569,7 +24267,7 @@
    "flags": []
   },
   {
-   "id": "壬-042",
+   "id": "壬-043",
    "dayMaster": "壬",
    "section": "未",
    "sectionTitle": "六月壬水",
@@ -23595,7 +24293,7 @@
    "flags": []
   },
   {
-   "id": "壬-043",
+   "id": "壬-044",
    "dayMaster": "壬",
    "section": "未",
    "sectionTitle": "六月壬水",
@@ -23628,7 +24326,7 @@
    "flags": []
   },
   {
-   "id": "壬-044",
+   "id": "壬-045",
    "dayMaster": "壬",
    "section": "未",
    "sectionTitle": "六月壬水",
@@ -23663,7 +24361,7 @@
    "flags": []
   },
   {
-   "id": "壬-045",
+   "id": "壬-046",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23689,7 +24387,7 @@
    "flags": []
   },
   {
-   "id": "壬-046",
+   "id": "壬-047",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23718,7 +24416,7 @@
    "flags": []
   },
   {
-   "id": "壬-047",
+   "id": "壬-048",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23740,7 +24438,7 @@
    "flags": []
   },
   {
-   "id": "壬-048",
+   "id": "壬-049",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23766,7 +24464,7 @@
    "flags": []
   },
   {
-   "id": "壬-049",
+   "id": "壬-050",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23794,7 +24492,7 @@
    "flags": []
   },
   {
-   "id": "壬-050",
+   "id": "壬-051",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23822,7 +24520,7 @@
    "flags": []
   },
   {
-   "id": "壬-051",
+   "id": "壬-052",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23853,7 +24551,7 @@
    "flags": []
   },
   {
-   "id": "壬-052",
+   "id": "壬-053",
    "dayMaster": "壬",
    "section": "申",
    "sectionTitle": "七月壬水",
@@ -23884,7 +24582,7 @@
    "flags": []
   },
   {
-   "id": "壬-053",
+   "id": "壬-054",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -23908,7 +24606,7 @@
    "flags": []
   },
   {
-   "id": "壬-054",
+   "id": "壬-055",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -23934,7 +24632,7 @@
    "flags": []
   },
   {
-   "id": "壬-055",
+   "id": "壬-056",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -23962,7 +24660,7 @@
    "flags": []
   },
   {
-   "id": "壬-056",
+   "id": "壬-057",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -23988,7 +24686,7 @@
    "flags": []
   },
   {
-   "id": "壬-057",
+   "id": "壬-058",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -24016,7 +24714,7 @@
    "flags": []
   },
   {
-   "id": "壬-058",
+   "id": "壬-059",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -24047,7 +24745,7 @@
    "flags": []
   },
   {
-   "id": "壬-059",
+   "id": "壬-060",
    "dayMaster": "壬",
    "section": "酉",
    "sectionTitle": "八月壬水",
@@ -24080,7 +24778,7 @@
    "flags": []
   },
   {
-   "id": "壬-060",
+   "id": "壬-061",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24104,7 +24802,7 @@
    "flags": []
   },
   {
-   "id": "壬-061",
+   "id": "壬-062",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24132,7 +24830,7 @@
    "flags": []
   },
   {
-   "id": "壬-062",
+   "id": "壬-063",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24160,7 +24858,7 @@
    "flags": []
   },
   {
-   "id": "壬-063",
+   "id": "壬-064",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24186,7 +24884,7 @@
    "flags": []
   },
   {
-   "id": "壬-064",
+   "id": "壬-065",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24220,7 +24918,7 @@
    "flags": []
   },
   {
-   "id": "壬-065",
+   "id": "壬-066",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24251,7 +24949,7 @@
    "flags": []
   },
   {
-   "id": "壬-066",
+   "id": "壬-067",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24284,7 +24982,7 @@
    "flags": []
   },
   {
-   "id": "壬-067",
+   "id": "壬-068",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24317,7 +25015,7 @@
    "flags": []
   },
   {
-   "id": "壬-068",
+   "id": "壬-069",
    "dayMaster": "壬",
    "section": "戌",
    "sectionTitle": "九月壬水",
@@ -24348,7 +25046,7 @@
    "flags": []
   },
   {
-   "id": "壬-069",
+   "id": "壬-070",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24374,7 +25072,7 @@
    "flags": []
   },
   {
-   "id": "壬-070",
+   "id": "壬-071",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24400,7 +25098,7 @@
    "flags": []
   },
   {
-   "id": "壬-071",
+   "id": "壬-072",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24427,7 +25125,7 @@
    "flags": []
   },
   {
-   "id": "壬-072",
+   "id": "壬-073",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24453,7 +25151,7 @@
    "flags": []
   },
   {
-   "id": "壬-073",
+   "id": "壬-074",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24482,7 +25180,7 @@
    "flags": []
   },
   {
-   "id": "壬-074",
+   "id": "壬-075",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24515,7 +25213,7 @@
    "flags": []
   },
   {
-   "id": "壬-075",
+   "id": "壬-076",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24544,7 +25242,7 @@
    "flags": []
   },
   {
-   "id": "壬-076",
+   "id": "壬-077",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24575,7 +25273,7 @@
    "flags": []
   },
   {
-   "id": "壬-077",
+   "id": "壬-078",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24608,7 +25306,7 @@
    "flags": []
   },
   {
-   "id": "壬-078",
+   "id": "壬-079",
    "dayMaster": "壬",
    "section": "亥",
    "sectionTitle": "十月壬水",
@@ -24639,7 +25337,7 @@
    "flags": []
   },
   {
-   "id": "壬-079",
+   "id": "壬-080",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24665,7 +25363,7 @@
    "flags": []
   },
   {
-   "id": "壬-080",
+   "id": "壬-081",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24691,7 +25389,7 @@
    "flags": []
   },
   {
-   "id": "壬-081",
+   "id": "壬-082",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24717,7 +25415,7 @@
    "flags": []
   },
   {
-   "id": "壬-082",
+   "id": "壬-083",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24743,7 +25441,7 @@
    "flags": []
   },
   {
-   "id": "壬-083",
+   "id": "壬-084",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24774,7 +25472,7 @@
    "flags": []
   },
   {
-   "id": "壬-084",
+   "id": "壬-085",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24805,7 +25503,7 @@
    "flags": []
   },
   {
-   "id": "壬-085",
+   "id": "壬-086",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24838,7 +25536,32 @@
    "flags": []
   },
   {
-   "id": "壬-086",
+   "id": "壬-087",
+   "dayMaster": "壬",
+   "section": "子",
+   "sectionTitle": "十一月壬水",
+   "page": 292,
+   "line": 480,
+   "pillars": {
+    "year": "壬辰",
+    "month": "壬子",
+    "day": "壬辰",
+    "hour": "乙巳"
+   },
+   "raw": "壬辰，壬子，壬辰，乙巳。",
+   "ocrFixed": [],
+   "judgment": [
+    "光绪十八年十一月初八日已时。",
+    "蔡廷错命，专用已宫丙戊解冻止流，位至军长，福建省主席。"
+   ],
+   "note": [],
+   "name": "蔡廷错",
+   "date": null,
+   "lunar": null,
+   "flags": []
+  },
+  {
+   "id": "壬-088",
    "dayMaster": "壬",
    "section": "子",
    "sectionTitle": "十一月壬水",
@@ -24865,7 +25588,7 @@
    "flags": []
   },
   {
-   "id": "壬-087",
+   "id": "壬-089",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -24889,7 +25612,7 @@
    "flags": []
   },
   {
-   "id": "壬-088",
+   "id": "壬-090",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -24915,7 +25638,7 @@
    "flags": []
   },
   {
-   "id": "壬-089",
+   "id": "壬-091",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -24941,7 +25664,7 @@
    "flags": []
   },
   {
-   "id": "壬-090",
+   "id": "壬-092",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -24967,7 +25690,7 @@
    "flags": []
   },
   {
-   "id": "壬-091",
+   "id": "壬-093",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -24993,7 +25716,7 @@
    "flags": []
   },
   {
-   "id": "壬-092",
+   "id": "壬-094",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -25022,7 +25745,7 @@
    "flags": []
   },
   {
-   "id": "壬-093",
+   "id": "壬-095",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -25048,7 +25771,7 @@
    "flags": []
   },
   {
-   "id": "壬-094",
+   "id": "壬-096",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -25074,7 +25797,7 @@
    "flags": []
   },
   {
-   "id": "壬-095",
+   "id": "壬-097",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -25107,7 +25830,7 @@
    "flags": []
   },
   {
-   "id": "壬-096",
+   "id": "壬-098",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -25134,7 +25857,7 @@
    "flags": []
   },
   {
-   "id": "壬-097",
+   "id": "壬-099",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -25165,7 +25888,7 @@
    "flags": []
   },
   {
-   "id": "壬-098",
+   "id": "壬-100",
    "dayMaster": "壬",
    "section": "丑",
    "sectionTitle": "十二月壬水",
@@ -26833,6 +27556,37 @@
    "dayMaster": "癸",
    "section": "戌",
    "sectionTitle": "九月癸水",
+   "page": 312,
+   "line": 321,
+   "pillars": {
+    "year": "戊申",
+    "month": "壬戌",
+    "day": "癸巳",
+    "hour": "甲寅"
+   },
+   "raw": "戊申，壬戌，癸巳，甲寅。",
+   "ocrFixed": [],
+   "judgment": [
+    "陈宝琛命，癸水见王并透，当以壬水论，长生于申，甲戊并透，七然有制，喜行木火之乡，科甲出身，历任显职，以文学著，清亡，为宣统"
+   ],
+   "note": [],
+   "name": "陈宝琛",
+   "date": "道光廿八年九月廿三日寅时。",
+   "lunar": {
+    "year": 1848,
+    "month": 9,
+    "day": 23,
+    "leap": false,
+    "hourBranch": "寅",
+    "era": "道光廿八年"
+   },
+   "flags": []
+  },
+  {
+   "id": "癸-059",
+   "dayMaster": "癸",
+   "section": "戌",
+   "sectionTitle": "九月癸水",
    "page": 313,
    "line": 327,
    "pillars": {
@@ -26863,7 +27617,7 @@
    "flags": []
   },
   {
-   "id": "癸-059",
+   "id": "癸-060",
    "dayMaster": "癸",
    "section": "戌",
    "sectionTitle": "九月癸水",
@@ -26890,7 +27644,7 @@
    "flags": []
   },
   {
-   "id": "癸-060",
+   "id": "癸-061",
    "dayMaster": "癸",
    "section": "戌",
    "sectionTitle": "九月癸水",
@@ -26924,7 +27678,7 @@
    "flags": []
   },
   {
-   "id": "癸-061",
+   "id": "癸-062",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -26950,7 +27704,7 @@
    "flags": []
   },
   {
-   "id": "癸-062",
+   "id": "癸-063",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -26978,7 +27732,7 @@
    "flags": []
   },
   {
-   "id": "癸-063",
+   "id": "癸-064",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -27004,7 +27758,7 @@
    "flags": []
   },
   {
-   "id": "癸-064",
+   "id": "癸-065",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -27030,7 +27784,7 @@
    "flags": []
   },
   {
-   "id": "癸-065",
+   "id": "癸-066",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -27059,7 +27813,7 @@
    "flags": []
   },
   {
-   "id": "癸-066",
+   "id": "癸-067",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -27090,7 +27844,7 @@
    "flags": []
   },
   {
-   "id": "癸-067",
+   "id": "癸-068",
    "dayMaster": "癸",
    "section": "亥",
    "sectionTitle": "十月癸水",
@@ -27123,7 +27877,38 @@
    "flags": []
   },
   {
-   "id": "癸-068",
+   "id": "癸-069",
+   "dayMaster": "癸",
+   "section": "亥",
+   "sectionTitle": "十月癸水",
+   "page": 315,
+   "line": 374,
+   "pillars": {
+    "year": "己丑",
+    "month": "乙亥",
+    "day": "癸巳",
+    "hour": "庚申"
+   },
+   "raw": "己丑，乙亥，癸巳，庚申。",
+   "ocrFixed": [],
+   "judgment": [
+    "张嘉璈命，丙火藏已，时逢庚申，身旺贪得任财。位至铁道部长。"
+   ],
+   "note": [],
+   "name": "张嘉璈",
+   "date": "光绪十五年十月廿一日申时。",
+   "lunar": {
+    "year": 1889,
+    "month": 10,
+    "day": 21,
+    "leap": false,
+    "hourBranch": "申",
+    "era": "光绪十五年"
+   },
+   "flags": []
+  },
+  {
+   "id": "癸-070",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27149,7 +27934,7 @@
    "flags": []
   },
   {
-   "id": "癸-069",
+   "id": "癸-071",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27175,7 +27960,7 @@
    "flags": []
   },
   {
-   "id": "癸-070",
+   "id": "癸-072",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27201,7 +27986,7 @@
    "flags": []
   },
   {
-   "id": "癸-071",
+   "id": "癸-073",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27227,7 +28012,7 @@
    "flags": []
   },
   {
-   "id": "癸-072",
+   "id": "癸-074",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27258,7 +28043,7 @@
    "flags": []
   },
   {
-   "id": "癸-073",
+   "id": "癸-075",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27285,7 +28070,7 @@
    "flags": []
   },
   {
-   "id": "癸-074",
+   "id": "癸-076",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27314,7 +28099,7 @@
    "flags": []
   },
   {
-   "id": "癸-075",
+   "id": "癸-077",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27343,7 +28128,7 @@
    "flags": []
   },
   {
-   "id": "癸-076",
+   "id": "癸-078",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27374,7 +28159,7 @@
    "flags": []
   },
   {
-   "id": "癸-077",
+   "id": "癸-079",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27405,7 +28190,7 @@
    "flags": []
   },
   {
-   "id": "癸-078",
+   "id": "癸-080",
    "dayMaster": "癸",
    "section": "子",
    "sectionTitle": "十一月癸水",
@@ -27438,7 +28223,7 @@
    "flags": []
   },
   {
-   "id": "癸-079",
+   "id": "癸-081",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27466,7 +28251,7 @@
    "flags": []
   },
   {
-   "id": "癸-080",
+   "id": "癸-082",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27493,7 +28278,7 @@
    "flags": []
   },
   {
-   "id": "癸-081",
+   "id": "癸-083",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27522,7 +28307,7 @@
    "flags": []
   },
   {
-   "id": "癸-082",
+   "id": "癸-084",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27550,7 +28335,7 @@
    "flags": []
   },
   {
-   "id": "癸-083",
+   "id": "癸-085",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27578,7 +28363,7 @@
    "flags": []
   },
   {
-   "id": "癸-084",
+   "id": "癸-086",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27604,7 +28389,7 @@
    "flags": []
   },
   {
-   "id": "癸-085",
+   "id": "癸-087",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27638,7 +28423,7 @@
    "flags": []
   },
   {
-   "id": "癸-086",
+   "id": "癸-088",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27667,7 +28452,7 @@
    "flags": []
   },
   {
-   "id": "癸-087",
+   "id": "癸-089",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27702,7 +28487,7 @@
    "flags": []
   },
   {
-   "id": "癸-088",
+   "id": "癸-090",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27735,7 +28520,7 @@
    "flags": []
   },
   {
-   "id": "癸-089",
+   "id": "癸-091",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27769,7 +28554,7 @@
    "flags": []
   },
   {
-   "id": "癸-090",
+   "id": "癸-092",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27799,7 +28584,7 @@
    ]
   },
   {
-   "id": "癸-091",
+   "id": "癸-093",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",
@@ -27830,7 +28615,7 @@
    "flags": []
   },
   {
-   "id": "癸-092",
+   "id": "癸-094",
    "dayMaster": "癸",
    "section": "丑",
    "sectionTitle": "十二月癸水",

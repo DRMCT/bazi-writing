@@ -1,0 +1,16 @@
+{
+  "name": "林昭",
+  "calendar": {"mode": "fictional", "start_age": 5, "year_pillars": ["庚寅"]},
+  "gender": "female",
+  "story_age_window": [18, 40],
+  "day_master": {"element": ["金"], "weight": 2, "hard": true},
+  "strength": {"value": "身弱", "weight": 2},
+  "structure": {"any_of": ["七杀格", "伤官格"], "weight": 1},
+  "ten_gods": {"prominent": [{"god": "正印", "weight": 2}], "absent": [{"god": "食神", "weight": 1}]},
+  "yongshen": {"element": ["土"], "weight": 1},
+  "day_branch": {"any_of": ["酉", "戌"], "weight": 1},
+  "arc": {"template": "正弧", "turning_age": 24, "weight": 3},
+  "events": [{"age_range": [22, 26], "type": "冲日支", "weight": 3}],
+  "relations": [{"to": "../沈砚/命盘/沈砚.json", "ten_god_seen_by_them": "七杀", "weight": 2}],
+  "shensha": {"require": ["华盖"], "weight": 1}
+}

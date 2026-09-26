@@ -128,3 +128,28 @@ def test_factor_is_clamped_and_sum_explainable() -> None:
             assert all(strength.FACTOR_FLOOR <= e["factor"] <= strength.FACTOR_CEIL for e in eff.values())
         r = strength.assess(p)
         assert abs(r["support"] + r["drain"] - sum(c["weight"] for c in r["contributions"])) < 0.02
+
+
+# ---- v3 实验开关（2026-09-25，默认关，见 references/校核/旺衰_v3报告.md）
+
+def test_v3_switches_default_off_and_work_when_on() -> None:
+    from bazi_core import strength
+    p = {"year": "戊子", "month": "丙辰", "day": "丙午", "hour": "庚寅"}   # 穷通丙-035：寅午半合、子辰半合，子午相冲
+    base = strength.assess(p)
+    assert not any(n.get("broken") for n in base["combos"]) and not any("作根" in c["where"] for c in base["contributions"])
+    saved = (strength.V3_CHONG_BREAKS_COMBO, strength.V3_KU_SHENG_ROOT)
+    try:
+        strength.V3_CHONG_BREAKS_COMBO = True
+        r = strength.assess(p)
+        assert sum(1 for n in r["combos"] if n.get("broken")) == 2 and r["ratio"] != base["ratio"]
+        strength.V3_CHONG_BREAKS_COMBO = False
+        strength.V3_KU_SHENG_ROOT = True
+        q = {"year": "庚寅", "month": "己卯", "day": "丙戌", "hour": "戊子"}   # 丙坐戌为墓、戌藏丁劫（徐评"丙火坐戌，通根火库"那张盘申酉戌三会改论，故另取一盘）
+        r2 = strength.assess(q)
+        roots = [c for c in r2["contributions"] if "作根" in c["where"]]
+        assert {c["where"] for c in roots} == {"年支长生作根", "日支墓作根"} and all(c["side"] == "support" for c in roots)   # 寅为丙长生、戌为丙墓
+        # 阴干长生之支不藏比劫（乙长生午）不加
+        r3 = strength.assess({"year": "甲午", "month": "庚午", "day": "乙丑", "hour": "壬午"})
+        assert not any("长生作根" in c["where"] for c in r3["contributions"])
+    finally:
+        strength.V3_CHONG_BREAKS_COMBO, strength.V3_KU_SHENG_ROOT = saved

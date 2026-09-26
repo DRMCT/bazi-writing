@@ -1,0 +1,3851 @@
+{
+  "schema": "bazi-schedule/v1",
+  "algorithm": "bazi-writing schedule v1（DESIGN 10 第 4 条）",
+  "window": [
+    324,
+    346
+  ],
+  "main": null,
+  "people": [
+    {
+      "name": "沈砚",
+      "birthYear": 300,
+      "rows": [
+        {
+          "name": "沈砚",
+          "age": 24,
+          "born": true,
+          "liunian": "戊申",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.35,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "巳刑申（日支）",
+            "冲时支",
+            "申刑寅（时支）",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-324-沈砚",
+          "year": 324
+        },
+        {
+          "name": "沈砚",
+          "age": 25,
+          "born": true,
+          "liunian": "己酉",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.35,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-325-沈砚",
+          "year": 325
+        },
+        {
+          "name": "沈砚",
+          "age": 26,
+          "born": true,
+          "liunian": "庚戌",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-326-沈砚",
+          "year": 326
+        },
+        {
+          "name": "沈砚",
+          "age": 27,
+          "born": true,
+          "liunian": "辛亥",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [
+            "冲日支",
+            "天克地冲日柱"
+          ],
+          "mechanisms": [
+            "害年支",
+            "害月支",
+            "冲日支",
+            "天克地冲日柱",
+            "合时支"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "学识与真相",
+            "迁徙与归属",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-327-沈砚",
+          "year": 327
+        },
+        {
+          "name": "沈砚",
+          "age": 28,
+          "born": true,
+          "liunian": "壬子",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-328-沈砚",
+          "year": 328
+        },
+        {
+          "name": "沈砚",
+          "age": 29,
+          "born": true,
+          "liunian": "癸丑",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合绊用神",
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "身心",
+            "学识与真相"
+          ],
+          "candidate": false,
+          "stateId": "Q-329-沈砚",
+          "year": 329
+        },
+        {
+          "name": "沈砚",
+          "age": 30,
+          "born": true,
+          "liunian": "甲寅",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲提纲"
+          ],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）",
+            "冲提纲",
+            "申刑寅（月支）",
+            "寅刑巳（日支）",
+            "害日支",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-330-沈砚",
+          "year": 330
+        },
+        {
+          "name": "沈砚",
+          "age": 31,
+          "born": true,
+          "liunian": "乙卯",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-331-沈砚",
+          "year": 331
+        },
+        {
+          "name": "沈砚",
+          "age": 32,
+          "born": true,
+          "liunian": "丙辰",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-332-沈砚",
+          "year": 332
+        },
+        {
+          "name": "沈砚",
+          "age": 33,
+          "born": true,
+          "liunian": "丁巳",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.25,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "合年支",
+            "巳刑申（年支）",
+            "合月支",
+            "巳刑申（月支）",
+            "寅刑巳（时支）",
+            "害时支",
+            "换运"
+          ],
+          "domains": [
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-333-沈砚",
+          "year": 333
+        },
+        {
+          "name": "沈砚",
+          "age": 34,
+          "born": true,
+          "liunian": "戊午",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.35,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "岁运相冲",
+            "用神到位"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-334-沈砚",
+          "year": 334
+        },
+        {
+          "name": "沈砚",
+          "age": 35,
+          "born": true,
+          "liunian": "己未",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-335-沈砚",
+          "year": 335
+        },
+        {
+          "name": "沈砚",
+          "age": 36,
+          "born": true,
+          "liunian": "庚申",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.25,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "巳刑申（日支）",
+            "冲时支",
+            "申刑寅（时支）"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-336-沈砚",
+          "year": 336
+        },
+        {
+          "name": "沈砚",
+          "age": 37,
+          "born": true,
+          "liunian": "辛酉",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.25,
+          "keyMechanisms": [],
+          "mechanisms": [],
+          "domains": [
+            "感情",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-337-沈砚",
+          "year": 337
+        },
+        {
+          "name": "沈砚",
+          "age": 38,
+          "born": true,
+          "liunian": "壬戌",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "学识与真相"
+          ],
+          "candidate": false,
+          "stateId": "Q-338-沈砚",
+          "year": 338
+        },
+        {
+          "name": "沈砚",
+          "age": 39,
+          "born": true,
+          "liunian": "癸亥",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲日支"
+          ],
+          "mechanisms": [
+            "害年支",
+            "害月支",
+            "冲日支",
+            "合时支",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "学识与真相",
+            "迁徙与归属",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-339-沈砚",
+          "year": 339
+        },
+        {
+          "name": "沈砚",
+          "age": 40,
+          "born": true,
+          "liunian": "甲子",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-340-沈砚",
+          "year": 340
+        },
+        {
+          "name": "沈砚",
+          "age": 41,
+          "born": true,
+          "liunian": "乙丑",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "财富",
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-341-沈砚",
+          "year": 341
+        },
+        {
+          "name": "沈砚",
+          "age": 42,
+          "born": true,
+          "liunian": "丙寅",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [
+            "冲提纲",
+            "天克地冲月柱"
+          ],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）",
+            "冲提纲",
+            "申刑寅（月支）",
+            "天克地冲月柱",
+            "寅刑巳（日支）",
+            "害日支"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-342-沈砚",
+          "year": 342
+        },
+        {
+          "name": "沈砚",
+          "age": 43,
+          "born": true,
+          "liunian": "丁卯",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": -0.2,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "换运"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-343-沈砚",
+          "year": 343
+        },
+        {
+          "name": "沈砚",
+          "age": 44,
+          "born": true,
+          "liunian": "戊辰",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-344-沈砚",
+          "year": 344
+        },
+        {
+          "name": "沈砚",
+          "age": 45,
+          "born": true,
+          "liunian": "己巳",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": 0.35,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "巳刑申（年支）",
+            "合月支",
+            "巳刑申（月支）",
+            "寅刑巳（时支）",
+            "害时支",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-345-沈砚",
+          "year": 345
+        },
+        {
+          "name": "沈砚",
+          "age": 46,
+          "born": true,
+          "liunian": "庚午",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": 0.25,
+          "keyMechanisms": [],
+          "mechanisms": [],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-346-沈砚",
+          "year": 346
+        }
+      ]
+    },
+    {
+      "name": "林昭",
+      "birthYear": 306,
+      "rows": [
+        {
+          "name": "林昭",
+          "age": 18,
+          "born": true,
+          "liunian": "戊申",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-324-林昭",
+          "year": 324
+        },
+        {
+          "name": "林昭",
+          "age": 19,
+          "born": true,
+          "liunian": "己酉",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "酉酉自刑（日支）",
+            "害时支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-325-林昭",
+          "year": 325
+        },
+        {
+          "name": "林昭",
+          "age": 20,
+          "born": true,
+          "liunian": "庚戌",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.8,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "害日支",
+            "岁运相冲",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-326-林昭",
+          "year": 326
+        },
+        {
+          "name": "林昭",
+          "age": 21,
+          "born": true,
+          "liunian": "辛亥",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支"
+          ],
+          "domains": [
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-327-林昭",
+          "year": 327
+        },
+        {
+          "name": "林昭",
+          "age": 22,
+          "born": true,
+          "liunian": "壬子",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲提纲"
+          ],
+          "mechanisms": [
+            "冲提纲"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-328-林昭",
+          "year": 328
+        },
+        {
+          "name": "林昭",
+          "age": 23,
+          "born": true,
+          "liunian": "癸丑",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害月支",
+            "丑刑戌（时支）",
+            "合绊用神",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-329-林昭",
+          "year": 329
+        },
+        {
+          "name": "林昭",
+          "age": 24,
+          "born": true,
+          "liunian": "甲寅",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-330-林昭",
+          "year": 330
+        },
+        {
+          "name": "林昭",
+          "age": 25,
+          "born": true,
+          "liunian": "乙卯",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲日支",
+            "天克地冲日柱",
+            "换运"
+          ],
+          "mechanisms": [
+            "冲日支",
+            "天克地冲日柱",
+            "合时支",
+            "换运",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-331-林昭",
+          "year": 331
+        },
+        {
+          "name": "林昭",
+          "age": 26,
+          "born": true,
+          "liunian": "丙辰",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "冲时支",
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "名誉与是非",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-332-林昭",
+          "year": 332
+        },
+        {
+          "name": "林昭",
+          "age": 27,
+          "born": true,
+          "liunian": "丁巳",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "寅刑巳（年支）",
+            "害年支",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-333-林昭",
+          "year": 333
+        },
+        {
+          "name": "林昭",
+          "age": 28,
+          "born": true,
+          "liunian": "戊午",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "午午自刑（月支）",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-334-林昭",
+          "year": 334
+        },
+        {
+          "name": "林昭",
+          "age": 29,
+          "born": true,
+          "liunian": "己未",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合月支",
+            "戌刑未（时支）",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-335-林昭",
+          "year": 335
+        },
+        {
+          "name": "林昭",
+          "age": 30,
+          "born": true,
+          "liunian": "庚申",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-336-林昭",
+          "year": 336
+        },
+        {
+          "name": "林昭",
+          "age": 31,
+          "born": true,
+          "liunian": "辛酉",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.6,
+          "keyMechanisms": [
+            "伏吟日柱",
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "酉酉自刑（日支）",
+            "伏吟日柱",
+            "害时支",
+            "岁运相冲"
+          ],
+          "domains": [
+            "感情",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-337-林昭",
+          "year": 337
+        },
+        {
+          "name": "林昭",
+          "age": 32,
+          "born": true,
+          "liunian": "壬戌",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害日支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-338-林昭",
+          "year": 338
+        },
+        {
+          "name": "林昭",
+          "age": 33,
+          "born": true,
+          "liunian": "癸亥",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "合绊用神"
+          ],
+          "domains": [
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-339-林昭",
+          "year": 339
+        },
+        {
+          "name": "林昭",
+          "age": 34,
+          "born": true,
+          "liunian": "甲子",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲提纲"
+          ],
+          "mechanisms": [
+            "冲提纲",
+            "忌神透干"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-340-林昭",
+          "year": 340
+        },
+        {
+          "name": "林昭",
+          "age": 35,
+          "born": true,
+          "liunian": "乙丑",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": 0.2,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "害月支",
+            "丑刑戌（时支）",
+            "换运",
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "身心",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-341-林昭",
+          "year": 341
+        },
+        {
+          "name": "林昭",
+          "age": 36,
+          "born": true,
+          "liunian": "丙寅",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-342-林昭",
+          "year": 342
+        },
+        {
+          "name": "林昭",
+          "age": 37,
+          "born": true,
+          "liunian": "丁卯",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲日支",
+            "天克地冲日柱"
+          ],
+          "mechanisms": [
+            "冲日支",
+            "天克地冲日柱",
+            "合时支",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-343-林昭",
+          "year": 343
+        },
+        {
+          "name": "林昭",
+          "age": 38,
+          "born": true,
+          "liunian": "戊辰",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": 1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "冲时支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-344-林昭",
+          "year": 344
+        },
+        {
+          "name": "林昭",
+          "age": 39,
+          "born": true,
+          "liunian": "己巳",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "寅刑巳（年支）",
+            "害年支",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-345-林昭",
+          "year": 345
+        },
+        {
+          "name": "林昭",
+          "age": 40,
+          "born": true,
+          "liunian": "庚午",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "午午自刑（月支）"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-346-林昭",
+          "year": 346
+        }
+      ]
+    },
+    {
+      "name": "裴恪",
+      "birthYear": 303,
+      "rows": [
+        {
+          "name": "裴恪",
+          "age": 21,
+          "born": true,
+          "liunian": "戊申",
+          "dayun": "庚子",
+          "dayunTone": "逆",
+          "score": -0.4,
+          "keyMechanisms": [
+            "冲提纲",
+            "天克地冲月柱"
+          ],
+          "mechanisms": [
+            "害年支",
+            "冲提纲",
+            "申刑寅（月支）",
+            "天克地冲月柱"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-324-裴恪",
+          "year": 324
+        },
+        {
+          "name": "裴恪",
+          "age": 22,
+          "born": true,
+          "liunian": "己酉",
+          "dayun": "庚子",
+          "dayunTone": "逆",
+          "score": -0.4,
+          "keyMechanisms": [
+            "冲日支"
+          ],
+          "mechanisms": [
+            "冲日支"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "名誉与是非"
+          ],
+          "candidate": true,
+          "stateId": "Q-325-裴恪",
+          "year": 325
+        },
+        {
+          "name": "裴恪",
+          "age": 23,
+          "born": true,
+          "liunian": "庚戌",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "合日支",
+            "换运"
+          ],
+          "domains": [
+            "感情",
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-326-裴恪",
+          "year": 326
+        },
+        {
+          "name": "裴恪",
+          "age": 24,
+          "born": true,
+          "liunian": "辛亥",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -0.8,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "亥亥自刑（年支）",
+            "合月支"
+          ],
+          "domains": [
+            "六亲"
+          ],
+          "candidate": false,
+          "stateId": "Q-327-裴恪",
+          "year": 327
+        },
+        {
+          "name": "裴恪",
+          "age": 25,
+          "born": true,
+          "liunian": "壬子",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "子卯互刑（日支）",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-328-裴恪",
+          "year": 328
+        },
+        {
+          "name": "裴恪",
+          "age": 26,
+          "born": true,
+          "liunian": "癸丑",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合时支",
+            "忌神透干"
+          ],
+          "domains": [
+            "财富",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-329-裴恪",
+          "year": 329
+        },
+        {
+          "name": "裴恪",
+          "age": 27,
+          "born": true,
+          "liunian": "甲寅",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "忌神透干"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-330-裴恪",
+          "year": 330
+        },
+        {
+          "name": "裴恪",
+          "age": 28,
+          "born": true,
+          "liunian": "乙卯",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "卯子互刑（时支）",
+            "忌神透干"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-331-裴恪",
+          "year": 331
+        },
+        {
+          "name": "裴恪",
+          "age": 29,
+          "born": true,
+          "liunian": "丙辰",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害日支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-332-裴恪",
+          "year": 332
+        },
+        {
+          "name": "裴恪",
+          "age": 30,
+          "born": true,
+          "liunian": "丁巳",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 1.0,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "冲年支",
+            "寅刑巳（月支）",
+            "害月支",
+            "岁运相冲",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-333-裴恪",
+          "year": 333
+        },
+        {
+          "name": "裴恪",
+          "age": 31,
+          "born": true,
+          "liunian": "戊午",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.8,
+          "keyMechanisms": [
+            "天克地冲时柱"
+          ],
+          "mechanisms": [
+            "冲时支",
+            "天克地冲时柱",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-334-裴恪",
+          "year": 334
+        },
+        {
+          "name": "裴恪",
+          "age": 32,
+          "born": true,
+          "liunian": "己未",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害时支"
+          ],
+          "domains": [
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-335-裴恪",
+          "year": 335
+        },
+        {
+          "name": "裴恪",
+          "age": 33,
+          "born": true,
+          "liunian": "庚申",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲提纲",
+            "换运"
+          ],
+          "mechanisms": [
+            "害年支",
+            "冲提纲",
+            "申刑寅（月支）",
+            "换运"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-336-裴恪",
+          "year": 336
+        },
+        {
+          "name": "裴恪",
+          "age": 34,
+          "born": true,
+          "liunian": "辛酉",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲日支"
+          ],
+          "mechanisms": [
+            "冲日支"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "名誉与是非"
+          ],
+          "candidate": true,
+          "stateId": "Q-337-裴恪",
+          "year": 337
+        },
+        {
+          "name": "裴恪",
+          "age": 35,
+          "born": true,
+          "liunian": "壬戌",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.3,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "财富"
+          ],
+          "candidate": false,
+          "stateId": "Q-338-裴恪",
+          "year": 338
+        },
+        {
+          "name": "裴恪",
+          "age": 36,
+          "born": true,
+          "liunian": "癸亥",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "亥亥自刑（年支）",
+            "合月支",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "六亲"
+          ],
+          "candidate": false,
+          "stateId": "Q-339-裴恪",
+          "year": 339
+        },
+        {
+          "name": "裴恪",
+          "age": 37,
+          "born": true,
+          "liunian": "甲子",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -1.0,
+          "keyMechanisms": [
+            "伏吟时柱"
+          ],
+          "mechanisms": [
+            "子卯互刑（日支）",
+            "伏吟时柱",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-340-裴恪",
+          "year": 340
+        },
+        {
+          "name": "裴恪",
+          "age": 38,
+          "born": true,
+          "liunian": "乙丑",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合时支",
+            "忌神透干"
+          ],
+          "domains": [
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-341-裴恪",
+          "year": 341
+        },
+        {
+          "name": "裴恪",
+          "age": 39,
+          "born": true,
+          "liunian": "丙寅",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "用神到位"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-342-裴恪",
+          "year": 342
+        },
+        {
+          "name": "裴恪",
+          "age": 40,
+          "born": true,
+          "liunian": "丁卯",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "卯子互刑（时支）",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-343-裴恪",
+          "year": 343
+        },
+        {
+          "name": "裴恪",
+          "age": 41,
+          "born": true,
+          "liunian": "戊辰",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": 0.5,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "害日支",
+            "岁运相冲"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-344-裴恪",
+          "year": 344
+        },
+        {
+          "name": "裴恪",
+          "age": 42,
+          "born": true,
+          "liunian": "己巳",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": 0.8,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "冲年支",
+            "寅刑巳（月支）",
+            "害月支",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-345-裴恪",
+          "year": 345
+        },
+        {
+          "name": "裴恪",
+          "age": 43,
+          "born": true,
+          "liunian": "庚午",
+          "dayun": "丁酉",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [
+            "天克地冲时柱",
+            "换运"
+          ],
+          "mechanisms": [
+            "冲时支",
+            "天克地冲时柱",
+            "换运",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "名誉与是非",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-346-裴恪",
+          "year": 346
+        }
+      ]
+    }
+  ],
+  "grid": [
+    {
+      "year": 324,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 24,
+          "born": true,
+          "liunian": "戊申",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.35,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "巳刑申（日支）",
+            "冲时支",
+            "申刑寅（时支）",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-324-沈砚",
+          "year": 324
+        },
+        {
+          "name": "林昭",
+          "age": 18,
+          "born": true,
+          "liunian": "戊申",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-324-林昭",
+          "year": 324
+        },
+        {
+          "name": "裴恪",
+          "age": 21,
+          "born": true,
+          "liunian": "戊申",
+          "dayun": "庚子",
+          "dayunTone": "逆",
+          "score": -0.4,
+          "keyMechanisms": [
+            "冲提纲",
+            "天克地冲月柱"
+          ],
+          "mechanisms": [
+            "害年支",
+            "冲提纲",
+            "申刑寅（月支）",
+            "天克地冲月柱"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-324-裴恪",
+          "year": 324
+        }
+      ]
+    },
+    {
+      "year": 325,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 25,
+          "born": true,
+          "liunian": "己酉",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.35,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-325-沈砚",
+          "year": 325
+        },
+        {
+          "name": "林昭",
+          "age": 19,
+          "born": true,
+          "liunian": "己酉",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "酉酉自刑（日支）",
+            "害时支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-325-林昭",
+          "year": 325
+        },
+        {
+          "name": "裴恪",
+          "age": 22,
+          "born": true,
+          "liunian": "己酉",
+          "dayun": "庚子",
+          "dayunTone": "逆",
+          "score": -0.4,
+          "keyMechanisms": [
+            "冲日支"
+          ],
+          "mechanisms": [
+            "冲日支"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "名誉与是非"
+          ],
+          "candidate": true,
+          "stateId": "Q-325-裴恪",
+          "year": 325
+        }
+      ]
+    },
+    {
+      "year": 326,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 26,
+          "born": true,
+          "liunian": "庚戌",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-326-沈砚",
+          "year": 326
+        },
+        {
+          "name": "林昭",
+          "age": 20,
+          "born": true,
+          "liunian": "庚戌",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.8,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "害日支",
+            "岁运相冲",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-326-林昭",
+          "year": 326
+        },
+        {
+          "name": "裴恪",
+          "age": 23,
+          "born": true,
+          "liunian": "庚戌",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "合日支",
+            "换运"
+          ],
+          "domains": [
+            "感情",
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-326-裴恪",
+          "year": 326
+        }
+      ]
+    },
+    {
+      "year": 327,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 27,
+          "born": true,
+          "liunian": "辛亥",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [
+            "冲日支",
+            "天克地冲日柱"
+          ],
+          "mechanisms": [
+            "害年支",
+            "害月支",
+            "冲日支",
+            "天克地冲日柱",
+            "合时支"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "学识与真相",
+            "迁徙与归属",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-327-沈砚",
+          "year": 327
+        },
+        {
+          "name": "林昭",
+          "age": 21,
+          "born": true,
+          "liunian": "辛亥",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支"
+          ],
+          "domains": [
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-327-林昭",
+          "year": 327
+        },
+        {
+          "name": "裴恪",
+          "age": 24,
+          "born": true,
+          "liunian": "辛亥",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -0.8,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "亥亥自刑（年支）",
+            "合月支"
+          ],
+          "domains": [
+            "六亲"
+          ],
+          "candidate": false,
+          "stateId": "Q-327-裴恪",
+          "year": 327
+        }
+      ]
+    },
+    {
+      "year": 328,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 28,
+          "born": true,
+          "liunian": "壬子",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-328-沈砚",
+          "year": 328
+        },
+        {
+          "name": "林昭",
+          "age": 22,
+          "born": true,
+          "liunian": "壬子",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲提纲"
+          ],
+          "mechanisms": [
+            "冲提纲"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-328-林昭",
+          "year": 328
+        },
+        {
+          "name": "裴恪",
+          "age": 25,
+          "born": true,
+          "liunian": "壬子",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "子卯互刑（日支）",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-328-裴恪",
+          "year": 328
+        }
+      ]
+    },
+    {
+      "year": 329,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 29,
+          "born": true,
+          "liunian": "癸丑",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合绊用神",
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "身心",
+            "学识与真相"
+          ],
+          "candidate": false,
+          "stateId": "Q-329-沈砚",
+          "year": 329
+        },
+        {
+          "name": "林昭",
+          "age": 23,
+          "born": true,
+          "liunian": "癸丑",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": 0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害月支",
+            "丑刑戌（时支）",
+            "合绊用神",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-329-林昭",
+          "year": 329
+        },
+        {
+          "name": "裴恪",
+          "age": 26,
+          "born": true,
+          "liunian": "癸丑",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合时支",
+            "忌神透干"
+          ],
+          "domains": [
+            "财富",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-329-裴恪",
+          "year": 329
+        }
+      ]
+    },
+    {
+      "year": 330,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 30,
+          "born": true,
+          "liunian": "甲寅",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲提纲"
+          ],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）",
+            "冲提纲",
+            "申刑寅（月支）",
+            "寅刑巳（日支）",
+            "害日支",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-330-沈砚",
+          "year": 330
+        },
+        {
+          "name": "林昭",
+          "age": 24,
+          "born": true,
+          "liunian": "甲寅",
+          "dayun": "庚辰",
+          "dayunTone": "顺",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-330-林昭",
+          "year": 330
+        },
+        {
+          "name": "裴恪",
+          "age": 27,
+          "born": true,
+          "liunian": "甲寅",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "忌神透干"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-330-裴恪",
+          "year": 330
+        }
+      ]
+    },
+    {
+      "year": 331,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 31,
+          "born": true,
+          "liunian": "乙卯",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-331-沈砚",
+          "year": 331
+        },
+        {
+          "name": "林昭",
+          "age": 25,
+          "born": true,
+          "liunian": "乙卯",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲日支",
+            "天克地冲日柱",
+            "换运"
+          ],
+          "mechanisms": [
+            "冲日支",
+            "天克地冲日柱",
+            "合时支",
+            "换运",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-331-林昭",
+          "year": 331
+        },
+        {
+          "name": "裴恪",
+          "age": 28,
+          "born": true,
+          "liunian": "乙卯",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "卯子互刑（时支）",
+            "忌神透干"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-331-裴恪",
+          "year": 331
+        }
+      ]
+    },
+    {
+      "year": 332,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 32,
+          "born": true,
+          "liunian": "丙辰",
+          "dayun": "乙亥",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-332-沈砚",
+          "year": 332
+        },
+        {
+          "name": "林昭",
+          "age": 26,
+          "born": true,
+          "liunian": "丙辰",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "冲时支",
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "名誉与是非",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-332-林昭",
+          "year": 332
+        },
+        {
+          "name": "裴恪",
+          "age": 29,
+          "born": true,
+          "liunian": "丙辰",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害日支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-332-裴恪",
+          "year": 332
+        }
+      ]
+    },
+    {
+      "year": 333,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 33,
+          "born": true,
+          "liunian": "丁巳",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.25,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "合年支",
+            "巳刑申（年支）",
+            "合月支",
+            "巳刑申（月支）",
+            "寅刑巳（时支）",
+            "害时支",
+            "换运"
+          ],
+          "domains": [
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-333-沈砚",
+          "year": 333
+        },
+        {
+          "name": "林昭",
+          "age": 27,
+          "born": true,
+          "liunian": "丁巳",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "寅刑巳（年支）",
+            "害年支",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-333-林昭",
+          "year": 333
+        },
+        {
+          "name": "裴恪",
+          "age": 30,
+          "born": true,
+          "liunian": "丁巳",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 1.0,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "冲年支",
+            "寅刑巳（月支）",
+            "害月支",
+            "岁运相冲",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-333-裴恪",
+          "year": 333
+        }
+      ]
+    },
+    {
+      "year": 334,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 34,
+          "born": true,
+          "liunian": "戊午",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.35,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "岁运相冲",
+            "用神到位"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-334-沈砚",
+          "year": 334
+        },
+        {
+          "name": "林昭",
+          "age": 28,
+          "born": true,
+          "liunian": "戊午",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "午午自刑（月支）",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-334-林昭",
+          "year": 334
+        },
+        {
+          "name": "裴恪",
+          "age": 31,
+          "born": true,
+          "liunian": "戊午",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.8,
+          "keyMechanisms": [
+            "天克地冲时柱"
+          ],
+          "mechanisms": [
+            "冲时支",
+            "天克地冲时柱",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-334-裴恪",
+          "year": 334
+        }
+      ]
+    },
+    {
+      "year": 335,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 35,
+          "born": true,
+          "liunian": "己未",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-335-沈砚",
+          "year": 335
+        },
+        {
+          "name": "林昭",
+          "age": 29,
+          "born": true,
+          "liunian": "己未",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合月支",
+            "戌刑未（时支）",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-335-林昭",
+          "year": 335
+        },
+        {
+          "name": "裴恪",
+          "age": 32,
+          "born": true,
+          "liunian": "己未",
+          "dayun": "己亥",
+          "dayunTone": "逆",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害时支"
+          ],
+          "domains": [
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-335-裴恪",
+          "year": 335
+        }
+      ]
+    },
+    {
+      "year": 336,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 36,
+          "born": true,
+          "liunian": "庚申",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.25,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "巳刑申（日支）",
+            "冲时支",
+            "申刑寅（时支）"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-336-沈砚",
+          "year": 336
+        },
+        {
+          "name": "林昭",
+          "age": 30,
+          "born": true,
+          "liunian": "庚申",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-336-林昭",
+          "year": 336
+        },
+        {
+          "name": "裴恪",
+          "age": 33,
+          "born": true,
+          "liunian": "庚申",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲提纲",
+            "换运"
+          ],
+          "mechanisms": [
+            "害年支",
+            "冲提纲",
+            "申刑寅（月支）",
+            "换运"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-336-裴恪",
+          "year": 336
+        }
+      ]
+    },
+    {
+      "year": 337,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 37,
+          "born": true,
+          "liunian": "辛酉",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.25,
+          "keyMechanisms": [],
+          "mechanisms": [],
+          "domains": [
+            "感情",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-337-沈砚",
+          "year": 337
+        },
+        {
+          "name": "林昭",
+          "age": 31,
+          "born": true,
+          "liunian": "辛酉",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.6,
+          "keyMechanisms": [
+            "伏吟日柱",
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "酉酉自刑（日支）",
+            "伏吟日柱",
+            "害时支",
+            "岁运相冲"
+          ],
+          "domains": [
+            "感情",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-337-林昭",
+          "year": 337
+        },
+        {
+          "name": "裴恪",
+          "age": 34,
+          "born": true,
+          "liunian": "辛酉",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.8,
+          "keyMechanisms": [
+            "冲日支"
+          ],
+          "mechanisms": [
+            "冲日支"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "名誉与是非"
+          ],
+          "candidate": true,
+          "stateId": "Q-337-裴恪",
+          "year": 337
+        }
+      ]
+    },
+    {
+      "year": 338,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 38,
+          "born": true,
+          "liunian": "壬戌",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "学识与真相"
+          ],
+          "candidate": false,
+          "stateId": "Q-338-沈砚",
+          "year": 338
+        },
+        {
+          "name": "林昭",
+          "age": 32,
+          "born": true,
+          "liunian": "壬戌",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "害日支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-338-林昭",
+          "year": 338
+        },
+        {
+          "name": "裴恪",
+          "age": 35,
+          "born": true,
+          "liunian": "壬戌",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.3,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "财富"
+          ],
+          "candidate": false,
+          "stateId": "Q-338-裴恪",
+          "year": 338
+        }
+      ]
+    },
+    {
+      "year": 339,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 39,
+          "born": true,
+          "liunian": "癸亥",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲日支"
+          ],
+          "mechanisms": [
+            "害年支",
+            "害月支",
+            "冲日支",
+            "合时支",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "学识与真相",
+            "迁徙与归属",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-339-沈砚",
+          "year": 339
+        },
+        {
+          "name": "林昭",
+          "age": 33,
+          "born": true,
+          "liunian": "癸亥",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -0.7,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "合绊用神"
+          ],
+          "domains": [
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-339-林昭",
+          "year": 339
+        },
+        {
+          "name": "裴恪",
+          "age": 36,
+          "born": true,
+          "liunian": "癸亥",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "亥亥自刑（年支）",
+            "合月支",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "六亲"
+          ],
+          "candidate": false,
+          "stateId": "Q-339-裴恪",
+          "year": 339
+        }
+      ]
+    },
+    {
+      "year": 340,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 40,
+          "born": true,
+          "liunian": "甲子",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-340-沈砚",
+          "year": 340
+        },
+        {
+          "name": "林昭",
+          "age": 34,
+          "born": true,
+          "liunian": "甲子",
+          "dayun": "己卯",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲提纲"
+          ],
+          "mechanisms": [
+            "冲提纲",
+            "忌神透干"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-340-林昭",
+          "year": 340
+        },
+        {
+          "name": "裴恪",
+          "age": 37,
+          "born": true,
+          "liunian": "甲子",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -1.0,
+          "keyMechanisms": [
+            "伏吟时柱"
+          ],
+          "mechanisms": [
+            "子卯互刑（日支）",
+            "伏吟时柱",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-340-裴恪",
+          "year": 340
+        }
+      ]
+    },
+    {
+      "year": 341,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 41,
+          "born": true,
+          "liunian": "乙丑",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "财富",
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-341-沈砚",
+          "year": 341
+        },
+        {
+          "name": "林昭",
+          "age": 35,
+          "born": true,
+          "liunian": "乙丑",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": 0.2,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "害月支",
+            "丑刑戌（时支）",
+            "换运",
+            "忌神透干",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "身心",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-341-林昭",
+          "year": 341
+        },
+        {
+          "name": "裴恪",
+          "age": 38,
+          "born": true,
+          "liunian": "乙丑",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": 0.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合时支",
+            "忌神透干"
+          ],
+          "domains": [
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-341-裴恪",
+          "year": 341
+        }
+      ]
+    },
+    {
+      "year": 342,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 42,
+          "born": true,
+          "liunian": "丙寅",
+          "dayun": "丙子",
+          "dayunTone": "逆",
+          "score": -0.5,
+          "keyMechanisms": [
+            "冲提纲",
+            "天克地冲月柱"
+          ],
+          "mechanisms": [
+            "冲年支",
+            "申刑寅（年支）",
+            "冲提纲",
+            "申刑寅（月支）",
+            "天克地冲月柱",
+            "寅刑巳（日支）",
+            "害日支"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力",
+            "身心",
+            "名誉与是非",
+            "迁徙与归属"
+          ],
+          "candidate": true,
+          "stateId": "Q-342-沈砚",
+          "year": 342
+        },
+        {
+          "name": "林昭",
+          "age": 36,
+          "born": true,
+          "liunian": "丙寅",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "忌神透干"
+          ],
+          "domains": [
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-342-林昭",
+          "year": 342
+        },
+        {
+          "name": "裴恪",
+          "age": 39,
+          "born": true,
+          "liunian": "丙寅",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "用神到位"
+          ],
+          "domains": [],
+          "candidate": false,
+          "stateId": "Q-342-裴恪",
+          "year": 342
+        }
+      ]
+    },
+    {
+      "year": 343,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 43,
+          "born": true,
+          "liunian": "丁卯",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": -0.2,
+          "keyMechanisms": [
+            "换运"
+          ],
+          "mechanisms": [
+            "换运"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-343-沈砚",
+          "year": 343
+        },
+        {
+          "name": "林昭",
+          "age": 37,
+          "born": true,
+          "liunian": "丁卯",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -1.0,
+          "keyMechanisms": [
+            "冲日支",
+            "天克地冲日柱"
+          ],
+          "mechanisms": [
+            "冲日支",
+            "天克地冲日柱",
+            "合时支",
+            "合绊用神",
+            "忌神透干"
+          ],
+          "domains": [
+            "感情",
+            "身心",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-343-林昭",
+          "year": 343
+        },
+        {
+          "name": "裴恪",
+          "age": 40,
+          "born": true,
+          "liunian": "丁卯",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "卯子互刑（时支）",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "事业与权力",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-343-裴恪",
+          "year": 343
+        }
+      ]
+    },
+    {
+      "year": 344,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 44,
+          "born": true,
+          "liunian": "戊辰",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": 0.5,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "用神到位"
+          ],
+          "domains": [
+            "身心"
+          ],
+          "candidate": false,
+          "stateId": "Q-344-沈砚",
+          "year": 344
+        },
+        {
+          "name": "林昭",
+          "age": 38,
+          "born": true,
+          "liunian": "戊辰",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": 1.0,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合日支",
+            "冲时支",
+            "用神到位"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-344-林昭",
+          "year": 344
+        },
+        {
+          "name": "裴恪",
+          "age": 41,
+          "born": true,
+          "liunian": "戊辰",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": 0.5,
+          "keyMechanisms": [
+            "岁运相冲"
+          ],
+          "mechanisms": [
+            "害日支",
+            "岁运相冲"
+          ],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-344-裴恪",
+          "year": 344
+        }
+      ]
+    },
+    {
+      "year": 345,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 45,
+          "born": true,
+          "liunian": "己巳",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": 0.35,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "合年支",
+            "巳刑申（年支）",
+            "合月支",
+            "巳刑申（月支）",
+            "寅刑巳（时支）",
+            "害时支",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "创造与传承"
+          ],
+          "candidate": false,
+          "stateId": "Q-345-沈砚",
+          "year": 345
+        },
+        {
+          "name": "林昭",
+          "age": 39,
+          "born": true,
+          "liunian": "己巳",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -0.2,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "寅刑巳（年支）",
+            "害年支",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "名誉与是非"
+          ],
+          "candidate": false,
+          "stateId": "Q-345-林昭",
+          "year": 345
+        },
+        {
+          "name": "裴恪",
+          "age": 42,
+          "born": true,
+          "liunian": "己巳",
+          "dayun": "戊戌",
+          "dayunTone": "顺",
+          "score": 0.8,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "冲年支",
+            "寅刑巳（月支）",
+            "害月支",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "迁徙与归属"
+          ],
+          "candidate": false,
+          "stateId": "Q-345-裴恪",
+          "year": 345
+        }
+      ]
+    },
+    {
+      "year": 346,
+      "people": [
+        {
+          "name": "沈砚",
+          "age": 46,
+          "born": true,
+          "liunian": "庚午",
+          "dayun": "丁丑",
+          "dayunTone": "顺",
+          "score": 0.25,
+          "keyMechanisms": [],
+          "mechanisms": [],
+          "domains": [
+            "感情"
+          ],
+          "candidate": false,
+          "stateId": "Q-346-沈砚",
+          "year": 346
+        },
+        {
+          "name": "林昭",
+          "age": 40,
+          "born": true,
+          "liunian": "庚午",
+          "dayun": "戊寅",
+          "dayunTone": "逆",
+          "score": -0.4,
+          "keyMechanisms": [],
+          "mechanisms": [
+            "午午自刑（月支）"
+          ],
+          "domains": [
+            "感情",
+            "六亲",
+            "事业与权力"
+          ],
+          "candidate": false,
+          "stateId": "Q-346-林昭",
+          "year": 346
+        },
+        {
+          "name": "裴恪",
+          "age": 43,
+          "born": true,
+          "liunian": "庚午",
+          "dayun": "丁酉",
+          "dayunTone": "逆",
+          "score": 0.4,
+          "keyMechanisms": [
+            "天克地冲时柱",
+            "换运"
+          ],
+          "mechanisms": [
+            "冲时支",
+            "天克地冲时柱",
+            "换运",
+            "用神到位"
+          ],
+          "domains": [
+            "六亲",
+            "名誉与是非",
+            "学识与真相",
+            "创造与传承"
+          ],
+          "candidate": true,
+          "stateId": "Q-346-裴恪",
+          "year": 346
+        }
+      ]
+    }
+  ],
+  "intersections": [
+    {
+      "id": "J-324-沈砚-裴恪",
+      "year": 324,
+      "people": [
+        "沈砚",
+        "裴恪"
+      ],
+      "eventful": [
+        "裴恪"
+      ],
+      "reasons": [
+        "沈砚→裴恪：流年戊土正是裴恪的日主五行，在沈砚为用神",
+        "沈砚→裴恪：323–335年两人同在忌运",
+        "裴恪→沈砚：323–335年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-324-沈砚-裴恪-五行临身",
+        "Q-324-沈砚-裴恪-同步忌运",
+        "Q-324-裴恪-沈砚-同步忌运"
+      ],
+      "domains": {
+        "沈砚": [
+          "感情",
+          "六亲",
+          "创造与传承"
+        ],
+        "裴恪": [
+          "六亲",
+          "事业与权力",
+          "身心",
+          "名誉与是非",
+          "迁徙与归属"
+        ]
+      }
+    },
+    {
+      "id": "J-324-林昭-裴恪",
+      "year": 324,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "裴恪"
+      ],
+      "reasons": [
+        "林昭→裴恪：流年戊土正是裴恪的日主五行，在林昭为用神",
+        "林昭→裴恪：321–330年林昭顺而裴恪逆"
+      ],
+      "snapshotIds": [
+        "Q-324-林昭-裴恪-五行临身",
+        "Q-324-林昭-裴恪-顺逆"
+      ],
+      "domains": {
+        "林昭": [
+          "六亲",
+          "迁徙与归属"
+        ],
+        "裴恪": [
+          "六亲",
+          "事业与权力",
+          "身心",
+          "名誉与是非",
+          "迁徙与归属"
+        ]
+      }
+    },
+    {
+      "id": "J-325-沈砚-裴恪",
+      "year": 325,
+      "people": [
+        "沈砚",
+        "裴恪"
+      ],
+      "eventful": [
+        "裴恪"
+      ],
+      "reasons": [
+        "沈砚→裴恪：流年己土正是裴恪的日主五行，在沈砚为用神",
+        "沈砚→裴恪：323–335年两人同在忌运",
+        "裴恪→沈砚：323–335年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-325-沈砚-裴恪-五行临身",
+        "Q-325-沈砚-裴恪-同步忌运",
+        "Q-325-裴恪-沈砚-同步忌运"
+      ],
+      "domains": {
+        "沈砚": [
+          "感情",
+          "事业与权力"
+        ],
+        "裴恪": [
+          "感情",
+          "身心",
+          "名誉与是非"
+        ]
+      }
+    },
+    {
+      "id": "J-325-林昭-裴恪",
+      "year": 325,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "裴恪"
+      ],
+      "reasons": [
+        "林昭→裴恪：流年己土正是裴恪的日主五行，在林昭为用神",
+        "林昭→裴恪：321–330年林昭顺而裴恪逆",
+        "林昭→裴恪：两人日支酉卯六冲，流年支酉引动",
+        "裴恪→林昭：两人日支卯酉六冲，流年支酉引动"
+      ],
+      "snapshotIds": [
+        "Q-325-林昭-裴恪-五行临身",
+        "Q-325-林昭-裴恪-顺逆",
+        "Q-325-林昭-裴恪-日柱引动",
+        "Q-325-裴恪-林昭-日柱引动"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "事业与权力",
+          "创造与传承"
+        ],
+        "裴恪": [
+          "感情",
+          "身心",
+          "名誉与是非"
+        ]
+      }
+    },
+    {
+      "id": "J-330-沈砚-裴恪",
+      "year": 330,
+      "people": [
+        "沈砚",
+        "裴恪"
+      ],
+      "eventful": [
+        "沈砚"
+      ],
+      "reasons": [
+        "沈砚→裴恪：323–335年两人同在忌运",
+        "裴恪→沈砚：流年甲木正是沈砚的日主五行，在裴恪为忌神",
+        "裴恪→沈砚：323–335年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-330-沈砚-裴恪-同步忌运",
+        "Q-330-裴恪-沈砚-五行临身",
+        "Q-330-裴恪-沈砚-同步忌运"
+      ],
+      "domains": {
+        "沈砚": [
+          "感情",
+          "六亲",
+          "事业与权力",
+          "身心",
+          "名誉与是非",
+          "迁徙与归属"
+        ],
+        "裴恪": []
+      }
+    },
+    {
+      "id": "J-330-林昭-沈砚",
+      "year": 330,
+      "people": [
+        "林昭",
+        "沈砚"
+      ],
+      "eventful": [
+        "沈砚"
+      ],
+      "reasons": [
+        "林昭→沈砚：流年甲木正是沈砚的日主五行，在林昭为忌神",
+        "林昭→沈砚：323–330年林昭顺而沈砚逆"
+      ],
+      "snapshotIds": [
+        "Q-330-林昭-沈砚-五行临身",
+        "Q-330-林昭-沈砚-顺逆"
+      ],
+      "domains": {
+        "林昭": [],
+        "沈砚": [
+          "感情",
+          "六亲",
+          "事业与权力",
+          "身心",
+          "名誉与是非",
+          "迁徙与归属"
+        ]
+      }
+    },
+    {
+      "id": "J-331-林昭-沈砚",
+      "year": 331,
+      "people": [
+        "林昭",
+        "沈砚"
+      ],
+      "eventful": [
+        "林昭"
+      ],
+      "reasons": [
+        "沈砚→林昭：331–342年两人同在忌运",
+        "林昭→沈砚：流年乙木正是沈砚的日主五行，在林昭为忌神",
+        "林昭→沈砚：331–342年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-331-沈砚-林昭-同步忌运",
+        "Q-331-林昭-沈砚-五行临身",
+        "Q-331-林昭-沈砚-同步忌运"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "身心",
+          "创造与传承"
+        ],
+        "沈砚": [
+          "身心"
+        ]
+      }
+    },
+    {
+      "id": "J-331-林昭-裴恪",
+      "year": 331,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "林昭"
+      ],
+      "reasons": [
+        "林昭→裴恪：331–335年两人同在忌运",
+        "林昭→裴恪：两人日支酉卯六冲，流年支卯引动",
+        "裴恪→林昭：331–335年两人同在忌运",
+        "裴恪→林昭：两人日支卯酉六冲，流年支卯引动"
+      ],
+      "snapshotIds": [
+        "Q-331-林昭-裴恪-同步忌运",
+        "Q-331-林昭-裴恪-日柱引动",
+        "Q-331-裴恪-林昭-同步忌运",
+        "Q-331-裴恪-林昭-日柱引动"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "身心",
+          "创造与传承"
+        ],
+        "裴恪": [
+          "六亲",
+          "事业与权力",
+          "创造与传承"
+        ]
+      }
+    },
+    {
+      "id": "J-334-沈砚-裴恪",
+      "year": 334,
+      "people": [
+        "沈砚",
+        "裴恪"
+      ],
+      "eventful": [
+        "裴恪"
+      ],
+      "reasons": [
+        "沈砚→裴恪：沈砚岁运相冲；裴恪天克地冲时柱",
+        "沈砚→裴恪：流年戊土正是裴恪的日主五行，在沈砚为用神",
+        "沈砚→裴恪：323–335年两人同在忌运",
+        "裴恪→沈砚：裴恪天克地冲时柱；沈砚岁运相冲",
+        "裴恪→沈砚：323–335年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-334-沈砚-裴恪-同年引动",
+        "Q-334-沈砚-裴恪-五行临身",
+        "Q-334-沈砚-裴恪-同步忌运",
+        "Q-334-裴恪-沈砚-同年引动",
+        "Q-334-裴恪-沈砚-同步忌运"
+      ],
+      "domains": {
+        "沈砚": [
+          "感情"
+        ],
+        "裴恪": [
+          "六亲",
+          "学识与真相",
+          "创造与传承"
+        ]
+      }
+    },
+    {
+      "id": "J-334-林昭-裴恪",
+      "year": 334,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "裴恪"
+      ],
+      "reasons": [
+        "林昭→裴恪：流年戊土正是裴恪的日主五行，在林昭为用神",
+        "林昭→裴恪：331–335年两人同在忌运",
+        "裴恪→林昭：331–335年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-334-林昭-裴恪-五行临身",
+        "Q-334-林昭-裴恪-同步忌运",
+        "Q-334-裴恪-林昭-同步忌运"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "六亲",
+          "事业与权力"
+        ],
+        "裴恪": [
+          "六亲",
+          "学识与真相",
+          "创造与传承"
+        ]
+      }
+    },
+    {
+      "id": "J-337-林昭-裴恪",
+      "year": 337,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "林昭",
+        "裴恪"
+      ],
+      "reasons": [
+        "林昭→裴恪：林昭伏吟日柱、岁运相冲；裴恪冲日支",
+        "林昭→裴恪：两人日支酉卯六冲，流年支酉引动",
+        "裴恪→林昭：裴恪冲日支；林昭伏吟日柱、岁运相冲",
+        "裴恪→林昭：336–345年裴恪顺而林昭逆",
+        "裴恪→林昭：两人日支卯酉六冲，流年支酉引动"
+      ],
+      "snapshotIds": [
+        "Q-337-林昭-裴恪-同年引动",
+        "Q-337-林昭-裴恪-日柱引动",
+        "Q-337-裴恪-林昭-同年引动",
+        "Q-337-裴恪-林昭-顺逆",
+        "Q-337-裴恪-林昭-日柱引动"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "事业与权力",
+          "创造与传承"
+        ],
+        "裴恪": [
+          "感情",
+          "身心",
+          "名誉与是非"
+        ]
+      }
+    },
+    {
+      "id": "J-340-林昭-沈砚",
+      "year": 340,
+      "people": [
+        "林昭",
+        "沈砚"
+      ],
+      "eventful": [
+        "林昭"
+      ],
+      "reasons": [
+        "沈砚→林昭：331–342年两人同在忌运",
+        "林昭→沈砚：流年甲木正是沈砚的日主五行，在林昭为忌神",
+        "林昭→沈砚：331–342年两人同在忌运"
+      ],
+      "snapshotIds": [
+        "Q-340-沈砚-林昭-同步忌运",
+        "Q-340-林昭-沈砚-五行临身",
+        "Q-340-林昭-沈砚-同步忌运"
+      ],
+      "domains": {
+        "林昭": [
+          "六亲",
+          "事业与权力",
+          "身心",
+          "名誉与是非",
+          "迁徙与归属"
+        ],
+        "沈砚": [
+          "事业与权力"
+        ]
+      }
+    },
+    {
+      "id": "J-340-林昭-裴恪",
+      "year": 340,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "林昭"
+      ],
+      "reasons": [
+        "林昭→裴恪：林昭冲提纲；裴恪伏吟时柱",
+        "裴恪→林昭：裴恪伏吟时柱；林昭冲提纲",
+        "裴恪→林昭：336–345年裴恪顺而林昭逆"
+      ],
+      "snapshotIds": [
+        "Q-340-林昭-裴恪-同年引动",
+        "Q-340-裴恪-林昭-同年引动",
+        "Q-340-裴恪-林昭-顺逆"
+      ],
+      "domains": {
+        "林昭": [
+          "六亲",
+          "事业与权力",
+          "身心",
+          "名誉与是非",
+          "迁徙与归属"
+        ],
+        "裴恪": [
+          "感情",
+          "创造与传承"
+        ]
+      }
+    },
+    {
+      "id": "J-343-林昭-沈砚",
+      "year": 343,
+      "people": [
+        "林昭",
+        "沈砚"
+      ],
+      "eventful": [
+        "林昭"
+      ],
+      "reasons": [
+        "沈砚→林昭：沈砚换运；林昭冲日支、天克地冲日柱",
+        "沈砚→林昭：343–350年沈砚顺而林昭逆",
+        "林昭→沈砚：林昭冲日支、天克地冲日柱；沈砚换运"
+      ],
+      "snapshotIds": [
+        "Q-343-沈砚-林昭-同年引动",
+        "Q-343-沈砚-林昭-顺逆",
+        "Q-343-林昭-沈砚-同年引动"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "身心",
+          "创造与传承"
+        ],
+        "沈砚": [
+          "身心"
+        ]
+      }
+    },
+    {
+      "id": "J-343-林昭-裴恪",
+      "year": 343,
+      "people": [
+        "林昭",
+        "裴恪"
+      ],
+      "eventful": [
+        "林昭"
+      ],
+      "reasons": [
+        "林昭→裴恪：两人日支酉卯六冲，流年支卯引动",
+        "裴恪→林昭：336–345年裴恪顺而林昭逆",
+        "裴恪→林昭：两人日支卯酉六冲，流年支卯引动"
+      ],
+      "snapshotIds": [
+        "Q-343-林昭-裴恪-日柱引动",
+        "Q-343-裴恪-林昭-顺逆",
+        "Q-343-裴恪-林昭-日柱引动"
+      ],
+      "domains": {
+        "林昭": [
+          "感情",
+          "身心",
+          "创造与传承"
+        ],
+        "裴恪": [
+          "六亲",
+          "事业与权力",
+          "创造与传承"
+        ]
+      }
+    }
+  ],
+  "features": [
+    {
+      "id": "J-324-沈砚-裴恪",
+      "text": "324年沈砚与裴恪交汇：沈砚24岁流年戊申；裴恪21岁流年戊申（候选年份，冲提纲、天克地冲月柱）｜沈砚→裴恪：流年戊土正是裴恪的日主五行，在沈砚为用神；沈砚→裴恪：323–335年两人同在忌运；裴恪→沈砚：323–335年两人同在忌运"
+    },
+    {
+      "id": "J-324-林昭-裴恪",
+      "text": "324年林昭与裴恪交汇：林昭18岁流年戊申；裴恪21岁流年戊申（候选年份，冲提纲、天克地冲月柱）｜林昭→裴恪：流年戊土正是裴恪的日主五行，在林昭为用神；林昭→裴恪：321–330年林昭顺而裴恪逆"
+    },
+    {
+      "id": "J-325-沈砚-裴恪",
+      "text": "325年沈砚与裴恪交汇：沈砚25岁流年己酉；裴恪22岁流年己酉（候选年份，冲日支）｜沈砚→裴恪：流年己土正是裴恪的日主五行，在沈砚为用神；沈砚→裴恪：323–335年两人同在忌运；裴恪→沈砚：323–335年两人同在忌运"
+    },
+    {
+      "id": "J-325-林昭-裴恪",
+      "text": "325年林昭与裴恪交汇：林昭19岁流年己酉；裴恪22岁流年己酉（候选年份，冲日支）｜林昭→裴恪：流年己土正是裴恪的日主五行，在林昭为用神；林昭→裴恪：321–330年林昭顺而裴恪逆；林昭→裴恪：两人日支酉卯六冲，流年支酉引动；裴恪→林昭：两人日支卯酉六冲，流年支酉引动"
+    },
+    {
+      "id": "J-330-沈砚-裴恪",
+      "text": "330年沈砚与裴恪交汇：沈砚30岁流年甲寅（候选年份，冲提纲）；裴恪27岁流年甲寅｜沈砚→裴恪：323–335年两人同在忌运；裴恪→沈砚：流年甲木正是沈砚的日主五行，在裴恪为忌神；裴恪→沈砚：323–335年两人同在忌运"
+    },
+    {
+      "id": "J-330-林昭-沈砚",
+      "text": "330年林昭与沈砚交汇：林昭24岁流年甲寅；沈砚30岁流年甲寅（候选年份，冲提纲）｜林昭→沈砚：流年甲木正是沈砚的日主五行，在林昭为忌神；林昭→沈砚：323–330年林昭顺而沈砚逆"
+    },
+    {
+      "id": "J-331-林昭-沈砚",
+      "text": "331年林昭与沈砚交汇：林昭25岁流年乙卯（候选年份，冲日支、天克地冲日柱、换运）；沈砚31岁流年乙卯｜沈砚→林昭：331–342年两人同在忌运；林昭→沈砚：流年乙木正是沈砚的日主五行，在林昭为忌神；林昭→沈砚：331–342年两人同在忌运"
+    },
+    {
+      "id": "J-331-林昭-裴恪",
+      "text": "331年林昭与裴恪交汇：林昭25岁流年乙卯（候选年份，冲日支、天克地冲日柱、换运）；裴恪28岁流年乙卯｜林昭→裴恪：331–335年两人同在忌运；林昭→裴恪：两人日支酉卯六冲，流年支卯引动；裴恪→林昭：331–335年两人同在忌运；裴恪→林昭：两人日支卯酉六冲，流年支卯引动"
+    },
+    {
+      "id": "J-334-沈砚-裴恪",
+      "text": "334年沈砚与裴恪交汇：沈砚34岁流年戊午；裴恪31岁流年戊午（候选年份，天克地冲时柱）｜沈砚→裴恪：沈砚岁运相冲；裴恪天克地冲时柱；沈砚→裴恪：流年戊土正是裴恪的日主五行，在沈砚为用神；沈砚→裴恪：323–335年两人同在忌运；裴恪→沈砚：裴恪天克地冲时柱；沈砚岁运相冲；裴恪→沈砚：323–335年两人同在忌运"
+    },
+    {
+      "id": "J-334-林昭-裴恪",
+      "text": "334年林昭与裴恪交汇：林昭28岁流年戊午；裴恪31岁流年戊午（候选年份，天克地冲时柱）｜林昭→裴恪：流年戊土正是裴恪的日主五行，在林昭为用神；林昭→裴恪：331–335年两人同在忌运；裴恪→林昭：331–335年两人同在忌运"
+    },
+    {
+      "id": "J-337-林昭-裴恪",
+      "text": "337年林昭与裴恪交汇：林昭31岁流年辛酉（候选年份，伏吟日柱、岁运相冲）；裴恪34岁流年辛酉（候选年份，冲日支）｜林昭→裴恪：林昭伏吟日柱、岁运相冲；裴恪冲日支；林昭→裴恪：两人日支酉卯六冲，流年支酉引动；裴恪→林昭：裴恪冲日支；林昭伏吟日柱、岁运相冲；裴恪→林昭：336–345年裴恪顺而林昭逆；裴恪→林昭：两人日支卯酉六冲，流年支酉引动"
+    },
+    {
+      "id": "J-340-林昭-沈砚",
+      "text": "340年林昭与沈砚交汇：林昭34岁流年甲子（候选年份，冲提纲）；沈砚40岁流年甲子｜沈砚→林昭：331–342年两人同在忌运；林昭→沈砚：流年甲木正是沈砚的日主五行，在林昭为忌神；林昭→沈砚：331–342年两人同在忌运"
+    },
+    {
+      "id": "J-340-林昭-裴恪",
+      "text": "340年林昭与裴恪交汇：林昭34岁流年甲子（候选年份，冲提纲）；裴恪37岁流年甲子｜林昭→裴恪：林昭冲提纲；裴恪伏吟时柱；裴恪→林昭：裴恪伏吟时柱；林昭冲提纲；裴恪→林昭：336–345年裴恪顺而林昭逆"
+    },
+    {
+      "id": "J-343-林昭-沈砚",
+      "text": "343年林昭与沈砚交汇：林昭37岁流年丁卯（候选年份，冲日支、天克地冲日柱）；沈砚43岁流年丁卯｜沈砚→林昭：沈砚换运；林昭冲日支、天克地冲日柱；沈砚→林昭：343–350年沈砚顺而林昭逆；林昭→沈砚：林昭冲日支、天克地冲日柱；沈砚换运"
+    },
+    {
+      "id": "J-343-林昭-裴恪",
+      "text": "343年林昭与裴恪交汇：林昭37岁流年丁卯（候选年份，冲日支、天克地冲日柱）；裴恪40岁流年丁卯｜林昭→裴恪：两人日支酉卯六冲，流年支卯引动；裴恪→林昭：336–345年裴恪顺而林昭逆；裴恪→林昭：两人日支卯酉六冲，流年支卯引动"
+    }
+  ]
+}

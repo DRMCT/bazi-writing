@@ -146,6 +146,16 @@ def classics_cases() -> list[dict]:
         if label:
             out.append({"id": f"穷通-{c['id']}", "source": f"穷通宝鉴评注 p{c['page']} {c['dayMaster']}{c['sectionTitle']}",
                         "pillars": c["pillars"], "label": label, "evidence": ev})
+    rj = FIXTURES / "ziping_renjian.json"   # 2026-09-25：附录《人鉴·命理存验》67 例，林庚白判词明说身强弱的盘
+    if rj.exists():
+        for c in json.loads(rj.read_text(encoding="utf-8"))["cases"]:
+            if c["flags"] or len(c["pillars"]) != 4:
+                continue
+            label, ev = _label_from_text(c["comment"])
+            if label:
+                y, m, d, h = c["pillars"]
+                out.append({"id": c["id"], "source": f"子平真诠评注附录人鉴 p{c['page']} {c['name']}",
+                            "pillars": {"year": y, "month": m, "day": d, "hour": h}, "label": label, "evidence": ev})
     return out
 
 
@@ -292,8 +302,81 @@ def cmd_score() -> int:
     return 0
 
 
+def _agent_cases() -> list[dict]:
+    """子代理标准：120 盘样本配合并后的裁定，摊成与 classics_cases 同形的列表。"""
+    samples = {s["id"]: s for s in json.loads((OUT / "samples.json").read_text(encoding="utf-8"))}
+    verdicts: dict = {}
+    for part in sorted(OUT.glob("verdicts*.json")):
+        verdicts.update(json.loads(part.read_text(encoding="utf-8")))
+    return [{"id": sid, "pillars": samples[sid]["pillars"], "label": v["verdict"], "evidence": [v.get("reason", "")]}
+            for sid, v in verdicts.items() if sid in samples]
+
+
+V3_CONFIGS = [
+    ("v2 现行", {}),
+    ("冲破合局", {"V3_CHONG_BREAKS_COMBO": True}),
+    ("墓库长生作根 0.3", {"V3_KU_SHENG_ROOT": True, "KU_SHENG_ROOT_FACTOR": 0.3}),
+    ("墓库长生作根 0.5", {"V3_KU_SHENG_ROOT": True, "KU_SHENG_ROOT_FACTOR": 0.5}),
+    ("墓库长生作根 0.8", {"V3_KU_SHENG_ROOT": True, "KU_SHENG_ROOT_FACTOR": 0.8}),
+    ("两项 0.5", {"V3_CHONG_BREAKS_COMBO": True, "V3_KU_SHENG_ROOT": True, "KU_SHENG_ROOT_FACTOR": 0.5}),
+    # 印重盘徐多论身弱（2026-09-23-6 校准遗留）：试印的生扶折扣
+    ("印折扣 0.8", {"YIN_SCALE": 0.8}),
+    ("印折扣 0.7", {"YIN_SCALE": 0.7}),
+    ("印折扣 0.6", {"YIN_SCALE": 0.6}),
+]
+V3_REPORT = Path(__file__).resolve().parent.parent / "references" / "校核" / "旺衰_v3报告.md"
+
+
+def cmd_v3() -> int:
+    """v3 两个实验项（冲破合局、墓库长生作根）对两路标准的一致率格子；不改默认值，只出报告。"""
+    from datetime import date
+    agent, classics = _agent_cases(), classics_cases()
+    keys = ("V3_CHONG_BREAKS_COMBO", "V3_KU_SHENG_ROOT", "KU_SHENG_ROOT_FACTOR", "YIN_SCALE")
+    saved = {k: getattr(strength, k) for k in keys}
+    rows, detail = [], {}
+    base_dis: dict[str, set] = {}
+    try:
+        for name, cfg in V3_CONFIGS:
+            for k in keys:
+                setattr(strength, k, cfg.get(k, saved[k]))
+            a, c = _score(agent, strength.assess), _score(classics, strength.assess)
+            hit_a = sum(1 for x in agent if _v3_touched(x["pillars"]))
+            hit_c = sum(1 for x in classics if _v3_touched(x["pillars"]))
+            rows.append((name, a["agree"], a["n"], c["agree"], c["n"], hit_a, hit_c))
+            detail[name] = {"agent": a, "classics": c}
+            if not cfg:
+                base_dis = {"agent": {d["id"] for d in a["disagreements"]}, "classics": {d["id"] for d in c["disagreements"]}}
+    finally:
+        for k, v in saved.items():
+            setattr(strength, k, v)
+    lines = ["# 旺衰 v3 实验报告", "",
+             f"生成：{date.today().isoformat()}。scripts/calibrate_strength.py v3。两项实验开关默认关，本表只看开了之后两路标准的一致率怎么动；"
+             "子代理标准是 120 盘 Fable 独立判定（阈值 0.48–0.52 由它定），古籍标准是徐评或按语明说身强弱的例盘（徐用\"身旺\"较宽，只作偏差记录）。"
+             "\"触及\"是该配置下合局被冲破或加了作根分的盘数。", "",
+             "| 配置 | 子代理一致 | 古籍一致 | 触及（子代理/古籍） |", "|---|---|---|---|"]
+    for name, aa, an, ca, cn, ha, hc in rows:
+        lines.append(f"| {name} | {aa}/{an}（{aa / an:.1%}） | {ca}/{cn}（{ca / cn:.1%}） | {ha}/{hc} |")
+    lines += ["", "## 各配置相对 v2 翻转的盘", ""]
+    for name, _cfg in V3_CONFIGS[1:]:
+        for side in ("agent", "classics"):
+            now = {d["id"]: d for d in detail[name][side]["disagreements"]}
+            fixed = sorted(base_dis[side] - set(now))
+            broke = sorted(set(now) - base_dis[side])
+            lines.append(f"- {name}·{'子代理' if side == 'agent' else '古籍'}：改对 {len(fixed)} {fixed}；改错 {len(broke)} {broke}")
+    V3_REPORT.write_text("\n".join(lines) + "\n", encoding="utf-8")
+    (OUT / "v3.json").write_text(json.dumps({"rows": rows, "detail": detail}, ensure_ascii=False, indent=1), encoding="utf-8")
+    print("\n".join(lines[:4 + len(rows) + 2]))
+    print(f"→ {V3_REPORT}")
+    return 0
+
+
+def _v3_touched(pillars: dict) -> bool:
+    r = strength.assess(pillars)
+    return any(n.get("broken") for n in r["combos"]) or any("作根" in c["where"] for c in r["contributions"])
+
+
 def main(argv: list[str]) -> int:
-    cmds = {"sample": cmd_sample, "sheet": cmd_sheet, "score": cmd_score, "classics": cmd_classics}
+    cmds = {"sample": cmd_sample, "sheet": cmd_sheet, "score": cmd_score, "classics": cmd_classics, "v3": cmd_v3}
     if len(argv) != 1 or argv[0] not in cmds:
         print(__doc__); return 2
     return cmds[argv[0]]()

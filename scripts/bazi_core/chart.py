@@ -20,14 +20,20 @@ import sys
 from datetime import datetime, timedelta, timezone
 from zoneinfo import ZoneInfo
 
+from . import arc as arc_mod
 from . import dayun as dayun_mod
 from . import changsheng as changsheng_mod
 from . import geju as geju_mod
+from . import imagery as imagery_mod
+from . import intimacy as intimacy_mod
+from . import lies as lies_mod
 from . import shensha_tags as shensha_tags_mod
 from . import relations as relations_mod
 from . import shensha as shensha_mod
 from . import strength as strength_mod
 from . import tiaohou as tiaohou_mod
+from . import yongshen as yongshen_mod
+from . import yunqi as yunqi_mod
 from .almanac import (
     _day_ganzhi_index,
     _month_order_from_yin,
@@ -174,22 +180,42 @@ def _geju(pillars: dict) -> dict:
     return out
 
 
-def enrich(pillars: dict, instant_utc: datetime | None = None, gender: str | None = None) -> dict:
-    """刑沖合害、神煞、調候：均為查表，狀態隨各模塊標注。調候按出生時刻定節氣段，架空歷無時刻則取中氣後一段。"""
+def enrich(pillars: dict, instant_utc: datetime | None = None, gender: str | None = None, lover_family: str | None = None,
+           yunqi_step: str | int | None = None) -> dict:
+    """刑沖合害、神煞、調候：均為查表，狀態隨各模塊標注。調候按出生時刻定節氣段，架空歷無時刻則取中氣後一段。
+    用神由旺衰與調候合成（yongshen 模塊，自起草，按徐評例盤與子代理判定校準）。lover_family 是親密關係星的家族（DESIGN 7.3），不給則按性別默認。
+    yunqi_step 只在架空歷用：出生所值之氣的步（初之氣…終之氣、次年初之氣、1–6），不給則按月支取（yunqi 模塊）。"""
+    th = tiaohou_mod.present_in_chart(pillars, pillars["day"][0], pillars["month"][1], instant_utc)
+    st = strength_mod.assess(pillars)
+    ys = yongshen_mod.determine(pillars, instant_utc, strength=st, tiaohou=th)
+    ss = shensha_mod.compute(pillars)
     return {
         "relations": relations_mod.natal_relations(pillars),
-        "shensha": shensha_mod.compute(pillars),
+        "shensha": ss,
         "shenshaTags": shensha_tags_mod.for_chart(pillars, gender),
-        "tiaohou": tiaohou_mod.present_in_chart(pillars, pillars["day"][0], pillars["month"][1], instant_utc),
-        "strength": strength_mod.assess(pillars),
+        "tiaohou": th,
+        "strength": st,
+        "yongshen": ys,
         "changsheng": changsheng_mod.for_chart(pillars),
         "geju": _geju(pillars),
+        # 三张自起草叙事表的查表结果（DESIGN 7.1、8.1）：亲密关系模式、意象系统；谎言候选要年表机制，在 chart 装好后挂
+        "intimacy": intimacy_mod.for_chart(pillars, gender, ys, lover_family),
+        "imagery": imagery_mod.for_chart(pillars, ys, ss),
+        # 五运六气（DESIGN 7.1、8.1）：生年运气盘面与出生所值之气，体质表查表，编号 YQ-
+        "yunqi": yunqi_mod.for_chart(pillars, instant_utc, ys, yunqi_step),
     }
+
+
+def _yun_scores(chart: dict) -> list[dict]:
+    """每步大運的順逆分（DESIGN 11.2，arc 模塊），供弧光與年表用。"""
+    return [{"sequence": s["sequence"], "pillar": s["pillar"], "score": s["score"], "terms": s["terms"], "flags": s["flags"]}
+            for s in arc_mod.dayun_scores(chart["fourPillars"], chart["dayun"]["steps"], chart["yongshen"])]
 
 
 def features(chart: dict) -> list[dict]:
     """命盘特征索引：把档案里可被人物档案引用的事实摊平成 {id, kind, text}，id 稳定可读，供溯源编号与检查器用。
-    编号前缀：P 柱、DM 日主、T 透干、H 藏干、G 格局、S 旺衰、Y 调候、R 关系、N 神煞、NT 神煞标签、C 长生纳音、D 大运、L 流年。"""
+    编号前缀：P 柱、DM 日主、T 透干、H 藏干、G 格局、S 旺衰、U 用神、Y 调候、R 关系、N 神煞、NT 神煞标签、C 长生纳音、D 大运、L 流年、
+    IN 亲密关系（日支表）、IM 意象、LI 谎言候选、YQ 五运六气（生年运气与出生所值之气）。"""
     cn = {"year": "年", "month": "月", "day": "日", "hour": "时"}
     out: list[dict] = []
 
@@ -231,6 +257,14 @@ def features(chart: dict) -> list[dict]:
         add("S-喜", "旺衰", f"喜{'、'.join(sg['favorable'])}，忌{'、'.join(sg['unfavorable'])}")
     for i, c in enumerate(sg.get("combos", []), 1):
         add(f"S-合局-{i}", "合局", c["detail"])
+    ys = chart.get("yongshen")
+    if ys:
+        add(f"U-用-{ys['yong']['element']}", "用神", f"用神{ys['yong']['element']}（{ys['yong']['family']}）：{ys['reason']}")
+        if ys.get("bing"):
+            add(f"U-病-{ys['bing']['element']}", "用神", f"病神{ys['bing']['element']}（{ys['bing']['family']}）")
+        for el, role in ys["roles"].items():
+            if role != "用":
+                add(f"U-{role[0]}-{el}", "用神", f"{el}为{role}神" if len(role) == 1 else f"{el}为闲神（{role[2:4]}）")
     th = chart["tiaohou"]
     add("Y-主", "调候", f"调候用神{'、'.join(th['stems'])}" + (f"，{th['period']}" if th.get("period") else ""))
     for i, c in enumerate(th.get("conditional", []), 1):
@@ -273,10 +307,20 @@ def features(chart: dict) -> list[dict]:
         add(f"C-{cn[k]}-{v}", "长生", f"日主在{cn[k]}支{v}")
     for k, v in cs.get("nayin", {}).items():
         add(f"C-纳音-{cn[k]}-{v['name']}", "纳音", f"{cn[k]}柱纳音{v['name']}")
+    scores = {x["sequence"]: x for x in chart.get("dayunScores") or []}
     for d in chart["dayun"]["steps"]:
-        add(f"D-{d['sequence']}-{d['pillar']}", "大运", f"第{d['sequence']}步大运{d['pillar']}，{d['startAge']}至{d['endAge']}岁" + (f"（{d['startYear']}–{d['endYear']}）" if d.get("startYear") else ""))
+        sc = scores.get(d["sequence"])
+        tail = ""
+        if sc:
+            tail = f"，顺逆分 {sc['score']}" + (f"（{'、'.join(sc['flags'])}）" if sc["flags"] else "")
+        add(f"D-{d['sequence']}-{d['pillar']}", "大运", f"第{d['sequence']}步大运{d['pillar']}，{d['startAge']}至{d['endAge']}岁"
+            + (f"（{d['startYear']}–{d['endYear']}）" if d.get("startYear") else "") + tail)
     for ln in chart.get("liunian") or []:
-        add(f"L-{ln['age']}-{ln['pillar']}", "流年", f"{ln['age']}岁流年{ln['pillar']}")
+        tail = (f"，顺逆分 {ln['score']}" if ln.get("score") is not None else "") + (f"（{'、'.join(ln['flags'])}）" if ln.get("flags") else "")
+        add(f"L-{ln['age']}-{ln['pillar']}", "流年", f"{ln['age']}岁流年{ln['pillar']}" + tail)
+    for sec in ("intimacy", "imagery", "yunqi", "lies"):
+        for f in (chart.get(sec) or {}).get("features", []):
+            add(f["id"], f["kind"], f["text"])
     dup = sorted({x["id"] for x in out if sum(y["id"] == x["id"] for y in out) > 1})
     if dup:
         raise ValueError(f"features 编号重复：{'、'.join(dup)}")
@@ -291,23 +335,29 @@ def chart_from_civil(
     longitude_deg: float | None = None,
     apply_true_solar: bool = True,
     name: str | None = None,
+    lover_star: str | None = None,
 ) -> dict:
+    """lover_star：親密關係星的家族（財、官殺、食傷、印、比劫），不給則按性別取傳統默認（DESIGN 7.3）。"""
     fp = four_pillars(local_dt, longitude_deg, apply_true_solar)
     pillars = fp["pillars"]
     instant_utc = local_dt.astimezone(timezone.utc)
     dy = dayun_mod.compute(pillars["year"], pillars["month"], gender, instant_utc, local_dt.year)
-    return {
+    out = {
         "schema": SCHEMA,
         "calendar": {"mode": "real", "birthLocal": local_dt.isoformat(), "longitude": longitude_deg,
                      "trueSolarApplied": apply_true_solar},
         "name": name,
         "gender": gender,
+        "loverStar": intimacy_mod.lover_spec(gender, lover_star),
         "fourPillars": pillars,
         "birth": {k: fp[k] for k in ("trueSolarTime", "trueSolarOffsetMinutes", "instantUtc", "birthJie", "birthJieDay")},
         "natal": natal_facts(pillars),
         "dayun": dy.as_payload(),
-        **enrich(pillars, instant_utc, gender),
+        **enrich(pillars, instant_utc, gender, lover_star),
     }
+    out["dayunScores"] = _yun_scores(out)
+    out["lies"] = lies_mod.for_chart(out)
+    return out
 
 
 def chart_from_pillars(
@@ -320,23 +370,30 @@ def chart_from_pillars(
     forward: bool | None = None,
     story_epoch: int | None = None,
     name: str | None = None,
+    lover_star: str | None = None,
+    yunqi_step: str | int | None = None,
 ) -> dict:
-    """架空歷。story_epoch 為出生所在的故事紀年（整數），用於換運年份。"""
+    """架空歷。story_epoch 為出生所在的故事紀年（整數），用於換運年份。lover_star 同 chart_from_civil。
+    yunqi_step 指定出生所值之氣（跨中氣的月支按月支定不出那一步時用，見 yunqi 模塊）。"""
     for p in (year, month, day) + ((hour,) if hour else ()):
         dayun_mod.sexagenary_index(p)  # 干支陰陽不配即拋錯
     pillars = {"year": year, "month": month, "day": day, "hour": hour}
     dy = dayun_mod.compute_from_pillars(year, month, gender, start_age_years, forward, story_epoch)
-    return {
+    out = {
         "schema": SCHEMA,
         "calendar": {"mode": "fictional", "storyEpochBirthYear": story_epoch},
         "name": name,
         "gender": gender,
+        "loverStar": intimacy_mod.lover_spec(gender, lover_star),
         "fourPillars": pillars,
         "birth": None,
         "natal": natal_facts(pillars),
         "dayun": dy.as_payload(),
-        **enrich(pillars, None, gender),
+        **enrich(pillars, None, gender, lover_star, yunqi_step),
     }
+    out["dayunScores"] = _yun_scores(out)
+    out["lies"] = lies_mod.for_chart(out)
+    return out
 
 
 def liunian(chart: dict, age: int) -> dict:
@@ -355,7 +412,12 @@ def liunian(chart: dict, age: int) -> dict:
         if s["startAge"] <= age < s["endAge"]:
             step = s
             break
-    return {"age": age, "year": civil_year, "pillar": dayun_mod.pillar_name(base + age), "dayun": step}
+    pillar = dayun_mod.pillar_name(base + age)
+    out = {"age": age, "year": civil_year, "pillar": pillar, "dayun": step}
+    if chart.get("yongshen"):
+        r = arc_mod.transit_score(chart["fourPillars"], pillar, chart["yongshen"])
+        out.update({"score": r["score"], "flags": r["flags"], "terms": r["terms"]})
+    return out
 
 
 def _main(argv: list[str]) -> int:
@@ -369,6 +431,10 @@ def _main(argv: list[str]) -> int:
     ap.add_argument("--forward", choices=["yes", "no"], default=None, help="架空：強制順逆")
     ap.add_argument("--epoch", type=int, default=None, help="架空：出生所在故事紀年")
     ap.add_argument("--gender", choices=["male", "female"], default=None)
+    ap.add_argument("--lover-star", choices=list(intimacy_mod.FAMILIES), default=None,
+                    help="親密關係星取哪一組十神（DESIGN 7.3）；不給則男取財、女取官殺")
+    ap.add_argument("--yunqi-step", default=None,
+                    help="架空：出生所值之氣（初之氣…終之氣、次年初之氣、或 1–6）；跨中氣的月支按月支定不出那一步時給")
     ap.add_argument("--name", default=None)
     ap.add_argument("--age", type=int, nargs="+", default=None, help="附帶某歲流年，可給多個")
     a = ap.parse_args(argv)
@@ -377,14 +443,14 @@ def _main(argv: list[str]) -> int:
         if not a.gender:
             ap.error("現實歷須給 --gender")
         local_dt = datetime.fromisoformat(a.birth).replace(tzinfo=ZoneInfo(a.tz))
-        chart = chart_from_civil(local_dt, a.gender, a.lon, not a.no_true_solar, a.name)
+        chart = chart_from_civil(local_dt, a.gender, a.lon, not a.no_true_solar, a.name, a.lover_star)
     elif a.pillars:
         if len(a.pillars) not in (3, 4):
             ap.error("--pillars 需要 3 或 4 個干支")
         hour = a.pillars[3] if len(a.pillars) == 4 else None
         fwd = None if a.forward is None else a.forward == "yes"
         chart = chart_from_pillars(a.pillars[0], a.pillars[1], a.pillars[2], hour,
-                                   a.gender, a.start_age, fwd, a.epoch, a.name)
+                                   a.gender, a.start_age, fwd, a.epoch, a.name, a.lover_star, a.yunqi_step)
     else:
         ap.error("須給 --birth 或 --pillars")
         return 2

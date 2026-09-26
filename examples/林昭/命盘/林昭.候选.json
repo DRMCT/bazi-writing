@@ -1,0 +1,862 @@
+{
+  "schema": "bazi-search/v1",
+  "algorithm": "bazi-writing search v1（DESIGN 12）",
+  "constraints": {
+    "name": "林昭",
+    "calendar": {
+      "mode": "fictional",
+      "start_age": 5,
+      "year_pillars": [
+        "庚寅"
+      ]
+    },
+    "gender": "female",
+    "story_age_window": [
+      18,
+      40
+    ],
+    "day_master": {
+      "element": [
+        "金"
+      ],
+      "weight": 2,
+      "hard": true
+    },
+    "strength": {
+      "value": "身弱",
+      "weight": 2
+    },
+    "structure": {
+      "any_of": [
+        "七杀格",
+        "伤官格"
+      ],
+      "weight": 1
+    },
+    "ten_gods": {
+      "prominent": [
+        {
+          "god": "正印",
+          "weight": 2
+        }
+      ],
+      "absent": [
+        {
+          "god": "食神",
+          "weight": 1
+        }
+      ]
+    },
+    "yongshen": {
+      "element": [
+        "土"
+      ],
+      "weight": 1
+    },
+    "day_branch": {
+      "any_of": [
+        "酉",
+        "戌"
+      ],
+      "weight": 1
+    },
+    "arc": {
+      "template": "正弧",
+      "turning_age": 24,
+      "weight": 3
+    },
+    "events": [
+      {
+        "age_range": [
+          22,
+          26
+        ],
+        "type": "冲日支",
+        "weight": 3
+      }
+    ],
+    "relations": [
+      {
+        "to": "../沈砚/命盘/沈砚.json",
+        "ten_god_seen_by_them": "七杀",
+        "weight": 2
+      }
+    ],
+    "shensha": {
+      "require": [
+        "华盖"
+      ],
+      "weight": 1
+    }
+  },
+  "searched": 8640,
+  "kept": 1728,
+  "fullyEvaluated": 1034,
+  "results": [
+    {
+      "rank": 1,
+      "score": 18.529,
+      "max": 19.0,
+      "pillars": {
+        "year": "庚寅",
+        "month": "壬午",
+        "day": "辛酉",
+        "hour": "戊戌"
+      },
+      "birth": null,
+      "dayMaster": "辛金",
+      "structure": "七杀格",
+      "strength": "身弱（比值 0.447）",
+      "yongshen": "土（印）：身弱，官杀为病，取印化杀扶身",
+      "arc": {
+        "vector": {
+          "起": 0.8,
+          "承": -0.291,
+          "转": -0.7,
+          "合": -0.245
+        },
+        "best": "高开低走",
+        "steps": [
+          {
+            "pillar": "庚辰",
+            "ages": [
+              15,
+              25
+            ],
+            "score": 0.8
+          },
+          {
+            "pillar": "己卯",
+            "ages": [
+              25,
+              35
+            ],
+            "score": -0.7
+          },
+          {
+            "pillar": "戊寅",
+            "ages": [
+              35,
+              45
+            ],
+            "score": -0.2
+          }
+        ]
+      },
+      "hits": [
+        {
+          "constraint": "day_master",
+          "want": "日主金",
+          "got": "日主辛金",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": true
+        },
+        {
+          "constraint": "day_branch",
+          "want": "日支酉、戌",
+          "got": "日支酉",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "structure",
+          "want": "七杀格、伤官格",
+          "got": "取格七杀格",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.prominent",
+          "want": "正印显",
+          "got": "正印：时干透",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.absent",
+          "want": "无食神",
+          "got": "食神：无",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "relations",
+          "want": "../沈砚/命盘/沈砚.json看我为七杀",
+          "got": "../沈砚/命盘/沈砚.json看我为七杀",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "events",
+          "want": "22–26岁冲日支",
+          "got": "25岁流年乙卯冲日支",
+          "sat": 1.0,
+          "weight": 3.0,
+          "points": 3.0,
+          "hard": false
+        },
+        {
+          "constraint": "shensha",
+          "want": "华盖",
+          "got": "见华盖",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "strength",
+          "want": "身弱",
+          "got": "身弱（比值 0.447）",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "yongshen",
+          "want": "用神土",
+          "got": "用神土（印）",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "arc",
+          "want": "正弧，24岁转折",
+          "got": "四段 [0.8, -0.291, -0.7, -0.245]，正弧匹配 0.818，最近模板高开低走；转折 0.9（25岁换运入己卯）",
+          "sat": 0.843,
+          "weight": 3.0,
+          "points": 2.529,
+          "hard": false
+        }
+      ],
+      "chartArgs": "--pillars 庚寅 壬午 辛酉 戊戌 --start-age 5 --gender female"
+    },
+    {
+      "rank": 2,
+      "score": 17.037,
+      "max": 19.0,
+      "pillars": {
+        "year": "庚寅",
+        "month": "丙戌",
+        "day": "辛酉",
+        "hour": "甲午"
+      },
+      "birth": null,
+      "dayMaster": "辛金",
+      "structure": "正官格",
+      "strength": "身弱（比值 0.361）",
+      "yongshen": "土（印）：身弱，官杀为病，印虽无力仍取印化杀扶身",
+      "arc": {
+        "vector": {
+          "起": 0.0,
+          "承": 0.436,
+          "转": 0.6,
+          "合": -0.491
+        },
+        "best": "负弧",
+        "steps": [
+          {
+            "pillar": "甲申",
+            "ages": [
+              15,
+              25
+            ],
+            "score": 0.0
+          },
+          {
+            "pillar": "癸未",
+            "ages": [
+              25,
+              35
+            ],
+            "score": 0.6
+          },
+          {
+            "pillar": "壬午",
+            "ages": [
+              35,
+              45
+            ],
+            "score": -0.6
+          }
+        ]
+      },
+      "hits": [
+        {
+          "constraint": "day_master",
+          "want": "日主金",
+          "got": "日主辛金",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": true
+        },
+        {
+          "constraint": "day_branch",
+          "want": "日支酉、戌",
+          "got": "日支酉",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "structure",
+          "want": "七杀格、伤官格",
+          "got": "取格正官格",
+          "sat": 0.0,
+          "weight": 1.0,
+          "points": 0.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.prominent",
+          "want": "正印显",
+          "got": "正印：月令本气",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.absent",
+          "want": "无食神",
+          "got": "食神：无",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "relations",
+          "want": "../沈砚/命盘/沈砚.json看我为七杀",
+          "got": "../沈砚/命盘/沈砚.json看我为七杀",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "events",
+          "want": "22–26岁冲日支",
+          "got": "25岁流年乙卯冲日支",
+          "sat": 1.0,
+          "weight": 3.0,
+          "points": 3.0,
+          "hard": false
+        },
+        {
+          "constraint": "shensha",
+          "want": "华盖",
+          "got": "见华盖",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "strength",
+          "want": "身弱",
+          "got": "身弱（比值 0.361）",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "yongshen",
+          "want": "用神土",
+          "got": "用神土（印）",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "arc",
+          "want": "正弧，24岁转折",
+          "got": "四段 [0.0, 0.436, 0.6, -0.491]，正弧匹配 0.584，最近模板负弧；转折 0.9（25岁换运入癸未）",
+          "sat": 0.679,
+          "weight": 3.0,
+          "points": 2.037,
+          "hard": false
+        }
+      ],
+      "chartArgs": "--pillars 庚寅 丙戌 辛酉 甲午 --start-age 5 --gender female"
+    },
+    {
+      "rank": 3,
+      "score": 16.736,
+      "max": 19.0,
+      "pillars": {
+        "year": "庚寅",
+        "month": "丁亥",
+        "day": "辛未",
+        "hour": "戊子"
+      },
+      "birth": null,
+      "dayMaster": "辛金",
+      "structure": "伤官格",
+      "strength": "身弱（比值 0.447）",
+      "yongshen": "土（印）：身弱，食伤为病，取印制伤扶身",
+      "arc": {
+        "vector": {
+          "起": 0.0,
+          "承": 0.0,
+          "转": 0.0,
+          "合": 0.0
+        },
+        "best": "平弧",
+        "steps": [
+          {
+            "pillar": "乙酉",
+            "ages": [
+              15,
+              25
+            ],
+            "score": 0.0
+          },
+          {
+            "pillar": "甲申",
+            "ages": [
+              25,
+              35
+            ],
+            "score": 0.0
+          },
+          {
+            "pillar": "癸未",
+            "ages": [
+              35,
+              45
+            ],
+            "score": 0.0
+          }
+        ]
+      },
+      "hits": [
+        {
+          "constraint": "day_master",
+          "want": "日主金",
+          "got": "日主辛金",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": true
+        },
+        {
+          "constraint": "day_branch",
+          "want": "日支酉、戌",
+          "got": "日支未",
+          "sat": 0.0,
+          "weight": 1.0,
+          "points": 0.0,
+          "hard": false
+        },
+        {
+          "constraint": "structure",
+          "want": "七杀格、伤官格",
+          "got": "取格伤官格",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.prominent",
+          "want": "正印显",
+          "got": "正印：时干透",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.absent",
+          "want": "无食神",
+          "got": "食神：时支本气",
+          "sat": 0.3,
+          "weight": 1.0,
+          "points": 0.3,
+          "hard": false
+        },
+        {
+          "constraint": "relations",
+          "want": "../沈砚/命盘/沈砚.json看我为七杀",
+          "got": "../沈砚/命盘/沈砚.json看我为七杀",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "events",
+          "want": "22–26岁冲日支",
+          "got": "23岁流年癸丑冲日支",
+          "sat": 1.0,
+          "weight": 3.0,
+          "points": 3.0,
+          "hard": false
+        },
+        {
+          "constraint": "shensha",
+          "want": "华盖",
+          "got": "见华盖",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "strength",
+          "want": "身弱",
+          "got": "身弱（比值 0.447）",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "yongshen",
+          "want": "用神土",
+          "got": "用神土（印）",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "arc",
+          "want": "正弧，24岁转折",
+          "got": "四段 [0.0, 0.0, 0.0, 0.0]，正弧匹配 0.775，最近模板平弧；转折 0.9（23岁流年癸丑冲日支未）",
+          "sat": 0.812,
+          "weight": 3.0,
+          "points": 2.436,
+          "hard": false
+        }
+      ],
+      "chartArgs": "--pillars 庚寅 丁亥 辛未 戊子 --start-age 5 --gender female"
+    },
+    {
+      "rank": 4,
+      "score": 16.442,
+      "max": 19.0,
+      "pillars": {
+        "year": "庚寅",
+        "month": "戊寅",
+        "day": "辛未",
+        "hour": "甲午"
+      },
+      "birth": null,
+      "dayMaster": "辛金",
+      "structure": "正财格",
+      "strength": "身弱（比值 0.449）",
+      "yongshen": "土（印）：身弱，财多生杀，官杀有力，取印化杀扶身（财官两旺用印），财杀同为病",
+      "arc": {
+        "vector": {
+          "起": -0.7,
+          "承": -0.7,
+          "转": -0.7,
+          "合": 0.118
+        },
+        "best": "正弧",
+        "steps": [
+          {
+            "pillar": "丙子",
+            "ages": [
+              15,
+              25
+            ],
+            "score": -0.7
+          },
+          {
+            "pillar": "乙亥",
+            "ages": [
+              25,
+              35
+            ],
+            "score": -0.7
+          },
+          {
+            "pillar": "甲戌",
+            "ages": [
+              35,
+              45
+            ],
+            "score": 0.2
+          }
+        ]
+      },
+      "hits": [
+        {
+          "constraint": "day_master",
+          "want": "日主金",
+          "got": "日主辛金",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": true
+        },
+        {
+          "constraint": "day_branch",
+          "want": "日支酉、戌",
+          "got": "日支未",
+          "sat": 0.0,
+          "weight": 1.0,
+          "points": 0.0,
+          "hard": false
+        },
+        {
+          "constraint": "structure",
+          "want": "七杀格、伤官格",
+          "got": "取格正财格",
+          "sat": 0.0,
+          "weight": 1.0,
+          "points": 0.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.prominent",
+          "want": "正印显",
+          "got": "正印：月干透",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.absent",
+          "want": "无食神",
+          "got": "食神：无",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "relations",
+          "want": "../沈砚/命盘/沈砚.json看我为七杀",
+          "got": "../沈砚/命盘/沈砚.json看我为七杀",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "events",
+          "want": "22–26岁冲日支",
+          "got": "23岁流年癸丑冲日支",
+          "sat": 1.0,
+          "weight": 3.0,
+          "points": 3.0,
+          "hard": false
+        },
+        {
+          "constraint": "shensha",
+          "want": "华盖",
+          "got": "见华盖",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "strength",
+          "want": "身弱",
+          "got": "身弱（比值 0.449）",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "yongshen",
+          "want": "用神土",
+          "got": "用神土（印）",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "arc",
+          "want": "正弧，24岁转折",
+          "got": "四段 [-0.7, -0.7, -0.7, 0.118]，正弧匹配 0.777，最近模板正弧；转折 0.9（23岁流年癸丑冲日支未）",
+          "sat": 0.814,
+          "weight": 3.0,
+          "points": 2.442,
+          "hard": false
+        }
+      ],
+      "chartArgs": "--pillars 庚寅 戊寅 辛未 甲午 --start-age 5 --gender female"
+    },
+    {
+      "rank": 5,
+      "score": 16.127,
+      "max": 19.0,
+      "pillars": {
+        "year": "庚寅",
+        "month": "丁亥",
+        "day": "辛酉",
+        "hour": "壬辰"
+      },
+      "birth": null,
+      "dayMaster": "辛金",
+      "structure": "伤官格",
+      "strength": "身弱（比值 0.402）",
+      "yongshen": "土（印）：身弱，食伤为病，取印制伤扶身",
+      "arc": {
+        "vector": {
+          "起": -0.3,
+          "承": -0.082,
+          "转": 0.0,
+          "合": 0.182
+        },
+        "best": "平弧",
+        "steps": [
+          {
+            "pillar": "乙酉",
+            "ages": [
+              15,
+              25
+            ],
+            "score": -0.3
+          },
+          {
+            "pillar": "甲申",
+            "ages": [
+              25,
+              35
+            ],
+            "score": 0.0
+          },
+          {
+            "pillar": "癸未",
+            "ages": [
+              35,
+              45
+            ],
+            "score": 0.2
+          }
+        ]
+      },
+      "hits": [
+        {
+          "constraint": "day_master",
+          "want": "日主金",
+          "got": "日主辛金",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": true
+        },
+        {
+          "constraint": "day_branch",
+          "want": "日支酉、戌",
+          "got": "日支酉",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "structure",
+          "want": "七杀格、伤官格",
+          "got": "取格伤官格",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.prominent",
+          "want": "正印显",
+          "got": "正印：时支本气",
+          "sat": 0.5,
+          "weight": 2.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "ten_gods.absent",
+          "want": "无食神",
+          "got": "食神：时支中余气",
+          "sat": 0.7,
+          "weight": 1.0,
+          "points": 0.7,
+          "hard": false
+        },
+        {
+          "constraint": "relations",
+          "want": "../沈砚/命盘/沈砚.json看我为七杀",
+          "got": "../沈砚/命盘/沈砚.json看我为七杀",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "events",
+          "want": "22–26岁冲日支",
+          "got": "25岁流年乙卯冲日支",
+          "sat": 1.0,
+          "weight": 3.0,
+          "points": 3.0,
+          "hard": false
+        },
+        {
+          "constraint": "shensha",
+          "want": "华盖",
+          "got": "未见；缺华盖",
+          "sat": 0.0,
+          "weight": 1.0,
+          "points": 0.0,
+          "hard": false
+        },
+        {
+          "constraint": "strength",
+          "want": "身弱",
+          "got": "身弱（比值 0.402）",
+          "sat": 1.0,
+          "weight": 2.0,
+          "points": 2.0,
+          "hard": false
+        },
+        {
+          "constraint": "yongshen",
+          "want": "用神土",
+          "got": "用神土（印）",
+          "sat": 1.0,
+          "weight": 1.0,
+          "points": 1.0,
+          "hard": false
+        },
+        {
+          "constraint": "arc",
+          "want": "正弧，24岁转折",
+          "got": "四段 [-0.3, -0.082, 0.0, 0.182]，正弧匹配 0.77，最近模板平弧；转折 0.9（25岁换运入甲申）",
+          "sat": 0.809,
+          "weight": 3.0,
+          "points": 2.427,
+          "hard": false
+        }
+      ],
+      "chartArgs": "--pillars 庚寅 丁亥 辛酉 壬辰 --start-age 5 --gender female"
+    }
+  ]
+}

@@ -64,7 +64,12 @@ def for_chart(structure) -> dict:
 # 事实口径：透 = 年月时干；藏 = 四支藏干（本气 1、中气 0.5、余气 0.25 计数）；逢/见/带/无 = 透或支本气（中气余气不算）；
 # 重/多/旺/强 = 计数 ≥ 2；轻/弱 = 0 < 计数 < 2；当令 = 月支本气；有根 = 该五行见于任一支藏干；
 # 身强弱 = strength.assess 的结论；相碍 = 两神透干且位置相邻（年月、月时以日主隔开不算）；
-# 合 = 天干五合（含与日主合）；刑冲 = 月支与他支六冲或三刑。"化""会"类原子不判。
+# 合 = 天干五合（含与日主合）；刑冲 = 月支与他支六冲或三刑。
+# 2026-09-24 扩（_eval_atom_v2）：先后 = 柱位（透干优先、次支本气）；间之 = 食透且柱位在财煞之间；一位不杂 = 该神只透一干；
+# 官清 = 不混煞不见伤；逢合 = 盘中有天干五合；取清 = 官煞一头被合或食伤在场；会合解冲 = 月支在六合或三合三会里；
+# 会/党 = 三合三会或六合所化五行为该神；印化劫、财化煞（第十章用神变化）= 月支所在的会局、六合或带中神的半合所化为该神，
+# 其余"X化Y"= 两神在场（卡上这类皆相生）；合X留Y = X 被合、Y 在场且未被合；去X = X 被合或克 X 之神在场；
+# 不忌是救应的结果句，恒成立。仍不判的只剩运的条件（运行制伏、财运、印运）。
 
 import re as _re
 
@@ -107,9 +112,54 @@ def chart_facts(pillars: dict) -> dict:
     stem_he_pairs = [tuple(p["between"]) for p in nat["pairs"] if p["stemHe"] and tuple(p["between"]) in _ADJ]
     roots = {_el(h) for items in [_H[_B.index(pillars[k][1])] for k in keys] for h in items}
     day_el, month_el = _el(ds), _el(_H[_B.index(pillars["month"][1])][0])
+    # 2026-09-24 补三项事实：柱位（先后、间之用）、会局所化五行（三合三会与六合，会/党用）、月支逢合（会合解冲用）
+    order = {"year": 0, "month": 1, "day": 2, "hour": 3}
+    pos: dict[str, list[int]] = {}
+    for k, g in exposed.items():
+        pos.setdefault(g, []).append(order[k])
+    main_pos: dict[str, list[int]] = {}
+    for k in keys:
+        main_pos.setdefault(hidden[k][0][0], []).append(order[k])
+    hui_els = {_EL_IDX[t["element"]] for t in nat["trios"] if t.get("element") in _EL_IDX}
+    hui_els |= {_EL_IDX[p["liuHeElement"]] for p in nat["pairs"] if "六合" in p["branches"] and p.get("liuHeElement") in _EL_IDX}
+    month_he = any("month" in p["between"] and "六合" in p["branches"] for p in nat["pairs"]) or \
+        any(pillars["month"][1] in t["branches"] for t in nat["trios"])
+    month_hidden_els = {_el(h) for h in _H[_B.index(pillars["month"][1])]}
+    mb = pillars["month"][1]
+    month_hui_els = {_EL_IDX[t["element"]] for t in nat["trios"] if mb in t["branches"] and t.get("element") in _EL_IDX}
+    month_hui_els |= {_EL_IDX[p["liuHeElement"]] for p in nat["pairs"]
+                      if "month" in p["between"] and "六合" in p["branches"] and p.get("liuHeElement") in _EL_IDX}
+    # 半合只用于用神变化的判定（子平真诠"寅午一合，印化为劫"）：月支与他支同在一局且其一为中神；不入 relations 表
+    for ju, wx in _R.SAN_HE.items():
+        if mb in ju and wx in _EL_IDX:
+            others = [pillars[k][1] for k in keys if k != "month"]
+            if any(o in ju and o != mb and ju[1] in (o, mb) for o in others):
+                month_hui_els.add(_EL_IDX[wx])
     return {"exposed": exposed, "hidden": hidden, "count": count, "presence": presence, "monthMain": month_main, "monthClash": month_clash,
             "stemHe": stem_he_pairs, "roots": roots, "dayEl": day_el, "monthEl": month_el, "dayStem": ds,
-            "verdict": _S.assess(pillars)["verdict"]}
+            "verdict": _S.assess(pillars)["verdict"],
+            "pos": pos, "mainPos": main_pos, "huiEls": hui_els, "monthHe": month_he, "monthHiddenEls": month_hidden_els,
+            "monthHuiEls": month_hui_els}
+
+
+_EL_IDX = {"木": 0, "火": 1, "土": 2, "金": 3, "水": 4}
+# 克我者：去 X 时看 X 被合或克 X 之神在场
+_KE_BY = {"正官": {"食神", "伤官"}, "七杀": {"食神", "伤官"}, "正印": {"正财", "偏财"}, "偏印": {"正财", "偏财"},
+          "正财": {"比肩", "劫财"}, "偏财": {"比肩", "劫财"}, "食神": {"正印", "偏印"}, "伤官": {"正印", "偏印"},
+          "比肩": {"正官", "七杀"}, "劫财": {"正官", "七杀"}}
+
+
+def _first_pos(f: dict, gods: set) -> int | None:
+    """某神最先出现的柱位：透干优先，其次支本气；没有返回 None。"""
+    ps = [p for g in gods for p in f["pos"].get(g, [])]
+    if not ps:
+        ps = [p for g in gods for p in f["mainPos"].get(g, [])]
+    return min(ps) if ps else None
+
+
+def _god_els(f: dict, gods: set) -> set:
+    ds = f["dayStem"]
+    return {e for e in range(5) if _tg(ds, e * 2) in gods or _tg(ds, e * 2 + 1) in gods}
 
 
 def _present(f: dict, gods: set) -> bool:
@@ -254,6 +304,111 @@ def eval_atom(atom: str, f: dict, structure: str | None = None) -> bool | None:
     m = _re.fullmatch(f"({G})制({G})", a)
     if m:
         return _present(f, _GOD_SETS[m.group(1)]) and _present(f, _GOD_SETS[m.group(2)])
+    return _eval_atom_v2(a, f, structure)
+
+
+def _eval_atom_v2(a: str, f: dict, structure: str | None) -> bool | None:
+    """2026-09-24 扩：化、合化、留存去、先后、间之、清、隔、一位不杂、会党、轻逢、透制一类原子。
+    口径写在判定报告；仍不判的是运的条件（运行制伏、财运、印运）。"""
+    G = _GOD_RE
+    S = _GOD_SETS
+    if a == "有印":
+        return _present(f, S["印"])
+    if a == "官清":  # 不混煞、不见伤
+        return _present(f, S["官"]) and not _present(f, S["煞"]) and not _present(f, S["伤"])
+    if a == "逢合":  # 天干五合在盘（含与日主合）
+        return bool(f["stemHe"])
+    if a == "不忌":  # 救应的结果句，不是条件，恒成立，由起因定
+        return True
+    if a == "取清":  # 官煞混而合去一头或食伤制之
+        return _he_with(f, S["官煞"], None) or _present(f, S["食伤"])
+    if a == "会合解冲":
+        return f["monthHe"]
+    if a == "用煞无制":
+        return _present(f, S["煞"]) and not _present(f, S["食伤"])
+    if a in ("刃敌煞", "刃当煞"):
+        return _present(f, S["刃"]) and _present(f, S["煞"])
+    if a == "透煞就煞成格":
+        return _exposed(f, S["煞"])
+    if a == "重印护之":
+        return _n(f, S["印"]) >= 2
+    if a in ("弃食就印", "印去食助刃"):
+        return _present(f, S["食"]) and _present(f, S["印"])
+    if a in ("伤兼用财印", "财印为辅"):
+        both = _present(f, S["财"]) and _present(f, S["印"])
+        return both and _present(f, S["伤"]) if a.startswith("伤") else both
+    if a == "财有根多":
+        return _rooted(f, S["财"]) and _n(f, S["财"]) >= 2
+    if a == "同根月令":  # 至少两个透干的五行都在月支藏干里
+        exposed_els = [e for g in f["exposed"].values() for e in _god_els(f, {g})]
+        return sum(1 for e in set(exposed_els) if e in f["monthHiddenEls"]) >= 2
+    if a == "印隔伤官":  # 印与伤皆透，且官若透则不与伤相邻
+        if not (_exposed(f, S["印"]) and _exposed(f, S["伤"])):
+            return False
+        shang, guan = _stems_with(f, S["伤"]), _stems_with(f, S["官"])
+        return not any((p, q) in _ADJ for p in shang for q in guan)
+    if a == "食间之":  # 食透，位于财与煞之间
+        fp, sp, kp = _first_pos(f, S["财"]), _first_pos(f, S["煞"]), [p for p in f["pos"].get("食神", [])]
+        if fp is None or sp is None or not kp:
+            return False
+        lo, hi = min(fp, sp), max(fp, sp)
+        return any(lo < p < hi for p in kp)
+    m = _re.fullmatch(f"({G})透一位不杂", a)
+    if m:
+        return len(_stems_with(f, S[m.group(1)])) == 1
+    m = _re.fullmatch(f"({G})先({G})后", a)
+    if m:
+        x, y = _first_pos(f, S[m.group(1)]), _first_pos(f, S[m.group(2)])
+        return x is not None and y is not None and x < y
+    m = _re.fullmatch(f"({G})(轻|弱)(逢|见)({G})", a)
+    if m:
+        n = _n(f, S[m.group(1)])
+        return 0 < n < 2 and _present(f, S[m.group(4)])
+    m = _re.fullmatch(f"({G})(逢|见)({G})(重|多)", a)
+    if m:
+        return _present(f, S[m.group(1)]) and _n(f, S[m.group(3)]) >= 2
+    m = _re.fullmatch(f"透({G})(制|化)({G})", a)
+    if m:
+        return _exposed(f, S[m.group(1)]) and _present(f, S[m.group(3)])
+    m = _re.fullmatch(f"透({G})去({G})存({G})", a)
+    if m:
+        return _exposed(f, S[m.group(1)]) and _present(f, S[m.group(2)]) and _present(f, S[m.group(3)])
+    m = _re.fullmatch(f"({G})({G})并透", a)
+    if m:
+        return _exposed(f, S[m.group(1)]) and _exposed(f, S[m.group(2)])
+    m = _re.fullmatch(f"({G})合化({G})", a)
+    if m:  # 甲神在合，乙神在场（刃合化印、劫合化财）
+        return _he_with(f, S[m.group(1)], None) and _present(f, S[m.group(2)])
+    m = _re.fullmatch(f"({G})会合?化({G})", a)
+    if m:  # 会局所化为乙神之五行
+        return _present(f, S[m.group(1)]) and bool(_god_els(f, S[m.group(2)]) & f["huiEls"])
+    m = _re.fullmatch(f"会({G})党({G})", a)
+    if m:
+        return bool(_god_els(f, S[m.group(1)]) & f["huiEls"]) and _present(f, S[m.group(2)])
+    if a in ("印化劫", "财化煞"):  # 第十章用神变化：格神经月支的会局或六合转成别的神（毛状元造"辰酉合而财化煞"）
+        x, y = a[0], a[2]
+        return f["monthMain"] in S[x] and bool(_god_els(f, S[y]) & f["monthHuiEls"])
+    m = _re.fullmatch(f"({G})化({G})", a)
+    if m:  # 其余化类原子 = 两神在场且相生（伤化财、伤化劫、煞化印、官化印皆相生）
+        return _present(f, S[m.group(1)]) and _present(f, S[m.group(2)])
+    m = _re.fullmatch(f"({G})合({G})留({G})", a)
+    if m:  # 食合官留煞
+        return _he_with(f, S[m.group(1)], S[m.group(2)]) and _present(f, S[m.group(3)])
+    m = _re.fullmatch(f"合({G})(留|存)({G})", a)
+    if m:
+        x, y = S[m.group(1)], S[m.group(3)]
+        if not (_he_with(f, x, None) and _present(f, y)):
+            return False
+        return not _he_with(f, y, None) if m.group(2) == "留" else True
+    m = _re.fullmatch(f"制({G})留({G})", a)
+    if m:
+        return _present(f, S[m.group(1)]) and _present(f, S["食伤"]) and _present(f, S[m.group(2)])
+    m = _re.fullmatch(f"去({G})", a)
+    if m:  # 被合去，或克它的神在场
+        gods = S[m.group(1)]
+        if not _present(f, gods):
+            return False
+        return _he_with(f, gods, None) or any(_present(f, _KE_BY[g]) for g in gods)
     return None
 
 
