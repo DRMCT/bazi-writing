@@ -74,6 +74,24 @@ KINDS = {
         "proof": [],
         "corpus": "素问_运气.txt",
     },
+    # 戏剧层的卡（references/戏剧层/校核/，2026-09-27）：李渔《闲情偶寄》结构第一，语料由 extract_xianqing.py 从整理本只抽原文；
+    # 金圣叹《读第五才子书法》，维基文库繁体录入本。引文照抄语料，应近乎逐字，阈值收紧
+    "李渔": {
+        "required": ["引文", "出处", "问法", "落点", "核对", "状态"],
+        "quotes": {"引文": "正文"},
+        "pools": {"正文": "正文"},
+        "proof": [],
+        "corpus": "闲情偶寄_结构.txt",
+        "low": 0.95,
+    },
+    "金圣叹": {
+        "required": ["引文", "出处", "问法", "用词", "落点", "校记", "核对", "状态"],
+        "quotes": {"引文": "正文"},
+        "pools": {"正文": "正文"},
+        "proof": [],
+        "corpus": "读第五才子书法.txt",
+        "low": 0.95,
+    },
 }
 REQUIRED_FIELDS = KINDS["调候"]["required"]
 QUOTE_FIELDS = KINDS["调候"]["quotes"]
@@ -113,7 +131,7 @@ def parse_cards(text: str) -> list[dict]:
     blocks = re.split(r"(?m)^### ", text)[1:]
     for b in blocks:
         head, _, body = b.partition("\n")
-        m = re.match(r"((?:调候|神煞|刑冲合害|长生|纳音|格局|十干|性情|疾病|六亲|小儿|何知|出身|地位|岁运|贞元|官杀|伤官|运气)-\S+)", head)
+        m = re.match(r"((?:调候|神煞|刑冲合害|长生|纳音|格局|十干|性情|疾病|六亲|小儿|何知|出身|地位|岁运|贞元|官杀|伤官|运气|李渔|金圣叹)-\S+)", head)
         card = {"id": m.group(1) if m else head.strip(), "fields": {}}
         cur = None
         for line in body.splitlines():
@@ -171,7 +189,7 @@ def main(argv: list[str]) -> int:
             print(f"corpus not found: {corpus_path}", file=sys.stderr)
             return 2
         pools = {"正文": split_pool(corpus_path.read_text(encoding="utf-8"))}
-        source, low = f"通行本语料 {corpus_path}", LOW
+        source, low = f"通行本语料 {corpus_path}", spec.get("low", LOW)
     elif proofs and all(p.exists() for p in proofs):
         body = "\n".join(p.read_text(encoding="utf-8") for p in proofs)
         raw = {}

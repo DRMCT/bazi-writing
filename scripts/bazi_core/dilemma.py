@@ -80,33 +80,41 @@ def affinity(raw_mech: str) -> tuple[str, ...]:
     return ()
 
 
-def rank_domains(domains: list[dict], raw_mech: str | None = None) -> list[dict]:
+def rank_domains(domains: list[dict], raw_mech: str | None = None, weights: dict | None = None) -> list[dict]:
+    """weights：书的领域配权（编配表，DESIGN-戏剧层 5.3），领域名 → 倍数，没写的算 1。只改挑哪个领域当主领域，不动年表的事实。"""
     order = {d: i for i, d in enumerate(_tl.DOMAINS)}
     aff = affinity(raw_mech) if raw_mech else ()
+    weights = weights or {}
 
     def score(d: dict) -> float:
         w = d.get("weight", 2 if d.get("strong", True) else 1)
-        return w + (AFFINITY_BONUS if d["domain"] in aff else 0)
+        return (w + (AFFINITY_BONUS if d["domain"] in aff else 0)) * weights.get(d["domain"], 1)
 
     return sorted(domains, key=lambda d: (-score(d), order[d["domain"]]))
 
 
-def compose(mech: str, primary: str, secondary: str | None) -> str:
+def compose(mech: str, primary: str, secondary: str | None) -> tuple[str, list[str]]:
+    """没有精选格时按合成规则拼：形态加两头押的赌注类型；两头只写方向，具体押什么由写档案的模型按处境落。"""
     form = MECH[mech]["form"].split("。")[0]
-    text = f"{form}。赌注是{DOMAIN[primary]['stake']}（{primary}）"
     if secondary:
-        text += f"，另一头压着{DOMAIN[secondary]['stake']}（{secondary}）：保{primary}还是保{secondary}"
+        sides = [f"保{primary}，把{DOMAIN[secondary]['stake']}押出去", f"保{secondary}，把{DOMAIN[primary]['stake']}押出去"]
     else:
-        text += "：要不要为它付全部代价，还是退一步保住别的"
-    return text
+        sides = [f"为{DOMAIN[primary]['stake']}付全部代价", "退一步，保住别的"]
+    return f"{form}：{sides[0]}，还是{sides[1]}", sides
 
 
-def rewrite_year(y: dict, head: str) -> dict | None:
+FILL = "落词按此人此年手里有的东西（阶段卡第八面），模板只给形态"
+
+
+def rewrite_year(y: dict, head: str, weights: dict | None = None, avoid: str | None = None) -> dict | None:
+    """avoid：这个领域连着做了两个热年的主领域，这一年若还有别的领域在动就让它退到后面（DESIGN-戏剧层 5.3）。"""
     pm = primary_mechanism(y["mechanisms"])
     if pm is None or not y["domains"]:
         return None
     mech, raw = pm
-    ranked = rank_domains(y["domains"], raw)
+    ranked = rank_domains(y["domains"], raw, weights)
+    if avoid and len(ranked) > 1 and ranked[0]["domain"] == avoid:
+        ranked = ranked[1:] + ranked[:1]
     primary = ranked[0]["domain"]
     cell = CELLS.get((mech, primary))
     rest = [d["domain"] for d in ranked[1:]]
@@ -123,7 +131,10 @@ def rewrite_year(y: dict, head: str) -> dict | None:
         "primary": {"domain": primary, "stake": DOMAIN[primary]["stake"], "via": ranked[0]["via"], "events": DOMAIN[primary]["events"]},
         "secondary": None if secondary is None else {"domain": secondary, "stake": DOMAIN[secondary]["stake"],
                                                      "via": next((d["via"] for d in ranked if d["domain"] == secondary), [])},
-        "dilemma": cell["dilemma"] if cell else compose(mech, primary, secondary),
+        "dilemma": f"{cell['shape']}：{cell['sides'][0]}，还是{cell['sides'][1]}" if cell else compose(mech, primary, secondary)[0],
+        "shape": cell["shape"] if cell else MECH[mech]["form"].split("。")[0],
+        "sides": cell["sides"] if cell else compose(mech, primary, secondary)[1],
+        "fill": FILL,
         "template": "精选格" if cell else "按合成规则合成",
         "suggestedSub": cell["sub"] if cell else [],
         "ids": ids,

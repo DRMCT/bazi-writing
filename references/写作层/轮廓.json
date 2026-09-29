@@ -1,0 +1,54 @@
+{
+  "schema": "bazi-book-profile/v2",
+  "note": "写作层的轮廓表：check-prose 与 check-plan 读它，书/主题.md 的『写法轮廓』行选哪张表，书/文风.md 的阈值表逐项覆盖 thresholds 里的 max。level 是超阈值时报的级别：error 拦（退出码 1），warn 报，info 只记。现在只有网文一张表，数值按六本女频长篇逐章量过定（阈值落在真书九成到九成五的章不报的位置）；以后加别的写法就在 profiles 里加一张表。字数口径：检查器数汉字与字母数字，不含标点，平台字数（含标点）约多一成五。exclaimPerK、ellipsisPerK、dashPerK 只数叙述（引号、【】里的不数），单独成行的分隔符与引出对白的破折号不数，按每千字算。expect 是期待账：idle 只查回合与单元尺度的期待几章没人动，卷与全书的不按章数查、隔 reopenGap 章再碰提醒带一句旧账，常驻的不查；openingPayoffBy 开篇几章里要有一回兑现（章内的也算），openingRealPayoffBy 几章里要有一回登记过的期待兑现。rhythm：tenseRun 连着紧又没有调剂几章报，flatRun 连着几章没兑现、没推、没落空、没调剂、也没有带期限的期待悬着报，hooklessRun 连着几章章尾不留钩（兑现收、松收）报。",
+  "profiles": {
+    "webnovel": {
+      "label": "网文连载",
+      "unit": "章",
+      "chapterChars": 1850,
+      "chapterRange": [1500, 2500],
+      "chapterEnd": "多停在一句被人听见的话、一句心声，或旁人对它的反应上；动作、东西为辅；约一半的章可以不留钩，钩交给下一章的章题、下一章开头的反应和一直开着的知情差",
+      "innerVoice": "三层：主视角的短心声、吐槽随处放；关系转折、揭底、回忆的章给整块内心，男方、配角、对手也可以；一句对白后面可以跟在场几个人各一句心声",
+      "dialogue": "随书定：引号对白占字数一成到三成半都有；心声、屏上文字、旁人的反应行另算",
+      "planGrain": "卷、单元、回合、章",
+      "thresholds": {
+        "negationTail": { "max": 11, "level": "warn", "label": "句尾否定" },
+        "doubleNegation": { "max": 2, "level": "warn", "label": "双否定" },
+        "exclaimPerK": { "max": 5, "level": "warn", "label": "叙述感叹号（每千字）" },
+        "ellipsisPerK": { "max": 3, "level": "info", "label": "叙述省略号（每千字）" },
+        "dashPerK": { "max": 2, "level": "info", "label": "叙述破折号（每千字）" },
+        "bodyDensity": { "max": 4, "level": "warn", "label": "体感密度" },
+        "sentenceAvg": { "max": 28, "level": "info", "label": "平均句长" },
+        "paragraphAvg": { "max": 40, "level": "info", "label": "平均段长" }
+      },
+      "copy": { "ngram": 8, "level": "error" },
+      "repeat": { "ngram": 6, "window": 5, "level": "warn" },
+      "objects": { "level": "error" },
+      "threadIdle": { "chapters": 8, "level": "warn" },
+      "reviewEvery": 5,
+      "expect": { "idle": 8, "idleScales": ["回合", "单元"], "reopenGap": 30, "openingPayoffBy": 3, "openingRealPayoffBy": 6, "level": "warn" },
+      "rhythm": { "tenseRun": 6, "flatRun": 3, "hooklessRun": 3, "level": "warn" }
+    }
+  },
+  "borrowWords": ["对标", "爽点", "公式", "榜单", "钩子密度", "情绪百分比", "卖点", "黄金三章", "追读", "完读率"],
+  "scales": ["回合", "单元", "卷", "全书", "常驻"],
+  "hookKinds": ["悬念", "危机", "反转", "期待", "情绪", "包袱", "甜", "看客", "场中切", "兑现收", "松收"],
+  "hooklessKinds": ["兑现收", "松收"],
+  "roundEndBad": ["场中切", "松收"],
+  "expectActs": ["开", "压", "推", "兑现", "落空", "搁置"],
+  "reliefKinds": ["笑", "甜", "暖", "反应"],
+  "fieldKeys": {
+    "章长": "chapterChars",
+    "句尾否定": "negationTail",
+    "双否定": "doubleNegation",
+    "感叹号": "exclaimPerK",
+    "省略号": "ellipsisPerK",
+    "破折号": "dashPerK",
+    "平均句长": "sentenceAvg",
+    "平均段长": "paragraphAvg",
+    "照抄连串": "copyNgram",
+    "重复连串": "repeatNgram",
+    "回看章数": "repeatWindow",
+    "体感密度": "bodyDensity"
+  }
+}

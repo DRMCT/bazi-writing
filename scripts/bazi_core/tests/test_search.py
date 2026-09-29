@@ -88,3 +88,15 @@ def test_random_fill_is_seeded_and_fills_missing_fields() -> None:
     # 种子写进约束后再跑，结果相同（保存的约束可复现）
     again = search.search(a["constraints"], top=3)
     assert again["results"] == a["results"]
+
+
+def test_constraint_aliases_are_normalized() -> None:
+    """身强 认作 身旺；relations 的 day_branch 字符串包成列表（样例书实测 2026-09-25：字符串会被当成单字集合）。"""
+    cons = {"strength": {"value": "身强"}, "relations": [{"to": "甲", "day_branch": "六冲"}]}
+    search.normalize_constraints(cons)
+    assert cons["strength"]["value"] == "身旺"
+    assert cons["relations"][0]["day_branch"] == ["六冲"]
+    cons2 = {"strength": {"value": "身弱"}, "relations": [{"to": "甲", "day_branch": ["刑", "害"]}]}
+    search.normalize_constraints(cons2)
+    assert cons2["strength"]["value"] == "身弱" and cons2["relations"][0]["day_branch"] == ["刑", "害"]
+

@@ -10,7 +10,7 @@
 //                                                                       不给时按文件找同目录同名的人物档案 JSON（张三.读者本.md → 张三.json）读 setting.period；找不到就当不知道，照报
 //
 // 每条命中一行：{"file","line","col","term","group","level","context"}；最后一行汇总 {"summary":true,"files","errors","warns"}。
-// 只做子串匹配，不做分词：术语都是两字以上的固定搭配，误伤靠 warn 级与 --allow 兜住。
+// 只做子串匹配，不做分词：术语都是两字以上的固定搭配，误伤靠 warn 级、整词放行组（level ok：大运河、似水流年，长词盖住里面的术语、自己不报）与 --allow 兜住。
 "use strict";
 const fs = require("fs");
 const path = require("path");
@@ -93,8 +93,9 @@ function scanFile(file, terms) {
         const overlapped = covered.some(([s, e]) => col < e && end > s);
         if (!overlapped) {
           covered.push([col, end]);
-          hits.push({ file, line: idx + 1, col: col + 1, term, group, level,
-                      context: line.slice(Math.max(0, col - 12), end + 12) });
+          if (level !== "ok")  // 整词放行组只盖住里面的术语，自己不报
+            hits.push({ file, line: idx + 1, col: col + 1, term, group, level,
+                        context: line.slice(Math.max(0, col - 12), end + 12) });
         }
         from = end;
       }

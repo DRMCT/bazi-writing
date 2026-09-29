@@ -1,0 +1,7 @@
+{
+  "schema": "bazi-book-presence/v1",
+  "note": "章 → 故事年、地点、在场的人、这一章谁新知道了什么。写手不填，读稿代理从定稿抽，作者过目。JSON 为准，md 为投影。",
+  "chapters": [
+    { "chapter": 1, "year": 299, "place": "", "present": [], "learned": [{ "who": "", "what": "" }] }
+  ]
+}

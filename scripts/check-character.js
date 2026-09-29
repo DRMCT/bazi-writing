@@ -27,7 +27,7 @@ const path = require("path");
 
 const REQUIRED = ["性格表里", "童年事件", "谎言", "秘密", "需要与想要", "抵抗线", "亲密关系模式", "说话方式",
   "能力与漏洞", "意象系统", "他人眼中的他", "年表与两难", "阶段状态"];
-const STAGE_ASPECTS = ["性格", "价值观与喜好", "说话方式", "需要的得失", "亲密关系动静", "能力与漏洞", "关系变化"];
+const STAGE_ASPECTS = ["性格", "价值观与喜好", "说话方式", "需要的得失", "亲密关系动静", "能力与漏洞", "关系变化", "手里有什么"];  // 第八面（2026-09-26 处境层）：这十年他手里有什么可押，两难的两头只能从这里拿
 const LAYERED = ["说话方式", "能力与漏洞"];  // 底色加走向的段；性格表里只有表现层这一条分底色与走向
 const LAYERS = ["底色", "走向"];
 const BEAT_SECTION = "情绪过程";  // 可选段，写戏用：每条带 beat，是定论段
@@ -37,7 +37,7 @@ const NO_QUOTE_SECTIONS = [BEAT_SECTION, "说话方式", "口头禅与标志动�
 // 2026-09-25 废：卡上只要有一句可搬的话和一个可搬的动作，写手就每章搬一回；腔调在说话方式，身体习惯并进情绪过程的身体先动
 const DEPRECATED_SECTIONS = ["口头禅与标志动作", "语言习惯"];
 const SETTING_PERIODS = ["古代", "近代", "现代", "未来", "异世界"];
-const SETTING_KEYS = ["period", "world", "authority", "elders", "union", "inlaws", "path", "legacy", "money", "output"];
+const SETTING_KEYS = ["period", "world", "authority", "elders", "union", "inlaws", "path", "legacy", "money", "output", "rules"];  // rules 时代规矩（2026-09-26 处境层）：什么能做、什么会被罚、罚到哪、钱是什么数目；换一个模型核过现实再用
 
 function main() {
   const argv = process.argv.slice(2);

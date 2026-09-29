@@ -1,0 +1,7 @@
+{
+  "schema": "bazi-casting/v1",
+  "main": ["甲", "乙"],
+  "sub": [["甲", "丙"]],
+  "background": ["丁"],
+  "domainWeights": {"感情": 2, "六亲": 0.5}
+}

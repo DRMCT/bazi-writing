@@ -299,7 +299,20 @@ def _c_arc(ctx: Ctx, c: dict):
 
 
 # (名称, 成本档, 求值) ；成本档 0 为第一遍全算，1 为剪枝后才算
+def normalize_constraints(cons: dict) -> dict:
+    """写约束时顺手的两种写法折成正式写法（2026-09-25 样例书实测）：strength.value 的 身强 认作 身旺、身衰 认作 身弱；
+    relations[].day_branch 给成字符串时包成列表（否则被当成单字集合，六冲 会拆成 六 与 冲）。原地改，返回同一个 dict。"""
+    st = cons.get("strength")
+    if isinstance(st, dict):
+        st["value"] = {"身强": "身旺", "身衰": "身弱", "旺": "身旺", "弱": "身弱"}.get(st.get("value"), st.get("value"))
+    for r in cons.get("relations") or []:
+        if isinstance(r, dict) and isinstance(r.get("day_branch"), str):
+            r["day_branch"] = [r["day_branch"]]
+    return cons
+
+
 def build_items(cons: dict, charts_dir: Path) -> list[dict]:
+    normalize_constraints(cons)
     items: list[dict] = []
 
     def add(name: str, c: dict, fn, cost: int, want: str):

@@ -12,6 +12,7 @@
     tables/yunqi_body.json    → references/五运六气体质.md
     tables/yunqi_year.json    → references/五运六气年景.md
     tables/response_tendency.json → references/回应倾向.md
+    tables/drama_means.json   → references/手段与破法.md
 两种形态：单表 {format, title, intro, columns, rows, modifiers?}；多分表 {format, title, intro, sections:[{key, title, columns, rows}]}。
 rows 里列表值用"、"连接，anchors 为空写"无"。锚点对 references/校核/*.md 里所有 "### 卡号" 标题核对（滴天髓、神煞、格局、刑冲合害、长生纳音各卡）。
 用法：python scripts/build_narrative_md.py [--check]
@@ -39,6 +40,7 @@ TARGETS = {
     "yunqi_body.json": "五运六气体质.md",
     "yunqi_year.json": "五运六气年景.md",
     "response_tendency.json": "回应倾向.md",
+    "drama_means.json": "手段与破法.md",
 }
 
 

@@ -1,0 +1,10 @@
+{
+  "schema": "bazi-book-register/v1",
+  "note": "物件与句式登记：伏笔物件每次出现的章与方式（碰、觉出、提到）；反应层写法与比喻的首次出现章。上限由 书/主题.md 的装置表定，超了 check-prose 报。读稿代理从定稿抽，作者过目。",
+  "objects": [
+    { "id": "F001", "uses": [{ "chapter": 1, "how": "觉出" }] }
+  ],
+  "phrases": [
+    { "text": "", "kind": "比喻", "chapter": 1 }
+  ]
+}

@@ -57,9 +57,9 @@ def main() -> int:
     for d in t["domains"]:
         lines.append(f"| {d['name']} | {d['stake']} | {'、'.join(d['events'])} | {'、'.join(d['anchors']) or '无'} |")
     lines += ["", "## 两难怎么合成", "", t["compose"], "",
-              "## 两难模板精选（机制 × 主领域）", "", "| 机制 | 主领域 | 两难 | 常配的副领域 |", "|---|---|---|---|"]
+              "## 两难模板精选（机制 × 主领域）", "", "| 机制 | 主领域 | 形态 | 两头（只写方向，押什么按处境落） | 常配的副领域 |", "|---|---|---|---|---|"]
     for c in t["cells"]:
-        lines.append(f"| {c['mechanism']} | {c['domain']} | {c['dilemma']} | {'、'.join(c['sub'])} |")
+        lines.append(f"| {c['mechanism']} | {c['domain']} | {c['shape']} | {c['sides'][0]} ｜ {c['sides'][1]} | {'、'.join(c['sub'])} |")
     lines += ["", "未列的格按上面的合成规则临场写；写进人物档案时引年表的 L- 编号，本表不产生编号。", ""]
     DOC.write_text("\n".join(lines), encoding="utf-8")
     print(f"机制 {len(mech_names)}，领域 {len(dom_names)}，两难模板 {len(t['cells'])}，锚点缺卡 {len(missing)}")

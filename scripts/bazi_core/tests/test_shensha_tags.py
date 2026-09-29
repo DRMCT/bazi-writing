@@ -72,7 +72,7 @@ def test_terms_table_shape() -> None:
     t = json.loads(TERMS.read_text(encoding="utf-8"))
     seen: set[str] = set()
     for g in t["groups"]:
-        assert g["level"] in ("error", "warn")
+        assert g["level"] in ("error", "warn", "ok")
         for term in g["terms"]:
             assert len(term) >= 2, term  # 单字不进表
             assert term not in seen, term
@@ -102,3 +102,24 @@ def test_checker_positive_and_negative(tmp_path: Path) -> None:
     assert r.returncode == 0
     r = subprocess.run(["node", str(CHECKER), str(clean), "--expect-hits", "--summary"], capture_output=True, text=True, encoding="utf-8")
     assert r.returncode == 1
+
+
+def _terms_rows(path: Path, *extra: str) -> tuple[int, list[dict]]:
+    r = subprocess.run(["node", str(CHECKER), str(path), *extra], capture_output=True, text=True, encoding="utf-8")
+    return r.returncode, [json.loads(x) for x in r.stdout.strip().splitlines()]
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="需要 node")
+def test_checker_common_words_and_whole_word_pass(tmp_path: Path) -> None:
+    """古代题材的常用词不报 error：比肩、劫财、驿马、冠带是 warn；大运河、似水流年、沐浴更衣、司天监整词放行，一条不报。命理用法照旧 error。"""
+    old = tmp_path / "old.md"
+    old.write_text("他沿着大运河往南走了三天，驿马换了两回。\n似水流年，她早不记得那天穿的什么。\n论手艺，镇上没人能与他比肩。\n"
+                   "山道上有人劫财，她把钱袋塞进鞋里。\n她沐浴更衣，把冠带理正。\n司天监的人说今年雨水多。\n", encoding="utf-8")
+    code, rows = _terms_rows(old, "--period", "古代")
+    assert code == 0 and rows[-1]["errors"] == 0, rows
+    assert {h["term"] for h in rows if not h.get("summary")} == {"驿马", "比肩", "劫财", "冠带"}, rows
+    fate = tmp_path / "fate.md"
+    fate.write_text("这一年交了大运，司天在泉都对他不利，流年又冲了日支，冲提纲那年伏吟。\n", encoding="utf-8")
+    code, rows = _terms_rows(fate)
+    errs = {h["term"] for h in rows if not h.get("summary") and h["level"] == "error"}
+    assert code == 1 and {"大运", "司天", "在泉", "日支", "冲提纲", "伏吟"} <= errs, rows
