@@ -217,3 +217,23 @@ def test_setting_card_contract_render_and_period_aware_terms(tmp_path: Path) -> 
     assert src(modern_doc) == src(doc)
     assert problems(modern_doc) == []
     assert warns(path=EXAMPLE / "人物" / "沈砚.现代.读者本.md") == 0
+
+
+@pytest.mark.skipif(shutil.which("node") is None, reason="需要 node")
+def test_character_checker_flags_copy_from_examples(tmp_path: Path) -> None:
+    """照抄样例：别人的档案搬了样例的句子报出来；同名的人（重生成、测试拷贝）不比，--no-examples 关掉。"""
+    src = json.loads((EXAMPLE / "人物" / "沈砚.json").read_text(encoding="utf-8"))
+    doc = json.loads((ROOT / "examples" / "林昭" / "人物" / "林昭.json").read_text(encoding="utf-8"))
+    taken = next(t["text"] for s in src["sections"] if s["title"] == "性格表里" for t in s["traits"] if len(t["text"]) > 30)
+    doc["sections"][0]["traits"][0]["text"] = taken
+    p = tmp_path / "人物" / "林昭.json"
+    p.parent.mkdir()
+    p.write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
+    chart_arg = ["--chart", str(ROOT / "examples" / "林昭" / "命盘" / "林昭.json")]
+    run = lambda *extra: subprocess.run(["node", str(ROOT / "scripts" / "check-character.js"), str(p), *chart_arg, *extra],
+                                        capture_output=True, text=True, encoding="utf-8")
+    lines = [json.loads(x) for x in run().stdout.strip().splitlines()]
+    copies = [x for x in lines if "照抄样例" in x.get("problem", "")]
+    assert copies and all("沈砚" in x["problem"] for x in copies), copies
+    assert lines[-1]["exampleCopies"] == len(copies)
+    assert json.loads(run("--no-examples").stdout.strip().splitlines()[-1])["exampleCopies"] == 0

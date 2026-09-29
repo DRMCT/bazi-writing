@@ -20,10 +20,13 @@
 // 五运六气主次（DESIGN-命盘层 4 交感，2026-09-24-9）：命盘 yunqi.roles 按角色列 YQ- 编号（主干、体、主、用、改写、背景）；引了 YQ- 的特质
 // 至少要引到主干、体（岁运）或主（为纲的那一头）之一，不能只引背景与改写；命盘没有 roles（旧命盘）时不查。
 // 事件类编号（roles.事件：YQ-档-、YQ-病-、YQ-志-、YQ-上临-）是疾病与情志候选，写在年表与两难里，不受这条约束。
+// 照抄样例：档案里的文字与 examples/ 的样例档案做十字以上连串比对（人名折成一个字，连串不跨段）；规则表与 references/ 的写法说明里本来就有的串放行，
+// 同名的人（重生成同一个人、测试里的拷贝）与 examples/ 里的档案自身不比；--no-examples 不查。起草者读了样例会搬它的句架子，靶子实测过。
 // 每条问题一行 JSON {"file","section","trait","problem"}，最后一行汇总 {"summary":true,...}，有问题退出码 1。
 "use strict";
 const fs = require("fs");
 const path = require("path");
+const C = require("./book_common");
 
 const REQUIRED = ["性格表里", "童年事件", "谎言", "秘密", "需要与想要", "抵抗线", "亲密关系模式", "说话方式",
   "能力与漏洞", "意象系统", "他人眼中的他", "年表与两难", "阶段状态"];
@@ -37,11 +40,74 @@ const NO_QUOTE_SECTIONS = [BEAT_SECTION, "说话方式", "口头禅与标志动�
 // 2026-09-25 废：卡上只要有一句可搬的话和一个可搬的动作，写手就每章搬一回；腔调在说话方式，身体习惯并进情绪过程的身体先动
 const DEPRECATED_SECTIONS = ["口头禅与标志动作", "语言习惯"];
 const SETTING_PERIODS = ["古代", "近代", "现代", "未来", "异世界"];
+const SKILL_ROOT = path.join(__dirname, "..");
+const EXAMPLE_ARCHIVES = ["examples/林昭/人物/林昭.json", "examples/沈砚/人物/沈砚.json", "examples/沈砚/人物/沈砚.现代.json"];
+const EXAMPLE_NGRAM = 10;
 const SETTING_KEYS = ["period", "world", "authority", "elders", "union", "inlaws", "path", "legacy", "money", "output", "rules"];  // rules 时代规矩（2026-09-26 处境层）：什么能做、什么会被罚、罚到哪、钱是什么数目；换一个模型核过现实再用
+
+// 档案里起草者写的文字：段落特质的 text、阶段卡的 label；每行带一个位置标签。设定卡是派工给的，不比
+function archiveLines(doc) {
+  const lines = [], labels = [];
+  const put = (text, sec, label) => { for (const l of String(text).split(/\r?\n/)) { lines.push(l); labels.push([sec, label]); } };
+  for (const sec of Array.isArray(doc.sections) ? doc.sections : []) {
+    (sec.traits || []).forEach((t, i) => put(t.text || "", sec.title, `${sec.title}#${i + 1}`));
+    (sec.stages || []).forEach((st, j) => {
+      const card = `${sec.title}@${st.stage || j + 1}`;
+      put(st.label || "", sec.title, card);
+      (st.traits || []).forEach((t, i) => put(t.text || "", sec.title, `${card}#${i + 1}`));
+    });
+  }
+  return { text: lines.join("\n"), labels };
+}
+
+function allStrings(v, out = []) {
+  if (typeof v === "string") out.push(v);
+  else if (Array.isArray(v)) v.forEach(x => allStrings(x, out));
+  else if (v && typeof v === "object") Object.values(v).forEach(x => allStrings(x, out));
+  return out;
+}
+
+// 放行的串：规则表与写法说明里本来就有的（意象表的质地词、阶段卡的套语），起草者照表用不算搬样例
+function allowedGrams(n) {
+  const parts = [];
+  const tables = path.join(SKILL_ROOT, "scripts", "bazi_core", "tables");
+  for (const f of fs.readdirSync(tables)) if (f.endsWith(".json")) parts.push(allStrings(JSON.parse(fs.readFileSync(path.join(tables, f), "utf8"))).join("\n"));
+  const refs = path.join(SKILL_ROOT, "references");
+  for (const f of fs.readdirSync(refs)) if (f.endsWith(".md")) parts.push(fs.readFileSync(path.join(refs, f), "utf8"));
+  parts.push(fs.readFileSync(path.join(refs, "用法", "写档案.md"), "utf8"));
+  const norm = C.normalize(parts.join("\n"));
+  const set = new Set();
+  for (let i = 0; i + n <= norm.chars.length; i++) set.add(norm.str.slice(i, i + n));
+  return set;
+}
+
+function exampleCopies(file, doc) {
+  const exDir = path.resolve(SKILL_ROOT, "examples");
+  if (path.resolve(file).startsWith(exDir + path.sep)) return [];
+  const examples = EXAMPLE_ARCHIVES.map(rel => path.join(SKILL_ROOT, rel)).filter(p => fs.existsSync(p))
+    .map(p => ({ rel: path.relative(SKILL_ROOT, p).split(path.sep).join("/"), doc: JSON.parse(fs.readFileSync(p, "utf8")) }))
+    .filter(e => e.doc.name !== doc.name);
+  if (!examples.length) return [];
+  const names = [doc.name, ...examples.map(e => e.doc.name)].filter(Boolean);
+  const own = archiveLines(doc);
+  const target = C.normalize(own.text, names);
+  const allow = allowedGrams(EXAMPLE_NGRAM);
+  const out = [];
+  for (const e of examples) {
+    const src = C.normalize(archiveLines(e.doc).text, names);
+    const index = C.gramIndex(src, EXAMPLE_NGRAM, e.rel);
+    for (const g of [...index.keys()]) if (allow.has(g)) index.delete(g);
+    for (const run of C.findRuns(target, index, EXAMPLE_NGRAM, new Map([[e.rel, src]]))) {
+      const [sec, label] = own.labels[target.pos[run.start].line - 1];
+      out.push({ sec, label, text: C.excerpt(target, run.start, run.end), from: e.rel, len: run.end - run.start });
+    }
+  }
+  return out;
+}
 
 function main() {
   const argv = process.argv.slice(2);
-  let chartPath = null, matrixPath = null, timelinePath = null, schedulePath = null, runPath = null, summaryOnly = false;
+  let chartPath = null, matrixPath = null, timelinePath = null, schedulePath = null, runPath = null, summaryOnly = false, noExamples = false;
   const files = [];
   for (let i = 0; i < argv.length; i++) {
     if (argv[i] === "--chart") chartPath = argv[++i];
@@ -50,10 +116,11 @@ function main() {
     else if (argv[i] === "--schedule") schedulePath = argv[++i];
     else if (argv[i] === "--run") runPath = argv[++i];
     else if (argv[i] === "--summary") summaryOnly = true;
+    else if (argv[i] === "--no-examples") noExamples = true;
     else files.push(argv[i]);
   }
   if (files.length !== 1) {
-    console.error("用法：node scripts/check-character.js <人物档案.json> [--chart 命盘.json] [--matrix 矩阵.json] [--timeline 年表.json] [--schedule 日程.json] [--summary]");
+    console.error("用法：node scripts/check-character.js <人物档案.json> [--chart 命盘.json] [--matrix 矩阵.json] [--timeline 年表.json] [--schedule 日程.json] [--run 推演.json] [--no-examples] [--summary]");
     process.exit(2);
   }
   const file = files[0];
@@ -244,8 +311,10 @@ function main() {
       trends += trend;
     }
   }
+  const copies = noExamples ? [] : exampleCopies(file, doc);
+  for (const c of copies) report(c.sec, c.label, `照抄样例：与 ${c.from} 连串重合 ${c.len} 字（阈值 ${EXAMPLE_NGRAM}）：${c.text}；用他自己的盘和自己的话写，不借样例的句架子`);
   if (!summaryOnly) for (const p of problems) console.log(JSON.stringify(p));
-  console.log(JSON.stringify({ summary: true, file, sections: sections.length, traits, sourced, stages, trends, problems: problems.length, featureIds: ids.size,
+  console.log(JSON.stringify({ summary: true, file, sections: sections.length, traits, sourced, stages, trends, problems: problems.length, exampleCopies: copies.length, featureIds: ids.size,
     period: doc.setting && doc.setting.period || null }));
   process.exit(problems.length ? 1 : 0);
 }
