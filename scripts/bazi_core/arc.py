@@ -1,6 +1,6 @@
-"""弧光走势（DESIGN 11）：岁运顺逆分、故事时间窗重采样为起承转合四段、六个模板匹配、转折点约束。
+"""弧光走势（DESIGN-命盘层 7）：岁运顺逆分、故事时间窗重采样为起承转合四段、六个模板匹配、转折点约束。
 
-v1 启发式，确定性、可解释：每步大运给出分数和逐项来由。权重取 DESIGN 11.2 表的初值，用喜闲忌按
+v1 启发式，确定性、可解释：每步大运给出分数和逐项来由。权重取 DESIGN-命盘层 7.2 表的初值，用喜闲忌按
 yongshen 的 preference 连续化：天干 0.4×p、地支本气 0.6×p（p：用 1、喜 0.5、闲 ±0.25、仇 -0.5、忌 -1），
 表里"用 +0.4、喜 +0.2、闲 0、忌 -0.4"是 p 取 1、0.5、0、-1 的特例；仇神与偏喜偏忌的闲神是本模块补的两档。
 
@@ -267,7 +267,7 @@ def analyze(pillars: dict, steps: list[dict], window: tuple[float, float], ys: d
     vec = resample(scored, window)
     rank = ranking(vec)
     out = {
-        "algorithm": "bazi-writing arc v1（DESIGN 11，权重初值）",
+        "algorithm": "bazi-writing arc v1（DESIGN-命盘层 7，权重初值）",
         "window": list(window),
         "yong": ys["yong"],
         "steps": [s for s in scored if s["endAge"] > window[0] and s["startAge"] < window[1]],

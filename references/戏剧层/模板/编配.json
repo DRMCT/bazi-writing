@@ -1,7 +1,13 @@
 {
-  "schema": "bazi-casting/v1",
+  "schema": "bazi-casting/v2",
   "main": ["甲", "乙"],
   "sub": [["甲", "丙"]],
   "background": ["丁"],
-  "domainWeights": {"感情": 2, "六亲": 0.5}
+  "domainWeights": {"感情": 2, "六亲": 0.5},
+  "timescale": "长跨度",
+  "breakers": [{"who": "乙", "by": "别人当面"}, {"who": "丙", "by": "物证"}],
+  "families": [["甲", "丁"]],
+  "defaultFate": [{"who": "丙", "year": 2008, "reveal": "传闻", "part": "一", "outcome": "应验"}, {"who": "乙", "year": 2012, "reveal": "旁人判断", "part": "二", "outcome": "改", "spill": "丙"}],
+  "calendar": [{"name": "年节", "month": 1, "who": ["甲", "乙", "丁"]}],
+  "objects": [{"name": "旧物", "holder": "丁", "passes": [{"year": 2005, "to": "甲"}], "recognized": {"year": 2012, "by": "乙"}}]
 }

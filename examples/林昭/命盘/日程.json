@@ -1,6 +1,6 @@
 {
   "schema": "bazi-schedule/v1",
-  "algorithm": "bazi-writing schedule v1（DESIGN 10 第 4 条）",
+  "algorithm": "bazi-writing schedule v1（DESIGN-戏剧层 7.3）",
   "window": [
     324,
     346

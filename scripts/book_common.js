@@ -1,4 +1,4 @@
-// 写作层检查器的公共部分（DESIGN-写作层 第 8 节）：书目录推断、markdown 解析、轮廓与阈值、主题的装置表与白名单、
+// 写作层检查器的公共部分（DESIGN-写作层 第 10 节）：书目录推断、markdown 解析、轮廓与阈值、主题的装置表与白名单、
 // 编号池、人名与生年、n-gram 连串比对、叙述与对白的分开。零依赖，check-plan.js 与 check-prose.js 共用。
 "use strict";
 const fs = require("fs");
@@ -134,7 +134,7 @@ function loadProfile({ themeDoc = null, styleDoc = null, name = null } = {}) {
     threadIdle: { ...base.threadIdle },
     reviewEvery: base.reviewEvery,
     borrowWords: table.borrowWords,
-    expect: base.expect ? { ...base.expect } : null,  // 期待账（DESIGN-写作层 3c）
+    expect: base.expect ? { ...base.expect } : null,  // 期待账（DESIGN-写作层 4）
     rhythm: base.rhythm ? { ...base.rhythm } : null,
     scales: table.scales || [],
     hookKinds: table.hookKinds || [],

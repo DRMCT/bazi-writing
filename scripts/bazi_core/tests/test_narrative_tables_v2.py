@@ -189,7 +189,7 @@ def test_schedule_and_checker(tmp_path: Path) -> None:
 
 
 def test_lover_star_set_by_author_follows_family_not_gender():
-    # DESIGN 7.3：亲密关系星由作者在排盘时指定（--lover-star），写进命盘顶层 loverStar；条件跟家族走，年表与阶段卡读同一处
+    # DESIGN-人物层 6：亲密关系星由作者在排盘时指定（--lover-star），写进命盘顶层 loverStar；条件跟家族走，年表与阶段卡读同一处
     from bazi_core import stagecard, timeline
     d = chart.chart_from_pillars("丙午", "壬辰", "辛酉", "丁亥", "female", story_epoch=310, name="甲")
     a = chart.chart_from_pillars("丙午", "壬辰", "辛酉", "丁亥", "female", story_epoch=310, name="甲", lover_star="财")

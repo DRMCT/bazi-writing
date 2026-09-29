@@ -5,9 +5,9 @@
     python scripts/build_tiaohou.py --check    → 只打印报告，不写表
 
 半自动：能解析的进结构字段，解析不了的碎片原样落在 notes 与报告里，由人核。
-每条带 source 指向卡号，没有卡的条目不允许进表（DESIGN 7.2）。
+每条带 source 指向卡号，没有卡的条目不允许进表（DESIGN-命盘层 3.2）。
 
-条目形态（DESIGN 17 待定项 2026-09-22 定）：
+条目形态（2026-09-22 定）：
     primary      主序。列表，每项 {stems:[...], period:{label,boundary,side}|null}。
                  stems 里一个位次可有多个候选（如「壬癸」），写成 [["壬","癸"]]。
     conditional  条件用神。{stems, kind, when(原文条件), tags(粗标签)}。

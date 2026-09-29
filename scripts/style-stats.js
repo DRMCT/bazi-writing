@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 文体量尺（DESIGN-写作层 3b 叙述层）：对师承文本逐章、或对一章稿子，算同一组数。零依赖，JSON 一行一条，最后一行汇总。
+// 文体量尺（DESIGN-写作层 3.2 叙述层）：对师承文本逐章、或对一章稿子，算同一组数。零依赖，JSON 一行一条，最后一行汇总。
 //
 //   node scripts/style-stats.js 书/师承/{书名}.txt                    逐章一行 JSON，末行汇总（各项的中位数与范围）
 //   node scripts/style-stats.js 书/师承/{书名}.txt --md               markdown 表，给汇总代理读

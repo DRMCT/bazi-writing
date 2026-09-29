@@ -85,7 +85,7 @@ def test_checker_accepts_timeline_ids(tmp_path: Path) -> None:
 
 
 def test_illness_candidate_only_on_body_mind_years() -> None:
-    """身心域被引动的年份挂 L-…-病候（DESIGN 7.4 病秧子问题）：三层写在一条里；其余年份不挂；旧命盘没有 events 不挂。"""
+    """身心域被引动的年份挂 L-…-病候（DESIGN-命盘层 4 病秧子问题）：三层写在一条里；其余年份不挂；旧命盘没有 events 不挂。"""
     import json as _json
     from bazi_core import chart, timeline
     c = chart.chart_from_pillars("甲申", "壬申", "乙巳", "戊寅", "male", story_epoch=300, name="沈砚")

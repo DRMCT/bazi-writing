@@ -8,7 +8,7 @@
     python scripts/calibrate_yongshen.py rules   → 规则开关逐组合比较两路一致率
     python scripts/calibrate_yongshen.py report  → 写 references/校核/用神_例盘报告.md（calibration/ 不入库，报告自成一体）
 
-两路标准（与旺衰校准同法，DESIGN 6.4）：徐评例盘是古籍标准，但徐在八格章里说的"用神"常指格局用神（月令之神），
+两路标准（与旺衰校准同法，DESIGN-命盘层 2.4）：徐评例盘是古籍标准，但徐在八格章里说的"用神"常指格局用神（月令之神），
 与本模块要的扶抑用神不全是一回事，穷通例盘则多是调候表本身；随机样本走 Fable 子代理独立判定，作现代标准。
 
 金标准的抽法：夹具的徐评（子平）与按语、判词（穷通）里，找"用神在X""以X为用""取X为用""用X"一类句子，
@@ -332,7 +332,7 @@ def cmd_report() -> int:
     samples = {x["id"]: x for x in json.loads((OUT / "samples.json").read_text(encoding="utf-8"))}
     verdicts = _load_verdicts()
     L = ["# 用神判定校准报告", "",
-         "由 `scripts/calibrate_yongshen.py report` 生成。模块 scripts/bazi_core/yongshen.py，口径见 DESIGN 6.5。", ""]
+         "由 `scripts/calibrate_yongshen.py report` 生成。模块 scripts/bazi_core/yongshen.py，口径见 DESIGN-命盘层 2.5。", ""]
     L += ["## 规则开关", "", "| 开关 | 现值 |", "|---|---|"]
     for k, v in yongshen.RULES.items():
         L.append(f"| {k} | {'开' if v else '关'} |")

@@ -1,6 +1,6 @@
 {
   "schema": "bazi-stagecard/v1",
-  "algorithm": "bazi-writing stagecard v1（DESIGN 10 第 6 条前半；表 stage_overlay.json）",
+  "algorithm": "bazi-writing stagecard v1（DESIGN-人物层 8 前半；表 stage_overlay.json）",
   "name": "对照",
   "window": [
     24,

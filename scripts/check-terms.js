@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 去术语检查（DESIGN 第 13 节）：对文件或目录扫词表 bazi_core/tables/terms.json，输出 JSON 行，有 error 级命中则退出码 1。
+// 去术语检查（DESIGN-人物层 第 10 节）：对文件或目录扫词表 bazi_core/tables/terms.json，输出 JSON 行，有 error 级命中则退出码 1。
 //
 //   node scripts/check-terms.js 人物/ 设定/角色/            扫目录（.md .txt .json）
 //   node scripts/check-terms.js 人物/张三.md --allow 桃花 --allow 丙寅   放行个别词（历史题材的纪年、意象里的桃花）

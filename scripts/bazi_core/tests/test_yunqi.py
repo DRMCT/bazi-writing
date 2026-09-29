@@ -1,4 +1,4 @@
-"""五运六气（yunqi 模块，DESIGN 7.1、8.1）。
+"""五运六气（yunqi 模块，DESIGN-命盘层 3.1、DESIGN-人物层 1）。
 
 - 六十年年关系对手录夹具 fixtures/wuyun_relations_60.json（天符 12、岁会 8、兼 4、同天符 6、同岁会 6、平气 15、客主加临、君臣）；
 - 现实历：交气按大寒起每 60°，运气年以大寒为岁首，大寒到立春之间生的人运气年干支与年柱不同；
@@ -112,7 +112,7 @@ def test_sample_chart_section_and_features() -> None:
     assert y["stepRelation"]["relation"] == "主生客" and y["relations"]["yunVsSiTian"] == "天生运"
     assert y["relations"]["yunVsZaiQuan"] == "泉克运" and y["relations"]["yunVsStep"] == "运生气"
     ids = [f["id"] for f in y["features"]]
-    # 主次：年主干 → 运为体 → 纲气为主 → 当步为用 → 修正为改写（运与纲、运与当步、加临）→ 另一头作背景（运与另一头、另一头本身）（DESIGN 7.4 交感）
+    # 主次：年主干 → 运为体 → 纲气为主 → 当步为用 → 修正为改写（运与纲、运与当步、加临）→ 另一头作背景（运与另一头、另一头本身）（DESIGN-命盘层 4 交感）
     assert ids == ["YQ-年-甲申", "YQ-岁运-土运太过", "YQ-在泉-厥阴风木", "YQ-气-四之气-阳明燥金", "YQ-运泉-泉克运", "YQ-运步-运生气", "YQ-加临-主生客",
                    "YQ-运天-天生运", "YQ-司天-少阳相火", "YQ-档-显", "YQ-病-肾", "YQ-志-郁"]
     assert y["roles"] == {"主干": ["YQ-年-甲申"], "体": ["YQ-岁运-土运太过"], "主": ["YQ-在泉-厥阴风木"], "用": ["YQ-气-四之气-阳明燥金"],
@@ -169,7 +169,7 @@ def test_sample_chart_section_and_features() -> None:
 
 
 def test_grade_distribution_and_story_year_qi() -> None:
-    """严重档按经文分：六十年乘上下半年，和过半、危最少（DESIGN 7.4 病秧子问题）；平气→和，太过天符→危，岁会→显。"""
+    """严重档按经文分：六十年乘上下半年，和过半、危最少（DESIGN-命盘层 4 病秧子问题）；平气→和，太过天符→危，岁会→显。"""
     from collections import Counter
     cnt: Counter = Counter()
     for gz in ALL:

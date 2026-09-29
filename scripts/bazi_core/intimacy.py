@@ -1,11 +1,11 @@
-"""日支亲密关系：查表层（DESIGN 8.1 亲密关系模式取日支与亲密关系星）。
+"""日支亲密关系：查表层（DESIGN-人物层 1 亲密关系模式取日支与亲密关系星）。
 
 表在 tables/rizhi_intimacy.json（narrative-table/v1，三张分表）：日支本气十神一行、日支地支一行、修正项若干。
 for_chart 按命盘事实求值：十神行与地支行必中各一，修正项按 cond 码逐条判，命中的进 modifiers。
 条件码：day_branch_yong / day_branch_ji（日支本气五行在五神里的位置）、day_branch_clashed / combined / xing / hai（命局内
 他支对日支的六冲、六合、刑或自刑、害）、day_branch_empty（日支旬空）、day_branch_taohua（日支坐桃花或红艳）、
 lover_star_absent / multi / clean / muddy（亲密关系星：命盘顶层 loverStar，排盘时 --lover-star 指定，默认男取财、女取官杀，
-DESIGN 7.3）、jie_heavy_cai_light（亲密关系星为财时判，传统男命）、female_guan_sha_mixed（亲密关系星为官杀时判，传统女命）、day_stem_he。
+DESIGN-人物层 6）、jie_heavy_cai_light（亲密关系星为财时判，传统男命）、female_guan_sha_mixed（亲密关系星为官杀时判，传统女命）、day_stem_he。
 条件按亲密关系星的家族判，不按性别：作者把一个角色的亲密关系星改成别的家族，财清财浊一类条件跟着家族走。
 编号前缀 IN：IN-十神-{十神}、IN-支-{地支}、IN-{cond}。叙事各栏自起草，锚点指向校核卡，人物档案引编号时在 note 注明自起草。
 """
@@ -28,7 +28,7 @@ _MODS = {r["cond"]: r for r in _SEC["modifiers"]["rows"]}
 _FAM = {"比肩": "比劫", "劫财": "比劫", "食神": "食伤", "伤官": "食伤", "正财": "财", "偏财": "财",
         "正官": "官杀", "七杀": "官杀", "正印": "印", "偏印": "印"}
 _KEYS = ("year", "month", "day", "hour")
-LOVER_FAMILY = {"male": "财", "female": "官杀"}  # 传统默认（DESIGN 7.3）
+LOVER_FAMILY = {"male": "财", "female": "官杀"}  # 传统默认（DESIGN-人物层 6）
 FAMILY_GODS = {"财": ("正财", "偏财"), "官杀": ("正官", "七杀"), "食伤": ("食神", "伤官"), "印": ("正印", "偏印"), "比劫": ("比肩", "劫财")}
 FAMILIES = tuple(FAMILY_GODS)
 

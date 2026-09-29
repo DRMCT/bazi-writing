@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""人物档案 → story 套装（oh-story 的 story-long-write / story-short-write）的设定文件。DESIGN 3.3 导出器，M7。
+"""人物档案 → story 套装（oh-story 的 story-long-write / story-short-write）的设定文件。DESIGN-人物层 9 导出器，M7。
 
     python scripts/export_story.py 人物/林昭.json 人物/沈砚.json --target story-long --out ../书名 --main 林昭
     python scripts/export_story.py 人物/林昭.json 人物/沈砚.json --target story-short --out ../短篇标题
@@ -9,7 +9,7 @@ story-long 写三样（长篇项目根 `--out` 下）：
     设定/角色/{角色}.md      主角卡或配角卡（character-basics.md 的字段），后接三层标签、动机链、语言风格档案（七维）、
                              人物弧线（阶段卡）、关键节点与两难、亲密关系模式、别人眼里的他；literary 轮廓另有意象与视角
     设定/关系.md             artifact-protocols.md 的关系总览表、关系演变、核心冲突关系；关系类型按矩阵边映射成
-                             冲突型 / 联盟型 / 亲密型 / 权威型（DESIGN 9：映射是导出器的事）
+                             冲突型 / 联盟型 / 亲密型 / 权威型（DESIGN-命盘层 6：映射是导出器的事）
     设定/来源/bazi-writing.md  指向 命盘/ 与 人物/ 的说明。放子目录是因为 story 的提交钩子把 设定/ 直属的散文件当角色卡查"姓名"字段
 story-short 只写一样：`--out` 下的 设定.md 里 `<!-- bazi-writing:start -->` 到 `<!-- bazi-writing:end -->` 之间的一段
 （人设加关系表），文件已有就只换这一段，没有就建一个；短篇的设定.md 是单文件，其余段落是作者的。

@@ -25,7 +25,7 @@ def main() -> int:
              f"生成：{date.today().isoformat()}，来源 `scripts/bazi_core/tables/shensha_tags.json`（{len(t['entries'])} 种神煞、{n} 个变体）。",
              "", "用途：人物档案「特色标签」的取材。命盘层由 `shensha_tags.for_chart` 按落柱、十二宫、同柱神煞、旬空、六冲、十神、性别、重数求值，"
              "命中的变体带编号进人物档案作溯源。「古籍判词」逐字取自校核卡的位置变体栏（出处随之）；「叙事标签」是自起草的译法，不是古籍原意，"
-             "可反用、可弱化，作者是天。没有古籍判词的条目出自 DESIGN 附录 B。", "",
+             "可反用、可弱化，作者是天。没有古籍判词的条目出自 DESIGN-命盘层 附录 A。", "",
              "条件写法：" + "；".join(f"{k} = {v}" for k, v in t["conditionVocabulary"].items()), ""]
     for e in t["entries"]:
         lines += [f"## {e['shensha']}", "", f"核心用法：{e['core']}", "",

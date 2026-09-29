@@ -183,7 +183,7 @@ def _geju(pillars: dict) -> dict:
 def enrich(pillars: dict, instant_utc: datetime | None = None, gender: str | None = None, lover_family: str | None = None,
            yunqi_step: str | int | None = None) -> dict:
     """刑沖合害、神煞、調候：均為查表，狀態隨各模塊標注。調候按出生時刻定節氣段，架空歷無時刻則取中氣後一段。
-    用神由旺衰與調候合成（yongshen 模塊，自起草，按徐評例盤與子代理判定校準）。lover_family 是親密關係星的家族（DESIGN 7.3），不給則按性別默認。
+    用神由旺衰與調候合成（yongshen 模塊，自起草，按徐評例盤與子代理判定校準）。lover_family 是親密關係星的家族（DESIGN-人物层 6），不給則按性別默認。
     yunqi_step 只在架空歷用：出生所值之氣的步（初之氣…終之氣、次年初之氣、1–6），不給則按月支取（yunqi 模塊）。"""
     th = tiaohou_mod.present_in_chart(pillars, pillars["day"][0], pillars["month"][1], instant_utc)
     st = strength_mod.assess(pillars)
@@ -198,16 +198,16 @@ def enrich(pillars: dict, instant_utc: datetime | None = None, gender: str | Non
         "yongshen": ys,
         "changsheng": changsheng_mod.for_chart(pillars),
         "geju": _geju(pillars),
-        # 三张自起草叙事表的查表结果（DESIGN 7.1、8.1）：亲密关系模式、意象系统；谎言候选要年表机制，在 chart 装好后挂
+        # 三张自起草叙事表的查表结果（DESIGN-人物层 2、1）：亲密关系模式、意象系统；谎言候选要年表机制，在 chart 装好后挂
         "intimacy": intimacy_mod.for_chart(pillars, gender, ys, lover_family),
         "imagery": imagery_mod.for_chart(pillars, ys, ss),
-        # 五运六气（DESIGN 7.1、8.1）：生年运气盘面与出生所值之气，体质表查表，编号 YQ-
+        # 五运六气（DESIGN-命盘层 3.1、DESIGN-人物层 1）：生年运气盘面与出生所值之气，体质表查表，编号 YQ-
         "yunqi": yunqi_mod.for_chart(pillars, instant_utc, ys, yunqi_step),
     }
 
 
 def _yun_scores(chart: dict) -> list[dict]:
-    """每步大運的順逆分（DESIGN 11.2，arc 模塊），供弧光與年表用。"""
+    """每步大運的順逆分（DESIGN-命盘层 7.2，arc 模塊），供弧光與年表用。"""
     return [{"sequence": s["sequence"], "pillar": s["pillar"], "score": s["score"], "terms": s["terms"], "flags": s["flags"]}
             for s in arc_mod.dayun_scores(chart["fourPillars"], chart["dayun"]["steps"], chart["yongshen"])]
 
@@ -337,7 +337,7 @@ def chart_from_civil(
     name: str | None = None,
     lover_star: str | None = None,
 ) -> dict:
-    """lover_star：親密關係星的家族（財、官殺、食傷、印、比劫），不給則按性別取傳統默認（DESIGN 7.3）。"""
+    """lover_star：親密關係星的家族（財、官殺、食傷、印、比劫），不給則按性別取傳統默認（DESIGN-人物层 6）。"""
     fp = four_pillars(local_dt, longitude_deg, apply_true_solar)
     pillars = fp["pillars"]
     instant_utc = local_dt.astimezone(timezone.utc)
@@ -432,7 +432,7 @@ def _main(argv: list[str]) -> int:
     ap.add_argument("--epoch", type=int, default=None, help="架空：出生所在故事紀年")
     ap.add_argument("--gender", choices=["male", "female"], default=None)
     ap.add_argument("--lover-star", choices=list(intimacy_mod.FAMILIES), default=None,
-                    help="親密關係星取哪一組十神（DESIGN 7.3）；不給則男取財、女取官殺")
+                    help="親密關係星取哪一組十神（DESIGN-人物层 6）；不給則男取財、女取官殺")
     ap.add_argument("--yunqi-step", default=None,
                     help="架空：出生所值之氣（初之氣…終之氣、次年初之氣、或 1–6）；跨中氣的月支按月支定不出那一步時給")
     ap.add_argument("--name", default=None)

@@ -1,6 +1,6 @@
 {
   "schema": "bazi-book-tics/v1",
-  "note": "叙述层的量尺词表（DESIGN-写作层 3b，2026-09-26）。style-stats 与 check-prose 读它：body 是身体部位词，算体感密度（每千字几个）；simile 是比喻引导词；voice 是叙述者的语气词与评价副词，算叙述者腔调的密度（师承对照用，不报）；tics 是套话模式，check-prose 命中按 level 报；freeze 是定格式收尾（末段短、落在一个手势上）。词表是 2026-09-26 初版。 negationCompounds 是句尾否定不算的复合词与成语（2026-09-26 作者质疑量尺数出的师承 11% 句尾否定，重数后叙述句里真以否定动词收尾的只有 3% 到 9%，粗尺把不适应、不错、信不信一类都算进去了；严口径见 book_common.tailNegation）。",
+  "note": "叙述层的量尺词表（DESIGN-写作层 3.2，2026-09-26）。style-stats 与 check-prose 读它：body 是身体部位词，算体感密度（每千字几个）；simile 是比喻引导词；voice 是叙述者的语气词与评价副词，算叙述者腔调的密度（师承对照用，不报）；tics 是套话模式，check-prose 命中按 level 报；freeze 是定格式收尾（末段短、落在一个手势上）。词表是 2026-09-26 初版。 negationCompounds 是句尾否定不算的复合词与成语（2026-09-26 作者质疑量尺数出的师承 11% 句尾否定，重数后叙述句里真以否定动词收尾的只有 3% 到 9%，粗尺把不适应、不错、信不信一类都算进去了；严口径见 book_common.tailNegation）。",
   "body": [
     "嗓子",
     "喉头",

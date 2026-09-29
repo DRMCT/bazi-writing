@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""换盘测试骨架（DESIGN 13、15）：两份人物档案的差异度，按溯源编号集合与特质文本两路算。
+"""换盘测试骨架（DESIGN-人物层 10）：两份人物档案的差异度，按溯源编号集合与特质文本两路算。
 
     python scripts/check_divergence.py 人物/甲.json 人物/乙.json [--threshold 0.6] [--summary]
 

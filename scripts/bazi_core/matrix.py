@@ -1,4 +1,4 @@
-"""多人矩阵（DESIGN 9）：几张命盘档案 → 有向邻接表，每条边带溯源编号。
+"""多人矩阵（DESIGN-命盘层 6）：几张命盘档案 → 有向邻接表，每条边带溯源编号。
 
 每条有向边 A→B：
 - 十神：A 的日主看 B 的日主是什么十神（"他眼里的我"反过来就是 B→A 那条边）；
@@ -33,7 +33,7 @@ _ROWS = {r["tenGod"]: r for r in _RT["rows"]}
 
 
 def draft(A: str, B: str, g: str, role: str, pp: dict, da: str, db: str, sync: list[dict], split: list[dict]) -> tuple[str, list[str]]:
-    """边的注释草稿（DESIGN 9，2026-09-24-11）：A 眼里的 B。回应倾向表给这条边上 B 对 A 是什么、A 需要还是受不了、偏向哪边；
+    """边的注释草稿（DESIGN-命盘层 6，2026-09-24-11）：A 眼里的 B。回应倾向表给这条边上 B 对 A 是什么、A 需要还是受不了、偏向哪边；
     日柱与岁运同步照事实写。模型改写进人物档案"他人眼中的他"，引 draftIds。"""
     row = _ROWS[g]
     ids = [f"E-{A}-{B}-十神-{g}", f"E-{A}-{B}-用忌-{role[0]}"]
@@ -161,7 +161,7 @@ def build(charts: list[dict], span: int = 80) -> dict:
     ids = [f["id"] for f in feats]
     if len(ids) != len(set(ids)):
         raise ValueError("矩阵编号重复")
-    return {"schema": SCHEMA, "algorithm": "bazi-writing matrix v1（DESIGN 9）",
+    return {"schema": SCHEMA, "algorithm": "bazi-writing matrix v1（DESIGN-命盘层 6）",
             "nodes": [{k: v for k, v in n.items() if k != "steps"} for n in nodes],
             "edges": edges, "features": feats}
 

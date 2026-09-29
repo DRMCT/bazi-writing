@@ -1,4 +1,4 @@
-"""配角日程与交汇点（DESIGN 10 第 4 条、8.2"配角自有日程"）：几个角色在同一段故事年份里各自经历什么，哪几年交汇。
+"""配角日程与交汇点（DESIGN-戏剧层 7.3、DESIGN-人物层 3"配角自有日程"）：几个角色在同一段故事年份里各自经历什么，哪几年交汇。
 
 每年跑一次群像快照（ensemble.snapshot）：每人当年的岁数、流年、大运基调、关键机制、领域、是否候选年份（timeline._is_candidate），
 以及被引动的边。交汇点：某一年的边有当年才有的引动原因（同年引动、五行临身、日柱引动）且两端至少一人是候选年份，
@@ -95,7 +95,7 @@ def build(charts: list[dict], window: tuple[int, int], main: str | None = None) 
                            "snapshotIds": [i for e2 in snap["edges"] if {e2["from"], e2["to"]} == set(key) for i in e2["ids"]],
                            "domains": {n: rows[n]["domains"] for n in key}})
             feats.append({"id": fid, "text": text})
-    return {"schema": SCHEMA, "algorithm": "bazi-writing schedule v1（DESIGN 10 第 4 条）", "window": [a, b], "main": main,
+    return {"schema": SCHEMA, "algorithm": "bazi-writing schedule v1（DESIGN-戏剧层 7.3）", "window": [a, b], "main": main,
             "people": [people[n] for n in names], "grid": grid, "intersections": inters, "features": feats}
 
 

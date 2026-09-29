@@ -47,7 +47,7 @@ def main() -> int:
         if c["mechanism"] not in mech_names or c["domain"] not in dom_names or any(s not in dom_names for s in c["sub"]):
             print("cell 名字错：", c); return 1
     lines = ["# 岁运事件类型表", "",
-             "机制说怎么发生，领域说赌注是什么（DESIGN 第 10 节）。机制名与年表脚本（bazi_core/timeline.py）输出的一致，领域名与其九领域一致；"
+             "机制说怎么发生，领域说赌注是什么（DESIGN-命盘层 第 5 节）。机制名与年表脚本（bazi_core/timeline.py）输出的一致，领域名与其九领域一致；"
              "年表每年给出的机制与领域编号（L-…-机制、L-…-域-领域）对着本表读。形态、赌注、两难模板三栏是自起草的叙事映射；"
              "锚点指向 references/校核/滴天髓_*.md 的卡号，只作古籍旁证。源文件 scripts/bazi_core/tables/suiyun_events.json，由 build_suiyun_md.py 生成本文。", "",
              "## 机制轴", "", "| 机制 | 怎么算的 | 形态（自起草） | 节奏 | 古籍锚点 |", "|---|---|---|---|---|"]
@@ -56,12 +56,12 @@ def main() -> int:
     lines += ["", "## 领域轴", "", "| 领域 | 赌注 | 常见事件类型（自起草） | 古籍锚点 |", "|---|---|---|---|"]
     for d in t["domains"]:
         lines.append(f"| {d['name']} | {d['stake']} | {'、'.join(d['events'])} | {'、'.join(d['anchors']) or '无'} |")
-    lines += ["", "## 两难怎么合成", "", t["compose"], "",
+    lines += ["", "## 两难怎么合成", "", t["compose"], "", "## 两难给谁", "", t["use"], "",
               "## 两难模板精选（机制 × 主领域）", "", "| 机制 | 主领域 | 形态 | 两头（只写方向，押什么按处境落） | 常配的副领域 |", "|---|---|---|---|---|"]
     for c in t["cells"]:
         lines.append(f"| {c['mechanism']} | {c['domain']} | {c['shape']} | {c['sides'][0]} ｜ {c['sides'][1]} | {'、'.join(c['sub'])} |")
     lines += ["", "未列的格按上面的合成规则临场写；写进人物档案时引年表的 L- 编号，本表不产生编号。", ""]
-    DOC.write_text("\n".join(lines), encoding="utf-8")
+    DOC.write_text("\n".join(lines), encoding="utf-8", newline="\n")
     print(f"机制 {len(mech_names)}，领域 {len(dom_names)}，两难模板 {len(t['cells'])}，锚点缺卡 {len(missing)}")
     for name, a in missing:
         print("  缺卡", name, a)

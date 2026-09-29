@@ -1,12 +1,12 @@
-"""年表展开（DESIGN 10 第 1–2 条）：大运定阶段基调，逐年流年对命局与大运做刑冲合害，标出机制与领域，作候选大事件。
+"""年表展开（DESIGN-命盘层 5）：大运定阶段基调，逐年流年对命局与大运做刑冲合害，标出机制与领域，作候选大事件。
 
-脚本只算事实：机制说怎么发生，领域说赌注是什么（第 10 节九领域表，由被引动的宫位与十神推出）。
+脚本只算事实：机制说怎么发生，领域说赌注是什么（DESIGN-命盘层 5 九领域表，由被引动的宫位与十神推出）。
 事件类型的叙事映射（岁运事件类型表）与两难改写是解读层的事，这里不写。
 
 机制：冲提纲、冲日支、冲年支、冲时支、天克地冲某柱、伏吟某柱、刑、害、合日支、岁运并临（流年与大运同柱）、
 岁运相冲（流年支冲大运支）、换运、合绊用神、合化为用（取自 arc.transit_score 的逐项来由）、忌神透干、用神到位。
 领域：
-- 感情：日支（配偶宫）受冲刑害合；流年见亲密关系星（命盘顶层 loverStar，默认男取财、女取官杀，DESIGN 7.3）；流年逢桃花、红艳。
+- 感情：日支（配偶宫）受冲刑害合；流年见亲密关系星（命盘顶层 loverStar，默认男取财、女取官杀，DESIGN-人物层 6）；流年逢桃花、红艳。
 - 六亲：年柱（祖上）、月柱（父母）、时柱（子女）受冲刑或天克地冲；流年十神为财（父）、印（母）、比劫（手足）时并记。
 - 财富：流年见财；流年比劫而命局财透（比劫夺财）；流年冲开命局财库。
 - 事业与权力：流年见官杀；冲提纲；流年逢将星。
@@ -240,7 +240,7 @@ def _pillar_mechs(p: dict, transit: str) -> list[str]:
 
 
 def stage_facts(chart: dict, step: dict, sc: dict, years: list[dict], ys: dict) -> dict:
-    """一步大运的阶段事实（DESIGN 10 第 6 条前半，阶段状态卡的事实层）：干支十神与用喜忌、顺逆档位、与命局的冲合、
+    """一步大运的阶段事实（DESIGN-人物层 8 前半，阶段状态卡的事实层）：干支十神与用喜忌、顺逆档位、与命局的冲合、
     日主在运支的十二长生、运柱神煞、十神与命局的叠合（命局已有为叠、没有为新）、这十年最常动的领域、窗内的候选年份。
     编号 D-{步}-{干支}-…，与年表 features 同放；解读按阶段状态表（tables/stage_overlay.json，stagecard.py 出草稿）。"""
     p = chart["fourPillars"]
@@ -309,7 +309,7 @@ _OVERCOMES = {"木": "土", "土": "水", "水": "火", "火": "金", "金": "�
 
 
 def illness_candidate(chart: dict, y: dict) -> dict | None:
-    """身心域被引动的年份的病候（DESIGN 7.4 病秧子问题）：三层交汇写在一条里，生年运气给档、薄弱处、病候与情志方向（命盘 yunqi.events），
+    """身心域被引动的年份的病候（DESIGN-命盘层 4 病秧子问题）：三层交汇写在一条里，生年运气给档、薄弱处、病候与情志方向（命盘 yunqi.events），
     故事年运气给那年的岁气与疫季（yunqi.year_qi 按流年干支），年表给这一年身心域为何被引动。流年司天或在泉克薄弱脏标加重（五行通则，推演）。
     候选，默认不写进人物档案；作者挑，一步大运最多一次。旧命盘没有 events 时返回 None。"""
     ev = (chart.get("yunqi") or {}).get("events")
@@ -375,7 +375,7 @@ def build(chart: dict, window: tuple[int, int]) -> dict:
         feats += sf.pop("features")
         st.update(sf)
     cands = [y["age"] for y in years if _is_candidate(y) and y["age"] <= b]
-    return {"schema": SCHEMA, "algorithm": "bazi-writing timeline v1（DESIGN 10 第 1–2 条）", "name": chart.get("name"),
+    return {"schema": SCHEMA, "algorithm": "bazi-writing timeline v1（DESIGN-命盘层 5）", "name": chart.get("name"),
             "window": [a, b], "coverage": [a, b_ext], "yong": ys["yong"], "stages": stages, "years": years, "candidates": cands, "features": feats}
 
 

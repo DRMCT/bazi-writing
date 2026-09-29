@@ -31,7 +31,7 @@ def test_table_shape() -> None:
             assert v["tag"] and v["source"]
             assert set(v["when"]) <= vocab, v["id"]
             if v["classic"] is None:
-                assert "附录 B" in v["source"]
+                assert "DESIGN-命盘层 附录 A" in v["source"]
     assert names <= {e["shensha"] for e in t["entries"]}  # 白名单每种都有条目
 
 

@@ -1,7 +1,7 @@
 {
  "schema": "shensha-tags/1",
  "generated": "2026-09-23",
- "source": "神煞叙事标签表：核心用法与位置变体。classic 一栏逐字取自 references/校核/神煞_{干类,局类,柱类}.md 的「位置变体」（其出处随之），tag 一栏是叙事翻译，自起草，供人物档案「特色标签」取材并带溯源编号。没有 classic 的条目出自 DESIGN 附录 B 的叙事用法，同为自起草。",
+ "source": "神煞叙事标签表：核心用法与位置变体。classic 一栏逐字取自 references/校核/神煞_{干类,局类,柱类}.md 的「位置变体」（其出处随之），tag 一栏是叙事翻译，自起草，供人物档案「特色标签」取材并带溯源编号。没有 classic 的条目出自 DESIGN-命盘层 附录 A 的叙事用法，同为自起草。",
  "conditionVocabulary": {
   "pillar": "神煞落在哪一柱：year 年、month 月、day 日、hour 时；列表中任一柱命中即可",
   "stage": "日干在该神煞所在支的十二宫：生旺 = 长生、冠带、临官、帝旺；死绝 = 死、墓、绝；其余不判",
@@ -18,8 +18,8 @@
    "shensha": "天乙贵人",
    "core": "总有人在关键时刻拉他一把；反用是他习惯被救，不会自救",
    "variants": [
-    {"id": "天乙贵人-01", "when": {"pillar": ["year", "month"]}, "tag": "救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "天乙贵人-02", "when": {"pillar": ["hour"]}, "tag": "救他的是晚辈、学生或他做出来的东西；帮助在后半生才到", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "天乙贵人-01", "when": {"pillar": ["year", "month"]}, "tag": "救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "天乙贵人-02", "when": {"pillar": ["hour"]}, "tag": "救他的是晚辈、学生或他做出来的东西；帮助在后半生才到", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "天乙贵人-03", "when": {"pillar": ["day"]}, "tag": "伴侣或最亲近的人是他的贵人；他被人喜欢是因为仁厚有仪表", "classic": "日坐天乙（日贵四日）→ 纯粹，有仁德，有姿色", "source": "神煞-天乙贵人 [正文·日贵] 中374–375"},
     {"id": "天乙贵人-04", "when": {"stage": "生旺"}, "tag": "众人钦爱的那种人：外形与悟性都拿得出手，贵人是被吸引来的", "classic": "遇生旺 → 形貌轩昂，性灵颖悟，纯粹大器，众人钦爱", "source": "神煞-天乙贵人 [正文·引烛神经] 上146–150"},
     {"id": "天乙贵人-05", "when": {"stage": "死绝"}, "tag": "自以为是、爱攀附权贵的人；贵人在他身上变成鄙吝", "classic": "死绝 → 执拗自是，喜游近贵；贵人死绝为鄙吝煞", "source": "神煞-天乙贵人 [正文·引烛神经、引林开] 上146–150"},
@@ -32,10 +32,10 @@
    "shensha": "文昌",
    "core": "学识、文字、体面；他靠说得清活着",
    "variants": [
-    {"id": "文昌-01", "when": {"pillar": ["day"]}, "tag": "伴侣因他的才华而来，也因才华而失望", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "文昌-02", "when": {"pillar": ["year", "month"]}, "tag": "家里给的读书路；他的体面是继承来的", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "文昌-03", "when": {"pillar": ["hour"]}, "tag": "作品或学生替他说话；名声在后半生", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "文昌-04", "when": {"empty": true}, "tag": "有才而无人知，或知道得太晚", "classic": null, "source": "DESIGN 附录 B"}
+    {"id": "文昌-01", "when": {"pillar": ["day"]}, "tag": "伴侣因他的才华而来，也因才华而失望", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "文昌-02", "when": {"pillar": ["year", "month"]}, "tag": "家里给的读书路；他的体面是继承来的", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "文昌-03", "when": {"pillar": ["hour"]}, "tag": "作品或学生替他说话；名声在后半生", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "文昌-04", "when": {"empty": true}, "tag": "有才而无人知，或知道得太晚", "classic": null, "source": "DESIGN-命盘层 附录 A"}
    ]
   },
   {
@@ -58,9 +58,9 @@
    "shensha": "红艳",
    "core": "风流、多情、审美化的欲望，比桃花更主动",
    "variants": [
-    {"id": "红艳-01", "when": {"pillar": ["day"]}, "tag": "感情的主动权在他手里；他挑人，不是被挑", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "红艳-02", "when": {"pillar": ["year", "month"]}, "tag": "多情是家风或少年时养成的，早熟", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "红艳-03", "when": {"pillar": ["hour"]}, "tag": "晚来的风流，或风流的账在后半生结", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "红艳-01", "when": {"pillar": ["day"]}, "tag": "感情的主动权在他手里；他挑人，不是被挑", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "红艳-02", "when": {"pillar": ["year", "month"]}, "tag": "多情是家风或少年时养成的，早熟", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "红艳-03", "when": {"pillar": ["hour"]}, "tag": "晚来的风流，或风流的账在后半生结", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "红艳-04", "when": {"gender": "女"}, "tag": "旧书把它当女命之忌；写法上可反用为她不肯被规训", "classic": "女命最忌之", "source": "神煞-红艳 [正文] 上183"}
    ]
   },
@@ -79,7 +79,7 @@
    "shensha": "桃花",
    "core": "吸引力、情欲、人际磁场",
    "variants": [
-    {"id": "桃花-01", "when": {"pillar": ["year", "month"]}, "tag": "墙内桃花：家里安排的缘分，上一辈眼里合适的人", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "桃花-01", "when": {"pillar": ["year", "month"]}, "tag": "墙内桃花：家里安排的缘分，上一辈眼里合适的人", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "桃花-02", "when": {"pillar": ["day", "hour"]}, "tag": "墙外桃花：自己惹的缘，旧书忌日时，多为不安分的情", "classic": "在日时 → 咸池忌日时；日时与水命遇之尤凶", "source": "神煞-桃花 [正文·引沈芝] 上190–193"},
     {"id": "桃花-03", "when": {"stage": "生旺"}, "tag": "好看、好酒色、大方散财，家底在应酬里散掉", "classic": "生旺 → 美容仪，躭酒色，疏财好欢，破散家业", "source": "神煞-桃花 [正文] 上190–193"},
     {"id": "桃花-04", "when": {"stage": "死绝"}, "tag": "落魄不检、言行狡诈、游荡忘恩：魅力用坏了的样子", "classic": "死绝 → 落魄不检，言行狡诈，游荡赌博，忘恩失信", "source": "神煞-桃花 [正文] 上190–193"},
@@ -109,8 +109,8 @@
    "shensha": "将星",
    "core": "领导欲、担责、被推到前面",
    "variants": [
-    {"id": "将星-01", "when": {"god": ["七杀"]}, "tag": "掌权者：压力与权力一起到他手里", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "将星-02", "when": {"god": ["伤官"]}, "tag": "叛军首领：领导欲用在反对上", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "将星-01", "when": {"god": ["七杀"]}, "tag": "掌权者：压力与权力一起到他手里", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "将星-02", "when": {"god": ["伤官"]}, "tag": "叛军首领：领导欲用在反对上", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "将星-03", "when": {"with": ["亡神"]}, "tag": "国之栋梁那一型：会谋划的领导者", "classic": "与亡神并 → 为国栋梁臣", "source": "神煞-将星 [正文·引理愚歌] 上127"},
     {"id": "将星-04", "when": {"clash": true}, "tag": "被冲破的将星：血光横祸，或凭武力得权", "classic": "被冲（冲破将星者为灾煞）→ 灾煞主血光横死；有福神相助，多是武权", "source": "神煞-将星 [正文·论灾煞] 上172"},
     {"id": "将星-05", "when": {"with": ["天乙贵人"]}, "tag": "有人扶的领导者，顺风顺水", "classic": "吉星相扶，贵煞加临 → 吉庆", "source": "神煞-将星 [正文] 上127"}
@@ -134,7 +134,7 @@
    "shensha": "亡神",
    "core": "城府、暗中筹划、失去而不声张",
    "variants": [
-    {"id": "亡神-01", "when": {"god": ["七杀"]}, "tag": "阴谋家：谋略与狠劲同柱", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "亡神-01", "when": {"god": ["七杀"]}, "tag": "阴谋家：谋略与狠劲同柱", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "亡神-02", "when": {"stage": "生旺"}, "tag": "峻厉有威、事不露机的算计者", "classic": "生旺与贵煞并 → 峻厉有威，谋略算计，事不露机", "source": "神煞-亡神 [正文] 上185–188"},
     {"id": "亡神-03", "when": {"stage": "死绝"}, "tag": "褊躁狭窄、颠倒是非的人", "classic": "死绝与恶煞并 → 褊躁性窄，颠诈狂妄，浮荡是非", "source": "神煞-亡神 [正文] 上185–188"},
     {"id": "亡神-04", "when": {"with": ["天乙贵人"]}, "tag": "靠笔杆子起家：文书、幕僚、刀笔吏", "classic": "贵人建禄并 → 专弄笔砚，撰饰文词，因公起家，或为胥徒", "source": "神煞-亡神 [正文] 上185–188"},
@@ -186,8 +186,8 @@
    "shensha": "空亡",
    "core": "某个宫位的东西抓不住",
    "variants": [
-    {"id": "空亡-01", "when": {"pillar": ["year"]}, "tag": "来处与出身抓不住：家里的来头是空的，或与家里断了", "classic": null, "source": "DESIGN 附录 B"},
-    {"id": "空亡-02", "when": {"pillar": ["month"]}, "tag": "父母与事业根基抓不住：换行当，靠不上父母", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "空亡-01", "when": {"pillar": ["year"]}, "tag": "来处与出身抓不住：家里的来头是空的，或与家里断了", "classic": null, "source": "DESIGN-命盘层 附录 A"},
+    {"id": "空亡-02", "when": {"pillar": ["month"]}, "tag": "父母与事业根基抓不住：换行当，靠不上父母", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "空亡-03", "when": {"pillar": ["hour"]}, "tag": "子嗣与晚年抓不住；性子拗，做事高而虚", "classic": "时上见 → 多拗性，为事高而虚；更遇华盖 → 决主少子", "source": "神煞-空亡 [正文] 上167"},
     {"id": "空亡-04", "when": {"god": ["正财", "偏财"]}, "tag": "空在财：钱留不住", "classic": "禄马财官福聚之气 → 怕空亡散之", "source": "神煞-空亡 [正文] 上167"},
     {"id": "空亡-05", "when": {"god": ["正官", "七杀"]}, "tag": "空在官煞：位子坐不稳，或压力落空反而轻松", "classic": "煞神落空亡 → 大吉昌；禄马贵人落空 → 减福", "source": "神煞-空亡 [歌诀] 上195"},
@@ -203,7 +203,7 @@
    "shensha": "孤辰",
    "core": "亲缘淡，习惯独处，不擅经营关系",
    "variants": [
-    {"id": "孤辰-01", "when": {"pillar": ["day"]}, "tag": "亲密关系里也孤独", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "孤辰-01", "when": {"pillar": ["day"]}, "tag": "亲密关系里也孤独", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "孤辰-02", "when": {"gender": "男"}, "tag": "旧书说孤辰不利父、男命难于婚配", "classic": "孤（进者、阳）→ 不利父；男命生于妻绝之中而逢孤辰 → 平生难于婚偶", "source": "神煞-孤辰 [正文·引玉门集、引王氏] 上173"},
     {"id": "孤辰-03", "when": {"with": ["驿马"]}, "tag": "放荡他乡", "classic": "驿马并 → 放荡他乡", "source": "神煞-孤辰 [正文·引烛神经] 上174"},
     {"id": "孤辰-04", "when": {"empty": true}, "tag": "幼少无倚：小时候没人可靠", "classic": "空亡并 → 幼少无倚", "source": "神煞-孤辰 [正文·引烛神经] 上174"},
@@ -215,7 +215,7 @@
    "shensha": "寡宿",
    "core": "亲缘淡，习惯独处，不擅经营关系",
    "variants": [
-    {"id": "寡宿-01", "when": {"pillar": ["day"]}, "tag": "亲密关系里也孤独", "classic": null, "source": "DESIGN 附录 B"},
+    {"id": "寡宿-01", "when": {"pillar": ["day"]}, "tag": "亲密关系里也孤独", "classic": null, "source": "DESIGN-命盘层 附录 A"},
     {"id": "寡宿-02", "when": {"gender": "女"}, "tag": "旧书说寡宿不利母、女命屡嫁难偕老", "classic": "寡（退者、阴）→ 不利母；女命生于夫绝之中而遇寡宿 → 屡嫁不能偕老", "source": "神煞-寡宿 [正文·引玉门集、引王氏] 上173–174"},
     {"id": "寡宿-03", "when": {"with": ["驿马"]}, "tag": "放荡他乡", "classic": "驿马并 → 放荡他乡", "source": "神煞-寡宿 [正文·引烛神经] 上174"},
     {"id": "寡宿-04", "when": {"empty": true}, "tag": "幼少无倚：小时候没人可靠", "classic": "空亡并 → 幼少无倚", "source": "神煞-寡宿 [正文·引烛神经] 上174"},

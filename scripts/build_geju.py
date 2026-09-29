@@ -11,7 +11,7 @@
     运·{局}：喜A运、B运；忌C运；不忌D运        取运按局分行，"运·X：""运（X）：""运〔X〕：""运：" 四种写法都认
 附注里带"徐"字（（徐）〔徐〕）的条目标 fromXu=true；带"两存"的标 disputed=true。
 条件原子按词表切分：十神词、身强弱词、季节词、关系词；切不动的原子记进报告，不阻断建表。
-每条带 source 指向卡号与卡状态；没有卡的条目不允许进表（DESIGN 7.2）。格名映射到 shishen.determine_structure 的格名。
+每条带 source 指向卡号与卡状态；没有卡的条目不允许进表（DESIGN-命盘层 3.2）。格名映射到 shishen.determine_structure 的格名。
 """
 
 from __future__ import annotations

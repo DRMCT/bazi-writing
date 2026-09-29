@@ -1,4 +1,4 @@
-"""编配候选（DESIGN-戏剧层 4.1、5.1）：几张命盘 → 每对人的张力与牵绊，谁是主动的一头。给写编配表的人当材料，不替他定。
+"""编配候选（DESIGN-戏剧层 4）：几张命盘 → 每对人的张力与牵绊，谁是主动的一头。给写编配表的人当材料，不替他定。
 
 矩阵给的是一条一条有向边；这里把一对人的两条边并起来看戏：
 - 同求：两人互看比肩、劫财，要的是同一样东西。
@@ -130,7 +130,7 @@ def build(charts: list[dict], window: tuple[int, int]) -> dict:
             p["active"] = A if sa > sb else B if sb > sa else None
             pairs.append(p)
     pairs.sort(key=lambda p: (-(p["kind"] == "对子"), -p["tension"], -p["bond"], names.index(p["people"][0])))
-    return {"schema": SCHEMA, "algorithm": "bazi-writing casting v1（DESIGN-戏剧层 5.1）", "window": list(window), "people": names,
+    return {"schema": SCHEMA, "algorithm": "bazi-writing casting v1（DESIGN-戏剧层 4）", "window": list(window), "people": names,
             "initiative": ini, "pairs": pairs,
             "note": "候选，不是结论。主线挑对子里张力最高、又合这本书的一问的那一对；只撞不拴的一对要在编配表里另给一样拴住他们的东西（同一间屋、一纸约、一笔钱），给不出就不做主线。"}
 

@@ -1,7 +1,7 @@
 """神煞叙事标签：查表层。
 
 表在 tables/shensha_tags.json：每个白名单神煞一条核心用法，加若干位置变体，每个变体带 when 条件、叙事标签 tag、
-古籍判词 classic（逐字取自校核卡的"位置变体"栏）与出处 source。tag 是自起草的叙事翻译（DESIGN 7.1：叙事映射部分自起草）。
+古籍判词 classic（逐字取自校核卡的"位置变体"栏）与出处 source。tag 是自起草的叙事翻译（DESIGN-人物层 2：叙事映射部分自起草）。
 for_chart 按 shensha.compute 的落柱结果逐条求值 when，命中的变体带 id 返回，供人物档案"特色标签"取材并作溯源编号。
 
 when 条件（见表内 conditionVocabulary）：pillar 落柱；stage 日干在该支的十二宫（生旺 / 死绝）；with 同柱另见的神煞；
@@ -114,6 +114,6 @@ def for_chart(pillars: dict, gender: str | None = None) -> dict:
                     seen.add((v["id"], p))
                     tags.append({"id": v["id"], "shensha": name, "pillar": _CN[p], "tag": v["tag"],
                                  "classic": v["classic"], "source": v["source"],
-                                 "origin": "古籍判词的叙事译法（自起草）" if v["classic"] else "自起草（DESIGN 附录 B）"})
+                                 "origin": "古籍判词的叙事译法（自起草）" if v["classic"] else "自起草（DESIGN-命盘层 附录 A）"})
     return {"tags": tags, "cores": {n: _BY_NAME[n]["core"] for n in present if n in _BY_NAME},
             "status": "叙事映射自起草；古籍判词部分取自校核定稿的神煞卡", "source": str(_TABLE_PATH.name)}

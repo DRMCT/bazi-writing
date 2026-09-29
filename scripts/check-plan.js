@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 计划检查（DESIGN-写作层 第 8 节 check-plan）：查 书/ 里的主题、文风、卷稿、单元记录、细纲。零依赖，JSON 一行一条，最后一行汇总；有 error 退出码 1。
+// 计划检查（DESIGN-写作层 第 10 节 check-plan）：查 书/ 里的主题、文风、卷稿、单元记录、细纲。零依赖，JSON 一行一条，最后一行汇总；有 error 退出码 1。
 //
 //   node scripts/check-plan.js 书/                        整个书目录：主题.md、文风.md、卷/、单元/、细纲/
 //   node scripts/check-plan.js 书/细纲/第4章.md            单个文件，类型按所在目录名或标题判
@@ -150,7 +150,7 @@ function main() {
     lines.forEach((line, i) => {
       const n = i + 1;
       if (quoteLevel && C.QUOTE_RE.test(line)) emit(file, type, "引号", quoteLevel, { line: n, text: line.trim().slice(0, 80), note: type === "细纲" ? "细纲不给台词，也不给强调引号；写意图与句式" : "计划里的引号会一路传到细纲与正文" });
-      for (const w of profile.borrowWords) if (line.includes(w)) emit(file, type, "借鉴字样", "warn", { line: n, text: w, note: "写作层不从市场与对标出发（DESIGN-写作层 第 2 节）" });
+      for (const w of profile.borrowWords) if (line.includes(w)) emit(file, type, "借鉴字样", "warn", { line: n, text: w, note: "写作层不从市场与对标出发（DESIGN-写作层 第 1 节）" });
       if ((type === "细纲" || type === "外来") && /\d+\s*字|字数/.test(line)) emit(file, type, "逐点字数", "warn", { line: n, text: line.trim().slice(0, 80), note: "字数只报不卡，细纲不给逐点字数" });
       for (const m of line.matchAll(C.ID_RE)) {
         const tok = m[0];

@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""旺衰公式校准（DESIGN 6.4）。分三步走，本脚本管第一步与第三步。
+"""旺衰公式校准（DESIGN-命盘层 2.4）。分三步走，本脚本管第一步与第三步。
 
     python scripts/calibrate_strength.py sample   → 生成样本盘与公式判定，写 calibration/samples.json
     python scripts/calibrate_strength.py sheet     → 把样本摊成子代理可读的判定单（不含公式结论，防止锚定）

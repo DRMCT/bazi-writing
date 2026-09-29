@@ -1,4 +1,4 @@
-"""戏剧层（DESIGN-戏剧层 第 5、6 节）：编配候选、推演读编配（背景的人不当源、领域配权、事件候选、线程四态与次数、高潮候选）、
+"""戏剧层（DESIGN-戏剧层 第 4、7、9、11 节）：编配候选、推演读编配（背景的人不当源、领域配权、事件候选、线程四态与次数、高潮候选）、
 事件链新写法的检查、戏用页的检查与渲染、三张表的新栏、戏剧层校核卡。"""
 
 from __future__ import annotations
@@ -128,7 +128,9 @@ def test_casting_and_threads_validation() -> None:
             run.load_threads({"schema": "bazi-threads/v2", "threads": [bad]})
 
 
-def _chain(out: dict, *, bone: bool = True, open_step: bool = True, gap: bool = True) -> str:
+def _chain(out: dict, *, bone: bool = True, open_step: bool = True, gap: bool = True, src: dict | None = None,
+           extra: dict | None = None, gaps: list[str] | None = None) -> str:
+    """src：年份 → 源一栏；extra：年份 → 多加的字段行；gaps：过场行，接在最后。"""
     lines = ["# 群像推演", ""]
     for v in out["outline"]["volumes"]:
         lines += [f"## 卷 {v['stage']}", ""]
@@ -139,11 +141,13 @@ def _chain(out: dict, *, bone: bool = True, open_step: bool = True, gap: bool = 
         for i, yr in enumerate(v["hotYears"]):
             mark = "（明）" if open_step else "（暗）"
             lines += [f"### {yr} 年：一件事", "", f"- 牌面：谁在什么位置 ｜溯源 Q-{yr}-林昭", "- 因：上一回她的选择",
+                      "- 源：" + (src or {}).get(yr, "热年出事；这一年盘上撞得最狠"), *(extra or {}).get(yr, []),
                       "- 事件：边上的事", "- 步：",
                       f"  1. 她去了。以为：他会留。实际：他走了。{mark} ｜溯源 Q-{yr}-林昭" if gap else f"  1. 她去了。{mark}",
                       "  2. 他回了一句。以为：她会退。实际：她没退。（暗）",
                       "- 选择：她选了去", "- 知情：无", "- 线程：TH-331-林昭-裴恪-感情 压",
                       "- 主线温度：" + "靠离撞退"[i % 4] + "，因为这一年", "- 读者：等着知道他回不回", ""]
+    lines += gaps or []
     return "\n".join(lines)
 
 
@@ -163,6 +167,8 @@ def test_check_chain_drama(out: dict) -> None:
     assert any("没写哪一年响" in p["problem"] for p in run.check_chain_drama(_chain(out), out, unplanned)["problems"])
     short = _chain(out).split("### " + str(out["hotYears"][-1]))[0]
     assert any("没有一节" in p["problem"] for p in run.check_chain_drama(short, out, th)["problems"])
+    nosrc = _chain(out).replace("- 源：热年出事；这一年盘上撞得最狠\n", "", 1)
+    assert any("缺源" in p["problem"] for p in run.check_chain_drama(nosrc, out, th)["problems"])
     flat = _chain(out).replace("主线温度：离", "主线温度：靠").replace("主线温度：撞", "主线温度：靠").replace("主线温度：退", "主线温度：靠")
     assert any("一直帐" in p["problem"] for p in run.check_chain_drama(flat, out, th)["problems"])
 
@@ -227,6 +233,52 @@ def test_check_drama_page(tmp_path: Path) -> None:
     assert any("origin" in r["problem"] for r in broken(lambda p: by(p, "谁挡着")["lines"][0].update(origin="猜")))
 
 
+def test_check_drama_belief_by_and_extras(tmp_path: Path) -> None:
+    f = tmp_path / "林昭.戏用页.json"
+    by = lambda p, ask: next(a for a in p["asks"] if a["ask"] == ask)  # noqa: E731
+
+    def run_page(mut) -> tuple[int, list[dict]]:
+        p = _page()
+        mut(p)
+        f.write_text(json.dumps(p, ensure_ascii=False), encoding="utf-8")
+        return _node([str(f)])
+
+    def creed_no_break(p: dict) -> None:  # 信条页：不碎，没有破只报 info
+        p["belief"] = "信条"
+        by(p, "碰哪里会疼")["lines"].pop()
+
+    code, rows = run_page(creed_no_break)
+    assert code == 0 and rows[-1]["belief"] == "信条" and rows[-1]["breaks"] == 0
+    assert any(r.get("level") == "info" and "信条页没有破" in r["problem"] for r in rows)
+    code, rows = run_page(lambda p: p.update(belief="谎"))
+    assert code == 1 and any("belief" in r["problem"] for r in rows)
+    code, rows = run_page(lambda p: by(p, "碰哪里会疼")["lines"][-1].update(by="物证"))
+    assert code == 0, rows
+    code, rows = run_page(lambda p: by(p, "碰哪里会疼")["lines"][-1].update(by="天意"))
+    assert code == 1 and any("by 应为" in r["problem"] for r in rows)
+    code, rows = run_page(lambda p: by(p, "碰哪里会疼")["lines"][0].update(by="自己"))
+    assert code == 1 and any("只有破那一拍" in r["problem"] for r in rows)
+
+    def with_extras(p: dict) -> None:
+        p["asks"] += [
+            {"ask": "他被叫什么", "lines": [{"text": "他叫她全名，定亲那一场改叫小名", "origin": "定", "ref": "编配 对子 林昭、裴恪"}]},
+            {"ask": "他信错了谁", "lines": []},
+            {"ask": "他怎么被记住", "lines": [{"text": "口头禅：“不必”", "origin": "定", "ref": "作者定"}]},
+        ]
+
+    code, rows = run_page(with_extras)
+    assert code == 0 and rows[-1]["extras"] == 2, rows
+
+    def two_quotes(p: dict) -> None:
+        with_extras(p)
+        p["asks"][-1]["lines"].append({"text": "另一句“算了”", "origin": "定", "ref": "作者定"})
+
+    code, rows = run_page(two_quotes)
+    assert code == 1 and any("只许一行带引号" in r["problem"] for r in rows)
+    code, rows = run_page(lambda p: p["asks"].insert(0, {"ask": "他被叫什么", "lines": []}))
+    assert code == 1 and any("次序" in r["problem"] for r in rows)
+
+
 def test_drama_render(tmp_path: Path) -> None:
     sys.path.insert(0, str(ROOT / "scripts"))
     import drama_render
@@ -239,13 +291,20 @@ def test_drama_render(tmp_path: Path) -> None:
     assert "｜定 编配 对子 林昭、裴恪" in author and "｜盘 " in author
     assert reader.index("碰线：") < reader.index("盖法：") < reader.index("破：")
     assert "（待补充）" in reader
+    assert "## 附" not in reader  # 附问没答不渲染
+    page["belief"] = "信条"
+    next(a for a in page["asks"] if a["ask"] == "碰哪里会疼")["lines"][-1]["by"] = "别人当面"
+    page["asks"].append({"ask": "他被叫什么", "lines": [{"text": "他叫她全名", "origin": "定", "ref": "编配"}]})
+    creed = drama_render.render(page, author=False)
+    assert "## 四、她信的那句话" in creed and "破（别人当面）：" in creed and "## 附：她被叫什么" in creed
 
 
 def test_template_page_and_casting_shapes() -> None:
     tpl = ROOT / "references" / "戏剧层" / "模板"
     page = json.loads((tpl / "戏用页.json").read_text(encoding="utf-8"))
     assert [a["ask"] for a in page["asks"]] == ["他要什么", "谁挡着", "他怎么去要", "他信的那句假话", "他真正缺的", "碰哪里会疼",
-                                                "他瞒着什么", "他怎么说话", "别人拿他当什么", "他从哪儿走到哪儿"]
+                                                "他瞒着什么", "他怎么说话", "别人拿他当什么", "他从哪儿走到哪儿",
+                                                "他被叫什么", "他知道哪一层", "他信错了谁", "他对谁演什么", "他独一份的是什么", "他怎么被记住"]
     cast = json.loads((tpl / "编配.json").read_text(encoding="utf-8"))
     assert run.load_casting(cast, ["甲", "乙", "丙", "丁"])["main"] == ["甲", "乙"]
     chain = (tpl / "推演.md").read_text(encoding="utf-8")

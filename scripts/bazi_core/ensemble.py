@@ -1,6 +1,6 @@
 """群像快照：某一年（可细到流月）所有人的状态与被引动的关系边。
 
-DESIGN 10 第 6 条年度状态卡的事实部分，第 7 条群像推演里"脚本算谁在这个时间点被引动、哪些边被激活"的那一半。
+DESIGN-人物层 8 年度状态卡的事实部分，DESIGN-戏剧层 7.4 群像推演里"脚本算谁在这个时间点被引动、哪些边被激活"的那一半。
 人物怎么互相反应、推几轮、何时收束（回合规则）仍是待定项，由模型按快照写，这里不做。
 
 每人：当年周岁、所处大运与基调、流年干支、机制与领域（timeline.year_facts）、是否换运；给 --months 时另列十二流月
@@ -126,7 +126,7 @@ def snapshot(charts: list[dict], year: int, months: bool = False) -> dict:
             feats.append({"id": fid, "text": f"{year}年{a}→{b}：{text}"})
         edges.append({"from": a, "to": b, "tenGod": e["tenGod"], "reasons": [{"kind": k, "text": t} for k, t in reasons],
                       "ids": ids, "matrixIds": [f["id"] for f in e["features"]]})
-    return {"schema": SCHEMA, "algorithm": "bazi-writing ensemble v1（DESIGN 10 第 6–7 条的事实部分）", "year": year,
+    return {"schema": SCHEMA, "algorithm": "bazi-writing ensemble v1（DESIGN-人物层 8、DESIGN-戏剧层 7.4 的事实部分）", "year": year,
             "people": people, "edges": edges, "features": feats}
 
 

@@ -1,9 +1,9 @@
-"""群像推演：事件卡与悬置线程（DESIGN 17 已定项 2026-09-24-11，第 10 节第 7 条）。
+"""群像推演：事件卡与悬置线程（DESIGN-戏剧层 7.4）。
 
 事件是共享的，两难是各人的。不做"谁先动、轮流回应、推几轮"的回合模型：每个热年一张事件卡，脚本把在场的人、
 各人的赌注、各人的回应倾向、旧账一次算全，模型对着一张卡写这一年的事件链，几轮由叙事定，脚本不数。
 
-规则（与 DESIGN 17 逐条对应）：
+规则（与 DESIGN-戏剧层 7.4 逐条对应）：
 1. 热年由交汇点定（schedule.build 的收紧规则：边有当年才有的原因，且两端至少一人是候选年份）。没有交汇点的年份是过场，
    连续的过场记进 gaps，大纲里合成一句时间跳跃。
 2. 事件源是交汇点里主机制烈度最高的人（dilemma.PRIORITY），同分主角先；事件直接取他那一年的两难草稿（dilemma.rewrite_year）。
@@ -33,20 +33,41 @@ from pathlib import Path
 
 from . import dilemma as _dl
 from . import ensemble as _en
+from . import fate as _fate
 from . import yunqi as yunqi_mod
 from . import matrix as _mx
 from . import schedule as _sc
 from . import timeline as _tl
 from . import yongshen as yongshen_mod
+from .dayun import pillar_name, sexagenary_index
 
 SCHEMA = "bazi-ensemble-run/v1"
 THREADS_SCHEMA = "bazi-threads/v1"
 THREADS_SCHEMAS = ("bazi-threads/v1", "bazi-threads/v2")
-# v1 两态；v2 四态（DESIGN-戏剧层 4.4）：埋、压、响、余波。悬置读作压，了结读作余波，两套词一个文件里可以混用
+# v1 两态；v2 四态（DESIGN-戏剧层 9）：埋、压、响、余波。悬置读作压，了结读作余波，两套词一个文件里可以混用
 THREAD_STATUS = ("悬置", "了结", "埋", "压", "响", "余波")
 THREAD_OPEN = ("悬置", "埋", "压", "响")
 ESCALATE_AT = 3  # 一条线开出以后第三回上卡，该升级或清算了
 CASTING_SCHEMA = "bazi-casting/v1"
+CASTING_SCHEMAS = ("bazi-casting/v1", "bazi-casting/v2")  # v2 加时间尺度、谁碎、家族、默认下场、钟、物件账（DESIGN-戏剧层 4），都可空
+TIMESCALES = ("短跨度", "长跨度", "回到关口年")
+SHORT_SPAN = 2  # 没给时间尺度时，窗不过两年按短跨度走
+BREAK_BY = ("自己", "别人当面", "物证")
+OUTCOMES = ("应验", "改")
+PRESS_GODS = ("正官", "七杀")
+# 事件源扩表（DESIGN-戏剧层 7.5）：脚本给候选，事件链由模型挑并写明为什么
+SOURCE_KINDS = (
+    {"kind": "热年出事", "how": "交汇点的年份出事件卡", "where": "cards"},
+    {"kind": "默认下场到点", "how": "默认下场年表的那一年到了；编配透过的带 revealed", "where": "cards[].sources、offCard"},
+    {"kind": "过去追上来", "how": "冲年支、伏吟的年份，或候选年份的主领域与一条前史相同；上一代的旧账看同族晚辈", "where": "cards[].sources、offCard"},
+    {"kind": "对手出招", "how": "上一张卡里躲或压的那一头、押得最重的那一头失去了什么，他下一个候选年份出下一招", "where": "cards[].sources、offCard"},
+    {"kind": "家人出招", "how": "编配家族里相克的有向边（他是对方的官杀），他的候选年份触发", "where": "cards[].sources、offCard"},
+    {"kind": "得知与认出", "how": "线程上卡时不在知情里的那一头；物件账写了哪一年被认出，或原主与持有人同在一张卡", "where": "cards[].sources"},
+    {"kind": "主角布局", "how": "不由盘给，事件链里标出", "where": "—"},
+    {"kind": "局与日历", "how": "编配的钟按月挂上，同月谁的流月被引动", "where": "cards[].sources、offCard、monthGrid"},
+    {"kind": "旁人求上门、班底派活", "how": "单元客入口：他书前的热年是找上门的那件事", "where": "guests"},
+    {"kind": "关系自己往前走", "how": "主线温度，不由盘给", "where": "—"},
+)
 LINE_BONUS = {"主线": 6, "副线": 3, "旁线": 0}
 _BODY_HITS = ("天克地冲日柱", "冲日支")
 _TABLE_PATH = Path(__file__).resolve().parent / "tables" / "response_tendency.json"
@@ -55,7 +76,7 @@ ROWS = {r["tenGod"]: r for r in _T["rows"]}
 MODS = {m["条件"]: m for m in _T["modifiers"]}
 NEAR_ROLES = ("用", "喜")
 AWAY_ROLES = ("忌", "仇")
-_ID_PREFIX = re.compile(r"^(?:P|DM|T|H|G|S|U|Y|R|N|NT|C|D|L|IN|IM|LI|YQ|E|Q|J|TH)-\S+$")  # 命盘各节、矩阵、年表、日程、快照、线程
+_ID_PREFIX = re.compile(r"^(?:P|DM|T|H|G|S|U|Y|R|N|NT|C|D|L|IN|IM|LI|YQ|E|Q|J|TH|DF|PH)-\S+$")  # 命盘各节、矩阵、年表、日程、快照、线程、默认下场、前史
 
 
 def _rank(mechs: list[str]) -> int:
@@ -93,12 +114,14 @@ def load_threads(doc: dict | None) -> list[dict]:
     return out
 
 
-def load_casting(doc: dict | None, names: list[str]) -> dict | None:
-    """编配的机器本（DESIGN-戏剧层 4.1、5.2、5.3）：主线一对、副线几对（长篇三到五条线，至多六对）、背景的人、领域配权。人话在 人物/编配.md。"""
+def load_casting(doc: dict | None, names: list[str], others: list[str] | tuple = ()) -> dict | None:
+    """编配的机器本（DESIGN-戏剧层 4、7.4）：主线一对、副线几对（长篇三到五条线，至多六对）、背景的人、领域配权；
+    v2 另有可空的几栏：timescale 时间尺度、breakers 谁碎、families 家族、defaultFate 默认下场透哪几条、calendar 钟、objects 物件账。
+    others：上一代与单元客的名字（不进推演的交汇点，家族、谁碎、物件账里可以出现）。人话在 人物/编配.md。"""
     if not doc:
         return None
-    if doc.get("schema") != CASTING_SCHEMA:
-        raise ValueError(f"编配文件 schema 应为 {CASTING_SCHEMA}")
+    if doc.get("schema") not in CASTING_SCHEMAS:
+        raise ValueError(f"编配文件 schema 应为 {' 或 '.join(CASTING_SCHEMAS)}")
     main = doc.get("main") or []
     sub = doc.get("sub") or []
     bg = doc.get("background") or []
@@ -128,7 +151,93 @@ def load_casting(doc: dict | None, names: list[str]) -> dict | None:
             raise ValueError(f"领域配权里没有 {d} 这个领域")
         if isinstance(v, bool) or not isinstance(v, (int, float)) or v <= 0:
             raise ValueError(f"领域配权 {d} 要是正数")
-    return {"schema": CASTING_SCHEMA, "main": list(main), "sub": [list(x) for x in sub], "background": list(bg), "domainWeights": dict(w)}
+    out = {"schema": doc["schema"], "main": list(main), "sub": [list(x) for x in sub], "background": list(bg), "domainWeights": dict(w)}
+    out.update(_casting_v2(doc, names, list(others)))
+    return out
+
+
+def _casting_v2(doc: dict, names: list[str], others: list[str]) -> dict:
+    everyone = set(names) | set(others)
+    out: dict = {}
+
+    def who_ok(n, where: str, pool: set = everyone) -> None:
+        if n not in pool:
+            raise ValueError(f"编配{where}里的 {n} 不在给的命盘里")
+
+    def year_ok(v, where: str) -> None:
+        if isinstance(v, bool) or not isinstance(v, int):
+            raise ValueError(f"编配{where}的年份要是整数：{v}")
+
+    ts = doc.get("timescale")
+    if ts is not None:
+        if ts not in TIMESCALES:
+            raise ValueError(f"时间尺度只能是 {'、'.join(TIMESCALES)}")
+        out["timescale"] = ts
+    if doc.get("breakers") is not None:
+        brs = []
+        for x in doc["breakers"]:
+            x = {"who": x} if isinstance(x, str) else dict(x)
+            who_ok(x.get("who"), "谁碎")
+            if x.get("by") is not None and x["by"] not in BREAK_BY:
+                raise ValueError(f"谁碎 {x['who']} 的 by 只能是 {'、'.join(BREAK_BY)}")
+            if x.get("year") is not None:
+                year_ok(x["year"], "谁碎")
+            brs.append(x)
+        if len({x["who"] for x in brs}) != len(brs):
+            raise ValueError("谁碎一人全书一回，同一个人只写一行")
+        out["breakers"] = brs
+    if doc.get("families") is not None:
+        fams = []
+        for f in doc["families"]:
+            if not isinstance(f, list) or len(f) < 2:
+                raise ValueError(f"一个家族至少两个人：{f}")
+            for n in f:
+                who_ok(n, "家族")
+            fams.append(list(f))
+        out["families"] = fams
+    if doc.get("defaultFate") is not None:
+        dfs = []
+        for x in doc["defaultFate"]:
+            who_ok(x.get("who"), "默认下场", set(names))
+            year_ok(x.get("year"), "默认下场")
+            if x.get("reveal") is not None and x["reveal"] not in _fate.REVEALS:
+                raise ValueError(f"默认下场的透法只能是 {'、'.join(_fate.REVEALS)}")
+            if x.get("outcome") is not None and x["outcome"] not in OUTCOMES:
+                raise ValueError(f"默认下场的 outcome 只能是 {'、'.join(OUTCOMES)}")
+            if x.get("spill") is not None:
+                who_ok(x["spill"], "默认下场的余波")
+            dfs.append(dict(x))
+        out["defaultFate"] = dfs
+    if doc.get("calendar") is not None:
+        cal = []
+        for x in doc["calendar"]:
+            if not x.get("name"):
+                raise ValueError(f"钟要有名字：{x}")
+            m = x.get("month")
+            if isinstance(m, bool) or not isinstance(m, int) or not 1 <= m <= 12:
+                raise ValueError(f"钟 {x['name']} 的 month 是一到十二（流月的次序，寅月为一）")
+            if x.get("year") is not None:
+                year_ok(x["year"], "钟")
+            for n in x.get("who", []):
+                who_ok(n, "钟")
+            cal.append(dict(x))
+        out["calendar"] = cal
+    if doc.get("objects") is not None:
+        objs = []
+        for x in doc["objects"]:
+            if not x.get("name"):
+                raise ValueError(f"物件要有名字：{x}")
+            who_ok(x.get("holder"), "物件账")
+            for ps in x.get("passes", []):
+                year_ok(ps.get("year"), "物件转手")
+                who_ok(ps.get("to"), "物件转手")
+            rc = x.get("recognized")
+            if rc is not None:
+                year_ok(rc.get("year"), "物件被认出")
+                who_ok(rc.get("by"), "物件被认出")
+            objs.append(dict(x))
+        out["objects"] = objs
+    return out
 
 
 def _line_of(pair: set, casting: dict | None) -> str:
@@ -208,12 +317,22 @@ def _event(chart: dict, age: int, year: int, weights: dict | None = None, avoid:
 
 
 def build(charts: list[dict], window: tuple[int, int], main: str, threads: list[dict] | None = None, months: bool = False,
-          casting: dict | None = None) -> dict:
+          casting: dict | None = None, elders: list[dict] | None = None, guests: list[dict] | None = None,
+          horizon: int = _fate.DEFAULT_HORIZON) -> dict:
+    """elders：上一代的盘，只出前史；guests：单元客的盘，只出入口。两种都不进交汇点。"""
     names = [c.get("name") for c in charts]
     if main not in names:
         raise ValueError(f"--main {main} 不在给的命盘里")
     threads = threads or []
-    casting = load_casting(casting, names)
+    elders = elders or []
+    guests = guests or []
+    extra = [c.get("name") for c in elders + guests]
+    for n in extra:
+        if n in names or extra.count(n) > 1:
+            raise ValueError(f"{n} 重复了：上一代与单元客另给，不和推演的命盘重名")
+    casting = load_casting(casting, names, extra)
+    timescale = (casting or {}).get("timescale") or ("短跨度" if window[1] - window[0] + 1 <= SHORT_SPAN else "长跨度")
+    months = months or timescale == "短跨度"  # 短跨度推演最细到流月
     background = set(casting["background"]) if casting else set()
     weights = casting["domainWeights"] if casting else None
     pressure: dict[str, int] = {}
@@ -326,7 +445,7 @@ def build(charts: list[dict], window: tuple[int, int], main: str, threads: list[
             tends.append(tendency(e, year, snap_edges.get((n, source)), bool(state[n]["domains"]), edges.get((source, n)),
                                   escalate={n, source} in hot_pairs))
             tends[-1]["sourceSeesHimAs"] = edges[(source, n)]["tenGod"]
-        # 事件候选（DESIGN-戏剧层 5.2）：在场各人自己的事，加当年每个交汇点边上的事；背景的人不出候选
+        # 事件候选（DESIGN-戏剧层 7.4）：在场各人自己的事，加当年每个交汇点边上的事；背景的人不出候选
         cands = []
         for n in present:
             if n in background or not _tl._is_candidate({"mechanisms": state[n]["mechanisms"]}):
@@ -379,6 +498,13 @@ def build(charts: list[dict], window: tuple[int, int], main: str, threads: list[
         if months:
             card["months"] = {n: state[n].get("months", []) for n in present}
         cards.append(card)
+    ext = _expand(charts, (a, b), main, cards, threads, casting, elders, guests, horizon, timescale, edges)
+    for c in cards:
+        c["sources"] = ext["byYear"][c["year"]]
+        c.update(ext["cardExtra"].get(c["year"], {}))
+    known = {f["id"] for f in feats}
+    feats += [f for f in ext["features"] if f["id"] not in known]
+    pool |= ext["ids"]
     hot = [c["year"] for c in cards]
     gaps, run = [], []
     for year in range(a, b + 1):
@@ -407,7 +533,7 @@ def build(charts: list[dict], window: tuple[int, int], main: str, threads: list[
                 yy = birth[n] + st["startAge"]
                 if max(y0, a) <= yy <= min(y1, b):
                     turning.append({"year": yy, "who": n, "what": f"换运入{st['pillar']}", "ids": [f"Q-{yy}-{n}"] if yy in hot else []})
-        # 高潮候选（DESIGN-戏剧层 5.4）：每卷按主机制烈度、主线副线的边有没有动、线上的人日柱挨没挨、哪条线该升级了，给前三
+        # 高潮候选（DESIGN-戏剧层 7.4）：每卷按主机制烈度、主线副线的边有没有动、线上的人日柱挨没挨、哪条线该升级了，给前三
         lined = {n for pair in [casting["main"]] + casting["sub"] for n in pair} if casting else {main}
         climax = []
         for c in cards:
@@ -439,12 +565,235 @@ def build(charts: list[dict], window: tuple[int, int], main: str, threads: list[
     segments = [{"year": c["year"], "source": c["source"], "mechanism": c["event"].get("mechanismRaw"),
                  "domain": (c["event"].get("primary") or {}).get("domain"), "dilemma": c["event"].get("dilemma"),
                  "present": c["present"], "threads": [t["id"] for t in c["threads"]]} for c in cards]
-    return {"schema": SCHEMA, "algorithm": "bazi-writing ensemble-run v1（DESIGN 17 已定项 2026-09-24-11；表 response_tendency.json）",
+    return {"schema": SCHEMA, "algorithm": "bazi-writing ensemble-run v1（DESIGN-戏剧层 7.4；表 response_tendency.json）",
             "window": [a, b], "main": main, "people": names, **({"casting": casting} if casting else {}),
             "hotYears": hot, "gaps": gaps, "cards": cards,
             "outline": {"volumes": volumes, "segments": segments},
             "threads": threads, "features": feats, "idPool": sorted(pool),
-            "note": "事件卡是草稿：模型对着一张卡写这一年的事件链，每步引卡上的编号；两难没解决就把 openThread 抄进线程文件标悬置，了结时改状态。"}
+            "note": "事件卡是草稿：模型对着一张卡写这一年的事件链，每步引卡上的编号；两难没解决就把 openThread 抄进线程文件标悬置，了结时改状态。",
+            # 以下是 DESIGN-戏剧层 6、7.5 加的，旧的几栏不动
+            "timescale": {"kind": timescale, "from": "编配" if (casting or {}).get("timescale") else "窗长推定", "years": b - a + 1,
+                          "note": TIMESCALE_NOTE[timescale]},
+            "fate": ext["fate"], "sourceKinds": [dict(k) for k in SOURCE_KINDS],
+            # 年年都有的钟不单独把一个过场年拉进来（短跨度看 monthGrid）
+            "offCard": [{"year": y, "sources": ext["byYear"][y]} for y in range(a, b + 1)
+                        if y not in hot and any(not x.get("every") for x in ext["byYear"][y])],
+            **({"monthGrid": ext["monthGrid"]} if timescale == "短跨度" else {}),
+            **({"returns": ext["returns"]} if timescale == "回到关口年" else {}),
+            **({"guests": ext["guests"]} if guests else {})}
+
+
+TIMESCALE_NOTE = {
+    "短跨度": "盘出人、前史与默认下场；推演最细到流月（卡上带 months，另有 monthGrid），单元由局与日历排；按大运切的卷在这里多半只有一卷",
+    "长跨度": "一年约一个大段，热年给大段的主事件；单元仍由局与日历排",
+    "回到关口年": "现在段短；returns 给各人窗前的关口年，单元回到谁的哪一年由事件链挑：先给成年的他，再回去，现在段晚几章让他认出来",
+}
+
+
+def _holder_at(obj: dict, year: int) -> str:
+    h = obj["holder"]
+    for ps in sorted(obj.get("passes", []), key=lambda x: x["year"]):
+        if ps["year"] <= year:
+            h = ps["to"]
+    return h
+
+
+def _expand(charts: list[dict], window: tuple[int, int], main: str, cards: list[dict], threads: list[dict], casting: dict | None,
+            elders: list[dict], guests: list[dict], horizon: int, timescale: str, edges: dict) -> dict:
+    """默认下场、前史与事件源扩表（DESIGN-戏剧层 6、5.2、7.2、7.5）。byYear：窗里每年的新几种源；cardExtra：卡上的谁碎与两难给谁。"""
+    a, b = window
+    names = [c["name"] for c in charts]
+    by_name = {c["name"]: c for c in charts}
+    birth = {c["name"]: _mx._anchor(c) for c in charts}
+    cast = casting or {}
+    background = set(cast.get("background", []))
+    fd = _fate.build(charts, window, horizon, elders, cast.get("families"), skip=background)
+    feats = list(fd["features"])
+    cache: dict = {}
+
+    def at(n: str, year: int) -> dict | None:
+        k = (n, year)
+        if k not in cache:
+            age = year - birth[n]
+            if age < 0:
+                cache[k] = None
+            else:
+                y = _fate._year(by_name[n], age, year)
+                cache[k] = {"y": y, "age": age, "item": _dl.rewrite_year(y, f"L-{age}-{y['pillar']}") if _tl._is_candidate(y) else None}
+        return cache[k]
+
+    by_year: dict[int, list[dict]] = {y: [] for y in range(a, b + 1)}
+
+    def add(year: int, src: dict) -> None:
+        if a <= year <= b:
+            by_year[year].append(src)
+
+    # 默认下场到点；编配透过的带 revealed
+    revealed = {(x["who"], x["year"]): x for x in cast.get("defaultFate", [])}
+    entries = {(e["who"], e["year"]): e for p in fd["people"] for e in p["entries"]}
+    for k in revealed:
+        if k not in entries:
+            raise ValueError(f"编配默认下场的 {k[0]} {k[1]} 年不在默认下场年表里（只有候选年份才有，见推演的 fate）")
+    for p in fd["people"]:
+        for e in p["entries"]:
+            rv = revealed.get((e["who"], e["year"]))
+            if e["inWindow"]:
+                add(e["year"], {"kind": "默认下场到点", "who": e["who"], "domain": e["domain"], "text": e["text"],
+                                **({"revealed": {k: v for k, v in rv.items() if k not in ("who", "year")}} if rv else {}),
+                                "ids": [e["id"]] + e["ids"]})
+    book = None
+    if revealed:
+        covers = max(y for _, y in revealed)
+        book = {"coversTo": covers,
+                "handover": [{"who": p["who"], "years": ys} for p in fd["people"]
+                             if (ys := [e["year"] for e in p["entries"] if covers < e["year"] <= b])],
+                "note": "透给读者的原本覆盖到 coversTo 这一年；过了这一年发动机交给 handover 里的人（他们默认下场的年份还在窗里）"}
+    # 过去追上来：冲年支、伏吟的年份，对上领域的前史（本人的与上一代的）
+    olds: dict[tuple[str, int], list[str]] = {}
+    for p in fd["people"] + fd["elders"]:
+        for e in p["prehistory"]:
+            for c in e["catchesUp"]:
+                olds.setdefault((c["who"], c["year"]), []).append(e["id"])
+    for p in fd["people"]:
+        for py in p["pastYears"]:
+            ph = olds.get((py["who"], py["year"]), [])
+            add(py["year"], {"kind": "过去追上来", "who": py["who"], "mechanisms": py["mechanisms"], "prehistory": ph,
+                             **({} if ph else {"note": "没有对得上领域的前史，哪条旧账由事件链挑"}), "ids": py["ids"] + ph})
+    # 对手出招：上一张卡里躲或压的、押得最重的那一头，他下一个候选年份出下一招；同一人同一年并成一条
+    moves: dict[tuple[str, int], dict] = {}
+    for c in cards:
+        losers = [t["who"] for t in c["tendencies"] if t["lean"] == "躲或压"]
+        if c.get("openThread"):
+            losers.append(c["openThread"]["people"][1])
+        for o in dict.fromkeys(losers):
+            if o in background:
+                continue
+            for year in range(c["year"] + 1, b + 1):
+                f = at(o, year)
+                if f and f["item"]:
+                    mv = moves.get((o, year))
+                    if mv is None:
+                        mv = moves[(o, year)] = {"kind": "对手出招", "who": o, "after": [], "text": "", "ids": f["item"]["ids"][:1]}
+                        add(year, mv)
+                    mv["after"].append({"year": c["year"], "against": c["source"], "stakeThen": (c["event"].get("primary") or {}).get("stake")})
+                    mv["ids"] = [f"Q-{c['year']}-{o}"] + mv["ids"]
+                    mv["text"] = ("、".join(f"{x['year']}年{x['against']}的事" for x in mv["after"])
+                                  + f"上{o}躲或压、押得重；{year}年{o}自己有事，下一招从{o}这里出")
+                    break
+    # 家人出招：同一家族里他是对方的官杀（对方看他为正官、七杀），他的候选年份压到对方头上
+    for fam in cast.get("families", []):
+        members = [n for n in fam if n in by_name]
+        for x in members:
+            for t in members:
+                if x == t or edges[(t, x)]["tenGod"] not in PRESS_GODS:
+                    continue
+                tg = edges[(t, x)]["tenGod"]
+                for year in range(max(a, birth[x]), b + 1):
+                    f = at(x, year)
+                    if f and f["item"]:
+                        add(year, {"kind": "家人出招", "who": x, "target": t, "text": f"{t}看{x}为{tg}，{x}这一年有事，压到{t}头上",
+                                   "ids": [f"E-{t}-{x}-十神-{tg}"] + f["item"]["ids"][:1]})
+    # 得知与认出：线程上卡时不在知情里的那一头；物件账
+    th_by = {t["id"]: t for t in threads}
+    for c in cards:
+        for t in c["threads"]:
+            th = th_by[t["id"]]
+            if "knows" not in th:
+                continue  # v1 线程没有知情一栏，不猜
+            knows = {k["who"] for k in th["knows"] if k["since"] <= c["year"]}
+            for n in th["people"]:
+                if n not in knows:
+                    add(c["year"], {"kind": "得知与认出", "who": n, "how": "线程", "thread": th["id"],
+                                    "text": f"{n}还不知道这笔账，这回上卡可以让{n}知道", "ids": [th["id"]]})
+    for o in cast.get("objects", []):
+        rc = o.get("recognized")
+        if rc:
+            add(rc["year"], {"kind": "得知与认出", "who": rc["by"], "how": "物件", "object": o["name"], "holder": _holder_at(o, rc["year"]),
+                             "planned": True, "text": f"物件账定在这一年：{rc['by']}认出{o['name']}", "ids": []})
+        for c in cards:
+            h = _holder_at(o, c["year"])
+            if h != o["holder"] and {h, o["holder"]} <= set(c["present"]) and not (rc and c["year"] >= rc["year"]):
+                add(c["year"], {"kind": "得知与认出", "who": o["holder"], "how": "物件", "object": o["name"], "holder": h, "planned": False,
+                                "text": f"{o['name']}已到{h}手里，原主{o['holder']}这一年同在场", "ids": []})
+    # 局与日历：钟按月挂上，同月谁的流月被引动
+    grid = []
+    for year in range(a, b + 1):
+        c0 = charts[0]
+        yp = pillar_name(sexagenary_index(c0["fourPillars"]["year"]) + year - birth[c0["name"]])
+        mps = _en.month_pillars(yp)
+        for m in range(1, 13):
+            hits = []
+            for n in names:
+                if year < birth[n]:
+                    continue
+                mech = _en._month_mechs(by_name[n]["fourPillars"], mps[m - 1])
+                if mech:
+                    ids = [f"Q-{year}-{n}-{m}月-{x}" for x in mech]
+                    hits.append({"who": n, "mechanisms": mech, "ids": ids})
+                    feats += [{"id": i, "text": f"{year}年第{m}月（{mps[m - 1]}）{n}{x}"} for i, x in zip(ids, mech)]
+            bells = [x for x in cast.get("calendar", []) if x["month"] == m and x.get("year") in (None, year)]
+            for x in bells:
+                add(year, {"kind": "局与日历", "name": x["name"], "month": m, "every": x.get("year") is None, "who": x.get("who", []), "hits": hits,
+                           "ids": [i for h in hits for i in h["ids"]]})
+            if hits or bells:
+                grid.append({"year": year, "month": m, "pillar": mps[m - 1], "bells": [x["name"] for x in bells], "hits": hits})
+    if timescale != "短跨度":  # 流月编号只在短跨度或钟用到时进池
+        used = {i for s in by_year.values() for x in s if x["kind"] == "局与日历" for i in x["ids"]}
+        feats = [f for f in feats if "月-" not in f["id"] or f["id"] in used]
+    # 卡上的谁碎与两难给谁
+    extra: dict[int, dict] = {}
+    brs = {x["who"]: x for x in cast.get("breakers", [])}
+    for c in cards:
+        e: dict = {}
+        if brs:
+            bl = []
+            for n in c["present"]:
+                x = brs.get(n)
+                if not x:
+                    continue
+                f = at(n, c["year"])
+                planned = x.get("year") == c["year"]
+                if planned or (f and f["item"]):
+                    bl.append({"who": n, **({"by": x["by"]} if x.get("by") else {}), "planned": planned,
+                               "why": "编配定在这一年" if planned else f"谁碎名单里的人，这一年是{n}的候选年份"})
+            e["breakers"] = bl
+        if casting and c["source"] == main:
+            who = [n for n in c["present"] if n != main and n not in background and (at(n, c["year"]) or {}).get("item")]
+            who.sort(key=lambda n: (n not in brs, c["present"].index(n)))
+            e["dilemmaTo"] = {"who": who, "note": _dl._T["use"]}
+        if e:
+            extra[c["year"]] = e
+    # 单元客：书前最近的热年是找上门的那件事；速生三问的底
+    gl = []
+    for g in guests:
+        co = _fate.course(g, window, horizon)
+        ph = _fate.prehistory(g, window)
+        gl.append({"who": g["name"], "entry": ph[-1] if ph else None, "course": [x for x in co["entries"] if x["inWindow"]],
+                   "nails": next((x for x in ph if x["nails"]), None), "breaker": brs.get(g["name"]),
+                   "asks": ["照常会怎样：course", "他信的假话与钉下它的那一年：nails", "谁来说破：编配谁碎一节"]})
+        for x in co["entries"]:
+            feats.append({"id": x["id"], "text": f"单元客 {g['name']} 默认下场：{x['text']}"})
+        for x in ph:
+            feats.append({"id": x["id"], "text": f"单元客 {g['name']} 前史：{x['text']}"})
+    # 回到关口年：各人窗前最烈的三个热年，六岁起（谎言钉法的年龄，回去得有一场他自己的戏）
+    returns = []
+    for p in fd["people"]:
+        top = sorted([x for x in p["prehistory"] if x["age"] >= min(_fate._lies.CHILD_AGES)], key=lambda x: (_dl.PRIORITY.index(_dl.normalize(x["mechanism"])), -x["year"]))[:3]
+        returns += [{"who": p["who"], "year": x["year"], "age": x["age"], "text": x["text"], "ids": [x["id"]]}
+                    for x in sorted(top, key=lambda x: x["year"])]
+    ids = {f["id"] for f in feats}
+    for p in fd["people"] + fd["elders"]:
+        for x in p.get("entries", []) + p["prehistory"]:
+            ids |= set(x["ids"])
+        ids |= set(p.get("shelfLife", {}).get("ids", []))
+        for x in p.get("pastYears", []):
+            ids |= set(x["ids"])
+    for s in by_year.values():
+        for x in s:
+            ids |= set(x["ids"])
+    return {"byYear": by_year, "cardExtra": extra, "features": feats, "ids": ids, "monthGrid": grid, "returns": returns, "guests": gl,
+            "fate": {"people": fd["people"], "elders": fd["elders"], "reveals": fd["reveals"], **({"book": book} if book else {}),
+                     "note": fd["note"]}}
 
 
 def check_chain(md: str, run: dict) -> list[dict]:
@@ -475,18 +824,64 @@ def check_chain(md: str, run: dict) -> list[dict]:
 
 
 BONE_FIELDS = ("为哪一人一事", "起", "承", "转", "合", "高潮年", "响", "清算", "卷末的问题")
-YEAR_FIELDS = ("牌面", "因", "事件", "选择", "知情", "线程", "主线温度", "读者")
+YEAR_FIELDS = ("牌面", "因", "源", "事件", "选择", "知情", "线程", "主线温度", "读者")
+KIND_NAMES = tuple(k["kind"] for k in SOURCE_KINDS)
+KIND_ALIAS = {"旁人求上门": "旁人求上门、班底派活", "班底派活": "旁人求上门、班底派活", "单元客入口": "旁人求上门、班底派活"}
+CARD_KINDS = ("默认下场到点", "过去追上来", "对手出招", "家人出招", "得知与认出", "局与日历")  # 卡上 sources 给的几种
+FATE_STATES = ("透", "应验", "改")
+_DF_REF = re.compile(r"(DF-[^\s\-，、；。,;（(]+-\d+)\s*(透|应验|改)?")  # DF-名-年，后面紧跟状态也认
+_GAP = re.compile(r"^过场\s*(\d{1,4})")
+
+
+def parse_kinds(value: str) -> tuple[list[str], list[str], str]:
+    """源一栏："对手出招、得知与认出；为什么挑它"。返回 (认得的种类, 认不得的词, 为什么)。"""
+    head, _, why = value.partition("；")
+    head = head.split("，")[0]
+    toks = [t.strip() for t in head.split("、") if t.strip()]
+    kinds, bad = [], []
+    i = 0
+    while i < len(toks):
+        pair = f"{toks[i]}、{toks[i + 1]}" if i + 1 < len(toks) else None
+        if pair in KIND_NAMES:
+            kinds.append(pair)
+            i += 2
+            continue
+        k = KIND_ALIAS.get(toks[i], toks[i])
+        if k in KIND_NAMES:
+            kinds.append(k)
+        else:
+            bad.append(toks[i])
+        i += 1
+    return list(dict.fromkeys(kinds)), bad, why.strip()
 TEMPERATURES = ("靠", "离", "撞", "退")
 _FIELD = re.compile(r"^- ([^：:]{1,12})[：:]\s*(.*)$")
 _STEP = re.compile(r"^\s+(?:\d+[.、]|[-*])\s*(.+)$")
 
 
 def check_chain_drama(md: str, run: dict, threads: list[dict] | None = None) -> dict:
-    """事件链新写法（模板 references/戏剧层/模板/推演.md）。返回 {"problems": [...], "stats": {...}}。
-    卷：二级标题，里面要有三级标题"骨"，九个字段齐。热年：三级标题以年份起头，八个字段齐，步子至少两步，
+    """事件链新写法（模板 references/戏剧层/模板/推演.md）。返回 {"problems": [...], "warnings": [...], "stats": {...}}。
+    卷：二级标题，里面要有三级标题"骨"，九个字段齐。热年：三级标题以年份起头，九个字段齐，步子至少两步，
     每步写以为与实际、标（明）或（暗）。卡上第三回上卡的线，这一年要么在线程一栏标响，要么至少一步是明的。
-    线程文件里状态是埋或压的线要有 plan。溯源照旧由 check_chain 核。"""
+    线程文件里状态是埋或压的线要有 plan。溯源照旧由 check_chain 核。
+    源（DESIGN-戏剧层 7.5）：十种之一起头，几种用顿号分开，分号后写为什么；卡上 sources 没给的那几种报 warn；
+    连着三个热年只有热年出事报 warn。默认下场一栏可空（过场行里也认）："DF-… 透／应验／改"；编配透的那几条要写哪一年透，
+    窗里到点的要写应验还是改；应验不在到点那一年、改在到点之后、没透先兑现、与编配的 outcome 不一样、编配没写透的，报 warn。"""
     problems: list[dict] = []
+    warnings: list[dict] = []
+    fate_marks: list[dict] = []
+    fate_ids = {e["id"]: e for p in (run.get("fate") or {}).get("people", []) for e in p["entries"]}
+
+    def marks(text: str, year: int | None, ln: int) -> None:
+        if text.strip() in ("", "无"):
+            return
+        for m in _DF_REF.finditer(text):
+            fid, state = m.group(1), m.group(2)
+            if fid not in fate_ids:
+                problems.append({"line": ln, "id": fid, "problem": "这一条不在推演的默认下场里"})
+            elif state is None:
+                problems.append({"line": ln, "id": fid, "problem": "默认下场的编号后面跟 透、应验、改 之一"})
+            else:
+                fate_marks.append({"id": fid, "state": state, "year": year, "line": ln})
     cards = {c["year"]: c for c in run.get("cards", [])}
     sections: list[dict] = []
     cur = None
@@ -496,6 +891,10 @@ def check_chain_drama(md: str, run: dict, threads: list[dict] | None = None) -> 
             volume = {"title": line[3:].strip(), "line": ln, "bone": None, "years": []}
             sections.append(volume)
             cur = None
+            continue
+        g = _GAP.match(line)
+        if g:
+            marks(line, int(g.group(1)), ln)
             continue
         if line.startswith("### "):
             title = line[4:].strip()
@@ -520,6 +919,8 @@ def check_chain_drama(md: str, run: dict, threads: list[dict] | None = None) -> 
     seen_years = set()
     open_steps = rung = 0
     temps: list[str] = []
+    kind_count: dict[str, int] = {}
+    plain_run = 0
     for v in vols:
         if v["bone"] is None:
             problems.append({"line": v["line"], "problem": f"{v['title']}没有骨：先立这一卷的骨再填步骤"})
@@ -532,6 +933,22 @@ def check_chain_drama(md: str, run: dict, threads: list[dict] | None = None) -> 
             for k in YEAR_FIELDS:
                 if not y["fields"].get(k):
                     problems.append({"line": y["line"], "problem": f"{y['year']}年缺{k}"})
+            src = y["fields"].get("源", "")
+            if src:
+                kinds, bad, why = parse_kinds(src)
+                for b in bad:
+                    problems.append({"line": y["line"], "problem": f"{y['year']}年源里的 {b} 不是十种源之一（{'、'.join(KIND_NAMES)}）"})
+                if kinds and not why:
+                    problems.append({"line": y["line"], "problem": f"{y['year']}年源要在分号后写为什么挑它"})
+                card_kinds = {x["kind"] for x in (cards.get(y["year"]) or {}).get("sources", [])}
+                for k in kinds:
+                    kind_count[k] = kind_count.get(k, 0) + 1
+                    if k in CARD_KINDS and y["year"] in cards and k not in card_kinds:
+                        warnings.append({"line": y["line"], "problem": f"{y['year']}年的卡上没有{k}这一种源：编配里没写的钟、物件账、家族，或线程的知情，先补进去再跑推演"})
+                plain_run = plain_run + 1 if kinds == ["热年出事"] else 0
+                if plain_run == 3:
+                    warnings.append({"line": y["line"], "problem": "连着三个热年只有热年出事：回去看漏了哪一种源（对手出招、得知、钟、默认下场到点……）"})
+            marks(y["fields"].get("默认下场", ""), y["year"], y["line"])
             t = y["fields"].get("主线温度", "")
             if t:
                 if t[0] not in TEMPERATURES:
@@ -567,9 +984,39 @@ def check_chain_drama(md: str, run: dict, threads: list[dict] | None = None) -> 
     flat = all(a == b for a, b in zip(temps, temps[1:])) if len(temps) >= 3 else False
     if flat:
         problems.append({"line": 0, "problem": f"主线温度从头到尾都是{temps[0]}，一直帐，没有擒放"})
-    return {"problems": problems,
+    # 默认下场：透了没有、兑现了没有
+    by_id: dict[str, list[dict]] = {}
+    for mk in fate_marks:
+        by_id.setdefault(mk["id"], []).append(mk)
+    planned = {f"DF-{x['who']}-{x['year']}": x for x in (run.get("casting") or {}).get("defaultFate", [])}
+    end = (run.get("window") or [0, 10 ** 6])[1]
+    for fid, ms in by_id.items():
+        due = fate_ids[fid]["year"]
+        shown = [m["year"] for m in ms if m["state"] == "透"]
+        for m in ms:
+            if m["state"] == "透":
+                continue
+            if m["state"] == "应验" and m["year"] != due:
+                warnings.append({"line": m["line"], "id": fid, "problem": f"应验写在{m['year']}年，这条默认下场到点是{due}年"})
+            if m["state"] == "改" and m["year"] is not None and m["year"] > due:
+                warnings.append({"line": m["line"], "id": fid, "problem": f"改写在{m['year']}年，到点的{due}年已经过了"})
+            if not any(x is not None and m["year"] is not None and x <= m["year"] for x in shown):
+                warnings.append({"line": m["line"], "id": fid, "problem": "没透就兑现：读者不知道原本，应验或改都落空"})
+            want = (planned.get(fid) or {}).get("outcome")
+            if want and want != m["state"]:
+                warnings.append({"line": m["line"], "id": fid, "problem": f"编配定的是{want}，事件链写了{m['state']}；改了就回去改编配"})
+        if shown and planned and fid not in planned:
+            warnings.append({"line": ms[0]["line"], "id": fid, "problem": "编配的默认下场一节没写透这一条，补进编配"})
+    for fid, x in planned.items():
+        ms = by_id.get(fid, [])
+        if not any(m["state"] == "透" for m in ms):
+            problems.append({"line": 0, "id": fid, "problem": "编配透给读者的这一条，事件链没写哪一年透"})
+        if x["year"] <= end and not any(m["state"] in ("应验", "改") for m in ms):
+            problems.append({"line": 0, "id": fid, "problem": "编配透给读者的这一条到点了，事件链没写应验还是改"})
+    return {"problems": problems, "warnings": warnings,
             "stats": {"volumes": len(vols), "years": len(seen_years), "openSteps": open_steps, "rung": rung,
-                      "temperature": "".join(temps),
+                      "temperature": "".join(temps), "sources": kind_count,
+                      "defaultFate": {x: sum(1 for m in fate_marks if m["state"] == x) for x in FATE_STATES},
                       "threadsOpen": sum(1 for t in threads or [] if t["status"] in THREAD_OPEN),
                       "threadsClosed": sum(1 for t in threads or [] if t["status"] not in THREAD_OPEN)}}
 
@@ -581,10 +1028,13 @@ def _main(argv: list[str]) -> int:
     ap.add_argument("--main", help="主角名，卷按他的大运切")
     ap.add_argument("--threads", help="线程文件 群像/线程.json")
     ap.add_argument("--casting", help="编配的机器本 群像/编配.json（主线、副线、背景的人、领域配权）")
-    ap.add_argument("--months", action="store_true", help="热年在场的人带十二流月")
+    ap.add_argument("--months", action="store_true", help="热年在场的人带十二流月（短跨度自动带）")
+    ap.add_argument("--elders", nargs="*", default=[], help="上一代的命盘：只出前史，不进交汇点")
+    ap.add_argument("--guests", nargs="*", default=[], help="单元客的命盘：只出入口（书前的热年）与默认下场，不进交汇点")
+    ap.add_argument("--horizon", type=int, default=_fate.DEFAULT_HORIZON, help="默认下场延到窗后几年，默认 10")
     ap.add_argument("--check-chain", metavar="MD", help="核对人物/推演.md 的溯源都在推演 idPool 里")
     ap.add_argument("--run", metavar="JSON", help="--check-chain 用：推演.json")
-    ap.add_argument("--drama", action="store_true", help="--check-chain 用：按事件链新写法再查骨、因、落差、明暗、升级（DESIGN-戏剧层 4.3）")
+    ap.add_argument("--drama", action="store_true", help="--check-chain 用：按事件链新写法再查骨、因、落差、明暗、升级（DESIGN-戏剧层 8）")
     ns = ap.parse_args(argv)
     sys.stdout.reconfigure(encoding="utf-8")
     if ns.check_chain:
@@ -598,17 +1048,25 @@ def _main(argv: list[str]) -> int:
             th = load_threads(json.loads(Path(ns.threads).read_text(encoding="utf-8"))) if ns.threads else run.get("threads", [])
             d = check_chain_drama(md, run, th)
             problems += d["problems"]
+            warnings = d["warnings"]
             stats = d["stats"]
+        else:
+            warnings = []
         for p in problems:
             print(json.dumps({"file": ns.check_chain, **p}, ensure_ascii=False))
-        print(json.dumps({"summary": True, "file": ns.check_chain, "problems": len(problems), **stats}, ensure_ascii=False))
+        for p in warnings:
+            print(json.dumps({"file": ns.check_chain, "level": "warn", **p}, ensure_ascii=False))
+        print(json.dumps({"summary": True, "file": ns.check_chain, "problems": len(problems), "warnings": len(warnings), **stats},
+                         ensure_ascii=False))
         return 1 if problems else 0
     if not ns.charts or not ns.window or not ns.main:
         ap.error("要给命盘、--window 与 --main")
     charts = [json.loads(Path(p).read_text(encoding="utf-8")) for p in ns.charts]
     threads = load_threads(json.loads(Path(ns.threads).read_text(encoding="utf-8"))) if ns.threads else []
     casting = json.loads(Path(ns.casting).read_text(encoding="utf-8")) if ns.casting else None
-    out = build(charts, (ns.window[0], ns.window[1]), ns.main, threads, ns.months, casting)
+    elders = [json.loads(Path(p).read_text(encoding="utf-8")) for p in ns.elders]
+    guests = [json.loads(Path(p).read_text(encoding="utf-8")) for p in ns.guests]
+    out = build(charts, (ns.window[0], ns.window[1]), ns.main, threads, ns.months, casting, elders, guests, ns.horizon)
     print(json.dumps(out, ensure_ascii=False, indent=1))
     return 0
 

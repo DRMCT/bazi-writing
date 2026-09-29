@@ -1,6 +1,6 @@
 {
   "schema": "bazi-search/v1",
-  "algorithm": "bazi-writing search v1（DESIGN 12）",
+  "algorithm": "bazi-writing search v1（DESIGN-命盘层 8）",
   "constraints": {
     "name": "林昭",
     "calendar": {

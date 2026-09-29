@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 人物档案契约与溯源检查（DESIGN 第 13 节）。
+// 人物档案契约与溯源检查（DESIGN-人物层 第 10 节）。
 //
 //   node scripts/check-character.js 人物/沈砚.json                  命盘路径取 JSON 里的 chart 字段（相对于人物档案所在目录的上一级，即项目根）
 //   node scripts/check-character.js 人物/沈砚.json --chart 命盘/沈砚.json
@@ -12,12 +12,12 @@
 // 检查：schema 为 bazi-character/v1；十三个必备段落在场；每条特质 text 非空且 sources 非空；每个溯源编号在命盘 features 里存在；
 // 同一段落内特质不重复。阶段状态段用 stages 而不是 traits：每张卡 stage 是命盘里的 D-{步}-{干支} 编号、ages 两个整数、label 非空、
 // traits 至少一条且每条 aspect 取七面之一；卡按岁数递增、不重复；卡内特质与其他段落同样查溯源（阶段事实编号在年表里，要加 --timeline）。
-// 体与用分层（DESIGN 8.3，2026-09-24）：说话方式、能力与漏洞两段每条标 layer 为底色或走向，至少一条底色，有阶段卡时恰一条走向；
+// 体与用分层（DESIGN-人物层 4，2026-09-24）：说话方式、能力与漏洞两段每条标 layer 为底色或走向，至少一条底色，有阶段卡时恰一条走向；
 // 性格表里只有表现层标底色，另恰一条走向（text 以"表现层"起头），身份层、内核层、矛盾面不标；其余段落是定论，不标 layer。
 // 底色是命局不带运，不引 D- 编号；走向要引在场阶段卡的 D- 编号；年表与两难每条要引 L- 或 J- 编号落到年份（按运分段的写进阶段卡）；空段是待补充，不查层。
-// 设定卡（DESIGN 3.6）：顶层 setting 必备，period 取古代、近代、现代、未来、异世界之一，world 一句话非空；其余槽位（authority、elders、union、
+// 设定卡（DESIGN-人物层 5）：顶层 setting 必备，period 取古代、近代、现代、未来、异世界之一，world 一句话非空；其余槽位（authority、elders、union、
 // inlaws、path、legacy、money、output）可缺（待补充），在场须是字符串；不认识的键报出来。
-// 五运六气主次（DESIGN 7.4 交感，2026-09-24-9）：命盘 yunqi.roles 按角色列 YQ- 编号（主干、体、主、用、改写、背景）；引了 YQ- 的特质
+// 五运六气主次（DESIGN-命盘层 4 交感，2026-09-24-9）：命盘 yunqi.roles 按角色列 YQ- 编号（主干、体、主、用、改写、背景）；引了 YQ- 的特质
 // 至少要引到主干、体（岁运）或主（为纲的那一头）之一，不能只引背景与改写；命盘没有 roles（旧命盘）时不查。
 // 事件类编号（roles.事件：YQ-档-、YQ-病-、YQ-志-、YQ-上临-）是疾病与情志候选，写在年表与两难里，不受这条约束。
 // 每条问题一行 JSON {"file","section","trait","problem"}，最后一行汇总 {"summary":true,...}，有问题退出码 1。

@@ -1,4 +1,4 @@
-"""神煞白名单十五种（DESIGN.md 附录 B），查表层。
+"""神煞白名单十五种（DESIGN-命盘层.md 附录 A），查表层。
 
 表来自 tables/shensha.json，由 scripts/build_shensha.py 从校核卡 references/校核/神煞_{组}.md 的「采用规则」生成；
 每条带 source 指向卡号。校核依据：《四库版足本三命通会》（华龄出版社，万民英撰、闵兆才编校）校对本，

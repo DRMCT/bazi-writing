@@ -1,14 +1,14 @@
-"""两难改写 v1（DESIGN 10 第 3 条、8.2"压力下的选择"）：年表的候选年份 → 两难草稿。
+"""两难改写 v1（DESIGN-戏剧层 7.2、DESIGN-人物层 3"压力下的选择"）：年表的候选年份 → 两难草稿。
 
 年表只给事实（机制怎么发生、领域赌注是什么）；岁运事件类型表（tables/suiyun_events.json）给机制的形态、领域的赌注、
 精选格的两难模板与合成规则。本模块把两者对起来：
 - 主机制：候选年份的机制按烈度排（天克地冲、冲日支、冲提纲、岁运并临、伏吟、岁运相冲、冲年支、冲时支、换运、合绊用神、忌神透干、
   刑、害、合日支、合化为用、用神到位），取最烈的一个；"天克地冲年柱""巳刑申（日支）"一类按前缀归到表里的机制名。
 - 主领域：按年表每个领域的 weight（强信号 2、弱信号 1）取最大，主机制冲到的宫位天然指向的领域加 2（冲日支先动感情、身心，
-  冲提纲先动六亲、事业，冲年支先动六亲、迁徙，冲时支先动创造与传承），同分按第 10 节九领域的顺序；副领域取次大者，
+  冲提纲先动六亲、事业，冲年支先动六亲、迁徙，冲时支先动创造与传承），同分按九领域（DESIGN-命盘层 5）的顺序；副领域取次大者，
   精选格里配的副领域若当年也动了则优先它。领域互斥是最好的两难（保名誉就失感情）。
 - 两难：表里有 (机制, 主领域) 的精选格就用它；没有就按 compose 规则合成：机制的形态加主副领域的赌注。
-- 影响谁（第 3 条"标注影响哪些其他角色"）：给了别人的命盘时，按群像快照（ensemble）取那一年从本人出发或指向本人的被引动边。
+- 影响谁（DESIGN-戏剧层 7.2"标注影响哪些其他角色"）：给了别人的命盘时，按群像快照（ensemble）取那一年从本人出发或指向本人的被引动边。
 输出是草稿，由作者挑、模型改写成这个人的话；不产生编号，sources 引年表的 L- 编号（ids 栏已列出）与 D- 基调编号。
 
 命令行（在作者项目根下）：
@@ -62,7 +62,7 @@ AFFINITY_BONUS = 2  # 等于一条强信号
 
 
 def affinity(raw_mech: str) -> tuple[str, ...]:
-    """主机制天然指向的领域：冲哪个宫位就先动那个宫位的赌注（第 10 节领域表的触发来源）。"""
+    """主机制天然指向的领域：冲哪个宫位就先动那个宫位的赌注（DESIGN-命盘层 5 领域表的触发来源）。"""
     if raw_mech.startswith("冲提纲"):
         return _PALACE_DOMAIN["月"]
     if raw_mech.startswith("冲日支") or raw_mech.startswith("合日支"):
@@ -81,7 +81,7 @@ def affinity(raw_mech: str) -> tuple[str, ...]:
 
 
 def rank_domains(domains: list[dict], raw_mech: str | None = None, weights: dict | None = None) -> list[dict]:
-    """weights：书的领域配权（编配表，DESIGN-戏剧层 5.3），领域名 → 倍数，没写的算 1。只改挑哪个领域当主领域，不动年表的事实。"""
+    """weights：书的领域配权（编配表，DESIGN-戏剧层 4），领域名 → 倍数，没写的算 1。只改挑哪个领域当主领域，不动年表的事实。"""
     order = {d: i for i, d in enumerate(_tl.DOMAINS)}
     aff = affinity(raw_mech) if raw_mech else ()
     weights = weights or {}
@@ -107,7 +107,7 @@ FILL = "落词按此人此年手里有的东西（阶段卡第八面），模板
 
 
 def rewrite_year(y: dict, head: str, weights: dict | None = None, avoid: str | None = None) -> dict | None:
-    """avoid：这个领域连着做了两个热年的主领域，这一年若还有别的领域在动就让它退到后面（DESIGN-戏剧层 5.3）。"""
+    """avoid：这个领域连着做了两个热年的主领域，这一年若还有别的领域在动就让它退到后面（DESIGN-戏剧层 4）。"""
     pm = primary_mechanism(y["mechanisms"])
     if pm is None or not y["domains"]:
         return None
@@ -183,7 +183,7 @@ def build(tl: dict, chart: dict | None = None, others: list[dict] | None = None,
         if chart is not None and others and y.get("year") is not None:
             item["affects"] = _affects(chart, others, y["year"])
         items.append(item)
-    return {"schema": SCHEMA, "algorithm": "bazi-writing dilemma v1（DESIGN 10 第 3 条；表 suiyun_events.json）",
+    return {"schema": SCHEMA, "algorithm": "bazi-writing dilemma v1（DESIGN-戏剧层 7.2；表 suiyun_events.json）",
             "name": tl.get("name"), "compose": _T["compose"], "items": items,
             "note": "草稿。作者挑年份与主副领域，模型改写成这个人的话；sources 引 ids 里的年表编号，本文件不产生编号。"}
 

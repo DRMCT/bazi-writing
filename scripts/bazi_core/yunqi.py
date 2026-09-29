@@ -1,4 +1,4 @@
-"""五运六气：生年运气盘面、出生所值之气与体质表查表（DESIGN 7.1 五运六气行、8.1 体质与外貌暗示、气质底色）。
+"""五运六气：生年运气盘面、出生所值之气与体质表查表（DESIGN-命盘层 3.1 五运六气行、DESIGN-人物层 1 体质与外貌暗示、气质底色）。
 
 盘面按运气年干支推：岁运（年干化五行，阳年太过阴年不及）、司天在泉（年支组）、客气六步、主气六步；
 年关系：天符、岁会、天符兼岁会、同天符、同岁会、平气（后世推演）、岁运与司天、岁运与在泉的生克结构（为纲那一头作改写、另一头作背景）、
@@ -7,14 +7,14 @@
 年柱以立春换年，大寒到立春之间生的人两者不同，记 yunqiYearDiffers；架空历按月支取（tables/yunqi.json fictionalStep：
 跨中气的月默认取中气后一段并标 stepUnresolved，丑月默认不翻年），作者可用 yunqi_step 指定（初之气…终之气、次年初之气、1–6）。
 岁半之法：初二三之气以司天为纲，四五终之气以在泉为纲。客主加临只给五行结构与二火的君臣顺逆。
-主次（DESIGN 7.4 交感，2026-09-24-9）：年主干（六元正纪六十年纪一对干支一条，上中下合看，编号 YQ-年-{干支}）总起，
+主次（DESIGN-命盘层 4 交感，2026-09-24-9）：年主干（六元正纪六十年纪一对干支一条，上中下合看，编号 YQ-年-{干支}）总起，
 运为体、纲气为主、当步之气为用、修正为改写、另一头作背景，features 按此排，
 hits 每条带 role，顶层 roles 按角色列编号；背景那一头只给气化与民病，不给体质句，免得同一股气写两遍。
 
 查表常量与年关系判法从作者自己的排盘项目搬入，逐条对《素问》运气七篇的卡（references/校核/运气_盘面.md）；
 体质表 tables/yunqi_body.json（narrative-table/v1，六张分表：岁运、平气、司天在泉、六步、年关系与加临修正、与调候寒燥的叠加）
 的据卡栏指向 运气_岁运、运气_司天在泉、运气_六步 的卡，体质、外貌、气质三栏自起草。
-两层（DESIGN 7.4 病秧子问题，2026-09-24-10）：画像层只给体格与体感和一句薄弱处，据卡从五常政其化其德其候与气化取，文本不带民病、不给气质；
+两层（DESIGN-命盘层 4 病秧子问题，2026-09-24-10）：画像层只给体格与体感和一句薄弱处，据卡从五常政其化其德其候与气化取，文本不带民病、不给气质；
 事件层 events 给疾病与情志候选（受邪之脏、民病、甚则、死不治、情志方向与轻相重相、上临病反）与严重档（和、显、危），role 事件，默认不写，
 year_qi(流年干支) 给故事年岁气与疫季，timeline 在身心域被引动的年份挂 L-…-病候。
 编号前缀 YQ：YQ-年-{干支}、YQ-岁运-{木运太过}、YQ-平气-{五行}、YQ-司天-{六气}、YQ-在泉-{六气}、YQ-气-{步}-{客气}、YQ-加临-{客生主}、
@@ -61,7 +61,7 @@ _ROWS_TIANQUAN = {(r["qi"], r["position"]): r for r in _SEC["tianquan"]["rows"]}
 _ROWS_STEP = {(r["group"], r["step"]): r for r in _SEC["steps"]["rows"]}
 _ROWS_REL = {r["cond"]: r for r in _SEC["relations"]["rows"]}
 _ROWS_OVERLAP = {r["cond"]: r for r in _SEC["overlap"]["rows"]}
-# 年景表（2026-09-25，DESIGN 7.4 副产品）：故事年一对干支一行，全书共享的年景；表还没起草时 year_qi 不带 scene
+# 年景表（2026-09-25，DESIGN-命盘层 4 副产品）：故事年一对干支一行，全书共享的年景；表还没起草时 year_qi 不带 scene
 _YEAR_TABLE = _TABLES / "yunqi_year.json"
 _ROWS_SCENE: dict[str, dict] = {}
 if _YEAR_TABLE.exists():
@@ -159,7 +159,7 @@ def _rel5(yun: str, other: str, tag: str) -> str:
 
 
 def grade_of(pat: dict, rel_gov: str) -> tuple[str, str]:
-    """严重档（DESIGN 7.4 病秧子问题，卡 运气-盘面-运与司天、天符、岁会、太一天符、同天符同岁会、平气）：
+    """严重档（DESIGN-命盘层 4 病秧子问题，卡 运气-盘面-运与司天、天符、岁会、太一天符、同天符同岁会、平气）：
     平气→和；太过之年天符（含太一天符）、同天符→危（执法其病速而危，贵人其病暴而死）；岁会、同岁会、运与为纲之气不相得→显（行令其病徐而持，不相得则病）；
     其余（相得、不加不临而相得）→和（气相得则和）。"""
     if pat["pingQi"]:
@@ -180,7 +180,7 @@ def grade_of(pat: dict, rel_gov: str) -> tuple[str, str]:
 
 
 def year_qi(year_pillar: str) -> dict:
-    """故事年的岁气（DESIGN 7.4 事件层）：按流年干支查同一张表，给司天在泉、岁运、六步的气化与民病、疫季。年表在身心域被引动的年份用它写病候。"""
+    """故事年的岁气（DESIGN-命盘层 4 事件层）：按流年干支查同一张表，给司天在泉、岁运、六步的气化与民病、疫季。年表在身心域被引动的年份用它写病候。"""
     pat = year_pattern(year_pillar)
     steps = []
     for k, label in enumerate(STEP_LABELS):
@@ -295,9 +295,9 @@ def for_chart(pillars: dict, instant_utc: datetime | None, ys: dict | None = Non
               yunqi_step: str | int | None = None) -> dict:
     """命盘 yunqi 节：盘面、出生所值之气、年关系、体质表命中的行与 YQ- 编号。ys 是用神档案（取调候之神看寒燥叠加）。
 
-    画像层 features 与 hits 按主次排（DESIGN 7.4 交感）：年主干（六十年纪上中下一句体格体感加薄弱处）→ 运为体（岁运、平气）→ 纲气为主（岁半之法定的那一头）
+    画像层 features 与 hits 按主次排（DESIGN-命盘层 4 交感）：年主干（六十年纪上中下一句体格体感加薄弱处）→ 运为体（岁运、平气）→ 纲气为主（岁半之法定的那一头）
     → 当步之气为用 → 修正为改写（运与司天在泉、运与当步、客主加临、君臣、年关系、平气、与调候叠加）→ 另一头作背景；只给体格体感，文本里不带民病。
-    事件层（DESIGN 7.4 病秧子问题）另列在后：严重档、疾病候选、情志候选、上临病反，role 事件，默认不写，年表在身心域被引动的年份挂病候时由作者挑。
+    事件层（DESIGN-命盘层 4 病秧子问题）另列在后：严重档、疾病候选、情志候选、上临病反，role 事件，默认不写，年表在身心域被引动的年份挂病候时由作者挑。
     每条 hit 带 role，顶层 roles 按角色列编号，检查器据此要求体质段引到主干、体或主，不能只引背景与改写；事件类编号不受此约束。"""
     year_pillar = pillars["year"]
     if instant_utc is not None:
@@ -413,7 +413,7 @@ def for_chart(pillars: dict, instant_utc: datetime | None, ys: dict | None = Non
         f"{pat['group']}年{other_qi}{other_pos}，{'下' if half == '司天' else '上'}半年的天气，作背景（{_cell(r, 'climate')}）：写人时一笔带过，体感按为纲的 YQ-{half}-{governing}",
         bg_row, governing=False)
 
-    # 事件层（DESIGN 7.4 病秧子问题）：严重档、疾病候选、情志候选、上临病反；默认不写，年表在身心域被引动的年份挂病候时由作者挑
+    # 事件层（DESIGN-命盘层 4 病秧子问题）：严重档、疾病候选、情志候选、上临病反；默认不写，年表在身心域被引动的年份挂病候时由作者挑
     grade, grade_why = grade_of(pat, rel_gov)
     tempo = "太过者暴，病甚" if pat["taiGuo"] else "不及者徐，病持"
     g = _ROWS_GRADES.get(grade)
@@ -442,7 +442,7 @@ def for_chart(pillars: dict, instant_utc: datetime | None, ys: dict | None = Non
     return {
         "algorithm": "yunqi/v1",
         "status": "盘面与年关系搬自方宜、对《素问》运气七篇卡；体格体感与疾病情志候选自起草；架空历按月支定步自起草；"
-                  "画像层 features 按年主干、运为体、纲气为主、当步为用、修正为改写、另一头作背景排，不带民病（DESIGN 7.4 交感）；事件层 events 默认不写（病秧子问题）",
+                  "画像层 features 按年主干、运为体、纲气为主、当步为用、修正为改写、另一头作背景排，不带民病（DESIGN-命盘层 4 交感）；事件层 events 默认不写（病秧子问题）",
         "reading": READING,
         "yearPillar": yq_pillar,
         "pair": pair,

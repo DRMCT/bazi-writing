@@ -128,7 +128,7 @@
       "子": {"step": 5, "unresolved": false},
       "丑": {"step": 5, "unresolved": true, "boundary": "大寒", "before": 5, "after": "次年初之气"}
     },
-    "note": "自起草（DESIGN 7.1 运气行）：六气以中气交气、月柱以节换月，寅辰午申戌子六个月整月在一步内，卯巳未酉亥丑跨两步。跨步的月默认取中气后一段（与调候 periodUnresolved 同口径）并标 stepUnresolved；丑月例外：大寒后翻到次年运气年、年干支随之换，默认不翻年（取终之气），作者用 --yunqi-step 次年初之气 指定",
+    "note": "自起草（DESIGN-命盘层 3.1 运气行）：六气以中气交气、月柱以节换月，寅辰午申戌子六个月整月在一步内，卯巳未酉亥丑跨两步。跨步的月默认取中气后一段（与调候 periodUnresolved 同口径）并标 stepUnresolved；丑月例外：大寒后翻到次年运气年、年干支随之换，默认不翻年（取终之气），作者用 --yunqi-step 次年初之气 指定",
     "source": "自起草"
   }
 }

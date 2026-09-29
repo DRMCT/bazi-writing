@@ -19,7 +19,7 @@ def _j(v) -> str:
     return json.dumps(v, ensure_ascii=False)
 
 
-# 设定卡（DESIGN 3.6）的槽位次序：时代与世界在前，八个社会位置槽位按十神与宫位的来源排，作者自加的键排最后
+# 设定卡（DESIGN-人物层 5）的槽位次序：时代与世界在前，八个社会位置槽位按十神与宫位的来源排，作者自加的键排最后
 SETTING_KEYS = ("period", "world", "authority", "elders", "union", "inlaws", "path", "legacy", "money", "output")
 
 

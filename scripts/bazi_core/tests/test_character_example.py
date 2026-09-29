@@ -116,7 +116,7 @@ def test_character_checker_guards_emotion_beats(tmp_path: Path) -> None:
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="需要 node")
 def test_character_checker_requires_yunqi_core_source(tmp_path: Path) -> None:
-    """五运六气主次（DESIGN 7.4 交感）：引了 YQ- 的特质要引到体（岁运）或主（为纲那一头），只引背景与修正要报。"""
+    """五运六气主次（DESIGN-命盘层 4 交感）：引了 YQ- 的特质要引到体（岁运）或主（为纲那一头），只引背景与修正要报。"""
     c = chart.chart_from_pillars("甲申", "壬申", "乙巳", "戊寅", "male", story_epoch=300, name="沈砚")
     c["liunian"] = [chart.liunian(c, 30)]
     c["features"] = chart.features(c)
@@ -173,7 +173,7 @@ def test_cli_accepts_several_ages() -> None:
 
 @pytest.mark.skipif(shutil.which("node") is None, reason="需要 node")
 def test_setting_card_contract_render_and_period_aware_terms(tmp_path: Path) -> None:
-    """设定卡（DESIGN 3.6）：检查器查 period、world 与不认识的槽位；渲染只进作者本；去术语检查的时代措辞组按设定卡的 period 开关；
+    """设定卡（DESIGN-人物层 5）：检查器查 period、world 与不认识的槽位；渲染只进作者本；去术语检查的时代措辞组按设定卡的 period 开关；
     现代样例 沈砚.现代 与 沈砚 同盘同编号，过契约检查，读者本零 error 零 warn。"""
     sys.path.insert(0, str(ROOT / "scripts"))
     import character_render as cr

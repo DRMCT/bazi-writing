@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 正文检查（DESIGN-写作层 第 8 节 check-prose）：一章一跑，也可一次给几章。零依赖，JSON 一行一条，最后一行汇总；有 error 退出码 1。
+// 正文检查（DESIGN-写作层 第 10 节 check-prose）：一章一跑，也可一次给几章。零依赖，JSON 一行一条，最后一行汇总；有 error 退出码 1。
 //
 //   node scripts/check-prose.js 书/正文/第4章.md                  按 书/ 推断：细纲/第4章.md、文风.md、主题.md、../人物/*.读者本.md、前几章
 //   node scripts/check-prose.js 书/正文/第1章.md 书/正文/第2章.md   几章一起，前面的章自动当后面的章的前文

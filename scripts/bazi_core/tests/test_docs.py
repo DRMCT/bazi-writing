@@ -5,7 +5,8 @@
 - 任务书标题里的"流程第 N 步"与 SKILL 流程节对得上。
 - 任务书引的 命盘/、人物/ 产物都在 SKILL 的目录图里。
 - 模板、检查器、任务书说的字段与项数同源：读法卡、文风卡、戏用页。
-- 运行时文件（SKILL、任务书、模板、问法、用法、术语表）不指着设计稿；SKILL 与用法不写日期；SKILL 只留路由（不超过两百二十行），它点到的文件都在。
+- 运行时文件（SKILL、任务书、模板、问法、用法、术语表）不指着设计稿与决策记录；SKILL 与用法不写日期；SKILL 只留路由（不超过两百二十行），它点到的文件都在。
+- 设计稿只写现在（DESIGN.md 0c）：不写日期，经过进 决策/；有字数上限。
 """
 
 from __future__ import annotations
@@ -154,8 +155,8 @@ def runtime_docs() -> list[Path]:
 
 
 def test_runtime_docs_do_not_point_to_design_docs() -> None:
-    bad = [f"{p.relative_to(ROOT)}:{i}" for p in runtime_docs() for i, line in enumerate(read(p).splitlines(), 1) if "DESIGN" in line]
-    assert not bad, "运行时文件里提到设计稿（要用的规矩写进运行时文件本身）：\n" + "\n".join(bad)
+    bad = [f"{p.relative_to(ROOT)}:{i}" for p in runtime_docs() for i, line in enumerate(read(p).splitlines(), 1) if "DESIGN" in line or "决策/" in line or re.search(r"决-\d{3}", line)]
+    assert not bad, "运行时文件里提到设计稿或决策记录（要用的规矩写进运行时文件本身）：\n" + "\n".join(bad)
 
 
 def test_skill_and_usage_have_no_dates() -> None:
@@ -185,6 +186,75 @@ def test_skill_referenced_files_exist() -> None:
 def test_drama_page_asks_and_beats_in_sync() -> None:
     tpl = json.loads(read(REFS / "戏剧层" / "模板" / "戏用页.json"))
     src = read(ROOT / "scripts" / "check-drama.js")
-    assert [a["ask"] for a in tpl["asks"]] == js_array(src, "ASKS")
+    assert [a["ask"] for a in tpl["asks"]] == js_array(src, "ASKS") + js_array(src, "EXTRAS")
     used = {line["beat"] for a in tpl["asks"] for line in a["lines"] if "beat" in line}
     assert used == set(js_array(src, "BEATS")), used
+    assert tpl["belief"] in js_array(src, "BELIEFS")
+    assert {line["by"] for a in tpl["asks"] for line in a["lines"] if "by" in line} <= set(js_array(src, "BREAK_BY"))
+    import drama_render  # 渲染与检查器认同一串附问
+    assert list(drama_render.EXTRAS) == js_array(src, "EXTRAS")
+
+
+DESIGNS = {"DESIGN.md", "DESIGN-命盘层.md", "DESIGN-人物层.md", "DESIGN-戏剧层.md", "DESIGN-写作层.md"}
+# 设计稿的字数上限（五份都照 0c 瘦过）
+DESIGN_MAX_CHARS = {"DESIGN.md": 8000, "DESIGN-命盘层.md": 15000, "DESIGN-人物层.md": 10000, "DESIGN-戏剧层.md": 12000, "DESIGN-写作层.md": 11000}
+
+
+def test_only_five_design_docs() -> None:
+    extra = {p.name for p in ROOT.glob("DESIGN*.md")} ^ DESIGNS
+    assert not extra, f"设计稿只有总纲加四层五份（DESIGN.md 0c），多了或少了：{extra}。拿不准归哪层的先放总纲待定"
+
+
+def test_layer_docs_follow_skeleton() -> None:
+    for name in DESIGN_MAX_CHARS:
+        if name == "DESIGN.md":
+            continue
+        heads = re.findall(r"^## ([0-9]+)\. (.+)$", read(ROOT / name), re.M)
+        assert heads and heads[0][0] == "0", f"{name}：第 0 节是定位"
+        assert "检查与验收" in heads[-2][1] and "待定" in heads[-1][1], f"{name}：倒数第二节检查与验收、末节待定，现在是 {heads[-2:]}"
+
+
+def design_anchors(name: str) -> set[str]:
+    return {m.group(1) for m in re.finditer(r"^#{2,3} (附录 [A-Z]|[0-9]+[a-z]?(?:\.[0-9]+)?)", read(ROOT / name), re.M)}
+
+
+def test_design_citations_resolve() -> None:
+    """全仓引瘦过的设计稿的节号（"DESIGN-人物层 4""DESIGN.md 0c""DESIGN 附录 A"）都落得到；瘦过的稿内"第 N 节"也落得到。
+    决策/ 与工作进度是历史，指的是当时的稿子，不查。"""
+    num = r"(?:附录 ?[A-Z]|[0-9]+[a-z]?(?:\.[0-9]+)?)"
+    cite = re.compile(r"(DESIGN(?:-(?:命盘层|人物层|戏剧层|写作层))?)(?:\.md)?`?\s*(?:第\s*)?(" + num + r"(?:\s*、\s*" + num + r")*)(?![0-9.])")
+    inner = re.compile(r"(?<![-\w])第 ?(" + num + r"(?:、" + num + r")*) ?节")
+    anchors = {n.removesuffix(".md"): design_anchors(n) for n in DESIGN_MAX_CHARS}
+    out = subprocess.run(["git", "ls-files", "-z", "--cached", "--others", "--exclude-standard"],
+                         cwd=ROOT, capture_output=True, check=True).stdout.decode("utf-8").split("\0")
+    bad = []
+    for name in out:
+        if not name or name.startswith(("决策/", "工作进度", "source/")) or not name.endswith((".md", ".py", ".js", ".json")):
+            continue
+        try:
+            text = read(ROOT / name)
+        except (UnicodeDecodeError, FileNotFoundError):
+            continue
+        for i, line in enumerate(text.splitlines(), 1):
+            for m in cite.finditer(line):
+                if m.group(1) not in anchors:
+                    continue
+                for n in re.split(r"\s*、\s*", m.group(2)):
+                    n = re.sub(r"附录 ?", "附录 ", n)
+                    if n not in anchors[m.group(1)]:
+                        bad.append(f"{name}:{i}: {m.group(1)} {n}")
+            if name in DESIGN_MAX_CHARS:
+                for m in inner.finditer(line):
+                    bad += [f"{name}:{i}: 本稿第 {n} 节" for n in m.group(1).split("、") if n not in anchors[name.removesuffix(".md")]]
+    assert not bad, "引设计稿的节号落不到（改节号时用脚本把引用一起改）：\n" + "\n".join(bad)
+
+
+def test_design_docs_have_no_dates() -> None:
+    bad = [f"{name}:{i}" for name in DESIGN_MAX_CHARS for i, line in enumerate(read(ROOT / name).splitlines(), 1)
+           if re.search(r"20\d\d-\d\d-\d\d", line)]
+    assert not bad, "设计稿里有日期（设计稿只写现在，经过与日期进 决策/）：\n" + "\n".join(bad)
+
+
+def test_design_docs_are_bounded() -> None:
+    over = {name: len(read(ROOT / name)) for name, cap in DESIGN_MAX_CHARS.items() if len(read(ROOT / name)) > cap}
+    assert not over, f"设计稿超过字数上限 {DESIGN_MAX_CHARS}：{over}。被取代的删掉、来由挪进 决策/，别抬上限"

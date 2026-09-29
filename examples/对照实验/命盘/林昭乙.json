@@ -378,8 +378,8 @@
         "pillar": "年",
         "tag": "救他的是上一辈、家里的来头或早年的贵人；路有人替他铺，不必自己去找",
         "classic": null,
-        "source": "DESIGN 附录 B",
-        "origin": "自起草（DESIGN 附录 B）"
+        "source": "DESIGN-命盘层 附录 A",
+        "origin": "自起草（DESIGN-命盘层 附录 A）"
       },
       {
         "id": "天乙贵人-02",
@@ -387,8 +387,8 @@
         "pillar": "时",
         "tag": "救他的是晚辈、学生或他做出来的东西；帮助在后半生才到",
         "classic": null,
-        "source": "DESIGN 附录 B",
-        "origin": "自起草（DESIGN 附录 B）"
+        "source": "DESIGN-命盘层 附录 A",
+        "origin": "自起草（DESIGN-命盘层 附录 A）"
       },
       {
         "id": "天乙贵人-07",
@@ -450,8 +450,8 @@
         "pillar": "时",
         "tag": "掌权者：压力与权力一起到他手里",
         "classic": null,
-        "source": "DESIGN 附录 B",
-        "origin": "自起草（DESIGN 附录 B）"
+        "source": "DESIGN-命盘层 附录 A",
+        "origin": "自起草（DESIGN-命盘层 附录 A）"
       },
       {
         "id": "将星-05",
@@ -504,8 +504,8 @@
         "pillar": "日",
         "tag": "感情的主动权在他手里；他挑人，不是被挑",
         "classic": null,
-        "source": "DESIGN 附录 B",
-        "origin": "自起草（DESIGN 附录 B）"
+        "source": "DESIGN-命盘层 附录 A",
+        "origin": "自起草（DESIGN-命盘层 附录 A）"
       },
       {
         "id": "红艳-04",
@@ -632,7 +632,7 @@
     "indispensableMissing": []
   },
   "strength": {
-    "algorithm": "bazi-writing strength v2（自起草，含合局项；见模块文档与 DESIGN 6.4）",
+    "algorithm": "bazi-writing strength v2（自起草，含合局项；见模块文档与 DESIGN-命盘层 2.4）",
     "dayMaster": "金",
     "support": 39.0,
     "drain": 103.5,
@@ -1657,7 +1657,7 @@
   },
   "yunqi": {
     "algorithm": "yunqi/v1",
-    "status": "盘面与年关系搬自方宜、对《素问》运气七篇卡；体格体感与疾病情志候选自起草；架空历按月支定步自起草；画像层 features 按年主干、运为体、纲气为主、当步为用、修正为改写、另一头作背景排，不带民病（DESIGN 7.4 交感）；事件层 events 默认不写（病秧子问题）",
+    "status": "盘面与年关系搬自方宜、对《素问》运气七篇卡；体格体感与疾病情志候选自起草；架空历按月支定步自起草；画像层 features 按年主干、运为体、纲气为主、当步为用、修正为改写、另一头作背景排，不带民病（DESIGN-命盘层 4 交感）；事件层 events 默认不写（病秧子问题）",
     "reading": "画像层：年主干总起（上司天、中岁运、下在泉一句体格体感加一句薄弱处，六元正纪六十年纪）、运为体（岁运通主一年）、纲气为主（岁半之法定的那一头）、当步之气为用、修正为改写、另一头作背景；只给体格与体感和一句薄弱处，不给病、不给气质，体质段要引到主干、体或主，不能只引背景与改写。事件层：疾病与情志候选与严重档，默认不写，年表在身心域被引动的年份挂病候时由作者挑",
     "yearPillar": "庚寅",
     "pair": "庚寅庚申",

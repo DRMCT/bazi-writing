@@ -1,4 +1,4 @@
-"""反推搜索（DESIGN 12）：约束 JSON → 穷举打分 → 去重 → 前几名，逐条命中说明。
+"""反推搜索（DESIGN-命盘层 8）：约束 JSON → 穷举打分 → 去重 → 前几名，逐条命中说明。
 
 两种历法：
 - 架空（calendar.mode = "fictional"）：合法四柱全枚举，年 60 × 月 12 × 日 60 × 时 12 = 518,400 盘，
@@ -7,7 +7,7 @@
 - 现实历（"real"）：birth_year_range 内逐日乘十二时辰，时辰取中点（子 0 点、丑 2 点……亥 22 点）当作当地太阳时，
   不做真太阳时修正；作者定下出生地后再用 chart --birth --lon 排正式命盘。
 
-约束项（DESIGN 12.2）。每项 weight 默认 1；加 "hard": true 即硬约束，不满足直接淘汰（arc 的硬约束看 min_match，默认 0.8）：
+约束项（DESIGN-命盘层 8.2）。每项 weight 默认 1；加 "hard": true 即硬约束，不满足直接淘汰（arc 的硬约束看 min_match，默认 0.8）：
 - gender（必填，定大运顺逆）；story_age_window [起, 止]（arc 与 events 要用）
 - day_master: {element: [五行…]} 或 {stem: [天干…]}
 - day_branch: {any_of: [地支…]}
@@ -399,7 +399,7 @@ RANDOM_POOL_RATIO = 0.8  # 随机补位：只从分数不低于最高分八成�
 
 
 def search(cons: dict, top: int = 5, charts_dir: Path | None = None, progress=None, seed: int | None = None) -> dict:
-    """seed 给了就是随机补位（DESIGN 4.1）：缺的 gender 随机、架空历缺的 start_age 随机零到九岁，
+    """seed 给了就是随机补位（DESIGN-命盘层 1.1）：缺的 gender 随机、架空历缺的 start_age 随机零到九岁，
     候选盘从过硬约束且分数不低于最高分八成的池子里按种子抽 top 个，不按分数排；同种子同结果，种子写进返回的 constraints.random。"""
     if seed is None and isinstance(cons.get("random"), dict) and cons["random"].get("seed") is not None:
         seed = int(cons["random"]["seed"])
@@ -532,7 +532,7 @@ def search(cons: dict, top: int = 5, charts_dir: Path | None = None, progress=No
             "hits": sorted(rec["_hits"], key=lambda h: order.get(h["constraint"], 99)),
             "chartArgs": cmd + f" --gender {cons['gender']}",
         })
-    return {"schema": SCHEMA, "algorithm": "bazi-writing search v1（DESIGN 12）", "constraints": cons,
+    return {"schema": SCHEMA, "algorithm": "bazi-writing search v1（DESIGN-命盘层 8）", "constraints": cons,
             "searched": n, "kept": len(first), "fullyEvaluated": evaluated, "random": random_info, "results": out}
 
 

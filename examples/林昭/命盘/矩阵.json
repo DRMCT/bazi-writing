@@ -1,6 +1,6 @@
 {
   "schema": "bazi-matrix/v1",
-  "algorithm": "bazi-writing matrix v1（DESIGN 9）",
+  "algorithm": "bazi-writing matrix v1（DESIGN-命盘层 6）",
   "nodes": [
     {
       "name": "沈砚",
