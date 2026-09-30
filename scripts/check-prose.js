@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // 正文检查（DESIGN-写作层 第 10 节 check-prose）：一章一跑，也可一次给几章。零依赖，JSON 一行一条，最后一行汇总；有 error 退出码 1。
 //
-//   node scripts/check-prose.js 书/正文/第4章.md                  按 书/ 推断：细纲/第4章.md、文风.md、主题.md、../人物/*.读者本.md、前几章
+//   node scripts/check-prose.js 书/正文/第4章.md                  按 书/ 推断：细纲/第4章.md、文风.md、主题.md、../人物/*.戏用页.md 与 *.读者本.md、前几章
 //   node scripts/check-prose.js 书/正文/第1章.md 书/正文/第2章.md   几章一起，前面的章自动当后面的章的前文
 //   node scripts/check-prose.js 正文.md --plan 细纲.md --style 文风.md --theme 主题.md --cards 人物/ --source 设定/角色/ --prev 上一章.md
 //                                                                 目录不是 书/ 形状时（别的套装的项目）逐项指定
@@ -11,10 +11,10 @@
 //   --window N                    跨章重复回看几章，默认按轮廓表
 //   --summary                     只打印汇总行
 //
-// 查：引号照抄（正文与细纲、读者本、文风卡、额外来源做八字以上连串比对，主题白名单放行，error）；
+// 查：引号照抄（正文与细纲、戏用页、读者本、文风卡、额外来源做八字以上连串比对，主题白名单、装置表的重复句与回声、戏用页附问末问那一句口头禅放行，error）；
 //     跨章重复（与前几章比六字以上连串，人名不计入长度，warn）；句尾否定（句尾落在没、不上的句子数与比例，超文风阈值报）；
 //     双否定（没…也没、不…也不）；感叹号、省略号、破折号只数叙述、按每千字算（引号与【】里的对白、心声、屏上文字不数，单独成行的分隔符与引出对白的破折号不数）；
-//     伏笔物件次数（按主题装置表的认法数，本章与前文合计超上限报）；字数出了轮廓表的章长范围报 info，句长、段长只报；套话模式（对照式、像是、仿佛）与体感密度（每千字身体部位词）按 references/写作层/套话.json 与文风阈值报，定格式收尾 info；
+//     伏笔物件次数（按主题装置表的认法数，本章与前文合计超上限报；重复句出现了、同号细纲却没排它报 warn：写手照细纲写，不自行每章搬）；字数出了轮廓表的章长范围报 info，句长、段长只报；套话模式（对照式、像是、仿佛）与体感密度（每千字身体部位词）按 references/写作层/套话.json 与文风阈值报，定格式收尾 info；
 //     书/师承/ 下的文本也是照抄来源。术语归 check-terms，另跑。
 // 每条一行：{"file","check","level","line","col","text","source","sourceLine","note"}；汇总 {"summary":true,...}。
 "use strict";
@@ -51,11 +51,22 @@ function mdFiles(p) {
   return C.listFiles(p, [".md", ".txt"]);
 }
 
+// 照抄来源里的人物卡：写手读的戏用页渲染本（不带编号那份），与旧流程的读者本；两样都没有就取 人物/ 下全部 .md
 function readerCards(root) {
   const d = path.join(root, "人物");
   if (!fs.existsSync(d)) return [];
-  const all = fs.readdirSync(d).filter(n => n.endsWith(".读者本.md")).map(n => path.join(d, n));
+  const all = fs.readdirSync(d).filter(n => n.endsWith(".读者本.md") || n.endsWith(".戏用页.md")).sort().map(n => path.join(d, n));
   return all.length ? all : fs.readdirSync(d).filter(n => n.endsWith(".md")).map(n => path.join(d, n));
+}
+
+// 戏用页只有附问末问（他怎么被记住）许一行带引号：引号里的那一句是口头禅，正文要反复用它，照抄与跨章重复都放行
+function catchphrases(cards) {
+  const out = [];
+  for (const p of cards) {
+    if (!p.endsWith(".戏用页.md") || !fs.existsSync(p)) continue;
+    for (const m of C.readText(p).matchAll(/“([^”\n]+)”/g)) out.push(m[1]);
+  }
+  return out;
 }
 
 function blankTitles(lines) {
@@ -179,11 +190,15 @@ function checkOne(ctx, args, emit) {
   for (const p of ctx.sources) addSource(p, "来源");
   // 师承（2026-09-26 叙述层）：书/师承/ 下的文本、片段、读法卡全是照抄来源；学讲法不借句子
   if (ctx.book && fs.existsSync(path.join(ctx.book, "师承"))) for (const p of C.listFiles(path.join(ctx.book, "师承"), [".txt", ".md"])) addSource(p, "师承");
-  const whitelist = ctx.themeInfo.whitelist.map(w => C.normalize(w, names).str);
+  // 放行：主题白名单、装置表里重复句与回声的认法（它们本来就要再出现）、戏用页那一句口头禅
+  const allowed = [...ctx.themeInfo.whitelist, ...ctx.themeInfo.objects.filter(o => o.kind === "重复句" || o.kind === "回声").flatMap(o => o.patterns), ...catchphrases(ctx.cards)];
+  const whitelist = allowed.map(w => C.normalize(w, names).str.replace(new RegExp(C.PARA, "g"), "")).filter(Boolean);
+  // 连串落在放行的句子里，或只比它多出不到一个阈值的字（句子前后顺带的一两个字），都算放行
+  const covered = (text, n) => whitelist.some(w => w.includes(text) || (text.includes(w) && text.length - w.length < n));
   let copies = 0;
   if (copyIndex.size) {
     for (const run of C.findRuns(target, copyIndex, prof.copy.ngram, copySources)) {
-      if (whitelist.some(w => w.includes(run.text))) continue;
+      if (covered(run.text, prof.copy.ngram)) continue;
       copies++;
       const src = copySources.get(run.tag);
       say("照抄", prof.copy.level, { line: lineOf(run.start), col: colOf(run.start), text: C.excerpt(target, run.start, run.end),
@@ -202,7 +217,7 @@ function checkOne(ctx, args, emit) {
     const srcs = new Map([[tag, norm]]);
     for (const run of C.findRuns(target, idx, prof.repeat.ngram, srcs)) {
       if (run.text.replace(/〇/g, "").length < prof.repeat.ngram) continue;  // 人名不算长度
-      if (whitelist.some(w => w.includes(run.text))) continue;  // 律文一类的原话可以再出现
+      if (covered(run.text, prof.repeat.ngram)) continue;  // 律文一类的原话、重复句、口头禅可以再出现
       repeats++;
       say("跨章重复", prof.repeat.level, { line: lineOf(run.start), col: colOf(run.start), text: C.excerpt(target, run.start, run.end),
         source: rel(p), sourceLine: norm.pos[run.srcIdx] ? norm.pos[run.srcIdx].line : null,
@@ -257,6 +272,9 @@ function checkOne(ctx, args, emit) {
     objects[o.id] = { chapter: here.length, total, limit: o.limit };
     for (const h of here) emit({ file, check: "装置", level: "info", line: h.line + 0, col: h.col, text: h.context, note: `${o.id} ${o.name}：本章第 ${here.indexOf(h) + 1} 次，全书第 ${before + here.indexOf(h) + 1} 次${o.limit !== null ? `，上限 ${o.limit}` : ""}` });
     if (o.limit !== null && total > o.limit) say("装置超限", prof.objects.level, { text: `${o.id} ${o.name} 到本章共 ${total} 次，上限 ${o.limit}`, note: o.usage });
+    // 重复句（口头禅）落在哪一章哪一场由细纲排：本章出现了、同号细纲没排它，是写手自己搬的
+    if (o.kind === "重复句" && here.length && ctx.plans.length && !ctx.plans.some(p => fs.existsSync(p) && new RegExp(`\\b${o.id}\\b`).test(C.stripComments(C.readText(p)))))
+      say("装置不在细纲", "warn", { line: here[0].line, col: here[0].col, text: `${o.id} ${o.name}`, note: "细纲物件节没排这一句：写手照细纲写，不自行每章搬" });
   }
 
   // 6b. 套话、体感密度、定格式收尾（词表 references/写作层/套话.json；2026-09-26 叙述层：样例书第一稿每千字身体词 6.4，师承 0.2 到 1.3）

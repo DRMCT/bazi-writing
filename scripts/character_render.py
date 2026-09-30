@@ -6,7 +6,7 @@
     python scripts/character_render.py 人物/沈砚.json --out 路径
 
 JSON 形态（bazi-character/v1）：
-    {"schema": "bazi-character/v1", "name": "沈砚", "chart": "命盘/沈砚.json", "profile": "webnovel|literary",
+    {"schema": "bazi-character/v1", "name": "沈砚", "chart": "命盘/沈砚.json", "profile": "webnovel（literary 是归档的旧轮廓，旧档案照认）",
      "setting": {"period": "古代|近代|现代|未来|异世界", "world": "一句话", "authority": "…", "elders": "…", "union": "…",
                  "inlaws": "…", "path": "…", "legacy": "…", "money": "…", "output": "…"},
      "summary": "一句话人物真相",

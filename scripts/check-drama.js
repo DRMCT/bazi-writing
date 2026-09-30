@@ -16,8 +16,8 @@
 //   每根线要有碰线，后面要么有盖法要么有破；整页至少一条破。破的那一行可带 by（谁来破：自己、别人当面、物证），不带算自己。
 // 页级 belief：假话（默认）或信条。信条页的第四问写他拿来过日子的那句话、谁来挑战、怎么走（被认可、不认、慢慢松、碎），
 //   不强求碎：整页没有破只报 info。主角默认写信条，谎言与碎给编配谁碎一节挑出来的人。
-// 十问之后有六个附问，都可以空，有就按次序排在十问后面：他被叫什么、他知道哪一层、他信错了谁、他对谁演什么、
-//   他独一份的是什么、他怎么被记住。口头禅要反复出现，所以只有最后一问允许一行带引号。
+// 十问之后有七个附问，都可以空，有就按次序排在十问后面：他被叫什么、他知道哪一层、他信错了谁、他对谁演什么、
+//   他跟谁怎么交手、他独一份的是什么、他怎么被记住。交手一问一对一行，不算进附问的字数，单行超过 DUEL_LINE_LIMIT 字报 warn。口头禅要反复出现，所以只有最后一问允许一行带引号。
 // 查：十问齐、次序对；每行 text 非空、没有引号、来历合法；第一至六问、第八至十问至少一行；第七问事件链之前可以空。
 // 一页写不下就是没挑：十问 text 合计超过 PAGE_LIMIT 字、附问合计超过 EXTRA_LIMIT 字报 warn，不拦。
 // 每条问题一行 JSON，最后一行汇总，有 error 退出码 1。
@@ -27,7 +27,8 @@ const path = require("path");
 
 const ASKS = ["他要什么", "谁挡着", "他怎么去要", "他信的那句假话", "他真正缺的", "碰哪里会疼", "他瞒着什么", "他怎么说话", "别人拿他当什么", "他从哪儿走到哪儿"];
 const BEATS = ["碰线", "身体先动", "盖法", "破", "余波"];
-const EXTRAS = ["他被叫什么", "他知道哪一层", "他信错了谁", "他对谁演什么", "他独一份的是什么", "他怎么被记住"];
+const EXTRAS = ["他被叫什么", "他知道哪一层", "他信错了谁", "他对谁演什么", "他跟谁怎么交手", "他独一份的是什么", "他怎么被记住"];
+const DUEL = "他跟谁怎么交手", DUEL_LINE_LIMIT = 90;
 const BELIEFS = ["假话", "信条"];
 const BREAK_BY = ["自己", "别人当面", "物证"];
 const HURT = "碰哪里会疼", SECRET = "他瞒着什么", REMEMBERED = "他怎么被记住";
@@ -99,7 +100,8 @@ function main() {
       lines++;
       const text = (l.text || "").trim();
       if (!text) { report("error", a.ask, label, "text 为空"); continue; }
-      if (extra) extraChars += text.length; else chars += text.length;
+      if (a.ask === DUEL) { if (text.length > DUEL_LINE_LIMIT) report("warn", a.ask, label, `一对一行，${text.length} 字超过 ${DUEL_LINE_LIMIT}`); }
+      else if (extra) extraChars += text.length; else chars += text.length;
       if (seen.has(text)) report("error", a.ask, label, "这一问里重复");
       seen.add(text);
       if (/[“”"「」]/.test(text)) {

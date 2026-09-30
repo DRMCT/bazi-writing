@@ -6,15 +6,20 @@
 //   --root 项目根       默认书目录的上一级。编号池从 root/命盘 下全部 JSON 收（features、idPool、线程、矩阵边、日程交汇），
 //                       人名从 root/人物 与 root/命盘 的文件名收，生年从 root/命盘/{名}.年表.json 收
 //   --theme 主题.md     默认 书/主题.md（装置表；细纲的物件编号查它，全书次数也按它的上限）
-//   --threads 线程.json 默认 root/命盘/群像/线程.json；悬置线程几章没动（threads[].chapters）超阈值报
+//   --threads 线程.json 默认 root/命盘/群像/线程.json；开着的线程（埋、压，旧文件的悬置）几章没动（threads[].chapters）超阈值报
+//   编配的时间尺度从 root/命盘/群像/编配.json 的 timescale 读：长跨度的卷写大运，短跨度与回到关口年写段
 //   --loose             外来大纲（别的套装的卷纲、细纲）：不认模板字段，只查引号、编号、借鉴字样、逐点字数
 //   --summary           只打印汇总行
 //
 // 查（模板见 references/写作层/模板/）：必填字段在场；细纲无引号（error）、卷与单元里的引号 warn、文风的对白节无引号；
+//     卷按编配的时间尺度分：长跨度写主角这一步的 D- 编号，短跨度与回到关口年写编配的段，大运可空（两样都空、长跨度没写大运、短跨度没写段报 warn）；
+//     卷稿单元表与单元记录写来路（事件链源一栏的十种之一起头，没认出一种报 warn，空报 error）；两难只在事件链给了的单元写，写了要引编号（warn）；
+//     卷稿的骨（没有、或落下风空着报 warn）；装置表重复句每人至多一句（谁一栏），类型取物件、重复句、意象、回声；
 //     单元的三个走法在『谁做选择』上互不相同，作者选了才查章表、每章一句功能非空；细纲的主视角在在场里、决定小节非空、在场与知情表一人一行末行读者、
-//     场表里的人在在场里且至少一场走四拍（别人的四拍只写外面两拍报 warn）、赌注引 J- 或 TH-、
-//     物件编号在装置表里且各细纲合计不超全书上限、写了碰的不超碰的上限、在场的人那一年已出生、不是正叙的书细纲要有位置；编号（J-、TH-、Q-、L-、D-、E-…）都在编号池里；
-//     借鉴字样（对标、爽点、公式…）warn；细纲里逐点字数 warn；悬置线程闲置章数超阈值 warn。
+//     场表里的人在在场里，一章没有一场走线报 warn（谁的五拍；别人的线只从外面写报 warn，视角切给他的不报）、演的场转折写成一对正负、对面要什么与怎么去要、读者担心（warn）、
+//     破只认漏、说破、碎（warn），同一个人碎两回报 warn；赌注非空（没引 J-、TH-、DF-、PH-、Q-、L- 或期待编号报 warn）；
+//     物件编号在装置表里且各细纲合计不超全书上限、写了碰的不超碰的上限、重复句写落在第几场（warn）、在场的人那一年已出生、不是正叙的书细纲要有位置；
+//     编号（J-、TH-、Q-、L-、D-、E-、DF-、PH-…）都在编号池里；借鉴字样（对标、爽点、公式…）warn；细纲里逐点字数 warn；开着的线程（埋、压，旧文件的悬置）闲置章数超阈值 warn。
 //     期待账（全报 warn，跑过一本真书再定哪几条升 error）：卷稿的期待线（编号、尺度、期限）、发动机与卷末兑现，单元选定后的兑现与回合，
 //     细纲的期待一节（编号或 章内，开、压、推、兑现、落空、搁置；松紧、调剂）与钩子类型；按章号对账：第一次出现要是开、兑现以后不再出现、
 //     回合与单元尺度的期待几章没人动（卷与全书尺度的不按章数查，隔太久再碰提醒带旧账，常驻的不查，搁置以后不查）、第一章没开、
@@ -30,7 +35,12 @@ const STYLE_SECTIONS = ["师承", "叙述者", "叙述", "句与段", "口吻与
 const READING_CARD_FIELDS = ["章", "字数", "覆盖时间", "演", "述", "述演比", "叙述者的判断与幽默", "情绪写法", "旧事怎么进", "环境与感官", "时间过渡", "开头", "结尾", "埋", "收", "对白", "腔调变化", "最值得学的一个讲法"];
 const WALK_FIELDS = ["谁做选择", "事件顺序", "输了丢什么", "赢了欠什么", "结束时开着的线程"];
 const WALKS = ["走法甲", "走法乙", "走法丙"];
-const OBJECT_KINDS = ["物件", "重复句", "意象"];
+const OBJECT_KINDS = ["物件", "重复句", "意象", "回声"];  // 回声：一句话、一个人、一个动作隔几十上百章再响；重复句含口头禅（戏用页附问末问是唯一出处），每人至多一句
+// 单元的来路：事件链源一栏的十种（references/任务书/事件链.md）；旁人求上门也写作班底派活、单元客
+const SOURCE_KINDS = ["热年出事", "默认下场到点", "过去追上来", "对手出招", "家人出招", "得知与认出", "主角布局", "局与日历", "旁人求上门", "关系自己往前走"];
+const SOURCE_ALIAS = ["班底派活", "单元客", "得知", "认出", "钟", "默认下场"];
+const BREAK_LEVELS = ["漏", "说破", "碎"];
+const LONG_SPAN = "长跨度";
 const PROFILES = C.profileNames();
 
 function parseArgs(argv) {
@@ -47,16 +57,17 @@ function parseArgs(argv) {
   return out;
 }
 
-// 龙套表在一级标题下、没有 ## 小节：直接扫表行，第一行 | 是表头
+// 龙套表：直接扫表行，每张表的第一行 | 是表头；只认表头里有『称呼』的表（同一文件里另记的表，如只有命盘的人的称呼表，不算龙套）
 function extraRows(text) {
   const rows = [];
   let header = null;
   for (const raw of C.stripComments(text).split(/\r?\n/)) {
     const line = raw.trimEnd();
-    if (!/^\|/.test(line)) continue;
+    if (!/^\|/.test(line)) { if (line.trim()) header = null; continue; }
     const cells = line.split("|").slice(1, -1).map(c => c.trim());
     if (cells.every(c => /^:?-{2,}:?$/.test(c))) continue;
     if (!header) { header = cells; continue; }
+    if (!header.includes("称呼")) continue;
     const row = {};
     header.forEach((h, k) => { row[h] = cells[k] === undefined ? "" : cells[k]; });
     rows.push(row);
@@ -73,7 +84,9 @@ function typeOf(file, loose) {
   if (dir === "卷") return "卷";
   if (dir === "单元") return "单元";
   if (dir === "细纲") return "细纲";
-  if (dir === "会" || dir === "正文" || dir === "稿" || dir === "追踪") return null;
+  const segs = path.dirname(path.resolve(file)).split(/[\\/]/);
+  const inBook = segs.lastIndexOf("书") >= 0 ? segs.slice(segs.lastIndexOf("书") + 1) : [dir];
+  if (inBook.some(d => d === "会" || d === "正文" || d === "稿" || d === "追踪")) return null;  // 会议记录、正文、留底稿、追踪，连它们的子目录都不查
   const head = C.readText(file).split(/\r?\n/).find(l => /^#\s/.test(l)) || "";
   if (/^#\s+卷/.test(head)) return "卷";
   if (/^#\s+U-\d+/.test(head)) return "单元";
@@ -113,22 +126,30 @@ function main() {
   const threadsPath = args.threads || (root && fs.existsSync(path.join(root, "命盘", "群像", "线程.json")) ? path.join(root, "命盘", "群像", "线程.json") : null);
   const themeDoc = themePath ? C.parseMd(C.readText(themePath)) : null;
   const theme = themeDoc ? C.loadTheme(themeDoc) : { objects: [], whitelist: [], profile: null };
+  // 乐子（2026-09-30）：主题卡许给读者的调子与笑从哪来；许了的书，细纲每章写这一章乐在哪
+  const hasFun = doc => { const sec = C.section(doc, "乐子"); return !!sec && (!!C.bodyText(sec).replace(/<[^>]*>/g, "").trim() || Object.values(sec.fields || {}).some(v => !C.isBlank(v))); };
+  const themeFun = themeDoc ? hasFun(themeDoc) : false;
   const stylePath = book && fs.existsSync(path.join(book, "文风.md")) ? path.join(book, "文风.md") : null;
   const profile = C.loadProfile({ themeDoc, styleDoc: stylePath ? C.parseMd(C.readText(stylePath)) : null });
   const pool = root ? C.loadIdPool(root) : { ids: new Set(), files: 0 };
   const names = root ? C.loadNames(root) : new Set();
-  // 龙套（2026-09-25）：书/龙套.md 里的称呼算在场，但没有盘、没有四拍
+  // 龙套（2026-09-25）：书/龙套.md 里的称呼算在场，但没有盘、没有五拍
   const extras = new Set();
   const extrasPath = book && fs.existsSync(path.join(book, "龙套.md")) ? path.join(book, "龙套.md") : null;
   if (extrasPath) for (const r of extraRows(C.readText(extrasPath))) if (!C.isBlank(r["称呼"])) extras.add(r["称呼"].trim());
   const births = root ? C.loadBirthYears(root, names) : new Map();
+  // 编配的时间尺度（命盘/群像/编配.json 的 timescale）：长跨度一卷约一步大运，短跨度与回到关口年卷按编配的段分
+  let timescale = null;
+  const castingPath = root ? path.join(root, "命盘", "群像", "编配.json") : null;
+  if (castingPath && fs.existsSync(castingPath)) { try { timescale = JSON.parse(C.readText(castingPath)).timescale || null; } catch (e) { timescale = null; } }
+  const shatters = new Map();  // 人 → 细纲里写了碎的 [{file, line, chapter}]：碎一人全书一回
   const objectIds = new Map(theme.objects.map(o => [o.id, o]));
   const objectUse = new Map();  // 装置 → [{file, line}]
   const touchUse = new Map();  // 装置 → 细纲里写了碰的 [{file, line}]
   const wn = !!profile.expect;  // 轮廓表带期待账的写法（网文）才对账
   const expLevel = (profile.expect && profile.expect.level) || "warn";  // 期待账全报 warn，跑过一本真书再定哪几条升 error
   const expectEvents = new Map();  // 期待编号 → [{chapter, act, file, line}]
-  const expectMeta = [];  // 写了期待一节的细纲：{chapter, file, line, rhythm, acts, relief, hook}
+  const expectMeta = [];  // 写了期待一节的细纲：{chapter, file, line, rhythm, acts, relief, hook, fun}
   const registered = new Map();  // 卷稿期待线登记的编号 → {file, line, scale, deadline}
   const roundOf = new Map();  // 章号 → 回合（单元号加回合名）：单元章表的回合栏
   const chapterUse = new Map();  // 章号 → [{file, line}]：各单元记录排的章全书不许重号
@@ -171,12 +192,26 @@ function main() {
     return true;
   }
 
+  // 来路：事件链源一栏的十种之一起头（局、钟上的日子、默认下场到点、单元客找上门都能做单元），空报 error，一种都没认出报 warn
+  function checkOrigin(file, type, check, line, label, value) {
+    if (C.isBlank(value)) { emit(file, type, check, "error", { line, text: label, note: `单元的来路没填：${SOURCE_KINDS.join("、")} 之一起头，几种用顿号分开，照事件链这一年的源` }); return; }
+    const head = String(value).split(/[；;]/)[0];
+    if (!SOURCE_KINDS.concat(SOURCE_ALIAS).some(k => head.includes(k))) emit(file, type, check, "warn", { line, text: `${label} ${String(value).trim().slice(0, 30)}`, note: `来路以十种源之一起头：${SOURCE_KINDS.join("、")}` });
+  }
+
+  // 两难可空：只在事件链的选择一栏把两难给了这一单元时写；写了要引编号（J-，没有交汇点引 Q- 或该年的 L-）
+  function checkDilemma(file, type, check, line, value) {
+    if (C.isBlank(value) || String(value).trim() === "无") return;
+    if (!/\b(?:J|Q|L)-/.test(value)) emit(file, type, check, "warn", { line, text: `两难 ${String(value).trim().slice(0, 30)}`, note: "两难引事件链那一年的编号：有交汇点引 J-，没有引推演卡的 Q- 或该年的 L-；这一单元没有两难写无" });
+  }
+
   function checkTheme(file, doc) {
     const t = "主题";
     if (!PROFILES.includes(doc.fields["写法轮廓"])) emit(file, t, "字段", "error", { line: doc.fieldLines["写法轮廓"] || null, text: "写法轮廓", note: `取轮廓表里的 ${PROFILES.join("、")}` });
     need(file, t, doc, "主角", "warn");
     need(file, t, doc, "目标读者", "warn");
     if (!C.bodyText(C.section(doc, "命题")).replace(/<[^>]*>/g, "").trim()) emit(file, t, "小节", "error", { text: "命题", note: "全书要回答的问题，一句问句" });
+    if (!hasFun(doc)) emit(file, t, "小节", "warn", { text: "乐子", note: "这本书许给读者的调子，笑与乐从哪几处来（从设定、主角的性子、人物关系里长，不靠写的时候插笑话）；单元会与细纲拿它量这一段乐在哪" });
     const nar = C.section(doc, "叙述结构");
     const NARRATIVES = ["正叙", "倒叙", "双线", "框架", "多视角"];
     if (!nar) emit(file, t, "小节", "warn", { text: "叙述结构", note: "讲述顺序那一层：正叙、倒叙、双线、框架、多视角选一种，写明现在时是哪条线；不写按正叙" });
@@ -189,7 +224,7 @@ function main() {
     }
     const dev = C.section(doc, "装置");
     if (!dev) emit(file, t, "小节", "warn", { text: "装置", note: "没有装置表就没有伏笔物件次数可查" });
-    let repeats = 0;
+    const repeatWho = new Map();  // 说它的人 → 重复句编号
     for (const o of theme.objects) {
       if (!/^F\d{3,}$/.test(o.id)) emit(file, t, "装置", "error", { line: o.line, text: o.id, note: "编号形如 F001" });
       if (!OBJECT_KINDS.includes(o.kind)) emit(file, t, "装置", "error", { line: o.line, text: o.id, note: `类型取 ${OBJECT_KINDS.join("、")} 之一` });
@@ -197,9 +232,12 @@ function main() {
       if (o.limit === null) emit(file, t, "装置", "error", { line: o.line, text: o.id, note: "全书上限要是整数" });
       if (o.touchLimitBad) emit(file, t, "装置", "error", { line: o.line, text: o.id, note: "碰的上限要是整数，或空着" });
       else if (o.touchLimit !== null && o.limit !== null && o.touchLimit > o.limit) emit(file, t, "装置", "warn", { line: o.line, text: o.id, note: "碰的上限比全书上限还大：碰也算在全书次数里" });
-      if (o.kind === "重复句") repeats++;
+      if (o.kind === "重复句") {
+        if (!o.who) emit(file, t, "装置", "warn", { line: o.line, text: o.id, note: "重复句在谁一栏写说它的人：口头禅每人至多一句，从他戏用页附问末问那一行来" });
+        else if (repeatWho.has(o.who)) emit(file, t, "装置", "warn", { line: o.line, text: o.id, note: `${o.who} 已有重复句 ${repeatWho.get(o.who)}：每人至多一句` });
+        else repeatWho.set(o.who, o.id);
+      }
     }
-    if (repeats > 1) emit(file, t, "装置", "warn", { text: "重复句", note: `一本书至多一个重复句装置，实有 ${repeats}` });
   }
 
   function checkStyle(file, doc) {
@@ -217,15 +255,27 @@ function main() {
 
   function checkVolume(file, doc) {
     const t = "卷";
-    for (const k of ["卷", "大运", "起止年", "主角", "命题的哪一半"]) need(file, t, doc, k);
-    if (!C.isBlank(doc.fields["大运"]) && !/^D-\d+-/.test(doc.fields["大运"])) emit(file, t, "字段", "warn", { line: doc.fieldLines["大运"], text: "大运", note: "写主角这一步运的 D- 编号" });
+    for (const k of ["卷", "起止年", "主角", "命题的哪一半"]) need(file, t, doc, k);
+    // 卷按时间尺度分：长跨度一卷约主角的一步大运（D- 编号），短跨度与回到关口年照编配的段；大运可空
+    const run = (doc.fields["大运"] || "").trim(), part = (doc.fields["段"] || "").trim();
+    const hasRun = !C.isBlank(run) && run !== "无", hasPart = !C.isBlank(part) && part !== "无";
+    if (hasRun && !/^D-\d+-/.test(run)) emit(file, t, "字段", "warn", { line: doc.fieldLines["大运"], text: "大运", note: "写主角这一步运的 D- 编号；短跨度的书空着或写无" });
+    if (!hasRun && !hasPart) emit(file, t, "字段", "warn", { line: doc.fieldLines["段"] || doc.fieldLines["大运"] || null, text: "段", note: "卷按编配的段分（长跨度的书另写主角这一步大运的 D- 编号）" });
+    else if (timescale === LONG_SPAN && !hasRun) emit(file, t, "字段", "warn", { line: doc.fieldLines["大运"] || null, text: "大运", note: "编配的时间尺度是长跨度：一卷约主角的一步大运，写 D- 编号" });
+    else if (timescale && timescale !== LONG_SPAN && !hasPart) emit(file, t, "字段", "warn", { line: doc.fieldLines["段"] || null, text: "段", note: `编配的时间尺度是${timescale}：卷照编配的段分，不照大运` });
     const units = C.section(doc, "单元");
     if (!units || !units.rows.length) emit(file, t, "小节", "error", { text: "单元", note: "卷稿至少排一个单元" });
     else for (const r of units.rows) {
       if (!/^U-\d+$/.test((r["单元"] || "").trim())) emit(file, t, "单元表", "error", { line: r.line, text: r["单元"], note: "单元编号形如 U-1" });
-      if (!/\b(?:J|Q|L)-/.test(r["谁的哪个两难"] || "")) emit(file, t, "单元表", "error", { line: r.line, text: r["单元"], note: "谁的哪个两难要引编号：有交汇点引 J-，没有引推演卡的 Q- 或该年的 L-" });
+      const origin = r["来路"] !== undefined ? r["来路"] : r["谁的哪个两难"];  // 旧卷稿的『谁的哪个两难』一栏读作来路
+      checkOrigin(file, t, "单元表", r.line, `${r["单元"]} 来路`, origin);
+      checkDilemma(file, t, "单元表", r.line, r["两难"]);
       for (const k of ["赌注", "起止年", "在场"]) if (C.isBlank(r[k])) emit(file, t, "单元表", "error", { line: r.line, text: `${r["单元"]} ${k}`, note: "没填" });
     }
+    // 骨：从事件链这一卷的骨来；每段主角落一回下风
+    const bone = C.section(doc, "骨");
+    if (!bone) emit(file, t, "小节", "warn", { text: "骨", note: "这一卷为哪一人一事、起承转合各落哪个单元、高潮、响、清算、落下风、破、卷末的问题，照事件链这一卷的骨" });
+    else if (C.isBlank(bone.fields["落下风"])) emit(file, t, "骨", "warn", { line: bone.fieldLines["落下风"] || bone.line, text: "落下风", note: "这一卷的每一段主角在哪个单元落一回下风，出手的是谁、用他什么手段" });
     const drift = C.section(doc, "卷末偏移");
     if (!drift || !drift.text.some(l => /^-\s+\S/.test(l.text) && !C.isBlank(l.text.replace(/^-\s+/, "")))) emit(file, t, "小节", "warn", { text: "卷末偏移", note: "每个在场的人这一卷走完偏到哪，写回阶段卡的材料" });
     C.stripComments(C.readText(file)).split(/\r?\n/).forEach((l, i) => { if (/章数/.test(l)) emit(file, t, "卷不排章", "warn", { line: i + 1, text: l.trim().slice(0, 80), note: "卷稿只到单元；章在单元会上排" }); });
@@ -248,9 +298,12 @@ function main() {
 
   function checkUnit(file, doc) {
     const t = "单元";
-    for (const k of ["单元", "卷", "年", "两难", "在场"]) need(file, t, doc, k);
+    for (const k of ["单元", "卷", "年", "在场"]) need(file, t, doc, k);
     if (!C.isBlank(doc.fields["单元"]) && !/^U-\d+$/.test(doc.fields["单元"])) emit(file, t, "字段", "error", { line: doc.fieldLines["单元"], text: "单元", note: "形如 U-1" });
-    if (!C.isBlank(doc.fields["两难"]) && !/J-/.test(doc.fields["两难"])) emit(file, t, "字段", "error", { line: doc.fieldLines["两难"], text: "两难", note: "引 J- 编号" });
+    // 来路必填；两难只在事件链把两难给了这一单元时写。旧记录只有两难一行的，读作来路，只提醒补来路
+    if (C.isBlank(doc.fields["来路"]) && !C.isBlank(doc.fields["两难"]) && doc.fields["两难"].trim() !== "无") emit(file, t, "字段", "warn", { line: doc.fieldLines["两难"], text: "来路", note: "写这一单元的来路（事件链源一栏的十种之一），两难只在事件链给了的单元写" });
+    else checkOrigin(file, t, "字段", doc.fieldLines["来路"] || null, "来路", doc.fields["来路"]);
+    checkDilemma(file, t, "字段", doc.fieldLines["两难"] || null, doc.fields["两难"]);
     const year = parseInt(doc.fields["年"], 10);
     const jm = /J-(\d+)-/.exec(doc.fields["两难"] || "");
     if (jm && !Number.isNaN(year) && parseInt(jm[1], 10) !== year) emit(file, t, "字段", "warn", { line: doc.fieldLines["两难"], text: doc.fields["两难"], note: `两难是 ${jm[1]} 年的，单元的年是 ${year}` });
@@ -379,14 +432,18 @@ function main() {
       if (C.isBlank(reliefRaw)) emit(file, t, "期待", expLevel, { line: exp.line, text: "调剂", note: `这一章有什么让人往下读、又不是期待的：${profile.reliefKinds.join("、")}，顿号分开；没有写无` });
       else if (badRelief.length) emit(file, t, "期待", expLevel, { line: exp.fieldLines["调剂"], text: badRelief.join("、"), note: `调剂取 ${profile.reliefKinds.join("、")}，或无` });
       if (!erows.length && !relief.length) emit(file, t, "期待", expLevel, { line: exp.line, text: "空章", note: "这一章什么期待都没动，也没有调剂" });
+      const funRaw = (exp.fields["乐子"] || "").trim();
+      if (themeFun && C.isBlank(funRaw)) emit(file, t, "期待", expLevel, { line: exp.line, text: "乐子", note: "主题卡许了乐子：这一章乐在哪一场、从乐子一节哪一条来；真没有写无" });
       const rh = (exp.fields["松紧"] || "").trim();
       if (!["紧", "松"].includes(rh)) emit(file, t, "期待", expLevel, { line: exp.fieldLines["松紧"] || exp.line, text: "松紧", note: "取 紧 或 松：这一章在绷还是在松" });
-      expectMeta.push({ chapter, file, line: exp.line, rhythm: ["紧", "松"].includes(rh) ? rh : null, acts, relief: relief.length > 0, hook: hookKind });
+      expectMeta.push({ chapter, file, line: exp.line, rhythm: ["紧", "松"].includes(rh) ? rh : null, acts, relief: relief.length > 0, hook: hookKind, fun: !themeFun || (!C.isBlank(funRaw) && funRaw !== "无") });
     }
     const intent = C.bodyText(C.section(doc, "意图")).replace(/<[^>]*>/g, "").trim();
     if (C.section(doc, "意图") && !intent) emit(file, t, "小节", "error", { text: "意图", note: "读者离开时多知道什么、多担心什么" });
-    const stake = C.bodyText(C.section(doc, "赌注"));
-    if (C.section(doc, "赌注") && !/\b(J|TH)-/.test(stake)) emit(file, t, "小节", "error", { text: "赌注", note: "谁押了什么，引 J- 或 TH- 编号" });
+    // 赌注：短跨度的单元从局与日历来，常没有 J-；引两难、线程、默认下场、前史、事件卡、年表或期待编号都算
+    const stake = C.bodyText(C.section(doc, "赌注")).replace(/<[^>]*>/g, "").trim();
+    if (C.section(doc, "赌注") && !stake) emit(file, t, "小节", "error", { text: "赌注", note: "主视角这一章押着什么、两头各丢什么" });
+    else if (C.section(doc, "赌注") && !/\b(?:J|TH|DF|PH|Q|L)-|\bK\d{3,}\b/.test(stake)) emit(file, t, "小节", "warn", { text: "赌注", note: "引编号：两难 J-、线程 TH-、默认下场 DF-、前史 PH-、事件卡 Q-、年表 L-，或期待编号" });
     const scenes = C.section(doc, "场");
     if (scenes && !scenes.rows.length) emit(file, t, "场", "error", { line: scenes.line, text: "场", note: "至少一场" });
     let beats = 0, played = 0;
@@ -394,21 +451,37 @@ function main() {
       const mode = (r["述/演"] || "").trim();
       if (mode && !/^(述|演)$/.test(mode)) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 述/演`, note: "写 述 或 演" });
       if (mode === "演") played++;
-      if (C.isBlank(r["转折"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 转折`, note: "没填：这一场主视角里面什么变了，写手先写它" });
-      const raw = (r["谁的四拍"] || "").trim();
-      if (mode === "述" && C.splitList(raw).length) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]}`, note: "述的场不走四拍，四拍在演的场里" });
-      const who = C.splitList(raw);
-      if (!who.length && raw !== "无") emit(file, t, "场", "error", { line: r.line, text: `场 ${r["场"]}`, note: "谁的四拍在走；过场写 无" });
-      if (who.length) beats++;
-      for (const w of who) {
-        if (extras.has(w)) emit(file, t, "场", "error", { line: r.line, text: w, note: "龙套没有四拍：一场戏走的是有档案的人的情绪过程" });
-        else if (present.length && !present.includes(w)) emit(file, t, "场", "error", { line: r.line, text: w, note: "不在本章在场里" });
-        else if (pov && w !== pov) emit(file, t, "场", "warn", { line: r.line, text: w, note: "不是主视角：只写外面两拍（身体先动、盖法），碰线与余波不进" });
+      const turn = (r["转折"] || "").trim();
+      if (C.isBlank(turn)) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 转折`, note: "没填：这一场主视角里面什么变了，写手先写它" });
+      else if (mode === "演" && !(/正/.test(turn) && /负/.test(turn))) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 转折`, note: "演的场转折写成一对正负：进场是正、出场是负，或反过来" });
+      if (mode === "演") {
+        for (const k of ["对面要什么", "怎么去要"]) if (C.isBlank(r[k])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} ${k}`, note: "演的场对面那个人这一场要什么、怎么去要（取他戏用页第一、三问与交手一行）；一个人的独角戏写无" });
+        if (C.isBlank(r["读者担心"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 读者担心`, note: "这一场读者替谁担心什么" });
       }
-      if (who.length && C.isBlank(r["碰线"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 碰线`, note: "没填：他情绪过程里的哪根线、被什么碰到" });
+      const raw = (r["谁的五拍"] !== undefined ? r["谁的五拍"] : r["谁的四拍"] || "").trim();  // 旧细纲的『谁的四拍』一栏照认
+      if (mode === "述" && C.splitList(raw).length) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]}`, note: "述的场不走线，五拍在演的场里" });
+      const who = C.splitList(raw);
+      if (!who.length && raw !== "无") emit(file, t, "场", "error", { line: r.line, text: `场 ${r["场"]}`, note: "谁的五拍在走（戏用页第六问的哪一个人）；过场写 无" });
+      if (who.length) beats++;
+      const view = (r["视角"] || "").trim();
+      for (const w of who) {
+        if (extras.has(w)) emit(file, t, "场", "error", { line: r.line, text: w, note: "龙套没有五拍：一场戏走的是有戏用页的人的线" });
+        else if (present.length && !present.includes(w)) emit(file, t, "场", "error", { line: r.line, text: w, note: "不在本章在场里" });
+        else if (pov && w !== pov && !view.startsWith(w)) emit(file, t, "场", "warn", { line: r.line, text: w, note: "不是主视角：他的线只从外面写（身体先动、盖法、破），碰线底下的情绪不进；视角切给他的场不报" });
+      }
+      if (who.length && C.isBlank(r["碰线"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 碰线`, note: "没填：他戏用页第六问的哪根线、被什么碰到" });
+      const brk = (r["破"] || "").trim();
+      if (!C.isBlank(brk) && brk !== "无") {
+        const level = BREAK_LEVELS.slice().sort((a, b) => b.length - a.length).find(k => brk.startsWith(k));
+        if (!level) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 破 ${brk.slice(0, 20)}`, note: `破以 ${BREAK_LEVELS.join("、")} 之一起头，后面写谁来破（自己、别人当面、物证）；不破写无` });
+        else if (level === "碎") for (const w of who) {
+          if (!shatters.has(w)) shatters.set(w, []);
+          shatters.get(w).push({ file, line: r.line, chapter });
+        }
+      }
       if (C.isBlank(r["时候与地点"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 时候与地点`, note: "没填" });
     }
-    if (scenes && scenes.rows.length && !beats) emit(file, t, "场", "error", { line: scenes.line, text: "四拍", note: "一章至少一场走一遍四拍" });
+    if (scenes && scenes.rows.length && !beats) emit(file, t, "场", "warn", { line: scenes.line, text: "五拍", note: "这一章没有一场走线：调剂或松的一章可以，连着几章都不走线就是断了" });
     if (scenes && scenes.rows.length && scenes.rows.some(r => (r["述/演"] || "").trim()) && !played) emit(file, t, "场", "warn", { line: scenes.line, text: "演", note: "一章至少一场演出来" });
     const forbid = C.section(doc, "禁放");
     if (forbid) for (const k of ["禁", "放"]) if (C.isBlank(forbid.fields[k])) emit(file, t, "禁放", "warn", { line: forbid.line, text: k, note: "没填" });
@@ -420,6 +493,7 @@ function main() {
       for (const mk of marks) {
         const id = mk[1];
         if (!objectIds.has(id)) { emit(file, t, "物件", "error", { line: objSec.line, text: id, note: themePath ? "主题的装置表里没有这个编号" : "没有主题.md，装置表无从查" }); continue; }
+        if (objectIds.get(id).kind === "重复句" && !/^[^、，；\n]*第\s*\d+\s*场/.test(body.slice(mk.index + id.length))) emit(file, t, "物件", "warn", { line: objSec.line, text: id, note: "重复句写这一章让它落在第几场（F001 第2场）：写手照细纲写，不自行每章搬" });
         if (!objectUse.has(id)) objectUse.set(id, []);
         objectUse.get(id).push({ file, line: objSec.line, chapter });
         if (mk[2] === "碰") { if (!touchUse.has(id)) touchUse.set(id, []); touchUse.get(id).push({ file, line: objSec.line, chapter }); }
@@ -454,6 +528,9 @@ function main() {
       for (const u of over) emit(u.file, "细纲", "物件超限", profile.objects.level, { line: u.line, text: id, note: `${o.name} 全书上限 ${o.limit}，各细纲已排 ${uses.length} 次（${uses.map(x => x.chapter ? `第${x.chapter}章` : path.basename(x.file)).join("、")}）` });
     }
   }
+
+  // 碎：一人全书一回
+  for (const [w, uses] of shatters) if (uses.length > 1) for (const u of uses.slice(1)) emit(u.file, "细纲", "破", "warn", { line: u.line, text: w, note: `${w} 已在${uses[0].chapter ? `第${uses[0].chapter}章` : path.basename(uses[0].file)}碎过：碎一人全书一回，这里是漏还是说破` });
 
   // 写了碰的不超碰的上限（提到只算全书上限）
   for (const [id, uses] of touchUse) {
@@ -505,7 +582,7 @@ function main() {
     }
     const rhy = profile.rhythm || {};
     const rlevel = rhy.level || "warn";
-    let tense = 0, flat = 0, hookless = 0;
+    let tense = 0, flat = 0, hookless = 0, funless = 0;
     for (const c of chs) {
       const m = byCh.get(c);
       tense = m.rhythm === "紧" && !m.relief ? tense + 1 : 0;
@@ -513,6 +590,8 @@ function main() {
       const hanging = openSpans.some(([a, b]) => a <= c && c < b);
       flat = !acted(m, ["兑现", "推", "落空"]) && !m.relief && !hanging ? flat + 1 : 0;
       if (Number.isInteger(rhy.flatRun) && flat === rhy.flatRun + 1) emit(m.file, "细纲", "松紧", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${flat} 章没兑现、没推、没调剂，也没有带期限的期待悬着（阈值 ${rhy.flatRun}）：读者会走` });
+      funless = m.fun ? 0 : funless + 1;
+      if (Number.isInteger(rhy.funlessRun) && funless === rhy.funlessRun + 1) emit(m.file, "细纲", "乐子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${funless} 章没有乐子（阈值 ${rhy.funlessRun}）：主题卡许给读者的调子断了` });
       hookless = m.hook && profile.hooklessKinds.includes(m.hook) ? hookless + 1 : 0;
       if (Number.isInteger(rhy.hooklessRun) && hookless === rhy.hooklessRun + 1) emit(m.file, "细纲", "钩子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${hookless} 章章尾不留钩（${profile.hooklessKinds.join("、")}，阈值 ${rhy.hooklessRun}）` });
     }
@@ -528,18 +607,18 @@ function main() {
   // 章号全书查重（讲述顺序脱开故事顺序后，各单元的章合起来是全书的格子，不许重）
   if (!chapterDupOff) for (const [key, uses] of chapterUse) if (uses.length > 1) for (const u of uses.slice(1)) emit(u.file, "单元", "章", "error", { line: u.line, text: `第${key}章`, note: `与 ${path.basename(uses[0].file)} 第 ${uses[0].line} 行重号；一章只能属于一个单元` });
 
-  // 悬置线程几章没动
+  // 开着的线程几章没动
   let threadsChecked = 0;
   if (threadsPath && fs.existsSync(threadsPath) && maxChapter) {
     try {
       const th = JSON.parse(C.readText(threadsPath));
       for (const tr of th.threads || []) {
-        if (tr.status !== "悬置") continue;
+        if (!["悬置", "埋", "压"].includes(tr.status)) continue;  // v2 四态里埋与压开着；旧文件的悬置读作压
         threadsChecked++;
         const chs = Array.isArray(tr.chapters) ? tr.chapters.filter(Number.isInteger) : [];
-        if (!chs.length) { emit(threadsPath, "线程", "线程账", "info", { text: tr.id, note: "悬置，还没有章动过它（chapters 为空）" }); continue; }
+        if (!chs.length) { emit(threadsPath, "线程", "线程账", "info", { text: tr.id, note: `${tr.status}，还没有章动过它（chapters 为空）` }); continue; }
         const idle = maxChapter - Math.max(...chs);
-        if (idle > profile.threadIdle.chapters) emit(threadsPath, "线程", "线程账", profile.threadIdle.level, { text: tr.id, note: `悬置，${idle} 章没动（阈值 ${profile.threadIdle.chapters}），最近第${Math.max(...chs)}章` });
+        if (idle > profile.threadIdle.chapters) emit(threadsPath, "线程", "线程账", profile.threadIdle.level, { text: tr.id, note: `${tr.status}，${idle} 章没动（阈值 ${profile.threadIdle.chapters}），最近第${Math.max(...chs)}章` });
       }
     } catch (e) { emit(threadsPath, "线程", "线程账", "warn", { text: "线程文件读不了", note: String(e.message) }); }
   }

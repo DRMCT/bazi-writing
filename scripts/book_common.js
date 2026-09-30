@@ -7,9 +7,9 @@ const path = require("path");
 const PROFILE_TABLE = path.join(__dirname, "..", "references", "写作层", "轮廓.json");
 const BOOK_DIR = "书";
 const QUOTE_RE = /[“”"「」『』]/;
-const ID_RE = /\b(?:J|TH|Q|L|D|E|IN|IM|LI|YQ|U|N|NT|G|S|R|C|P|T|H|Y)-[0-9A-Za-z㐀-鿿]+(?:-[0-9A-Za-z㐀-鿿]+)*/g;
+const ID_RE = /\b(?:J|TH|Q|L|D|DF|PH|E|IN|IM|LI|YQ|U|N|NT|G|S|R|C|P|T|H|Y)-[0-9A-Za-z㐀-鿿]+(?:-[0-9A-Za-z㐀-鿿]+)*/g;
 const PARA = "¶";
-const ID_VALUE_RE = /^(?:J|TH|Q|L|D|E|IN|IM|LI|YQ|U|N|NT|G|S|R|C|P|T|H|Y|DM)(?:-\S+)?$/;
+const ID_VALUE_RE = /^(?:J|TH|Q|L|D|DF|PH|E|IN|IM|LI|YQ|U|N|NT|G|S|R|C|P|T|H|Y|DM)(?:-\S+)?$/;
 
 function readText(p) {
   return fs.readFileSync(p, "utf8").replace(/^﻿/, "");
@@ -176,6 +176,7 @@ function loadTheme(themeDoc) {
       const touch = (row["碰的上限"] || "").trim();  // 碰与特写的上限，可空；全书上限数认法出现的次数，提到也算
       out.objects.push({
         id, name: row["装置"] || "", kind: row["类型"] || "", line: row.line,
+        who: isBlank(row["谁"]) ? "" : String(row["谁"]).trim(),  // 重复句写说它的人（口头禅每人至多一句），物件、意象、回声可空
         patterns: splitList(row["认法"]).filter(s => !/^<.*>$/.test(s)),
         limit: /^\d+$/.test((row["全书上限"] || "").trim()) ? parseInt(row["全书上限"], 10) : null,
         usage: row["用法"] || "",

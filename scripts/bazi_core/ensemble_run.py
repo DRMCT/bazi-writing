@@ -10,17 +10,28 @@
 3. 在场的人：与事件源同在交汇点的人，加上当年对任一在场者有五行临身的人。人数由边定，不设轮数。
 4. 各人的赌注取当年领域权重（timeline.year_facts 的 domains.weight）。当年没有领域在动的人只按画像反应，不生新事件。
 5. 回应倾向查 tables/response_tendency.json：他看事件源的十神边乘用忌，喜用取靠近、忌仇取躲或压、闲取看；修正项按矩阵边与快照的事实判。
-6. 悬置线程读作者维护的 群像/线程.json（bazi-threads/v1）：状态悬置的线程，当年该对边再成交汇点、或任一方候选年份触及同一领域时重新上卡；
+6. 悬置线程读作者维护的 群像/线程.json（bazi-threads/v1 两态；v2 四态埋、压、响、余波，另有知情 knows，v1 的悬置读作压、了结读作余波）：没了结的线程，当年该对边再成交汇点、或任一方候选年份触及同一领域时重新上卡；
    任一方换运的年份标改写；了结的不再上卡。每张卡另给 openThread 建议，作者写完卡认为两难没解决就把它抄进线程文件。
-7. 投影：卷按主角的大运切（volumes），配角换运年成卷内转折；热年成情节段（segments）；作者挑的热年给 --months 出流月，供细纲。
+7. 投影：卷按主角的大运切（volumes，长跨度的书才这样分卷；短跨度的卷照编配的段，由事件链定），配角换运年成卷内转折；
+   热年成情节段（segments）；作者挑的热年给 --months 出流月，供细纲。
+8. 编配（--casting，bazi-casting/v1 或 v2）：v1 是主线、副线、背景的人、领域配权；v2 另有可空的时间尺度 timescale、谁碎 breakers、
+   家族 families、透给读者的默认下场 defaultFate、钟 calendar、物件账 objects，逐栏校验。背景的人不当事件源。
+9. 事件源扩表（DESIGN-戏剧层 7.5）：热年只是十种来路之一。卡上 sources 给默认下场到点、过去追上来、对手出招、家人出招、
+   得知与认出、局与日历的候选，过场年的放 offCard，顶层 sourceKinds 是十种的对照表；fate 是默认下场（DF-）与前史（PH-），
+   同 fate.py，编配透了几条时另带书一级的保质期；给了编配，卡上另有 breakers（这一年可以碎的人）与 dilemmaTo（源为主角那一年
+   两难可以给的人）。timescale 按编配或窗长推定（不过两年是短跨度）：短跨度自动带流月并出 monthGrid，回到关口年出 returns，
+   单元客（--guests）出 guests，上一代（--elders）只出前史。
+10. --check-chain 核事件链的溯源都在 idPool 里；加 --drama 另查骨、因、落差、明暗、升级、源与默认下场（透、应验、改）。
 
-编号：沿用 Q-（快照）、E-（矩阵）、L-（年表）、J-（日程）、D-（大运基调）；新加 TH-{起始年}-{A}-{B}-{领域}（线程）。
+编号：沿用 Q-（快照）、E-（矩阵）、L-（年表）、J-（日程）、D-（大运基调）；新加 TH-{起始年}-{A}-{B}-{领域}（线程）、
+DF-（默认下场）、PH-（前史）。
 顶层 idPool 列出全部可引编号，check-character.js --run 读它；模型写的事件链（人物/推演.md）用 --check-chain 核对每条溯源都在池里。
 
 命令行（在作者项目根下）：
     python -m bazi_core.ensemble_run 命盘/沈砚.json 命盘/林昭.json 命盘/裴恪.json --window 324 346 --main 林昭 \
-        [--threads 命盘/群像/线程.json] [--months] > 命盘/群像/推演.json
-    python -m bazi_core.ensemble_run --check-chain 人物/推演.md --run 命盘/群像/推演.json
+        --casting 命盘/群像/编配.json [--threads 命盘/群像/线程.json] [--elders 命盘/甲父.json] [--guests 命盘/客一.json] \
+        [--horizon 10] [--months] > 命盘/群像/推演.json
+    python -m bazi_core.ensemble_run --check-chain 人物/推演.md --run 命盘/群像/推演.json --threads 命盘/群像/线程.json --drama
 """
 
 from __future__ import annotations
@@ -1025,16 +1036,16 @@ def _main(argv: list[str]) -> int:
     ap = argparse.ArgumentParser(description="群像推演：事件卡与悬置线程")
     ap.add_argument("charts", nargs="*", help="命盘档案 JSON")
     ap.add_argument("--window", nargs=2, type=int, metavar=("起", "止"), help="故事纪年段")
-    ap.add_argument("--main", help="主角名，卷按他的大运切")
+    ap.add_argument("--main", help="主角名：同分时他先当事件源；卷按他的大运切（长跨度的书才这样分卷）")
     ap.add_argument("--threads", help="线程文件 群像/线程.json")
-    ap.add_argument("--casting", help="编配的机器本 群像/编配.json（主线、副线、背景的人、领域配权）")
+    ap.add_argument("--casting", help="编配的机器本 群像/编配.json（主线、副线、背景的人、领域配权；v2 另有时间尺度、谁碎、家族、默认下场、钟、物件账）")
     ap.add_argument("--months", action="store_true", help="热年在场的人带十二流月（短跨度自动带）")
     ap.add_argument("--elders", nargs="*", default=[], help="上一代的命盘：只出前史，不进交汇点")
     ap.add_argument("--guests", nargs="*", default=[], help="单元客的命盘：只出入口（书前的热年）与默认下场，不进交汇点")
     ap.add_argument("--horizon", type=int, default=_fate.DEFAULT_HORIZON, help="默认下场延到窗后几年，默认 10")
     ap.add_argument("--check-chain", metavar="MD", help="核对人物/推演.md 的溯源都在推演 idPool 里")
     ap.add_argument("--run", metavar="JSON", help="--check-chain 用：推演.json")
-    ap.add_argument("--drama", action="store_true", help="--check-chain 用：按事件链新写法再查骨、因、落差、明暗、升级（DESIGN-戏剧层 8）")
+    ap.add_argument("--drama", action="store_true", help="--check-chain 用：按事件链新写法再查骨、因、落差、明暗、升级、源与默认下场（DESIGN-戏剧层 8）")
     ns = ap.parse_args(argv)
     sys.stdout.reconfigure(encoding="utf-8")
     if ns.check_chain:

@@ -258,3 +258,10 @@ def test_design_docs_have_no_dates() -> None:
 def test_design_docs_are_bounded() -> None:
     over = {name: len(read(ROOT / name)) for name, cap in DESIGN_MAX_CHARS.items() if len(read(ROOT / name)) > cap}
     assert not over, f"设计稿超过字数上限 {DESIGN_MAX_CHARS}：{over}。被取代的删掉、来由挪进 决策/，别抬上限"
+
+
+def test_unit_source_kinds_in_sync() -> None:
+    """单元的来路认的十种源，与事件链任务书的十种同源。"""
+    m = re.search(r"十种：([^。\n]+)。", read(REFS / "任务书" / "事件链.md"))
+    assert m, "事件链任务书里找不到十种源那一句"
+    assert m.group(1).split("、") == js_array(read(ROOT / "scripts" / "check-plan.js"), "SOURCE_KINDS")

@@ -278,6 +278,16 @@ def test_check_drama_belief_by_and_extras(tmp_path: Path) -> None:
     code, rows = run_page(lambda p: p["asks"].insert(0, {"ask": "他被叫什么", "lines": []}))
     assert code == 1 and any("次序" in r["problem"] for r in rows)
 
+    def duels(p: dict) -> None:  # 交手一问：一对一行，不算附问字数，单行过长报 warn
+        rows = [{"text": f"对第{i}个人：对方拿规矩盖，她拿账逼；被碰到旧账那根线，先笑后算" + "细" * 30, "origin": "定", "ref": "编配 对子"}
+                for i in range(12)]
+        rows.append({"text": "长" * 120, "origin": "定", "ref": "编配 对子"})
+        p["asks"].append({"ask": "他跟谁怎么交手", "lines": rows})
+
+    code, rows = run_page(duels)
+    assert code == 0 and rows[-1]["extraChars"] == 0, rows
+    assert sum(1 for r in rows if r.get("level") == "warn" and "一对一行" in r["problem"]) == 1
+
 
 def test_drama_render(tmp_path: Path) -> None:
     sys.path.insert(0, str(ROOT / "scripts"))
@@ -304,7 +314,7 @@ def test_template_page_and_casting_shapes() -> None:
     page = json.loads((tpl / "戏用页.json").read_text(encoding="utf-8"))
     assert [a["ask"] for a in page["asks"]] == ["他要什么", "谁挡着", "他怎么去要", "他信的那句假话", "他真正缺的", "碰哪里会疼",
                                                 "他瞒着什么", "他怎么说话", "别人拿他当什么", "他从哪儿走到哪儿",
-                                                "他被叫什么", "他知道哪一层", "他信错了谁", "他对谁演什么", "他独一份的是什么", "他怎么被记住"]
+                                                "他被叫什么", "他知道哪一层", "他信错了谁", "他对谁演什么", "他跟谁怎么交手", "他独一份的是什么", "他怎么被记住"]
     cast = json.loads((tpl / "编配.json").read_text(encoding="utf-8"))
     assert run.load_casting(cast, ["甲", "乙", "丙", "丁"])["main"] == ["甲", "乙"]
     chain = (tpl / "推演.md").read_text(encoding="utf-8")
