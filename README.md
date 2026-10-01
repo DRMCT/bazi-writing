@@ -15,7 +15,7 @@
 <p align="center">
   <img alt="Claude Code Skill" src="https://img.shields.io/badge/Claude%20Code-Skill-D97757?style=flat-square">
   <img alt="Python 3" src="https://img.shields.io/badge/Python-3-3776AB?style=flat-square&logo=python&logoColor=white">
-  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-checkers-339933?style=flat-square&logo=nodedotjs&logoColor=white">
+  <img alt="Node.js" src="https://img.shields.io/badge/Node.js-required-339933?style=flat-square&logo=nodedotjs&logoColor=white">
   <a href="./LICENSE"><img alt="License MIT" src="https://img.shields.io/badge/License-MIT-1F6FEB?style=flat-square"></a>
 </p>
 
