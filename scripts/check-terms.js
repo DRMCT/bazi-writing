@@ -7,7 +7,8 @@
 //   node scripts/check-terms.js 命盘/ --expect-hits                    反向用：对作者本故意跑一遍，零命中反而失败（检查器自检）
 //   node scripts/check-terms.js 人物/ --summary                         只打印汇总行
 //   node scripts/check-terms.js 人物/张三.读者本.md --period 现代        设定卡的时代；带 unless 的词组（时代措辞）在 unless 列出的时代不报。
-//                                                                       不给时按文件找同目录同名的人物档案 JSON（张三.读者本.md → 张三.json）读 setting.period；找不到就当不知道，照报
+//                                                                       不给时按文件找同目录同名的人物档案 JSON（张三.读者本.md → 张三.json）读 setting.period，
+//                                                                       再往上找项目根的 人物/设定卡.json 读 period；都找不到就当不知道，照报
 //
 // 每条命中一行：{"file","line","col","term","group","level","context"}；最后一行汇总 {"summary":true,"files","errors","warns"}。
 // 只做子串匹配，不做分词：术语都是两字以上的固定搭配，误伤靠 warn 级、整词放行组（level ok：大运河、似水流年，长词盖住里面的术语、自己不报）与 --allow 兜住。
@@ -55,12 +56,19 @@ function periodOf(file) {
   const dir = path.dirname(file);
   const base = path.basename(file).replace(/\.(md|txt|json)$/, "").replace(/\.读者本$/, "");
   const cand = path.join(dir, base + ".json");
-  if (!fs.existsSync(cand)) return null;
-  try {
-    const doc = JSON.parse(fs.readFileSync(cand, "utf8"));
-    return doc && doc.schema === "bazi-character/v1" && doc.setting && doc.setting.period ? doc.setting.period : null;
-  } catch (e) {
-    return null;
+  if (fs.existsSync(cand)) {
+    try {
+      const doc = JSON.parse(fs.readFileSync(cand, "utf8"));
+      if (doc && doc.schema === "bazi-character/v1" && doc.setting && doc.setting.period) return doc.setting.period;
+    } catch (e) { /* 落到项目设定卡 */ }
+  }
+  // 正文、稿、细纲没有同名档案：往上找项目根的 人物/设定卡.json（书/稿/第4章.md → 人物/设定卡.json）
+  for (let d = path.resolve(dir); ; d = path.dirname(d)) {
+    const card = path.join(d, "人物", "设定卡.json");
+    if (fs.existsSync(card)) {
+      try { const doc = JSON.parse(fs.readFileSync(card, "utf8")); return doc && doc.period ? doc.period : null; } catch (e) { return null; }
+    }
+    if (path.dirname(d) === d) return null;
   }
 }
 

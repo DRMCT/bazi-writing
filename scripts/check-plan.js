@@ -19,6 +19,8 @@
 //     场表里的人在在场里，一章没有一场走线报 warn（谁的五拍；别人的线只从外面写报 warn，视角切给他的不报）、演的场转折写成一对正负、对面要什么与怎么去要、读者担心（warn）、
 //     破只认漏、说破、碎（warn），同一个人碎两回报 warn；赌注非空（没引 J-、TH-、DF-、PH-、Q-、L- 或期待编号报 warn）；
 //     物件编号在装置表里且各细纲合计不超全书上限、写了碰的不超碰的上限、重复句写落在第几场（warn）、在场的人那一年已出生、不是正叙的书细纲要有位置；
+//     进了正文的章没登追踪（在场与知情一行、登记里有这一章，warn）；
+//     细纲与单元记录、在场各人戏用页十字以上连串重合（照抄阈值加二，warn，编号抹掉再比，主题白名单放行）；
 //     编号（J-、TH-、Q-、L-、D-、E-、DF-、PH-…）都在编号池里；借鉴字样（对标、爽点、公式…）warn；细纲里逐点字数 warn；开着的线程（埋、压，旧文件的悬置）闲置章数超阈值 warn。
 //     期待账（全报 warn，跑过一本真书再定哪几条升 error）：卷稿的期待线（编号、尺度、期限）、发动机与卷末兑现，单元选定后的兑现与回合，
 //     细纲的期待一节（编号或 章内，开、压、推、兑现、落空、搁置；松紧、调剂）与钩子类型；按章号对账：第一次出现要是开、兑现以后不再出现、
@@ -382,6 +384,36 @@ function main() {
       if (names.size && !names.has(p)) emit(file, t, "在场", "warn", { line: doc.fieldLines["在场"], text: p, note: "人物/ 与 命盘/ 里没有这个人；龙套登进 书/龙套.md" });
       else if (!Number.isNaN(year) && births.has(p) && births.get(p) > year) emit(file, t, "在场", "error", { line: doc.fieldLines["在场"], text: p, note: `${year} 年还没出生（生于 ${births.get(p)}）` });
     }
+    // 照抄上游原句（2026-10-01 样例书实测）：细纲的句子写手会搬进正文，从单元记录、戏用页原样来的也一路传下去；
+    // check-prose 只比细纲与正文，这一道在细纲这一层拦。编号先抹掉（编号里的人名与字连起来会凑够阈值）。
+    if (book && root) {
+      const unitPath = /^U-\d+$/.test(unit) ? path.join(book, "单元", `${unit}.md`) : null;
+      const ups = [];
+      if (unitPath) ups.push(["单元", unitPath]);
+      for (const p of present) if (!extras.has(p)) ups.push(["戏用页", path.join(root, "人物", `${p}.戏用页.md`)]);
+      const blankIds = s => s.replace(C.ID_RE, m => " ".repeat(m.length)).replace(/[KF]\d{3,}/g, m => " ".repeat(m.length));
+      const srcs = new Map(), idx = new Map();
+      const upN = profile.copy.ngram + 2;  // 比正文照抄宽两字：细纲与上游共用一套人名、物名与事项短语，八字连串多是这些
+      for (const [kind, p] of ups) {
+        if (!fs.existsSync(p)) continue;
+        const tag = `${kind}:${path.relative(root, p)}`;
+        const norm = C.normalize(blankIds(C.stripComments(C.readText(p))), names);
+        srcs.set(tag, norm);
+        C.gramIndex(norm, upN, tag, idx);
+      }
+      if (idx.size) {
+        // 放行：主题白名单；模板里的字段名与提示（单元表头、细纲字段几处字样相同）
+        const tplDir = path.join(__dirname, "..", "references", "写作层", "模板");
+        const tpl = ["单元.md", "细纲.md"].map(f => path.join(tplDir, f)).filter(f => fs.existsSync(f)).map(f => C.normalize(C.readText(f), names).str).join("");
+        const allowed = theme.whitelist.map(w => C.normalize(w, names).str.replace(new RegExp(C.PARA, "g"), "")).filter(Boolean);
+        const target = C.normalize(blankIds(C.stripComments(C.readText(file))), names);
+        for (const run of C.findRuns(target, idx, upN, srcs)) {
+          if (allowed.some(w => w.includes(run.text)) || tpl.includes(run.text)) continue;
+          emit(file, t, "照抄上游", "warn", { line: target.pos[run.start] ? target.pos[run.start].line : null, text: C.excerpt(target, run.start, run.end),
+            note: `与 ${run.tag.split(":").slice(1).join(":")} 连串重合 ${run.end - run.start} 字（阈值 ${upN}）：写成你自己的短语，写手会照细纲的字出句` });
+        }
+      }
+    }
     const pov = (doc.fields["主视角"] || "").trim();
     if (pov && extras.has(pov)) emit(file, t, "字段", "error", { line: doc.fieldLines["主视角"], text: pov, note: "龙套不做主视角" });
     else if (pov && present.length && !present.includes(pov)) emit(file, t, "字段", "error", { line: doc.fieldLines["主视角"], text: pov, note: "主视角不在在场里" });
@@ -519,6 +551,22 @@ function main() {
       for (const r of extraRows(text)) {
         for (const k of ["称呼", "功能"]) if (C.isBlank(r[k])) emit(f.file, "龙套", "龙套表", "error", { text: `${r["称呼"] || "?"} ${k}`, note: "没填" });
       }
+    }
+  }
+
+  // 登追踪：进了正文的章要登进追踪表（在场与知情一行、登记里有这一章），下一章的细纲与写手照它接、照它避开用过的写法
+  if (book && fs.existsSync(path.join(book, "正文"))) {
+    const done = fs.readdirSync(path.join(book, "正文")).map(f => (f.match(/^第(\d+)章\.md$/) || [])[1]).filter(Boolean).map(Number).sort((a, b) => a - b);
+    const readJson = f => { try { return JSON.parse(C.readText(f)); } catch (e) { return null; } };
+    const knowPath = path.join(book, "追踪", "在场与知情.json"), regPath = path.join(book, "追踪", "登记.json");
+    const know = fs.existsSync(knowPath) ? readJson(knowPath) : null;
+    const reg = fs.existsSync(regPath) ? readJson(regPath) : null;
+    const knownCh = new Set(((know && know.chapters) || []).map(c => Number(c.chapter)));
+    const regCh = new Set([...((reg && reg.phrases) || []).filter(x => x && x.text).map(x => Number(x.chapter)),
+      ...((reg && reg.objects) || []).flatMap(o => (o.uses || []).map(u => Number(u.chapter)))]);
+    for (const k of done) {
+      if (!knownCh.has(k)) emit(knowPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: "进了正文还没登在场与知情（含事实）：照定稿登，下一章细纲与写手照它接" });
+      if (!regCh.has(k)) emit(regPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: "进了正文还没登登记（装置次数、用过的比喻、包袱、身体反应与盖法、章尾落法）：不登，下一章会照样再用" });
     }
   }
 

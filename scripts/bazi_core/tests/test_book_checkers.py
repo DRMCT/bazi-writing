@@ -929,3 +929,52 @@ def test_plan_empty_book_does_not_crash(tmp_path: Path) -> None:
                                 "| 称呼 | 功能 | 一句 | 首次出场 |\n|---|---|---|---|\n| 门房 | 看门 | 待定 | 待排 |\n", encoding="utf-8")
     code, rows, summary = run(PLAN, str(book))
     assert code == 0 and summary["extras"] == 1 and summary["byType"] == {"龙套": 1}, rows
+
+
+@needs_node
+def test_plan_outline_copies_upstream(tmp_path: Path) -> None:
+    """细纲与单元记录、在场各人戏用页十字以上连串重合报 warn（写手会照细纲的字出句）；编号抹掉再比。"""
+    book = make_book(tmp_path)
+    (tmp_path / "人物" / "林昭.戏用页.md").write_text(
+        "# 林昭 · 戏用页\n\n## 八、她怎么说话\n\n- 被人逼到墙角时反倒慢下来一字一顿地讲\n", encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert not any("戏用页" in x["note"] for x in hits(rows, "照抄上游")), rows
+    o1 = book / "细纲" / "第1章.md"
+    o1.write_text(o1.read_text(encoding="utf-8").replace("## 意图\n", "## 意图\n\n她被人逼到墙角时反倒慢下来一字一顿地讲。\n"), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert code == 0 and any("戏用页" in x["note"] for x in hits(rows, "照抄上游", "warn")), rows
+
+
+@needs_node
+def test_prose_copy_lineage_common_phrase_and_outline_short_run(tmp_path: Path) -> None:
+    """师承里出现三次以上的连串是通用语不报；师承/读法/ 不算来源；与细纲重合不到阈值加四只报 warn。"""
+    book = make_book(tmp_path)
+    (book / "师承" / "读法").mkdir(parents=True)
+    common = "他从怀里掏出一个油纸包来"
+    (book / "师承" / "某书.txt").write_text(f"第1章\n{common}。\n第2章\n{common}。\n第3章\n{common}。\n", encoding="utf-8")
+    (book / "师承" / "读法" / "某书.md").write_text("掌柜的把那张欠条折了三折塞进袖子里\n", encoding="utf-8")
+    o1 = book / "细纲" / "第1章.md"
+    o1.write_text(o1.read_text(encoding="utf-8").replace("## 意图\n", "## 意图\n\n门上婆子记哪一房谁跟着。\n"), encoding="utf-8")
+    ch = book / "正文" / "第1章.md"
+    ch.write_text(f"# 第1章\n\n{common}。\n掌柜的把那张欠条折了三折塞进袖子里。\n门上婆子记哪一房谁跟着，一笔不漏。\n", encoding="utf-8")
+    code, rows, summary = run(PROSE, str(ch))
+    assert not any("师承" in r["source"] for r in hits(rows, "照抄")), rows
+    outline = [r for r in hits(rows, "照抄") if "细纲" in r["source"]]
+    assert outline and all(r["level"] == "warn" for r in outline), rows
+
+
+@needs_node
+def test_plan_finished_chapter_must_be_tracked(tmp_path: Path) -> None:
+    """进了正文的章要登追踪：在场与知情有这一章、登记里有这一章，缺了报 warn。"""
+    book = make_book(tmp_path)
+    (book / "正文").mkdir(exist_ok=True)
+    (book / "正文" / "第1章.md").write_text("# 第1章\n\n林昭把碗放下。\n", encoding="utf-8")
+    (book / "追踪").mkdir(exist_ok=True)
+    (book / "追踪" / "在场与知情.json").write_text(json.dumps({"chapters": []}, ensure_ascii=False), encoding="utf-8")
+    (book / "追踪" / "登记.json").write_text(json.dumps({"objects": [], "phrases": []}, ensure_ascii=False), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert len(hits(rows, "登追踪", "warn")) == 2, rows
+    (book / "追踪" / "在场与知情.json").write_text(json.dumps({"chapters": [{"chapter": 1}]}, ensure_ascii=False), encoding="utf-8")
+    (book / "追踪" / "登记.json").write_text(json.dumps({"objects": [], "phrases": [{"text": "碗放下", "kind": "反应层", "chapter": 1}]}, ensure_ascii=False), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert not hits(rows, "登追踪"), rows

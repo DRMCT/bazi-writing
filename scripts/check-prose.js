@@ -11,7 +11,8 @@
 //   --window N                    跨章重复回看几章，默认按轮廓表
 //   --summary                     只打印汇总行
 //
-// 查：引号照抄（正文与细纲、戏用页、读者本、文风卡、额外来源做八字以上连串比对，主题白名单、装置表的重复句与回声、戏用页附问末问那一句口头禅放行，error）；
+// 查：引号照抄（正文与细纲、戏用页、读者本、文风卡、额外来源做八字以上连串比对，主题白名单、装置表的重复句与回声、戏用页附问末问那一句口头禅放行，error；
+//     与细纲重合不到十二字只报 warn；师承里出现三次以上的连串是通用语不报，师承/读法/ 不算来源）；
 //     跨章重复（与前几章比六字以上连串，人名不计入长度，warn）；句尾否定（句尾落在没、不上的句子数与比例，超文风阈值报）；
 //     双否定（没…也没、不…也不）；感叹号、省略号、破折号只数叙述、按每千字算（引号与【】里的对白、心声、屏上文字不数，单独成行的分隔符与引出对白的破折号不数）；
 //     伏笔物件次数（按主题装置表的认法数，本章与前文合计超上限报；重复句出现了、同号细纲却没排它报 warn：写手照细纲写，不自行每章搬）；字数出了轮廓表的章长范围报 info，句长、段长只报；套话模式（对照式、像是、仿佛）与体感密度（每千字身体部位词）按 references/写作层/套话.json 与文风阈值报，定格式收尾 info；
@@ -189,7 +190,14 @@ function checkOne(ctx, args, emit) {
   if (ctx.style) addSource(ctx.style, "文风");
   for (const p of ctx.sources) addSource(p, "来源");
   // 师承（2026-09-26 叙述层）：书/师承/ 下的文本、片段、读法卡全是照抄来源；学讲法不借句子
-  if (ctx.book && fs.existsSync(path.join(ctx.book, "师承"))) for (const p of C.listFiles(path.join(ctx.book, "师承"), [".txt", ".md"])) addSource(p, "师承");
+  // 读法卡与汇总（师承/读法/）是我们自己的分析，写手不读，不算来源；原文已在 .txt 里
+  if (ctx.book && fs.existsSync(path.join(ctx.book, "师承"))) for (const p of C.listFiles(path.join(ctx.book, "师承"), [".txt", ".md"])) {
+    if (path.relative(path.join(ctx.book, "师承"), p).split(path.sep).includes("读法")) continue;
+    addSource(p, "师承");
+  }
+  // 师承里出现三次以上的连串是通用语（谁都会这么写），不算借句子
+  const lineageStrs = [...copySources].filter(([tag]) => tag.startsWith("师承:")).map(([, n]) => n.str);
+  const commonInLineage = text => { let c = 0; for (const str of lineageStrs) { for (let at = str.indexOf(text); at >= 0; at = str.indexOf(text, at + 1)) if (++c >= 3) return true; } return false; };
   // 放行：主题白名单、装置表里重复句与回声的认法（它们本来就要再出现）、戏用页那一句口头禅
   const allowed = [...ctx.themeInfo.whitelist, ...ctx.themeInfo.objects.filter(o => o.kind === "重复句" || o.kind === "回声").flatMap(o => o.patterns), ...catchphrases(ctx.cards)];
   const whitelist = allowed.map(w => C.normalize(w, names).str.replace(new RegExp(C.PARA, "g"), "")).filter(Boolean);
@@ -199,9 +207,12 @@ function checkOne(ctx, args, emit) {
   if (copyIndex.size) {
     for (const run of C.findRuns(target, copyIndex, prof.copy.ngram, copySources)) {
       if (covered(run.text, prof.copy.ngram)) continue;
+      if (run.tag.startsWith("师承:") && commonInLineage(run.text)) continue;
+      // 细纲里的事项（谁问了什么、规矩记什么）写手要照事实写，短连串难免撞：不到阈值加四只报 warn，再长才算照搬
+      const level = run.tag.startsWith("细纲:") && run.end - run.start < prof.copy.ngram + 4 ? "warn" : prof.copy.level;
       copies++;
       const src = copySources.get(run.tag);
-      say("照抄", prof.copy.level, { line: lineOf(run.start), col: colOf(run.start), text: C.excerpt(target, run.start, run.end),
+      say("照抄", level, { line: lineOf(run.start), col: colOf(run.start), text: C.excerpt(target, run.start, run.end),
         source: run.tag.split(":").slice(1).join(":"), sourceLine: src.pos[run.srcIdx] ? src.pos[run.srcIdx].line : null,
         note: `与来源连串重合 ${run.end - run.start} 字（阈值 ${prof.copy.ngram}）` });
     }
