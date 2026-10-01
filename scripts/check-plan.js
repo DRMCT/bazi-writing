@@ -81,6 +81,7 @@ function typeOf(file, loose) {
   if (base === "主题.md") return "主题";
   if (base === "文风.md") return "文风";
   if (base === "龙套.md") return "龙套";
+  if (base === "口味.md") return null;  // 作者口味卡：作者本，暂不查
   if (dir === "卷") return "卷";
   if (dir === "单元") return "单元";
   if (dir === "细纲") return "细纲";

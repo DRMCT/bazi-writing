@@ -67,9 +67,7 @@ def test_cards_have_story_fields_and_blocks() -> None:
     # 靶子实测（2026-09-25）：口头禅与标志动作段废；story 模板的这一栏填指路，情绪过程段进卡成写戏用的一块
     assert f"1. 口癖和惯用语：{ex.NO_CATCH}" in shen and f"口头禅/标志动作：{ex.NO_CATCH}" in lin
     assert "\n标志性特征：" in shen and "把笔在指间过一下" not in shen
-    assert "## 情绪过程（写戏用）" in shen and ex.BEAT_HEAD in shen and "- 碰线：" in shen and "- 盖法：" in shen and "- 余波：" in shen
-    assert "## 情绪过程（写戏用）" not in lin  # 林昭样例没写这段，可选段缺席不出块
-    assert shen.index("## 语言风格档案（七维）") < shen.index("## 情绪过程（写戏用）") < shen.index("## 人物弧线（按阶段）")
+    assert "## 情绪过程（写戏用）" not in lin and "## 情绪过程（写戏用）" not in shen  # 两份样例都没写这段（新书写在戏用页），可选段缺席不出块
     src = (LIN / "导出" / "story-long" / "设定" / "来源" / "bazi-writing.md").read_text(encoding="utf-8")
     assert "与书名目录并列放在项目根" in src and "对白样本" in src
 
@@ -140,3 +138,17 @@ def test_cli_dry_run_writes_nothing(tmp_path: Path) -> None:
                        capture_output=True, text=True, encoding="utf-8")
     assert r.returncode == 0, r.stderr
     assert "会写" in r.stdout and not out.exists()
+
+
+def test_old_profile_emotion_section_becomes_a_block(tmp_path: Path) -> None:
+    """旧档案的情绪过程段（可选段）导出成角色卡写戏用的一块，排在语言风格档案与人物弧线之间。"""
+    doc = json.loads(DOCS[1].read_text(encoding="utf-8"))
+    doc["sections"].append({"title": "情绪过程", "traits": [{"beat": b, "text": "一拍", "sources": ["DM"]} for b in ("碰线", "身体先动", "盖法", "余波")]})
+    src = tmp_path / "人物" / "沈砚.json"
+    src.parent.mkdir()
+    src.write_text(json.dumps(doc, ensure_ascii=False), encoding="utf-8")
+    mx, sc, run = _ctx()
+    ex.export([DOCS[0], src], "story-long", tmp_path / "book", mx=mx, schedule=sc, run=run)
+    shen = (tmp_path / "book" / "设定" / "角色" / "沈砚.md").read_text(encoding="utf-8")
+    assert "## 情绪过程（写戏用）" in shen and ex.BEAT_HEAD in shen and "- 碰线：" in shen and "- 盖法：" in shen and "- 余波：" in shen
+    assert shen.index("## 语言风格档案（七维）") < shen.index("## 情绪过程（写戏用）") < shen.index("## 人物弧线（按阶段）")

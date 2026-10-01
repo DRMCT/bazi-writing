@@ -82,8 +82,8 @@ def test_character_checker_catches_bad_source(tmp_path: Path) -> None:
 def test_character_checker_guards_emotion_beats(tmp_path: Path) -> None:
     """情绪过程段（2026-09-25）：beat 只认四拍、碰线要落到线上、身体先动要引体感与材质、不许带引号台词、至少碰线与盖法各一。"""
     doc = json.loads((EXAMPLE / "人物" / "沈砚.json").read_text(encoding="utf-8"))
-    sec = next(s for s in doc["sections"] if s["title"] == "情绪过程")
-    assert {t["beat"] for t in sec["traits"]} == {"碰线", "身体先动", "盖法", "余波"}
+    sec = {"title": "情绪过程", "traits": []}  # 新档案不写这一段（挪到戏用页第六问），旧档案里的照认
+    doc["sections"].append(sec)
     sec["traits"] = [
         {"beat": "起承转合", "text": "拍名不对", "sources": ["DM"]},
         {"beat": "碰线", "text": "没落到线上", "sources": ["T-月干-正印"]},
@@ -110,6 +110,7 @@ def test_character_checker_guards_emotion_beats(tmp_path: Path) -> None:
     # 渲染带拍名前缀；读者本一样带
     import character_render as cr
     good = json.loads((EXAMPLE / "人物" / "沈砚.json").read_text(encoding="utf-8"))
+    good["sections"].append({"title": "情绪过程", "traits": [{"beat": b, "text": "一拍", "sources": ["DM"]} for b in ("碰线", "身体先动", "盖法", "余波")]})
     text = cr.render(good, reader=True)
     assert "- 碰线：" in text and "- 身体先动：" in text and "- 盖法：" in text and "- 余波：" in text
 
@@ -129,8 +130,7 @@ def test_character_checker_requires_yunqi_core_source(tmp_path: Path) -> None:
             t["sources"] = [x for x in t["sources"] if not x.startswith("D-")]
             if t.get("layer") == "走向":
                 t["layer"] = "底色"
-    traits = doc["sections"][0]["traits"]
-    body = next(t for t in traits if any(x.startswith("YQ-") for x in t["sources"]))
+    body = next(t for s in doc["sections"] for t in s.get("traits", []) if any(x.startswith("YQ-") for x in t["sources"]))
     body["sources"] = ["DM", "YQ-司天-少阳相火", "YQ-加临-主生客"]  # 只引背景与修正
     (tmp_path / "人物").mkdir()
     p = tmp_path / "人物" / "沈砚.json"
