@@ -353,6 +353,7 @@ function main() {
   need(file, t, doc, "期待", "warn");  // 2026-09-29 加这三项：期待账、断章与反应层的读法；旧卡没有，只报 warn
   need(file, t, doc, "断章", "warn");
   need(file, t, doc, "兑现怎么写", "warn");
+  need(file, t, doc, "场内手法", "warn");  // 2026-09-30 加：一拍怎么写（停几层、旁人心声、登场样子、夸张、接头等）；旧卡没有，只报 warn
     const long = [];
     for (const [k, v] of Object.entries(doc.fields)) {
       const sv = String(v);
