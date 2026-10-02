@@ -16,6 +16,7 @@
 //     卷稿单元表与单元记录写来路（事件链源一栏的十种之一起头，没认出一种报 warn，空报 error）；两难只在事件链给了的单元写，写了要引编号（warn）；
 //     卷稿的骨（没有、或落下风空着报 warn）；装置表重复句每人至多一句（谁一栏），类型取物件、重复句、意象、回声；
 //     单元的三个走法在『谁做选择』上互不相同，作者选了才查章表、每章一句功能非空；细纲的主视角在在场里、决定小节非空、在场与知情表一人一行末行读者、
+//     场表事项一栏（有这一栏而空着 warn；没有这一栏、转折写得很长 info）；章尾同一种类型连用（轮廓表 sameHookRun）warn；
 //     场表里的人在在场里，一章没有一场走线报 warn（谁的五拍；别人的线只从外面写报 warn，视角切给他的不报）、演的场转折写成一对正负、对面要什么与怎么去要、读者担心（warn）、
 //     破只认漏、说破、碎（warn），同一个人碎两回报 warn；赌注非空（没引 J-、TH-、DF-、PH-、Q-、L- 或期待编号报 warn）；
 //     物件编号在装置表里且各细纲合计不超全书上限、写了碰的不超碰的上限、重复句写落在第几场（warn）、在场的人那一年已出生、不是正叙的书细纲要有位置；
@@ -488,6 +489,8 @@ function main() {
       const turn = (r["转折"] || "").trim();
       if (C.isBlank(turn)) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 转折`, note: "没填：这一场主视角里面什么变了，写手先写它" });
       else if (mode === "演" && !(/正/.test(turn) && /负/.test(turn))) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 转折`, note: "演的场转折写成一对正负：进场是正、出场是负，或反过来" });
+      if (r["事项"] !== undefined && C.isBlank(r["事项"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 事项`, note: "没填：这一场发生什么，短语逐项，不成句" });
+      else if (r["事项"] === undefined && turn.length > 120) emit(file, t, "场", "info", { line: r.line, text: `场 ${r["场"]} 转折`, note: "转折只写一对正负；这一场发生什么写进事项一栏（模板场表新加的一栏）" });
       if (mode === "演") {
         for (const k of ["对面要什么", "怎么去要"]) if (C.isBlank(r[k])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} ${k}`, note: "演的场对面那个人这一场要什么、怎么去要（取他戏用页第一、三问与交手一行）；一个人的独角戏写无" });
         if (C.isBlank(r["读者担心"])) emit(file, t, "场", "warn", { line: r.line, text: `场 ${r["场"]} 读者担心`, note: "这一场读者替谁担心什么" });
@@ -632,7 +635,7 @@ function main() {
     }
     const rhy = profile.rhythm || {};
     const rlevel = rhy.level || "warn";
-    let tense = 0, flat = 0, hookless = 0, funless = 0;
+    let tense = 0, flat = 0, hookless = 0, funless = 0, sameHook = 0, lastHook = null;
     for (const c of chs) {
       const m = byCh.get(c);
       tense = m.rhythm === "紧" && !m.relief ? tense + 1 : 0;
@@ -642,6 +645,10 @@ function main() {
       if (Number.isInteger(rhy.flatRun) && flat === rhy.flatRun + 1) emit(m.file, "细纲", "松紧", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${flat} 章没兑现、没推、没调剂，也没有带期限的期待悬着（阈值 ${rhy.flatRun}）：读者会走` });
       funless = m.fun ? 0 : funless + 1;
       if (Number.isInteger(rhy.funlessRun) && funless === rhy.funlessRun + 1) emit(m.file, "细纲", "乐子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${funless} 章没有乐子（阈值 ${rhy.funlessRun}）：主题卡许给读者的调子断了` });
+      // 章尾同一种连着用：读者读出套路（落法也要换，不只换类型）
+      sameHook = m.hook && m.hook === lastHook ? sameHook + 1 : (m.hook ? 1 : 0);
+      lastHook = m.hook || null;
+      if (Number.isInteger(rhy.sameHookRun) && sameHook === rhy.sameHookRun + 1) emit(m.file, "细纲", "钩子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${sameHook} 章章尾都是${m.hook}（阈值 ${rhy.sameHookRun}）：换一种，停的东西也换（一句话、一个动作、一句露底、旁人的反应）` });
       hookless = m.hook && profile.hooklessKinds.includes(m.hook) ? hookless + 1 : 0;
       if (Number.isInteger(rhy.hooklessRun) && hookless === rhy.hooklessRun + 1) emit(m.file, "细纲", "钩子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${hookless} 章章尾不留钩（${profile.hooklessKinds.join("、")}，阈值 ${rhy.hooklessRun}）` });
     }

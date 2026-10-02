@@ -978,3 +978,19 @@ def test_plan_finished_chapter_must_be_tracked(tmp_path: Path) -> None:
     (book / "追踪" / "登记.json").write_text(json.dumps({"objects": [], "phrases": [{"text": "碗放下", "kind": "反应层", "chapter": 1}]}, ensure_ascii=False), encoding="utf-8")
     code, rows, summary = run(PLAN, str(book))
     assert not hits(rows, "登追踪"), rows
+
+
+@needs_node
+def test_plan_same_hook_run(tmp_path: Path) -> None:
+    """章尾连着三章同一种类型报 warn（轮廓表 sameHookRun 2）；换一种就不报。"""
+    book = make_book(tmp_path, chapters=3, outline_objects="无")
+    setup_ledger(book)
+    add_expect(book, 1, "| K001 | 开 | 她要他先开口 |\n| 章内 | 兑现 | 识破 |\n", relief="笑")
+    add_expect(book, 2, "| K001 | 压 | 他绕着说 |\n", relief="甜")
+    add_expect(book, 3, "| K001 | 推 | 他递碗 |\n", relief="暖")
+    code, rows, summary = run(PLAN, str(book))
+    assert any("章尾都是悬念" in r["note"] for r in hits(rows, "钩子", "warn")), rows
+    o3 = book / "细纲" / "第3章.md"
+    o3.write_text(o3.read_text(encoding="utf-8").replace("- 类型：悬念", "- 类型：情绪"), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert not any("章尾都是" in r["note"] for r in hits(rows, "钩子")), rows
