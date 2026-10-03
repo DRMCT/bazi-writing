@@ -83,7 +83,7 @@ function measure(ch, tics) {
     dialoguePct: chars ? Math.round(dialogueChars * 100 / chars) : 0,
     dialogueParas: paras.length ? Math.round(paras.filter(p => /[“"]/.test(p)).length * 100 / paras.length) : 0,
     negTailPct: lens.length ? Math.round(negTail * 100 / lens.length) : 0,
-    body: per(countWords(body, tics.body || [])),
+    body: per(countWords((tics.bodyNot || []).reduce((s, w) => s.split(w).join(" "), body), tics.body || [])),
     simile: per(countWords(body, tics.simile || [])),
     voice: per(countWords(body, tics.voice || [])),
     exclaim: per((C.narrationOf(body).match(/[！!]/g) || []).length),  // 标点与 check-prose 同口径：只数叙述，分隔行与引出对白的破折号不数

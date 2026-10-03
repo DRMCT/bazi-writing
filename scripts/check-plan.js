@@ -214,6 +214,7 @@ function main() {
     if (!PROFILES.includes(doc.fields["写法轮廓"])) emit(file, t, "字段", "error", { line: doc.fieldLines["写法轮廓"] || null, text: "写法轮廓", note: `取轮廓表里的 ${PROFILES.join("、")}` });
     need(file, t, doc, "主角", "warn");
     need(file, t, doc, "目标读者", "warn");
+    need(file, t, doc, "读者为什么爱上", "warn");  // 2026-10-03：主角与感情线上的人凭什么叫读者一上来就爱上（编配人表与档案看得见的样子照它）
     if (!C.bodyText(C.section(doc, "命题")).replace(/<[^>]*>/g, "").trim()) emit(file, t, "小节", "error", { text: "命题", note: "全书要回答的问题，一句问句" });
     if (!hasFun(doc)) emit(file, t, "小节", "warn", { text: "乐子", note: "这本书许给读者的调子，笑与乐从哪几处来（从设定、主角的性子、人物关系里长，不靠写的时候插笑话）；单元会与细纲拿它量这一段乐在哪" });
     const nar = C.section(doc, "叙述结构");

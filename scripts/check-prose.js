@@ -296,7 +296,8 @@ function checkOne(ctx, args, emit) {
       const re = new RegExp(t.pattern, "g");
       bodyLines.forEach((l, i) => { let m; while ((m = re.exec(l))) { tics++; say(t.label, t.level, { line: i + 1, col: m.index + 1, text: l.slice(Math.max(0, m.index - 8), m.index + m[0].length + 8), note: t.note || "" }); if (!m[0]) re.lastIndex++; } });
     }
-    const bodyHits = objectHits(body, T.body || []);
+    const notBody = (T.bodyNot || []).reduce((s, w) => s.split(w).join("　".repeat(w.length)), body);  // 说话的嗓门不算体感，等长换掉保行列
+    const bodyHits = objectHits(notBody, T.body || []);
     bodyDensity = chars ? +(bodyHits.length * 1000 / chars).toFixed(1) : 0;
     const bt = prof.thresholds.bodyDensity;
     if (bt && bodyDensity > bt.max) say(bt.label, bt.level, { text: `每千字 ${bodyDensity} 个身体部位词（阈值 ${bt.max}）`, note: "情绪全走身体是清单式写法；身体反应留给一章最要紧的一下，其余按文风卡叙述者一节直说" });

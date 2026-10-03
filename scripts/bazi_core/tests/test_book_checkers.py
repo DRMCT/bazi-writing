@@ -573,6 +573,9 @@ def test_prose_tics_body_freeze_and_lineage_source(tmp_path: Path) -> None:
     assert any("师承" in r["source"] for r in hits(rows, "照抄", "error"))
     assert hits(rows, "对照式套话", "warn") and hits(rows, "定格式收尾", "info")
     assert summary["bodyDensity"] > 4 and summary["tics"] >= 1 and hits(rows, "体感密度")
+    ch.write_text("# 第1章\n\n奶娘扯着嗓子喊了一嗓子，他压着嗓子说话。\n", encoding="utf-8")
+    code, rows, summary = run(PROSE, str(ch))
+    assert summary["bodyDensity"] == 0, summary
 
 
 @needs_node
