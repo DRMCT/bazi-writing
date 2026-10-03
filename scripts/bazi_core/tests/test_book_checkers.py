@@ -984,6 +984,23 @@ def test_plan_finished_chapter_must_be_tracked(tmp_path: Path) -> None:
 
 
 @needs_node
+def test_plan_finished_chapter_expect_ledger(tmp_path: Path) -> None:
+    """进了正文的章，细纲期待一节排了的编号要在期待账里有这一章的一笔，缺了报 warn。"""
+    book = make_book(tmp_path, chapters=1, outline_objects="无")
+    setup_ledger(book)
+    add_expect(book, 1, "| K001 | 开 | 她要他先开口 |\n", relief="笑")
+    (book / "正文").mkdir(exist_ok=True)
+    (book / "正文" / "第1章.md").write_text("# 第1章\n\n林昭把碗放下。\n", encoding="utf-8")
+    (book / "追踪").mkdir(exist_ok=True)
+    (book / "追踪" / "期待.json").write_text(json.dumps({"expects": []}, ensure_ascii=False), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert any("期待账" in r["note"] and "K001" in r["note"] for r in hits(rows, "登追踪", "warn")), rows
+    (book / "追踪" / "期待.json").write_text(json.dumps({"expects": [{"id": "K001", "touches": [{"chapter": 1, "act": "开"}]}]}, ensure_ascii=False), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert not any("期待账" in r["note"] for r in hits(rows, "登追踪")), rows
+
+
+@needs_node
 def test_plan_same_hook_run(tmp_path: Path) -> None:
     """章尾连着三章同一种类型报 warn（轮廓表 sameHookRun 2）；换一种就不报。"""
     book = make_book(tmp_path, chapters=3, outline_objects="无")

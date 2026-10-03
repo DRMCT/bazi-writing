@@ -20,7 +20,7 @@
 //     场表里的人在在场里，一章没有一场走线报 warn（谁的五拍；别人的线只从外面写报 warn，视角切给他的不报）、演的场转折写成一对正负、对面要什么与怎么去要、读者担心（warn）、
 //     破只认漏、说破、碎（warn），同一个人碎两回报 warn；赌注非空（没引 J-、TH-、DF-、PH-、Q-、L- 或期待编号报 warn）；
 //     物件编号在装置表里且各细纲合计不超全书上限、写了碰的不超碰的上限、重复句写落在第几场（warn）、在场的人那一年已出生、不是正叙的书细纲要有位置；
-//     进了正文的章没登追踪（在场与知情一行、登记里有这一章，warn）；
+//     进了正文的章没登追踪（在场与知情一行、登记里有这一章、细纲期待一节排了的编号在期待账里有这一章，warn）；
 //     细纲与单元记录、在场各人戏用页十字以上连串重合（照抄阈值加二，warn，编号抹掉再比，主题白名单放行）；
 //     编号（J-、TH-、Q-、L-、D-、E-、DF-、PH-…）都在编号池里；借鉴字样（对标、爽点、公式…）warn；细纲里逐点字数 warn；开着的线程（埋、压，旧文件的悬置）闲置章数超阈值 warn。
 //     期待账（全报 warn，跑过一本真书再定哪几条升 error）：卷稿的期待线（编号、尺度、期限）、发动机与卷末兑现，单元选定后的兑现与回合，
@@ -571,6 +571,16 @@ function main() {
     for (const k of done) {
       if (!knownCh.has(k)) emit(knowPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: "进了正文还没登在场与知情（含事实）：照定稿登，下一章细纲与写手照它接" });
       if (!regCh.has(k)) emit(regPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: "进了正文还没登登记（装置次数、用过的比喻、包袱、身体反应与盖法、章尾落法）：不登，下一章会照样再用" });
+    }
+    // 期待账：进了正文的章，细纲期待一节排了的编号要在期待账里有这一章的一笔（2026-10-03：样例书五章没登，三张表只查了两张）
+    if (wn) {
+      const expPath = path.join(book, "追踪", "期待.json");
+      const led = fs.existsSync(expPath) ? readJson(expPath) : null;
+      const touched = new Set(((led && led.expects) || []).flatMap(e => (e.touches || []).map(x => `${e.id}@${Number(x.chapter)}`)));
+      for (const k of done) {
+        const miss = [...expectEvents].filter(([id, evs]) => evs.some(ev => Number(ev.chapter) === k) && !touched.has(`${id}@${k}`)).map(([id]) => id);
+        if (miss.length) emit(expPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: `进了正文还没登期待账：细纲期待一节排了 ${miss.join("、")}，照定稿登这一章开、压、推还是兑现；不登，往后几章对账与隔章没人动的提醒都失准` });
+      }
     }
   }
 
