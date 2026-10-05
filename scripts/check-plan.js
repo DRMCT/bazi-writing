@@ -28,13 +28,16 @@
 //     回合与单元尺度的期待几章没人动（卷与全书尺度的不按章数查，隔太久再碰提醒带旧账，常驻的不查，搁置以后不查）、第一章没开、
 //     开篇几章没兑现、开篇几章没有登记过的期待兑现、连着紧又没有调剂、连着几章平（没兑现没推没调剂也没有期限悬着）、连着几章不留钩、
 //     回合末停在场中切或松收上、空章、卷稿期待线里没有的编号。
+//     爽感节奏（主题卡有这一节才查，全报 warn）：细纲期待表的赢亏一栏（赢、亏、无）、单元章表的赢亏一栏；按章数主角的赢亏，进了正文、
+//     期待账 tally 登了的照账，没登的照细纲：一章赢 0 info，连着两章赢 0、连着四章亏多于赢、开篇十章亏多于赢 warn（阈值轮廓表 rhythm）；
+//     进了正文的章没登 tally warn。
 // 每条一行：{"file","type","check","level","line","text","note"}；汇总 {"summary":true,...}。
 "use strict";
 const fs = require("fs");
 const path = require("path");
 const C = require("./book_common");
 
-const STYLE_SECTIONS = ["师承", "叙述者", "叙述", "句与段", "口吻与用词", "对白", "标点", "情绪与节奏", "不写", "阈值"];  // 2026-09-26 叙述层加师承、叙述者两节
+const STYLE_SECTIONS = ["师承", "叙述者", "叙述", "句与段", "口吻与用词", "对白", "附魅", "标点", "情绪与节奏", "不写", "阈值"];  // 2026-09-26 叙述层加师承、叙述者两节；附魅一节从频道卡挑几条抄进来
 const READING_CARD_FIELDS = ["章", "字数", "覆盖时间", "演", "述", "述演比", "叙述者的判断与幽默", "情绪写法", "旧事怎么进", "环境与感官", "时间过渡", "开头", "结尾", "埋", "收", "对白", "腔调变化", "最值得学的一个讲法"];
 const WALK_FIELDS = ["谁做选择", "事件顺序", "输了丢什么", "赢了欠什么", "结束时开着的线程"];
 const WALKS = ["走法甲", "走法乙", "走法丙"];
@@ -133,6 +136,14 @@ function main() {
   // 乐子（2026-09-30）：主题卡许给读者的调子与笑从哪来；许了的书，细纲每章写这一章乐在哪
   const hasFun = doc => { const sec = C.section(doc, "乐子"); return !!sec && (!!C.bodyText(sec).replace(/<[^>]*>/g, "").trim() || Object.values(sec.fields || {}).some(v => !C.isBlank(v))); };
   const themeFun = themeDoc ? hasFun(themeDoc) : false;
+  // 爽感节奏（2026-10-04）：读者站在主角这边追的书，主题卡写了这一节，细纲期待表逐行记这一下对她是赢是亏，按章数赢亏；来源写无、别的不写算没许
+  const hasSway = doc => {
+    const sec = C.section(doc, "爽感节奏");
+    if (!sec) return false;
+    const vals = [C.bodyText(sec).replace(/<[^>]*>/g, "").replace(/^\s*-\s*/gm, ""), ...Object.entries(sec.fields || {}).filter(([k, v]) => k !== "来源" && !C.isBlank(v)).map(([, v]) => v)];
+    return vals.map(v => v.trim()).some(v => v && v !== "无");
+  };
+  const themeSway = themeDoc ? hasSway(themeDoc) : false;
   const stylePath = book && fs.existsSync(path.join(book, "文风.md")) ? path.join(book, "文风.md") : null;
   const profile = C.loadProfile({ themeDoc, styleDoc: stylePath ? C.parseMd(C.readText(stylePath)) : null });
   const pool = root ? C.loadIdPool(root) : { ids: new Set(), files: 0 };
@@ -155,6 +166,7 @@ function main() {
   const expectEvents = new Map();  // 期待编号 → [{chapter, act, file, line}]
   const expectMeta = [];  // 写了期待一节的细纲：{chapter, file, line, rhythm, acts, relief, hook, fun}
   const registered = new Map();  // 卷稿期待线登记的编号 → {file, line, scale, deadline}
+  const tallyByCh = new Map();  // 期待账 tally：章号 → {wins, losses}，进了正文照定稿登的主角赢亏
   const roundOf = new Map();  // 章号 → 回合（单元号加回合名）：单元章表的回合栏
   const chapterUse = new Map();  // 章号 → [{file, line}]：各单元记录排的章全书不许重号
   let chapterDupOff = false;  // 不是正叙的书，主题卡叙述结构的插入表没填完时，章号只是单元内序号，不查全书重号（2026-09-26）
@@ -217,6 +229,7 @@ function main() {
     need(file, t, doc, "读者为什么爱上", "warn");  // 2026-10-03：主角与感情线上的人凭什么叫读者一上来就爱上（编配人表与档案看得见的样子照它）
     if (!C.bodyText(C.section(doc, "命题")).replace(/<[^>]*>/g, "").trim()) emit(file, t, "小节", "error", { text: "命题", note: "全书要回答的问题，一句问句" });
     if (!hasFun(doc)) emit(file, t, "小节", "warn", { text: "乐子", note: "这本书许给读者的调子，笑与乐从哪几处来（从设定、主角的性子、人物关系里长，不靠写的时候插笑话）；单元会与细纲拿它量这一段乐在哪" });
+    if (!C.section(doc, "爽感节奏")) emit(file, t, "小节", "warn", { text: "爽感节奏", note: "读者站在主角这边追的书：她的赢与亏怎么交替、亏多久打回，照频道卡写几条；虐、悲剧向的书来源写无" });
     const nar = C.section(doc, "叙述结构");
     const NARRATIVES = ["正叙", "倒叙", "双线", "框架", "多视角"];
     if (!nar) emit(file, t, "小节", "warn", { text: "叙述结构", note: "讲述顺序那一层：正叙、倒叙、双线、框架、多视角选一种，写明现在时是哪条线；不写按正叙" });
@@ -247,7 +260,7 @@ function main() {
 
   function checkStyle(file, doc) {
     const t = "文风";
-    for (const s of STYLE_SECTIONS) if (!C.section(doc, s)) emit(file, t, "小节", "error", { text: s, note: "十节都要在场，标题不改（2026-09-26 加师承、叙述者）" });
+    for (const s of STYLE_SECTIONS) if (!C.section(doc, s)) emit(file, t, "小节", s === "附魅" ? "warn" : "error", { text: s, note: s === "附魅" ? "开书时从频道卡挑几条抄进来，没有写 无；旧卡没有，只报 warn" : "十一节都要在场，标题不改（2026-09-26 加师承、叙述者）" });
     const lineage = C.section(doc, "师承");
     if (lineage && C.isBlank(lineage.fields["书"])) emit(file, t, "字段", "warn", { line: lineage.line, text: "师承 书", note: "作者点的书，没有写 无" });
     const narr = C.section(doc, "叙述者");
@@ -346,7 +359,9 @@ function main() {
         }
         for (const k of ["功能：让谁面对什么", "读者离开时多知道什么"]) if (C.isBlank(r[k])) emit(file, t, "章", "error", { line: r.line, text: `第${r["章"]}章 ${k}`, note: "每章一句功能；答不出来的章不排" });
         if (C.isBlank(r["读者追什么"])) emit(file, t, "章", "warn", { line: r.line, text: `第${r["章"]}章 读者追什么`, note: "这一章读者追的是哪个问题；答不出来的章该并进别的章（2026-09-26）" });
+        if (themeSway && ch.header.includes("赢亏") && C.isBlank(r["赢亏"])) emit(file, t, "章", "warn", { line: r.line, text: `第${r["章"]}章 赢亏`, note: "主角这一章赢在哪、亏在哪、亏打回在第几章" });
       }
+      if (themeSway && rows.length && !ch.header.includes("赢亏")) emit(file, t, "章", "warn", { line: ch.line, text: "赢亏", note: "主题卡有爽感节奏一节：章表加赢亏一栏，每章写主角赢在哪、亏在哪、亏打回在第几章" });
     } else if (rows.length) emit(file, t, "章", "warn", { line: rows[0].line, text: `${rows.length} 行`, note: "作者还没选走法就排了章" });
   }
 
@@ -462,6 +477,16 @@ function main() {
         if (!expectEvents.has(id)) expectEvents.set(id, []);
         expectEvents.get(id).push({ chapter, act, file, line: r.line });
       }
+      // 赢亏：这一下对主角是赢、亏还是无；主题卡有爽感节奏一节才查
+      const swayCol = !!(exp.header && exp.header.includes("赢亏"));
+      let wins = 0, losses = 0;
+      for (const r of erows) {
+        const v = (r["赢亏"] || "").trim();
+        if (v === "赢") wins++;
+        else if (v === "亏") losses++;
+        else if (themeSway && swayCol && !C.isBlank(v) && v !== "无") emit(file, t, "期待", expLevel, { line: r.line, text: `${(r["编号"] || "").trim()} ${v}`, note: "赢亏取 赢、亏、无" });
+      }
+      if (themeSway && !swayCol) emit(file, t, "期待", expLevel, { line: exp.line, text: "赢亏", note: "主题卡有爽感节奏一节：期待表加赢亏一栏，每行写这一下对主角是赢、亏还是无；章内的小赢小亏也写一行" });
       const reliefRaw = (exp.fields["调剂"] || "").trim();
       const relief = C.splitList(reliefRaw);
       const badRelief = relief.filter(k => !profile.reliefKinds.includes(k));
@@ -472,7 +497,7 @@ function main() {
       if (themeFun && C.isBlank(funRaw)) emit(file, t, "期待", expLevel, { line: exp.line, text: "乐子", note: "主题卡许了乐子：这一章乐在哪一场、从乐子一节哪一条来；真没有写无" });
       const rh = (exp.fields["松紧"] || "").trim();
       if (!["紧", "松"].includes(rh)) emit(file, t, "期待", expLevel, { line: exp.fieldLines["松紧"] || exp.line, text: "松紧", note: "取 紧 或 松：这一章在绷还是在松" });
-      expectMeta.push({ chapter, file, line: exp.line, rhythm: ["紧", "松"].includes(rh) ? rh : null, acts, relief: relief.length > 0, hook: hookKind, fun: !themeFun || (!C.isBlank(funRaw) && funRaw !== "无") });
+      expectMeta.push({ chapter, file, line: exp.line, rhythm: ["紧", "松"].includes(rh) ? rh : null, acts, relief: relief.length > 0, hook: hookKind, fun: !themeFun || (!C.isBlank(funRaw) && funRaw !== "无"), sway: swayCol ? { wins, losses } : null });
     }
     const intent = C.bodyText(C.section(doc, "意图")).replace(/<[^>]*>/g, "").trim();
     if (C.section(doc, "意图") && !intent) emit(file, t, "小节", "error", { text: "意图", note: "读者离开时多知道什么、多担心什么" });
@@ -581,6 +606,9 @@ function main() {
         const miss = [...expectEvents].filter(([id, evs]) => evs.some(ev => Number(ev.chapter) === k) && !touched.has(`${id}@${k}`)).map(([id]) => id);
         if (miss.length) emit(expPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: `进了正文还没登期待账：细纲期待一节排了 ${miss.join("、")}，照定稿登这一章开、压、推还是兑现；不登，往后几章对账与隔章没人动的提醒都失准` });
       }
+      const filled = a => (Array.isArray(a) ? a : []).filter(x => !C.isBlank(x)).length;
+      for (const x of (led && led.tally) || []) if (x && Number.isInteger(Number(x.chapter))) tallyByCh.set(Number(x.chapter), { wins: filled(x.wins), losses: filled(x.losses) });
+      if (themeSway) for (const k of done) if (!tallyByCh.has(k)) emit(expPath, "追踪", "登追踪", "warn", { text: `第${k}章`, note: "进了正文还没登主角的赢亏（tally）：照定稿登这一章她赢在哪、亏在哪，只读前文的读者读成亏的登亏" });
     }
   }
 
@@ -662,6 +690,26 @@ function main() {
       if (Number.isInteger(rhy.sameHookRun) && sameHook === rhy.sameHookRun + 1) emit(m.file, "细纲", "钩子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${sameHook} 章章尾都是${m.hook}（阈值 ${rhy.sameHookRun}）：换一种，停的东西也换（一句话、一个动作、一句露底、旁人的反应）` });
       hookless = m.hook && profile.hooklessKinds.includes(m.hook) ? hookless + 1 : 0;
       if (Number.isInteger(rhy.hooklessRun) && hookless === rhy.hooklessRun + 1) emit(m.file, "细纲", "钩子", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${hookless} 章章尾不留钩（${profile.hooklessKinds.join("、")}，阈值 ${rhy.hooklessRun}）` });
+    }
+    // 爽感节奏：按章数主角的赢亏；进了正文、期待账 tally 登了的照账，没登的照细纲期待表；两样都没有的章断开连数
+    if (themeSway) {
+      let winless = 0, lossy = 0, owin = 0, oloss = 0, oseen = 0;
+      const openN = rhy.openingWinBy;
+      for (const c of chs) {
+        const m = byCh.get(c), led = tallyByCh.get(c), sw = led || m.sway;
+        if (!sw) { winless = 0; lossy = 0; continue; }
+        const src = led ? "（照期待账 tally）" : "";
+        if (!sw.wins) emit(m.file, "细纲", "赢亏", "info", { line: m.line, text: `第${c}章`, note: `这一章她没有一处赢${src}：在布局的章，读者也得看得见她手里的算盘，网下一章收` });
+        winless = sw.wins ? 0 : winless + 1;
+        if (Number.isInteger(rhy.winlessRun) && winless === rhy.winlessRun + 1) emit(m.file, "细纲", "赢亏", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${winless} 章她没有一处赢${src}（阈值 ${rhy.winlessRun}）：读者攒着憋屈会走` });
+        lossy = sw.losses > sw.wins ? lossy + 1 : 0;
+        if (Number.isInteger(rhy.lossRun) && lossy === rhy.lossRun + 1) emit(m.file, "细纲", "赢亏", rlevel, { line: m.line, text: `第${c}章`, note: `连着 ${lossy} 章亏多于赢${src}（阈值 ${rhy.lossRun}）：这一章要翻过来` });
+        if (Number.isInteger(openN) && c <= openN) { owin += sw.wins; oloss += sw.losses; oseen = c; }
+      }
+      if (Number.isInteger(openN) && lastCh >= openN && oloss > owin) {
+        const at = byCh.get(oseen) || byCh.get(chs[0]);
+        emit(at.file, "细纲", "赢亏", rlevel, { line: at.line, text: `前${openN}章`, note: `开篇${openN}章她赢 ${owin} 处、亏 ${oloss} 处：开篇赢不少于亏，读者才站到她这边` });
+      }
     }
     // 回合末：回合是断章的单位，回合里可以松收、场中切，回合末要兑现或设钩
     const roundLast = new Map();

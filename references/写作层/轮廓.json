@@ -1,6 +1,6 @@
 {
   "schema": "bazi-book-profile/v2",
-  "note": "写作层的轮廓表：check-prose 与 check-plan 读它，书/主题.md 的『写法轮廓』行选哪张表，书/文风.md 的阈值表逐项覆盖 thresholds 里的 max。level 是超阈值时报的级别：error 拦（退出码 1），warn 报，info 只记。现在只有网文一张表，数值按六本女频长篇逐章量过定（阈值落在真书九成到九成五的章不报的位置）；以后加别的写法就在 profiles 里加一张表。字数口径：检查器数汉字与字母数字，不含标点，平台字数（含标点）约多一成五。exclaimPerK、ellipsisPerK、dashPerK 只数叙述（引号、【】里的不数），单独成行的分隔符与引出对白的破折号不数，按每千字算。expect 是期待账：idle 只查回合与单元尺度的期待几章没人动，卷与全书的不按章数查、隔 reopenGap 章再碰提醒带一句旧账，常驻的不查；openingPayoffBy 开篇几章里要有一回兑现（章内的也算），openingRealPayoffBy 几章里要有一回登记过的期待兑现。rhythm：tenseRun 连着紧又没有调剂几章报，flatRun 连着几章没兑现、没推、没落空、没调剂、也没有带期限的期待悬着报，hooklessRun 连着几章章尾不留钩（兑现收、松收）报，funlessRun 主题卡有乐子一节时连着几章细纲的乐子写无报，sameHookRun 连着几章钩子同一种类型报。",
+  "note": "写作层的轮廓表：check-prose 与 check-plan 读它，书/主题.md 的『写法轮廓』行选哪张表，书/文风.md 的阈值表逐项覆盖 thresholds 里的 max。level 是超阈值时报的级别：error 拦（退出码 1），warn 报，info 只记。现在只有网文一张表，数值按六本女频长篇逐章量过定（阈值落在真书九成到九成五的章不报的位置）；以后加别的写法就在 profiles 里加一张表。字数口径：检查器数汉字与字母数字，不含标点，平台字数（含标点）约多一成五。exclaimPerK、ellipsisPerK、dashPerK 只数叙述（引号、【】里的不数），单独成行的分隔符与引出对白的破折号不数，按每千字算。expect 是期待账：idle 只查回合与单元尺度的期待几章没人动，卷与全书的不按章数查、隔 reopenGap 章再碰提醒带一句旧账，常驻的不查；openingPayoffBy 开篇几章里要有一回兑现（章内的也算），openingRealPayoffBy 几章里要有一回登记过的期待兑现。rhythm：tenseRun 连着紧又没有调剂几章报，flatRun 连着几章没兑现、没推、没落空、没调剂、也没有带期限的期待悬着报，hooklessRun 连着几章章尾不留钩（兑现收、松收）报，funlessRun 主题卡有乐子一节时连着几章细纲的乐子写无报，sameHookRun 连着几章钩子同一种类型报；主题卡有爽感节奏一节时，winlessRun 连着几章主角赢 0 报，lossRun 连着几章亏多于赢报，openingWinBy 开篇几章合计亏多于赢报（两本女频师承逐章数过：赢 0 最长连三章与一章，亏多于赢不连四章）。",
   "profiles": {
     "webnovel": {
       "label": "网文连载",
@@ -27,7 +27,7 @@
       "threadIdle": { "chapters": 8, "level": "warn" },
       "reviewEvery": 5,
       "expect": { "idle": 8, "idleScales": ["回合", "单元"], "reopenGap": 30, "openingPayoffBy": 3, "openingRealPayoffBy": 6, "level": "warn" },
-      "rhythm": { "tenseRun": 6, "flatRun": 3, "hooklessRun": 3, "funlessRun": 2, "sameHookRun": 2, "level": "warn" }
+      "rhythm": { "tenseRun": 6, "flatRun": 3, "hooklessRun": 3, "funlessRun": 2, "sameHookRun": 2, "winlessRun": 1, "lossRun": 3, "openingWinBy": 10, "level": "warn" }
     }
   },
   "borrowWords": ["对标", "爽点", "公式", "榜单", "钩子密度", "情绪百分比", "卖点", "黄金三章", "追读", "完读率"],

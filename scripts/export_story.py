@@ -123,8 +123,35 @@ def speech(doc: dict) -> dict:
 
 
 # 口头禅与标志动作段 2026-09-25 废：卡上只要有一句可搬的话和一个可搬的动作，写手就每章搬一回。
-# story 模板的这一栏照填，填的是指路：腔调在语言风格档案，身体反应在情绪过程。
+# 口头禅改由戏用页"他怎么被记住"那一问给（整页唯一许带引号的一句），哪章哪场说由细纲排；
+# 没有戏用页或那一问没给，这一栏填指路：腔调在语言风格档案，身体反应在情绪过程。
 NO_CATCH = "无固定口头禅；腔调见语言风格档案，身体反应见情绪过程（写戏用）"
+REMEMBERED = "他怎么被记住"
+QUOTED = re.compile(r"[“「\"]([^”」\"]+)[”」\"]")
+
+
+def catchphrase(doc_path: Path) -> str:
+    """同目录 {名}.戏用页.json 里"他怎么被记住"那一问带引号的那一句；没有返回空串。"""
+    page = doc_path.with_name(f"{doc_path.stem}.戏用页.json")
+    if not page.exists():
+        return ""
+    try:
+        asks = json.loads(page.read_text(encoding="utf-8")).get("asks") or []
+    except (json.JSONDecodeError, AttributeError):
+        return ""
+    for a in asks:
+        if a.get("ask") != REMEMBERED:
+            continue
+        for line in a.get("lines") or []:
+            m = QUOTED.search(line.get("text", ""))
+            if m:
+                return m.group(1)
+    return ""
+
+
+def catch_text(facts: dict) -> str:
+    c = facts.get("catch")
+    return f"“{c}”（戏用页给的那一句，哪章哪场说由细纲排，不每章搬）；腔调见语言风格档案，身体反应见情绪过程（写戏用）" if c else NO_CATCH
 BEAT_HEAD = "写他的戏按这四拍走，先碰线、身体先动、再盖、再余波；一场戏走一遍就够。下面写的是倾向，台词与动作由你现写。"
 
 
@@ -160,7 +187,7 @@ def person_facts(doc_path: Path, doc: dict, year: int | None) -> dict:
     born = matrix_mod._anchor(chart) if chart else None
     age = year - born if (year is not None and born is not None) else None
     age_text = f"{cn_age(age)}岁（{year}年）" if age is not None and age >= 0 else PENDING
-    return {"gender": gender, "born": born, "age": age, "age_text": age_text}
+    return {"gender": gender, "born": born, "age": age, "age_text": age_text, "catch": catchphrase(doc_path)}
 
 
 # ---------- 角色卡 ----------
@@ -204,7 +231,7 @@ def _common_blocks(doc: dict, p: dict, facts: dict, main: str | None) -> list[st
     stage_speech = [f"{cn_age(c['ages'][0])}到{cn_age(c['ages'][1])}岁：{t['text']}"
                     for c in stages(doc) if c.get("ages") for t in c.get("traits", []) if t.get("aspect") == "说话方式"]
     lines += ["## 语言风格档案（七维）", "",
-              f"1. 口癖和惯用语：{NO_CATCH}",
+              f"1. 口癖和惯用语：{catch_text(facts)}",
               f"2. 说话节奏：{_join(sp['节奏'][:1])}",
               f"3. 信息偏好：{_join(([f'回避的话题：{x}' for x in sp['回避']]) + _texts(doc, '视角声音'))}",
               f"4. 立场固定：{_join(_texts(doc, '潜文本提示') or theme)}",
@@ -243,7 +270,7 @@ def main_card(name: str, doc: dict, facts: dict) -> str:
         f"核心目标：{want or PENDING}",
         f"核心动机：{need or PENDING}",
         f"致命弱点：{_join(_texts(doc, '抵抗线'))}",
-        f"口头禅/标志动作：{NO_CATCH}", ""]
+        f"口头禅/标志动作：{catch_text(facts)}", ""]
     lines += _common_blocks(doc, p, facts, None)
     return "\n".join(lines)
 

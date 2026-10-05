@@ -152,3 +152,20 @@ def test_old_profile_emotion_section_becomes_a_block(tmp_path: Path) -> None:
     shen = (tmp_path / "book" / "设定" / "角色" / "沈砚.md").read_text(encoding="utf-8")
     assert "## 情绪过程（写戏用）" in shen and ex.BEAT_HEAD in shen and "- 碰线：" in shen and "- 盖法：" in shen and "- 余波：" in shen
     assert shen.index("## 语言风格档案（七维）") < shen.index("## 情绪过程（写戏用）") < shen.index("## 人物弧线（按阶段）")
+
+
+def test_catchphrase_comes_from_play_page(tmp_path: Path) -> None:
+    """戏用页"他怎么被记住"那一问带引号的一句进口头禅两栏；没有戏用页的照旧填指路。"""
+    src = tmp_path / "人物" / "沈砚.json"
+    src.parent.mkdir()
+    shutil.copy(DOCS[1], src)
+    page = {"name": "沈砚", "asks": [{"ask": "他对谁演什么", "lines": [{"text": "对谁都客气。"}]},
+                                    {"ask": ex.REMEMBERED, "lines": [{"text": "先给手；口头禅“算了，记账上”。"}]}]}
+    (tmp_path / "人物" / "沈砚.戏用页.json").write_text(json.dumps(page, ensure_ascii=False), encoding="utf-8")
+    mx, sc, run = _ctx()
+    ex.export([DOCS[0], src], "story-long", tmp_path / "book", mx=mx, schedule=sc, run=run)
+    shen = (tmp_path / "book" / "设定" / "角色" / "沈砚.md").read_text(encoding="utf-8")
+    lin = (tmp_path / "book" / "设定" / "角色" / "林昭.md").read_text(encoding="utf-8")
+    assert "“算了，记账上”" in shen and ex.NO_CATCH not in shen
+    assert f"口头禅/标志动作：{ex.NO_CATCH}" in lin
+

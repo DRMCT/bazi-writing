@@ -81,6 +81,10 @@ STYLE = """# 文风
 - 林昭：话短，带刺，先驳后问。
 - 裴恪：慢，绕，说定的事再说一遍。
 
+## 附魅
+
+- 来源：无
+
 ## 标点
 
 - 引号用中文双引号。
@@ -491,13 +495,16 @@ def test_plan_narrative_structure_and_chapter_uniqueness(tmp_path: Path) -> None
 
 @needs_node
 def test_plan_style_ten_sections_and_reading_card(tmp_path: Path) -> None:
-    """文风十节：缺师承或叙述者报 error；读法卡按标题认，十八项缺一报 error，引文超十五字 warn。"""
+    """文风十一节：缺师承或叙述者报 error，缺附魅报 warn；读法卡按标题认，十八项缺一报 error，引文超十五字 warn。"""
     book = make_book(tmp_path)
     style = book / "文风.md"
     style.write_text(style.read_text(encoding="utf-8").replace("## 叙述者\n", "## 叙述人\n"), encoding="utf-8")
     code, rows, summary = run(PLAN, str(book))
     assert code == 1 and any(x["text"] == "叙述者" for x in hits(rows, "小节", "error"))
-    style.write_text(style.read_text(encoding="utf-8").replace("## 叙述人\n", "## 叙述者\n"), encoding="utf-8")
+    style.write_text(style.read_text(encoding="utf-8").replace("## 叙述人\n", "## 叙述者\n").replace("## 附魅\n", "## 附媚\n"), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert hits(rows, "小节", "warn") and not hits(rows, "小节", "error"), rows  # 附魅一节后加，旧卡没有只报 warn
+    style.write_text(style.read_text(encoding="utf-8").replace("## 附媚\n", "## 附魅\n"), encoding="utf-8")
     cards = book / "师承" / "读法" / "某书"
     cards.mkdir(parents=True)
     fields = ["章", "字数", "覆盖时间", "演", "述", "述演比", "叙述者的判断与幽默", "情绪写法", "旧事怎么进", "环境与感官", "时间过渡", "开头", "结尾", "埋", "收", "对白", "腔调变化", "最值得学的一个讲法"]
@@ -782,6 +789,58 @@ def test_plan_fun_promise(tmp_path: Path) -> None:
     code, rows, summary = run(PLAN, str(book))
     assert not any(r["check"] == "乐子" for r in rows), rows
 
+
+
+def add_sway(book: Path, n: int, rows: str) -> None:
+    """细纲期待表带赢亏一栏：rows 每行 编号|这一章|赢亏|怎么做。"""
+    o = book / "细纲" / f"第{n}章.md"
+    s = o.read_text(encoding="utf-8")
+    s = s.replace("## 在场与知情", f"## 期待\n\n- 松紧：紧\n- 调剂：笑\n- 反应层：无\n\n| 编号 | 这一章 | 赢亏 | 怎么做 |\n|---|---|---|---|\n{rows}\n## 在场与知情", 1)
+    s = s.replace("## 钩子\n\n停在她放下碗的那一下。", "## 钩子\n\n- 类型：悬念\n- 停在：她放下碗的那一下\n- 章题：无")
+    o.write_text(s, encoding="utf-8")
+
+
+@needs_node
+def test_plan_sway_rhythm(tmp_path: Path) -> None:
+    """爽感节奏：主题卡没有这一节报 warn、不数赢亏；有了，期待表缺赢亏一栏报，章表缺赢亏一栏报，取值不对报；
+    一章赢 0 info，连着两章赢 0、连着四章亏多于赢、开篇十章亏多于赢 warn；进了正文的章没登 tally 报，登了的照账数。"""
+    book = make_book(tmp_path, chapters=10, outline_objects="无")
+    setup_ledger(book)
+    add_expect(book, 1, "| K001 | 开 | 她要他先开口 |\n")
+    for n in range(2, 11):
+        add_sway(book, n, "| 章内 | 兑现 | 赢 | 她拆穿 |\n")
+    code, rows, summary = run(PLAN, str(book))
+    assert any(r.get("text") == "爽感节奏" for r in hits(rows, "小节", "warn")), rows
+    assert not hits(rows, "赢亏") and not any(r.get("text") == "赢亏" for r in rows), rows
+    theme = book / "主题.md"
+    theme.write_text(theme.read_text(encoding="utf-8") + "\n## 爽感节奏\n\n- 来源：频道卡\n- 每章她有一处自己的赢\n", encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert code == 0 and not any(r.get("text") == "爽感节奏" for r in rows), rows
+    assert any(r.get("text") == "赢亏" and r["type"] == "细纲" for r in hits(rows, "期待", "warn")), rows  # 第 1 章期待表没有赢亏一栏
+    assert any(r.get("text") == "赢亏" for r in hits(rows, "章", "warn")), rows  # 单元章表没有赢亏一栏
+    assert not hits(rows, "赢亏", "warn"), rows  # 第 2 到 10 章各一处赢；第 1 章没有这一栏，不数
+    for n in (2, 3):
+        o = book / "细纲" / f"第{n}章.md"
+        o.write_text(o.read_text(encoding="utf-8").replace("| 章内 | 兑现 | 赢 | 她拆穿 |", "| 章内 | 压 | 亏 | 当众被顶回去 |"), encoding="utf-8")
+    for n in (5, 6, 7, 8):
+        o = book / "细纲" / f"第{n}章.md"
+        o.write_text(o.read_text(encoding="utf-8").replace("| 章内 | 兑现 | 赢 | 她拆穿 |", "| 章内 | 兑现 | 赢 | 她拆穿 |\n| 章内 | 压 | 亏 | 被查 |\n| 章内 | 压 | 亏 | 被罚 |"), encoding="utf-8")
+    o = book / "细纲" / "第9章.md"
+    o.write_text(o.read_text(encoding="utf-8").replace("| 章内 | 兑现 | 赢 | 她拆穿 |", "| 章内 | 兑现 | 平 | 她拆穿 |"), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    notes = [r["note"] for r in hits(rows, "赢亏", "warn")]
+    assert any("连着 2 章她没有一处赢" in n for n in notes), rows
+    assert any("连着 4 章亏多于赢" in n for n in notes), rows
+    assert any("开篇10章她赢" in n for n in notes), rows
+    assert {r["text"] for r in hits(rows, "赢亏", "info")} >= {"第2章", "第3章", "第9章"}, rows
+    assert any(r.get("text") == "章内 平" for r in hits(rows, "期待", "warn")), rows
+    (book / "正文" / "第2章.md").write_text("# 第2章\n\n她放下碗。\n", encoding="utf-8")
+    (book / "追踪" / "期待.json").write_text(json.dumps({"schema": "bazi-book-expect/v2", "expects": [], "tally": [
+        {"chapter": 3, "wins": ["当面：她把账摊开"], "losses": []}]}, ensure_ascii=False), encoding="utf-8")
+    code, rows, summary = run(PLAN, str(book))
+    assert any(r.get("text") == "第2章" and "赢亏（tally）" in r["note"] for r in hits(rows, "登追踪", "warn")), rows
+    assert not any("连着 2 章她没有一处赢" in r["note"] for r in hits(rows, "赢亏", "warn")), rows  # 第 3 章照账有一处赢
+    assert not any(r.get("text") == "第3章" for r in hits(rows, "赢亏", "info")), rows
 
 def cast(root: Path, timescale: str) -> None:
     (root / "命盘" / "群像" / "编配.json").write_text(json.dumps(

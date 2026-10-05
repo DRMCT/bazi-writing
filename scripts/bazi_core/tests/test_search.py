@@ -100,3 +100,21 @@ def test_constraint_aliases_are_normalized() -> None:
     search.normalize_constraints(cons2)
     assert cons2["strength"]["value"] == "身弱" and cons2["relations"][0]["day_branch"] == ["刑", "害"]
 
+
+
+def test_ties_spread_over_kinds_not_enumeration_order() -> None:
+    """同分很多时前几名型各不相同（日主加取格），也不都挤在枚举最前的那几个月上。"""
+    res = search.search(_cons(day_branch={"any_of": ["午"], "weight": 1}), top=5)["results"]
+    kinds = [search._kind(r["pillars"]) for r in res]
+    assert len(res) == 5 and len(set(kinds)) == 5
+    assert all(r["kind"] == k for r, k in zip(res, kinds))
+    assert len({r["pillars"]["month"] for r in res}) > 1
+
+
+def test_differ_from_avoids_given_kind(tmp_path: Path) -> None:
+    other = chart.chart_from_pillars("甲子", "丙寅", "丙午", "甲午", "male", story_epoch=300, name="沈砚")
+    (tmp_path / "沈砚.json").write_text(json.dumps(other, ensure_ascii=False), encoding="utf-8")
+    taken = search._kind(other["fourPillars"])
+    cons = _cons(day_master={"stem": ["丙"], "hard": True}, differ_from=["沈砚"])
+    res = search.search(cons, top=3, charts_dir=tmp_path)["results"]
+    assert res and all(search._kind(r["pillars"]) != taken for r in res)

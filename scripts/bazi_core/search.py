@@ -22,8 +22,11 @@
   day_branch: [六合|六冲|刑|害…], weight}]：几个键都给时取平均
 - shensha: {require: [神煞名…]}：按命中比例得分
 
+- differ_from: [角色名或 JSON 路径…]：不打分，挑结果时先避开与这几个人同型（日主加取格）的盘，凑不够前几名再补
+
 打分：每项 满足度 × 权重 累加。去重：只差一柱、且十神组成（四干加四支本气）差异不超过 4 的两盘算重复，留高分者。
-同一约束两次运行结果相同（枚举序固定，同分按枚举序）。
+挑前几名先取型（日主加取格）各不相同的，凑不够再按分补同型的（2026-09-29 样例书四个男人初挑三个同型）。
+同一约束两次运行结果相同；同分按四柱的稳定散列排，不按枚举序（按枚举序时前几名挤在同一片年月上）。
 
 命令行（在作者项目根下）：
     python -m bazi_core.search 约束.json [--top 5] [--save 命盘/约束] [--charts 命盘]
@@ -32,6 +35,7 @@
 from __future__ import annotations
 
 import argparse
+import hashlib
 import heapq
 import json
 import random
@@ -386,6 +390,49 @@ def _evaluate(ctx: Ctx, items: list[dict], costs: tuple[int, ...]) -> tuple[floa
     return total, hits
 
 
+def _tie(pt) -> int:
+    """同分时的次序：四柱的稳定散列（跨进程不变，不用内置 hash）。"""
+    return int.from_bytes(hashlib.blake2b("".join(pt).encode("utf-8"), digest_size=8).digest(), "big")
+
+
+def _kind(pillars: dict) -> str:
+    """型：日主加取格；两盘同型，档案里信的那句话、要什么多半相近。"""
+    return pillars["day"][0] + determine_structure(pillars["year"], pillars["month"], pillars["day"], pillars["hour"]).name
+
+
+def _differ_kinds(cons: dict, charts_dir: Path) -> set[str]:
+    kinds = set()
+    for to in cons.get("differ_from") or []:
+        path = Path(to) if str(to).endswith(".json") else charts_dir / f"{to}.json"
+        kinds.add(_kind(json.loads(path.read_text(encoding="utf-8"))["fourPillars"]))
+    return kinds
+
+
+def _pick(cands, top: int, avoid: set[str], scan: int | None = None) -> list[dict]:
+    """cands 按优先次序给 (pillars, rec) 的可迭代；先取不重复且型各不相同、不在 avoid 里的，凑不够再按次序补不重复的。
+    scan 给了就只看前 scan 个候选找不同型（随机补位时候选要现算，不能扫全池）。"""
+    results: list[dict] = []
+    seen: list[dict] = []
+    kinds = set(avoid)
+    for i, (pillars, rec) in enumerate(cands):
+        cand = {"pillars": pillars, "_tg": _tg_counts(pillars), "_rec": rec, "_kind": _kind(pillars)}
+        seen.append(cand)
+        if cand["_kind"] not in kinds and not any(_dup(cand, x) for x in results):
+            results.append(cand)
+            kinds.add(cand["_kind"])
+            if len(results) >= top:
+                return results
+        if scan is not None and i + 1 >= scan:
+            break
+    for cand in seen:
+        if len(results) >= top:
+            break
+        if all(c is not cand for c in results) and not any(_dup(cand, x) for x in results):
+            results.append(cand)
+    order = {id(c): i for i, c in enumerate(seen)}
+    return sorted(results, key=lambda c: order[id(c)])
+
+
 def _dup(a: dict, b: dict) -> bool:
     diff = sum(a["pillars"][k] != b["pillars"][k] for k in _KEYS)
     if diff > 1:
@@ -451,13 +498,14 @@ def search(cons: dict, top: int = 5, charts_dir: Path | None = None, progress=No
                 heapq.heappush(floor, partial)
             elif partial > floor[0]:
                 heapq.heapreplace(floor, partial)
-        first.append((partial, i, tuple(pillars[k] for k in _KEYS), birth))
-    first.sort(key=lambda x: (-x[0], x[1]))
+        pt = tuple(pillars[k] for k in _KEYS)
+        first.append((partial, i, pt, birth, _tie(pt)))
+    first.sort(key=lambda x: (-x[0], x[4]))
 
     # 第二遍：按第一遍分数从高到低补算其余约束，上界不及第 KEEP 名总分即停
     heap: list[tuple[float, int, dict]] = []
     evaluated = 0
-    for partial, idx, pt, birth in first:
+    for partial, idx, pt, birth, tie in first:
         if len(heap) >= KEEP and partial + late_max < heap[0][0]:
             break
         ctx = Ctx(dict(zip(_KEYS, pt)), birth, cons)
@@ -469,10 +517,11 @@ def search(cons: dict, top: int = 5, charts_dir: Path | None = None, progress=No
         total = round(partial + r[0], 3)
         rec = {"_idx": idx, "_ctx": ctx, "_hits": r0[1] + r[1], "total": total}
         if len(heap) < KEEP:
-            heapq.heappush(heap, (total, -idx, rec))
-        elif total > heap[0][0]:
-            heapq.heapreplace(heap, (total, -idx, rec))
+            heapq.heappush(heap, (total, -tie, rec))
+        elif (total, -tie) > heap[0][:2]:
+            heapq.heapreplace(heap, (total, -tie, rec))
     ranked = [x[2] for x in sorted(heap, key=lambda x: (-x[0], -x[1]))]
+    avoid = _differ_kinds(cons, charts_dir)
 
     results: list[dict] = []
     random_info = None
@@ -483,29 +532,21 @@ def search(cons: dict, top: int = 5, charts_dir: Path | None = None, progress=No
         pool = [x for x in first if x[0] >= thr]
         rnd = random.Random(seed)
         rnd.shuffle(pool)
-        for partial, idx, pt, birth in pool:
-            ctx = Ctx(dict(zip(_KEYS, pt)), birth, cons)
-            r0 = _evaluate(ctx, items, (0,))
-            r = _evaluate(ctx, items, (1, 2))
-            evaluated += 1
-            if r is None or r0 is None:
-                continue
-            cand = {"pillars": ctx.pillars, "_tg": _tg_counts(ctx.pillars)}
-            if any(_dup(cand, x) for x in results):
-                continue
-            results.append({**cand, "_rec": {"_idx": idx, "_ctx": ctx, "_hits": r0[1] + r[1], "total": round(partial + r[0], 3)}})
-            if len(results) >= top:
-                break
+
+        def lazy():
+            nonlocal evaluated
+            for partial, idx, pt, birth, _ in pool:
+                ctx = Ctx(dict(zip(_KEYS, pt)), birth, cons)
+                r0 = _evaluate(ctx, items, (0,))
+                r = _evaluate(ctx, items, (1, 2))
+                evaluated += 1
+                if r is None or r0 is None:
+                    continue
+                yield ctx.pillars, {"_idx": idx, "_ctx": ctx, "_hits": r0[1] + r[1], "total": round(partial + r[0], 3)}
+        results = _pick(lazy(), top, avoid, scan=top * 50)
         random_info = {"seed": seed, "pool": len(pool), "threshold": thr, "filled": filled}
     else:
-        for rec in ranked:
-            ctx: Ctx = rec["_ctx"]
-            cand = {"pillars": ctx.pillars, "_tg": _tg_counts(ctx.pillars)}
-            if any(_dup(cand, r) for r in results):
-                continue
-            results.append({**cand, "_rec": rec})
-            if len(results) >= top:
-                break
+        results = _pick(((rec["_ctx"].pillars, rec) for rec in ranked), top, avoid)
     out = []
     order = {it["name"]: i for i, it in enumerate(items)}
     for rank, r in enumerate(results, 1):
@@ -525,6 +566,7 @@ def search(cons: dict, top: int = 5, charts_dir: Path | None = None, progress=No
             "birth": ctx.birth,
             "dayMaster": stem_label(STEMS.index(p["day"][0])),
             "structure": s.name + (f"（本格{s.base}）" if s.base != s.name else ""),
+            "kind": r["_kind"] + ("（与 differ_from 同型）" if r["_kind"] in avoid else ""),
             "strength": f"{st['verdict']}（比值 {st['ratio']}）",
             "yongshen": f"{ys['yong']['element']}（{ys['yong']['family']}）：{ys['reason']}",
             "arc": None if arc_res is None else {"vector": arc_res["vector"], "best": arc_res["best"],
