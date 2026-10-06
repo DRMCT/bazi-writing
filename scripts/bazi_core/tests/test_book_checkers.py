@@ -1026,6 +1026,21 @@ def test_prose_copy_lineage_common_phrase_and_outline_short_run(tmp_path: Path) 
 
 
 @needs_node
+def test_prose_seed_is_copy_source_and_plan_skips_seed_dir(tmp_path: Path) -> None:
+    """写手种子（书/种子/第N章.md）是 check-prose 的照抄来源，短连串只报 warn、长的 error；check-plan 不把种子当细纲查。"""
+    book = make_book(tmp_path)
+    (book / "种子").mkdir()
+    (book / "种子" / "第1章.md").write_text("# 第1章 · 写手种子\n\n他照着那张旧方子又去城西抓了一回药。门房在簿上记他一笔。\n", encoding="utf-8")
+    ch = book / "正文" / "第1章.md"
+    ch.write_text("# 第1章\n\n他照着那张旧方子又去城西抓了一回药。\n门房在簿上记他一笔，不慌。\n", encoding="utf-8")
+    code, rows, summary = run(PROSE, str(ch))
+    seed = [r for r in hits(rows, "照抄") if "种子" in r["source"]]
+    assert any(r["level"] == "error" for r in seed), rows
+    code, rows, summary = run(PLAN, str(book))
+    assert not any("种子" in (r.get("file") or "") for r in rows), rows
+
+
+@needs_node
 def test_plan_finished_chapter_must_be_tracked(tmp_path: Path) -> None:
     """进了正文的章要登追踪：在场与知情有这一章、登记里有这一章，缺了报 warn。"""
     book = make_book(tmp_path)

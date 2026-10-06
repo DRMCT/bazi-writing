@@ -93,7 +93,7 @@ function typeOf(file, loose) {
   if (dir === "细纲") return "细纲";
   const segs = path.dirname(path.resolve(file)).split(/[\\/]/);
   const inBook = segs.lastIndexOf("书") >= 0 ? segs.slice(segs.lastIndexOf("书") + 1) : [dir];
-  if (inBook.some(d => d === "会" || d === "正文" || d === "稿" || d === "追踪")) return null;  // 会议记录、正文、留底稿、追踪，连它们的子目录都不查
+  if (inBook.some(d => d === "会" || d === "正文" || d === "稿" || d === "追踪" || d === "种子")) return null;  // 会议记录、正文、留底稿、追踪、写手种子，连它们的子目录都不查
   const head = C.readText(file).split(/\r?\n/).find(l => /^#\s/.test(l)) || "";
   if (/^#\s+卷/.test(head)) return "卷";
   if (/^#\s+U-\d+/.test(head)) return "单元";

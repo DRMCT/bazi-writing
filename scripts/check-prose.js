@@ -1,21 +1,22 @@
 #!/usr/bin/env node
 // 正文检查（DESIGN-写作层 第 10 节 check-prose）：一章一跑，也可一次给几章。零依赖，JSON 一行一条，最后一行汇总；有 error 退出码 1。
 //
-//   node scripts/check-prose.js 书/正文/第4章.md                  按 书/ 推断：细纲/第4章.md、文风.md、主题.md、../人物/*.戏用页.md 与 *.读者本.md、前几章
+//   node scripts/check-prose.js 书/正文/第4章.md                  按 书/ 推断：细纲/第4章.md、种子/第4章.md、文风.md、主题.md、../人物/*.戏用页.md 与 *.读者本.md、前几章
 //   node scripts/check-prose.js 书/正文/第1章.md 书/正文/第2章.md   几章一起，前面的章自动当后面的章的前文
 //   node scripts/check-prose.js 正文.md --plan 细纲.md --style 文风.md --theme 主题.md --cards 人物/ --source 设定/角色/ --prev 上一章.md
 //                                                                 目录不是 书/ 形状时（别的套装的项目）逐项指定
+//   --seed 种子.md                写手种子，默认 书/种子/ 下同名或同号
 //   --profile 名字                写法轮廓，默认读主题的『写法轮廓』行，再默认轮廓表第一张（webnovel）
 //   --names 甲,乙                 另加人名（连串比对时人名折成一个字，人名之外要够长才报）
 //   --banned 词表.txt             去味词表，一行一个词，命中报 warn
 //   --window N                    跨章重复回看几章，默认按轮廓表
 //   --summary                     只打印汇总行
 //
-// 查：引号照抄（正文与细纲、戏用页、读者本、文风卡、额外来源做八字以上连串比对，主题白名单、装置表的重复句与回声、戏用页附问末问那一句口头禅放行，error；
-//     与细纲重合不到十二字只报 warn；师承里出现三次以上的连串是通用语不报，师承/读法/ 不算来源）；
+// 查：引号照抄（正文与细纲、写手种子、戏用页、读者本、文风卡、额外来源做八字以上连串比对，主题白名单、装置表的重复句与回声、戏用页附问末问那一句口头禅放行，error；
+//     与细纲、种子重合不到十二字只报 warn；师承里出现三次以上的连串是通用语不报，师承/读法/ 不算来源）；
 //     跨章重复（与前几章比六字以上连串，人名不计入长度，warn）；句尾否定（句尾落在没、不上的句子数与比例，超文风阈值报）；
 //     双否定（没…也没、不…也不）；感叹号、省略号、破折号只数叙述、按每千字算（引号与【】里的对白、心声、屏上文字不数，单独成行的分隔符与引出对白的破折号不数）；
-//     伏笔物件次数（按主题装置表的认法数，本章与前文合计超上限报；重复句出现了、同号细纲却没排它报 warn：写手照细纲写，不自行每章搬）；字数出了轮廓表的章长范围报 info，句长、段长只报；套话模式（对照式、像是、仿佛）与体感密度（每千字身体部位词）按 references/写作层/套话.json 与文风阈值报，定格式收尾 info；
+//     伏笔物件次数（按主题装置表的认法数，本章与前文合计超上限报；重复句出现了、同号细纲却没排它报 warn：细纲排、种子带给写手，不自行每章搬）；字数出了轮廓表的章长范围报 info，句长、段长只报；套话模式（对照式、像是、仿佛）与体感密度（每千字身体部位词）按 references/写作层/套话.json 与文风阈值报，定格式收尾 info；
 //     书/师承/ 下的文本也是照抄来源。术语归 check-terms，另跑。
 // 每条一行：{"file","check","level","line","col","text","source","sourceLine","note"}；汇总 {"summary":true,...}。
 "use strict";
@@ -27,11 +28,12 @@ const NEG_SKIP = /不过|不由|不禁|不妨|不如|不料|不知不觉|不动�
 const PUNCT_ONLY = /^[。！？!?，、；：,;:…—\-（）()《》\s]*$/;
 
 function parseArgs(argv) {
-  const out = { files: [], book: null, plan: [], style: null, theme: null, cards: [], source: [], prev: [], profile: null, names: [], banned: null, window: null, summary: false };
+  const out = { files: [], book: null, plan: [], seed: [], style: null, theme: null, cards: [], source: [], prev: [], profile: null, names: [], banned: null, window: null, summary: false };
   for (let i = 0; i < argv.length; i++) {
     const a = argv[i];
     if (a === "--book") out.book = argv[++i];
     else if (a === "--plan") out.plan.push(argv[++i]);
+    else if (a === "--seed") out.seed.push(argv[++i]);
     else if (a === "--style") out.style = argv[++i];
     else if (a === "--theme") out.theme = argv[++i];
     else if (a === "--cards") out.cards.push(argv[++i]);
@@ -129,6 +131,11 @@ function resolve(file, args, order) {
   ctx.plans = args.plan.length ? (paired.length ? paired : args.plan)
     : (exists(inBook(path.join("细纲", path.basename(file).replace(/\.v\d+(?=\.md$)/, "")))) ? [inBook(path.join("细纲", path.basename(file).replace(/\.v\d+(?=\.md$)/, "")))]
       : (no !== null && exists(inBook(path.join("细纲", `第${no}章.md`))) ? [inBook(path.join("细纲", `第${no}章.md`))] : []));
+  // 写手种子（2026-10-05 种子写手）：书/种子/ 下同名或 第N章.md；写手只读它，它的字也会被搬进正文
+  const seedName = path.basename(file).replace(/\.v\d+(?=\.md$)/, "");
+  ctx.seeds = args.seed.length ? args.seed
+    : (exists(inBook(path.join("种子", seedName))) ? [inBook(path.join("种子", seedName))]
+      : (no !== null && exists(inBook(path.join("种子", `第${no}章.md`))) ? [inBook(path.join("种子", `第${no}章.md`))] : []));
   ctx.style = args.style || exists(inBook("文风.md"));
   ctx.theme = args.theme || exists(inBook("主题.md"));
   ctx.cards = args.cards.length ? args.cards.flatMap(mdFiles) : (ctx.root ? readerCards(ctx.root) : []);
@@ -186,6 +193,7 @@ function checkOne(ctx, args, emit) {
     C.gramIndex(norm, prof.copy.ngram, tag, copyIndex);
   };
   for (const p of ctx.plans) addSource(p, "细纲");
+  for (const p of ctx.seeds) addSource(p, "种子");
   for (const p of ctx.cards) addSource(p, "档案");
   if (ctx.style) addSource(ctx.style, "文风");
   for (const p of ctx.sources) addSource(p, "来源");
@@ -208,8 +216,8 @@ function checkOne(ctx, args, emit) {
     for (const run of C.findRuns(target, copyIndex, prof.copy.ngram, copySources)) {
       if (covered(run.text, prof.copy.ngram)) continue;
       if (run.tag.startsWith("师承:") && commonInLineage(run.text)) continue;
-      // 细纲里的事项（谁问了什么、规矩记什么）写手要照事实写，短连串难免撞：不到阈值加四只报 warn，再长才算照搬
-      const level = run.tag.startsWith("细纲:") && run.end - run.start < prof.copy.ngram + 4 ? "warn" : prof.copy.level;
+      // 细纲与种子里的事项（谁问了什么、规矩记什么）写手要照事实写，短连串难免撞：不到阈值加四只报 warn，再长才算照搬
+      const level = (run.tag.startsWith("细纲:") || run.tag.startsWith("种子:")) && run.end - run.start < prof.copy.ngram + 4 ? "warn" : prof.copy.level;
       copies++;
       const src = copySources.get(run.tag);
       say("照抄", level, { line: lineOf(run.start), col: colOf(run.start), text: C.excerpt(target, run.start, run.end),
@@ -324,7 +332,7 @@ function checkOne(ctx, args, emit) {
 function main() {
   const args = parseArgs(process.argv.slice(2));
   if (!args.files.length) {
-    console.error("用法：node scripts/check-prose.js <正文.md>... [--book 书/] [--plan 细纲.md] [--style 文风.md] [--theme 主题.md] [--cards 人物/] [--source 路径] [--prev 前一章.md] [--profile 轮廓名] [--names 甲,乙] [--banned 词表] [--window N] [--summary]");
+    console.error("用法：node scripts/check-prose.js <正文.md>... [--book 书/] [--plan 细纲.md] [--seed 种子.md] [--style 文风.md] [--theme 主题.md] [--cards 人物/] [--source 路径] [--prev 前一章.md] [--profile 轮廓名] [--names 甲,乙] [--banned 词表] [--window N] [--summary]");
     process.exit(2);
   }
   let errors = 0;

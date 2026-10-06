@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
 """戏用页 JSON → markdown（DESIGN-戏剧层 5）。JSON 是主产物（人物/{角色}.戏用页.json），md 是投影。
 
-    python scripts/drama_render.py 人物/甲.戏用页.json            → 人物/甲.戏用页.md（写手与排戏的人读，不带编号）
+    python scripts/drama_render.py 人物/甲.戏用页.json            → 人物/甲.戏用页.md（排戏的人与检查读，不带编号）
     python scripts/drama_render.py 人物/甲.戏用页.json --author   → 人物/甲.戏用页.作者本.md（每行带来历与编号）
     python scripts/drama_render.py 人物/甲.戏用页.json --out 路径
 

@@ -1,5 +1,5 @@
 #!/usr/bin/env node
-// 戏用页检查（DESIGN-戏剧层 5）。戏用页是一个人给排戏的人和写手读的一页：十问，按戏的问题排，不按盘的事实排。
+// 戏用页检查（DESIGN-戏剧层 5）。戏用页是一个人给排戏的人和检查读的一页：十问，按戏的问题排，不按盘的事实排。
 //
 //   node scripts/check-drama.js 人物/甲.戏用页.json
 //   node scripts/check-drama.js 人物/甲.戏用页.json --matrix 命盘/矩阵.json --timeline 命盘/甲.年表.json --run 命盘/群像/推演.json
